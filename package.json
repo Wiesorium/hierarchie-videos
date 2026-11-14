@@ -1,0 +1,12 @@
+{
+  "name": "hierarchie-videos",
+  "version": "1.0.0",
+  "description": "Tägliche Hierarchologie-Reels: Storyboard -> Pastell-Animation",
+  "scripts": {},
+  "dependencies": {
+    "@fontsource/patrick-hand": "^5.3.0",
+    "@napi-rs/canvas": "^1.1.1"
+  },
+  "private": true,
+  "type": "module"
+}

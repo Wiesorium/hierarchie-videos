@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+scratch/
+episodes/*/audio/*.mp3
+episodes/*/work/
+episodes/*/out/
+episodes/*/qa/
+!episodes/_beispiel-das-abgemalte-zeichen/
+episodes/_beispiel-das-abgemalte-zeichen/audio/

@@ -1,0 +1,135 @@
+{
+ "hinweis": "Warteschlange für die tägliche Aufgabe. Die erste Idee mit status 'offen' wird genommen. Martin kann jederzeit Ideen ergänzen (oben = zuerst). Ist nichts mehr offen, wählt der Lauf selbst eine Alltagssituation mit Familie oder Freunden.",
+ "ideen": [
+  {
+   "id": "schule-note",
+   "thema": "Eine schlechte Note heimbringen",
+   "quelle": "Schulängste, Martin 14.11.2026",
+   "cta": "whatsapp",
+   "beispiel": null,
+   "status": "offen"
+  },
+  {
+   "id": "schule-referat",
+   "thema": "Ein Referat halten",
+   "quelle": "Schulängste, Martin 14.11.2026",
+   "cta": "whatsapp",
+   "beispiel": null,
+   "status": "offen"
+  },
+  {
+   "id": "schule-pause",
+   "thema": "Allein in der Pause",
+   "quelle": "Schulängste, Martin 14.11.2026",
+   "cta": "whatsapp",
+   "beispiel": null,
+   "status": "offen"
+  },
+  {
+   "id": "schule-einladung",
+   "thema": "Nicht eingeladen werden",
+   "quelle": "Schulängste, Martin 14.11.2026",
+   "cta": "whatsapp",
+   "beispiel": null,
+   "status": "offen"
+  },
+  {
+   "id": "schule-hausuebung",
+   "thema": "Die Hausübung vergessen",
+   "quelle": "Schulängste, Martin 14.11.2026",
+   "cta": "whatsapp",
+   "beispiel": null,
+   "status": "offen"
+  },
+  {
+   "id": "idee-13",
+   "thema": "Was vorher war, prägt das Gespräch",
+   "quelle": "Ideen-Tabelle Nr. 13 (Martins Idee vom 2.11.2026)",
+   "cta": "kurs",
+   "beispiel": "Zwei Freunde treffen sich auf einen Kaffee: Einer kommt aus einem Streit mit dem Chef, der andere vom Laufen im Park. Dasselbe Thema kippt beim einen in Ärger, beim anderen in Pläne.",
+   "einsicht": "Jeder bringt die Schublade mit, die gerade oben liegt; das Gespräch wird von beiden Vorgeschichten gepromptet. Hierarchisch darstellen, mit Analogien.",
+   "hook": "Dein Freund redet nicht nur mit dir. Er redet mit seinem Vormittag.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-5",
+   "thema": "Erst die oberen Schubladen lernen",
+   "quelle": "Ideen-Tabelle Nr. 5",
+   "cta": "whatsapp",
+   "beispiel": "Eine neue Sprache oder ein neuer Job",
+   "einsicht": "Ohne obere Schublade fällt jedes Detail auf den Boden",
+   "hook": "Lern zuerst den Schrank, dann die Socken.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-6",
+   "thema": "Umsortieren statt Dazulernen",
+   "quelle": "Ideen-Tabelle Nr. 6",
+   "cta": "whatsapp",
+   "beispiel": "Pluto ist seit 2006 ein Zwergplanet",
+   "einsicht": "Manchmal ändert sich nicht das Ding, sondern die Schublade",
+   "hook": "Pluto hat sich nicht verändert.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-7",
+   "thema": "Übernommenes Wissen ohne Unterbau",
+   "quelle": "Ideen-Tabelle Nr. 7",
+   "cta": "kurs",
+   "beispiel": "Omas Gulasch nach ihrem Rezept schmeckt bei dir nie gleich",
+   "einsicht": "Ein Rezept überträgt nur die oberen Knoten; ihre Hände, ihr Topf und 50 Jahre Abschmecken bleiben bei ihr. Übernommene Überzeugungen tragen nicht ohne die Erfahrungen darunter.",
+   "hook": "Omas Rezept schmeckt bei dir nie gleich.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-8",
+   "thema": "Ersatz findet man eine Ebene höher",
+   "quelle": "Ideen-Tabelle Nr. 8",
+   "cta": "whatsapp",
+   "beispiel": "Keine Zitrone da; wer weiß, dass sie für Säure steht, nimmt Essig",
+   "einsicht": "Wer nur Zutaten kennt, steckt fest, wenn eine fehlt; wer die Funktion darüber kennt, findet Ersatz. Genauso bei Gewohnheiten, die wegfallen.",
+   "hook": "Dir fehlt keine Zitrone. Dir fehlt Säure.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-9",
+   "thema": "Welche Ebene zählt, hängt von der Situation ab",
+   "quelle": "Ideen-Tabelle Nr. 9",
+   "cta": "kurs",
+   "beispiel": "Dasselbe Gericht: Der Gast schmeckt oben, die Köchin denkt in der Mitte (Sauce, Beilage, Garzeit), der Allergiker liest ganz unten (Nüsse?)",
+   "einsicht": "Es gibt keine richtige Ebene, nur die passende für den Moment. Beim Essen bleibt man oben; wenn etwas schiefgeht, muss man nach unten.",
+   "hook": "Für dich ist es ein Gericht. Für ihn ist es eine Zutatenliste.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-10",
+   "thema": "Von unten oder von oben bauen",
+   "quelle": "Ideen-Tabelle Nr. 10",
+   "cta": "kurs",
+   "beispiel": "Aus dem Kühlschrank kochen (Zutaten → Gericht) oder ein Rezept nachkochen (Gericht → Einkauf)",
+   "einsicht": "Manche bauen ihr Weltbild aus Erfahrungen nach oben, andere starten mit einem großen Rahmen und füllen ihn. Beide haben typische Fehler.",
+   "hook": "Kochst du aus dem Kühlschrank oder aus dem Rezept?",
+   "status": "offen"
+  },
+  {
+   "id": "idee-11",
+   "thema": "Die unsichtbare unterste Ebene",
+   "quelle": "Ideen-Tabelle Nr. 11",
+   "cta": "whatsapp",
+   "beispiel": "Salz schmeckt man erst, wenn es fehlt",
+   "einsicht": "Grundannahmen wie Sicherheit, Vertrauen oder Gesundheit bemerkt man erst, wenn sie fehlen; sie tragen alles darüber.",
+   "hook": "Salz schmeckt man erst, wenn es fehlt.",
+   "status": "offen"
+  },
+  {
+   "id": "idee-12",
+   "thema": "Abschmecken heißt nach unten gehen",
+   "quelle": "Ideen-Tabelle Nr. 12",
+   "cta": "whatsapp",
+   "beispiel": "Ein Kind sagt „schmeckt nicht“, die Köchin sagt „da fehlt Säure“",
+   "einsicht": "Vom Gesamteindruck oben zu den einzelnen Zutaten zurückzugehen ist eine Fähigkeit. Im Weltbild heißt das: „Irgendwas stimmt nicht“ in einzelne Knoten zerlegen.",
+   "hook": "„Schmeckt nicht“ ist keine Antwort.",
+   "status": "offen"
+  }
+ ]
+}

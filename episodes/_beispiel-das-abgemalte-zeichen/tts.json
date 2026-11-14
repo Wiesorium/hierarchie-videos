@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Felix ist zehn. In Mathe schreibt er von der Tafel ab. Da steht ein Zeichen mit zwei Wellen, und Felix weiß nicht mehr, was es heißt. Also malt er es so ähnlich: zwei gerade Striche. Am nächsten Tag: ein roter Strich. Und Felix denkt: Ich kann Mathe nicht. [pause] Schau dir das als Knoten an. Ein Zeichen braucht darunter eine Bedeutung. Unter den zwei Wellen hängt bei Felix nichts. Also hängt er sie an das, was so ähnlich aussieht: das Ist-gleich. Er hat nicht falsch gerechnet. Er hat ein Bild abgemalt. [pause] Und der rote Strich? [pause] Der gehört ganz unten hin, zu dem einen Zeichen. Felix hängt ihn aber ganz oben auf: Ich kann Mathe nicht. Und das drückt auf alles, auch auf das, was er kann. [pause] Papa stellt eine Frage, die nicht nach Mathe klingt. [pause] „Wie lang brauchst du zur Schule?“ „Ungefähr zehn Minuten.“ „Genau zehn?“ „Nein, ungefähr.“ Da ist der Knoten darunter: Die zwei Wellen heißen ungefähr gleich. Jetzt hängt das Zeichen an einem Wort, das Felix jeden Tag sagt. Der rote Strich zeigt nur, wo etwas gefehlt hat. [pause] Was sagst du deinem Kind bei einem roten Strich im Heft? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind malt in Mathe ein Zeichen ab, das es nicht mehr kennt.",
+  "b": "[warmly] Ein roter Strich im Heft heißt nicht: Ich kann Mathe nicht.",
+  "c": "[warmly] Manche Fehler in Mathe sind gar keine Rechenfehler."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

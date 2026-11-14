@@ -1,0 +1,619 @@
+{
+ "slug": "das-abgemalte-zeichen",
+ "title": "Das abgemalte Zeichen",
+ "cta": "whatsapp",
+ "hero": "felix",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind malt in Mathe ein Zeichen ab, das es nicht mehr kennt.",
+   "card": [
+    "Dein Kind malt ein Zeichen ab,",
+    "das es nicht mehr kennt"
+   ]
+  },
+  "b": {
+   "label": "Roter Strich",
+   "audio": "Ein roter Strich im Heft heißt nicht: Ich kann Mathe nicht.",
+   "card": [
+    "Ein roter Strich heißt nicht:",
+    "Ich kann Mathe nicht"
+   ]
+  },
+  "c": {
+   "label": "Kein Rechenfehler",
+   "audio": "Manche Fehler in Mathe sind gar keine Rechenfehler.",
+   "card": [
+    "Manche Fehler in Mathe",
+    "sind gar keine Rechenfehler"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Felix ist zehn. In Mathe schreibt er von der Tafel ab. Da steht ein Zeichen mit zwei Wellen, und Felix weiß nicht mehr, was es heißt. Also malt er es so ähnlich: zwei gerade Striche. Am nächsten Tag: ein roter Strich. Und Felix denkt: Ich kann Mathe nicht.",
+  "block1": "Schau dir das als Knoten an. Ein Zeichen braucht darunter eine Bedeutung. Unter den zwei Wellen hängt bei Felix nichts. Also hängt er sie an das, was so ähnlich aussieht: das Ist-gleich. Er hat nicht falsch gerechnet. Er hat ein Bild abgemalt.",
+  "rehook1": "Und der rote Strich?",
+  "block2": "Der gehört ganz unten hin, zu dem einen Zeichen. Felix hängt ihn aber ganz oben auf: Ich kann Mathe nicht. Und das drückt auf alles, auch auf das, was er kann.",
+  "rehook2": "Papa stellt eine Frage, die nicht nach Mathe klingt.",
+  "block3": "„Wie lang brauchst du zur Schule?“ „Ungefähr zehn Minuten.“ „Genau zehn?“ „Nein, ungefähr.“ Da ist der Knoten darunter: Die zwei Wellen heißen ungefähr gleich. Jetzt hängt das Zeichen an einem Wort, das Felix jeden Tag sagt. Der rote Strich zeigt nur, wo etwas gefehlt hat.",
+  "closing": "Was sagst du deinem Kind bei einem roten Strich im Heft?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was sagst du deinem Kind",
+  "bei einem roten Strich im Heft?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "board",
+     "type": "prop",
+     "kind": "blackboard",
+     "x": 560,
+     "y": 720,
+     "w": 700,
+     "h": 340,
+     "text": [
+      "Runden",
+      "347 ≈ 350"
+     ],
+     "size": 66
+    },
+    {
+     "id": "felix",
+     "type": "figure",
+     "role": "boy",
+     "x": 290,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "weiß nicht mehr",
+       "mood": "worried"
+      },
+      {
+       "at": "ein roter Strich",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "desk",
+     "type": "prop",
+     "kind": "desk",
+     "x": 320,
+     "w": 380,
+     "h": 150,
+     "z": 3.5
+    },
+    {
+     "id": "frage1",
+     "type": "icon",
+     "kind": "question",
+     "x": 430,
+     "y": 1060,
+     "size": 84,
+     "in": "weiß nicht mehr",
+     "out": "Also malt er"
+    },
+    {
+     "id": "heft",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 770,
+     "y": 1180,
+     "w": 400,
+     "h": 280,
+     "text": [
+      "347 = 350"
+     ],
+     "size": 60,
+     "z": 4,
+     "enter": "pop",
+     "in": "Also malt er"
+    },
+    {
+     "id": "tag1",
+     "type": "tag",
+     "text": "nächster Tag",
+     "x": 770,
+     "y": 1375,
+     "color": "plum",
+     "in": "Am nächsten Tag"
+    },
+    {
+     "id": "strich",
+     "type": "icon",
+     "kind": "cross",
+     "x": 930,
+     "y": 1060,
+     "size": 96,
+     "in": "ein roter Strich"
+    },
+    {
+     "id": "denkt",
+     "type": "thought",
+     "from": "felix",
+     "text": "Ich kann *Mathe* nicht.",
+     "x": 400,
+     "y": 880,
+     "in": "Und Felix denkt"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "felix",
+     "type": "figure",
+     "role": "boy",
+     "x": 150,
+     "mood": "neutral"
+    },
+    {
+     "id": "n_welle",
+     "type": "node",
+     "x": 400,
+     "y": 700,
+     "w": 220,
+     "h": 110,
+     "label": "≈",
+     "size": 76,
+     "color": "idea"
+    },
+    {
+     "id": "n_bed",
+     "type": "node",
+     "x": 400,
+     "y": 960,
+     "w": 280,
+     "h": 100,
+     "label": "Bedeutung",
+     "in": "darunter eine Bedeutung",
+     "states": [
+      {
+       "at": "darunter eine Bedeutung",
+       "state": "empty"
+      }
+     ],
+     "emptyLabel": "Bedeutung"
+    },
+    {
+     "id": "l1",
+     "type": "link",
+     "from": "n_welle",
+     "to": "n_bed",
+     "style": "line",
+     "in": "darunter eine Bedeutung"
+    },
+    {
+     "id": "frage2",
+     "type": "icon",
+     "kind": "question",
+     "x": 580,
+     "y": 920,
+     "size": 76,
+     "in": "hängt bei Felix nichts"
+    },
+    {
+     "id": "n_gleich",
+     "type": "node",
+     "x": 800,
+     "y": 700,
+     "w": 200,
+     "h": 110,
+     "label": "=",
+     "size": 76,
+     "color": "fresh",
+     "in": "das Ist-gleich"
+    },
+    {
+     "id": "n_genau",
+     "type": "node",
+     "x": 800,
+     "y": 960,
+     "w": 290,
+     "h": 100,
+     "label": "genau gleich",
+     "in": "das Ist-gleich"
+    },
+    {
+     "id": "l2",
+     "type": "link",
+     "from": "n_gleich",
+     "to": "n_genau",
+     "style": "gold",
+     "in": "das Ist-gleich"
+    },
+    {
+     "id": "a1",
+     "type": "arrow",
+     "from": "n_welle",
+     "to": "n_gleich",
+     "style": "arrow",
+     "label": "so ähnlich",
+     "in": "so ähnlich aussieht"
+    },
+    {
+     "id": "tag2",
+     "type": "tag",
+     "text": "~nicht falsch gerechnet~",
+     "x": 640,
+     "y": 1180,
+     "in": "nicht falsch gerechnet"
+    },
+    {
+     "id": "stempel",
+     "type": "stamp",
+     "text": "Bild",
+     "x": 400,
+     "y": 575,
+     "in": "ein Bild abgemalt"
+    }
+   ]
+  },
+  {
+   "at": "Und der rote Strich",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "felix",
+     "type": "figure",
+     "role": "boy",
+     "x": 150,
+     "moods": [
+      {
+       "at": "ganz oben auf",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "kopf",
+     "type": "cabinet",
+     "x": 640,
+     "y": 560,
+     "w": 600,
+     "rows": [
+      [
+       "oben"
+      ],
+      [
+       "plus",
+       "minus",
+       "welle"
+      ],
+      [
+       "runden",
+       "mal"
+      ],
+      [
+       "bedeutung"
+      ]
+     ],
+     "drawers": {
+      "oben": {
+       "label": "Ich kann Mathe nicht.",
+       "color": "kids",
+       "in": "ganz oben auf",
+       "states": [
+        {
+         "at": "ganz oben auf",
+         "state": "heavy+red"
+        }
+       ]
+      },
+      "plus": {
+       "label": "Plus",
+       "color": "fresh",
+       "states": [
+        {
+         "at": "drückt auf alles",
+         "state": "shake"
+        },
+        {
+         "at": "was er kann",
+         "state": "check"
+        }
+       ]
+      },
+      "minus": {
+       "label": "Minus",
+       "color": "fresh",
+       "states": [
+        {
+         "at": "drückt auf alles",
+         "state": "shake"
+        },
+        {
+         "at": "was er kann",
+         "state": "check"
+        }
+       ]
+      },
+      "welle": {
+       "label": "≈",
+       "color": "idea",
+       "size": 52,
+       "states": [
+        {
+         "at": "zu dem einen Zeichen",
+         "state": "cross"
+        }
+       ]
+      },
+      "runden": {
+       "label": "Runden",
+       "color": "fresh",
+       "states": [
+        {
+         "at": "drückt auf alles",
+         "state": "shake"
+        },
+        {
+         "at": "was er kann",
+         "state": "check"
+        }
+       ]
+      },
+      "mal": {
+       "label": "Mal",
+       "color": "fresh",
+       "states": [
+        {
+         "at": "drückt auf alles",
+         "state": "shake"
+        },
+        {
+         "at": "was er kann",
+         "state": "check"
+        }
+       ]
+      },
+      "bedeutung": {
+       "label": "Bedeutung",
+       "states": [
+        {
+         "at": "Und der rote Strich",
+         "state": "empty"
+        }
+       ],
+       "emptyLabel": "Bedeutung"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "type": "arrow",
+     "from": {
+      "x": 920,
+      "y": 1290
+     },
+     "to": {
+      "x": 900,
+      "y": 760
+     },
+     "style": "red",
+     "bend": 160,
+     "in": "ganz oben auf"
+    }
+   ]
+  },
+  {
+   "at": "Papa stellt eine Frage",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "felix",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Nein ungefähr",
+       "mood": "wow"
+      },
+      {
+       "at": "jeden Tag sagt",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Ungefähr zehn Minuten",
+       "end:zehn Minuten"
+      ],
+      [
+       "Nein ungefähr",
+       "end:Nein ungefähr"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 780,
+     "look": "left",
+     "glasses": true,
+     "mood": "smile",
+     "talk": [
+      [
+       "Wie lang brauchst",
+       "end:zur Schule"
+      ],
+      [
+       "Genau zehn",
+       "end:Genau zehn"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Genau zehn",
+       "kind": "think",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 560,
+     "w": 640,
+     "h": 160,
+     "z": 3.5
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 900,
+     "y": 620,
+     "w": 130
+    },
+    {
+     "id": "b1",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Wie lang brauchst du zur Schule?",
+     "x": 700,
+     "y": 650,
+     "in": "Wie lang brauchst",
+     "out": "Genau zehn"
+    },
+    {
+     "id": "b2",
+     "type": "bubble",
+     "from": "felix",
+     "text": "*Ungefähr* zehn Minuten.",
+     "x": 380,
+     "y": 860,
+     "in": "Ungefähr zehn Minuten",
+     "out": "Nein ungefähr"
+    },
+    {
+     "id": "b3",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Genau zehn?",
+     "x": 760,
+     "y": 650,
+     "in": "Genau zehn",
+     "out": "Da ist der Knoten"
+    },
+    {
+     "id": "b4",
+     "type": "bubble",
+     "from": "felix",
+     "text": "Nein, *ungefähr*.",
+     "x": 380,
+     "y": 860,
+     "in": "Nein ungefähr",
+     "out": "Da ist der Knoten"
+    },
+    {
+     "id": "m_welle",
+     "type": "node",
+     "x": 540,
+     "y": 600,
+     "w": 220,
+     "h": 110,
+     "label": "≈",
+     "size": 76,
+     "color": "idea",
+     "in": "Da ist der Knoten"
+    },
+    {
+     "id": "m_bed",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 330,
+     "h": 100,
+     "label": "ungefähr gleich",
+     "in": "Da ist der Knoten",
+     "states": [
+      {
+       "at": "Da ist der Knoten",
+       "state": "empty"
+      },
+      {
+       "at": "heißen ungefähr gleich",
+       "state": "gold"
+      },
+      {
+       "at": "wo etwas gefehlt",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "l3",
+     "type": "link",
+     "from": "m_welle",
+     "to": "m_bed",
+     "style": "gold",
+     "in": "heißen ungefähr gleich"
+    },
+    {
+     "id": "tag3",
+     "type": "tag",
+     "text": "jeden Tag",
+     "x": 540,
+     "y": 985,
+     "color": "sage",
+     "in": "jeden Tag sagt"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "zwei Wellen",
+   "x": 560,
+   "y": 760
+  },
+  {
+   "at": "zwei gerade Striche",
+   "x": 770,
+   "y": 1180
+  },
+  {
+   "at": "ein roter Strich",
+   "x": 930,
+   "y": 1060
+  },
+  {
+   "at": "ein Bild abgemalt",
+   "x": 400,
+   "y": 575
+  },
+  {
+   "at": "ganz oben auf",
+   "x": 640,
+   "y": 660
+  },
+  {
+   "at": "drückt auf alles",
+   "x": 640,
+   "y": 900
+  },
+  {
+   "at": "Da ist der Knoten",
+   "x": 540,
+   "y": 600
+  },
+  {
+   "at": "heißen ungefähr gleich",
+   "x": 540,
+   "y": 830
+  }
+ ]
+}
