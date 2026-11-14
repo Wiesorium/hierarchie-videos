@@ -1,4 +1,23 @@
 {
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
- "videos": []
+ "videos": [
+  {
+   "datum": "2026-11-14",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-14-abend-der-fuenfer-im-rucksack",
+   "slug": "der-fuenfer-im-rucksack",
+   "titel": "Der Fünfer im Rucksack",
+   "idee": "schule-note",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind bringt eine schlechte Note heim und zeigt sie erst am Abend.",
+    "b": "Eine schlechte Note sagt viel weniger, als dein Kind glaubt.",
+    "c": "Vierzehn Fehler im Diktat, und zehn davon haben denselben Grund."
+   },
+   "dauer": null,
+   "flow_url": null,
+   "status": "wartet auf Stimme",
+   "hinweis": "elevenlabsusercontent.com war im Lauf gesperrt (CONNECT 403); keine Stimme erzeugt. Nächster Lauf macht ab RUNBOOK Schritt 4 weiter."
+  }
+ ]
 }

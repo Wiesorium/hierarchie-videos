@@ -1,0 +1,740 @@
+{
+ "slug": "der-fuenfer-im-rucksack",
+ "title": "Der Fünfer im Rucksack",
+ "cta": "whatsapp",
+ "hero": "emma",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind bringt eine schlechte Note heim und zeigt sie erst am Abend.",
+   "card": [
+    "Dein Kind zeigt die schlechte Note",
+    "erst am Abend"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Eine schlechte Note sagt viel weniger, als dein Kind glaubt.",
+   "card": [
+    "Eine schlechte Note sagt weniger,",
+    "als dein Kind glaubt"
+   ]
+  },
+  "c": {
+   "label": "Zahl",
+   "audio": "Vierzehn Fehler im Diktat, und zehn davon haben denselben Grund.",
+   "card": [
+    "14 Fehler im Diktat –",
+    "10 haben denselben Grund"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Emma ist neun. Den ganzen Nachmittag sagt sie nichts. Erst beim Zähneputzen kommt sie mit dem Heft: „Mama, du musst da noch was unterschreiben.“ Ein Fünfer im Diktat. Das Heft war den ganzen Tag im Rucksack. Und es war schwerer als alle Bücher.",
+  "block1": "Schau dir die Note als Knoten an. Ein Fünfer ist nur der Deckel. Darunter liegen vierzehn Fehler. Und zehn davon haben denselben Grund: Emma schreibt Namenwörter klein. Hund, Schule, Baum. Die Note sagt also nicht: Emma kann kein Deutsch. Sie sagt: Eine Regel fehlt.",
+  "rehook1": "Warum war das Heft dann so schwer?",
+  "block2": "Weil Emma den Fünfer nicht unten ablegt, bei der Regel. Sie legt ihn ganz oben ab: Ich bin schlecht. Und: Mama ist sicher enttäuscht. Auch bei Mama springt etwas nach oben: Wie soll das weitergehen? Das ist normal: Sorgen springen gern nach oben.",
+  "rehook2": "Dann stellt Mama eine ganz kleine Frage.",
+  "block3": "„Zeig mir ein Wort.“ Emma zeigt auf Hund. „Passt der, die oder das davor?“ „Der Hund.“ „Dann schreibst du ihn groß.“ Jetzt liegt der Fünfer wieder unten, bei einer Regel, die man üben kann. Und oben ist Platz für einen neuen Satz: Ich kann das lernen.",
+  "closing": "Was fragst du zuerst, wenn dein Kind eine schlechte Note heimbringt?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was fragst du zuerst, wenn dein Kind",
+  "eine schlechte Note heimbringt?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "rucksack",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 170,
+     "w": 150,
+     "h": 190,
+     "color": "#9FD3C7"
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 560,
+     "y": 640,
+     "w": 120
+    },
+    {
+     "id": "emma",
+     "type": "figure",
+     "role": "girl",
+     "x": 330,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "sagt sie nichts",
+       "mood": "worried"
+      },
+      {
+       "at": "Ein Fünfer",
+       "mood": "sad"
+      }
+     ],
+     "moves": [
+      {
+       "at": "kommt sie mit dem Heft",
+       "x": 420,
+       "dur": 0.9
+      }
+     ],
+     "talk": [
+      [
+       "Mama du musst",
+       "end:noch was unterschreiben"
+      ]
+     ]
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ein Fünfer",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "tag_nachm",
+     "type": "tag",
+     "text": "den ganzen Nachmittag",
+     "x": 560,
+     "y": 770,
+     "color": "plum",
+     "in": "Den ganzen Nachmittag",
+     "out": "Erst beim Zähneputzen"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "abends",
+     "x": 560,
+     "y": 770,
+     "color": "plum",
+     "in": "Erst beim Zähneputzen",
+     "out": "Mama du musst"
+    },
+    {
+     "id": "heft",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 610,
+     "y": 1130,
+     "w": 260,
+     "h": 180,
+     "text": [
+      "Diktat",
+      " "
+     ],
+     "size": 54,
+     "z": 4,
+     "enter": "pop",
+     "in": "kommt sie mit dem Heft"
+    },
+    {
+     "id": "b_unterschr",
+     "type": "bubble",
+     "from": "emma",
+     "text": "Mama, du musst da noch was *unterschreiben*.",
+     "x": 460,
+     "y": 880,
+     "maxW": 520,
+     "in": "Mama du musst",
+     "out": "Ein Fünfer"
+    },
+    {
+     "id": "st_fuenfer",
+     "type": "stamp",
+     "text": "Fünfer",
+     "x": 640,
+     "y": 1185,
+     "rot": -0.12,
+     "size": 60,
+     "z": 7.5,
+     "in": "Ein Fünfer"
+    },
+    {
+     "id": "tag_tag",
+     "type": "tag",
+     "text": "den ganzen Tag",
+     "x": 220,
+     "y": 1215,
+     "color": "plum",
+     "in": "den ganzen Tag im Rucksack"
+    },
+    {
+     "id": "st_schwer",
+     "type": "stamp",
+     "text": "schwer",
+     "x": 175,
+     "y": 1390,
+     "rot": 0.1,
+     "size": 52,
+     "in": "schwerer als alle Bücher"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir die Note als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "emma",
+     "type": "figure",
+     "role": "girl",
+     "x": 150,
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Eine Regel fehlt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "note",
+     "type": "tree",
+     "x": 600,
+     "y": 560,
+     "w": 760,
+     "rowGap": 190,
+     "nodeH": 100,
+     "levels": [
+      [
+       {
+        "id": "deckel",
+        "label": "Fünfer",
+        "color": "kids",
+        "size": 50,
+        "states": [
+         {
+          "at": "nur der Deckel",
+          "state": "heavy"
+         },
+         {
+          "at": "Darunter liegen",
+          "state": "normal"
+         }
+        ]
+       }
+      ],
+      [
+       {
+        "id": "fehler",
+        "label": "14 Fehler",
+        "in": "Darunter liegen"
+       }
+      ],
+      [
+       {
+        "id": "grund",
+        "label": "10 × Namenwort *klein*",
+        "color": "idea",
+        "in": "denselben Grund",
+        "states": [
+         {
+          "at": "Eine Regel fehlt",
+          "state": "glow"
+         }
+        ]
+       },
+       {
+        "id": "rest",
+        "label": "4 andere",
+        "in": "denselben Grund",
+        "states": [
+         {
+          "at": "denselben Grund",
+          "state": "dim"
+         }
+        ]
+       }
+      ],
+      [
+       {
+        "id": "woerter",
+        "label": "*hund* · *schule* · *baum*",
+        "in": "Hund Schule Baum"
+       }
+      ]
+     ],
+     "links": [
+      {
+       "from": "deckel",
+       "to": "fehler",
+       "style": "line",
+       "in": "Darunter liegen"
+      },
+      {
+       "from": "fehler",
+       "to": "grund",
+       "style": "gold",
+       "in": "denselben Grund"
+      },
+      {
+       "from": "fehler",
+       "to": "rest",
+       "style": "line",
+       "in": "denselben Grund"
+      },
+      {
+       "from": "grund",
+       "to": "woerter",
+       "style": "gold",
+       "in": "Hund Schule Baum"
+      }
+     ]
+    },
+    {
+     "id": "st_deckel",
+     "type": "stamp",
+     "text": "Deckel",
+     "x": 905,
+     "y": 600,
+     "rot": 0.08,
+     "size": 50,
+     "in": "nur der Deckel"
+    },
+    {
+     "id": "tag_kein",
+     "type": "tag",
+     "text": "Emma kann kein Deutsch",
+     "x": 600,
+     "y": 1345,
+     "color": "plum",
+     "in": "kann kein Deutsch",
+     "out": "Eine Regel fehlt"
+    },
+    {
+     "id": "x_kein",
+     "type": "icon",
+     "kind": "cross",
+     "x": 880,
+     "y": 1345,
+     "size": 76,
+     "in": "kann kein Deutsch",
+     "out": "Eine Regel fehlt"
+    },
+    {
+     "id": "tag_regel",
+     "type": "tag",
+     "text": "~Eine Regel fehlt.~",
+     "x": 600,
+     "y": 1345,
+     "in": "Eine Regel fehlt"
+    },
+    {
+     "id": "ok_regel",
+     "type": "icon",
+     "kind": "check",
+     "x": 830,
+     "y": 1345,
+     "size": 76,
+     "in": "Eine Regel fehlt"
+    }
+   ]
+  },
+  {
+   "at": "Warum war das Heft dann so schwer",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "emma",
+     "type": "figure",
+     "role": "girl",
+     "x": 150,
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "ganz oben ab",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "kopf",
+     "type": "cabinet",
+     "x": 700,
+     "y": 540,
+     "w": 500,
+     "rowH": 110,
+     "keep": true,
+     "rows": [
+      [
+       "schlecht"
+      ],
+      [
+       "enttaeuscht"
+      ],
+      [
+       "regel"
+      ]
+     ],
+     "drawers": {
+      "schlecht": {
+       "label": "Ich bin schlecht.",
+       "color": "kids",
+       "in": "Ich bin schlecht",
+       "states": [
+        {
+         "at": "Ich bin schlecht",
+         "state": "heavy+red"
+        },
+        {
+         "at": "Platz für einen neuen Satz",
+         "state": "empty"
+        }
+       ],
+       "emptyLabel": "neuer Satz"
+      },
+      "enttaeuscht": {
+       "label": "Mama ist sicher enttäuscht.",
+       "color": "kids",
+       "in": "Mama ist sicher enttäuscht",
+       "states": [
+        {
+         "at": "Mama ist sicher enttäuscht",
+         "state": "heavy+red"
+        },
+        {
+         "at": "Zeig mir ein Wort",
+         "state": "dim"
+        }
+       ]
+      },
+      "regel": {
+       "label": "Namenwörter *groß*",
+       "color": "fresh",
+       "emptyLabel": "Regel",
+       "states": [
+        {
+         "at": "Warum war das Heft",
+         "state": "empty"
+        },
+        {
+         "at": "Dann schreibst du ihn groß",
+         "state": "normal"
+        },
+        {
+         "at": "die man üben kann",
+         "state": "gold+check"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "fuenfer",
+     "type": "node",
+     "x": 860,
+     "y": 897,
+     "w": 130,
+     "h": 90,
+     "label": "5",
+     "size": 64,
+     "color": "kids",
+     "keep": true,
+     "in": "Weil Emma den Fünfer",
+     "z": 2.5,
+     "moves": [
+      {
+       "at": "ganz oben ab",
+       "x": 860,
+       "y": 645,
+       "dur": 0.6
+      },
+      {
+       "at": "wieder unten",
+       "x": 860,
+       "y": 897,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "pfeil_hoch",
+     "type": "arrow",
+     "from": {
+      "x": 1000,
+      "y": 900
+     },
+     "to": {
+      "x": 1000,
+      "y": 660
+     },
+     "style": "red",
+     "bend": 30,
+     "in": "ganz oben ab",
+     "out": "Auch bei Mama"
+    },
+    {
+     "id": "frage_regel",
+     "type": "icon",
+     "kind": "question",
+     "x": 560,
+     "y": 1030,
+     "size": 70,
+     "in": "bei der Regel",
+     "out": "Ich bin schlecht"
+    }
+   ]
+  },
+  {
+   "at": "Auch bei Mama springt",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "emma",
+     "type": "figure",
+     "role": "girl",
+     "x": 110,
+     "mood": "sad"
+    },
+    {
+     "id": "mama2",
+     "type": "figure",
+     "role": "mama",
+     "x": 320,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Das ist normal",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "denk_mama",
+     "type": "thought",
+     "from": "mama2",
+     "text": "Wie soll das *weitergehen*?",
+     "x": 240,
+     "y": 720,
+     "maxW": 300,
+     "in": "Auch bei Mama springt",
+     "out": "Sorgen springen"
+    },
+    {
+     "id": "tag_normal",
+     "type": "tag",
+     "text": "~normal~",
+     "x": 240,
+     "y": 880,
+     "in": "Das ist normal"
+    },
+    {
+     "id": "karte_sorgen",
+     "type": "card",
+     "lines": [
+      "Sorgen springen",
+      "gern *nach oben*."
+     ],
+     "x": 230,
+     "y": 700,
+     "size": 44,
+     "in": "Sorgen springen"
+    }
+   ]
+  },
+  {
+   "at": "Dann stellt Mama eine ganz kleine Frage",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "emma",
+     "type": "figure",
+     "role": "girl",
+     "x": 110,
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Der Hund",
+       "mood": "open"
+      },
+      {
+       "at": "die man üben kann",
+       "mood": "smile"
+      },
+      {
+       "at": "Ich kann das lernen",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Emma zeigt auf Hund",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Der Hund",
+       "end:Der Hund"
+      ]
+     ],
+     "hop": "Ich kann das lernen"
+    },
+    {
+     "id": "mama2",
+     "type": "figure",
+     "role": "mama",
+     "x": 320,
+     "look": "left",
+     "mood": "smile",
+     "talk": [
+      [
+       "Zeig mir ein Wort",
+       "end:Zeig mir ein Wort"
+      ],
+      [
+       "Passt der die",
+       "end:oder das davor"
+      ],
+      [
+       "Dann schreibst du",
+       "end:ihn groß"
+      ]
+     ]
+    },
+    {
+     "id": "b_zeig",
+     "type": "bubble",
+     "from": "mama2",
+     "text": "Zeig mir ein Wort.",
+     "x": 240,
+     "y": 720,
+     "in": "Zeig mir ein Wort",
+     "out": "Passt der die",
+     "size": 42
+    },
+    {
+     "id": "b_hund",
+     "type": "bubble",
+     "from": "emma",
+     "text": "*hund*",
+     "x": 170,
+     "y": 900,
+     "in": "Emma zeigt auf Hund",
+     "out": "Der Hund",
+     "size": 42
+    },
+    {
+     "id": "b_passt",
+     "type": "bubble",
+     "from": "mama2",
+     "text": "Passt *der, die* oder *das* davor?",
+     "x": 240,
+     "y": 700,
+     "maxW": 320,
+     "in": "Passt der die",
+     "out": "Dann schreibst du",
+     "size": 42
+    },
+    {
+     "id": "b_derhund",
+     "type": "bubble",
+     "from": "emma",
+     "text": "*Der* Hund.",
+     "x": 170,
+     "y": 900,
+     "in": "Der Hund",
+     "out": "Jetzt liegt der Fünfer",
+     "size": 42
+    },
+    {
+     "id": "b_gross",
+     "type": "bubble",
+     "from": "mama2",
+     "text": "Dann schreibst du ihn *groß*.",
+     "x": 240,
+     "y": 720,
+     "maxW": 320,
+     "in": "Dann schreibst du",
+     "out": "Jetzt liegt der Fünfer",
+     "size": 42
+    },
+    {
+     "id": "tag_ueben",
+     "type": "tag",
+     "text": "~zum Üben~",
+     "x": 700,
+     "y": 1030,
+     "in": "die man üben kann"
+    },
+    {
+     "id": "neu",
+     "type": "node",
+     "x": 700,
+     "y": 645,
+     "w": 468,
+     "h": 110,
+     "label": "Ich kann das *lernen*.",
+     "size": 44,
+     "color": "fresh",
+     "in": "Ich kann das lernen",
+     "z": 2.6
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Ein Fünfer im Diktat",
+   "x": 640,
+   "y": 1160
+  },
+  {
+   "at": "schwerer als alle Bücher",
+   "x": 175,
+   "y": 1390
+  },
+  {
+   "at": "nur der Deckel",
+   "x": 600,
+   "y": 610
+  },
+  {
+   "at": "denselben Grund",
+   "x": 405,
+   "y": 990
+  },
+  {
+   "at": "Eine Regel fehlt",
+   "x": 600,
+   "y": 1345
+  },
+  {
+   "at": "ganz oben ab",
+   "x": 860,
+   "y": 645
+  },
+  {
+   "at": "Dann schreibst du ihn groß",
+   "x": 700,
+   "y": 897
+  },
+  {
+   "at": "Ich kann das lernen",
+   "x": 700,
+   "y": 645
+  }
+ ]
+}

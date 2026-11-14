@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Emma ist neun. Den ganzen Nachmittag sagt sie nichts. Erst beim Zähneputzen kommt sie mit dem Heft: „Mama, du musst da noch was unterschreiben.“ Ein Fünfer im Diktat. Das Heft war den ganzen Tag im Rucksack. Und es war schwerer als alle Bücher. [pause] Schau dir die Note als Knoten an. Ein Fünfer ist nur der Deckel. Darunter liegen vierzehn Fehler. Und zehn davon haben denselben Grund: Emma schreibt Namenwörter klein. Hund, Schule, Baum. Die Note sagt also nicht: Emma kann kein Deutsch. Sie sagt: Eine Regel fehlt. [pause] Warum war das Heft dann so schwer? [pause] Weil Emma den Fünfer nicht unten ablegt, bei der Regel. Sie legt ihn ganz oben ab: Ich bin schlecht. Und: Mama ist sicher enttäuscht. Auch bei Mama springt etwas nach oben: Wie soll das weitergehen? Das ist normal: Sorgen springen gern nach oben. [pause] Dann stellt Mama eine ganz kleine Frage. [pause] „Zeig mir ein Wort.“ Emma zeigt auf Hund. „Passt der, die oder das davor?“ „Der Hund.“ „Dann schreibst du ihn groß.“ Jetzt liegt der Fünfer wieder unten, bei einer Regel, die man üben kann. Und oben ist Platz für einen neuen Satz: Ich kann das lernen. [pause] Was fragst du zuerst, wenn dein Kind eine schlechte Note heimbringt? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind bringt eine schlechte Note heim und zeigt sie erst am Abend.",
+  "b": "[warmly] Eine schlechte Note sagt viel weniger, als dein Kind glaubt.",
+  "c": "[warmly] Vierzehn Fehler im Diktat, und zehn davon haben denselben Grund."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
