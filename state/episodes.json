@@ -14,10 +14,19 @@
     "b": "Eine schlechte Note sagt viel weniger, als dein Kind glaubt.",
     "c": "Vierzehn Fehler im Diktat, und zehn davon haben denselben Grund."
    },
-   "dauer": null,
-   "flow_url": null,
-   "status": "wartet auf Stimme",
-   "hinweis": "elevenlabsusercontent.com war im Lauf gesperrt (CONNECT 403); keine Stimme erzeugt. Nächster Lauf macht ab RUNBOOK Schritt 4 weiter."
+   "dauer": {
+    "a": 90.37,
+    "b": 90.1,
+    "c": 90.83
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/KMtmHkkpdxpUkihACNmK",
+   "status": "fertig",
+   "hinweis": "Erst gesperrt (elevenlabsusercontent.com), nach Freigabe am selben Abend fertiggestellt.",
+   "dateien": [
+    "der-fuenfer-im-rucksack-hook-a.mp4",
+    "der-fuenfer-im-rucksack-hook-b.mp4",
+    "der-fuenfer-im-rucksack-hook-c.mp4"
+   ]
   }
  ]
 }
