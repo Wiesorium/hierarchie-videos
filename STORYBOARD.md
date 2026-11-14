@@ -77,10 +77,10 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 ```
 - `role`: `mama`, `papa`, `woman`, `man`, `oma`, `opa`, `teacher`, `girl`, `boy`, `teen`, `toddler`
 - optional: `shirt`, `pants`, `hair` (`bun`, `ponytail`, `short`, `spiky`, `long`, `bald`), `hairColor` (`brown`, `dark`, `blond`, `red`, `grey`, `black`), `glasses`, `scale`, `pose: "sit"`
-- seit 14.11.2026 zusätzlich: `skin` (`light`, `medium`, `tan`, `brown`, `dark`), `outfit` (`cardigan`, `shirt`, `polo`, `sweater`,
-  `blouse`, `top`, `hoodie`, `tee`, `dress`, `overall`), `shoes` (Farbe), `freckles`. Jede Rolle hat dafür passende Vorgaben
-  (Mama: Strickjacke und Dutt, Mädchen: Punktekleid und Pferdeschwanz, Opa: Pullover und Glatze mit grauem Haarkranz).
-- Kinder haben eigene Proportionen (größerer Kopf, kürzerer Körper). Arme sind abgewinkelt; `think` legt die Hand ans Kinn.
+- optional außerdem: `skin` (`light`, `medium`, `tan`, `brown`, `dark`).
+- Aussehen wie in den freigegebenen Reels (Bild im Brand-Style-Doc): Haar als Papierkappe mit geradem Schnitt, Dutt bzw.
+  Pferdeschwanz auf der Rückseite, Punktaugen, eine rosa Wange auf der Blickseite, Ärmel und hautfarbene Unterarme,
+  schmale Beine ohne Schuhe. `look` dreht Gesicht und Wange; `think` legt die Hand ans Kinn.
 - `mood`: `smile`, `happy`, `grin`, `laugh`, `open`, `wow`, `sad`, `worried`, `scared`, `neutral`
 - `gestures.kind`: `wave`, `point`, `cheer`, `raise`, `shrug`, `think`, `hug`
 - `talk`: Zeitspannen, in denen sich der Mund mit der Stimme bewegt (für zitierte Sätze der Figur)
