@@ -14,8 +14,11 @@ Alltagssituation mit Familie oder Freunden. Ein Lauf läuft ohne Freigaben durch
 2. Netz prüfen, **bevor** Credits ausgegeben werden:
    `curl -sS -m 20 -o /dev/null -w "%{http_code}\n" https://elevenlabsusercontent.com/` – eine Zahl wie 403/404 heißt erreichbar.
    `000` mit „CONNECT tunnel failed“ heißt gesperrt. Dann **keine Stimme erzeugen**: Skript und Storyboard trotzdem schreiben,
-   committen (Status „wartet auf Freigabe“ in `state/episodes.json`) und Martin schreiben, dass `elevenlabsusercontent.com`
-   auf claude.ai unter Einstellungen → Capabilities als erlaubte Domain fehlt. Lauf beenden.
+   in `state/episodes.json` mit `"status": "wartet auf Stimme"` und dem Ordner eintragen, die Idee in `state/ideas.json` auf
+   `"in Arbeit"` setzen, committen und pushen und Martin schreiben, dass `elevenlabsusercontent.com` als erlaubte Domain
+   fehlt (claude.ai → Einstellungen → Capabilities bzw. Netzwerkzugriff der Umgebung der geplanten Aufgabe). Lauf beenden.
+   Der nächste Lauf macht mit dieser Episode weiter, wenn die Domain offen ist; sonst sagt er es Martin nur kurz noch einmal
+   und schreibt kein weiteres Skript auf Vorrat.
 3. `STYLE.md` und `STORYBOARD.md` lesen. Im Produktions-Doc (Claude Docs, Projekt `a83f7a69-31ce-4e4b-a050-9b71528447a9`)
    die Abschnitte „Arbeitsweise“ und „Feste Vorgaben“ lesen (`mcp__Claude_Docs__read` mit
    `{"kind": "search", "blocks": {"first": "mvv29m4cc9a.57", "last": "mvv29m4cc9a.220848"}}` auf Knoten `51a3d00d-1e64`).
@@ -23,6 +26,9 @@ Alltagssituation mit Familie oder Freunden. Ein Lauf läuft ohne Freigaben durch
 
 ## 1. Thema wählen
 
+- **Zuerst offene Arbeit fortsetzen:** Steht in `state/episodes.json` ein Eintrag mit `"status": "wartet auf Stimme"`
+  (ein früherer Lauf kam nicht an die Stimme), diesen Episode-Ordner übernehmen und bei Schritt 4 weitermachen.
+  Dann kein neues Thema anfangen.
 - `state/ideas.json`: die erste Idee mit `"status": "offen"`. Ihr Beispiel nutzen, wenn eines dasteht; sonst ein eigenes
   konkretes Alltagsbeispiel mit Familie oder Freunden erfinden (Namen und Alter, eine Szene, die jeder kennt).
 - Ist keine Idee offen: selbst ein Thema wählen, das in `state/episodes.json` noch nicht vorkommt, mit Familie oder Freunden,
@@ -85,7 +91,8 @@ nach den Regeln in STYLE.md, dann `python3 tools/add_caption.py <EP>`.
 3. Produktions-Doc: am Ende einen Abschnitt `## Fertig (automatisch): <Titel>` anfügen mit Datum, Thema/Idee, CTA, den drei
    Hooks, dem Skript und den Dateinamen (Docs-Tool `update`, `insert` mit `{"kind": "root"}`, `"side": "end"`).
 4. `state/ideas.json`: genutzte Idee auf `"status": "erledigt"` mit Datum setzen. `state/episodes.json`: Eintrag oben anfügen
-   (datum, slot morgen/abend, slug, titel, idee, cta, hooks, dauer, flow_url).
+   oder den wartenden Eintrag aktualisieren (datum, slot morgen/abend, ordner, slug, titel, idee, cta, hooks, dauer,
+   flow_url, `"status": "fertig"`).
 5. Committen und pushen (Storyboard, Skript, tts.json, captions, words.json, state – keine MP3/MP4):
    `git add -A && git commit -m "Video: <Titel>" && git -c push.negotiate=true push origin main`.
 6. Zum Schluss `SendUserMessage` an Martin: Titel, welches Thema/Beispiel, die drei Hooks, die Instagram-Caption, was
