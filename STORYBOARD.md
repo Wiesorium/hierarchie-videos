@@ -139,7 +139,8 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
 - `stamp`: `{"text": "Bild", "x", "y", "rot": -0.09, "size": 58}` – schräger Rosé-Stempel für Schlüsselwörter
 - `tag`: `{"text": "nächster Tag", "x", "y", "color": "plum"}` – weiße Pille
 - `icon`: `{"kind": "bulb", "x", "y", "size": 90}` – `bulb`, `check`, `cross`, `question`, `exclaim`, `heart`, `star`, `moon`,
-  `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`
+  `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`, `hedgehog`
+  (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn)
 
 ## Was die Engine selbst macht
 

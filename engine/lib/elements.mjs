@@ -262,11 +262,50 @@ export function drawIcon(ctx, e, t) {
     case 'rain': drawIcon(ctx, { kind: 'cloud', x, y: y - s * 0.15, size: s }, t); ctx.strokeStyle = C.water2; ctx.lineWidth = 6; ctx.lineCap = 'round'; for (let i = -1; i <= 1; i++) { const o = ((t * 2 + i * 0.3) % 1) * s * 0.3; ctx.beginPath(); ctx.moveTo(x + i * s * 0.22, y + s * 0.1 + o); ctx.lineTo(x + i * s * 0.22 - 6, y + s * 0.22 + o); ctx.stroke(); } break;
     case 'zzz': richText(ctx, 'z z z', x, y, s * 0.5, C.plum); break;
     case 'note': fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x - s * 0.12, y + s * 0.25, s * 0.17, s * 0.13, -0.4, 0, 7); }, c || C.plum, { depth: 0.4 }); ctx.fillStyle = c || C.plum; ctx.fillRect(x + s * 0.02, y - s * 0.4, s * 0.07, s * 0.65); ctx.fillRect(x + s * 0.02, y - s * 0.4, s * 0.3, s * 0.08); break;
+    case 'hedgehog': drawHedgehog(ctx, x, y, s, c, e.look === 'left', t); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog'];
+
+// A paper-cut hedgehog: spiky brown dome, cream face cone, dot eye, pink cheek, standing on y + 0.3 s. Faces right unless flipped.
+function drawHedgehog(ctx, x, y, s, c, flip, t) {
+  ctx.save(); ctx.translate(x, y); if (flip) ctx.scale(-1, 1);
+  const breathe = 1 + Math.sin((t || 0) * 2.2) * 0.012; ctx.scale(breathe, 1 / breathe);
+  const base = s * 0.3;
+  // little feet
+  for (const fx of [-0.26, 0.12]) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(fx * s, base - s * 0.02, s * 0.08, s * 0.05, 0, 0, 7); }, '#8E6A50', { depth: 0.3 });
+  // spiky back: zigzag along a dome from the tail to the neck
+  fillShape(ctx, () => {
+    ctx.beginPath(); ctx.moveTo(-s * 0.5, base);
+    const n = 17, cx = -s * 0.06, rx = s * 0.46, ry = s * 0.5;
+    for (let i = 0; i <= n; i++) {
+      const a = Math.PI + (i / n) * Math.PI * 0.82; const k = i % 2 ? 1.17 : 0.97;
+      ctx.lineTo(cx + Math.cos(a) * rx * k, base - 0.02 * s + Math.sin(a) * ry * k);
+    }
+    ctx.lineTo(s * 0.3, base); ctx.closePath();
+  }, c || '#A9805F', { depth: 0.7 });
+  // inner lighter spikes for the paper layer look
+  fillShape(ctx, () => {
+    ctx.beginPath(); ctx.moveTo(-s * 0.38, base - s * 0.04);
+    const n = 13, cx = -s * 0.06, rx = s * 0.33, ry = s * 0.36;
+    for (let i = 0; i <= n; i++) { const a = Math.PI + (i / n) * Math.PI * 0.8; const k = i % 2 ? 1.12 : 0.96; ctx.lineTo(cx + Math.cos(a) * rx * k, base - 0.04 * s + Math.sin(a) * ry * k); }
+    ctx.closePath();
+  }, '#C49A76', { sh: false });
+  // face cone pointing forward
+  fillShape(ctx, () => {
+    ctx.beginPath(); ctx.moveTo(s * 0.12, base - s * 0.36);
+    ctx.quadraticCurveTo(s * 0.42, base - s * 0.3, s * 0.6, base - s * 0.1);
+    ctx.quadraticCurveTo(s * 0.5, base + s * 0.01, s * 0.12, base); ctx.closePath();
+  }, '#F1D6B8', { depth: 0.5 });
+  // nose, eye, cheek, ear
+  ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(s * 0.6, base - s * 0.1, s * 0.045, 0, 7); ctx.fill();
+  ctx.beginPath(); ctx.arc(s * 0.33, base - s * 0.2, s * 0.03, 0, 7); ctx.fill();
+  ctx.fillStyle = C.cheek; ctx.globalAlpha *= 0.7; ctx.beginPath(); ctx.ellipse(s * 0.34, base - s * 0.09, s * 0.05, s * 0.032, 0, 0, 7); ctx.fill(); ctx.globalAlpha /= 0.7;
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(s * 0.17, base - s * 0.33, s * 0.05, s * 0.06, -0.3, 0, 7); }, '#E2BC98', { sh: false });
+  ctx.restore();
+}
 
 export function drawSparks(ctx, x, y, t, t0, scale = 1) {
   const u = (t - t0) / 0.55; if (u < 0 || u > 1) return;

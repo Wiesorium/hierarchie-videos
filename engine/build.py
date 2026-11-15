@@ -24,7 +24,7 @@ TYPES = {'figure', 'prop', 'cabinet', 'tree', 'node', 'link', 'arrow', 'card', '
 PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book', 'cup', 'plate', 'clock', 'sofa', 'tree', 'bench', 'door',
               'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
-         'pencil', 'cloud', 'rain', 'zzz', 'note'}
+         'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
 MOODS = {'smile', 'happy', 'grin', 'laugh', 'open', 'wow', 'sad', 'worried', 'scared', 'neutral'}
 GESTURES = {'wave', 'point', 'cheer', 'raise', 'shrug', 'think', 'hug'}
