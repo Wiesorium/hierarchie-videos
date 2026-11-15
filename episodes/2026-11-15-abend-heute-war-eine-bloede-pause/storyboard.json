@@ -1,0 +1,146 @@
+{
+ "slug": "heute-war-eine-bloede-pause",
+ "title": "Heute war eine blöde Pause",
+ "cta": "whatsapp",
+ "hero": "lena",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind kommt heim und sagt: In der Pause hat heute niemand mit mir gespielt.",
+   "card": ["Heute in der Pause", "hat niemand mit mir gespielt"]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Eine einsame Pause macht noch kein einsames Kind.",
+   "card": ["Eine einsame Pause", "macht noch kein einsames Kind"]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Niemand mag mich“: Dieser große Satz steht oft auf einer einzigen Pause.",
+   "card": ["„Niemand mag mich.“", "steht oft auf einer einzigen Pause"]
+  }
+ },
+ "script": {
+  "lockin": "Lena ist acht. Nach der Schule ist sie ganz still. Dann sagt sie: „In der Pause hat niemand mit mir gespielt. Niemand mag mich.“ Eine Pause, und daraus wird ein Satz über alles.",
+  "block1": "Schau dir das als Schrank an. Oben liegen große Sätze, unten die Erlebnisse, auf denen sie stehen. Oben liegt jetzt: Niemand mag mich. Und darunter? Nur eine einzige Schublade: heute, allein an der Wand. Die anderen Schubladen sind nicht weg, nur gerade zu.",
+  "rehook1": "Jetzt kommt der Satz, den fast alle Eltern sagen.",
+  "block2": "Mama sagt: „Doch, alle mögen dich!“ Das ist lieb gemeint. Aber es ist nur ein zweiter großer Satz, ganz ohne Schublade darunter. Lena schüttelt den Kopf.",
+  "rehook2": "Dann fragt Mama etwas viel Kleineres.",
+  "block3": "„Mit wem hast du am Montag gespielt?“ „Mit Ida. Wir haben Fangen gespielt.“ „Und am Mittwoch?“ „Mit Sara. Wir haben Kastanien gesammelt.“ Unten gehen die Schubladen wieder auf. Der große Satz stimmt so nicht mehr. Ein kleinerer passt besser: Heute war eine blöde Pause. Ein bisschen traurig ist Lena trotzdem. Aber morgen fragt sie Ida, ob sie mitspielen darf.",
+  "closing": "Welcher große Satz deines Kindes steht nur auf einem einzigen Tag?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": ["Welcher große Satz deines Kindes", "steht nur auf einem einzigen Tag?"],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {"id": "tuer", "type": "prop", "kind": "door", "x": 570},
+    {"id": "lena", "type": "figure", "role": "girl", "x": 330, "look": "right", "mood": "neutral",
+     "moods": [{"at": "ganz still", "mood": "worried"}, {"at": "Niemand mag mich", "mood": "sad"}],
+     "talk": [["In der Pause hat", "end:Niemand mag mich"]]},
+    {"id": "mama", "type": "figure", "role": "mama", "x": 800, "look": "left", "mood": "smile",
+     "moods": [{"at": "ganz still", "mood": "open"}, {"at": "Niemand mag mich", "mood": "worried"}]},
+    {"id": "rucksack", "type": "prop", "kind": "backpack", "x": 175, "z": 3.5, "enter": "hop", "in": "Nach der Schule"},
+    {"id": "tag_schule", "type": "tag", "text": "nach der Schule", "x": 560, "y": 610, "color": "plum", "in": "Nach der Schule", "out": "Eine Pause"},
+    {"id": "b_niemand", "type": "bubble", "from": "lena", "text": "In der Pause hat *niemand* mit mir gespielt. Niemand mag *mich*.",
+     "x": 420, "y": 930, "maxW": 470, "in": "In der Pause hat", "out": "Eine Pause"},
+    {"id": "tag_pause", "type": "tag", "text": "eine Pause", "x": 300, "y": 800, "color": "plum", "in": "Eine Pause"},
+    {"id": "pfeil_alles", "type": "arrow", "from": {"x": 430, "y": 800}, "to": {"x": 600, "y": 800}, "style": "arrow", "in": "daraus wird"},
+    {"id": "st_alles", "type": "stamp", "text": "über alles", "x": 770, "y": 800, "rot": -0.08, "size": 66, "in": "Satz über alles"}
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {"id": "lena", "type": "figure", "role": "girl", "x": 150, "look": "right", "mood": "sad",
+     "moods": [{"at": "Die anderen Schubladen", "mood": "neutral"}]},
+    {"id": "kopf", "type": "cabinet", "x": 660, "y": 600, "w": 500, "rowH": 108, "keep": true,
+     "sideLabels": ["oben", "unten"],
+     "rows": [["satz"], [], ["heute"], ["montag"], ["mittwoch"]],
+     "drawers": {
+      "satz": {"label": "Niemand mag *mich*.", "color": "kids", "in": "Oben liegt jetzt",
+               "states": [{"at": "Oben liegt jetzt", "state": "heavy+red"},
+                          {"at": "Der große Satz stimmt", "state": "heavy+red+shake"},
+                          {"at": "end:stimmt so nicht mehr", "state": "dim"}]},
+      "heute": {"label": "heute: *allein* an der Wand", "color": "baby", "in": "Nur eine einzige Schublade",
+                "states": [{"at": "Nur eine einzige Schublade", "state": "glow"},
+                           {"at": "Die anderen Schubladen", "state": "normal"}]},
+      "montag": {"label": "Montag: *Ida*, Fangen", "color": "fresh", "in": "Die anderen Schubladen",
+                 "states": [{"at": "Die anderen Schubladen", "state": "dim"},
+                            {"at": "Mit Ida", "state": "glow"},
+                            {"at": "wieder auf", "state": "gold+check"}]},
+      "mittwoch": {"label": "Mittwoch: *Sara*, Kastanien", "color": "fresh", "in": "Die anderen Schubladen",
+                   "states": [{"at": "Die anderen Schubladen", "state": "dim"},
+                              {"at": "Mit Sara", "state": "glow"},
+                              {"at": "wieder auf", "state": "gold+check"}]}
+     }},
+    {"id": "l_trag", "type": "link", "from": "heute", "to": "satz", "style": "gold", "in": "Nur eine einzige Schublade+0.5",
+     "keep": true, "out": "Der große Satz stimmt"},
+    {"id": "st_nur", "type": "stamp", "text": "nur eine", "x": 850, "y": 900, "rot": 0.1, "size": 50,
+     "in": "Nur eine einzige", "out": "Die anderen Schubladen"}
+   ]
+  },
+  {
+   "at": "Jetzt kommt der Satz",
+   "chord": "Bm",
+   "elements": [
+    {"id": "lena", "type": "figure", "role": "girl", "x": 110, "look": "right", "mood": "neutral",
+     "moods": [{"at": "Doch alle mögen dich", "mood": "worried"}, {"at": "schüttelt den Kopf", "mood": "sad"}]},
+    {"id": "mama2", "type": "figure", "role": "mama", "x": 290, "look": "left", "mood": "smile",
+     "moods": [{"at": "schüttelt den Kopf", "mood": "worried"}],
+     "talk": [["Doch alle mögen dich", "end:Doch alle mögen dich"]]},
+    {"id": "b_doch", "type": "bubble", "from": "mama2", "text": "Doch, alle mögen *dich*!", "x": 245, "y": 740, "maxW": 330, "size": 44,
+     "in": "Mama sagt", "out": "nur ein zweiter"},
+    {"id": "tag_lieb", "type": "tag", "text": "lieb gemeint", "x": 245, "y": 880, "color": "plum", "in": "lieb gemeint", "out": "schüttelt den Kopf"},
+    {"id": "doch", "type": "node", "x": 660, "y": 545, "w": 400, "h": 88, "label": "Alle mögen *dich*!", "size": 44, "color": "idea",
+     "z": 2.6, "enter": "pop", "in": "zweiter großer Satz",
+     "states": [{"at": "ohne Schublade", "state": "question"},
+                {"at": "schüttelt den Kopf", "state": "question+shake"},
+                {"at": "end:den Kopf", "state": "dim+cross"}]}
+   ]
+  },
+  {
+   "at": "Dann fragt Mama etwas",
+   "chord": "D",
+   "elements": [
+    {"id": "lena", "type": "figure", "role": "girl", "x": 110, "look": "right", "mood": "neutral",
+     "moods": [{"at": "Mit Ida", "mood": "open"}, {"at": "Mit Sara", "mood": "smile"},
+               {"at": "Ein kleinerer passt", "mood": "happy"}, {"at": "Ein bisschen traurig", "mood": "neutral"},
+               {"at": "Aber morgen fragt", "mood": "smile"}],
+     "gestures": [{"at": "Und am Mittwoch", "kind": "think", "dur": 1.0}],
+     "talk": [["Mit Ida", "end:Fangen gespielt"], ["Mit Sara", "end:Kastanien gesammelt"]],
+     "hop": "mitspielen darf"},
+    {"id": "mama2", "type": "figure", "role": "mama", "x": 290, "look": "left", "mood": "smile",
+     "moods": [{"at": "Mit Ida", "mood": "happy"}, {"at": "Ein bisschen traurig", "mood": "smile"}],
+     "talk": [["Mit wem hast du", "end:am Montag gespielt"], ["Und am Mittwoch", "end:Und am Mittwoch"]]},
+    {"id": "b_wem", "type": "bubble", "from": "mama2", "text": "Mit wem hast du am *Montag* gespielt?", "x": 245, "y": 720, "maxW": 330, "size": 42,
+     "in": "Mit wem hast du", "out": "Mit Ida"},
+    {"id": "b_ida", "type": "bubble", "from": "lena", "text": "Mit *Ida*. Fangen!", "x": 200, "y": 900, "maxW": 320, "size": 42,
+     "in": "Mit Ida", "out": "Und am Mittwoch"},
+    {"id": "b_mi", "type": "bubble", "from": "mama2", "text": "Und am *Mittwoch*?", "x": 245, "y": 720, "maxW": 330, "size": 42,
+     "in": "Und am Mittwoch", "out": "Mit Sara"},
+    {"id": "b_sara", "type": "bubble", "from": "lena", "text": "Mit *Sara*. Kastanien!", "x": 200, "y": 900, "maxW": 320, "size": 42,
+     "in": "Mit Sara", "out": "Unten gehen die"},
+    {"id": "neu", "type": "node", "x": 660, "y": 828, "w": 468, "h": 104, "label": "*Heute* war eine blöde Pause.", "size": 42,
+     "color": "fresh", "z": 2.6, "in": "Ein kleinerer passt",
+     "states": [{"at": "Ein kleinerer passt", "state": "glow"}, {"at": "mitspielen darf", "state": "gold"}]},
+    {"id": "tag_traurig", "type": "tag", "text": "ein bisschen traurig", "x": 240, "y": 760, "color": "plum",
+     "in": "Ein bisschen traurig", "out": "Aber morgen fragt"},
+    {"id": "tag_morgen", "type": "tag", "text": "morgen: Ida fragen", "x": 240, "y": 760, "color": "rose", "in": "Aber morgen fragt"}
+   ]
+  }
+ ],
+ "hits": [
+  {"at": "Niemand mag mich", "x": 420, "y": 930},
+  {"at": "Satz über alles", "x": 770, "y": 800},
+  {"at": "Niemand mag mich#2", "x": 660, "y": 704},
+  {"at": "Nur eine einzige Schublade", "x": 660, "y": 952},
+  {"at": "zweiter großer Satz", "x": 660, "y": 545},
+  {"at": "Mit Ida", "x": 660, "y": 1076},
+  {"at": "Mit Sara", "x": 660, "y": 1200},
+  {"at": "Ein kleinerer passt", "x": 660, "y": 828}
+ ]
+}

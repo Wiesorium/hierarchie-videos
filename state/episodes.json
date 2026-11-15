@@ -3,6 +3,33 @@
  "videos": [
   {
    "datum": "2026-11-15",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-15-abend-heute-war-eine-bloede-pause",
+   "slug": "heute-war-eine-bloede-pause",
+   "titel": "Heute war eine blöde Pause",
+   "idee": "schule-pause",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind kommt heim und sagt: In der Pause hat heute niemand mit mir gespielt.",
+    "b": "Eine einsame Pause macht noch kein einsames Kind.",
+    "c": "„Niemand mag mich“: Dieser große Satz steht oft auf einer einzigen Pause."
+   },
+   "dauer": {
+    "a": 95.3,
+    "b": 94.37,
+    "c": 95.87
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/RaIThVBEhj56buePzHZB",
+   "status": "fertig",
+   "hinweis": "Beispiel selbst gewählt (Idee hatte keines). Hauptteil der Stimme 88,9 s, Videos damit etwa 95 s (über dem 90-s-Ziel, innerhalb 50–100 s).",
+   "dateien": [
+    "heute-war-eine-bloede-pause-hook-a.mp4",
+    "heute-war-eine-bloede-pause-hook-b.mp4",
+    "heute-war-eine-bloede-pause-hook-c.mp4"
+   ]
+  },
+  {
+   "datum": "2026-11-15",
    "slot": "morgen",
    "ordner": "episodes/2026-11-15-morgen-alle-schauen-den-igel-an",
    "slug": "alle-schauen-den-igel-an",

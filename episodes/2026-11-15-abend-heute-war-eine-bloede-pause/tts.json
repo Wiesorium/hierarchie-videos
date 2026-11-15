@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Lena ist acht. Nach der Schule ist sie ganz still. Dann sagt sie: „In der Pause hat niemand mit mir gespielt. Niemand mag mich.“ Eine Pause, und daraus wird ein Satz über alles. [pause] Schau dir das als Schrank an. Oben liegen große Sätze, unten die Erlebnisse, auf denen sie stehen. Oben liegt jetzt: Niemand mag mich. Und darunter? Nur eine einzige Schublade: heute, allein an der Wand. Die anderen Schubladen sind nicht weg, nur gerade zu. [pause] Jetzt kommt der Satz, den fast alle Eltern sagen. [pause] Mama sagt: „Doch, alle mögen dich!“ Das ist lieb gemeint. Aber es ist nur ein zweiter großer Satz, ganz ohne Schublade darunter. Lena schüttelt den Kopf. [pause] Dann fragt Mama etwas viel Kleineres. [pause] „Mit wem hast du am Montag gespielt?“ „Mit Ida. Wir haben Fangen gespielt.“ „Und am Mittwoch?“ „Mit Sara. Wir haben Kastanien gesammelt.“ Unten gehen die Schubladen wieder auf. Der große Satz stimmt so nicht mehr. Ein kleinerer passt besser: Heute war eine blöde Pause. Ein bisschen traurig ist Lena trotzdem. Aber morgen fragt sie Ida, ob sie mitspielen darf. [pause] Welcher große Satz deines Kindes steht nur auf einem einzigen Tag? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind kommt heim und sagt: In der Pause hat heute niemand mit mir gespielt.",
+  "b": "[warmly] Eine einsame Pause macht noch kein einsames Kind.",
+  "c": "[warmly] „Niemand mag mich“: Dieser große Satz steht oft auf einer einzigen Pause."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
