@@ -106,6 +106,8 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 - `rows`: von oben (Ideen, Begriffe) nach unten (Erlebnisse, Dinge, Personen). Jede Reihe teilt sich die Breite.
 - Schublade: `label`, `sub` (zweite Zeile, Pflaume), `color`, `size`, `icon`, `in` (rastet mit Hopser ein), `states`, `emptyLabel`.
 - optional: `title` (über dem Schrank), `sideLabels: ["oben", "unten"]`.
+- Aussehen wie in den freigegebenen Reels: Holzrahmen, cremefarbenes Inneres mit Regalbrettern, Schubladen als Pastell-Karten
+  (Beschriftung links, ohne Knauf), leere Fächer bis zu den kurzen Beinen am Boden (`legs`: Beinlänge, Standard 64).
 
 ### Zustände (`states`) für Schubladen und Knoten
 `normal`, `empty` (gestrichelter leerer Platz mit „?“ oder `emptyLabel`), `glow` (pulsiert golden), `gold` (Goldrahmen),

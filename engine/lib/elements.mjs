@@ -23,7 +23,9 @@ export function layoutCabinet(e) {
     row.forEach((id, ci) => { rects[id] = { x: x0 + gap + ci * (dw + gap), y: ry, w: dw, h: rowH, owner: e.id, row: ri }; });
   });
   const h = cornice + gap + rows.length * (rowH + gap);
-  e._frame = { x: x0, y: y0, w, h };
+  // like the approved reels: the cabinet stands on short legs, empty shelves fill the space below the drawers
+  const legLen = e.legs ?? 64; const full = Math.max(h + 10, (e.ground ?? GROUND) - legLen - y0);
+  e._frame = { x: x0, y: y0, w, h: full, content: h, rowH, gap, top: y0 + cornice + gap, rows: rows.length };
   e._rects = rects; return rects;
 }
 
@@ -69,27 +71,33 @@ function drawerBox(ctx, r, d, t, st, alphaBase = 1) {
   const cx = r.x + r.w / 2, cy = r.y + r.h / 2; ctx.translate(cx + dx, cy + dy); ctx.scale(sc, sc); ctx.translate(-cx, -cy);
   if (S.has('glow') || S.has('gold')) {
     const pulse = 0.55 + 0.45 * Math.sin((t - since) * 4);
-    ctx.save(); ctx.shadowColor = `rgba(247,201,72,${0.85 * (S.has('glow') ? pulse : 0.6)})`; ctx.shadowBlur = 34; ctx.fillStyle = C.gold; rrect(ctx, r.x - 4, r.y - 4, r.w + 8, r.h + 8, 22); ctx.fill(); ctx.restore();
+    ctx.save(); ctx.shadowColor = `rgba(247,201,72,${0.85 * (S.has('glow') ? pulse : 0.6)})`; ctx.shadowBlur = 34; ctx.fillStyle = C.gold; rrect(ctx, r.x - 4, r.y - 4, r.w + 8, r.h + 8, Math.min(28, r.h * 0.3)); ctx.fill(); ctx.restore();
   }
   if (S.has('empty')) {
     ctx.save(); ctx.setLineDash([16, 12]); ctx.lineWidth = 5; ctx.strokeStyle = 'rgba(74,53,82,0.55)'; ctx.fillStyle = 'rgba(255,255,255,0.45)';
-    rrect(ctx, r.x, r.y, r.w, r.h, 18); ctx.fill(); ctx.stroke(); ctx.restore();
+    rrect(ctx, r.x, r.y, r.w, r.h, Math.min(24, r.h * 0.26)); ctx.fill(); ctx.stroke(); ctx.restore();
     const el = d.emptyLabel; richText(ctx, el || '?', r.x + r.w / 2, r.y + r.h / 2, el ? 36 : 60, el ? 'rgba(74,53,82,0.6)' : C.rose);
     ctx.restore(); return;
   }
-  const fillC = S.has('heavy') ? '#D8C9DE' : (S.has('red') ? '#F8D3DE' : col(d.color, C.people));
-  fillShape(ctx, () => rrect(ctx, r.x, r.y, r.w, r.h, 18), fillC, { depth: 0.8 });
-  if (S.has('red')) { ctx.save(); ctx.strokeStyle = C.rose; ctx.lineWidth = 5; rrect(ctx, r.x, r.y, r.w, r.h, 18); ctx.stroke(); ctx.restore(); }
-  if (S.has('gold')) { ctx.save(); ctx.strokeStyle = C.ochre; ctx.lineWidth = 5; rrect(ctx, r.x + 2, r.y + 2, r.w - 4, r.h - 4, 16); ctx.stroke(); ctx.restore(); }
-  // knob
+  const fillC = S.has('heavy') ? '#DCCDE2' : (S.has('red') ? '#F8D3DE' : col(d.color, C.people));
+  const cr = Math.min(24, r.h * 0.26);
+  fillShape(ctx, () => rrect(ctx, r.x, r.y, r.w, r.h, cr), fillC, { depth: 0.9 });
+  // a faint lighter top edge, like the cut edge of paper
+  ctx.save(); rrect(ctx, r.x, r.y, r.w, r.h, cr); ctx.clip(); ctx.fillStyle = 'rgba(255,255,255,0.35)'; ctx.fillRect(r.x, r.y, r.w, 3); ctx.restore();
+  if (S.has('red')) { ctx.save(); ctx.strokeStyle = C.rose; ctx.lineWidth = 5; rrect(ctx, r.x, r.y, r.w, r.h, cr); ctx.stroke(); ctx.restore(); }
+  if (S.has('gold')) { ctx.save(); ctx.strokeStyle = C.ochre; ctx.lineWidth = 5; rrect(ctx, r.x + 2, r.y + 2, r.w - 4, r.h - 4, cr - 2); ctx.stroke(); ctx.restore(); }
   if (!d.noKnob) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(r.x + r.w - 30, r.y + r.h / 2, 13, 9, 0, 0, 7); }, C.woodDark, { depth: 0.3 });
-  const lp = d.size ?? (d.noKnob ? (r.w < 220 ? 38 : 46) : (r.w < 200 ? 32 : 40));
-  if (d.sub) { richText(ctx, d.label || '', r.x + 22, r.y + r.h * 0.38, lp, C.ink, 'left'); richText(ctx, d.sub, r.x + 22, r.y + r.h * 0.72, Math.round(lp * 0.72), C.plum, 'left'); }
-  else if (d.label) {
-    const avail = r.w - (d.noKnob ? 36 : 70); let px = lp; while (px > 24 && measure(ctx, d.label, px) > avail) px -= 2;
-    if (d.noKnob) richText(ctx, d.label, r.x + r.w / 2, r.y + r.h / 2, px, C.ink); else richText(ctx, d.label, r.x + 22, r.y + r.h / 2, px, C.ink, 'left');
+  const left = d.align === 'left' || !d.noKnob;
+  const iconW = d.icon ? 74 : 0;
+  const lp = d.size ?? (left ? (r.w < 200 ? 34 : 42) : (r.w < 220 ? 38 : 46));
+  const avail = r.w - (left ? 48 : 36) - iconW; let px = lp; while (px > 24 && measure(ctx, d.label || '', px) > avail) px -= 2;
+  if (d.sub) {
+    const tx = left ? r.x + 24 : r.x + (r.w - iconW) / 2; const al = left ? 'left' : 'center';
+    richText(ctx, d.label || '', tx, r.y + r.h * 0.38, px, C.ink, al); richText(ctx, d.sub, tx, r.y + r.h * 0.72, Math.round(px * 0.7), C.plum, al);
+  } else if (d.label) {
+    if (left) richText(ctx, d.label, r.x + 24, r.y + r.h / 2, px, C.ink, 'left'); else richText(ctx, d.label, r.x + (r.w - iconW) / 2, r.y + r.h / 2, px, C.ink);
   }
-  if (d.icon) drawIcon(ctx, { kind: d.icon, x: r.x + r.w - 70, y: r.y + r.h / 2, size: 54 }, t);
+  if (d.icon) drawIcon(ctx, { kind: d.icon, x: r.x + r.w - 46, y: r.y + r.h / 2, size: 54 }, t);
   if (S.has('check')) badge(ctx, 'check', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
   if (S.has('cross')) badge(ctx, 'cross', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
   if (S.has('question')) badge(ctx, 'question', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
@@ -97,17 +105,26 @@ function drawerBox(ctx, r, d, t, st, alphaBase = 1) {
 }
 
 export function drawCabinet(ctx, e, t) {
-  const f = e._frame; const legH = Math.max(0, (e.ground ?? GROUND) - (f.y + f.h));
+  const f0 = e._frame; const ground = e.ground ?? GROUND; const pad = 14;
+  const f = { ...f0, x: f0.x - pad, w: f0.w + pad * 2 }; const legH = Math.max(0, ground - (f.y + f.h));
+  const border = 16, rad = 30;
   // legs
-  for (const lx of [f.x + 34, f.x + f.w - 64]) fillShape(ctx, () => rrect(ctx, lx, f.y + f.h - 20, 30, legH + 20, 10), C.woodLeg);
-  fillShape(ctx, () => rrect(ctx, f.x, f.y, f.w, f.h, 26), C.wood, { depth: 1.2 });
-  fillShape(ctx, () => rrect(ctx, f.x - 14, f.y - 6, f.w + 28, 32, 14), C.woodLeg, { depth: 0.6 });
+  for (const lx of [f.x + 40, f.x + f.w - 70]) fillShape(ctx, () => rrect(ctx, lx, f.y + f.h - 20, 30, legH + 20, 9), C.woodLeg, { depth: 0.6 });
+  // frame and the cream inside
+  fillShape(ctx, () => rrect(ctx, f.x, f.y, f.w, f.h, rad), C.wood, { depth: 1.2 });
+  ctx.save(); const g = ctx.createLinearGradient(0, f.y, 0, f.y + f.h); g.addColorStop(0, '#F8EEDD'); g.addColorStop(1, '#F1E4CE');
+  ctx.fillStyle = g; rrect(ctx, f.x + border, f.y + border, f.w - border * 2, f.h - border * 2, rad - 10); ctx.fill(); ctx.restore();
+  // shelf boards under every row, then empty shelves further down
+  ctx.save(); rrect(ctx, f.x + border, f.y + border, f.w - border * 2, f.h - border * 2, rad - 10); ctx.clip();
+  ctx.fillStyle = C.wood; const step = f.rowH + f.gap;
+  for (let y = f.top + f.rowH + f.gap / 2 - 3; y < f.y + f.h - border - 20; y += step) { ctx.fillRect(f.x + border, y, f.w - border * 2, 6); ctx.fillStyle = 'rgba(122,79,58,0.10)'; ctx.fillRect(f.x + border, y + 6, f.w - border * 2, 4); ctx.fillStyle = C.wood; }
+  ctx.restore();
   if (e.title) richText(ctx, e.title, f.x + f.w / 2, f.y - 46, 44, C.plum);
   if (e.sideLabels) {
     tagPill(ctx, e.sideLabels[0] ?? 'oben', f.x + f.w + 8, f.y + 90, 34, C.ochre, 'left');
-    tagPill(ctx, e.sideLabels[1] ?? 'unten', f.x + f.w + 8, f.y + f.h - 60, 34, C.plum, 'left');
+    tagPill(ctx, e.sideLabels[1] ?? 'unten', f.x + f.w + 8, f.y + f.content - 60, 34, C.plum, 'left');
   }
-  for (const [id, r] of Object.entries(e._rects)) { const d = e.drawers?.[id] || { label: id }; drawerBox(ctx, r, d, t, stateAt(d._states, t)); }
+  for (const [id, r] of Object.entries(e._rects)) { const d = e.drawers?.[id] || { label: id }; drawerBox(ctx, r, { noKnob: true, align: 'left', ...d }, t, stateAt(d._states, t)); }
 }
 
 export function drawTree(ctx, e, t, reg) {
@@ -136,10 +153,10 @@ export function resolvePoint(p, reg, side, offsets) {
 export function drawLink(ctx, L, t, reg, offsets = {}) {
   if (L._tin !== undefined && t < L._tin) return;
   // Default direction: from the upper item's bottom edge to the lower item's top edge.
-  const ra = reg[L.from], rb = reg[L.to]; let a, b;
+  const ra = reg[L.from], rb = reg[L.to]; let a, b, vertical = false;
   if (ra && rb && !L.fromSide && !L.toSide) {
-    if (ra.y + ra.h <= rb.y) { a = anchorOf(reg, L.from, 'bottom', offsets); b = anchorOf(reg, L.to, 'top', offsets); }
-    else if (rb.y + rb.h <= ra.y) { a = anchorOf(reg, L.from, 'top', offsets); b = anchorOf(reg, L.to, 'bottom', offsets); }
+    if (ra.y + ra.h <= rb.y) { a = anchorOf(reg, L.from, 'bottom', offsets); b = anchorOf(reg, L.to, 'top', offsets); vertical = true; }
+    else if (rb.y + rb.h <= ra.y) { a = anchorOf(reg, L.from, 'top', offsets); b = anchorOf(reg, L.to, 'bottom', offsets); vertical = true; }
     else if (ra.x < rb.x) { a = anchorOf(reg, L.from, 'right', offsets); b = anchorOf(reg, L.to, 'left', offsets); }
     else { a = anchorOf(reg, L.from, 'left', offsets); b = anchorOf(reg, L.to, 'right', offsets); }
   } else { a = resolvePoint(L.from, reg, L.fromSide || 'bottom', offsets); b = resolvePoint(L.to, reg, L.toSide || 'top', offsets); }
@@ -147,20 +164,27 @@ export function drawLink(ctx, L, t, reg, offsets = {}) {
   const prog = L._tin !== undefined ? easeOutCubic((t - L._tin) / 0.6) : 1;
   const style = L.style || 'gold';
   ctx.save(); ctx.lineCap = 'round';
-  if (style === 'gold') { ctx.strokeStyle = C.gold; ctx.lineWidth = 7; ctx.setLineDash([2, 16]); shadow(ctx, true, 0.25); }
+  if (style === 'gold') { ctx.strokeStyle = C.gold; ctx.lineWidth = 8; ctx.setLineDash([1, 15]); shadow(ctx, true, 0.2); }
   else if (style === 'dashed' || style === 'arrow') { ctx.strokeStyle = C.ink; ctx.lineWidth = 5; ctx.setLineDash([18, 12]); }
   else if (style === 'red') { ctx.strokeStyle = C.rose; ctx.lineWidth = 6; ctx.setLineDash([18, 12]); }
-  else { ctx.strokeStyle = 'rgba(74,53,82,0.45)'; ctx.lineWidth = 5; }
-  const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2; const bend = L.bend ?? 0;
-  const cx = mx + bend, cy = my;
-  const N = 40; ctx.beginPath();
-  for (let i = 0; i <= N * prog; i++) { const u = i / N; const x = (1 - u) * (1 - u) * a.x + 2 * (1 - u) * u * cx + u * u * b.x; const y = (1 - u) * (1 - u) * a.y + 2 * (1 - u) * u * cy + u * u * b.y; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }
+  else { ctx.strokeStyle = 'rgba(122,79,138,0.42)'; ctx.lineWidth = 7; ctx.setLineDash([1, 14]); }
+  // the path: a soft S-curve between levels (threads), otherwise a gentle bend
+  const bend = L.bend ?? 0; let P;
+  if (vertical && !bend && style !== 'arrow' && style !== 'dashed' && style !== 'red') {
+    const k = (b.y - a.y) * 0.55; const c1 = { x: a.x, y: a.y + k }, c2 = { x: b.x, y: b.y - k };
+    P = u => ({ x: (1 - u) ** 3 * a.x + 3 * (1 - u) ** 2 * u * c1.x + 3 * (1 - u) * u * u * c2.x + u ** 3 * b.x, y: (1 - u) ** 3 * a.y + 3 * (1 - u) ** 2 * u * c1.y + 3 * (1 - u) * u * u * c2.y + u ** 3 * b.y });
+  } else {
+    const cx = (a.x + b.x) / 2 + bend, cy = (a.y + b.y) / 2;
+    P = u => ({ x: (1 - u) * (1 - u) * a.x + 2 * (1 - u) * u * cx + u * u * b.x, y: (1 - u) * (1 - u) * a.y + 2 * (1 - u) * u * cy + u * u * b.y });
+  }
+  const N = 48; ctx.beginPath();
+  for (let i = 0; i <= N * prog; i++) { const p = P(i / N); i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y); }
   ctx.stroke(); ctx.setLineDash([]);
   if ((style === 'arrow' || style === 'dashed' || style === 'red' || L.head) && prog > 0.95) {
-    const u = 0.98; const tx = 2 * (1 - u) * (cx - a.x) + 2 * u * (b.x - cx), ty = 2 * (1 - u) * (cy - a.y) + 2 * u * (b.y - cy); const ang = Math.atan2(ty, tx);
+    const p1 = P(0.97), p2 = P(1); const ang = Math.atan2(p2.y - p1.y, p2.x - p1.x);
     ctx.fillStyle = ctx.strokeStyle; ctx.beginPath(); ctx.moveTo(b.x, b.y); ctx.lineTo(b.x - Math.cos(ang - 0.45) * 30, b.y - Math.sin(ang - 0.45) * 30); ctx.lineTo(b.x - Math.cos(ang + 0.45) * 30, b.y - Math.sin(ang + 0.45) * 30); ctx.closePath(); ctx.fill();
   }
-  if (L.label && prog > 0.9) tagPill(ctx, L.label, cx + 10, cy, 32, L.labelColor ? col(L.labelColor) : C.plum, 'left');
+  if (L.label && prog > 0.9) { const m = P(0.5); tagPill(ctx, L.label, m.x + 10 + (bend || 0) / 2, m.y, 32, L.labelColor ? col(L.labelColor) : C.plum, 'left'); }
   ctx.restore();
 }
 
