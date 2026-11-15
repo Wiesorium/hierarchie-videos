@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-15",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-15-morgen-alle-schauen-den-igel-an",
+   "slug": "alle-schauen-den-igel-an",
+   "titel": "Alle schauen den Igel an",
+   "idee": "schule-referat",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Morgen hält dein Kind ein Referat, und heute Abend hat es plötzlich Bauchweh.",
+    "b": "Angst vor dem Referat heißt selten, dass dein Kind zu wenig weiß.",
+    "c": "„Alle schauen mich an“: Dieser eine Satz macht ein Referat so schwer."
+   },
+   "dauer": {
+    "a": 84.37,
+    "b": 83.47,
+    "c": 84.5
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/qocJVufxmxlngWpMcl0g",
+   "status": "fertig",
+   "hinweis": "Neues Icon „hedgehog“ (Igel) in der Engine ergänzt.",
+   "dateien": [
+    "alle-schauen-den-igel-an-hook-a.mp4",
+    "alle-schauen-den-igel-an-hook-b.mp4",
+    "alle-schauen-den-igel-an-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-14",
    "slot": "abend",
    "ordner": "episodes/2026-11-14-abend-der-fuenfer-im-rucksack",

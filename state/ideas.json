@@ -15,8 +15,9 @@
    "thema": "Ein Referat halten",
    "quelle": "Schulängste, Martin 14.11.2026",
    "cta": "whatsapp",
-   "beispiel": null,
-   "status": "offen"
+   "beispiel": "Jonas, zehn, hält morgen sein erstes Referat (fünf Minuten über Igel) und hat beim Abendessen Bauchweh, obwohl er eine Woche geübt hat; Papa fragt: „Was ist das Tollste am Igel?“ (selbst gewählt im Lauf 15.11.2026 morgens)",
+   "status": "erledigt",
+   "erledigt": "2026-11-15"
   },
   {
    "id": "schule-pause",

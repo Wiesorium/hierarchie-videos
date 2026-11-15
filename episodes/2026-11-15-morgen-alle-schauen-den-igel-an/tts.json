@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Jonas ist zehn. Morgen hält er sein erstes Referat: fünf Minuten über Igel. Beim Abendessen schiebt er den Teller weg. „Ich hab Bauchweh. Ich kann morgen nicht.“ Dabei hat er eine ganze Woche geübt. [pause] Schau dir das als Schrank an. Unten ist bei Jonas alles voll: Igel fressen Käfer. Sie schlafen im Laub. Und sie rollen sich ein, wenn sie Angst haben. Die Angst liegt also nicht unten, beim Wissen. Sie liegt ganz oben, in einer einzigen Schublade: Alle schauen mich an. [pause] Darum hilft noch mehr Üben so wenig. [pause] Papa sagt: „Du kannst das doch.“ Jonas liest den Zettel noch zweimal. Unten wird es noch voller. Oben bleibt derselbe Satz. Und er drückt immer mehr. Das kennen auch viele Erwachsene. [pause] Dann fragt Papa etwas ganz anderes. [pause] „Was ist das Tollste am Igel?“ Jonas überlegt. „Er hat bis zu achttausend Stacheln!“ „Dann schauen morgen nicht alle dich an. Sie schauen den Igel an.“ Oben liegt jetzt ein neuer Satz: Ich zeig euch was. Das Bauchweh ist nicht ganz weg. Aber es hat weniger Platz. [pause] Welcher Satz liegt bei deinem Kind ganz oben, bevor es vor der Klasse steht? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Morgen hält dein Kind ein Referat, und heute Abend hat es plötzlich Bauchweh.",
+  "b": "[warmly] Angst vor dem Referat heißt selten, dass dein Kind zu wenig weiß.",
+  "c": "[warmly] „Alle schauen mich an“: Dieser eine Satz macht ein Referat so schwer."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

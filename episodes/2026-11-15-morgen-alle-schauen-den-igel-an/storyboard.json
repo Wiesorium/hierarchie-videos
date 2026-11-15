@@ -1,0 +1,614 @@
+{
+ "slug": "alle-schauen-den-igel-an",
+ "title": "Alle schauen den Igel an",
+ "cta": "whatsapp",
+ "hero": "jonas",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Morgen hält dein Kind ein Referat, und heute Abend hat es plötzlich Bauchweh.",
+   "card": [
+    "Morgen ein Referat,",
+    "heute plötzlich Bauchweh"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Angst vor dem Referat heißt selten, dass dein Kind zu wenig weiß.",
+   "card": [
+    "Angst vor dem Referat heißt selten,",
+    "dass dein Kind zu wenig weiß"
+   ]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Alle schauen mich an“: Dieser eine Satz macht ein Referat so schwer.",
+   "card": [
+    "„Alle schauen mich an.“",
+    "Dieser Satz macht es schwer"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Jonas ist zehn. Morgen hält er sein erstes Referat: fünf Minuten über Igel. Beim Abendessen schiebt er den Teller weg. „Ich hab Bauchweh. Ich kann morgen nicht.“ Dabei hat er eine ganze Woche geübt.",
+  "block1": "Schau dir das als Schrank an. Unten ist bei Jonas alles voll: Igel fressen Käfer. Sie schlafen im Laub. Und sie rollen sich ein, wenn sie Angst haben. Die Angst liegt also nicht unten, beim Wissen. Sie liegt ganz oben, in einer einzigen Schublade: Alle schauen mich an.",
+  "rehook1": "Darum hilft noch mehr Üben so wenig.",
+  "block2": "Papa sagt: „Du kannst das doch.“ Jonas liest den Zettel noch zweimal. Unten wird es noch voller. Oben bleibt derselbe Satz. Und er drückt immer mehr. Das kennen auch viele Erwachsene.",
+  "rehook2": "Dann fragt Papa etwas ganz anderes.",
+  "block3": "„Was ist das Tollste am Igel?“ Jonas überlegt. „Er hat bis zu achttausend Stacheln!“ „Dann schauen morgen nicht alle dich an. Sie schauen den Igel an.“ Oben liegt jetzt ein neuer Satz: Ich zeig euch was. Das Bauchweh ist nicht ganz weg. Aber es hat weniger Platz.",
+  "closing": "Welcher Satz liegt bei deinem Kind ganz oben, bevor es vor der Klasse steht?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Welcher Satz liegt bei deinem Kind",
+  "ganz oben, bevor es vor der Klasse steht?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "jonas",
+     "type": "figure",
+     "role": "boy",
+     "x": 280,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "schiebt er den Teller",
+       "mood": "worried"
+      },
+      {
+       "at": "Ich hab Bauchweh",
+       "mood": "sad"
+      }
+     ],
+     "talk": [
+      [
+       "Ich hab Bauchweh",
+       "end:Ich kann morgen nicht"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 880,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ich hab Bauchweh",
+       "mood": "open"
+      },
+      {
+       "at": "Dabei hat er",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 600,
+     "w": 430,
+     "h": 175,
+     "z": 3.5
+    },
+    {
+     "id": "teller",
+     "type": "prop",
+     "kind": "plate",
+     "x": 480,
+     "y": 1303,
+     "w": 150,
+     "z": 3.6,
+     "moves": [
+      {
+       "at": "schiebt er den Teller",
+       "x": 630,
+       "y": 1303,
+       "dur": 0.7
+      }
+     ]
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 715,
+     "y": 1267,
+     "size": 120,
+     "z": 3.7,
+     "in": "Minuten über Igel"
+    },
+    {
+     "id": "heft",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 740,
+     "w": 340,
+     "h": 210,
+     "text": [
+      "Referat:",
+      "Igel"
+     ],
+     "size": 56,
+     "enter": "pop",
+     "in": "sein erstes Referat"
+    },
+    {
+     "id": "tag_min",
+     "type": "tag",
+     "text": "5 Minuten",
+     "x": 580,
+     "y": 575,
+     "color": "plum",
+     "in": "Minuten über Igel"
+    },
+    {
+     "id": "b_bauch",
+     "type": "bubble",
+     "from": "jonas",
+     "text": "Ich hab *Bauchweh*. Ich kann morgen nicht.",
+     "x": 360,
+     "y": 960,
+     "maxW": 440,
+     "in": "Ich hab Bauchweh",
+     "out": "Dabei hat er"
+    },
+    {
+     "id": "tag_woche",
+     "type": "tag",
+     "text": "eine Woche geübt",
+     "x": 540,
+     "y": 960,
+     "color": "plum",
+     "in": "Dabei hat er"
+    },
+    {
+     "id": "ok_woche",
+     "type": "icon",
+     "kind": "check",
+     "x": 790,
+     "y": 960,
+     "size": 72,
+     "in": "eine ganze Woche geübt"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "jonas",
+     "type": "figure",
+     "role": "boy",
+     "x": 150,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Alle schauen mich an",
+       "mood": "scared"
+      }
+     ]
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 300,
+     "y": 1442,
+     "size": 110
+    },
+    {
+     "id": "kopf",
+     "type": "cabinet",
+     "x": 660,
+     "y": 520,
+     "w": 500,
+     "rowH": 104,
+     "keep": true,
+     "sideLabels": [
+      "oben",
+      "unten"
+     ],
+     "rows": [
+      [
+       "oben"
+      ],
+      [
+       "kaefer"
+      ],
+      [
+       "laub"
+      ],
+      [
+       "rollen"
+      ],
+      [
+       "geuebt1",
+       "geuebt2"
+      ]
+     ],
+     "drawers": {
+      "oben": {
+       "label": "Alle schauen *mich* an.",
+       "color": "kids",
+       "emptyLabel": "neuer Satz",
+       "in": "Alle schauen mich an",
+       "states": [
+        {
+         "at": "Alle schauen mich an",
+         "state": "heavy+red"
+        },
+        {
+         "at": "derselbe Satz",
+         "state": "heavy+red+shake"
+        },
+        {
+         "at": "drückt immer mehr",
+         "state": "heavy+red+shake"
+        },
+        {
+         "at": "Sie schauen den Igel an",
+         "state": "empty"
+        }
+       ]
+      },
+      "kaefer": {
+       "label": "frisst *Käfer*",
+       "color": "fresh",
+       "in": "Igel fressen Käfer",
+       "states": [
+        {
+         "at": "beim Wissen",
+         "state": "check"
+        }
+       ]
+      },
+      "laub": {
+       "label": "schläft im *Laub*",
+       "color": "fresh",
+       "in": "schlafen im Laub",
+       "states": [
+        {
+         "at": "beim Wissen",
+         "state": "check"
+        }
+       ]
+      },
+      "rollen": {
+       "label": "rollt sich *ein*",
+       "color": "fresh",
+       "in": "rollen sich ein",
+       "states": [
+        {
+         "at": "beim Wissen",
+         "state": "check"
+        }
+       ]
+      },
+      "geuebt1": {
+       "label": "noch mal",
+       "color": "idea",
+       "in": "liest den Zettel"
+      },
+      "geuebt2": {
+       "label": "noch mal",
+       "color": "idea",
+       "in": "Unten wird es noch voller"
+      }
+     }
+    },
+    {
+     "id": "st_voll",
+     "type": "stamp",
+     "text": "voll",
+     "x": 850,
+     "y": 900,
+     "rot": 0.1,
+     "size": 52,
+     "in": "alles voll",
+     "out": "Sie liegt ganz oben"
+    }
+   ]
+  },
+  {
+   "at": "Darum hilft noch mehr",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "jonas",
+     "type": "figure",
+     "role": "boy",
+     "x": 110,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "drückt immer mehr",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "papa2",
+     "type": "figure",
+     "role": "papa",
+     "x": 300,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "drückt immer mehr",
+       "mood": "worried"
+      }
+     ],
+     "talk": [
+      [
+       "Du kannst das doch",
+       "end:Du kannst das doch"
+      ]
+     ]
+    },
+    {
+     "id": "b_kannst",
+     "type": "bubble",
+     "from": "papa2",
+     "text": "Du kannst das *doch*.",
+     "x": 250,
+     "y": 740,
+     "size": 44,
+     "in": "Papa sagt",
+     "out": "Unten wird es"
+    },
+    {
+     "id": "zettel",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 190,
+     "y": 1230,
+     "w": 150,
+     "h": 110,
+     "text": [
+      "Igel"
+     ],
+     "size": 34,
+     "z": 4,
+     "enter": "pop",
+     "in": "liest den Zettel",
+     "out": "Das kennen auch"
+    },
+    {
+     "id": "pfeil_druck",
+     "type": "arrow",
+     "from": {
+      "x": 980,
+      "y": 560
+     },
+     "to": {
+      "x": 980,
+      "y": 690
+     },
+     "style": "red",
+     "bend": 0,
+     "in": "drückt immer mehr",
+     "out": "Das kennen auch"
+    },
+    {
+     "id": "karte_erw",
+     "type": "card",
+     "lines": [
+      "Das kennen auch",
+      "*viele Erwachsene*."
+     ],
+     "x": 230,
+     "y": 720,
+     "size": 44,
+     "in": "Das kennen auch"
+    }
+   ]
+  },
+  {
+   "at": "Dann fragt Papa etwas",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "jonas",
+     "type": "figure",
+     "role": "boy",
+     "x": 110,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Er hat bis zu",
+       "mood": "grin"
+      },
+      {
+       "at": "Sie schauen den Igel an",
+       "mood": "wow"
+      },
+      {
+       "at": "Ich zeig euch was",
+       "mood": "happy"
+      },
+      {
+       "at": "Das Bauchweh ist",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Jonas überlegt",
+       "kind": "think",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Er hat bis zu",
+       "end:Stacheln"
+      ]
+     ],
+     "hop": "Ich zeig euch was"
+    },
+    {
+     "id": "papa2",
+     "type": "figure",
+     "role": "papa",
+     "x": 300,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Er hat bis zu",
+       "mood": "laugh"
+      },
+      {
+       "at": "Dann schauen morgen",
+       "mood": "smile"
+      }
+     ],
+     "talk": [
+      [
+       "Was ist das Tollste",
+       "end:am Igel"
+      ],
+      [
+       "Dann schauen morgen",
+       "end:den Igel an"
+      ]
+     ]
+    },
+    {
+     "id": "b_toll",
+     "type": "bubble",
+     "from": "papa2",
+     "text": "Was ist das *Tollste* am Igel?",
+     "x": 250,
+     "y": 720,
+     "maxW": 330,
+     "size": 42,
+     "in": "Was ist das Tollste",
+     "out": "Er hat bis zu"
+    },
+    {
+     "id": "b_stacheln",
+     "type": "bubble",
+     "from": "jonas",
+     "text": "Bis zu *8000 Stacheln*!",
+     "x": 200,
+     "y": 900,
+     "maxW": 330,
+     "size": 42,
+     "in": "Er hat bis zu",
+     "out": "Dann schauen morgen"
+    },
+    {
+     "id": "b_igel",
+     "type": "bubble",
+     "from": "papa2",
+     "text": "Sie schauen den *Igel* an.",
+     "x": 225,
+     "y": 720,
+     "maxW": 330,
+     "size": 40,
+     "in": "Dann schauen morgen",
+     "out": "Oben liegt jetzt"
+    },
+    {
+     "id": "igel2",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 660,
+     "y": 1290,
+     "size": 220,
+     "in": "Sie schauen den Igel an"
+    },
+    {
+     "id": "neu",
+     "type": "node",
+     "x": 660,
+     "y": 622,
+     "w": 468,
+     "h": 104,
+     "label": "Ich zeig euch *was*.",
+     "size": 46,
+     "color": "fresh",
+     "in": "Ich zeig euch was",
+     "z": 2.6,
+     "states": [
+      {
+       "at": "Ich zeig euch was",
+       "state": "glow"
+      },
+      {
+       "at": "weniger Platz",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "tag_bauch",
+     "type": "tag",
+     "text": "ein bisschen Bauchweh",
+     "x": 230,
+     "y": 760,
+     "color": "plum",
+     "in": "Das Bauchweh ist"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "sein erstes Referat",
+   "x": 560,
+   "y": 740
+  },
+  {
+   "at": "Ich hab Bauchweh",
+   "x": 360,
+   "y": 960
+  },
+  {
+   "at": "rollen sich ein",
+   "x": 660,
+   "y": 982
+  },
+  {
+   "at": "Alle schauen mich an",
+   "x": 660,
+   "y": 622
+  },
+  {
+   "at": "derselbe Satz",
+   "x": 660,
+   "y": 622
+  },
+  {
+   "at": "Stacheln",
+   "x": 200,
+   "y": 900
+  },
+  {
+   "at": "Sie schauen den Igel an",
+   "x": 660,
+   "y": 1260
+  },
+  {
+   "at": "Ich zeig euch was",
+   "x": 660,
+   "y": 622
+  }
+ ]
+}
