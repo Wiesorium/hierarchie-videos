@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Paul ist acht. Das Licht ist schon aus, da sagt er leise: „Mama, ich hab die Hausübung vergessen.“ Schon wieder. Dabei hat Mama am Nachmittag gesagt: „Denk an die Hausübung!“ Und Paul hat genickt. [pause] Schau dir das als Knoten an. Oben hängt der Plan: Hausübung machen. Darunter gehört ein Wann und ganz unten ein Ding, das man sieht. Bei Paul hängt da nichts. „Denk dran“ legt den Plan nur noch einmal oben hin. Erinnert wird man aber unten. [pause] Dabei vergisst Paul eine Sache nie. [pause] Mama fragt: „Wie merkst du dir dein Fußballtraining?“ „Meine Tasche steht schon am Abend vorher an der Tür. Da stolper ich drüber.“ Da hängt alles dran: Fußball, Donnerstag nach der Schule, die Tasche an der Tür. [pause] Und dann hat Paul selbst eine Idee. [pause] „Dann leg ich mein Heft auf den Jausenteller.“ Jetzt hängt auch unter der Hausübung etwas: nach der Jause, das Heft auf dem Teller. Mama muss nicht mehr erinnern. Das Heft erinnert. Vergesslich war Paul nie. Seinem Plan hat nur der Faden nach unten gefehlt. [pause] Was vergisst dein Kind nie, und woran hängt das? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Das Licht ist schon aus, da sagt dein Kind: Ich hab die Hausübung vergessen.",
+  "b": "[warmly] Wer die Hausübung vergisst, ist deshalb noch lange nicht vergesslich.",
+  "c": "[warmly] „Denk an die Hausübung!“: Genau dieser Satz landet an der falschen Stelle."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

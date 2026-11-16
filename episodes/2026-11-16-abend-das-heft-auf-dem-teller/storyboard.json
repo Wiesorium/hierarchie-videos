@@ -1,0 +1,178 @@
+{
+ "slug": "das-heft-auf-dem-teller",
+ "title": "Das Heft auf dem Teller",
+ "cta": "whatsapp",
+ "hero": "paul_bett",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Das Licht ist schon aus, da sagt dein Kind: Ich hab die Hausübung vergessen.",
+   "card": ["Licht aus. Und dann:", "„Hausübung vergessen!“"]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Wer die Hausübung vergisst, ist deshalb noch lange nicht vergesslich.",
+   "card": ["Hausübung vergessen", "heißt nicht: vergesslich"]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Denk an die Hausübung!“: Genau dieser Satz landet an der falschen Stelle.",
+   "card": ["„Denk an die Hausübung!“", "landet an der falschen Stelle"]
+  }
+ },
+ "script": {
+  "lockin": "Paul ist acht. Das Licht ist schon aus, da sagt er leise: „Mama, ich hab die Hausübung vergessen.“ Schon wieder. Dabei hat Mama am Nachmittag gesagt: „Denk an die Hausübung!“ Und Paul hat genickt.",
+  "block1": "Schau dir das als Knoten an. Oben hängt der Plan: Hausübung machen. Darunter gehört ein Wann und ganz unten ein Ding, das man sieht. Bei Paul hängt da nichts. „Denk dran“ legt den Plan nur noch einmal oben hin. Erinnert wird man aber unten.",
+  "rehook1": "Dabei vergisst Paul eine Sache nie.",
+  "block2": "Mama fragt: „Wie merkst du dir dein Fußballtraining?“ „Meine Tasche steht schon am Abend vorher an der Tür. Da stolper ich drüber.“ Da hängt alles dran: Fußball, Donnerstag nach der Schule, die Tasche an der Tür.",
+  "rehook2": "Und dann hat Paul selbst eine Idee.",
+  "block3": "„Dann leg ich mein Heft auf den Jausenteller.“ Jetzt hängt auch unter der Hausübung etwas: nach der Jause, das Heft auf dem Teller. Mama muss nicht mehr erinnern. Das Heft erinnert. Vergesslich war Paul nie. Seinem Plan hat nur der Faden nach unten gefehlt.",
+  "closing": "Was vergisst dein Kind nie, und woran hängt das?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": ["Was vergisst dein Kind nie,", "und woran hängt das?"],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {"id": "tuer1", "type": "prop", "kind": "door", "x": 880},
+    {"id": "fenster", "type": "prop", "kind": "window", "x": 610, "y": 680, "w": 250, "h": 210},
+    {"id": "mond", "type": "icon", "kind": "moon", "x": 610, "y": 680, "size": 90, "enter": "fade"},
+    {"id": "bett", "type": "prop", "kind": "bed", "x": 420, "w": 520, "h": 210},
+    {"id": "paul_bett", "type": "figure", "role": "boy", "pose": "sit", "x": 290, "y": 1373, "look": "right", "mood": "neutral",
+     "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "ich hab die Hausübung", "mood": "worried"}, {"at": "Schon wieder", "mood": "sad"}],
+     "talk": [["Mama ich hab", "end:Hausübung vergessen"]]},
+    {"id": "mama", "type": "figure", "role": "mama", "x": 870, "look": "left", "mood": "smile", "hairColor": "brown",
+     "moods": [{"at": "Hausübung vergessen", "mood": "open"}, {"at": "Schon wieder", "mood": "worried"}]},
+    {"id": "tag_licht", "type": "tag", "text": "Licht aus", "x": 250, "y": 600, "color": "plum", "in": "Das Licht ist", "out": "Dabei hat Mama"},
+    {"id": "b_vergessen", "type": "bubble", "from": "paul_bett", "text": "Mama, ich hab die *Hausübung* vergessen.", "x": 400, "y": 940,
+     "maxW": 420, "size": 42, "in": "Mama ich hab", "out": "Dabei hat Mama"},
+    {"id": "tag_wieder", "type": "tag", "text": "schon wieder", "x": 800, "y": 880, "color": "rose", "in": "Schon wieder", "out": "Dabei hat Mama"}
+   ]
+  },
+  {
+   "at": "Dabei hat Mama am Nachmittag",
+   "chord": "Em",
+   "elements": [
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 570, "w": 380, "h": 190},
+    {"id": "teller1", "type": "prop", "kind": "plate", "x": 620, "y": 1290, "w": 170},
+    {"id": "tasse", "type": "prop", "kind": "cup", "x": 480, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "schultasche", "type": "prop", "kind": "backpack", "x": 140, "w": 130, "h": 170, "color": "#9FD3C7"},
+    {"id": "paul", "type": "figure", "role": "boy", "x": 290, "look": "right", "mood": "smile", "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "hat genickt", "mood": "grin"}]},
+    {"id": "mama", "type": "figure", "role": "mama", "x": 850, "look": "left", "mood": "smile", "hairColor": "brown",
+     "gestures": [{"at": "Denk an die Hausübung", "kind": "raise", "dur": 1.2}],
+     "talk": [["Denk an die Hausübung", "end:Denk an die Hausübung"]]},
+    {"id": "tag_nachmittag", "type": "tag", "text": "am Nachmittag", "x": 540, "y": 560, "color": "plum", "in": "am Nachmittag"},
+    {"id": "b_denk", "type": "bubble", "from": "mama", "text": "Denk an die *Hausübung*!", "x": 720, "y": 870, "maxW": 380, "size": 44,
+     "in": "Denk an die Hausübung"},
+    {"id": "ok_nicken", "type": "icon", "kind": "check", "x": 290, "y": 1075, "size": 72, "in": "hat genickt"}
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {"id": "paul", "type": "figure", "role": "boy", "x": 150, "look": "right", "mood": "neutral", "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "Bei Paul hängt", "mood": "worried"}, {"at": "Erinnert wird man", "mood": "open"}, {"at": "Dabei vergisst Paul", "mood": "grin"}]},
+    {"id": "plan", "type": "tree", "x": 705, "y": 520, "w": 620, "rowGap": 200, "nodeH": 110, "keep": true,
+     "levels": [
+      [{"id": "hu", "label": "Hausübung", "color": "idea", "in": "Oben hängt der Plan",
+        "states": [{"at": "Oben hängt der Plan", "state": "glow"},
+                   {"at": "Darunter gehört", "state": "normal"},
+                   {"at": "noch einmal oben hin", "state": "shake"},
+                   {"at": "der Faden nach unten", "state": "gold"}]},
+       {"id": "fb", "label": "Fußball", "color": "fresh", "in": "eine Sache nie",
+        "states": [{"at": "eine Sache nie", "state": "empty+glow"},
+                   {"at": "Fußballtraining", "state": "glow"},
+                   {"at": "Da hängt alles dran", "state": "normal"}]}],
+      [{"id": "hu_wann", "label": "nach der *Jause*", "emptyLabel": "wann?", "color": "baby", "in": "Darunter gehört ein Wann",
+        "states": [{"at": "Darunter gehört ein Wann", "state": "empty"},
+                   {"at": "hängt da nichts", "state": "empty+shake"},
+                   {"at": "Erinnert wird man", "state": "empty+glow"},
+                   {"at": "Dabei vergisst Paul", "state": "empty"},
+                   {"at": "selbst eine Idee", "state": "empty+glow"},
+                   {"at": "nach der Jause", "state": "glow"},
+                   {"at": "Mama muss nicht", "state": "normal"}]},
+       {"id": "fb_wann", "label": "Donnerstag", "sub": "nach der Schule", "color": "baby", "in": "Donnerstag nach der Schule",
+        "states": [{"at": "Donnerstag nach der Schule", "state": "glow"},
+                   {"at": "die Tasche an der Tür", "state": "normal"}]}],
+      [{"id": "hu_ding", "label": "*Heft*", "sub": "auf dem Teller", "emptyLabel": "Ding?", "color": "food", "in": "ganz unten ein Ding",
+        "states": [{"at": "ganz unten ein Ding", "state": "empty"},
+                   {"at": "hängt da nichts", "state": "empty+shake"},
+                   {"at": "Erinnert wird man", "state": "empty+glow"},
+                   {"at": "Dabei vergisst Paul", "state": "empty"},
+                   {"at": "selbst eine Idee", "state": "empty+glow"},
+                   {"at": "das Heft auf dem Teller", "state": "glow"},
+                   {"at": "Das Heft erinnert", "state": "gold+check"}]},
+       {"id": "fb_ding", "label": "*Tasche*", "sub": "an der Tür", "color": "food", "in": "die Tasche an der Tür",
+        "states": [{"at": "die Tasche an der Tür", "state": "glow"},
+                   {"at": "Und dann hat Paul", "state": "check"}]}]
+     ],
+     "links": [
+      {"from": "fb", "to": "fb_wann", "style": "gold", "in": "Donnerstag nach der Schule"},
+      {"from": "fb_wann", "to": "fb_ding", "style": "gold", "in": "die Tasche an der Tür"},
+      {"from": "hu", "to": "hu_wann", "style": "gold", "in": "nach der Jause"},
+      {"from": "hu_wann", "to": "hu_ding", "style": "gold", "in": "das Heft auf dem Teller"}
+     ]},
+    {"id": "st_denk", "type": "stamp", "text": "Denk dran!", "x": 215, "y": 700, "rot": -0.08, "size": 52,
+     "in": "Denk dran legt", "out": "Erinnert wird man"},
+    {"id": "tag_unten", "type": "tag", "text": "unten", "x": 215, "y": 975, "color": "rose", "in": "Erinnert wird man", "out": "Dabei vergisst Paul"}
+   ]
+  },
+  {
+   "at": "Mama fragt",
+   "chord": "D",
+   "elements": [
+    {"id": "tuer2", "type": "prop", "kind": "door", "x": 880, "w": 200, "h": 380, "enter": "fade", "in": "Meine Tasche steht"},
+    {"id": "sporttasche", "type": "prop", "kind": "backpack", "x": 790, "w": 140, "h": 150, "color": "fresh", "in": "Meine Tasche steht"},
+    {"id": "paul", "type": "figure", "role": "boy", "x": 105, "look": "right", "mood": "neutral", "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "Meine Tasche steht", "mood": "smile"}, {"at": "Da stolper ich", "mood": "laugh"}, {"at": "Da hängt alles dran", "mood": "happy"},
+               {"at": "Und dann hat Paul", "mood": "open"}],
+     "gestures": [{"at": "Und dann hat Paul", "kind": "think", "dur": 1.6}],
+     "talk": [["Meine Tasche steht", "end:stolper ich drüber"]]},
+    {"id": "mama2", "type": "figure", "role": "mama", "x": 285, "look": "left", "mood": "smile", "hairColor": "brown",
+     "moods": [{"at": "Da stolper ich", "mood": "laugh"}, {"at": "Da hängt alles dran", "mood": "smile"}],
+     "talk": [["Wie merkst du", "end:Fußballtraining"]]},
+    {"id": "b_wie", "type": "bubble", "from": "mama2", "text": "Wie merkst du dir dein *Fußballtraining*?", "x": 220, "y": 720, "maxW": 300, "size": 38,
+     "in": "Wie merkst du", "out": "Meine Tasche steht"},
+    {"id": "b_tasche", "type": "bubble", "from": "paul", "text": "Meine *Tasche* steht schon an der Tür.", "x": 205, "y": 900, "maxW": 300, "size": 38,
+     "in": "Meine Tasche steht", "out": "Da stolper ich"},
+    {"id": "b_stolper", "type": "bubble", "from": "paul", "text": "Da *stolper* ich drüber.", "x": 210, "y": 900, "maxW": 320, "size": 42,
+     "in": "Da stolper ich", "out": "Da hängt alles dran"},
+    {"id": "idee", "type": "icon", "kind": "bulb", "x": 120, "y": 1060, "size": 84, "in": "selbst eine Idee"}
+   ]
+  },
+  {
+   "at": "Dann leg ich mein Heft",
+   "chord": "A",
+   "elements": [
+    {"id": "tisch2", "type": "prop", "kind": "table", "x": 840, "w": 320, "h": 190, "enter": "fade"},
+    {"id": "teller2", "type": "prop", "kind": "plate", "x": 840, "y": 1290, "w": 200},
+    {"id": "heft", "type": "prop", "kind": "notebook", "x": 840, "y": 1222, "w": 150, "h": 84, "text": "Heft", "size": 34, "z": 0.5,
+     "enter": "pop", "in": "mein Heft"},
+    {"id": "paul", "type": "figure", "role": "boy", "x": 105, "look": "right", "mood": "happy", "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "Vergesslich war Paul", "mood": "grin"}],
+     "talk": [["Dann leg ich", "end:Jausenteller"]], "hop": "Vergesslich war Paul nie"},
+    {"id": "mama2", "type": "figure", "role": "mama", "x": 285, "look": "left", "mood": "smile", "hairColor": "brown",
+     "moods": [{"at": "Jausenteller", "mood": "laugh"}, {"at": "Jetzt hängt auch", "mood": "happy"}]},
+    {"id": "b_teller", "type": "bubble", "from": "paul", "text": "Dann leg ich mein *Heft* auf den Jausenteller.", "x": 215, "y": 840, "maxW": 300, "size": 38,
+     "in": "Dann leg ich", "out": "Jetzt hängt auch"},
+    {"id": "st_erinnert", "type": "stamp", "text": "erinnert!", "x": 840, "y": 1130, "rot": -0.08, "size": 52, "in": "Das Heft erinnert"},
+    {"id": "st_nie", "type": "stamp", "text": "nie vergesslich", "x": 220, "y": 760, "rot": -0.07, "size": 46, "in": "Vergesslich war Paul nie"}
+   ]
+  }
+ ],
+ "hits": [
+  {"at": "Hausübung vergessen", "x": 400, "y": 940},
+  {"at": "Denk an die Hausübung", "x": 720, "y": 870},
+  {"at": "Oben hängt der Plan", "x": 544, "y": 575},
+  {"at": "Erinnert wird man", "x": 544, "y": 975},
+  {"at": "Fußballtraining", "x": 867, "y": 575},
+  {"at": "die Tasche an der Tür", "x": 867, "y": 975},
+  {"at": "nach der Jause", "x": 544, "y": 775},
+  {"at": "Das Heft erinnert", "x": 544, "y": 975}
+ ]
+}

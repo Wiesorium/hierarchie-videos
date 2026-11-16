@@ -3,6 +3,33 @@
  "videos": [
   {
    "datum": "2026-11-16",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-16-abend-das-heft-auf-dem-teller",
+   "slug": "das-heft-auf-dem-teller",
+   "titel": "Das Heft auf dem Teller",
+   "idee": "schule-hausuebung",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Das Licht ist schon aus, da sagt dein Kind: Ich hab die Hausübung vergessen.",
+    "b": "Wer die Hausübung vergisst, ist deshalb noch lange nicht vergesslich.",
+    "c": "„Denk an die Hausübung!“: Genau dieser Satz landet an der falschen Stelle."
+   },
+   "dauer": {
+    "a": 80.97,
+    "b": 80.43,
+    "c": 81.37
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/5JacNtM0F2BDkYYMqPQr",
+   "status": "fertig",
+   "hinweis": "Beispiel selbst gewählt (Idee hatte keines). Erklärung als Knoten-Baum (tree) statt Schrank; erstmals Bett und sitzende Figur. Hauptteil der Stimme 74,6 s, Videos etwa 81 s. Captions in Drive: 2026-11-16-das-heft-auf-dem-teller-captions.",
+   "dateien": [
+    "das-heft-auf-dem-teller-hook-a.mp4",
+    "das-heft-auf-dem-teller-hook-b.mp4",
+    "das-heft-auf-dem-teller-hook-c.mp4"
+   ]
+  },
+  {
+   "datum": "2026-11-16",
    "slot": "morgen",
    "ordner": "episodes/2026-11-16-morgen-kein-platz-mehr-in-der-kueche",
    "slug": "kein-platz-mehr-in-der-kueche",
