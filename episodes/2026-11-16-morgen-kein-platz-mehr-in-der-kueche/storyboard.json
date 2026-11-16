@@ -1,0 +1,152 @@
+{
+ "slug": "kein-platz-mehr-in-der-kueche",
+ "title": "Kein Platz mehr in der Küche",
+ "cta": "whatsapp",
+ "hero": "theo",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Einladungen zum Geburtstag werden verteilt, und dein Kind bekommt keine.",
+   "card": ["Einladungen werden verteilt", "und dein Kind bekommt keine"]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Nicht eingeladen heißt noch lange nicht: nicht gemocht.",
+   "card": ["Nicht eingeladen", "heißt nicht: nicht gemocht"]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Sie mag mich nicht“: Die Antwort darauf kennt dein Kind oft schon selbst.",
+   "card": ["„Sie mag mich nicht.“", "Die Antwort kennt dein Kind schon"]
+  }
+ },
+ "script": {
+  "lockin": "Theo ist sieben. In der Garderobe verteilt Mila Einladungen zu ihrem Geburtstag. Sechs Kinder bekommen eine, Theo nicht. Dabei sitzt er jeden Tag neben ihr. Am Abend sagt er: „Mila mag mich nicht.“",
+  "block1": "Schau dir das als Schrank an. Unten liegt, was passiert ist: keine Einladung. Was das bedeutet, sagt erst die Schublade darüber. Und Theo hat gerade nur eine: Sie mag mich nicht.",
+  "rehook1": "Dabei hat Theo längst eine zweite Schublade.",
+  "block2": "Papa fragt: „Wen hast du zu deinem Geburtstag eingeladen?“ „Fünf Kinder. Mehr passen nicht in unsere Küche.“ „Und Ben vom Fußball?“ „Ben nicht.“ „Magst du Ben nicht?“ „Doch! Aber es war kein Platz mehr.“",
+  "rehook2": "Dann sagt Theo selbst den neuen Satz.",
+  "block3": "„Vielleicht war bei Mila auch kein Platz mehr.“ Oben geht eine zweite Schublade auf: zu wenig Platz. Ob es stimmt, weiß keiner. Weh tut es trotzdem. Aber die fehlende Einladung passt jetzt in zwei Schubladen. Papa musste nichts erklären. Er hat nur die Schublade gefunden, die Theo schon hatte.",
+  "closing": "Welche Antwort kennt dein Kind schon von der anderen Seite?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": ["Welche Antwort kennt dein Kind", "schon von der anderen Seite?"],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {"id": "tuer", "type": "prop", "kind": "door", "x": 560},
+    {"id": "theo", "type": "figure", "role": "boy", "x": 300, "look": "right", "mood": "smile", "hair": "short", "hairColor": "brown",
+     "moods": [{"at": "Theo nicht", "mood": "sad"}, {"at": "jeden Tag neben ihr", "mood": "worried"}]},
+    {"id": "mila", "type": "figure", "role": "girl", "x": 800, "look": "left", "mood": "happy", "hair": "ponytail", "hairColor": "red",
+     "gestures": [{"at": "verteilt Mila Einladungen", "kind": "raise", "dur": 1.2}]},
+    {"id": "ballon", "type": "icon", "kind": "balloon", "x": 955, "y": 900, "size": 120, "enter": "pop", "in": "zu ihrem Geburtstag"},
+    {"id": "tag_garderobe", "type": "tag", "text": "Garderobe", "x": 540, "y": 600, "color": "plum", "in": "In der Garderobe"},
+    {"id": "einladung", "type": "card", "x": 760, "y": 760, "lines": ["Einladung", "*Milas Geburtstag*"], "size": 40,
+     "in": "Einladungen zu ihrem", "out": "Am Abend"},
+    {"id": "ok", "type": "icon", "kind": "check", "x": 930, "y": 640, "size": 80, "in": "Sechs Kinder bekommen", "out": "Am Abend"},
+    {"id": "nein", "type": "icon", "kind": "cross", "x": 300, "y": 880, "size": 90, "in": "Theo nicht", "out": "Am Abend"},
+    {"id": "tag_neben", "type": "tag", "text": "jeden Tag neben ihr", "x": 300, "y": 760, "color": "rose", "in": "Dabei sitzt er", "out": "Am Abend"}
+   ]
+  },
+  {
+   "at": "Am Abend sagt er",
+   "chord": "Bm",
+   "elements": [
+    {"id": "fenster", "type": "prop", "kind": "window", "x": 560, "y": 720},
+    {"id": "mond", "type": "icon", "kind": "moon", "x": 560, "y": 700, "size": 90, "enter": "fade"},
+    {"id": "theo", "type": "figure", "role": "boy", "x": 330, "look": "right", "mood": "sad", "hair": "short", "hairColor": "brown",
+     "talk": [["Mila mag mich", "end:Mila mag mich nicht"]]},
+    {"id": "papa", "type": "figure", "role": "papa", "x": 800, "look": "left", "mood": "smile", "hair": "short", "hairColor": "dark",
+     "moods": [{"at": "Mila mag mich nicht", "mood": "worried"}]},
+    {"id": "b_mag", "type": "bubble", "from": "theo", "text": "Mila mag mich *nicht*.", "x": 420, "y": 960, "maxW": 420,
+     "in": "Mila mag mich"}
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {"id": "theo", "type": "figure", "role": "boy", "x": 150, "look": "right", "mood": "sad", "hair": "short", "hairColor": "brown",
+     "moods": [{"at": "Dabei hat Theo", "mood": "open"}]},
+    {"id": "kopf", "type": "cabinet", "x": 705, "y": 560, "w": 620, "rowH": 120, "keep": true,
+     "rows": [["mag", "platz"], [], ["keine", "ben"]],
+     "drawers": {
+      "mag": {"label": "Sie mag mich *nicht*.", "color": "kids", "noKnob": true, "in": "Sie mag mich nicht",
+              "states": [{"at": "Sie mag mich nicht", "state": "heavy+red"},
+                         {"at": "passt jetzt in zwei", "state": "normal"}]},
+      "platz": {"label": "zu wenig *Platz*", "color": "fresh", "noKnob": true, "in": "Dabei hat Theo längst",
+                "states": [{"at": "Dabei hat Theo längst", "state": "empty"},
+                           {"at": "eine zweite Schublade", "state": "empty+glow"},
+                           {"at": "zweite Schublade auf", "state": "glow"},
+                           {"at": "die Theo schon hatte", "state": "gold"}]},
+      "keine": {"label": "*keine* Einladung", "sub": "von Mila", "color": "baby", "noKnob": true, "in": "keine Einladung",
+                "states": [{"at": "keine Einladung", "state": "glow"},
+                           {"at": "sagt erst die Schublade", "state": "normal"}]},
+      "ben": {"label": "mein Geburtstag", "sub": "*Ben* nicht dabei", "color": "idea", "noKnob": true, "in": "Und Ben vom",
+              "states": [{"at": "kein Platz mehr", "state": "glow"},
+                         {"at": "Dann sagt Theo", "state": "normal"},
+                         {"at": "die Theo schon hatte", "state": "gold+check"}]}
+     }},
+    {"id": "l_mag", "type": "link", "from": "keine", "to": "mag", "style": "gold", "in": "Sie mag mich nicht+0.3", "keep": true},
+    {"id": "st_bed", "type": "stamp", "text": "Bedeutung?", "x": 230, "y": 700, "rot": -0.08, "size": 54,
+     "in": "sagt erst die Schublade", "out": "Und Theo hat"}
+   ]
+  },
+  {
+   "at": "Papa fragt",
+   "chord": "D",
+   "elements": [
+    {"id": "theo", "type": "figure", "role": "boy", "x": 105, "look": "right", "mood": "neutral", "hair": "short", "hairColor": "brown",
+     "moods": [{"at": "Mehr passen nicht", "mood": "smile"}, {"at": "Magst du Ben", "mood": "open"}, {"at": "Doch", "mood": "wow"}],
+     "gestures": [{"at": "Magst du Ben", "kind": "think", "dur": 1.2}],
+     "talk": [["end:Geburtstag eingeladen+0.2", "end:unsere Küche"], ["Ben nicht", "end:Ben nicht"], ["Doch", "end:kein Platz mehr"]]},
+    {"id": "papa2", "type": "figure", "role": "papa", "x": 285, "look": "left", "mood": "smile", "hair": "short", "hairColor": "dark",
+     "moods": [{"at": "Doch", "mood": "happy"}],
+     "talk": [["Wen hast du", "end:Geburtstag eingeladen"], ["Und Ben vom", "end:vom Fußball"], ["Magst du Ben", "end:Magst du Ben nicht"]]},
+    {"id": "b_wen", "type": "bubble", "from": "papa2", "text": "Wen hast du zu deinem *Geburtstag* eingeladen?", "x": 250, "y": 720, "maxW": 330, "size": 40,
+     "in": "Wen hast du", "out": "end:Geburtstag eingeladen+0.2"},
+    {"id": "b_fuenf", "type": "bubble", "from": "theo", "text": "Mehr passen nicht in unsere *Küche*.", "x": 210, "y": 900, "maxW": 320, "size": 40,
+     "in": "end:Geburtstag eingeladen+0.2", "out": "Und Ben vom"},
+    {"id": "b_ben", "type": "bubble", "from": "papa2", "text": "Und *Ben* vom Fußball?", "x": 250, "y": 720, "maxW": 330, "size": 42,
+     "in": "Und Ben vom", "out": "Magst du Ben"},
+    {"id": "b_bennicht", "type": "bubble", "from": "theo", "text": "Ben nicht.", "x": 200, "y": 900, "maxW": 320, "size": 42,
+     "in": "Ben nicht", "out": "Magst du Ben"},
+    {"id": "b_magst", "type": "bubble", "from": "papa2", "text": "Magst du Ben *nicht*?", "x": 250, "y": 720, "maxW": 330, "size": 42,
+     "in": "Magst du Ben", "out": "Doch"},
+    {"id": "b_doch", "type": "bubble", "from": "theo", "text": "Doch! Aber es war kein *Platz* mehr.", "x": 210, "y": 900, "maxW": 320, "size": 40,
+     "in": "Doch"}
+   ]
+  },
+  {
+   "at": "Vielleicht war bei Mila",
+   "chord": "A",
+   "elements": [
+    {"id": "theo", "type": "figure", "role": "boy", "x": 105, "look": "right", "mood": "open", "hair": "short", "hairColor": "brown",
+     "moods": [{"at": "Ob es stimmt", "mood": "neutral"}, {"at": "Weh tut es", "mood": "sad"}, {"at": "passt jetzt in zwei", "mood": "smile"}],
+     "talk": [["Vielleicht war bei Mila", "end:kein Platz mehr"]]},
+    {"id": "papa2", "type": "figure", "role": "papa", "x": 285, "look": "left", "mood": "smile", "hair": "short", "hairColor": "dark",
+     "moods": [{"at": "Weh tut es", "mood": "worried"}, {"at": "passt jetzt in zwei", "mood": "happy"}],
+     "gestures": [{"at": "Weh tut es", "kind": "hug", "dur": 1.8}]},
+    {"id": "b_vielleicht", "type": "bubble", "from": "theo", "text": "Vielleicht war bei *Mila* auch kein Platz mehr.", "x": 230, "y": 860, "maxW": 340, "size": 40,
+     "in": "Vielleicht war bei Mila", "out": "Ob es stimmt"},
+    {"id": "l_ben", "type": "link", "from": "ben", "to": "platz", "style": "gold", "in": "zweite Schublade auf+0.4"},
+    {"id": "tag_vielleicht", "type": "tag", "text": "vielleicht", "x": 230, "y": 760, "color": "plum", "in": "Ob es stimmt", "out": "Aber die fehlende"},
+    {"id": "l_zwei", "type": "link", "from": "keine", "to": "platz", "style": "gold", "in": "passt jetzt in zwei"},
+    {"id": "tag_nichts", "type": "tag", "text": "nichts erklärt", "x": 230, "y": 760, "color": "plum", "in": "Papa musste nichts", "out": "die Theo schon hatte"},
+    {"id": "st_schon", "type": "stamp", "text": "schon da", "x": 856, "y": 1100, "rot": -0.08, "size": 60, "in": "die Theo schon hatte"}
+   ]
+  }
+ ],
+ "hits": [
+  {"at": "Theo nicht", "x": 300, "y": 880},
+  {"at": "Mila mag mich", "x": 420, "y": 960},
+  {"at": "keine Einladung", "x": 554, "y": 942},
+  {"at": "Sie mag mich nicht", "x": 554, "y": 670},
+  {"at": "kein Platz mehr", "x": 856, "y": 942},
+  {"at": "zweite Schublade auf", "x": 856, "y": 670},
+  {"at": "passt jetzt in zwei", "x": 705, "y": 806},
+  {"at": "die Theo schon hatte", "x": 856, "y": 942}
+ ]
+}

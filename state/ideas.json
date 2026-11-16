@@ -33,8 +33,9 @@
    "thema": "Nicht eingeladen werden",
    "quelle": "Schulängste, Martin 14.11.2026",
    "cta": "whatsapp",
-   "beispiel": null,
-   "status": "offen"
+   "beispiel": "Theo, sieben, bekommt in der Garderobe keine Einladung zu Milas Geburtstag (sechs Kinder schon), obwohl er jeden Tag neben ihr sitzt: „Mila mag mich nicht.“ Papa fragt nach Theos eigenem Fest: nur fünf Kinder, mehr passten nicht in die Küche, Ben vom Fußball war nicht dabei, obwohl Theo ihn mag (selbst gewählt im Lauf 16.11.2026 morgens)",
+   "status": "erledigt",
+   "erledigt": "2026-11-16"
   },
   {
    "id": "schule-hausuebung",

@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-16",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-16-morgen-kein-platz-mehr-in-der-kueche",
+   "slug": "kein-platz-mehr-in-der-kueche",
+   "titel": "Kein Platz mehr in der Küche",
+   "idee": "schule-einladung",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Einladungen zum Geburtstag werden verteilt, und dein Kind bekommt keine.",
+    "b": "Nicht eingeladen heißt noch lange nicht: nicht gemocht.",
+    "c": "„Sie mag mich nicht“: Die Antwort darauf kennt dein Kind oft schon selbst."
+   },
+   "dauer": {
+    "a": 80.77,
+    "b": 80.03,
+    "c": 80.93
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/FHqlwIrlMuAoky6jIPod",
+   "status": "fertig",
+   "hinweis": "Beispiel selbst gewählt (Idee hatte keines). Hauptteil der Stimme 74,4 s, Videos etwa 80 s. Captions in Drive: 2026-11-16-kein-platz-mehr-in-der-kueche-captions.",
+   "dateien": [
+    "kein-platz-mehr-in-der-kueche-hook-a.mp4",
+    "kein-platz-mehr-in-der-kueche-hook-b.mp4",
+    "kein-platz-mehr-in-der-kueche-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-15",
    "slot": "abend",
    "ordner": "episodes/2026-11-15-abend-heute-war-eine-bloede-pause",

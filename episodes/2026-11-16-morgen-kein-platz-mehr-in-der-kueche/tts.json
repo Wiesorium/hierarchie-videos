@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Theo ist sieben. In der Garderobe verteilt Mila Einladungen zu ihrem Geburtstag. Sechs Kinder bekommen eine, Theo nicht. Dabei sitzt er jeden Tag neben ihr. Am Abend sagt er: „Mila mag mich nicht.“ [pause] Schau dir das als Schrank an. Unten liegt, was passiert ist: keine Einladung. Was das bedeutet, sagt erst die Schublade darüber. Und Theo hat gerade nur eine: Sie mag mich nicht. [pause] Dabei hat Theo längst eine zweite Schublade. [pause] Papa fragt: „Wen hast du zu deinem Geburtstag eingeladen?“ „Fünf Kinder. Mehr passen nicht in unsere Küche.“ „Und Ben vom Fußball?“ „Ben nicht.“ „Magst du Ben nicht?“ „Doch! Aber es war kein Platz mehr.“ [pause] Dann sagt Theo selbst den neuen Satz. [pause] „Vielleicht war bei Mila auch kein Platz mehr.“ Oben geht eine zweite Schublade auf: zu wenig Platz. Ob es stimmt, weiß keiner. Weh tut es trotzdem. Aber die fehlende Einladung passt jetzt in zwei Schubladen. Papa musste nichts erklären. Er hat nur die Schublade gefunden, die Theo schon hatte. [pause] Welche Antwort kennt dein Kind schon von der anderen Seite? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Einladungen zum Geburtstag werden verteilt, und dein Kind bekommt keine.",
+  "b": "[warmly] Nicht eingeladen heißt noch lange nicht: nicht gemocht.",
+  "c": "[warmly] „Sie mag mich nicht“: Die Antwort darauf kennt dein Kind oft schon selbst."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
