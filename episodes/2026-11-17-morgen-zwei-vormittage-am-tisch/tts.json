@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Sarah und Tom, beide vierzig, sitzen beim Kaffee. Tom fragt: „Und, wie läuft's in der Arbeit?“ Sarah seufzt: „Frag nicht. Alles bleibt an mir hängen.“ Dann fragt sie zurück, und Tom strahlt: „Ich hab drei neue Ideen!“ Gleiches Thema, zwei ganz andere Gespräche. [pause] Schau dir das als Knoten an. Oben hängt das Wort Arbeit. Darunter hängen Kollegen, Ärger und Pläne. Welcher Knoten aufleuchtet, entscheidet nicht die Frage. Das entscheidet, was ganz unten gerade frisch liegt. [pause] Und da liegt bei Sarah etwas ganz anderes als bei Tom. [pause] Sarah hat vor einer halben Stunde mit ihrem Chef gestritten. Tom war laufen im Park. Bei Sarah zieht der Streit am Ärger. Bei Tom zieht das Laufen an den Plänen. So landet dieselbe Frage bei jedem woanders. [pause] Dann stellt Tom eine andere Frage. [pause] „Woher kommst du gerade?“ Sarah atmet aus: „Vom Streit mit meinem Chef.“ Sie erzählt ein paar Minuten lang. Danach liegt ganz unten etwas Neues: dieser Kaffee mit Tom. Und auf einmal hat auch Sarah Ideen. Am Tisch saßen nicht nur zwei Freunde, sondern auch zwei Vormittage. [pause] Was bringst du heute in dein nächstes Gespräch mit? [pause] [pause] Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM.",
+ "hooks": {
+  "a": "[warmly] Zwei Freunde, ein Kaffee, eine Frage: Sie seufzt, er sprüht vor Ideen.",
+  "b": "[warmly] Dein Freund redet nicht nur mit dir, er redet mit seinem Vormittag.",
+  "c": "[warmly] „Wie läuft's in der Arbeit?“: Die Antwort hängt davon ab, woher jemand gerade kommt."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

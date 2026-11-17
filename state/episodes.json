@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-17",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-17-morgen-zwei-vormittage-am-tisch",
+   "slug": "zwei-vormittage-am-tisch",
+   "titel": "Zwei Vormittage am Tisch",
+   "idee": "idee-13",
+   "cta": "kurs",
+   "hooks": {
+    "a": "Zwei Freunde, ein Kaffee, eine Frage: Sie seufzt, er sprüht vor Ideen.",
+    "b": "Dein Freund redet nicht nur mit dir, er redet mit seinem Vormittag.",
+    "c": "„Wie läuft's in der Arbeit?“: Die Antwort hängt davon ab, woher jemand gerade kommt."
+   },
+   "dauer": {
+    "a": 91.4,
+    "b": 89.17,
+    "c": 90.03
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/iTrqyndzqbovKPHKeTtK",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee, mit Namen und Alter ergänzt. Erstes Erwachsenenthema nach den Schulthemen, Kurs-CTA. Knoten als einzelne nodes (Arbeit oben, Ärger/Pläne/Kollegen, ganz unten das frische Erlebnis); am Schluss legt sich „Kaffee mit Tom“ über den blassen „Streit“. Hauptteil der Stimme 83,2 s (langsamer gesprochen als zuletzt), Videos 89 bis 91 s. Captions in Drive: 2026-11-17-zwei-vormittage-am-tisch-captions.",
+   "dateien": [
+    "zwei-vormittage-am-tisch-hook-a.mp4",
+    "zwei-vormittage-am-tisch-hook-b.mp4",
+    "zwei-vormittage-am-tisch-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-16",
    "slot": "abend",
    "ordner": "episodes/2026-11-16-abend-das-heft-auf-dem-teller",

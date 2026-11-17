@@ -51,10 +51,11 @@
    "thema": "Was vorher war, prägt das Gespräch",
    "quelle": "Ideen-Tabelle Nr. 13 (Martins Idee vom 2.11.2026)",
    "cta": "kurs",
-   "beispiel": "Zwei Freunde treffen sich auf einen Kaffee: Einer kommt aus einem Streit mit dem Chef, der andere vom Laufen im Park. Dasselbe Thema kippt beim einen in Ärger, beim anderen in Pläne.",
+   "beispiel": "Zwei Freunde treffen sich auf einen Kaffee: Einer kommt aus einem Streit mit dem Chef, der andere vom Laufen im Park. Dasselbe Thema kippt beim einen in Ärger, beim anderen in Pläne. (im Lauf 17.11.2026 morgens mit Namen und Alter ergänzt: Sarah und Tom, beide vierzig; Sarah kommt aus einem Streit mit ihrem Chef, Tom vom Laufen im Park; Tom fragt dann: „Woher kommst du gerade?“)",
    "einsicht": "Jeder bringt die Schublade mit, die gerade oben liegt; das Gespräch wird von beiden Vorgeschichten gepromptet. Hierarchisch darstellen, mit Analogien.",
    "hook": "Dein Freund redet nicht nur mit dir. Er redet mit seinem Vormittag.",
-   "status": "offen"
+   "status": "erledigt",
+   "erledigt": "2026-11-17"
   },
   {
    "id": "idee-5",

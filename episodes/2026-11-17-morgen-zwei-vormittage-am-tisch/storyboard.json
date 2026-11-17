@@ -1,0 +1,191 @@
+{
+ "slug": "zwei-vormittage-am-tisch",
+ "title": "Zwei Vormittage am Tisch",
+ "cta": "kurs",
+ "hero": "sarah",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Zwei Freunde, ein Kaffee, eine Frage: Sie seufzt, er sprüht vor Ideen.",
+   "card": ["Ein Kaffee, eine Frage:", "Sie seufzt, er sprüht vor Ideen"]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Dein Freund redet nicht nur mit dir, er redet mit seinem Vormittag.",
+   "card": ["Dein Freund redet auch", "mit seinem Vormittag"]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Wie läuft's in der Arbeit?“: Die Antwort hängt davon ab, woher jemand gerade kommt.",
+   "card": ["„Wie läuft's in der Arbeit?“", "hängt davon ab, woher man kommt"]
+  }
+ },
+ "script": {
+  "lockin": "Sarah und Tom, beide vierzig, sitzen beim Kaffee. Tom fragt: „Und, wie läuft's in der Arbeit?“ Sarah seufzt: „Frag nicht. Alles bleibt an mir hängen.“ Dann fragt sie zurück, und Tom strahlt: „Ich hab drei neue Ideen!“ Gleiches Thema, zwei ganz andere Gespräche.",
+  "block1": "Schau dir das als Knoten an. Oben hängt das Wort Arbeit. Darunter hängen Kollegen, Ärger und Pläne. Welcher Knoten aufleuchtet, entscheidet nicht die Frage. Das entscheidet, was ganz unten gerade frisch liegt.",
+  "rehook1": "Und da liegt bei Sarah etwas ganz anderes als bei Tom.",
+  "block2": "Sarah hat vor einer halben Stunde mit ihrem Chef gestritten. Tom war laufen im Park. Bei Sarah zieht der Streit am Ärger. Bei Tom zieht das Laufen an den Plänen. So landet dieselbe Frage bei jedem woanders.",
+  "rehook2": "Dann stellt Tom eine andere Frage.",
+  "block3": "„Woher kommst du gerade?“ Sarah atmet aus: „Vom Streit mit meinem Chef.“ Sie erzählt ein paar Minuten lang. Danach liegt ganz unten etwas Neues: dieser Kaffee mit Tom. Und auf einmal hat auch Sarah Ideen. Am Tisch saßen nicht nur zwei Freunde, sondern auch zwei Vormittage.",
+  "closing": "Was bringst du heute in dein nächstes Gespräch mit?",
+  "cta": "Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM."
+ },
+ "question": ["Was bringst du heute", "in dein nächstes Gespräch mit?"],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {"id": "fenster", "type": "prop", "kind": "window", "x": 540, "y": 640, "w": 300, "h": 230},
+    {"id": "sonne", "type": "icon", "kind": "sun", "x": 540, "y": 640, "size": 90, "enter": "fade"},
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 540, "w": 330, "h": 190},
+    {"id": "tasse1", "type": "prop", "kind": "cup", "x": 475, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "tasse2", "type": "prop", "kind": "cup", "x": 605, "y": 1288, "w": 66, "h": 76, "color": "baby"},
+    {"id": "sarah", "type": "figure", "role": "woman", "x": 240, "look": "right", "mood": "smile", "hair": "long", "hairColor": "brown",
+     "moods": [{"at": "Sarah seufzt", "mood": "worried"}, {"at": "Dann fragt sie zurück", "mood": "neutral"}, {"at": "Gleiches Thema", "mood": "open"}],
+     "gestures": [{"at": "Alles bleibt an mir", "kind": "shrug", "dur": 1.4}],
+     "talk": [["Frag nicht", "end:an mir hängen"], ["Dann fragt sie", "end:fragt sie zurück"]]},
+    {"id": "tom", "type": "figure", "role": "man", "x": 840, "look": "left", "mood": "smile", "hair": "short", "hairColor": "blond",
+     "moods": [{"at": "Tom strahlt", "mood": "happy"}, {"at": "neue Ideen", "mood": "grin"}, {"at": "Gleiches Thema", "mood": "open"}],
+     "gestures": [{"at": "neue Ideen", "kind": "cheer", "dur": 1.4}],
+     "talk": [["end:Tom fragt", "end:in der Arbeit"], ["Ich hab", "end:neue Ideen"]]},
+    {"id": "b_frage", "type": "bubble", "from": "tom", "text": "Und, wie läuft's in der *Arbeit*?", "x": 740, "y": 860, "maxW": 380, "size": 42,
+     "in": "end:Tom fragt", "out": "Sarah seufzt"},
+    {"id": "b_seufz", "type": "bubble", "from": "sarah", "text": "Frag nicht. Alles bleibt an *mir* hängen.", "x": 330, "y": 860, "maxW": 400, "size": 40,
+     "in": "Frag nicht", "out": "Dann fragt sie zurück"},
+    {"id": "b_ideen", "type": "bubble", "from": "tom", "text": "Ich hab *drei* neue Ideen!", "x": 740, "y": 860, "maxW": 360, "size": 44,
+     "in": "end:Tom strahlt"},
+    {"id": "idee1", "type": "icon", "kind": "bulb", "x": 760, "y": 690, "size": 70, "in": "neue Ideen"},
+    {"id": "idee2", "type": "icon", "kind": "bulb", "x": 870, "y": 670, "size": 70, "in": "neue Ideen+0.2"},
+    {"id": "idee3", "type": "icon", "kind": "bulb", "x": 980, "y": 690, "size": 70, "in": "neue Ideen+0.4"},
+    {"id": "tag_thema", "type": "tag", "text": "gleiches *Thema*", "x": 540, "y": 1010, "color": "plum", "in": "Gleiches Thema"}
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 540, "w": 330, "h": 190},
+    {"id": "tasse1", "type": "prop", "kind": "cup", "x": 475, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "tasse2", "type": "prop", "kind": "cup", "x": 605, "y": 1288, "w": 66, "h": 76, "color": "baby"},
+    {"id": "sarah", "type": "figure", "role": "woman", "x": 200, "look": "right", "mood": "neutral",
+     "moods": [{"at": "ganz unten gerade frisch", "mood": "open"}, {"at": "bei Sarah etwas", "mood": "worried"}]},
+    {"id": "tom", "type": "figure", "role": "man", "x": 880, "look": "left", "mood": "smile",
+     "moods": [{"at": "ganz unten gerade frisch", "mood": "open"}, {"at": "als bei Tom", "mood": "grin"}]},
+    {"id": "n_arbeit", "type": "node", "x": 540, "y": 525, "w": 300, "h": 110, "label": "Arbeit", "size": 56, "color": "idea", "in": "Oben hängt das Wort",
+     "states": [{"at": "Oben hängt das Wort", "state": "glow"}, {"at": "Darunter hängen", "state": "normal"},
+                {"at": "entscheidet nicht die Frage", "state": "shake"}, {"at": "dieselbe Frage", "state": "shake"}]},
+    {"id": "n_kollegen", "type": "node", "x": 875, "y": 715, "w": 250, "h": 100, "label": "Kollegen", "color": "people", "in": "Kollegen"},
+    {"id": "n_aerger", "type": "node", "x": 205, "y": 715, "w": 250, "h": 100, "label": "Ärger", "color": "kids", "in": "Ärger",
+     "states": [{"at": "zieht der Streit", "state": "red+heavy"}]},
+    {"id": "n_plaene", "type": "node", "x": 540, "y": 715, "w": 250, "h": 100, "label": "Pläne", "color": "fresh", "in": "Pläne",
+     "states": [{"at": "zieht das Laufen", "state": "glow"}]},
+    {"id": "l_kollegen", "type": "link", "from": "n_arbeit", "to": "n_kollegen", "style": "line", "in": "Kollegen"},
+    {"id": "l_aerger", "type": "link", "from": "n_arbeit", "to": "n_aerger", "style": "line", "in": "Ärger"},
+    {"id": "l_plaene", "type": "link", "from": "n_arbeit", "to": "n_plaene", "style": "line", "in": "Pläne"},
+    {"id": "p_sarah", "type": "node", "x": 205, "y": 885, "w": 300, "h": 100, "label": "?", "in": "ganz unten gerade frisch",
+     "states": [{"at": "ganz unten gerade frisch", "state": "empty"}, {"at": "bei Sarah etwas", "state": "empty+glow"}, {"at": "als bei Tom", "state": "empty"}]},
+    {"id": "p_tom", "type": "node", "x": 875, "y": 885, "w": 300, "h": 100, "label": "?", "in": "ganz unten gerade frisch",
+     "states": [{"at": "ganz unten gerade frisch", "state": "empty"}, {"at": "als bei Tom", "state": "empty+glow"}]},
+    {"id": "tag_unten", "type": "tag", "text": "ganz unten", "x": 540, "y": 885, "color": "rose", "in": "ganz unten gerade frisch"}
+   ]
+  },
+  {
+   "at": "Sarah hat vor einer halben",
+   "chord": "Bm",
+   "elements": [
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 540, "w": 330, "h": 190},
+    {"id": "tasse1", "type": "prop", "kind": "cup", "x": 475, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "tasse2", "type": "prop", "kind": "cup", "x": 605, "y": 1288, "w": 66, "h": 76, "color": "baby"},
+    {"id": "sarah", "type": "figure", "role": "woman", "x": 200, "look": "right", "mood": "worried",
+     "moods": [{"at": "zieht der Streit", "mood": "sad"}]},
+    {"id": "tom", "type": "figure", "role": "man", "x": 880, "look": "left", "mood": "smile",
+     "moods": [{"at": "laufen im Park", "mood": "happy"}, {"at": "dieselbe Frage", "mood": "open"}]},
+    {"id": "n_arbeit", "type": "node", "x": 540, "y": 525, "w": 300, "h": 110, "label": "Arbeit", "size": 56, "color": "idea"},
+    {"id": "n_kollegen", "type": "node", "x": 875, "y": 715, "w": 250, "h": 100, "label": "Kollegen", "color": "people"},
+    {"id": "n_aerger", "type": "node", "x": 205, "y": 715, "w": 250, "h": 100, "label": "Ärger", "color": "kids"},
+    {"id": "n_plaene", "type": "node", "x": 540, "y": 715, "w": 250, "h": 100, "label": "Pläne", "color": "fresh"},
+    {"id": "l_kollegen", "type": "link", "from": "n_arbeit", "to": "n_kollegen", "style": "line"},
+    {"id": "l_aerger", "type": "link", "from": "n_arbeit", "to": "n_aerger", "style": "line"},
+    {"id": "l_plaene", "type": "link", "from": "n_arbeit", "to": "n_plaene", "style": "line"},
+    {"id": "n_streit", "type": "node", "x": 205, "y": 885, "w": 300, "h": 100, "label": "Streit", "sub": "mit dem Chef", "color": "kids", "in": "Chef gestritten",
+     "states": [{"at": "zieht der Streit", "state": "red"}]},
+    {"id": "regen", "type": "icon", "kind": "rain", "x": 410, "y": 885, "size": 70, "in": "Chef gestritten+0.3"},
+    {"id": "n_laufen", "type": "node", "x": 875, "y": 885, "w": 300, "h": 100, "label": "Laufen", "sub": "im Park", "color": "fresh", "in": "laufen im Park",
+     "states": [{"at": "zieht das Laufen", "state": "glow"}]},
+    {"id": "sonne_park", "type": "icon", "kind": "sun", "x": 670, "y": 885, "size": 70, "in": "laufen im Park+0.3"},
+    {"id": "l_streit", "type": "link", "from": "n_streit", "to": "n_aerger", "style": "red", "in": "zieht der Streit"},
+    {"id": "l_laufen", "type": "link", "from": "n_laufen", "to": "n_plaene", "style": "gold", "in": "zieht das Laufen"},
+    {"id": "a_aerger", "type": "arrow", "from": "n_arbeit", "to": "n_aerger", "style": "red", "in": "dieselbe Frage"},
+    {"id": "a_plaene", "type": "arrow", "from": "n_arbeit", "to": "n_plaene", "style": "gold", "in": "dieselbe Frage+0.3"}
+   ]
+  },
+  {
+   "at": "Dann stellt Tom",
+   "chord": "D",
+   "elements": [
+    {"id": "fenster2", "type": "prop", "kind": "window", "x": 540, "y": 640, "w": 300, "h": 230, "enter": "fade"},
+    {"id": "sonne2", "type": "icon", "kind": "sun", "x": 540, "y": 640, "size": 90, "enter": "fade"},
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 540, "w": 330, "h": 190},
+    {"id": "tasse1", "type": "prop", "kind": "cup", "x": 475, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "tasse2", "type": "prop", "kind": "cup", "x": 605, "y": 1288, "w": 66, "h": 76, "color": "baby"},
+    {"id": "sarah", "type": "figure", "role": "woman", "x": 240, "look": "right", "mood": "worried",
+     "moods": [{"at": "Sarah atmet aus", "mood": "open"}, {"at": "Sie erzählt", "mood": "neutral"}],
+     "talk": [["Vom Streit", "end:meinem Chef"], ["Sie erzählt", "end:Minuten lang"]]},
+    {"id": "tom", "type": "figure", "role": "man", "x": 840, "look": "left", "mood": "open",
+     "moods": [{"at": "Woher kommst", "mood": "smile"}],
+     "gestures": [{"at": "Dann stellt Tom", "kind": "think", "dur": 1.6}],
+     "talk": [["Woher kommst", "end:du gerade"]]},
+    {"id": "b_woher", "type": "bubble", "from": "tom", "text": "Woher kommst du *gerade*?", "x": 750, "y": 820, "maxW": 360, "size": 44,
+     "in": "Woher kommst", "out": "Sie erzählt"},
+    {"id": "b_chef", "type": "bubble", "from": "sarah", "text": "Vom *Streit* mit meinem Chef.", "x": 320, "y": 880, "maxW": 380, "size": 42,
+     "in": "Sarah atmet aus"},
+    {"id": "uhr", "type": "icon", "kind": "clock", "x": 540, "y": 1080, "size": 90, "in": "ein paar Minuten"}
+   ]
+  },
+  {
+   "at": "Danach liegt ganz unten",
+   "chord": "A",
+   "elements": [
+    {"id": "tisch", "type": "prop", "kind": "table", "x": 540, "w": 330, "h": 190},
+    {"id": "tasse1", "type": "prop", "kind": "cup", "x": 475, "y": 1288, "w": 66, "h": 76, "color": "kids"},
+    {"id": "tasse2", "type": "prop", "kind": "cup", "x": 605, "y": 1288, "w": 66, "h": 76, "color": "baby"},
+    {"id": "sarah", "type": "figure", "role": "woman", "x": 200, "look": "right", "mood": "neutral",
+     "moods": [{"at": "dieser Kaffee", "mood": "smile"}, {"at": "auch Sarah Ideen", "mood": "happy"}, {"at": "Vormittage", "mood": "laugh"}],
+     "gestures": [{"at": "auch Sarah Ideen", "kind": "raise", "dur": 1.4}]},
+    {"id": "tom", "type": "figure", "role": "man", "x": 880, "look": "left", "mood": "smile",
+     "moods": [{"at": "auch Sarah Ideen", "mood": "happy"}, {"at": "Vormittage", "mood": "laugh"}]},
+    {"id": "m_arbeit", "type": "node", "x": 540, "y": 525, "w": 300, "h": 110, "label": "Arbeit", "size": 56, "color": "idea", "enter": "fade",
+     "states": [{"at": "auch Sarah Ideen", "state": "gold"}]},
+    {"id": "m_kollegen", "type": "node", "x": 875, "y": 715, "w": 250, "h": 100, "label": "Kollegen", "color": "people", "enter": "fade"},
+    {"id": "m_aerger", "type": "node", "x": 205, "y": 715, "w": 250, "h": 100, "label": "Ärger", "color": "kids", "enter": "fade",
+     "states": [{"at": "dieser Kaffee", "state": "dim"}]},
+    {"id": "m_plaene", "type": "node", "x": 540, "y": 715, "w": 250, "h": 100, "label": "Pläne", "color": "fresh", "enter": "fade",
+     "states": [{"at": "auch Sarah Ideen", "state": "glow"}, {"at": "Am Tisch saßen", "state": "gold"}]},
+    {"id": "m_l_kollegen", "type": "link", "from": "m_arbeit", "to": "m_kollegen", "style": "line"},
+    {"id": "m_l_aerger", "type": "link", "from": "m_arbeit", "to": "m_aerger", "style": "line"},
+    {"id": "m_l_plaene", "type": "link", "from": "m_arbeit", "to": "m_plaene", "style": "gold"},
+    {"id": "m_streit", "type": "node", "x": 205, "y": 897, "w": 300, "h": 100, "label": "Streit", "color": "kids", "enter": "fade",
+     "states": [{"at": "Danach liegt", "state": "dim"}]},
+    {"id": "m_kaffee", "type": "node", "x": 223, "y": 877, "w": 300, "h": 100, "label": "Kaffee", "sub": "mit Tom", "color": "food", "z": 2.5,
+     "in": "dieser Kaffee",
+     "states": [{"at": "dieser Kaffee", "state": "glow"}, {"at": "Am Tisch saßen", "state": "normal"}]},
+    {"id": "m_laufen", "type": "node", "x": 875, "y": 885, "w": 300, "h": 100, "label": "Laufen", "sub": "im Park", "color": "fresh", "enter": "fade"},
+    {"id": "m_l_laufen", "type": "link", "from": "m_laufen", "to": "m_plaene", "style": "gold"},
+    {"id": "m_l_kaffee", "type": "link", "from": "m_kaffee", "to": "m_plaene", "style": "gold", "in": "auch Sarah Ideen"},
+    {"id": "idee_sarah", "type": "icon", "kind": "bulb", "x": 400, "y": 1000, "size": 72, "in": "auch Sarah Ideen"},
+    {"id": "st_vormittage", "type": "stamp", "text": "zwei Vormittage", "x": 540, "y": 1130, "rot": -0.07, "size": 44, "in": "Vormittage"}
+   ]
+  }
+ ],
+ "hits": [
+  {"at": "in der Arbeit", "x": 740, "y": 860},
+  {"at": "neue Ideen", "x": 870, "y": 680},
+  {"at": "Oben hängt das Wort", "x": 540, "y": 525},
+  {"at": "ganz unten gerade frisch", "x": 540, "y": 885},
+  {"at": "Chef gestritten", "x": 205, "y": 885},
+  {"at": "laufen im Park", "x": 875, "y": 885},
+  {"at": "dieser Kaffee", "x": 225, "y": 875},
+  {"at": "Vormittage", "x": 540, "y": 1130}
+ ]
+}
