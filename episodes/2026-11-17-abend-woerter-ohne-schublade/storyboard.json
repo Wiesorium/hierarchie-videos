@@ -1,0 +1,181 @@
+{
+ "slug": "woerter-ohne-schublade",
+ "title": "Wörter ohne Schublade",
+ "cta": "whatsapp",
+ "hero": "mia",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Am Abend kann dein Kind alle Vokabeln, und am Morgen sind sie weg.",
+   "card": ["Am Abend alle Vokabeln,", "am Morgen weg"]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Lern zuerst den Schrank, dann die Socken: So bleiben auch Vokabeln hängen.",
+   "card": ["Erst der Schrank,", "dann die Socken"]
+  },
+  "c": {
+   "label": "Zitat",
+   "audio": "„Mein Kopf ist ein Sieb“: Meistens fehlt nur die Schublade für das Neue.",
+   "card": ["„Mein Kopf ist ein Sieb“", "Es fehlt nur die Schublade"]
+  }
+ },
+ "script": {
+  "lockin": "Mia ist elf. Für den Vokabeltest lernt sie zehn englische Wörter, genau in der Reihenfolge der Liste. Am Abend kann sie alle. Am Morgen sind nur noch drei da. Mia seufzt: „Mein Kopf ist ein Sieb.“",
+  "block1": "Schau dir das als Schrank an. Jedes neue Wort ist wie eine Socke. Aber oben fehlen die Schubladen. Also fällt jedes Wort auf den Boden, und dort findet man es am Morgen nicht mehr. Mias Kopf ist kein Sieb. Ihren Wörtern fehlt nur ein Platz.",
+  "rehook1": "Und die Schubladen dafür hat Mia schon.",
+  "block2": "Mama fragt: „Was isst du zum Frühstück?“ „Brot und Milch.“ „Und auf Englisch?“ „Bread and milk!“ Jetzt hat das Frühstück eine Schublade, und zwei Wörter landen darin. Genauso der Schulweg mit bus und street und ihr Zimmer mit bed und window.",
+  "rehook2": "Und dann kommt ein Wort, das gar nicht auf der Liste steht.",
+  "block3": "Am nächsten Morgen zeigt Mama auf den Käse: „Cheese.“ Mia lacht: „Das kommt ins Frühstück!“ Beim Test fehlt dann fast kein Wort. Mia hat nicht länger gelernt. Sie hat zuerst den Schrank gebaut. Dann hatten die Socken einen Platz.",
+  "closing": "Welche Schublade hat dein Kind schon für das, was es gerade lernt?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": ["Welche Schublade hat dein Kind schon", "für das, was es gerade lernt?"],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {"id": "fenster", "type": "prop", "kind": "window", "x": 820, "y": 640, "w": 250, "h": 200},
+    {"id": "mond", "type": "icon", "kind": "moon", "x": 820, "y": 640, "size": 90, "enter": "fade", "out": "Am Morgen sind"},
+    {"id": "sonne", "type": "icon", "kind": "sun", "x": 820, "y": 640, "size": 100, "in": "Am Morgen sind"},
+    {"id": "mia", "type": "figure", "role": "girl", "x": 300, "look": "right", "mood": "smile", "hair": "ponytail", "hairColor": "dark",
+     "moods": [{"at": "kann sie alle", "mood": "happy"}, {"at": "nur noch", "mood": "sad"}, {"at": "Mia seufzt", "mood": "worried"}],
+     "talk": [["Mein Kopf ist", "end:ein Sieb"]]},
+    {"id": "tisch", "type": "prop", "kind": "desk", "x": 330, "w": 400, "h": 150, "z": 3.5},
+    {"id": "heft", "type": "prop", "kind": "notebook", "x": 780, "y": 1130, "w": 360, "h": 420,
+     "text": ["bus", "milk", "window", "bread", "street", "bed", "..."], "size": 42, "z": 4, "enter": "pop", "in": "Für den Vokabeltest"},
+    {"id": "tag_abend", "type": "tag", "text": "am Abend", "x": 820, "y": 822, "color": "plum", "in": "Am Abend kann", "out": "Am Morgen sind"},
+    {"id": "ok_alle", "type": "icon", "kind": "check", "x": 990, "y": 822, "size": 72, "in": "kann sie alle", "out": "Am Morgen sind"},
+    {"id": "tag_morgen", "type": "tag", "text": "am Morgen", "x": 820, "y": 822, "color": "plum", "in": "Am Morgen sind"},
+    {"id": "st_drei", "type": "stamp", "text": "3 von 10", "x": 780, "y": 1130, "rot": -0.08, "size": 60, "in": "nur noch"},
+    {"id": "b_sieb", "type": "bubble", "from": "mia", "text": "Mein Kopf ist ein *Sieb*.", "x": 330, "y": 880, "maxW": 420, "size": 44,
+     "in": "Mein Kopf ist"}
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "Em",
+   "elements": [
+    {"id": "mia", "type": "figure", "role": "girl", "x": 150, "look": "right", "mood": "worried", "hair": "ponytail", "hairColor": "dark",
+     "moods": [{"at": "fällt jedes Wort", "mood": "sad"}, {"at": "Mias Kopf ist kein", "mood": "open"}, {"at": "fehlt nur ein Platz", "mood": "smile"}]},
+    {"id": "kopf", "type": "cabinet", "x": 720, "y": 560, "w": 600, "rowH": 110, "keep": true,
+     "rows": [["fr", "sw", "zi"], ["bread", "bus", "bed"], ["milk", "street", "window"], ["cheese", "frei1", "frei2"]],
+     "drawers": {
+      "fr": {"label": "Frühstück", "color": "idea", "size": 36, "in": "oben fehlen",
+       "states": [{"at": "oben fehlen", "state": "empty"},
+                  {"at": "fehlt nur ein Platz", "state": "empty+glow"},
+                  {"at": "Und die Schubladen dafür", "state": "empty"},
+                  {"at": "Was isst du zum Frühstück", "state": "empty+glow"},
+                  {"at": "Jetzt hat das Frühstück", "state": "glow"},
+                  {"at": "Genauso der Schulweg", "state": "normal"},
+                  {"at": "Das kommt ins Frühstück", "state": "glow"},
+                  {"at": "Beim Test", "state": "normal"},
+                  {"at": "zuerst den Schrank", "state": "gold"}]},
+      "sw": {"label": "Schulweg", "color": "baby", "size": 36, "in": "oben fehlen",
+       "states": [{"at": "oben fehlen", "state": "empty"},
+                  {"at": "fehlt nur ein Platz", "state": "empty+glow"},
+                  {"at": "Und die Schubladen dafür", "state": "empty"},
+                  {"at": "Genauso der Schulweg", "state": "glow"},
+                  {"at": "und ihr Zimmer", "state": "normal"},
+                  {"at": "zuerst den Schrank", "state": "gold"}]},
+      "zi": {"label": "Zimmer", "color": "kids", "size": 36, "in": "oben fehlen",
+       "states": [{"at": "oben fehlen", "state": "empty"},
+                  {"at": "fehlt nur ein Platz", "state": "empty+glow"},
+                  {"at": "Und die Schubladen dafür", "state": "empty"},
+                  {"at": "und ihr Zimmer", "state": "glow"},
+                  {"at": "Und dann kommt ein Wort", "state": "normal"},
+                  {"at": "zuerst den Schrank", "state": "gold"}]},
+      "bread": {"label": "bread", "color": "food", "in": "landen darin",
+       "states": [{"at": "landen darin", "state": "glow"}, {"at": "Genauso der Schulweg", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "milk": {"label": "milk", "color": "food", "in": "landen darin+0.4",
+       "states": [{"at": "landen darin+0.4", "state": "glow"}, {"at": "Genauso der Schulweg", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "bus": {"label": "bus", "color": "ice", "in": "mit bus",
+       "states": [{"at": "mit bus", "state": "glow"}, {"at": "und ihr Zimmer", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "street": {"label": "street", "color": "ice", "in": "und street",
+       "states": [{"at": "und street", "state": "glow"}, {"at": "und ihr Zimmer", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "bed": {"label": "bed", "color": "people", "in": "mit bed",
+       "states": [{"at": "mit bed", "state": "glow"}, {"at": "Und dann kommt ein Wort", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "window": {"label": "window", "color": "people", "in": "und window",
+       "states": [{"at": "und window", "state": "glow"}, {"at": "Und dann kommt ein Wort", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "cheese": {"label": "cheese", "color": "food", "in": "Das kommt ins Frühstück",
+       "states": [{"at": "Das kommt ins Frühstück", "state": "glow"}, {"at": "Beim Test", "state": "normal"}, {"at": "einen Platz", "state": "check"}]},
+      "frei1": {"label": "", "emptyLabel": "Platz", "in": "Das kommt ins Frühstück+0.5", "states": [{"at": "start", "state": "empty"}]},
+      "frei2": {"label": "", "emptyLabel": "Platz", "in": "Das kommt ins Frühstück+0.7", "states": [{"at": "start", "state": "empty"}]}
+     }},
+    {"id": "w_bus", "type": "tag", "text": "bus", "x": 540, "y": 800, "color": "ink", "keep": true, "in": "Jedes neue Wort",
+     "moves": [{"at": "fällt jedes Wort", "x": 720, "y": 1505, "dur": 0.55}, {"at": "mit bus-0.45", "x": 720, "y": 791, "dur": 0.45}],
+     "out": "mit bus+0.1"},
+    {"id": "w_milk", "type": "tag", "text": "milk", "x": 740, "y": 790, "color": "ink", "keep": true, "in": "Jedes neue Wort+0.15",
+     "moves": [{"at": "fällt jedes Wort+0.1", "x": 520, "y": 1505, "dur": 0.55}, {"at": "landen darin", "x": 525, "y": 917, "dur": 0.45}],
+     "out": "landen darin+0.5"},
+    {"id": "w_window", "type": "tag", "text": "window", "x": 920, "y": 820, "color": "ink", "keep": true, "in": "Jedes neue Wort+0.3",
+     "moves": [{"at": "fällt jedes Wort+0.2", "x": 920, "y": 1505, "dur": 0.55}, {"at": "und window-0.45", "x": 915, "y": 917, "dur": 0.45}],
+     "out": "und window+0.1"},
+    {"id": "w_bread", "type": "tag", "text": "bread", "x": 580, "y": 920, "color": "ink", "keep": true, "in": "Jedes neue Wort+0.45",
+     "moves": [{"at": "fällt jedes Wort+0.3", "x": 610, "y": 1448, "dur": 0.55}], "out": "nicht mehr"},
+    {"id": "w_street", "type": "tag", "text": "street", "x": 790, "y": 930, "color": "ink", "keep": true, "in": "Jedes neue Wort+0.6",
+     "moves": [{"at": "fällt jedes Wort+0.4", "x": 820, "y": 1448, "dur": 0.55}], "out": "nicht mehr+0.2"},
+    {"id": "w_bed", "type": "tag", "text": "bed", "x": 950, "y": 915, "color": "ink", "keep": true, "in": "Jedes neue Wort+0.75",
+     "moves": [{"at": "fällt jedes Wort+0.5", "x": 985, "y": 1448, "dur": 0.55}], "out": "nicht mehr+0.4"},
+    {"id": "tag_socke", "type": "tag", "text": "Wort = Socke", "x": 200, "y": 720, "color": "plum", "in": "wie eine Socke", "out": "Also fällt"},
+    {"id": "st_sieb", "type": "stamp", "text": "kein Sieb", "x": 200, "y": 760, "rot": -0.08, "size": 50, "in": "kein Sieb"}
+   ]
+  },
+  {
+   "at": "Und die Schubladen dafür",
+   "chord": "D",
+   "elements": [
+    {"id": "mia", "type": "figure", "role": "girl", "x": 105, "look": "right", "mood": "smile", "hair": "ponytail", "hairColor": "dark",
+     "moods": [{"at": "Brot und Milch", "mood": "happy"}, {"at": "Bread and milk", "mood": "laugh"}, {"at": "Jetzt hat das", "mood": "happy"}],
+     "talk": [["Brot und Milch", "end:Brot und Milch"], ["Bread and milk", "end:Bread and milk"]]},
+    {"id": "mama", "type": "figure", "role": "mama", "x": 285, "look": "left", "mood": "smile", "hair": "bun", "hairColor": "brown",
+     "moods": [{"at": "Bread and milk", "mood": "laugh"}, {"at": "Jetzt hat das", "mood": "happy"}],
+     "gestures": [{"at": "Und auf Englisch", "kind": "raise", "dur": 1.2}],
+     "talk": [["Was isst du", "end:zum Frühstück"], ["Und auf Englisch", "end:auf Englisch"]]},
+    {"id": "b_fr", "type": "bubble", "from": "mama", "text": "Was isst du zum *Frühstück*?", "x": 240, "y": 700, "maxW": 320, "size": 40,
+     "in": "Was isst du", "out": "Brot und Milch"},
+    {"id": "b_brot", "type": "bubble", "from": "mia", "text": "Brot und Milch.", "x": 200, "y": 880, "maxW": 320, "size": 42,
+     "in": "Brot und Milch", "out": "Und auf Englisch"},
+    {"id": "b_engl", "type": "bubble", "from": "mama", "text": "Und auf *Englisch*?", "x": 240, "y": 700, "maxW": 320, "size": 42,
+     "in": "Und auf Englisch", "out": "Bread and milk"},
+    {"id": "b_bread", "type": "bubble", "from": "mia", "text": "*Bread* and *milk*!", "x": 200, "y": 880, "maxW": 320, "size": 44,
+     "in": "Bread and milk", "out": "Genauso der Schulweg"}
+   ]
+  },
+  {
+   "at": "Und dann kommt ein Wort",
+   "chord": "A",
+   "elements": [
+    {"id": "mia", "type": "figure", "role": "girl", "x": 105, "look": "right", "mood": "open", "hair": "ponytail", "hairColor": "dark",
+     "moods": [{"at": "Mia lacht", "mood": "laugh"}, {"at": "Beim Test", "mood": "happy"}, {"at": "zuerst den Schrank", "mood": "grin"}],
+     "talk": [["Das kommt ins", "end:ins Frühstück"]], "hop": "fast kein Wort"},
+    {"id": "mama", "type": "figure", "role": "mama", "x": 285, "look": "left", "mood": "smile", "hair": "bun", "hairColor": "brown",
+     "moods": [{"at": "Mia lacht", "mood": "laugh"}, {"at": "Beim Test", "mood": "happy"}],
+     "gestures": [{"at": "zeigt Mama", "kind": "point", "dur": 1.4}],
+     "talk": [["end:auf den Käse", "Mia lacht"]]},
+    {"id": "tisch2", "type": "prop", "kind": "table", "x": 200, "w": 360, "h": 100, "z": 3.5, "enter": "fade"},
+    {"id": "teller", "type": "prop", "kind": "plate", "x": 200, "y": 1384, "w": 120, "z": 3.6},
+    {"id": "tasse", "type": "prop", "kind": "cup", "x": 330, "y": 1382, "w": 50, "h": 56, "color": "kids", "z": 3.6},
+    {"id": "kaese", "type": "tag", "text": "^Käse^", "x": 200, "y": 1350, "size": 30, "z": 3.7},
+    {"id": "b_cheese", "type": "bubble", "from": "mama", "text": "*Cheese*!", "x": 300, "y": 720, "size": 48,
+     "in": "end:auf den Käse", "out": "Mia lacht"},
+    {"id": "b_kommt", "type": "bubble", "from": "mia", "text": "Das kommt ins *Frühstück*!", "x": 215, "y": 880, "maxW": 320, "size": 40,
+     "in": "Das kommt ins", "out": "Beim Test"},
+    {"id": "tag_test", "type": "tag", "text": "Vokabeltest", "x": 215, "y": 640, "color": "plum", "in": "Beim Test", "out": "zuerst den Schrank"},
+    {"id": "ok_test", "type": "icon", "kind": "check", "x": 215, "y": 790, "size": 96, "in": "fast kein Wort", "out": "zuerst den Schrank"},
+    {"id": "st_schrank", "type": "stamp", "text": "erst der Schrank", "x": 225, "y": 720, "rot": -0.08, "size": 44, "in": "zuerst den Schrank"}
+   ]
+  }
+ ],
+ "hits": [
+  {"at": "nur noch", "x": 780, "y": 1130},
+  {"at": "oben fehlen", "x": 720, "y": 665},
+  {"at": "fällt jedes Wort", "x": 720, "y": 1450},
+  {"at": "kein Sieb", "x": 200, "y": 760},
+  {"at": "Jetzt hat das Frühstück", "x": 525, "y": 665},
+  {"at": "Das kommt ins Frühstück", "x": 525, "y": 1043},
+  {"at": "fast kein Wort", "x": 215, "y": 790},
+  {"at": "zuerst den Schrank", "x": 720, "y": 665}
+ ]
+}

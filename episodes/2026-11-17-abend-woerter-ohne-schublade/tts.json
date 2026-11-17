@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Mia ist elf. Für den Vokabeltest lernt sie zehn englische Wörter, genau in der Reihenfolge der Liste. Am Abend kann sie alle. Am Morgen sind nur noch drei da. Mia seufzt: „Mein Kopf ist ein Sieb.“ [pause] Schau dir das als Schrank an. Jedes neue Wort ist wie eine Socke. Aber oben fehlen die Schubladen. Also fällt jedes Wort auf den Boden, und dort findet man es am Morgen nicht mehr. Mias Kopf ist kein Sieb. Ihren Wörtern fehlt nur ein Platz. [pause] Und die Schubladen dafür hat Mia schon. [pause] Mama fragt: „Was isst du zum Frühstück?“ „Brot und Milch.“ „Und auf Englisch?“ „Bread and milk!“ Jetzt hat das Frühstück eine Schublade, und zwei Wörter landen darin. Genauso der Schulweg mit bus und street und ihr Zimmer mit bed und window. [pause] Und dann kommt ein Wort, das gar nicht auf der Liste steht. [pause] Am nächsten Morgen zeigt Mama auf den Käse: „Cheese.“ Mia lacht: „Das kommt ins Frühstück!“ Beim Test fehlt dann fast kein Wort. Mia hat nicht länger gelernt. Sie hat zuerst den Schrank gebaut. Dann hatten die Socken einen Platz. [pause] Welche Schublade hat dein Kind schon für das, was es gerade lernt? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Am Abend kann dein Kind alle Vokabeln, und am Morgen sind sie weg.",
+  "b": "[warmly] Lern zuerst den Schrank, dann die Socken: So bleiben auch Vokabeln hängen.",
+  "c": "[warmly] „Mein Kopf ist ein Sieb“: Meistens fehlt nur die Schublade für das Neue."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

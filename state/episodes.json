@@ -3,6 +3,27 @@
  "videos": [
   {
    "datum": "2026-11-17",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-17-abend-woerter-ohne-schublade",
+   "slug": "woerter-ohne-schublade",
+   "titel": "Wörter ohne Schublade",
+   "idee": "idee-5",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Am Abend kann dein Kind alle Vokabeln, und am Morgen sind sie weg.",
+    "b": "Lern zuerst den Schrank, dann die Socken: So bleiben auch Vokabeln hängen.",
+    "c": "„Mein Kopf ist ein Sieb“: Meistens fehlt nur die Schublade für das Neue."
+   },
+   "dauer": {
+    "a": 87.0,
+    "b": 87.23,
+    "c": 87.47
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/aWEU3JMkTrtvOmgmRB1d",
+   "status": "fertig"
+  },
+  {
+   "datum": "2026-11-17",
    "slot": "morgen",
    "ordner": "episodes/2026-11-17-morgen-zwei-vormittage-am-tisch",
    "slug": "zwei-vormittage-am-tisch",
