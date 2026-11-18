@@ -1,0 +1,1354 @@
+{
+"words": [
+{
+"text": "[warmly]",
+"start": 0.0,
+"end": 0.067,
+"type": "word"
+},
+{
+"text": "Ella",
+"start": 0.08,
+"end": 0.32,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 0.4,
+"end": 0.56,
+"type": "word"
+},
+{
+"text": "neun.",
+"start": 0.64,
+"end": 1.28,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 1.52,
+"end": 1.68,
+"type": "word"
+},
+{
+"text": "blättert",
+"start": 1.72,
+"end": 2.0,
+"type": "word"
+},
+{
+"text": "in",
+"start": 2.08,
+"end": 2.16,
+"type": "word"
+},
+{
+"text": "Papas",
+"start": 2.24,
+"end": 2.56,
+"type": "word"
+},
+{
+"text": "altem",
+"start": 2.6,
+"end": 2.88,
+"type": "word"
+},
+{
+"text": "Sternenbuch",
+"start": 2.92,
+"end": 3.6,
+"type": "word"
+},
+{
+"text": "und",
+"start": 3.68,
+"end": 3.76,
+"type": "word"
+},
+{
+"text": "zählt",
+"start": 3.84,
+"end": 4.0,
+"type": "word"
+},
+{
+"text": "die",
+"start": 4.08,
+"end": 4.16,
+"type": "word"
+},
+{
+"text": "Planeten.",
+"start": 4.24,
+"end": 5.12,
+"type": "word"
+},
+{
+"text": "Neun!",
+"start": 5.2,
+"end": 6.08,
+"type": "word"
+},
+{
+"text": "In",
+"start": 6.12,
+"end": 6.16,
+"type": "word"
+},
+{
+"text": "der",
+"start": 6.24,
+"end": 6.32,
+"type": "word"
+},
+{
+"text": "Schule",
+"start": 6.4,
+"end": 6.64,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 6.72,
+"end": 6.8,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 6.84,
+"end": 6.88,
+"type": "word"
+},
+{
+"text": "nur",
+"start": 6.96,
+"end": 7.04,
+"type": "word"
+},
+{
+"text": "acht",
+"start": 7.12,
+"end": 7.28,
+"type": "word"
+},
+{
+"text": "gelernt.",
+"start": 7.36,
+"end": 8.32,
+"type": "word"
+},
+{
+"text": "Leise",
+"start": 8.4,
+"end": 8.64,
+"type": "word"
+},
+{
+"text": "fragt",
+"start": 8.72,
+"end": 8.96,
+"type": "word"
+},
+{
+"text": "sie:",
+"start": 9.04,
+"end": 9.76,
+"type": "word"
+},
+{
+"text": "„Papa,",
+"start": 9.787,
+"end": 10.56,
+"type": "word"
+},
+{
+"text": "haben",
+"start": 10.64,
+"end": 10.8,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 10.88,
+"end": 11.04,
+"type": "word"
+},
+{
+"text": "Pluto",
+"start": 11.12,
+"end": 11.44,
+"type": "word"
+},
+{
+"text": "rausgeworfen?“",
+"start": 11.52,
+"end": 12.36,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 12.38,
+"end": 13.52,
+"type": "word"
+},
+{
+"text": "Schau",
+"start": 13.56,
+"end": 13.68,
+"type": "word"
+},
+{
+"text": "dir",
+"start": 13.76,
+"end": 13.84,
+"type": "word"
+},
+{
+"text": "das",
+"start": 13.92,
+"end": 14.0,
+"type": "word"
+},
+{
+"text": "als",
+"start": 14.12,
+"end": 14.24,
+"type": "word"
+},
+{
+"text": "Schrank",
+"start": 14.28,
+"end": 14.64,
+"type": "word"
+},
+{
+"text": "an.",
+"start": 14.76,
+"end": 15.28,
+"type": "word"
+},
+{
+"text": "Unten",
+"start": 15.4,
+"end": 15.68,
+"type": "word"
+},
+{
+"text": "liegen",
+"start": 15.76,
+"end": 16.08,
+"type": "word"
+},
+{
+"text": "Erde,",
+"start": 16.2,
+"end": 16.72,
+"type": "word"
+},
+{
+"text": "Mars,",
+"start": 16.853,
+"end": 17.28,
+"type": "word"
+},
+{
+"text": "Jupiter",
+"start": 17.36,
+"end": 17.84,
+"type": "word"
+},
+{
+"text": "und",
+"start": 17.92,
+"end": 18.0,
+"type": "word"
+},
+{
+"text": "Pluto.",
+"start": 18.08,
+"end": 18.96,
+"type": "word"
+},
+{
+"text": "Oben",
+"start": 19.08,
+"end": 19.36,
+"type": "word"
+},
+{
+"text": "gab",
+"start": 19.413,
+"end": 19.52,
+"type": "word"
+},
+{
+"text": "es",
+"start": 19.6,
+"end": 19.68,
+"type": "word"
+},
+{
+"text": "früher",
+"start": 19.72,
+"end": 19.92,
+"type": "word"
+},
+{
+"text": "nur",
+"start": 20.0,
+"end": 20.16,
+"type": "word"
+},
+{
+"text": "eine",
+"start": 20.2,
+"end": 20.4,
+"type": "word"
+},
+{
+"text": "Schublade:",
+"start": 20.48,
+"end": 21.28,
+"type": "word"
+},
+{
+"text": "„Planet“.",
+"start": 21.44,
+"end": 22.56,
+"type": "word"
+},
+{
+"text": "Pluto",
+"start": 22.64,
+"end": 22.96,
+"type": "word"
+},
+{
+"text": "selbst",
+"start": 23.08,
+"end": 23.36,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 23.44,
+"end": 23.52,
+"type": "word"
+},
+{
+"text": "sich",
+"start": 23.6,
+"end": 23.76,
+"type": "word"
+},
+{
+"text": "nie",
+"start": 23.84,
+"end": 23.92,
+"type": "word"
+},
+{
+"text": "verändert.",
+"start": 24.0,
+"end": 24.72,
+"type": "word"
+},
+{
+"text": "Er",
+"start": 24.8,
+"end": 24.88,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 24.96,
+"end": 25.04,
+"type": "word"
+},
+{
+"text": "so",
+"start": 25.12,
+"end": 25.2,
+"type": "word"
+},
+{
+"text": "klein,",
+"start": 25.28,
+"end": 25.84,
+"type": "word"
+},
+{
+"text": "so",
+"start": 25.92,
+"end": 26.0,
+"type": "word"
+},
+{
+"text": "kalt",
+"start": 26.08,
+"end": 26.48,
+"type": "word"
+},
+{
+"text": "und",
+"start": 26.56,
+"end": 26.72,
+"type": "word"
+},
+{
+"text": "so",
+"start": 26.8,
+"end": 26.88,
+"type": "word"
+},
+{
+"text": "weit",
+"start": 26.96,
+"end": 27.2,
+"type": "word"
+},
+{
+"text": "weg",
+"start": 27.28,
+"end": 27.44,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 27.52,
+"end": 27.6,
+"type": "word"
+},
+{
+"text": "immer.",
+"start": 27.68,
+"end": 28.56,
+"type": "word"
+},
+{
+"text": "Geändert",
+"start": 28.68,
+"end": 29.12,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 29.2,
+"end": 29.28,
+"type": "word"
+},
+{
+"text": "sich",
+"start": 29.36,
+"end": 29.44,
+"type": "word"
+},
+{
+"text": "die",
+"start": 29.52,
+"end": 29.6,
+"type": "word"
+},
+{
+"text": "Schublade",
+"start": 29.68,
+"end": 30.08,
+"type": "word"
+},
+{
+"text": "darüber.",
+"start": 30.16,
+"end": 30.96,
+"type": "word"
+},
+{
+"text": "Heute",
+"start": 31.0,
+"end": 31.28,
+"type": "word"
+},
+{
+"text": "gibt",
+"start": 31.333,
+"end": 31.44,
+"type": "word"
+},
+{
+"text": "es",
+"start": 31.56,
+"end": 31.68,
+"type": "word"
+},
+{
+"text": "zwei:",
+"start": 31.72,
+"end": 32.4,
+"type": "word"
+},
+{
+"text": "„Planet“",
+"start": 32.56,
+"end": 33.2,
+"type": "word"
+},
+{
+"text": "und",
+"start": 33.28,
+"end": 33.36,
+"type": "word"
+},
+{
+"text": "„Zwergplanet“.",
+"start": 33.6,
+"end": 34.48,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 34.52,
+"end": 35.52,
+"type": "word"
+},
+{
+"text": "Aber",
+"start": 35.6,
+"end": 35.76,
+"type": "word"
+},
+{
+"text": "warum",
+"start": 36.0,
+"end": 36.32,
+"type": "word"
+},
+{
+"text": "haben",
+"start": 36.4,
+"end": 36.64,
+"type": "word"
+},
+{
+"text": "Sternforscher",
+"start": 36.72,
+"end": 37.36,
+"type": "word"
+},
+{
+"text": "die",
+"start": 37.4,
+"end": 37.44,
+"type": "word"
+},
+{
+"text": "Schublade",
+"start": 37.52,
+"end": 37.92,
+"type": "word"
+},
+{
+"text": "umgebaut?",
+"start": 38.0,
+"end": 38.56,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 39.44,
+"end": 39.488,
+"type": "word"
+},
+{
+"text": "Papa",
+"start": 39.504,
+"end": 39.76,
+"type": "word"
+},
+{
+"text": "erklärt:",
+"start": 39.84,
+"end": 40.32,
+"type": "word"
+},
+{
+"text": "Weit",
+"start": 40.8,
+"end": 41.04,
+"type": "word"
+},
+{
+"text": "draußen",
+"start": 41.12,
+"end": 41.6,
+"type": "word"
+},
+{
+"text": "fanden",
+"start": 41.68,
+"end": 41.92,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 42.0,
+"end": 42.16,
+"type": "word"
+},
+{
+"text": "immer",
+"start": 42.28,
+"end": 42.4,
+"type": "word"
+},
+{
+"text": "mehr",
+"start": 42.48,
+"end": 42.64,
+"type": "word"
+},
+{
+"text": "Eisbrocken.",
+"start": 42.72,
+"end": 43.6,
+"type": "word"
+},
+{
+"text": "Einer",
+"start": 43.68,
+"end": 44.0,
+"type": "word"
+},
+{
+"text": "war",
+"start": 44.08,
+"end": 44.24,
+"type": "word"
+},
+{
+"text": "fast",
+"start": 44.32,
+"end": 44.56,
+"type": "word"
+},
+{
+"text": "so",
+"start": 44.64,
+"end": 44.72,
+"type": "word"
+},
+{
+"text": "groß",
+"start": 44.8,
+"end": 44.96,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 45.04,
+"end": 45.12,
+"type": "word"
+},
+{
+"text": "Pluto.",
+"start": 45.2,
+"end": 46.08,
+"type": "word"
+},
+{
+"text": "Also",
+"start": 46.16,
+"end": 46.4,
+"type": "word"
+},
+{
+"text": "schrieben",
+"start": 46.48,
+"end": 46.8,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 46.88,
+"end": 46.96,
+"type": "word"
+},
+{
+"text": "genauer",
+"start": 47.08,
+"end": 47.36,
+"type": "word"
+},
+{
+"text": "auf,",
+"start": 47.44,
+"end": 47.64,
+"type": "word"
+},
+{
+"text": "was",
+"start": 47.68,
+"end": 47.84,
+"type": "word"
+},
+{
+"text": "ein",
+"start": 47.88,
+"end": 47.92,
+"type": "word"
+},
+{
+"text": "Planet",
+"start": 48.0,
+"end": 48.4,
+"type": "word"
+},
+{
+"text": "ist:",
+"start": 48.52,
+"end": 49.04,
+"type": "word"
+},
+{
+"text": "Er",
+"start": 49.12,
+"end": 49.2,
+"type": "word"
+},
+{
+"text": "räumt",
+"start": 49.24,
+"end": 49.52,
+"type": "word"
+},
+{
+"text": "seine",
+"start": 49.56,
+"end": 49.76,
+"type": "word"
+},
+{
+"text": "Bahn",
+"start": 49.84,
+"end": 50.08,
+"type": "word"
+},
+{
+"text": "um",
+"start": 50.16,
+"end": 50.24,
+"type": "word"
+},
+{
+"text": "die",
+"start": 50.28,
+"end": 50.32,
+"type": "word"
+},
+{
+"text": "Sonne",
+"start": 50.4,
+"end": 50.64,
+"type": "word"
+},
+{
+"text": "frei,",
+"start": 50.72,
+"end": 51.12,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 51.2,
+"end": 51.28,
+"type": "word"
+},
+{
+"text": "ein",
+"start": 51.36,
+"end": 51.44,
+"type": "word"
+},
+{
+"text": "Schneepflug.",
+"start": 51.52,
+"end": 52.72,
+"type": "word"
+},
+{
+"text": "Pluto",
+"start": 52.8,
+"end": 53.2,
+"type": "word"
+},
+{
+"text": "kreist",
+"start": 53.28,
+"end": 53.6,
+"type": "word"
+},
+{
+"text": "mitten",
+"start": 53.68,
+"end": 53.92,
+"type": "word"
+},
+{
+"text": "zwischen",
+"start": 54.08,
+"end": 54.4,
+"type": "word"
+},
+{
+"text": "den",
+"start": 54.48,
+"end": 54.56,
+"type": "word"
+},
+{
+"text": "Eisbrocken.",
+"start": 54.6,
+"end": 55.36,
+"type": "word"
+},
+{
+"text": "Darum",
+"start": 55.52,
+"end": 55.84,
+"type": "word"
+},
+{
+"text": "bekam",
+"start": 55.92,
+"end": 56.16,
+"type": "word"
+},
+{
+"text": "er",
+"start": 56.2,
+"end": 56.24,
+"type": "word"
+},
+{
+"text": "vor",
+"start": 56.32,
+"end": 56.4,
+"type": "word"
+},
+{
+"text": "zwanzig",
+"start": 56.48,
+"end": 56.88,
+"type": "word"
+},
+{
+"text": "Jahren",
+"start": 56.96,
+"end": 57.2,
+"type": "word"
+},
+{
+"text": "die",
+"start": 57.28,
+"end": 57.36,
+"type": "word"
+},
+{
+"text": "neue",
+"start": 57.44,
+"end": 57.6,
+"type": "word"
+},
+{
+"text": "Schublade.",
+"start": 57.68,
+"end": 58.24,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 59.12,
+"end": 59.216,
+"type": "word"
+},
+{
+"text": "Und",
+"start": 59.248,
+"end": 59.28,
+"type": "word"
+},
+{
+"text": "dann",
+"start": 59.36,
+"end": 59.52,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 59.6,
+"end": 59.76,
+"type": "word"
+},
+{
+"text": "Ella",
+"start": 59.84,
+"end": 60.08,
+"type": "word"
+},
+{
+"text": "eine",
+"start": 60.16,
+"end": 60.32,
+"type": "word"
+},
+{
+"text": "Idee.",
+"start": 60.4,
+"end": 61.12,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 61.44,
+"end": 61.536,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 61.568,
+"end": 61.6,
+"type": "word"
+},
+{
+"text": "klebt",
+"start": 61.68,
+"end": 61.92,
+"type": "word"
+},
+{
+"text": "einen",
+"start": 61.96,
+"end": 62.16,
+"type": "word"
+},
+{
+"text": "Zettel",
+"start": 62.24,
+"end": 62.48,
+"type": "word"
+},
+{
+"text": "in",
+"start": 62.56,
+"end": 62.64,
+"type": "word"
+},
+{
+"text": "Papas",
+"start": 62.72,
+"end": 63.04,
+"type": "word"
+},
+{
+"text": "Buch,",
+"start": 63.12,
+"end": 63.52,
+"type": "word"
+},
+{
+"text": "gleich",
+"start": 63.6,
+"end": 63.84,
+"type": "word"
+},
+{
+"text": "neben",
+"start": 63.92,
+"end": 64.08,
+"type": "word"
+},
+{
+"text": "Pluto:",
+"start": 64.16,
+"end": 64.64,
+"type": "word"
+},
+{
+"text": "„Zwergplanet“.",
+"start": 65.04,
+"end": 65.92,
+"type": "word"
+},
+{
+"text": "Ella",
+"start": 66.4,
+"end": 66.64,
+"type": "word"
+},
+{
+"text": "strahlt:",
+"start": 66.72,
+"end": 67.28,
+"type": "word"
+},
+{
+"text": "„Dann",
+"start": 67.6,
+"end": 67.76,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 67.84,
+"end": 67.92,
+"type": "word"
+},
+{
+"text": "Pluto",
+"start": 68.0,
+"end": 68.32,
+"type": "word"
+},
+{
+"text": "ja",
+"start": 68.36,
+"end": 68.4,
+"type": "word"
+},
+{
+"text": "gar",
+"start": 68.48,
+"end": 68.56,
+"type": "word"
+},
+{
+"text": "nicht",
+"start": 68.64,
+"end": 68.8,
+"type": "word"
+},
+{
+"text": "weg!“",
+"start": 68.96,
+"end": 69.4,
+"type": "word"
+},
+{
+"text": "Papa",
+"start": 69.6,
+"end": 69.92,
+"type": "word"
+},
+{
+"text": "lacht:",
+"start": 70.0,
+"end": 70.44,
+"type": "word"
+},
+{
+"text": "„Und",
+"start": 70.56,
+"end": 70.72,
+"type": "word"
+},
+{
+"text": "mein",
+"start": 70.8,
+"end": 70.96,
+"type": "word"
+},
+{
+"text": "Buch",
+"start": 71.04,
+"end": 71.2,
+"type": "word"
+},
+{
+"text": "stimmt",
+"start": 71.28,
+"end": 71.6,
+"type": "word"
+},
+{
+"text": "wieder.“",
+"start": 71.68,
+"end": 72.0,
+"type": "word"
+},
+{
+"text": "Papa",
+"start": 72.56,
+"end": 72.88,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 72.96,
+"end": 73.04,
+"type": "word"
+},
+{
+"text": "nicht",
+"start": 73.12,
+"end": 73.36,
+"type": "word"
+},
+{
+"text": "falsch",
+"start": 73.4,
+"end": 73.68,
+"type": "word"
+},
+{
+"text": "gelernt.",
+"start": 73.72,
+"end": 74.16,
+"type": "word"
+},
+{
+"text": "Manchmal",
+"start": 74.48,
+"end": 74.96,
+"type": "word"
+},
+{
+"text": "heißt",
+"start": 75.0,
+"end": 75.24,
+"type": "word"
+},
+{
+"text": "Lernen",
+"start": 75.28,
+"end": 75.6,
+"type": "word"
+},
+{
+"text": "nicht",
+"start": 75.653,
+"end": 75.76,
+"type": "word"
+},
+{
+"text": "dazulernen,",
+"start": 75.84,
+"end": 76.8,
+"type": "word"
+},
+{
+"text": "sondern",
+"start": 76.88,
+"end": 77.12,
+"type": "word"
+},
+{
+"text": "umsortieren.",
+"start": 77.28,
+"end": 78.08,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 79.04,
+"end": 79.136,
+"type": "word"
+},
+{
+"text": "Was",
+"start": 79.168,
+"end": 79.2,
+"type": "word"
+},
+{
+"text": "hast",
+"start": 79.28,
+"end": 79.44,
+"type": "word"
+},
+{
+"text": "du",
+"start": 79.52,
+"end": 79.6,
+"type": "word"
+},
+{
+"text": "als",
+"start": 79.68,
+"end": 79.84,
+"type": "word"
+},
+{
+"text": "Kind",
+"start": 79.92,
+"end": 80.08,
+"type": "word"
+},
+{
+"text": "gelernt,",
+"start": 80.16,
+"end": 80.64,
+"type": "word"
+},
+{
+"text": "das",
+"start": 80.72,
+"end": 80.8,
+"type": "word"
+},
+{
+"text": "heute",
+"start": 80.88,
+"end": 81.2,
+"type": "word"
+},
+{
+"text": "in",
+"start": 81.28,
+"end": 81.36,
+"type": "word"
+},
+{
+"text": "einer",
+"start": 81.44,
+"end": 81.6,
+"type": "word"
+},
+{
+"text": "neuen",
+"start": 81.64,
+"end": 81.84,
+"type": "word"
+},
+{
+"text": "Schublade",
+"start": 81.92,
+"end": 82.32,
+"type": "word"
+},
+{
+"text": "liegt?",
+"start": 82.4,
+"end": 82.747,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 82.773,
+"end": 83.92,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 84.64,
+"end": 84.688,
+"type": "word"
+},
+{
+"text": "Mehr",
+"start": 84.704,
+"end": 84.8,
+"type": "word"
+},
+{
+"text": "solche",
+"start": 84.88,
+"end": 85.12,
+"type": "word"
+},
+{
+"text": "Lerngeschichten",
+"start": 85.2,
+"end": 85.84,
+"type": "word"
+},
+{
+"text": "gibt",
+"start": 85.92,
+"end": 86.08,
+"type": "word"
+},
+{
+"text": "es",
+"start": 86.12,
+"end": 86.16,
+"type": "word"
+},
+{
+"text": "in",
+"start": 86.24,
+"end": 86.32,
+"type": "word"
+},
+{
+"text": "meiner",
+"start": 86.36,
+"end": 86.56,
+"type": "word"
+},
+{
+"text": "WhatsApp-Gruppe",
+"start": 86.76,
+"end": 87.28,
+"type": "word"
+},
+{
+"text": "Entdeckerfreunde:",
+"start": 87.36,
+"end": 88.48,
+"type": "word"
+},
+{
+"text": "Schreib",
+"start": 88.52,
+"end": 88.72,
+"type": "word"
+},
+{
+"text": "mir",
+"start": 88.8,
+"end": 88.96,
+"type": "word"
+},
+{
+"text": "„Entdecker“,",
+"start": 89.04,
+"end": 89.76,
+"type": "word"
+},
+{
+"text": "dann",
+"start": 89.84,
+"end": 89.92,
+"type": "word"
+},
+{
+"text": "schick",
+"start": 90.0,
+"end": 90.16,
+"type": "word"
+},
+{
+"text": "ich",
+"start": 90.2,
+"end": 90.24,
+"type": "word"
+},
+{
+"text": "dir",
+"start": 90.32,
+"end": 90.4,
+"type": "word"
+},
+{
+"text": "den",
+"start": 90.48,
+"end": 90.56,
+"type": "word"
+},
+{
+"text": "Link.",
+"start": 90.68,
+"end": 91.04,
+"type": "word"
+}
+]
+}

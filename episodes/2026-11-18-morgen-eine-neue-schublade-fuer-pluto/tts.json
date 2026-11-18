@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Ella ist neun. Sie blättert in Papas altem Sternenbuch und zählt die Planeten. Neun! In der Schule hat sie nur acht gelernt. Leise fragt sie: „Papa, haben sie Pluto rausgeworfen?“ [pause] Schau dir das als Schrank an. Unten liegen Erde, Mars, Jupiter und Pluto. Oben gab es früher nur eine Schublade: „Planet“. Pluto selbst hat sich nie verändert. Er ist so klein, so kalt und so weit weg wie immer. Geändert hat sich die Schublade darüber. Heute gibt es zwei: „Planet“ und „Zwergplanet“. [pause] Aber warum haben Sternforscher die Schublade umgebaut? [pause] Papa erklärt: Weit draußen fanden sie immer mehr Eisbrocken. Einer war fast so groß wie Pluto. Also schrieben sie genauer auf, was ein Planet ist: Er räumt seine Bahn um die Sonne frei, wie ein Schneepflug. Pluto kreist mitten zwischen den Eisbrocken. Darum bekam er vor zwanzig Jahren die neue Schublade. [pause] Und dann hat Ella eine Idee. [pause] Sie klebt einen Zettel in Papas Buch, gleich neben Pluto: „Zwergplanet“. Ella strahlt: „Dann ist Pluto ja gar nicht weg!“ Papa lacht: „Und mein Buch stimmt wieder.“ Papa hat nicht falsch gelernt. Manchmal heißt Lernen nicht dazulernen, sondern umsortieren. [pause] Was hast du als Kind gelernt, das heute in einer neuen Schublade liegt? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Du hast neun Planeten gelernt, dein Kind nur acht.",
+  "b": "[warmly] Pluto hat sich nicht verändert, nur seine Schublade.",
+  "c": "[warmly] Seit zwanzig Jahren ist Pluto kein Planet mehr, und er hat nichts davon gemerkt."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

@@ -1,0 +1,1082 @@
+{
+ "slug": "eine-neue-schublade-fuer-pluto",
+ "title": "Eine neue Schublade für Pluto",
+ "cta": "whatsapp",
+ "hero": "ella",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Du hast neun Planeten gelernt, dein Kind nur acht.",
+   "card": [
+    "Du hast 9 Planeten gelernt,",
+    "dein Kind nur 8"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Pluto hat sich nicht verändert, nur seine Schublade.",
+   "card": [
+    "Pluto hat sich nicht verändert.",
+    "Nur seine Schublade"
+   ]
+  },
+  "c": {
+   "label": "Zahl",
+   "audio": "Seit zwanzig Jahren ist Pluto kein Planet mehr, und er hat nichts davon gemerkt.",
+   "card": [
+    "Seit 20 Jahren kein Planet",
+    "und Pluto merkt nichts"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Ella ist neun. Sie blättert in Papas altem Sternenbuch und zählt die Planeten. Neun! In der Schule hat sie nur acht gelernt. Leise fragt sie: „Papa, haben sie Pluto rausgeworfen?“",
+  "block1": "Schau dir das als Schrank an. Unten liegen Erde, Mars, Jupiter und Pluto. Oben gab es früher nur eine Schublade: „Planet“. Pluto selbst hat sich nie verändert. Er ist so klein, so kalt und so weit weg wie immer. Geändert hat sich die Schublade darüber. Heute gibt es zwei: „Planet“ und „Zwergplanet“.",
+  "rehook1": "Aber warum haben Sternforscher die Schublade umgebaut?",
+  "block2": "Papa erklärt: Weit draußen fanden sie immer mehr Eisbrocken. Einer war fast so groß wie Pluto. Also schrieben sie genauer auf, was ein Planet ist: Er räumt seine Bahn um die Sonne frei, wie ein Schneepflug. Pluto kreist mitten zwischen den Eisbrocken. Darum bekam er vor zwanzig Jahren die neue Schublade.",
+  "rehook2": "Und dann hat Ella eine Idee.",
+  "block3": "Sie klebt einen Zettel in Papas Buch, gleich neben Pluto: „Zwergplanet“. Ella strahlt: „Dann ist Pluto ja gar nicht weg!“ Papa lacht: „Und mein Buch stimmt wieder.“ Papa hat nicht falsch gelernt. Manchmal heißt Lernen nicht dazulernen, sondern umsortieren.",
+  "closing": "Was hast du als Kind gelernt, das heute in einer neuen Schublade liegt?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was hast du als Kind gelernt,",
+  "das heute in einer neuen Schublade liegt?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "ella",
+     "type": "figure",
+     "role": "girl",
+     "x": 130,
+     "look": "right",
+     "mood": "smile",
+     "hair": "ponytail",
+     "hairColor": "blond",
+     "moods": [
+      {
+       "at": "end:zählt die Planeten+0.25",
+       "mood": "wow"
+      },
+      {
+       "at": "In der Schule hat",
+       "mood": "open"
+      },
+      {
+       "at": "Leise fragt sie",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "zählt die Planeten",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Papa haben sie",
+       "end:rausgeworfen"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 320,
+     "look": "left",
+     "mood": "smile",
+     "hair": "short",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "end:zählt die Planeten+0.25",
+       "mood": "happy"
+      },
+      {
+       "at": "end:rausgeworfen",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "buch",
+     "type": "prop",
+     "kind": "book",
+     "x": 770,
+     "y": 960,
+     "w": 470,
+     "h": 360,
+     "color": "plum",
+     "text": [
+      "_Unsere Planeten_",
+      "Merkur, Venus, Erde,",
+      "Mars, Jupiter, Saturn,",
+      "Uranus, Neptun, *Pluto*"
+     ],
+     "size": 38
+    },
+    {
+     "id": "st_neun",
+     "type": "stamp",
+     "text": "9",
+     "x": 975,
+     "y": 800,
+     "rot": -0.12,
+     "size": 74,
+     "in": "end:zählt die Planeten+0.25"
+    },
+    {
+     "id": "tag_schule",
+     "type": "tag",
+     "text": "Schule: 8 Planeten",
+     "x": 770,
+     "y": 1215,
+     "color": "plum",
+     "in": "In der Schule"
+    },
+    {
+     "id": "b_raus",
+     "type": "bubble",
+     "from": "ella",
+     "text": "Papa, haben sie *Pluto* rausgeworfen?",
+     "x": 290,
+     "y": 850,
+     "maxW": 400,
+     "size": 42,
+     "in": "Papa haben sie"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "ella",
+     "type": "figure",
+     "role": "girl",
+     "x": 105,
+     "look": "right",
+     "mood": "open",
+     "hair": "ponytail",
+     "hairColor": "blond",
+     "moods": [
+      {
+       "at": "Pluto selbst",
+       "mood": "smile"
+      },
+      {
+       "at": "Heute gibt es",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 285,
+     "look": "left",
+     "mood": "smile",
+     "hair": "short",
+     "hairColor": "brown",
+     "gestures": [
+      {
+       "at": "Geändert hat sich",
+       "kind": "raise",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "schrank",
+     "type": "cabinet",
+     "x": 720,
+     "y": 560,
+     "w": 600,
+     "rowH": 110,
+     "keep": true,
+     "rows": [
+      [
+       "planet"
+      ],
+      [
+       "erde",
+       "pluto"
+      ],
+      [
+       "mars",
+       "eris"
+      ],
+      [
+       "jupiter",
+       "eis"
+      ]
+     ],
+     "drawers": {
+      "planet": {
+       "label": "Planet",
+       "color": "idea",
+       "size": 46,
+       "in": "eine Schublade Planet",
+       "states": [
+        {
+         "at": "eine Schublade Planet",
+         "state": "glow"
+        },
+        {
+         "at": "Pluto selbst",
+         "state": "normal"
+        },
+        {
+         "at": "Geändert hat sich",
+         "state": "shake"
+        },
+        {
+         "at": "Er räumt seine Bahn",
+         "state": "glow"
+        },
+        {
+         "at": "Darum bekam er",
+         "state": "normal"
+        },
+        {
+         "at": "sondern umsortieren",
+         "state": "gold"
+        }
+       ]
+      },
+      "erde": {
+       "label": "Erde",
+       "color": "baby",
+       "icon": "planet",
+       "iconColor": "#8CC6E0",
+       "in": "Unten liegen Erde"
+      },
+      "mars": {
+       "label": "Mars",
+       "color": "kids",
+       "icon": "planet",
+       "iconColor": "#E8A08A",
+       "in": "Mars"
+      },
+      "jupiter": {
+       "label": "Jupiter",
+       "color": "food",
+       "icon": "planet",
+       "iconColor": "#E3BE8F",
+       "in": "Jupiter"
+      },
+      "pluto": {
+       "label": "Pluto",
+       "color": "people",
+       "icon": "pluto",
+       "in": "und Pluto",
+       "states": [
+        {
+         "at": "Pluto selbst",
+         "state": "glow"
+        },
+        {
+         "at": "wie immer",
+         "state": "glow+check"
+        },
+        {
+         "at": "Geändert hat sich",
+         "state": "normal"
+        },
+        {
+         "at": "und Zwergplanet",
+         "state": "gold"
+        },
+        {
+         "at": "Aber warum haben",
+         "state": "normal"
+        },
+        {
+         "at": "Darum bekam er",
+         "state": "glow"
+        },
+        {
+         "at": "Und dann hat Ella",
+         "state": "normal"
+        },
+        {
+         "at": "gleich neben Pluto",
+         "state": "glow"
+        },
+        {
+         "at": "Papa lacht",
+         "state": "gold"
+        }
+       ]
+      },
+      "eris": {
+       "label": "Eris",
+       "color": "people",
+       "icon": "planet",
+       "iconColor": "#ECE6F3",
+       "in": "Darum bekam er+0.5"
+      },
+      "eis": {
+       "label": "Eisbrocken",
+       "color": "ice",
+       "in": "Darum bekam er+0.8"
+      }
+     }
+    },
+    {
+     "id": "zwerg",
+     "type": "node",
+     "x": 866,
+     "y": 665,
+     "w": 276,
+     "h": 110,
+     "label": "Zwergplanet",
+     "color": "fresh",
+     "align": "left",
+     "wobble": 0,
+     "keep": true,
+     "in": "und Zwergplanet",
+     "states": [
+      {
+       "at": "und Zwergplanet",
+       "state": "glow"
+      },
+      {
+       "at": "Aber warum haben",
+       "state": "normal"
+      },
+      {
+       "at": "Darum bekam er",
+       "state": "glow"
+      },
+      {
+       "at": "Und dann hat Ella",
+       "state": "normal"
+      },
+      {
+       "at": "sondern umsortieren",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "tag_frueher",
+     "type": "tag",
+     "text": "früher",
+     "x": 215,
+     "y": 610,
+     "color": "plum",
+     "in": "Oben gab es",
+     "out": "Heute gibt es"
+    },
+    {
+     "id": "tag_heute",
+     "type": "tag",
+     "text": "heute",
+     "x": 215,
+     "y": 610,
+     "color": "plum",
+     "in": "Heute gibt es"
+    },
+    {
+     "id": "tag_klein",
+     "type": "tag",
+     "text": "klein",
+     "x": 215,
+     "y": 720,
+     "color": "ink",
+     "in": "so klein",
+     "out": "Geändert hat sich"
+    },
+    {
+     "id": "tag_kalt",
+     "type": "tag",
+     "text": "kalt",
+     "x": 215,
+     "y": 805,
+     "color": "ink",
+     "in": "so kalt",
+     "out": "Geändert hat sich"
+    },
+    {
+     "id": "tag_weit",
+     "type": "tag",
+     "text": "weit weg",
+     "x": 215,
+     "y": 890,
+     "color": "ink",
+     "in": "so weit weg",
+     "out": "Geändert hat sich"
+    }
+   ]
+  },
+  {
+   "at": "Aber warum haben",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "ella",
+     "type": "figure",
+     "role": "girl",
+     "x": 105,
+     "look": "right",
+     "mood": "open",
+     "hair": "ponytail",
+     "hairColor": "blond",
+     "moods": [
+      {
+       "at": "fast so groß",
+       "mood": "wow"
+      },
+      {
+       "at": "wie ein Schneepflug",
+       "mood": "grin"
+      },
+      {
+       "at": "Pluto kreist",
+       "mood": "open"
+      },
+      {
+       "at": "Darum bekam er",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 285,
+     "look": "left",
+     "mood": "smile",
+     "hair": "short",
+     "hairColor": "brown",
+     "gestures": [
+      {
+       "at": "Papa erklärt",
+       "kind": "raise",
+       "dur": 1.4
+      },
+      {
+       "at": "wie ein Schneepflug",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "all",
+     "type": "card",
+     "x": 720,
+     "y": 995,
+     "w": 660,
+     "h": 975,
+     "radius": 40,
+     "color": "#3B2A4C",
+     "lines": [
+      ""
+     ],
+     "enter": "fade",
+     "in": "Aber warum haben",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s1",
+     "type": "icon",
+     "kind": "star",
+     "x": 445,
+     "y": 575,
+     "size": 28,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.2",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s2",
+     "type": "icon",
+     "kind": "star",
+     "x": 1000,
+     "y": 700,
+     "size": 30,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.3",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s3",
+     "type": "icon",
+     "kind": "star",
+     "x": 470,
+     "y": 1180,
+     "size": 22,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.4",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s4",
+     "type": "icon",
+     "kind": "star",
+     "x": 1010,
+     "y": 1420,
+     "size": 24,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.5",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s5",
+     "type": "icon",
+     "kind": "star",
+     "x": 880,
+     "y": 930,
+     "size": 20,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.6",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "s6",
+     "type": "icon",
+     "kind": "star",
+     "x": 600,
+     "y": 1440,
+     "size": 22,
+     "color": "#FDE7A6",
+     "in": "Aber warum haben+0.7",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 500,
+     "y": 800,
+     "size": 120,
+     "in": "Aber warum haben+0.3",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "bahn_pluto",
+     "type": "link",
+     "from": {
+      "x": 430,
+      "y": 1430
+     },
+     "to": {
+      "x": 1040,
+      "y": 930
+     },
+     "bend": 220,
+     "style": "gold",
+     "z": 5.5,
+     "in": "Weit draußen",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "pluto_all",
+     "type": "icon",
+     "kind": "pluto",
+     "x": 845,
+     "y": 1180,
+     "size": 80,
+     "in": "Aber warum haben+0.5",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "Pluto kreist",
+       "x": 874,
+       "y": 1155,
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "tag_pluto",
+     "type": "tag",
+     "text": "Pluto",
+     "x": 845,
+     "y": 1262,
+     "size": 32,
+     "in": "Aber warum haben+0.6",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "Pluto kreist",
+       "x": 874,
+       "y": 1237,
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "k1",
+     "type": "icon",
+     "kind": "planet",
+     "x": 549,
+     "y": 1352,
+     "size": 24,
+     "color": "#DCEAF7",
+     "in": "immer mehr Eisbrocken",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k2",
+     "type": "icon",
+     "kind": "planet",
+     "x": 628,
+     "y": 1338,
+     "size": 32,
+     "color": "#DCEAF7",
+     "in": "immer mehr Eisbrocken+0.12",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k3",
+     "type": "icon",
+     "kind": "planet",
+     "x": 700,
+     "y": 1300,
+     "size": 22,
+     "color": "#E8E4EE",
+     "in": "immer mehr Eisbrocken+0.24",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k4",
+     "type": "icon",
+     "kind": "planet",
+     "x": 772,
+     "y": 1214,
+     "size": 28,
+     "color": "#DCEAF7",
+     "in": "immer mehr Eisbrocken+0.36",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k5",
+     "type": "icon",
+     "kind": "planet",
+     "x": 910,
+     "y": 1112,
+     "size": 24,
+     "color": "#E8E4EE",
+     "in": "immer mehr Eisbrocken+0.48",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k6",
+     "type": "icon",
+     "kind": "planet",
+     "x": 955,
+     "y": 1068,
+     "size": 30,
+     "color": "#DCEAF7",
+     "in": "immer mehr Eisbrocken+0.6",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "k7",
+     "type": "icon",
+     "kind": "planet",
+     "x": 1000,
+     "y": 1000,
+     "size": 22,
+     "color": "#E8E4EE",
+     "in": "immer mehr Eisbrocken+0.72",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "eris_all",
+     "type": "icon",
+     "kind": "planet",
+     "x": 975,
+     "y": 1300,
+     "size": 64,
+     "color": "#ECE6F3",
+     "in": "Einer war fast",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "tag_eris",
+     "type": "tag",
+     "text": "Eris",
+     "x": 975,
+     "y": 1375,
+     "size": 32,
+     "in": "Einer war fast",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "regel",
+     "type": "card",
+     "x": 720,
+     "y": 600,
+     "lines": [
+      "Ein Planet räumt",
+      "*seine Bahn frei*"
+     ],
+     "size": 44,
+     "in": "was ein Planet ist",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "bahn_erde",
+     "type": "link",
+     "from": {
+      "x": 420,
+      "y": 1010
+     },
+     "to": {
+      "x": 760,
+      "y": 690
+     },
+     "bend": 160,
+     "style": "gold",
+     "z": 5.5,
+     "in": "Er räumt seine Bahn",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "e1",
+     "type": "icon",
+     "kind": "planet",
+     "x": 633,
+     "y": 882,
+     "size": 22,
+     "color": "#E8E4EE",
+     "in": "Er räumt seine Bahn+0.2",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "um die Sonne frei+0.35",
+       "x": 693,
+       "y": 918,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "e2",
+     "type": "icon",
+     "kind": "planet",
+     "x": 701,
+     "y": 818,
+     "size": 24,
+     "color": "#DCEAF7",
+     "in": "Er räumt seine Bahn+0.3",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "wie ein Schneepflug+0.2",
+       "x": 771,
+       "y": 824,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "e3",
+     "type": "icon",
+     "kind": "planet",
+     "x": 750,
+     "y": 738,
+     "size": 20,
+     "color": "#E8E4EE",
+     "in": "Er räumt seine Bahn+0.4",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "wie ein Schneepflug+0.6",
+       "x": 818,
+       "y": 721,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "erde_all",
+     "type": "icon",
+     "kind": "planet",
+     "x": 565,
+     "y": 930,
+     "size": 66,
+     "color": "#8CC6E0",
+     "in": "Er räumt seine Bahn",
+     "out": "Darum bekam er",
+     "moves": [
+      {
+       "at": "um die Sonne frei",
+       "x": 670,
+       "y": 850,
+       "dur": 0.9
+      },
+      {
+       "at": "wie ein Schneepflug",
+       "x": 755,
+       "y": 722,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "tag_frei",
+     "type": "tag",
+     "text": "~freie Bahn~",
+     "x": 900,
+     "y": 800,
+     "size": 34,
+     "in": "wie ein Schneepflug+0.6",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "tag_pflug",
+     "type": "tag",
+     "text": "wie ein Schneepflug",
+     "x": 215,
+     "y": 640,
+     "size": 34,
+     "color": "plum",
+     "in": "wie ein Schneepflug",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "tag_nichtfrei",
+     "type": "tag",
+     "text": "*Bahn nicht frei*",
+     "x": 720,
+     "y": 1418,
+     "size": 34,
+     "in": "mitten zwischen",
+     "out": "Darum bekam er"
+    },
+    {
+     "id": "tag_2006",
+     "type": "tag",
+     "text": "seit 2006",
+     "x": 215,
+     "y": 640,
+     "color": "plum",
+     "in": "die neue Schublade"
+    }
+   ]
+  },
+  {
+   "at": "Und dann hat Ella",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "ella",
+     "type": "figure",
+     "role": "girl",
+     "x": 105,
+     "look": "right",
+     "mood": "happy",
+     "hair": "ponytail",
+     "hairColor": "blond",
+     "moods": [
+      {
+       "at": "Ella strahlt",
+       "mood": "laugh"
+      },
+      {
+       "at": "Papa hat nicht",
+       "mood": "happy"
+      },
+      {
+       "at": "sondern umsortieren",
+       "mood": "grin"
+      }
+     ],
+     "talk": [
+      [
+       "Dann ist Pluto",
+       "end:gar nicht weg"
+      ]
+     ],
+     "hop": "gar nicht weg"
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 285,
+     "look": "left",
+     "mood": "smile",
+     "hair": "short",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "Papa lacht",
+       "mood": "laugh"
+      },
+      {
+       "at": "Papa hat nicht",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Und mein Buch",
+       "end:stimmt wieder"
+      ]
+     ]
+    },
+    {
+     "id": "birne",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 105,
+     "y": 1050,
+     "size": 84,
+     "in": "eine Idee",
+     "out": "Ella strahlt"
+    },
+    {
+     "id": "buch2",
+     "type": "prop",
+     "kind": "book",
+     "x": 225,
+     "y": 640,
+     "w": 370,
+     "h": 270,
+     "color": "plum",
+     "enter": "pop",
+     "text": [
+      "_Unsere Planeten_",
+      "Merkur, Venus, Erde,",
+      "Mars, Jupiter, Saturn,",
+      "Uranus, Neptun, *Pluto*"
+     ],
+     "size": 29,
+     "in": "Sie klebt einen Zettel"
+    },
+    {
+     "id": "zettel",
+     "type": "card",
+     "x": 318,
+     "y": 742,
+     "lines": [
+      "Zwergplanet"
+     ],
+     "size": 30,
+     "color": "idea",
+     "radius": 10,
+     "in": "gleich neben Pluto"
+    },
+    {
+     "id": "b_weg",
+     "type": "bubble",
+     "from": "ella",
+     "text": "Dann ist *Pluto* ja gar nicht weg!",
+     "x": 230,
+     "y": 890,
+     "maxW": 380,
+     "size": 40,
+     "in": "Dann ist Pluto",
+     "out": "Papa lacht"
+    },
+    {
+     "id": "b_buch",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Und mein Buch *stimmt* wieder.",
+     "x": 250,
+     "y": 890,
+     "maxW": 380,
+     "size": 40,
+     "in": "Und mein Buch",
+     "out": "Papa hat nicht"
+    },
+    {
+     "id": "ok_buch",
+     "type": "icon",
+     "kind": "check",
+     "x": 392,
+     "y": 528,
+     "size": 72,
+     "in": "nicht falsch gelernt"
+    },
+    {
+     "id": "tag_dazu",
+     "type": "tag",
+     "text": "dazulernen",
+     "x": 170,
+     "y": 890,
+     "color": "plum",
+     "in": "nicht dazulernen"
+    },
+    {
+     "id": "x_dazu",
+     "type": "icon",
+     "kind": "cross",
+     "x": 330,
+     "y": 890,
+     "size": 60,
+     "in": "nicht dazulernen+0.3"
+    },
+    {
+     "id": "st_um",
+     "type": "stamp",
+     "text": "umsortieren",
+     "x": 720,
+     "y": 1235,
+     "rot": -0.08,
+     "size": 62,
+     "in": "sondern umsortieren"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "end:zählt die Planeten+0.25",
+   "x": 975,
+   "y": 800
+  },
+  {
+   "at": "eine Schublade Planet",
+   "x": 720,
+   "y": 665
+  },
+  {
+   "at": "nie verändert",
+   "x": 866,
+   "y": 791
+  },
+  {
+   "at": "und Zwergplanet",
+   "x": 866,
+   "y": 665
+  },
+  {
+   "at": "fast so groß",
+   "x": 975,
+   "y": 1300
+  },
+  {
+   "at": "wie ein Schneepflug",
+   "x": 755,
+   "y": 722
+  },
+  {
+   "at": "Darum bekam er",
+   "x": 866,
+   "y": 665
+  },
+  {
+   "at": "sondern umsortieren",
+   "x": 720,
+   "y": 1235
+  }
+ ]
+}

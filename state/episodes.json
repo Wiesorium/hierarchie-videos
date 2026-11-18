@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-18",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-18-morgen-eine-neue-schublade-fuer-pluto",
+   "slug": "eine-neue-schublade-fuer-pluto",
+   "titel": "Eine neue Schublade für Pluto",
+   "idee": "idee-6",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Du hast neun Planeten gelernt, dein Kind nur acht.",
+    "b": "Pluto hat sich nicht verändert, nur seine Schublade.",
+    "c": "Seit zwanzig Jahren ist Pluto kein Planet mehr, und er hat nichts davon gemerkt."
+   },
+   "dauer": {
+    "a": 96.33,
+    "b": 96.17,
+    "c": 98.03
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/fsXHK3IllKmyOAeQvlAE",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Pluto), Familienszene mit Ella (neun) und Papa selbst ergänzt. Schrank mit breiter Schublade „Planet“, über deren rechte Hälfte sich ein Knoten „Zwergplanet“ legt (Pluto bleibt liegen); Block 2 als Blick ins All (dunkle Karte über dem Schrank). Neue Icons planet und pluto sowie iconColor für Schubladen in der Engine. Hauptteil der Stimme 91,0 s, Videos 96 bis 98 s (über dem 90-s-Ziel, innerhalb der Prüfgrenze). Captions in Drive: 2026-11-18-eine-neue-schublade-fuer-pluto-captions.",
+   "dateien": [
+    "eine-neue-schublade-fuer-pluto-hook-a.mp4",
+    "eine-neue-schublade-fuer-pluto-hook-b.mp4",
+    "eine-neue-schublade-fuer-pluto-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-17",
    "slot": "abend",
    "ordner": "episodes/2026-11-17-abend-woerter-ohne-schublade",
