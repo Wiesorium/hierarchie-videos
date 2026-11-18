@@ -140,7 +140,9 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
 - `tag`: `{"text": "nächster Tag", "x", "y", "color": "plum"}` – weiße Pille
 - `icon`: `{"kind": "bulb", "x", "y", "size": 90}` – `bulb`, `check`, `cross`, `question`, `exclaim`, `heart`, `star`, `moon`,
   `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`, `hedgehog`
-  (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn)
+  (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn), `planet` (Pastellkugel in `color`,
+  `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz)
+- Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
 ## Was die Engine selbst macht
 

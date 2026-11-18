@@ -97,7 +97,7 @@ function drawerBox(ctx, r, d, t, st, alphaBase = 1) {
   } else if (d.label) {
     if (left) richText(ctx, d.label, r.x + 24, r.y + r.h / 2, px, C.ink, 'left'); else richText(ctx, d.label, r.x + (r.w - iconW) / 2, r.y + r.h / 2, px, C.ink);
   }
-  if (d.icon) drawIcon(ctx, { kind: d.icon, x: r.x + r.w - 46, y: r.y + r.h / 2, size: 54 }, t);
+  if (d.icon) drawIcon(ctx, { kind: d.icon, x: r.x + r.w - 46, y: r.y + r.h / 2, size: 54, color: d.iconColor }, t);
   if (S.has('check')) badge(ctx, 'check', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
   if (S.has('cross')) badge(ctx, 'cross', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
   if (S.has('question')) badge(ctx, 'question', r.x + r.w - 6, r.y + 8, 26, smooth(since, since + 0.2, t));
@@ -263,11 +263,32 @@ export function drawIcon(ctx, e, t) {
     case 'zzz': richText(ctx, 'z z z', x, y, s * 0.5, C.plum); break;
     case 'note': fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x - s * 0.12, y + s * 0.25, s * 0.17, s * 0.13, -0.4, 0, 7); }, c || C.plum, { depth: 0.4 }); ctx.fillStyle = c || C.plum; ctx.fillRect(x + s * 0.02, y - s * 0.4, s * 0.07, s * 0.65); ctx.fillRect(x + s * 0.02, y - s * 0.4, s * 0.3, s * 0.08); break;
     case 'hedgehog': drawHedgehog(ctx, x, y, s, c, e.look === 'left', t); break;
+    case 'planet': drawPlanet(ctx, x, y, s, c || '#9FD3E8', !!e.ring, false); break;
+    case 'pluto': drawPlanet(ctx, x, y, s, c || '#E8D3C0', false, true); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto'];
+
+// A paper-cut planet: pastel disc with a lighter cut layer top-left and a soft spot; optional ring; Pluto gets its pale heart.
+function drawPlanet(ctx, x, y, s, c, ring, heart) {
+  const r = s * 0.42;
+  const ringPath = (front) => { ctx.beginPath(); ctx.ellipse(x, y, r * 1.55, r * 0.42, -0.25, front ? 0 : Math.PI, front ? Math.PI : Math.PI * 2); };
+  if (ring) { ctx.save(); ctx.strokeStyle = C.plum; ctx.globalAlpha *= 0.55; ctx.lineWidth = Math.max(3, s * 0.07); ctx.lineCap = 'round'; ringPath(false); ctx.stroke(); ctx.restore(); }
+  fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x, y, r, 0, 7); }, c, { depth: 0.6 });
+  ctx.save(); ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.clip();
+  ctx.fillStyle = 'rgba(255,255,255,0.30)'; ctx.beginPath(); ctx.arc(x - r * 0.38, y - r * 0.42, r * 0.78, 0, 7); ctx.fill();
+  ctx.fillStyle = 'rgba(74,53,82,0.10)'; ctx.beginPath(); ctx.ellipse(x + r * 0.3, y + r * 0.42, r * 0.38, r * 0.18, -0.35, 0, 7); ctx.fill();
+  if (heart) {
+    const hx = x + r * 0.12, hy = y + r * 0.08, hs = r * 0.95, hr = hs * 0.26;
+    ctx.fillStyle = 'rgba(255,255,255,0.85)'; ctx.beginPath(); ctx.moveTo(hx, hy + hs * 0.38);
+    ctx.bezierCurveTo(hx - hs * 0.6, hy - hs * 0.05, hx - hr, hy - hs * 0.5, hx, hy - hs * 0.18);
+    ctx.bezierCurveTo(hx + hr, hy - hs * 0.5, hx + hs * 0.6, hy - hs * 0.05, hx, hy + hs * 0.38); ctx.fill();
+  }
+  ctx.restore();
+  if (ring) { ctx.save(); ctx.strokeStyle = C.plum; ctx.globalAlpha *= 0.7; ctx.lineWidth = Math.max(3, s * 0.07); ctx.lineCap = 'round'; ringPath(true); ctx.stroke(); ctx.restore(); }
+}
 
 // A paper-cut hedgehog: spiky brown dome, cream face cone, dot eye, pink cheek, standing on y + 0.3 s. Faces right unless flipped.
 function drawHedgehog(ctx, x, y, s, c, flip, t) {
