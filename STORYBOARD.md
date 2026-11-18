@@ -89,8 +89,8 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 ### prop
 `{"id": "board", "type": "prop", "kind": "blackboard", "x": 560, "y": 720, "w": 700, "h": 340, "text": ["Runden", "347 ≈ 350"], "size": 66}`
 
-`kind`: `table`, `desk`, `chair`, `sofa`, `bed`, `bench`, `door`, `tree`, `car`, `backpack`, `ball`, `cup`, `plate`, `sign`, `shelf`
-(y = Boden, Standard 1478) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
+`kind`: `table`, `desk`, `chair`, `sofa`, `bed`, `bench`, `door`, `tree`, `car`, `backpack`, `ball`, `cup`, `plate`, `sign`, `shelf`,
+`pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
 (y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
 
 ### cabinet – der Wissensschrank

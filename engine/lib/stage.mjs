@@ -187,5 +187,26 @@ const PROPS = {
     if (p.text) textLines(ctx, p.text, x, y, p.size || 40, C.ink);
   },
   stars(ctx, x, y, w = 60, h, p) { fillShape(ctx, () => star5(ctx, x, y, w / 2, w / 4.4), p.color ? col(p.color) : C.gold, { depth: 0.4 }); },
+  // Cooking pot standing on y (e.g. a table top), with two handles and soft rising steam ("steam": false turns it off).
+  pot(ctx, x, y, w = 230, h = 150, p, t = 0) {
+    const c1 = p.color ? col(p.color) : '#E8A08A';
+    const top = y - h;
+    for (const sx of [-1, 1]) fillShape(ctx, () => { rrect(ctx, x + sx * (w / 2 + 6) - 24, top + h * 0.22, 48, 24, 12); }, C.ink, { depth: 0.4 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.roundRect(x - w / 2, top + 10, w, h - 10, [10, 10, w * 0.22, w * 0.22]); }, c1);
+    fillShape(ctx, () => { rrect(ctx, x - w / 2 - 12, top, w + 24, 26, 13); }, c1, { depth: 0.5 });
+    fillShape(ctx, () => { rrect(ctx, x - w / 2 + 22, top + h * 0.42, w - 44, 14, 7); }, 'rgba(255,255,255,0.45)', { sh: false });
+    if (p.text) textLines(ctx, p.text, x, top + h * 0.7, p.size || 30, C.ink);
+    if (p.steam === false) return;
+    ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = 9;
+    for (let i = -1; i <= 1; i++) {
+      const ph = ((t * 0.45 + (i + 1) * 0.33) % 1 + 1) % 1;
+      const x0 = x + i * w * 0.24, y0 = top - 18 - ph * 40, len = 110;
+      ctx.strokeStyle = `rgba(255,255,255,${(0.85 * Math.sin(ph * Math.PI)).toFixed(3)})`;
+      ctx.beginPath();
+      for (let k = 0; k <= 12; k++) { const yy = y0 - (k / 12) * len; const xx = x0 + Math.sin(k / 12 * Math.PI * 2 + t * 2 + i) * 12; if (k === 0) ctx.moveTo(xx, yy); else ctx.lineTo(xx, yy); }
+      ctx.stroke();
+    }
+    ctx.restore();
+  },
 };
 export const PROP_KINDS = Object.keys(PROPS);
