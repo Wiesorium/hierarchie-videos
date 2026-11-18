@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Lisa ist fünfunddreißig und kocht Omas Gulasch, genau nach Omas Karte: Zwiebeln, Rindfleisch, Paprika, zwei Stunden. Sie hat nichts vergessen. Sie kostet: „Gut. Aber nicht wie bei Oma.“ [pause] Schau dir das als Schrank an. Oben liegt Omas Gulasch. Darunter Zwiebeln, Fleisch und Paprika. Bis hierher reicht die Karte. Bei den Zwiebeln steht: „Rösten, bis es passt.“ Bei Oma liegt ganz unten, was das heißt: wie die Zwiebeln aussehen und riechen, wenn sie genug haben. Fünfzig Jahre Sonntage am Herd. Das kann man nicht abschreiben. [pause] Also fragt Lisa die Einzige, die diese Schubladen hat. [pause] Am Sonntag kocht sie neben Oma Rosa. Oma ist einundachtzig und schaut nie auf die Karte. „Schau, so goldbraun müssen sie sein.“ „Riech mal. Jetzt kommt der Paprika.“ Lisa schreibt nichts auf. Sie schaut und riecht mit. [pause] Nach drei Sonntagen kocht Lisa wieder allein. [pause] Jetzt hat sie ganz unten eigene Schubladen: goldbraun, der Duft, der Moment für den Paprika. Sie kostet und lacht: „Jetzt passt es.“ Mit Sätzen von zu Hause ist es genauso. Ein Satz wie „Spar dir was auf“ trägt erst, wenn eigene Erfahrungen darunter liegen. [pause] Welchen Satz hast du übernommen, ohne die Erfahrung darunter? [pause] [pause] Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM.",
+ "hooks": {
+  "a": "[warmly] Du kochst Omas Gulasch genau nach Rezept, und trotzdem schmeckt es nicht wie bei ihr.",
+  "b": "[warmly] Ein Rezept gibt dir nur die oberen Schubladen, die unteren musst du selbst füllen.",
+  "c": "[warmly] „Bis es passt“: In diesen drei Wörtern auf Omas Rezept stecken fünfzig Jahre."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

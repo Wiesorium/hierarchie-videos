@@ -3,6 +3,28 @@
  "videos": [
   {
    "datum": "2026-11-18",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-18-abend-bis-es-passt",
+   "slug": "bis-es-passt",
+   "titel": "Bis es passt",
+   "idee": "idee-7",
+   "cta": "kurs",
+   "hooks": {
+    "a": "Du kochst Omas Gulasch genau nach Rezept, und trotzdem schmeckt es nicht wie bei ihr.",
+    "b": "Ein Rezept gibt dir nur die oberen Schubladen, die unteren musst du selbst füllen.",
+    "c": "„Bis es passt“: In diesen drei Wörtern auf Omas Rezept stecken fünfzig Jahre."
+   },
+   "dauer": {
+    "a": 93.23,
+    "b": 92.6,
+    "c": 93.23
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/mvI6UVjdldg2yxWDgn81",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Omas Gulasch), Familienszene mit Lisa (fünfunddreißig) und Oma Rosa (einundachtzig) selbst ergänzt. Schrank: oben Omas Gulasch, darunter Zwiebeln/Fleisch/Paprika (auf der Karte), unten gestrichelt goldbraun/der Duft/Sonntage (nur bei Oma); später füllt sich Lisas unterste Reihe. Schluss als zwei Knoten „Spar dir was auf.“ über „eigene Erfahrung“. Neue Requisite pot (Kochtopf mit Dampf) in der Engine. Hauptteil der Stimme 86,0 s, Videos 92,6 bis 93,2 s (über dem 90-s-Ziel, innerhalb der Prüfgrenze). Captions in Drive: 2026-11-18-bis-es-passt-captions."
+  },
+  {
+   "datum": "2026-11-18",
    "slot": "morgen",
    "ordner": "episodes/2026-11-18-morgen-eine-neue-schublade-fuer-pluto",
    "slug": "eine-neue-schublade-fuer-pluto",

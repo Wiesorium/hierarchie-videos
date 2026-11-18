@@ -1,0 +1,1282 @@
+{
+"words": [
+{
+"text": "[warmly]",
+"start": 0.0,
+"end": 0.067,
+"type": "word"
+},
+{
+"text": "Lisa",
+"start": 0.08,
+"end": 0.4,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 0.52,
+"end": 0.64,
+"type": "word"
+},
+{
+"text": "fünfunddreißig",
+"start": 0.72,
+"end": 1.44,
+"type": "word"
+},
+{
+"text": "und",
+"start": 1.6,
+"end": 1.76,
+"type": "word"
+},
+{
+"text": "kocht",
+"start": 1.84,
+"end": 2.08,
+"type": "word"
+},
+{
+"text": "Omas",
+"start": 2.16,
+"end": 2.4,
+"type": "word"
+},
+{
+"text": "Gulasch,",
+"start": 2.48,
+"end": 3.12,
+"type": "word"
+},
+{
+"text": "genau",
+"start": 3.28,
+"end": 3.52,
+"type": "word"
+},
+{
+"text": "nach",
+"start": 3.6,
+"end": 3.76,
+"type": "word"
+},
+{
+"text": "Omas",
+"start": 3.8,
+"end": 4.08,
+"type": "word"
+},
+{
+"text": "Karte:",
+"start": 4.16,
+"end": 4.88,
+"type": "word"
+},
+{
+"text": "Zwiebeln,",
+"start": 4.92,
+"end": 5.52,
+"type": "word"
+},
+{
+"text": "Rindfleisch,",
+"start": 5.56,
+"end": 6.24,
+"type": "word"
+},
+{
+"text": "Paprika,",
+"start": 6.28,
+"end": 7.04,
+"type": "word"
+},
+{
+"text": "zwei",
+"start": 7.08,
+"end": 7.28,
+"type": "word"
+},
+{
+"text": "Stunden.",
+"start": 7.36,
+"end": 8.16,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 8.24,
+"end": 8.32,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 8.4,
+"end": 8.48,
+"type": "word"
+},
+{
+"text": "nichts",
+"start": 8.56,
+"end": 8.8,
+"type": "word"
+},
+{
+"text": "vergessen.",
+"start": 8.88,
+"end": 9.6,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 9.68,
+"end": 9.76,
+"type": "word"
+},
+{
+"text": "kostet:",
+"start": 9.84,
+"end": 10.64,
+"type": "word"
+},
+{
+"text": "„Gut.",
+"start": 10.667,
+"end": 11.36,
+"type": "word"
+},
+{
+"text": "Aber",
+"start": 11.4,
+"end": 11.6,
+"type": "word"
+},
+{
+"text": "nicht",
+"start": 11.653,
+"end": 11.76,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 11.84,
+"end": 11.92,
+"type": "word"
+},
+{
+"text": "bei",
+"start": 12.0,
+"end": 12.08,
+"type": "word"
+},
+{
+"text": "Oma.“",
+"start": 12.16,
+"end": 13.36,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 14.16,
+"end": 14.256,
+"type": "word"
+},
+{
+"text": "Schau",
+"start": 14.288,
+"end": 14.36,
+"type": "word"
+},
+{
+"text": "dir",
+"start": 14.4,
+"end": 14.48,
+"type": "word"
+},
+{
+"text": "das",
+"start": 14.56,
+"end": 14.64,
+"type": "word"
+},
+{
+"text": "als",
+"start": 14.72,
+"end": 14.8,
+"type": "word"
+},
+{
+"text": "Schrank",
+"start": 14.88,
+"end": 15.2,
+"type": "word"
+},
+{
+"text": "an.",
+"start": 15.32,
+"end": 15.84,
+"type": "word"
+},
+{
+"text": "Oben",
+"start": 15.92,
+"end": 16.16,
+"type": "word"
+},
+{
+"text": "liegt",
+"start": 16.24,
+"end": 16.4,
+"type": "word"
+},
+{
+"text": "Omas",
+"start": 16.48,
+"end": 16.72,
+"type": "word"
+},
+{
+"text": "Gulasch.",
+"start": 16.8,
+"end": 17.52,
+"type": "word"
+},
+{
+"text": "Darunter",
+"start": 17.6,
+"end": 18.08,
+"type": "word"
+},
+{
+"text": "Zwiebeln,",
+"start": 18.16,
+"end": 18.72,
+"type": "word"
+},
+{
+"text": "Fleisch",
+"start": 18.8,
+"end": 19.12,
+"type": "word"
+},
+{
+"text": "und",
+"start": 19.2,
+"end": 19.28,
+"type": "word"
+},
+{
+"text": "Paprika.",
+"start": 19.36,
+"end": 20.24,
+"type": "word"
+},
+{
+"text": "Bis",
+"start": 20.293,
+"end": 20.4,
+"type": "word"
+},
+{
+"text": "hierher",
+"start": 20.453,
+"end": 20.8,
+"type": "word"
+},
+{
+"text": "reicht",
+"start": 20.84,
+"end": 21.04,
+"type": "word"
+},
+{
+"text": "die",
+"start": 21.08,
+"end": 21.12,
+"type": "word"
+},
+{
+"text": "Karte.",
+"start": 21.2,
+"end": 21.92,
+"type": "word"
+},
+{
+"text": "Bei",
+"start": 21.96,
+"end": 22.0,
+"type": "word"
+},
+{
+"text": "den",
+"start": 22.08,
+"end": 22.16,
+"type": "word"
+},
+{
+"text": "Zwiebeln",
+"start": 22.24,
+"end": 22.56,
+"type": "word"
+},
+{
+"text": "steht:",
+"start": 22.68,
+"end": 23.28,
+"type": "word"
+},
+{
+"text": "„Rösten,",
+"start": 23.32,
+"end": 23.92,
+"type": "word"
+},
+{
+"text": "bis",
+"start": 24.0,
+"end": 24.08,
+"type": "word"
+},
+{
+"text": "es",
+"start": 24.16,
+"end": 24.24,
+"type": "word"
+},
+{
+"text": "passt.“",
+"start": 24.32,
+"end": 25.12,
+"type": "word"
+},
+{
+"text": "Bei",
+"start": 25.2,
+"end": 25.28,
+"type": "word"
+},
+{
+"text": "Oma",
+"start": 25.36,
+"end": 25.6,
+"type": "word"
+},
+{
+"text": "liegt",
+"start": 25.68,
+"end": 25.92,
+"type": "word"
+},
+{
+"text": "ganz",
+"start": 26.0,
+"end": 26.24,
+"type": "word"
+},
+{
+"text": "unten,",
+"start": 26.32,
+"end": 26.613,
+"type": "word"
+},
+{
+"text": "was",
+"start": 26.667,
+"end": 26.72,
+"type": "word"
+},
+{
+"text": "das",
+"start": 26.8,
+"end": 26.88,
+"type": "word"
+},
+{
+"text": "heißt:",
+"start": 26.96,
+"end": 27.6,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 27.64,
+"end": 27.68,
+"type": "word"
+},
+{
+"text": "die",
+"start": 27.76,
+"end": 27.84,
+"type": "word"
+},
+{
+"text": "Zwiebeln",
+"start": 27.92,
+"end": 28.24,
+"type": "word"
+},
+{
+"text": "aussehen",
+"start": 28.32,
+"end": 28.8,
+"type": "word"
+},
+{
+"text": "und",
+"start": 28.88,
+"end": 28.96,
+"type": "word"
+},
+{
+"text": "riechen,",
+"start": 29.04,
+"end": 29.44,
+"type": "word"
+},
+{
+"text": "wenn",
+"start": 29.467,
+"end": 29.52,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 29.6,
+"end": 29.68,
+"type": "word"
+},
+{
+"text": "genug",
+"start": 29.76,
+"end": 30.0,
+"type": "word"
+},
+{
+"text": "haben.",
+"start": 30.08,
+"end": 30.8,
+"type": "word"
+},
+{
+"text": "Fünfzig",
+"start": 30.88,
+"end": 31.36,
+"type": "word"
+},
+{
+"text": "Jahre",
+"start": 31.44,
+"end": 31.68,
+"type": "word"
+},
+{
+"text": "Sonntage",
+"start": 31.84,
+"end": 32.32,
+"type": "word"
+},
+{
+"text": "am",
+"start": 32.4,
+"end": 32.48,
+"type": "word"
+},
+{
+"text": "Herd.",
+"start": 32.52,
+"end": 33.12,
+"type": "word"
+},
+{
+"text": "Das",
+"start": 33.24,
+"end": 33.36,
+"type": "word"
+},
+{
+"text": "kann",
+"start": 33.44,
+"end": 33.52,
+"type": "word"
+},
+{
+"text": "man",
+"start": 33.6,
+"end": 33.68,
+"type": "word"
+},
+{
+"text": "nicht",
+"start": 33.733,
+"end": 33.84,
+"type": "word"
+},
+{
+"text": "abschreiben.",
+"start": 33.92,
+"end": 35.44,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 36.0,
+"end": 36.192,
+"type": "word"
+},
+{
+"text": "Also",
+"start": 36.256,
+"end": 36.32,
+"type": "word"
+},
+{
+"text": "fragt",
+"start": 36.4,
+"end": 36.64,
+"type": "word"
+},
+{
+"text": "Lisa",
+"start": 36.8,
+"end": 36.96,
+"type": "word"
+},
+{
+"text": "die",
+"start": 37.04,
+"end": 37.12,
+"type": "word"
+},
+{
+"text": "Einzige,",
+"start": 37.16,
+"end": 37.68,
+"type": "word"
+},
+{
+"text": "die",
+"start": 37.76,
+"end": 37.84,
+"type": "word"
+},
+{
+"text": "diese",
+"start": 37.92,
+"end": 38.08,
+"type": "word"
+},
+{
+"text": "Schubladen",
+"start": 38.12,
+"end": 38.56,
+"type": "word"
+},
+{
+"text": "hat.",
+"start": 38.64,
+"end": 39.52,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 40.16,
+"end": 40.256,
+"type": "word"
+},
+{
+"text": "Am",
+"start": 40.288,
+"end": 40.32,
+"type": "word"
+},
+{
+"text": "Sonntag",
+"start": 40.4,
+"end": 40.72,
+"type": "word"
+},
+{
+"text": "kocht",
+"start": 40.8,
+"end": 40.96,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 41.04,
+"end": 41.12,
+"type": "word"
+},
+{
+"text": "neben",
+"start": 41.2,
+"end": 41.44,
+"type": "word"
+},
+{
+"text": "Oma",
+"start": 41.52,
+"end": 41.68,
+"type": "word"
+},
+{
+"text": "Rosa.",
+"start": 41.76,
+"end": 42.56,
+"type": "word"
+},
+{
+"text": "Oma",
+"start": 42.64,
+"end": 42.88,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 42.96,
+"end": 43.04,
+"type": "word"
+},
+{
+"text": "einundachtzig",
+"start": 43.12,
+"end": 43.76,
+"type": "word"
+},
+{
+"text": "und",
+"start": 43.92,
+"end": 44.0,
+"type": "word"
+},
+{
+"text": "schaut",
+"start": 44.04,
+"end": 44.24,
+"type": "word"
+},
+{
+"text": "nie",
+"start": 44.32,
+"end": 44.48,
+"type": "word"
+},
+{
+"text": "auf",
+"start": 44.56,
+"end": 44.64,
+"type": "word"
+},
+{
+"text": "die",
+"start": 44.72,
+"end": 44.8,
+"type": "word"
+},
+{
+"text": "Karte.",
+"start": 44.907,
+"end": 45.6,
+"type": "word"
+},
+{
+"text": "„Schau,",
+"start": 45.64,
+"end": 46.16,
+"type": "word"
+},
+{
+"text": "so",
+"start": 46.24,
+"end": 46.4,
+"type": "word"
+},
+{
+"text": "goldbraun",
+"start": 46.48,
+"end": 46.88,
+"type": "word"
+},
+{
+"text": "müssen",
+"start": 46.96,
+"end": 47.2,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 47.28,
+"end": 47.36,
+"type": "word"
+},
+{
+"text": "sein.“",
+"start": 47.48,
+"end": 48.0,
+"type": "word"
+},
+{
+"text": "„Riech",
+"start": 48.027,
+"end": 48.24,
+"type": "word"
+},
+{
+"text": "mal.",
+"start": 48.36,
+"end": 48.64,
+"type": "word"
+},
+{
+"text": "Jetzt",
+"start": 48.8,
+"end": 48.96,
+"type": "word"
+},
+{
+"text": "kommt",
+"start": 49.04,
+"end": 49.16,
+"type": "word"
+},
+{
+"text": "der",
+"start": 49.2,
+"end": 49.28,
+"type": "word"
+},
+{
+"text": "Paprika.“",
+"start": 49.32,
+"end": 49.84,
+"type": "word"
+},
+{
+"text": "Lisa",
+"start": 50.48,
+"end": 50.8,
+"type": "word"
+},
+{
+"text": "schreibt",
+"start": 50.88,
+"end": 51.12,
+"type": "word"
+},
+{
+"text": "nichts",
+"start": 51.2,
+"end": 51.44,
+"type": "word"
+},
+{
+"text": "auf.",
+"start": 51.52,
+"end": 51.92,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 52.08,
+"end": 52.16,
+"type": "word"
+},
+{
+"text": "schaut",
+"start": 52.32,
+"end": 52.64,
+"type": "word"
+},
+{
+"text": "und",
+"start": 52.8,
+"end": 52.88,
+"type": "word"
+},
+{
+"text": "riecht",
+"start": 52.96,
+"end": 53.2,
+"type": "word"
+},
+{
+"text": "mit.",
+"start": 53.32,
+"end": 54.2,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 54.96,
+"end": 55.056,
+"type": "word"
+},
+{
+"text": "Nach",
+"start": 55.088,
+"end": 55.12,
+"type": "word"
+},
+{
+"text": "drei",
+"start": 55.2,
+"end": 55.36,
+"type": "word"
+},
+{
+"text": "Sonntagen",
+"start": 55.44,
+"end": 55.92,
+"type": "word"
+},
+{
+"text": "kocht",
+"start": 56.0,
+"end": 56.24,
+"type": "word"
+},
+{
+"text": "Lisa",
+"start": 56.4,
+"end": 56.56,
+"type": "word"
+},
+{
+"text": "wieder",
+"start": 56.64,
+"end": 56.8,
+"type": "word"
+},
+{
+"text": "allein.",
+"start": 56.92,
+"end": 57.28,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 58.48,
+"end": 58.624,
+"type": "word"
+},
+{
+"text": "Jetzt",
+"start": 58.672,
+"end": 58.8,
+"type": "word"
+},
+{
+"text": "hat",
+"start": 58.88,
+"end": 58.96,
+"type": "word"
+},
+{
+"text": "sie",
+"start": 59.04,
+"end": 59.12,
+"type": "word"
+},
+{
+"text": "ganz",
+"start": 59.16,
+"end": 59.44,
+"type": "word"
+},
+{
+"text": "unten",
+"start": 59.52,
+"end": 59.76,
+"type": "word"
+},
+{
+"text": "eigene",
+"start": 59.84,
+"end": 60.16,
+"type": "word"
+},
+{
+"text": "Schubladen:",
+"start": 60.24,
+"end": 61.04,
+"type": "word"
+},
+{
+"text": "goldbraun,",
+"start": 61.12,
+"end": 61.92,
+"type": "word"
+},
+{
+"text": "der",
+"start": 62.0,
+"end": 62.08,
+"type": "word"
+},
+{
+"text": "Duft,",
+"start": 62.16,
+"end": 62.8,
+"type": "word"
+},
+{
+"text": "der",
+"start": 62.84,
+"end": 62.88,
+"type": "word"
+},
+{
+"text": "Moment",
+"start": 63.08,
+"end": 63.28,
+"type": "word"
+},
+{
+"text": "für",
+"start": 63.36,
+"end": 63.44,
+"type": "word"
+},
+{
+"text": "den",
+"start": 63.52,
+"end": 63.6,
+"type": "word"
+},
+{
+"text": "Paprika.",
+"start": 63.64,
+"end": 64.56,
+"type": "word"
+},
+{
+"text": "Sie",
+"start": 64.64,
+"end": 64.72,
+"type": "word"
+},
+{
+"text": "kostet",
+"start": 64.8,
+"end": 65.2,
+"type": "word"
+},
+{
+"text": "und",
+"start": 65.28,
+"end": 65.36,
+"type": "word"
+},
+{
+"text": "lacht:",
+"start": 65.467,
+"end": 65.92,
+"type": "word"
+},
+{
+"text": "„Jetzt",
+"start": 65.96,
+"end": 66.4,
+"type": "word"
+},
+{
+"text": "passt",
+"start": 66.52,
+"end": 66.72,
+"type": "word"
+},
+{
+"text": "es.“",
+"start": 66.8,
+"end": 67.92,
+"type": "word"
+},
+{
+"text": "Mit",
+"start": 68.0,
+"end": 68.08,
+"type": "word"
+},
+{
+"text": "Sätzen",
+"start": 68.133,
+"end": 68.4,
+"type": "word"
+},
+{
+"text": "von",
+"start": 68.48,
+"end": 68.56,
+"type": "word"
+},
+{
+"text": "zu",
+"start": 68.64,
+"end": 68.72,
+"type": "word"
+},
+{
+"text": "Hause",
+"start": 68.76,
+"end": 69.04,
+"type": "word"
+},
+{
+"text": "ist",
+"start": 69.12,
+"end": 69.28,
+"type": "word"
+},
+{
+"text": "es",
+"start": 69.36,
+"end": 69.44,
+"type": "word"
+},
+{
+"text": "genauso.",
+"start": 69.52,
+"end": 70.32,
+"type": "word"
+},
+{
+"text": "Ein",
+"start": 70.4,
+"end": 70.48,
+"type": "word"
+},
+{
+"text": "Satz",
+"start": 70.52,
+"end": 70.72,
+"type": "word"
+},
+{
+"text": "wie",
+"start": 70.8,
+"end": 70.96,
+"type": "word"
+},
+{
+"text": "„Spar",
+"start": 71.2,
+"end": 71.44,
+"type": "word"
+},
+{
+"text": "dir",
+"start": 71.48,
+"end": 71.52,
+"type": "word"
+},
+{
+"text": "was",
+"start": 71.64,
+"end": 71.76,
+"type": "word"
+},
+{
+"text": "auf“",
+"start": 71.84,
+"end": 72.24,
+"type": "word"
+},
+{
+"text": "trägt",
+"start": 72.4,
+"end": 72.56,
+"type": "word"
+},
+{
+"text": "erst,",
+"start": 72.68,
+"end": 72.987,
+"type": "word"
+},
+{
+"text": "wenn",
+"start": 73.013,
+"end": 73.2,
+"type": "word"
+},
+{
+"text": "eigene",
+"start": 73.24,
+"end": 73.52,
+"type": "word"
+},
+{
+"text": "Erfahrungen",
+"start": 73.6,
+"end": 74.08,
+"type": "word"
+},
+{
+"text": "darunter",
+"start": 74.16,
+"end": 74.48,
+"type": "word"
+},
+{
+"text": "liegen.",
+"start": 74.56,
+"end": 76.08,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 76.096,
+"end": 76.144,
+"type": "word"
+},
+{
+"text": "Welchen",
+"start": 76.16,
+"end": 76.4,
+"type": "word"
+},
+{
+"text": "Satz",
+"start": 76.48,
+"end": 76.64,
+"type": "word"
+},
+{
+"text": "hast",
+"start": 76.72,
+"end": 76.88,
+"type": "word"
+},
+{
+"text": "du",
+"start": 76.96,
+"end": 77.04,
+"type": "word"
+},
+{
+"text": "übernommen,",
+"start": 77.16,
+"end": 77.6,
+"type": "word"
+},
+{
+"text": "ohne",
+"start": 77.68,
+"end": 77.84,
+"type": "word"
+},
+{
+"text": "die",
+"start": 77.92,
+"end": 78.0,
+"type": "word"
+},
+{
+"text": "Erfahrung",
+"start": 78.04,
+"end": 78.48,
+"type": "word"
+},
+{
+"text": "darunter?",
+"start": 78.56,
+"end": 78.96,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 79.0,
+"end": 79.84,
+"type": "word"
+},
+{
+"text": "[pause]",
+"start": 80.88,
+"end": 81.024,
+"type": "word"
+},
+{
+"text": "Genau",
+"start": 81.072,
+"end": 81.2,
+"type": "word"
+},
+{
+"text": "darum",
+"start": 81.28,
+"end": 81.6,
+"type": "word"
+},
+{
+"text": "geht",
+"start": 81.68,
+"end": 81.84,
+"type": "word"
+},
+{
+"text": "es",
+"start": 81.88,
+"end": 81.92,
+"type": "word"
+},
+{
+"text": "in",
+"start": 82.0,
+"end": 82.08,
+"type": "word"
+},
+{
+"text": "meinem",
+"start": 82.12,
+"end": 82.32,
+"type": "word"
+},
+{
+"text": "Zwei-Stunden-Kurs",
+"start": 82.4,
+"end": 83.28,
+"type": "word"
+},
+{
+"text": "zu",
+"start": 83.36,
+"end": 83.44,
+"type": "word"
+},
+{
+"text": "vertikalem",
+"start": 83.52,
+"end": 84.08,
+"type": "word"
+},
+{
+"text": "Wissen.",
+"start": 84.16,
+"end": 84.8,
+"type": "word"
+},
+{
+"text": "Schreib",
+"start": 84.84,
+"end": 85.04,
+"type": "word"
+},
+{
+"text": "mir",
+"start": 85.08,
+"end": 85.12,
+"type": "word"
+},
+{
+"text": "eine",
+"start": 85.2,
+"end": 85.36,
+"type": "word"
+},
+{
+"text": "DM.",
+"start": 85.44,
+"end": 86.0,
+"type": "word"
+}
+]
+}

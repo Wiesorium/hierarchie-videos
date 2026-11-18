@@ -1,0 +1,913 @@
+{
+ "slug": "bis-es-passt",
+ "title": "Bis es passt",
+ "cta": "kurs",
+ "hero": "lisa",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Du kochst Omas Gulasch genau nach Rezept, und trotzdem schmeckt es nicht wie bei ihr.",
+   "card": [
+    "Genau nach Omas Rezept,",
+    "und es schmeckt anders"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Ein Rezept gibt dir nur die oberen Schubladen, die unteren musst du selbst füllen.",
+   "card": [
+    "Ein Rezept gibt dir",
+    "nur die oberen Schubladen"
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Bis es passt“: In diesen drei Wörtern auf Omas Rezept stecken fünfzig Jahre.",
+   "card": [
+    "„Bis es passt“:",
+    "50 Jahre in 3 Wörtern"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Lisa ist fünfunddreißig und kocht Omas Gulasch, genau nach Omas Karte: Zwiebeln, Rindfleisch, Paprika, zwei Stunden. Sie hat nichts vergessen. Sie kostet: „Gut. Aber nicht wie bei Oma.“",
+  "block1": "Schau dir das als Schrank an. Oben liegt Omas Gulasch. Darunter Zwiebeln, Fleisch und Paprika. Bis hierher reicht die Karte. Bei den Zwiebeln steht: „Rösten, bis es passt.“ Bei Oma liegt ganz unten, was das heißt: wie die Zwiebeln aussehen und riechen, wenn sie genug haben. Fünfzig Jahre Sonntage am Herd. Das kann man nicht abschreiben.",
+  "rehook1": "Also fragt Lisa die Einzige, die diese Schubladen hat.",
+  "block2": "Am Sonntag kocht sie neben Oma Rosa. Oma ist einundachtzig und schaut nie auf die Karte. „Schau, so goldbraun müssen sie sein.“ „Riech mal. Jetzt kommt der Paprika.“ Lisa schreibt nichts auf. Sie schaut und riecht mit.",
+  "rehook2": "Nach drei Sonntagen kocht Lisa wieder allein.",
+  "block3": "Jetzt hat sie ganz unten eigene Schubladen: goldbraun, der Duft, der Moment für den Paprika. Sie kostet und lacht: „Jetzt passt es.“ Mit Sätzen von zu Hause ist es genauso. Ein Satz wie „Spar dir was auf“ trägt erst, wenn eigene Erfahrungen darunter liegen.",
+  "closing": "Welchen Satz hast du übernommen, ohne die Erfahrung darunter?",
+  "cta": "Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM."
+ },
+ "question": [
+  "Welchen Satz hast du übernommen,",
+  "ohne die Erfahrung darunter?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "lisa",
+     "type": "figure",
+     "role": "woman",
+     "x": 230,
+     "look": "right",
+     "mood": "smile",
+     "hair": "long",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "Sie kostet",
+       "mood": "open"
+      },
+      {
+       "at": "Aber nicht wie",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Sie kostet",
+       "kind": "raise",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Gut Aber",
+       "end:nicht wie bei Oma"
+      ]
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 740,
+     "w": 420,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "topf",
+     "type": "prop",
+     "kind": "pot",
+     "x": 740,
+     "y": 1288,
+     "w": 230,
+     "h": 150,
+     "z": 3.6
+    },
+    {
+     "id": "karte",
+     "type": "card",
+     "x": 760,
+     "y": 740,
+     "lines": [
+      "_Omas Gulasch_",
+      "Zwiebeln, Rindfleisch,",
+      "Paprika, 2 Stunden"
+     ],
+     "size": 40,
+     "color": "idea",
+     "radius": 12,
+     "in": "nach Omas Karte"
+    },
+    {
+     "id": "ok_karte",
+     "type": "icon",
+     "kind": "check",
+     "x": 985,
+     "y": 640,
+     "size": 70,
+     "in": "nichts vergessen"
+    },
+    {
+     "id": "b_kost",
+     "type": "bubble",
+     "from": "lisa",
+     "text": "Gut. Aber *nicht* wie bei Oma.",
+     "x": 330,
+     "y": 880,
+     "maxW": 400,
+     "size": 42,
+     "in": "Gut Aber"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "lisa",
+     "type": "figure",
+     "role": "woman",
+     "x": 175,
+     "look": "right",
+     "mood": "open",
+     "hair": "long",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "Bis hierher reicht",
+       "mood": "smile"
+      },
+      {
+       "at": "Rösten bis es passt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "schrank",
+     "type": "cabinet",
+     "x": 700,
+     "y": 560,
+     "w": 600,
+     "rowH": 120,
+     "out": "Also fragt Lisa",
+     "rows": [
+      [
+       "gulasch"
+      ],
+      [
+       "zwiebeln",
+       "fleisch",
+       "paprika"
+      ],
+      [
+       "farbe",
+       "duft",
+       "sonntage"
+      ]
+     ],
+     "drawers": {
+      "gulasch": {
+       "label": "Omas Gulasch",
+       "color": "food",
+       "size": 48,
+       "in": "Oben liegt Omas Gulasch",
+       "states": [
+        {
+         "at": "Oben liegt Omas Gulasch",
+         "state": "glow"
+        },
+        {
+         "at": "Darunter Zwiebeln",
+         "state": "normal"
+        },
+        {
+         "at": "Bis hierher reicht",
+         "state": "check"
+        },
+        {
+         "at": "Bei Oma liegt ganz unten",
+         "state": "normal"
+        }
+       ]
+      },
+      "zwiebeln": {
+       "label": "Zwiebeln",
+       "color": "idea",
+       "size": 40,
+       "in": "Darunter Zwiebeln",
+       "states": [
+        {
+         "at": "Bis hierher reicht",
+         "state": "check"
+        },
+        {
+         "at": "Bei den Zwiebeln steht",
+         "state": "glow"
+        },
+        {
+         "at": "Bei Oma liegt ganz unten",
+         "state": "normal"
+        }
+       ]
+      },
+      "fleisch": {
+       "label": "Fleisch",
+       "color": "kids",
+       "size": 40,
+       "in": "Fleisch und Paprika",
+       "states": [
+        {
+         "at": "Bis hierher reicht",
+         "state": "check"
+        },
+        {
+         "at": "Bei Oma liegt ganz unten",
+         "state": "normal"
+        }
+       ]
+      },
+      "paprika": {
+       "label": "Paprika",
+       "color": "#F8D5C8",
+       "size": 40,
+       "in": "und Paprika",
+       "states": [
+        {
+         "at": "Bis hierher reicht",
+         "state": "check"
+        },
+        {
+         "at": "Bei Oma liegt ganz unten",
+         "state": "normal"
+        }
+       ]
+      },
+      "farbe": {
+       "label": "goldbraun",
+       "emptyLabel": "goldbraun",
+       "color": "#F3DFB5",
+       "size": 38,
+       "in": "wie die Zwiebeln aussehen",
+       "states": [
+        {
+         "at": "wie die Zwiebeln aussehen",
+         "state": "empty"
+        },
+        {
+         "at": "nicht abschreiben",
+         "state": "empty+shake"
+        }
+       ]
+      },
+      "duft": {
+       "label": "der Duft",
+       "emptyLabel": "der Duft",
+       "color": "fresh",
+       "size": 38,
+       "in": "und riechen",
+       "states": [
+        {
+         "at": "und riechen",
+         "state": "empty"
+        },
+        {
+         "at": "nicht abschreiben+0.15",
+         "state": "empty+shake"
+        }
+       ]
+      },
+      "sonntage": {
+       "label": "Sonntage",
+       "emptyLabel": "Sonntage",
+       "sub": "50 Jahre",
+       "color": "people",
+       "size": 38,
+       "in": "Jahre Sonntage am Herd",
+       "states": [
+        {
+         "at": "Jahre Sonntage am Herd",
+         "state": "empty"
+        },
+        {
+         "at": "nicht abschreiben+0.3",
+         "state": "empty+shake"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "k_roesten",
+     "type": "card",
+     "x": 205,
+     "y": 575,
+     "lines": [
+      "„Rösten,",
+      "*bis es passt*.“"
+     ],
+     "size": 44,
+     "color": "idea",
+     "radius": 12,
+     "in": "Bei den Zwiebeln steht",
+     "out": "Also fragt Lisa"
+    },
+    {
+     "id": "tag_karte",
+     "type": "tag",
+     "text": "auf der Karte",
+     "x": 205,
+     "y": 720,
+     "color": "plum",
+     "in": "Bis hierher reicht",
+     "out": "Also fragt Lisa"
+    }
+   ]
+  },
+  {
+   "at": "Bei Oma liegt ganz unten",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "lisa",
+     "type": "figure",
+     "role": "woman",
+     "x": 175,
+     "look": "right",
+     "mood": "open",
+     "hair": "long",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "Jahre Sonntage am Herd",
+       "mood": "wow"
+      },
+      {
+       "at": "nicht abschreiben",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "tag_oma",
+     "type": "tag",
+     "text": "nur bei Oma",
+     "x": 205,
+     "y": 860,
+     "color": "rose",
+     "in": "Bei Oma liegt ganz unten",
+     "out": "Also fragt Lisa"
+    },
+    {
+     "id": "st_karte",
+     "type": "stamp",
+     "text": "nicht auf der Karte",
+     "x": 700,
+     "y": 1130,
+     "rot": -0.08,
+     "size": 56,
+     "in": "nicht abschreiben",
+     "out": "Also fragt Lisa"
+    }
+   ]
+  },
+  {
+   "at": "Also fragt Lisa",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "lisa",
+     "type": "figure",
+     "role": "woman",
+     "x": 180,
+     "look": "right",
+     "mood": "smile",
+     "hair": "long",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "so goldbraun",
+       "mood": "wow"
+      },
+      {
+       "at": "Jetzt kommt der Paprika",
+       "mood": "happy"
+      },
+      {
+       "at": "Lisa schreibt nichts",
+       "mood": "smile"
+      },
+      {
+       "at": "Sie schaut und riecht",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Sie schaut und riecht",
+       "kind": "think",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "oma",
+     "type": "figure",
+     "role": "oma",
+     "x": 430,
+     "look": "right",
+     "mood": "smile",
+     "glasses": true,
+     "enter": "hop",
+     "in": "neben Oma Rosa",
+     "moods": [
+      {
+       "at": "Riech mal",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Schau so goldbraun",
+       "kind": "point",
+       "dur": 1.8
+      },
+      {
+       "at": "Riech mal",
+       "kind": "raise",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Schau so goldbraun",
+       "end:müssen sie sein"
+      ],
+      [
+       "Riech mal",
+       "end:kommt der Paprika"
+      ]
+     ]
+    },
+    {
+     "id": "tisch_b",
+     "type": "prop",
+     "kind": "table",
+     "x": 790,
+     "w": 400,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "topf_b",
+     "type": "prop",
+     "kind": "pot",
+     "x": 790,
+     "y": 1288,
+     "w": 230,
+     "h": 150,
+     "z": 3.6
+    },
+    {
+     "id": "tag_rosa",
+     "type": "tag",
+     "text": "Oma Rosa, 81",
+     "x": 520,
+     "y": 760,
+     "color": "plum",
+     "in": "neben Oma Rosa",
+     "out": "Schau so goldbraun"
+    },
+    {
+     "id": "tag_ohne",
+     "type": "tag",
+     "text": "ohne Karte",
+     "x": 790,
+     "y": 900,
+     "color": "ink",
+     "in": "schaut nie auf die Karte",
+     "out": "Schau so goldbraun"
+    },
+    {
+     "id": "x_karte",
+     "type": "icon",
+     "kind": "cross",
+     "x": 920,
+     "y": 880,
+     "size": 54,
+     "in": "schaut nie auf die Karte+0.3",
+     "out": "Schau so goldbraun"
+    },
+    {
+     "id": "b_gold",
+     "type": "bubble",
+     "from": "oma",
+     "text": "Schau, so *goldbraun* müssen sie sein.",
+     "x": 560,
+     "y": 790,
+     "maxW": 430,
+     "size": 40,
+     "in": "Schau so goldbraun",
+     "out": "Riech mal"
+    },
+    {
+     "id": "tag_gold",
+     "type": "tag",
+     "text": "^goldbraun^",
+     "x": 790,
+     "y": 1010,
+     "in": "so goldbraun+0.4",
+     "out": "Riech mal"
+    },
+    {
+     "id": "b_riech",
+     "type": "bubble",
+     "from": "oma",
+     "text": "Riech mal. Jetzt kommt der *Paprika*.",
+     "x": 560,
+     "y": 790,
+     "maxW": 430,
+     "size": 40,
+     "in": "Riech mal",
+     "out": "Lisa schreibt nichts"
+    },
+    {
+     "id": "tag_paprika",
+     "type": "tag",
+     "text": "*Paprika*",
+     "x": 790,
+     "y": 1010,
+     "in": "Jetzt kommt der Paprika",
+     "out": "Lisa schreibt nichts"
+    },
+    {
+     "id": "stift",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 170,
+     "y": 860,
+     "size": 80,
+     "in": "schreibt nichts auf",
+     "out": "Sie schaut und riecht"
+    },
+    {
+     "id": "x_stift",
+     "type": "icon",
+     "kind": "cross",
+     "x": 245,
+     "y": 830,
+     "size": 54,
+     "in": "schreibt nichts auf+0.3",
+     "out": "Sie schaut und riecht"
+    },
+    {
+     "id": "tag_sinne",
+     "type": "tag",
+     "text": "~schauen, riechen~",
+     "x": 300,
+     "y": 860,
+     "in": "Sie schaut und riecht"
+    }
+   ]
+  },
+  {
+   "at": "kocht Lisa wieder allein",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "lisa",
+     "type": "figure",
+     "role": "woman",
+     "x": 175,
+     "look": "right",
+     "mood": "smile",
+     "hair": "long",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "eigene Schubladen",
+       "mood": "happy"
+      },
+      {
+       "at": "Sie kostet und lacht",
+       "mood": "laugh"
+      },
+      {
+       "at": "Mit Sätzen von",
+       "mood": "smile"
+      },
+      {
+       "at": "eigene Erfahrungen",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Jetzt passt es",
+       "end:Jetzt passt es"
+      ]
+     ],
+     "hop": "Jetzt passt es"
+    },
+    {
+     "id": "tisch2",
+     "type": "prop",
+     "kind": "table",
+     "x": 720,
+     "w": 400,
+     "h": 190,
+     "z": 3.5,
+     "out": "Jetzt hat sie ganz unten"
+    },
+    {
+     "id": "topf2",
+     "type": "prop",
+     "kind": "pot",
+     "x": 720,
+     "y": 1288,
+     "w": 230,
+     "h": 150,
+     "z": 3.6,
+     "out": "Jetzt hat sie ganz unten"
+    },
+    {
+     "id": "tag_spaeter",
+     "type": "tag",
+     "text": "3 Sonntage später",
+     "x": 720,
+     "y": 900,
+     "color": "plum",
+     "out": "Jetzt hat sie ganz unten"
+    },
+    {
+     "id": "schrank2",
+     "type": "cabinet",
+     "x": 700,
+     "y": 560,
+     "w": 600,
+     "rowH": 120,
+     "in": "Jetzt hat sie ganz unten",
+     "out": "Mit Sätzen von",
+     "rows": [
+      [
+       "gulasch"
+      ],
+      [
+       "zwiebeln",
+       "fleisch",
+       "paprika"
+      ],
+      [
+       "farbe",
+       "duft",
+       "moment"
+      ]
+     ],
+     "drawers": {
+      "gulasch": {
+       "label": "Omas Gulasch",
+       "color": "food",
+       "size": 48,
+       "states": [
+        {
+         "at": "Jetzt passt es",
+         "state": "gold+check"
+        }
+       ]
+      },
+      "zwiebeln": {
+       "label": "Zwiebeln",
+       "color": "idea",
+       "size": 40
+      },
+      "fleisch": {
+       "label": "Fleisch",
+       "color": "kids",
+       "size": 40
+      },
+      "paprika": {
+       "label": "Paprika",
+       "color": "#F8D5C8",
+       "size": 40
+      },
+      "farbe": {
+       "label": "goldbraun",
+       "color": "#F3DFB5",
+       "size": 38,
+       "in": "goldbraun",
+       "states": [
+        {
+         "at": "goldbraun",
+         "state": "glow"
+        },
+        {
+         "at": "der Duft",
+         "state": "normal"
+        },
+        {
+         "at": "Jetzt passt es",
+         "state": "gold"
+        }
+       ]
+      },
+      "duft": {
+       "label": "der Duft",
+       "color": "fresh",
+       "size": 38,
+       "in": "der Duft",
+       "states": [
+        {
+         "at": "der Duft",
+         "state": "glow"
+        },
+        {
+         "at": "der Moment für",
+         "state": "normal"
+        },
+        {
+         "at": "Jetzt passt es",
+         "state": "gold"
+        }
+       ]
+      },
+      "moment": {
+       "label": "Moment",
+       "sub": "für Paprika",
+       "color": "#F8D5C8",
+       "size": 38,
+       "in": "der Moment für",
+       "states": [
+        {
+         "at": "der Moment für",
+         "state": "glow"
+        },
+        {
+         "at": "Sie kostet und lacht",
+         "state": "normal"
+        },
+        {
+         "at": "Jetzt passt es",
+         "state": "gold"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "tag_eigene",
+     "type": "tag",
+     "text": "*eigene*",
+     "x": 205,
+     "y": 860,
+     "in": "eigene Schubladen",
+     "out": "Sie kostet und lacht"
+    },
+    {
+     "id": "b_passt",
+     "type": "bubble",
+     "from": "lisa",
+     "text": "Jetzt *passt* es!",
+     "x": 235,
+     "y": 860,
+     "maxW": 320,
+     "size": 46,
+     "in": "Jetzt passt es",
+     "out": "Mit Sätzen von"
+    },
+    {
+     "id": "haus",
+     "type": "icon",
+     "kind": "house",
+     "x": 320,
+     "y": 665,
+     "size": 100,
+     "in": "Sätzen von zu Hause",
+     "color": "#C9A3D9"
+    },
+    {
+     "id": "satz",
+     "type": "tree",
+     "x": 680,
+     "y": 600,
+     "w": 560,
+     "rowGap": 290,
+     "in": "Mit Sätzen von",
+     "levels": [
+      [
+       {
+        "id": "spar",
+        "label": "„Spar dir was auf.“",
+        "color": "kids",
+        "size": 46,
+        "in": "Spar dir was auf",
+        "states": [
+         {
+          "at": "trägt erst",
+          "state": "shake"
+         },
+         {
+          "at": "end:darunter liegen",
+          "state": "gold"
+         }
+        ]
+       }
+      ],
+      [
+       {
+        "id": "erf",
+        "label": "eigene Erfahrung",
+        "emptyLabel": "?",
+        "color": "fresh",
+        "size": 44,
+        "states": [
+         {
+          "at": "Mit Sätzen von",
+          "state": "empty"
+         },
+         {
+          "at": "eigene Erfahrungen",
+          "state": "glow"
+         },
+         {
+          "at": "end:darunter liegen",
+          "state": "gold"
+         }
+        ]
+       }
+      ]
+     ],
+     "links": [
+      {
+       "from": "spar",
+       "to": "erf",
+       "style": "gold",
+       "in": "eigene Erfahrungen"
+      }
+     ],
+     "nodeW": 540,
+     "nodeH": 130
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Aber nicht wie bei Oma",
+   "x": 330,
+   "y": 880
+  },
+  {
+   "at": "Oben liegt Omas Gulasch",
+   "x": 700,
+   "y": 620
+  },
+  {
+   "at": "Bis hierher reicht",
+   "x": 205,
+   "y": 720
+  },
+  {
+   "at": "Rösten bis es passt",
+   "x": 205,
+   "y": 575
+  },
+  {
+   "at": "nicht abschreiben",
+   "x": 700,
+   "y": 1130
+  },
+  {
+   "at": "so goldbraun",
+   "x": 790,
+   "y": 1010
+  },
+  {
+   "at": "Jetzt passt es",
+   "x": 700,
+   "y": 620
+  },
+  {
+   "at": "eigene Erfahrungen",
+   "x": 680,
+   "y": 940
+  }
+ ]
+}
