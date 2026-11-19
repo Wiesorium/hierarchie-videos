@@ -3,6 +3,33 @@
  "videos": [
   {
    "datum": "2026-11-19",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-19-abend-ein-curry-drei-ebenen",
+   "slug": "ein-curry-drei-ebenen",
+   "titel": "Ein Curry, drei Ebenen",
+   "idee": "idee-9",
+   "cta": "kurs",
+   "hooks": {
+    "a": "Deine Freundin schwärmt von deinem Curry, und du denkst nur: Ist der Reis zu weich?",
+    "b": "Für dich ist es ein Gericht, für ihn ist es eine Zutatenliste.",
+    "c": "„Sind da Nüsse drin?“: Für diese Frage muss man ganz nach unten."
+   },
+   "dauer": {
+    "a": 83.37,
+    "b": 82.1,
+    "c": 82.5
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/eAZ7nz9OHghtoE0uCYhT",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Gast oben, Köchin Mitte, Allergiker unten), als Abend unter Freunden mit Jana (vierzig), Nina und David selbst ergänzt. Knotenbaum (tree) Kürbiscurry → Reis/Sauce/Garzeit → Kürbis/Kokosmilch/Ingwer/Cashews, links Namens-Pillen je Ebene, die am Ende nach oben wandern (David nach dem Teller ohne Nüsse, Jana nach „Iss mit!“). Neue Engine-Teile: plate mit food/nuts, Icon cashew. Hauptteil der Stimme 76,2 s, Videos 82,1 bis 83,4 s. Captions in Drive: 2026-11-19-ein-curry-drei-ebenen-captions.",
+   "dateien": [
+    "ein-curry-drei-ebenen-hook-a.mp4",
+    "ein-curry-drei-ebenen-hook-b.mp4",
+    "ein-curry-drei-ebenen-hook-c.mp4"
+   ]
+  },
+  {
+   "datum": "2026-11-19",
    "slot": "morgen",
    "ordner": "episodes/2026-11-19-morgen-wofuer-ist-die-zitrone-da",
    "slug": "wofuer-ist-die-zitrone-da",

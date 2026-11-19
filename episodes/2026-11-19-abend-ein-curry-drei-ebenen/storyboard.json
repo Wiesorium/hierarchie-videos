@@ -1,0 +1,1062 @@
+{
+ "slug": "ein-curry-drei-ebenen",
+ "title": "Ein Curry, drei Ebenen",
+ "cta": "kurs",
+ "hero": "jana",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Deine Freundin schwärmt von deinem Curry, und du denkst nur: Ist der Reis zu weich?",
+   "card": [
+    "Sie schwärmt vom Curry,",
+    "*du denkst an den Reis*"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Für dich ist es ein Gericht, für ihn ist es eine Zutatenliste.",
+   "card": [
+    "Für dich ein Gericht.",
+    "*Für ihn eine Zutatenliste.*"
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Sind da Nüsse drin?“: Für diese Frage muss man ganz nach unten.",
+   "card": [
+    "„Sind da Nüsse drin?“",
+    "*Dafür geht's ganz nach unten*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Jana ist vierzig und kocht für zwei Freunde Kürbiscurry. Nina kostet und strahlt: „Wie im Urlaub!“ Jana denkt nur: „Ist der Reis zu weich?“ Und David fragt: „Sind da Nüsse drin?“",
+  "block1": "Schau dir das als Knoten an. Oben steht das Gericht: Kürbiscurry. Dort ist Nina. Darunter Sauce, Reis und Garzeit. Dort ist Jana. Ganz unten die Zutaten. Dort sucht David. Wer hat recht? Alle drei. Es gibt keine richtige Ebene, nur die passende für den Moment.",
+  "rehook1": "Für David liegt sie heute ganz unten.",
+  "block2": "David verträgt keine Nüsse. „Schmeckt gut“ hilft ihm nicht. Jana geht mit ihm die Zutaten durch: Kürbis, Kokosmilch, Ingwer. Und darüber gestreut: Cashews! Sie macht ihm einen Teller ohne. Jetzt darf auch David nach oben: „Wie im Urlaub!“",
+  "rehook2": "Nur Jana hängt noch beim Reis fest.",
+  "block3": "Nina lacht: „Der Reis ist perfekt. Iss mit!“ Jana kostet. Zum ersten Mal an diesem Abend schmeckt sie das Curry. Geht etwas schief, geh nach unten. Passt alles, darfst du wieder hinauf.",
+  "closing": "Auf welcher Ebene hängst du fest, obwohl gerade alles passt?",
+  "cta": "Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM."
+ },
+ "question": [
+  "Auf welcher Ebene hängst du fest,",
+  "obwohl gerade alles passt?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "nina",
+     "type": "figure",
+     "role": "woman",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F9C6D3",
+     "x": 190,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Nina kostet",
+       "mood": "open"
+      },
+      {
+       "at": "Wie im Urlaub",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Wie im Urlaub",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Wie im Urlaub",
+       "end:im Urlaub"
+      ]
+     ]
+    },
+    {
+     "id": "jana",
+     "type": "figure",
+     "role": "woman",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#C9EBC7",
+     "x": 540,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Jana denkt nur",
+       "mood": "worried"
+      },
+      {
+       "at": "Und David fragt",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Jana denkt nur",
+       "kind": "think",
+       "dur": 2.0
+      }
+     ]
+    },
+    {
+     "id": "david",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "glasses": true,
+     "shirt": "#FBE3A0",
+     "x": 890,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Und David fragt",
+       "mood": "worried"
+      }
+     ],
+     "talk": [
+      [
+       "Sind da Nüsse",
+       "end:Nüsse drin"
+      ]
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 540,
+     "w": 780,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "teller_nina",
+     "type": "prop",
+     "kind": "plate",
+     "x": 250,
+     "y": 1288,
+     "w": 180,
+     "food": true,
+     "z": 3.6
+    },
+    {
+     "id": "topf",
+     "type": "prop",
+     "kind": "pot",
+     "x": 395,
+     "y": 1288,
+     "w": 140,
+     "h": 95,
+     "z": 3.6
+    },
+    {
+     "id": "teller_david",
+     "type": "prop",
+     "kind": "plate",
+     "x": 830,
+     "y": 1288,
+     "w": 180,
+     "food": true,
+     "nuts": true,
+     "z": 3.6
+    },
+    {
+     "id": "tag_jana40",
+     "type": "tag",
+     "text": "Jana, 40",
+     "x": 540,
+     "y": 940,
+     "color": "plum",
+     "in": "Jana ist vierzig",
+     "out": "Jana denkt nur"
+    },
+    {
+     "id": "tag_curry",
+     "type": "tag",
+     "text": "^Kürbiscurry^",
+     "x": 540,
+     "y": 560,
+     "in": "Freunde Kürbiscurry"
+    },
+    {
+     "id": "b_urlaub",
+     "type": "bubble",
+     "from": "nina",
+     "text": "Wie im *Urlaub*!",
+     "x": 250,
+     "y": 830,
+     "maxW": 320,
+     "size": 42,
+     "in": "Wie im Urlaub"
+    },
+    {
+     "id": "t_reis",
+     "type": "thought",
+     "from": "jana",
+     "text": "Ist der *Reis* zu weich?",
+     "x": 540,
+     "y": 690,
+     "maxW": 340,
+     "size": 40,
+     "in": "Ist der Reis"
+    },
+    {
+     "id": "b_nuesse",
+     "type": "bubble",
+     "from": "david",
+     "text": "Sind da *Nüsse* drin?",
+     "x": 830,
+     "y": 830,
+     "maxW": 380,
+     "size": 42,
+     "in": "Sind da Nüsse"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "nina",
+     "type": "figure",
+     "role": "woman",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F9C6D3",
+     "x": 190,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Dort ist Nina",
+       "mood": "happy"
+      },
+      {
+       "at": "Alle drei",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Dort ist Nina",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "jana",
+     "type": "figure",
+     "role": "woman",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#C9EBC7",
+     "x": 540,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Dort ist Jana",
+       "mood": "worried"
+      },
+      {
+       "at": "Alle drei",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Dort ist Jana",
+       "kind": "think",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "david",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "glasses": true,
+     "shirt": "#FBE3A0",
+     "x": 890,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Alle drei",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Dort sucht David",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "ebenen",
+     "type": "tree",
+     "x": 620,
+     "y": 470,
+     "w": 800,
+     "rowGap": 160,
+     "nodeW": 340,
+     "nodeH": 92,
+     "keep": true,
+     "levels": [
+      [
+       {
+        "id": "curry",
+        "label": "Kürbiscurry",
+        "color": "#FBDDBF",
+        "size": 48,
+        "in": "Oben steht das Gericht",
+        "states": [
+         {
+          "at": "Dort ist Nina",
+          "state": "glow"
+         },
+         {
+          "at": "Darunter Sauce",
+          "state": "normal"
+         },
+         {
+          "at": "hilft ihm nicht",
+          "state": "dim"
+         },
+         {
+          "at": "Jana geht mit ihm",
+          "state": "normal"
+         },
+         {
+          "at": "Jetzt darf auch David",
+          "state": "glow"
+         },
+         {
+          "at": "end:Wie im Urlaub",
+          "state": "gold"
+         },
+         {
+          "at": "Nur Jana hängt",
+          "state": "normal"
+         },
+         {
+          "at": "Jana kostet",
+          "state": "glow"
+         },
+         {
+          "at": "schmeckt sie das Curry",
+          "state": "gold+check"
+         }
+        ]
+       }
+      ],
+      [
+       {
+        "id": "reis",
+        "label": "Reis",
+        "color": "ice",
+        "size": 44,
+        "in": "Reis und Garzeit",
+        "states": [
+         {
+          "at": "Dort ist Jana",
+          "state": "glow"
+         },
+         {
+          "at": "Ganz unten die",
+          "state": "normal"
+         },
+         {
+          "at": "hängt noch beim Reis",
+          "state": "heavy+red"
+         },
+         {
+          "at": "Der Reis ist perfekt",
+          "state": "gold+check"
+         }
+        ]
+       },
+       {
+        "id": "sauce",
+        "label": "Sauce",
+        "color": "ice",
+        "size": 44,
+        "in": "Darunter Sauce"
+       },
+       {
+        "id": "garzeit",
+        "label": "Garzeit",
+        "color": "ice",
+        "size": 44,
+        "in": "Garzeit"
+       }
+      ],
+      [
+       {
+        "id": "kuerbis",
+        "label": "Kürbis",
+        "color": "idea",
+        "size": 38,
+        "in": "Ganz unten die Zutaten",
+        "states": [
+         {
+          "at": "Dort sucht David",
+          "state": "glow"
+         },
+         {
+          "at": "Wer hat recht",
+          "state": "normal"
+         },
+         {
+          "at": "durch Kürbis",
+          "state": "check"
+         }
+        ]
+       },
+       {
+        "id": "kokos",
+        "label": "Kokosmilch",
+        "color": "idea",
+        "size": 36,
+        "in": "Ganz unten die Zutaten+0.2",
+        "states": [
+         {
+          "at": "Dort sucht David",
+          "state": "glow"
+         },
+         {
+          "at": "Wer hat recht",
+          "state": "normal"
+         },
+         {
+          "at": "Kokosmilch",
+          "state": "check"
+         }
+        ]
+       },
+       {
+        "id": "ingwer",
+        "label": "Ingwer",
+        "color": "idea",
+        "size": 38,
+        "in": "Ganz unten die Zutaten+0.4",
+        "states": [
+         {
+          "at": "Dort sucht David",
+          "state": "glow"
+         },
+         {
+          "at": "Wer hat recht",
+          "state": "normal"
+         },
+         {
+          "at": "Ingwer",
+          "state": "check"
+         }
+        ]
+       },
+       {
+        "id": "cashew",
+        "label": "Cashews",
+        "color": "idea",
+        "size": 38,
+        "in": "Ganz unten die Zutaten+0.6",
+        "states": [
+         {
+          "at": "Dort sucht David",
+          "state": "glow"
+         },
+         {
+          "at": "Wer hat recht",
+          "state": "normal"
+         },
+         {
+          "at": "Cashews",
+          "state": "red+shake"
+         },
+         {
+          "at": "Cashews+0.7",
+          "state": "cross+red"
+         }
+        ]
+       }
+      ]
+     ],
+     "links": [
+      {
+       "from": "curry",
+       "to": "reis",
+       "style": "line",
+       "in": "Reis und Garzeit"
+      },
+      {
+       "from": "curry",
+       "to": "sauce",
+       "style": "line",
+       "in": "Darunter Sauce"
+      },
+      {
+       "from": "curry",
+       "to": "garzeit",
+       "style": "line",
+       "in": "Garzeit"
+      },
+      {
+       "from": "sauce",
+       "to": "kuerbis",
+       "style": "line",
+       "in": "Ganz unten die Zutaten"
+      },
+      {
+       "from": "sauce",
+       "to": "kokos",
+       "style": "line",
+       "in": "Ganz unten die Zutaten+0.2"
+      },
+      {
+       "from": "sauce",
+       "to": "ingwer",
+       "style": "line",
+       "in": "Ganz unten die Zutaten+0.4"
+      },
+      {
+       "from": "sauce",
+       "to": "cashew",
+       "style": "line",
+       "in": "Ganz unten die Zutaten+0.6"
+      }
+     ]
+    },
+    {
+     "id": "tag_nina",
+     "type": "tag",
+     "text": "Nina",
+     "x": 115,
+     "y": 516,
+     "size": 38,
+     "color": "plum",
+     "in": "Dort ist Nina",
+     "keep": true
+    },
+    {
+     "id": "tag_jana",
+     "type": "tag",
+     "text": "Jana",
+     "x": 115,
+     "y": 676,
+     "size": 38,
+     "color": "plum",
+     "in": "Dort ist Jana",
+     "keep": true,
+     "moves": [
+      {
+       "at": "Jana kostet",
+       "x": 300,
+       "y": 516,
+       "dur": 1.0
+      }
+     ]
+    },
+    {
+     "id": "tag_david",
+     "type": "tag",
+     "text": "David",
+     "x": 115,
+     "y": 836,
+     "size": 38,
+     "color": "plum",
+     "in": "Dort sucht David",
+     "keep": true,
+     "moves": [
+      {
+       "at": "Jetzt darf auch David",
+       "x": 915,
+       "y": 516,
+       "dur": 1.0
+      }
+     ]
+    },
+    {
+     "id": "lupe",
+     "type": "icon",
+     "kind": "magnifier",
+     "x": 930,
+     "y": 945,
+     "size": 80,
+     "in": "Dort sucht David",
+     "out": "Wer hat recht"
+    },
+    {
+     "id": "frage",
+     "type": "icon",
+     "kind": "question",
+     "x": 620,
+     "y": 945,
+     "size": 76,
+     "in": "Wer hat recht",
+     "out": "Alle drei"
+    },
+    {
+     "id": "ck_nina",
+     "type": "icon",
+     "kind": "check",
+     "x": 176,
+     "y": 492,
+     "size": 40,
+     "in": "Alle drei",
+     "out": "Für David liegt"
+    },
+    {
+     "id": "ck_jana",
+     "type": "icon",
+     "kind": "check",
+     "x": 176,
+     "y": 652,
+     "size": 40,
+     "in": "Alle drei+0.15",
+     "out": "Für David liegt"
+    },
+    {
+     "id": "ck_david",
+     "type": "icon",
+     "kind": "check",
+     "x": 182,
+     "y": 812,
+     "size": 40,
+     "in": "Alle drei+0.3",
+     "out": "Für David liegt"
+    },
+    {
+     "id": "st_passend",
+     "type": "stamp",
+     "text": "passend",
+     "x": 620,
+     "y": 932,
+     "rot": -0.08,
+     "size": 48,
+     "in": "nur die passende",
+     "out": "Für David liegt"
+    }
+   ]
+  },
+  {
+   "at": "Für David liegt",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "jana",
+     "type": "figure",
+     "role": "woman",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#C9EBC7",
+     "x": 220,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Cashews",
+       "mood": "wow"
+      },
+      {
+       "at": "Teller ohne",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Jana geht mit ihm",
+       "kind": "point",
+       "dur": 2.6
+      }
+     ]
+    },
+    {
+     "id": "david",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "glasses": true,
+     "shirt": "#FBE3A0",
+     "x": 860,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Cashews",
+       "mood": "scared"
+      },
+      {
+       "at": "Teller ohne",
+       "mood": "smile"
+      },
+      {
+       "at": "Jetzt darf auch David",
+       "mood": "happy"
+      },
+      {
+       "at": "Wie im Urlaub",
+       "mood": "laugh"
+      }
+     ],
+     "talk": [
+      [
+       "Wie im Urlaub",
+       "end:im Urlaub"
+      ]
+     ],
+     "hop": "Wie im Urlaub"
+    },
+    {
+     "id": "tisch2",
+     "type": "prop",
+     "kind": "table",
+     "x": 540,
+     "w": 320,
+     "h": 190,
+     "z": 3.5,
+     "keep": true
+    },
+    {
+     "id": "teller_nuss",
+     "type": "prop",
+     "kind": "plate",
+     "x": 540,
+     "y": 1288,
+     "w": 190,
+     "food": true,
+     "nuts": true,
+     "z": 3.6,
+     "out": "Teller ohne"
+    },
+    {
+     "id": "nuss_icon",
+     "type": "icon",
+     "kind": "cashew",
+     "x": 540,
+     "y": 1170,
+     "size": 100,
+     "in": "darüber gestreut",
+     "out": "Teller ohne"
+    },
+    {
+     "id": "teller_ohne",
+     "type": "prop",
+     "kind": "plate",
+     "x": 540,
+     "y": 1288,
+     "w": 190,
+     "food": true,
+     "z": 3.6,
+     "in": "Teller ohne",
+     "keep": true
+    },
+    {
+     "id": "ck_teller",
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 1185,
+     "size": 54,
+     "in": "Teller ohne+0.2",
+     "out": "Jetzt darf auch David"
+    },
+    {
+     "id": "tag_nuss",
+     "type": "tag",
+     "text": "*keine Nüsse*",
+     "x": 860,
+     "y": 945,
+     "size": 36,
+     "in": "verträgt keine Nüsse",
+     "out": "Teller ohne"
+    },
+    {
+     "id": "tag_gut",
+     "type": "tag",
+     "text": "„schmeckt gut“",
+     "x": 912,
+     "y": 516,
+     "size": 32,
+     "in": "Schmeckt gut",
+     "out": "Jana geht mit ihm"
+    },
+    {
+     "id": "x_gut",
+     "type": "icon",
+     "kind": "cross",
+     "x": 1012,
+     "y": 492,
+     "size": 46,
+     "in": "hilft ihm nicht",
+     "out": "Jana geht mit ihm"
+    },
+    {
+     "id": "b_urlaub2",
+     "type": "bubble",
+     "from": "david",
+     "text": "Wie im *Urlaub*!",
+     "x": 560,
+     "y": 1070,
+     "maxW": 320,
+     "size": 42,
+     "in": "Wie im Urlaub"
+    }
+   ]
+  },
+  {
+   "at": "Nur Jana hängt",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "jana",
+     "type": "figure",
+     "role": "woman",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#C9EBC7",
+     "x": 220,
+     "look": "right",
+     "mood": "worried",
+     "gestures": [
+      {
+       "at": "hängt noch beim Reis",
+       "kind": "think",
+       "dur": 2.0
+      }
+     ]
+    },
+    {
+     "id": "david",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "glasses": true,
+     "shirt": "#FBE3A0",
+     "x": 860,
+     "look": "left",
+     "mood": "happy"
+    },
+    {
+     "id": "t_reis2",
+     "type": "thought",
+     "from": "jana",
+     "text": "Ist der *Reis* zu weich?",
+     "x": 500,
+     "y": 955,
+     "maxW": 440,
+     "size": 40,
+     "in": "hängt noch"
+    }
+   ]
+  },
+  {
+   "at": "Nina lacht",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "jana",
+     "type": "figure",
+     "role": "woman",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#C9EBC7",
+     "x": 220,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Der Reis ist perfekt",
+       "mood": "open"
+      },
+      {
+       "at": "Jana kostet",
+       "mood": "happy"
+      },
+      {
+       "at": "schmeckt sie das Curry",
+       "mood": "laugh"
+      },
+      {
+       "at": "Geht etwas schief",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "nina2",
+     "type": "figure",
+     "role": "woman",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F9C6D3",
+     "x": 860,
+     "look": "left",
+     "mood": "laugh",
+     "enter": "hop",
+     "moods": [
+      {
+       "at": "Jana kostet",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Iss mit",
+       "kind": "wave",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Der Reis ist perfekt",
+       "end:Iss mit"
+      ]
+     ]
+    },
+    {
+     "id": "b_perfekt",
+     "type": "bubble",
+     "from": "nina2",
+     "text": "Der Reis ist *perfekt*. Iss mit!",
+     "x": 540,
+     "y": 1060,
+     "maxW": 310,
+     "size": 40,
+     "in": "Der Reis ist perfekt",
+     "out": "Jana kostet"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 362,
+     "y": 950,
+     "size": 70,
+     "in": "schmeckt sie das Curry",
+     "out": "Geht etwas schief"
+    },
+    {
+     "id": "pfeil_runter",
+     "type": "link",
+     "from": {
+      "x": 82,
+      "y": 585
+     },
+     "to": {
+      "x": 82,
+      "y": 880
+     },
+     "style": "red",
+     "in": "geh nach unten"
+    },
+    {
+     "id": "pfeil_hoch",
+     "type": "link",
+     "from": {
+      "x": 150,
+      "y": 880
+     },
+     "to": {
+      "x": 150,
+      "y": 585
+     },
+     "style": "gold",
+     "head": true,
+     "in": "Passt alles"
+    },
+    {
+     "id": "k_unten",
+     "type": "card",
+     "x": 560,
+     "y": 1070,
+     "lines": [
+      "Geht etwas schief?",
+      "*Nach unten.*"
+     ],
+     "size": 44,
+     "radius": 12,
+     "in": "Geht etwas schief",
+     "out": "Passt alles"
+    },
+    {
+     "id": "k_oben",
+     "type": "card",
+     "x": 560,
+     "y": 1070,
+     "lines": [
+      "Passt alles?",
+      "*Wieder hinauf!*"
+     ],
+     "size": 44,
+     "radius": 12,
+     "in": "Passt alles"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Sind da Nüsse",
+   "x": 830,
+   "y": 830
+  },
+  {
+   "at": "Dort ist Nina",
+   "x": 620,
+   "y": 516
+  },
+  {
+   "at": "Dort ist Jana",
+   "x": 345,
+   "y": 676
+  },
+  {
+   "at": "Alle drei",
+   "x": 176,
+   "y": 652
+  },
+  {
+   "at": "Cashews",
+   "x": 930,
+   "y": 836
+  },
+  {
+   "at": "Jetzt darf auch David",
+   "x": 620,
+   "y": 516
+  },
+  {
+   "at": "Der Reis ist perfekt",
+   "x": 345,
+   "y": 676
+  },
+  {
+   "at": "schmeckt sie das Curry",
+   "x": 620,
+   "y": 516
+  }
+ ]
+}

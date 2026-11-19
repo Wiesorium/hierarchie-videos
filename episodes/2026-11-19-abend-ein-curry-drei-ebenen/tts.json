@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Jana ist vierzig und kocht für zwei Freunde Kürbiscurry. Nina kostet und strahlt: „Wie im Urlaub!“ Jana denkt nur: „Ist der Reis zu weich?“ Und David fragt: „Sind da Nüsse drin?“ [pause] Schau dir das als Knoten an. Oben steht das Gericht: Kürbiscurry. Dort ist Nina. Darunter Sauce, Reis und Garzeit. Dort ist Jana. Ganz unten die Zutaten. Dort sucht David. Wer hat recht? Alle drei. Es gibt keine richtige Ebene, nur die passende für den Moment. [pause] Für David liegt sie heute ganz unten. [pause] David verträgt keine Nüsse. „Schmeckt gut“ hilft ihm nicht. Jana geht mit ihm die Zutaten durch: Kürbis, Kokosmilch, Ingwer. Und darüber gestreut: Cashews! Sie macht ihm einen Teller ohne. Jetzt darf auch David nach oben: „Wie im Urlaub!“ [pause] Nur Jana hängt noch beim Reis fest. [pause] Nina lacht: „Der Reis ist perfekt. Iss mit!“ Jana kostet. Zum ersten Mal an diesem Abend schmeckt sie das Curry. Geht etwas schief, geh nach unten. Passt alles, darfst du wieder hinauf. [pause] Auf welcher Ebene hängst du fest, obwohl gerade alles passt? [pause] [pause] Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM.",
+ "hooks": {
+  "a": "[warmly] Deine Freundin schwärmt von deinem Curry, und du denkst nur: Ist der Reis zu weich?",
+  "b": "[warmly] Für dich ist es ein Gericht, für ihn ist es eine Zutatenliste.",
+  "c": "[warmly] „Sind da Nüsse drin?“: Für diese Frage muss man ganz nach unten."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

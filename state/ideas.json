@@ -106,10 +106,11 @@
    "thema": "Welche Ebene zählt, hängt von der Situation ab",
    "quelle": "Ideen-Tabelle Nr. 9",
    "cta": "kurs",
-   "beispiel": "Dasselbe Gericht: Der Gast schmeckt oben, die Köchin denkt in der Mitte (Sauce, Beilage, Garzeit), der Allergiker liest ganz unten (Nüsse?)",
+   "beispiel": "Dasselbe Gericht: Der Gast schmeckt oben, die Köchin denkt in der Mitte (Sauce, Beilage, Garzeit), der Allergiker liest ganz unten (Nüsse?) (im Lauf 19.11.2026 abends als Abend unter Freunden ergänzt: Jana, vierzig, kocht Kürbiscurry für Nina und David; Nina schwärmt „Wie im Urlaub!“, Jana denkt nur „Ist der Reis zu weich?“, David fragt „Sind da Nüsse drin?“; Jana macht David einen Teller ohne Cashews, und Nina holt Jana mit „Der Reis ist perfekt. Iss mit!“ wieder nach oben)",
    "einsicht": "Es gibt keine richtige Ebene, nur die passende für den Moment. Beim Essen bleibt man oben; wenn etwas schiefgeht, muss man nach unten.",
    "hook": "Für dich ist es ein Gericht. Für ihn ist es eine Zutatenliste.",
-   "status": "offen"
+   "status": "erledigt",
+   "erledigt": "2026-11-19"
   },
   {
    "id": "idee-10",
