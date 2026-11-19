@@ -1,5 +1,6 @@
 // The stage: the same pastel landscape in every video, plus simple paper props.
 import { W, H, GROUND, C, col, makeCanvas, shadow, rrect, fillShape, rng, richText, font, wrap, star5 } from './core.mjs';
+import { drawBottle } from './elements.mjs';
 
 let BG = null;
 export function landscape() {
@@ -207,6 +208,65 @@ const PROPS = {
       ctx.stroke();
     }
     ctx.restore();
+  },
+  // Fridge standing on the ground: pale door with freezer split and handles; "open": true shows the lit inside with shelves and
+  // a few jars, the door swung to "doorSide" (left by default).
+  fridge(ctx, x, y, w = 280, h = 560, p) {
+    const c1 = p.color ? col(p.color) : '#E6EEF5', handle = '#B9C3CF';
+    const top = y - h, split = top + h * 0.32;
+    for (const fx of [x - w / 2 + 34, x + w / 2 - 58]) fillShape(ctx, () => rrect(ctx, fx, y - 18, 24, 18, 6), C.woodLeg, { depth: 0.3 });
+    if (!p.open) {
+      fillShape(ctx, () => rrect(ctx, x - w / 2, top, w, h - 14, 30), c1);
+      ctx.fillStyle = 'rgba(74,53,82,0.12)'; ctx.fillRect(x - w / 2 + 8, split, w - 16, 6);
+      fillShape(ctx, () => rrect(ctx, x + w / 2 - 40, top + h * 0.1, 14, h * 0.14, 7), handle, { depth: 0.3 });
+      fillShape(ctx, () => rrect(ctx, x + w / 2 - 40, split + h * 0.07, 14, h * 0.2, 7), handle, { depth: 0.3 });
+      return;
+    }
+    const side = p.doorSide === 'right' ? 1 : -1, dw = w * 0.2;
+    fillShape(ctx, () => rrect(ctx, x - w / 2, top, w, h - 14, 30), c1);
+    const ix = x - w / 2 + 18, iw = w - 36, iy = top + 18, ih = h - 50;
+    fillShape(ctx, () => rrect(ctx, ix, iy, iw, ih, 18), '#FBFDFF', { sh: false });
+    const glow = ctx.createRadialGradient(x, iy + ih * 0.25, 10, x, iy + ih * 0.25, iw);
+    glow.addColorStop(0, 'rgba(253,231,166,0.45)'); glow.addColorStop(1, 'rgba(253,231,166,0)');
+    ctx.save(); rrect(ctx, ix, iy, iw, ih, 18); ctx.clip(); ctx.fillStyle = glow; ctx.fillRect(ix, iy, iw, ih); ctx.restore();
+    const shelves = [split - top, h * 0.56, h * 0.78].map(v => top + v);
+    ctx.fillStyle = '#D6E2EC'; for (const sy of shelves) ctx.fillRect(ix + 4, sy, iw - 8, 8);
+    const r = rng(11); const jars = ['#F9C6D3', '#BFD9F2', '#FBE3A0', '#B5DFC9', '#E9DDF4'];
+    const items = p.items ?? [[0, 0.22], [1, 0.7], [2, 0.3], [2, 0.62]];
+    for (const [shelf, fx] of items) {
+      const sy = shelves[shelf], jw = iw * (0.18 + r() * 0.06), jh = h * (0.09 + r() * 0.04), jx = ix + iw * fx;
+      fillShape(ctx, () => rrect(ctx, jx - jw / 2, sy - jh, jw, jh, 8), jars[Math.floor(r() * jars.length)], { depth: 0.3 });
+      fillShape(ctx, () => rrect(ctx, jx - jw * 0.4, sy - jh - 10, jw * 0.8, 12, 4), C.paper, { depth: 0.2 });
+    }
+    const dx = side < 0 ? x - w / 2 - dw + 6 : x + w / 2 - 6;
+    fillShape(ctx, () => { ctx.beginPath(); ctx.roundRect(dx, top - 10, dw, h - 2, 18); }, c1, { depth: 0.8 });
+    fillShape(ctx, () => rrect(ctx, dx + dw / 2 - 7, top + h * 0.12, 14, h * 0.14, 7), handle, { depth: 0.3 });
+  },
+  // Salad bowl standing on y (a table top): pastel half-round bowl with rim and green leaves ("leaves": false = empty).
+  bowl(ctx, x, y, w = 240, h = 100, p) {
+    const c1 = p.color ? col(p.color) : '#BFD9F2', rimY = y - h;
+    if (p.leaves !== false) {
+      const leaves = [[-0.3, 0.1, 0.17, '#9ED69B'], [0.05, 0.22, 0.2, '#7FBF8B'], [0.3, 0.08, 0.16, '#B5DFA6'], [-0.08, 0.05, 0.15, '#B5DFA6'], [0.18, 0.28, 0.12, '#9ED69B']];
+      for (const [ox, oy, rr, lc] of leaves) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + ox * w, rimY - oy * h, rr * w, rr * w * 0.72, ox, 0, Math.PI * 2); }, lc, { depth: 0.4 });
+      if (p.tomato !== false) fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x - w * 0.12, rimY - h * 0.22, w * 0.06, 0, Math.PI * 2); }, '#F49AAE', { depth: 0.3 });
+    }
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, rimY, w / 2, h, 0, 0, Math.PI); ctx.closePath(); }, c1);
+    fillShape(ctx, () => rrect(ctx, x - w / 2 - 8, rimY - 10, w + 16, 22, 11), c1, { depth: 0.5 });
+    fillShape(ctx, () => rrect(ctx, x - w * 0.3, rimY + h * 0.32, w * 0.6, 12, 6), 'rgba(255,255,255,0.45)', { sh: false });
+  },
+  // Bottle standing on y (a table top or shelf): pale glass, cork and a white label with "text".
+  bottle(ctx, x, y, w = 90, h = 230, p) { drawBottle(ctx, x, y, w, h, p.color ? col(p.color) : null, p.text, p.size); },
+  // A pile of sofa cushions on the ground (three, two, one); its top is at y - h, so a figure can stand on it with "y".
+  cushions(ctx, x, y, w = 420, h = 250, p) {
+    const cols = p.colors || ['#F9C6D3', '#C9A3D9', '#BFD9F2', '#FBE3A0', '#B5DFC9', '#F8D5C8'];
+    const ch = h / 3, rows = [[-1, 0, 1], [-0.5, 0.5], [0]]; let i = 0;
+    rows.forEach((row, ri) => row.forEach(k => {
+      const cw = w * 0.36, cx = x + k * w * 0.32, cy = y - ch * (ri + 1); const rot = ((i * 37) % 7 - 3) * 0.02;
+      ctx.save(); ctx.translate(cx, cy + ch / 2); ctx.rotate(rot);
+      fillShape(ctx, () => rrect(ctx, -cw / 2, -ch / 2, cw, ch + 4, ch * 0.42), cols[i % cols.length], { depth: 0.6 });
+      ctx.fillStyle = 'rgba(255,255,255,0.4)'; ctx.beginPath(); ctx.arc(0, 2, Math.max(3, ch * 0.07), 0, Math.PI * 2); ctx.fill();
+      ctx.restore(); i++;
+    }));
   },
 };
 export const PROP_KINDS = Object.keys(PROPS);

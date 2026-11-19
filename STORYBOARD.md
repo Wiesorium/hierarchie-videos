@@ -56,6 +56,7 @@ Zahlen schreibt das Transkript manchmal als Ziffer („10“ statt „zehn“). 
 
 `id` (Pflicht, eindeutig), `type`, `x`, `y`, `in`, `out`, `keep`, `z` (Zeichenreihenfolge, größer = weiter vorn),
 `enter` (`pop`, `hop`, `fade`, `slide`, `slide-up`, `none`), `moves: [{"at", "x", "y", "dur"}]`.
+Eine Figur ohne `y` steht auf 1478; `moves` mit `y` heben sie z. B. auf eine Requisite (`"y": 1298` = auf einem 180 px hohen Polsterberg).
 
 Standard-Reihenfolge von hinten nach vorn: prop 0 · cabinet/tree 1 · node 2 · figure 3 · link/arrow 4 · card 5 ·
 bubble/thought 6 · stamp/tag/icon 7. Ein Tisch vor Figuren braucht `"z": 3.5`.
@@ -90,7 +91,9 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 `{"id": "board", "type": "prop", "kind": "blackboard", "x": 560, "y": 720, "w": 700, "h": 340, "text": ["Runden", "347 ≈ 350"], "size": 66}`
 
 `kind`: `table`, `desk`, `chair`, `sofa`, `bed`, `bench`, `door`, `tree`, `car`, `backpack`, `ball`, `cup`, `plate`, `sign`, `shelf`,
-`pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
+`pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf), `fridge` (Kühlschrank; `"open": true` zeigt das helle Innere mit Gläsern,
+Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer), `bottle` (Flasche mit Korken, `text` aufs Etikett),
+`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
 (y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
 
 ### cabinet – der Wissensschrank
@@ -141,7 +144,7 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
 - `icon`: `{"kind": "bulb", "x", "y", "size": 90}` – `bulb`, `check`, `cross`, `question`, `exclaim`, `heart`, `star`, `moon`,
   `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`, `hedgehog`
   (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn), `planet` (Pastellkugel in `color`,
-  `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz)
+  `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz), `lemon` (Zitrone mit Blatt), `bottle` (kleine Flasche)
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
 ## Was die Engine selbst macht

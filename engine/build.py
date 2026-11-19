@@ -20,11 +20,13 @@ import audio as A  # noqa: E402
 
 FPS = 30
 HOOK_PAUSE = 0.45
+GROUND_Y = 1478  # figures and floor props stand here when they have no y (engine/lib/core.mjs GROUND)
 TYPES = {'figure', 'prop', 'cabinet', 'tree', 'node', 'link', 'arrow', 'card', 'bubble', 'thought', 'stamp', 'tag', 'icon'}
 PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book', 'cup', 'plate', 'clock', 'sofa', 'tree', 'bench', 'door',
-              'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars', 'pot'}
+              'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars', 'pot',
+              'fridge', 'bowl', 'bottle', 'cushions'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
-         'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto'}
+         'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
 MOODS = {'smile', 'happy', 'grin', 'laugh', 'open', 'wow', 'sad', 'worried', 'scared', 'neutral'}
 GESTURES = {'wave', 'point', 'cheer', 'raise', 'shrug', 'think', 'hug'}
@@ -240,7 +242,8 @@ def resolve(ep, sb, words, main_dur, hook_durs):
             if eid in merged:  # same element continues: glide to its new place
                 base = merged[eid]
                 base['_tout'] = max(base['_tout'], tout)
-                dx, dy = e.get('x', base.get('x', 0)) - base.get('x', 0), e.get('y', base.get('y', 0)) - base.get('y', 0)
+                y0 = base.get('y', GROUND_Y if base['type'] in ('figure', 'prop') else 0)
+                dx, dy = e.get('x', base.get('x', 0)) - base.get('x', 0), e.get('y', y0) - y0
                 base.setdefault('_moves', []).append({'t': S0, 'dx': dx, 'dy': dy, 'dur': e.get('glide', 0.8)})
                 if e.get('mood'):
                     base.setdefault('_moods', []).append({'t': S0, 'mood': e['mood']})
@@ -257,7 +260,7 @@ def resolve(ep, sb, words, main_dur, hook_durs):
             for g in src.get('gestures', []):
                 tgt.setdefault('_gestures', []).append({'t': T(g['at'], S0, S0, where + '.gestures'), 'kind': g['kind'], 'dur': g.get('dur', 1.4)})
             for mv in src.get('moves', []):
-                bx, by = tgt.get('x', 0), tgt.get('y', 0)
+                bx, by = tgt.get('x', 0), tgt.get('y', GROUND_Y if tgt['type'] in ('figure', 'prop') else 0)
                 tgt.setdefault('_moves', []).append({'t': T(mv['at'], S0, S0, where + '.moves'), 'dx': mv.get('x', bx) - bx, 'dy': mv.get('y', by) - by, 'dur': mv.get('dur', 0.8)})
             for tk in src.get('talk', []):
                 a = T(tk[0] if isinstance(tk, list) else tk['from'], S0, S0, where + '.talk')

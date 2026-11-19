@@ -265,11 +265,47 @@ export function drawIcon(ctx, e, t) {
     case 'hedgehog': drawHedgehog(ctx, x, y, s, c, e.look === 'left', t); break;
     case 'planet': drawPlanet(ctx, x, y, s, c || '#9FD3E8', !!e.ring, false); break;
     case 'pluto': drawPlanet(ctx, x, y, s, c || '#E8D3C0', false, true); break;
+    case 'lemon': drawLemon(ctx, x, y, s, c); break;
+    case 'bottle': drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle'];
+
+// A paper-cut lemon: pale yellow oval with two small tips, a lighter cut layer, three pores and a mint leaf.
+function drawLemon(ctx, x, y, s, c) {
+  const rx = s * 0.37, ry = s * 0.28, rot = -0.12, tr = s * 0.085;
+  const lx = x - rx * Math.cos(rot), ly = y - rx * Math.sin(rot), qx = x + rx * Math.cos(rot), qy = y + rx * Math.sin(rot);
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + s * 0.1, y - s * 0.28, s * 0.17, s * 0.075, -0.55, 0, Math.PI * 2); }, '#8FCB9B', { depth: 0.4 });
+  const body = () => {
+    ctx.beginPath(); ctx.ellipse(x, y, rx, ry, rot, 0, Math.PI * 2);
+    for (const [cx, cy] of [[lx, ly], [qx, qy]]) { ctx.moveTo(cx + tr * Math.cos(rot), cy + tr * Math.sin(rot)); ctx.ellipse(cx, cy, tr, tr * 0.7, rot, 0, Math.PI * 2); }
+  };
+  fillShape(ctx, body, c || '#F6DD72', { depth: 0.6 });
+  ctx.save(); ctx.beginPath(); ctx.ellipse(x, y, rx, ry, rot, 0, Math.PI * 2); ctx.clip();
+  ctx.fillStyle = 'rgba(255,255,255,0.34)'; ctx.beginPath(); ctx.ellipse(x - rx * 0.3, y - ry * 0.42, rx * 0.62, ry * 0.42, rot, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = 'rgba(184,134,11,0.22)';
+  for (const [ox, oy] of [[0.25, 0.3], [0.45, 0.05], [-0.05, 0.5]]) { ctx.beginPath(); ctx.arc(x + ox * rx, y + oy * ry, Math.max(1.5, s * 0.018), 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+}
+
+// A paper-cut bottle standing on `base`: pale glass body with shoulders, neck, cork, a white label (optional text) and a light stripe.
+export function drawBottle(ctx, cx, base, w, h, c, text, px) {
+  const bodyH = h * 0.6, neckW = w * 0.4, neckTop = base - h * 0.88, r = w * 0.2, sh = base - bodyH;
+  fillShape(ctx, () => {
+    ctx.beginPath(); ctx.moveTo(cx - neckW / 2, neckTop); ctx.lineTo(cx - neckW / 2, sh - h * 0.07);
+    ctx.quadraticCurveTo(cx - w / 2, sh - h * 0.02, cx - w / 2, sh + h * 0.1); ctx.lineTo(cx - w / 2, base - r);
+    ctx.quadraticCurveTo(cx - w / 2, base, cx - w / 2 + r, base); ctx.lineTo(cx + w / 2 - r, base);
+    ctx.quadraticCurveTo(cx + w / 2, base, cx + w / 2, base - r); ctx.lineTo(cx + w / 2, sh + h * 0.1);
+    ctx.quadraticCurveTo(cx + w / 2, sh - h * 0.02, cx + neckW / 2, sh - h * 0.07); ctx.lineTo(cx + neckW / 2, neckTop); ctx.closePath();
+  }, c || '#CFE6C8', { depth: 0.6 });
+  fillShape(ctx, () => rrect(ctx, cx - neckW * 0.62, neckTop - h * 0.11, neckW * 1.24, h * 0.13, Math.max(3, w * 0.06)), C.woodDark, { depth: 0.4 });
+  const lh = bodyH * 0.44, ly = base - bodyH * 0.78;
+  fillShape(ctx, () => rrect(ctx, cx - w * 0.4, ly, w * 0.8, lh, Math.max(3, w * 0.07)), C.paper, { sh: false });
+  ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.5)'; rrect(ctx, cx - w * 0.38, sh + h * 0.06, w * 0.09, bodyH * 0.2, w * 0.04); ctx.fill(); ctx.restore();
+  if (text) richText(ctx, text, cx, ly + lh / 2, px || Math.round(w * 0.3), C.ink);
+}
 
 // A paper-cut planet: pastel disc with a lighter cut layer top-left and a soft spot; optional ring; Pluto gets its pale heart.
 function drawPlanet(ctx, x, y, s, c, ring, heart) {
