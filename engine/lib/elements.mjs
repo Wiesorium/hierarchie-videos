@@ -267,11 +267,25 @@ export function drawIcon(ctx, e, t) {
     case 'pluto': drawPlanet(ctx, x, y, s, c || '#E8D3C0', false, true); break;
     case 'lemon': drawLemon(ctx, x, y, s, c); break;
     case 'bottle': drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
+    case 'cashew': drawCashew(ctx, x - s * 0.16, y - s * 0.04, s * 0.95, -0.5, c || '#E6C38C', true); drawCashew(ctx, x + s * 0.2, y + s * 0.12, s * 0.8, 0.9, c || '#E6C38C', true); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew'];
+
+// A paper-cut cashew: a thick beige crescent with round ends (s = size, rot = rotation), optional light cut layer.
+export function drawCashew(ctx, x, y, s, rot = 0, c, cut = false) {
+  const m = s * 0.3, th = s * 0.26, a0 = -0.2 * Math.PI + rot, a1 = 0.95 * Math.PI + rot;
+  const path = (mm, tt) => {
+    ctx.beginPath(); ctx.arc(x, y, mm + tt / 2, a0, a1);
+    ctx.arc(x + mm * Math.cos(a1), y + mm * Math.sin(a1), tt / 2, a1, a1 + Math.PI);
+    ctx.arc(x, y, mm - tt / 2, a1, a0, true);
+    ctx.arc(x + mm * Math.cos(a0), y + mm * Math.sin(a0), tt / 2, a0 + Math.PI, a0 + 2 * Math.PI); ctx.closePath();
+  };
+  fillShape(ctx, () => path(m, th), c || '#EFD8AE', { depth: cut ? 0.5 : 0.25 });
+  if (cut) { ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.4)'; path(m + th * 0.18, th * 0.32); ctx.fill(); ctx.restore(); }
+}
 
 // A paper-cut lemon: pale yellow oval with two small tips, a lighter cut layer, three pores and a mint leaf.
 function drawLemon(ctx, x, y, s, c) {

@@ -1,6 +1,6 @@
 // The stage: the same pastel landscape in every video, plus simple paper props.
 import { W, H, GROUND, C, col, makeCanvas, shadow, rrect, fillShape, rng, richText, font, wrap, star5 } from './core.mjs';
-import { drawBottle } from './elements.mjs';
+import { drawBottle, drawCashew } from './elements.mjs';
 
 let BG = null;
 export function landscape() {
@@ -112,8 +112,23 @@ const PROPS = {
     fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h, w, h, 14); }, p.color ? col(p.color) : C.paper);
     ctx.save(); ctx.strokeStyle = p.color ? col(p.color) : C.paper; ctx.lineWidth = 10; shadow(ctx, true, 0.4); ctx.beginPath(); ctx.arc(x + w / 2 + 6, y - h / 2, 18, -1.3, 1.3); ctx.stroke(); ctx.restore();
   },
-  plate(ctx, x, y, w = 160) {
+  // Plate on y (a table top). "food": true puts a rice mound and a curry/stew mound on it ("foodColor" for the stew),
+  // "nuts": true scatters three cashews over the stew.
+  plate(ctx, x, y, w = 160, h, p = {}) {
     fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, y - 10, w / 2, 16, 0, 0, 7); }, C.paper);
+    if (!p.food) return;
+    const base = y - 16;
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x - w * 0.15, base, w * 0.22, w * 0.15, 0, Math.PI, 0); ctx.closePath(); }, '#FFF8EC', { depth: 0.4 });
+    ctx.save(); ctx.fillStyle = 'rgba(184,146,110,0.25)';
+    for (const [ox, oy] of [[-0.24, -0.05], [-0.12, -0.1], [-0.06, -0.03], [-0.2, -0.11]]) { ctx.beginPath(); ctx.ellipse(x + ox * w, base + oy * w, w * 0.018, w * 0.008, 0.4, 0, Math.PI * 2); ctx.fill(); }
+    ctx.restore();
+    const cc = p.foodColor ? col(p.foodColor) : '#F2A65A';
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + w * 0.12, base + 2, w * 0.26, w * 0.11, 0, Math.PI, 0); ctx.closePath(); }, cc, { depth: 0.4 });
+    ctx.save(); ctx.fillStyle = '#E0823A';
+    for (const [ox, oy] of [[0.02, -0.04], [0.16, -0.07], [0.27, -0.03]]) { ctx.beginPath(); rrect(ctx, x + ox * w, base + oy * w, w * 0.06, w * 0.05, 3); ctx.fill(); }
+    ctx.fillStyle = '#7FBF8B'; for (const [ox, oy] of [[0.1, -0.02], [0.22, -0.08]]) { ctx.beginPath(); ctx.arc(x + ox * w, base + oy * w, w * 0.014, 0, Math.PI * 2); ctx.fill(); }
+    ctx.restore();
+    if (p.nuts) for (const [ox, oy, rot] of [[0.04, -0.1, 0.4], [0.17, -0.12, -0.6], [0.28, -0.07, 1.2]]) drawCashew(ctx, x + ox * w, base + oy * w, w * 0.13, rot);
   },
   clock(ctx, x, y, w = 130, h, p, t) {
     fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x, y, w / 2, 0, 7); }, C.paper);
