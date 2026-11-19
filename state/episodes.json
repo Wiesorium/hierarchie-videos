@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-19",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-19-morgen-wofuer-ist-die-zitrone-da",
+   "slug": "wofuer-ist-die-zitrone-da",
+   "titel": "Wofür ist die Zitrone da?",
+   "idee": "idee-8",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Die Zitrone ist aus, und dein Kind sagt: „Dann gibt's heute keinen Salat.“",
+    "b": "Dir fehlt keine Zitrone, dir fehlt Säure.",
+    "c": "„Wofür ist das da?“: Mit dieser einen Frage findet dein Kind selbst Ersatz."
+   },
+   "dauer": {
+    "a": 93.33,
+    "b": 91.63,
+    "c": 93.4
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/qVle4M6Bg2mApRBX5HEK",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (keine Zitrone, Essig), Familienszene mit Leo (neun) und Papa selbst ergänzt; Übertragung auf eine wegfallende Gewohnheit (Spielplatz bei Regen → Klettern → Polsterberg). Schrank: oben „sauer“, unten „Zitrone“ (leer), dann „Essig“ und „Gurkenwasser“; links die Pillen „was?“ und „wofür?“ mit Pfeil nach oben. Block 3 als Knoten Klettern → Spielplatz / Polsterberg, Leo steigt auf den Polsterberg. Neue Requisiten fridge, bowl, bottle, cushions und Icons lemon, bottle in der Engine; Fix: Figuren-moves mit y. Hauptteil der Stimme 86,6 s, Videos 91,6 bis 93,4 s (über dem 90-s-Ziel, innerhalb der Prüfgrenze). Captions in Drive: 2026-11-19-wofuer-ist-die-zitrone-da-captions.",
+   "dateien": [
+    "wofuer-ist-die-zitrone-da-hook-a.mp4",
+    "wofuer-ist-die-zitrone-da-hook-b.mp4",
+    "wofuer-ist-die-zitrone-da-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-18",
    "slot": "abend",
    "ordner": "episodes/2026-11-18-abend-bis-es-passt",

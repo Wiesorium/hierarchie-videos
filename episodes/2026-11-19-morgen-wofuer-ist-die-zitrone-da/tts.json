@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Leo ist neun und macht mit Papa den Salat fürs Abendessen. Im Rezept steht: Öl, Salz und der Saft einer Zitrone. Leo schaut in den Kühlschrank. Keine Zitrone. „Dann gibt's heute keinen Salat.“ [pause] Schau dir das als Schrank an. Unten liegt die Zitrone, und ihre Schublade ist leer. Leo sieht nur diese eine Schublade. Eine Ebene höher steht, wofür die Zitrone da ist: Sie macht den Salat sauer. Wer nur die Zutat kennt, steckt fest. Wer weiß, wofür sie da ist, findet Ersatz. [pause] Genau dorthin schickt Papa ihn, mit einer einzigen Frage. [pause] „Wofür ist die Zitrone da?“ Leo überlegt. „Damit es sauer schmeckt.“ „Und was ist noch sauer?“ „Essig? Gurkenwasser?“ Papa lacht. Sie nehmen einen Schuss Essig. Leo kostet und grinst: „Fast wie mit Zitrone!“ [pause] Zwei Tage später regnet es, und der Spielplatz fällt aus. [pause] Diesmal fragt Leo selbst: „Wofür ist der Spielplatz da?“ „Zum Klettern!“ Kurz darauf klettert er auf einen Berg aus Sofapolstern. Wenn etwas fehlt, schau eine Ebene höher. Dort steht, wofür es da war. Und darunter liegt oft schon der Ersatz. [pause] Was fehlt bei euch gerade, und wofür war es eigentlich da? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Die Zitrone ist aus, und dein Kind sagt: „Dann gibt's heute keinen Salat.“",
+  "b": "[warmly] Dir fehlt keine Zitrone, dir fehlt Säure.",
+  "c": "[warmly] „Wofür ist das da?“: Mit dieser einen Frage findet dein Kind selbst Ersatz."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

@@ -1,0 +1,900 @@
+{
+ "slug": "wofuer-ist-die-zitrone-da",
+ "title": "Wofür ist die Zitrone da?",
+ "cta": "whatsapp",
+ "hero": "leo",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Die Zitrone ist aus, und dein Kind sagt: „Dann gibt's heute keinen Salat.“",
+   "card": [
+    "Die Zitrone ist aus:",
+    "„Dann gibt's keinen Salat.“"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Dir fehlt keine Zitrone, dir fehlt Säure.",
+   "card": [
+    "Dir fehlt keine Zitrone.",
+    "Dir fehlt Säure."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Wofür ist das da?“: Mit dieser einen Frage findet dein Kind selbst Ersatz.",
+   "card": [
+    "„Wofür ist das da?“",
+    "Eine Frage findet Ersatz"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Leo ist neun und macht mit Papa den Salat fürs Abendessen. Im Rezept steht: Öl, Salz und der Saft einer Zitrone. Leo schaut in den Kühlschrank. Keine Zitrone. „Dann gibt's heute keinen Salat.“",
+  "block1": "Schau dir das als Schrank an. Unten liegt die Zitrone, und ihre Schublade ist leer. Leo sieht nur diese eine Schublade. Eine Ebene höher steht, wofür die Zitrone da ist: Sie macht den Salat sauer. Wer nur die Zutat kennt, steckt fest. Wer weiß, wofür sie da ist, findet Ersatz.",
+  "rehook1": "Genau dorthin schickt Papa ihn, mit einer einzigen Frage.",
+  "block2": "„Wofür ist die Zitrone da?“ Leo überlegt. „Damit es sauer schmeckt.“ „Und was ist noch sauer?“ „Essig? Gurkenwasser?“ Papa lacht. Sie nehmen einen Schuss Essig. Leo kostet und grinst: „Fast wie mit Zitrone!“",
+  "rehook2": "Zwei Tage später regnet es, und der Spielplatz fällt aus.",
+  "block3": "Diesmal fragt Leo selbst: „Wofür ist der Spielplatz da?“ „Zum Klettern!“ Kurz darauf klettert er auf einen Berg aus Sofapolstern. Wenn etwas fehlt, schau eine Ebene höher. Dort steht, wofür es da war. Und darunter liegt oft schon der Ersatz.",
+  "closing": "Was fehlt bei euch gerade, und wofür war es eigentlich da?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was fehlt bei euch gerade,",
+  "und wofür war es eigentlich da?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Keine Zitrone",
+       "mood": "open"
+      },
+      {
+       "at": "heute keinen Salat",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "leo",
+     "type": "figure",
+     "role": "boy",
+     "x": 335,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "schaut in den Kühlschrank",
+       "mood": "open"
+      },
+      {
+       "at": "Keine Zitrone",
+       "mood": "wow"
+      },
+      {
+       "at": "heute keinen Salat",
+       "mood": "sad"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "heute keinen Salat",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "heute keinen Salat-0.5",
+       "end:keinen Salat"
+      ]
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 595,
+     "w": 290,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "schuessel",
+     "type": "prop",
+     "kind": "bowl",
+     "x": 595,
+     "y": 1288,
+     "w": 200,
+     "h": 80,
+     "z": 3.6
+    },
+    {
+     "id": "kuehl_zu",
+     "type": "prop",
+     "kind": "fridge",
+     "x": 885,
+     "w": 250,
+     "h": 540,
+     "out": "schaut in den Kühlschrank"
+    },
+    {
+     "id": "kuehl_auf",
+     "type": "prop",
+     "kind": "fridge",
+     "x": 885,
+     "w": 250,
+     "h": 540,
+     "open": true,
+     "doorSide": "left",
+     "in": "schaut in den Kühlschrank"
+    },
+    {
+     "id": "rezept",
+     "type": "card",
+     "x": 330,
+     "y": 650,
+     "lines": [
+      "_Salat_",
+      "Öl, Salz,",
+      "*Saft einer Zitrone*"
+     ],
+     "size": 44,
+     "color": "idea",
+     "radius": 12,
+     "in": "Im Rezept steht"
+    },
+    {
+     "id": "zitrone",
+     "type": "icon",
+     "kind": "lemon",
+     "x": 885,
+     "y": 820,
+     "size": 130,
+     "in": "Keine Zitrone"
+    },
+    {
+     "id": "x_zitrone",
+     "type": "icon",
+     "kind": "cross",
+     "x": 945,
+     "y": 775,
+     "size": 60,
+     "in": "Keine Zitrone+0.25"
+    },
+    {
+     "id": "b_salat",
+     "type": "bubble",
+     "from": "leo",
+     "text": "Dann gibt's heute *keinen Salat*.",
+     "x": 410,
+     "y": 900,
+     "maxW": 380,
+     "size": 42,
+     "in": "heute keinen Salat-0.5"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Schrank",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 135,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Eine Ebene höher",
+       "mood": "happy"
+      },
+      {
+       "at": "steckt fest",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "leo",
+     "type": "figure",
+     "role": "boy",
+     "x": 305,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Leo sieht nur",
+       "mood": "worried"
+      },
+      {
+       "at": "Eine Ebene höher",
+       "mood": "wow"
+      },
+      {
+       "at": "steckt fest",
+       "mood": "worried"
+      },
+      {
+       "at": "findet Ersatz",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Leo sieht nur",
+       "kind": "think",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "schrank",
+     "type": "cabinet",
+     "x": 690,
+     "y": 600,
+     "w": 680,
+     "rowH": 140,
+     "out": "Tage später regnet es-0.4",
+     "rows": [
+      [
+       "sauer"
+      ],
+      [
+       "zitrone",
+       "essig",
+       "gurke"
+      ]
+     ],
+     "drawers": {
+      "sauer": {
+       "label": "sauer",
+       "color": "kids",
+       "size": 58,
+       "in": "Eine Ebene höher",
+       "states": [
+        {
+         "at": "Eine Ebene höher",
+         "state": "glow"
+        },
+        {
+         "at": "Wer nur die Zutat",
+         "state": "normal"
+        },
+        {
+         "at": "findet Ersatz",
+         "state": "glow"
+        },
+        {
+         "at": "Genau dorthin",
+         "state": "normal"
+        },
+        {
+         "at": "Damit es sauer",
+         "state": "glow"
+        },
+        {
+         "at": "Essig Gurkenwasser",
+         "state": "normal"
+        },
+        {
+         "at": "Fast wie mit Zitrone",
+         "state": "gold+check"
+        }
+       ],
+       "align": "center"
+      },
+      "zitrone": {
+       "label": "Zitrone",
+       "emptyLabel": "Zitrone",
+       "color": "idea",
+       "size": 42,
+       "in": "Unten liegt die Zitrone",
+       "states": [
+        {
+         "at": "Unten liegt die Zitrone",
+         "state": "glow"
+        },
+        {
+         "at": "Schublade ist leer",
+         "state": "empty"
+        },
+        {
+         "at": "steckt fest",
+         "state": "empty+shake"
+        }
+       ],
+       "align": "center"
+      },
+      "essig": {
+       "label": "Essig",
+       "color": "ice",
+       "size": 42,
+       "in": "findet Ersatz",
+       "states": [
+        {
+         "at": "findet Ersatz",
+         "state": "empty"
+        },
+        {
+         "at": "Essig Gurkenwasser",
+         "state": "glow"
+        },
+        {
+         "at": "Papa lacht",
+         "state": "normal"
+        },
+        {
+         "at": "Schuss Essig",
+         "state": "glow"
+        },
+        {
+         "at": "Fast wie mit Zitrone",
+         "state": "gold+check"
+        }
+       ],
+       "align": "center"
+      },
+      "gurke": {
+       "label": "Gurkenwasser",
+       "color": "fresh",
+       "size": 34,
+       "in": "findet Ersatz+0.2",
+       "states": [
+        {
+         "at": "findet Ersatz+0.2",
+         "state": "empty"
+        },
+        {
+         "at": "Gurkenwasser",
+         "state": "glow"
+        },
+        {
+         "at": "Papa lacht",
+         "state": "normal"
+        }
+       ],
+       "align": "center"
+      }
+     }
+    },
+    {
+     "id": "tag_was",
+     "type": "tag",
+     "text": "_was?_",
+     "x": 190,
+     "y": 876,
+     "in": "Unten liegt die Zitrone",
+     "out": "Genau dorthin"
+    },
+    {
+     "id": "tag_wofuer",
+     "type": "tag",
+     "text": "*wofür?*",
+     "x": 190,
+     "y": 720,
+     "in": "Eine Ebene höher",
+     "out": "Genau dorthin"
+    },
+    {
+     "id": "l_hoch",
+     "type": "link",
+     "from": {
+      "x": 190,
+      "y": 842
+     },
+     "to": {
+      "x": 190,
+      "y": 754
+     },
+     "style": "red",
+     "in": "Eine Ebene höher+0.3",
+     "out": "Genau dorthin"
+    },
+    {
+     "id": "lupe",
+     "type": "icon",
+     "kind": "magnifier",
+     "x": 470,
+     "y": 1020,
+     "size": 100,
+     "in": "Leo sieht nur",
+     "out": "Eine Ebene höher"
+    },
+    {
+     "id": "st_fest",
+     "type": "stamp",
+     "text": "steckt fest",
+     "x": 690,
+     "y": 1120,
+     "rot": -0.08,
+     "size": 60,
+     "in": "steckt fest",
+     "out": "Wer weiß wofür"
+    }
+   ]
+  },
+  {
+   "at": "Genau dorthin schickt Papa",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 135,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Papa lacht",
+       "mood": "laugh"
+      },
+      {
+       "at": "Sie nehmen einen Schuss",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Wofür ist die Zitrone",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Wofür ist die Zitrone",
+       "end:Zitrone da"
+      ],
+      [
+       "Und was ist noch",
+       "end:noch sauer"
+      ]
+     ]
+    },
+    {
+     "id": "leo",
+     "type": "figure",
+     "role": "boy",
+     "x": 305,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Leo überlegt",
+       "mood": "neutral"
+      },
+      {
+       "at": "Damit es sauer",
+       "mood": "open"
+      },
+      {
+       "at": "Essig Gurkenwasser",
+       "mood": "grin"
+      },
+      {
+       "at": "Leo kostet und grinst",
+       "mood": "happy"
+      },
+      {
+       "at": "Fast wie mit Zitrone",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Leo überlegt",
+       "kind": "think",
+       "dur": 1.5
+      }
+     ],
+     "talk": [
+      [
+       "Damit es sauer",
+       "end:sauer schmeckt"
+      ],
+      [
+       "Essig Gurkenwasser",
+       "end:Essig Gurkenwasser"
+      ],
+      [
+       "Fast wie mit Zitrone",
+       "end:Fast wie mit Zitrone"
+      ]
+     ],
+     "hop": "Fast wie mit Zitrone"
+    },
+    {
+     "id": "b_wofuer",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Wofür ist die *Zitrone* da?",
+     "x": 195,
+     "y": 850,
+     "maxW": 300,
+     "size": 40,
+     "in": "Wofür ist die Zitrone",
+     "out": "Damit es sauer"
+    },
+    {
+     "id": "b_sauer",
+     "type": "bubble",
+     "from": "leo",
+     "text": "Damit es *sauer* schmeckt.",
+     "x": 195,
+     "y": 850,
+     "maxW": 300,
+     "size": 40,
+     "in": "Damit es sauer",
+     "out": "Und was ist noch"
+    },
+    {
+     "id": "b_noch",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Und was ist noch *sauer*?",
+     "x": 195,
+     "y": 850,
+     "maxW": 300,
+     "size": 40,
+     "in": "Und was ist noch",
+     "out": "Essig Gurkenwasser"
+    },
+    {
+     "id": "b_essig",
+     "type": "bubble",
+     "from": "leo",
+     "text": "Essig? *Gurkenwasser?*",
+     "x": 195,
+     "y": 850,
+     "maxW": 300,
+     "size": 40,
+     "in": "Essig Gurkenwasser",
+     "out": "Papa lacht"
+    },
+    {
+     "id": "flasche",
+     "type": "icon",
+     "kind": "bottle",
+     "x": 200,
+     "y": 870,
+     "size": 150,
+     "in": "Schuss Essig",
+     "out": "Fast wie mit Zitrone"
+    },
+    {
+     "id": "l_essig",
+     "type": "link",
+     "from": "sauer",
+     "to": "essig",
+     "style": "gold",
+     "in": "Schuss Essig",
+     "out": "Tage später regnet es-0.4"
+    },
+    {
+     "id": "b_fast",
+     "type": "bubble",
+     "from": "leo",
+     "text": "Fast wie mit *Zitrone*!",
+     "x": 195,
+     "y": 850,
+     "maxW": 300,
+     "size": 42,
+     "in": "Fast wie mit Zitrone"
+    }
+   ]
+  },
+  {
+   "at": "Tage später regnet es-0.4",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "leo",
+     "type": "figure",
+     "role": "boy",
+     "x": 250,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "regnet es",
+       "mood": "sad"
+      },
+      {
+       "at": "Spielplatz fällt aus",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 700,
+     "y": 780,
+     "w": 380,
+     "h": 300
+    },
+    {
+     "id": "regen",
+     "type": "icon",
+     "kind": "rain",
+     "x": 700,
+     "y": 740,
+     "size": 190,
+     "in": "regnet es"
+    },
+    {
+     "id": "tag_tage",
+     "type": "tag",
+     "text": "2 Tage später",
+     "x": 700,
+     "y": 560,
+     "color": "plum"
+    },
+    {
+     "id": "k_spiel",
+     "type": "card",
+     "x": 700,
+     "y": 1080,
+     "lines": [
+      "Spielplatz",
+      "*fällt aus*"
+     ],
+     "size": 50,
+     "radius": 12,
+     "in": "Spielplatz fällt aus"
+    }
+   ]
+  },
+  {
+   "at": "Diesmal fragt Leo selbst",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "leo",
+     "type": "figure",
+     "role": "boy",
+     "x": 230,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Zum Klettern",
+       "mood": "happy"
+      },
+      {
+       "at": "klettert er auf",
+       "mood": "laugh"
+      },
+      {
+       "at": "Wenn etwas fehlt",
+       "mood": "smile"
+      },
+      {
+       "at": "liegt oft schon der Ersatz",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Diesmal fragt Leo",
+       "kind": "think",
+       "dur": 1.8
+      },
+      {
+       "at": "Berg aus Sofapolstern+0.5",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Zum Klettern",
+       "end:Zum Klettern"
+      ]
+     ],
+     "moves": [
+      {
+       "at": "klettert er auf",
+       "x": 790,
+       "y": 1298,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "polster",
+     "type": "prop",
+     "kind": "cushions",
+     "x": 790,
+     "w": 380,
+     "h": 180,
+     "in": "Kurz darauf"
+    },
+    {
+     "id": "baum",
+     "type": "tree",
+     "x": 650,
+     "y": 500,
+     "w": 760,
+     "rowGap": 240,
+     "nodeW": 330,
+     "nodeH": 110,
+     "levels": [
+      [
+       {
+        "id": "klettern",
+        "label": "Klettern",
+        "color": "fresh",
+        "size": 50,
+        "in": "Zum Klettern",
+        "states": [
+         {
+          "at": "Zum Klettern",
+          "state": "glow"
+         },
+         {
+          "at": "Kurz darauf",
+          "state": "normal"
+         },
+         {
+          "at": "schau eine Ebene höher",
+          "state": "glow"
+         },
+         {
+          "at": "Dort steht",
+          "state": "gold"
+         }
+        ]
+       }
+      ],
+      [
+       {
+        "id": "spielplatz",
+        "label": "Spielplatz",
+        "color": "baby",
+        "size": 42,
+        "icon": "rain",
+        "states": [
+         {
+          "at": "Diesmal fragt Leo",
+          "state": "cross"
+         }
+        ]
+       },
+       {
+        "id": "berg",
+        "label": "Polsterberg",
+        "color": "kids",
+        "size": 42,
+        "in": "Berg aus Sofapolstern",
+        "states": [
+         {
+          "at": "Berg aus Sofapolstern",
+          "state": "glow"
+         },
+         {
+          "at": "Wenn etwas fehlt",
+          "state": "normal"
+         },
+         {
+          "at": "liegt oft schon der Ersatz",
+          "state": "gold+check"
+         }
+        ]
+       }
+      ]
+     ],
+     "links": [
+      {
+       "from": "spielplatz",
+       "to": "klettern",
+       "style": "arrow",
+       "in": "Zum Klettern"
+      },
+      {
+       "from": "klettern",
+       "to": "berg",
+       "style": "gold",
+       "in": "Berg aus Sofapolstern"
+      }
+     ]
+    },
+    {
+     "id": "t_wofuer",
+     "type": "thought",
+     "from": "leo",
+     "text": "Wofür ist der *Spielplatz* da?",
+     "x": 330,
+     "y": 1000,
+     "maxW": 380,
+     "size": 40,
+     "in": "Wofür ist der Spielplatz",
+     "out": "Zum Klettern"
+    },
+    {
+     "id": "b_klettern",
+     "type": "bubble",
+     "from": "leo",
+     "text": "Zum *Klettern*!",
+     "x": 300,
+     "y": 1010,
+     "maxW": 300,
+     "size": 44,
+     "in": "Zum Klettern",
+     "out": "Kurz darauf"
+    },
+    {
+     "id": "k_regel",
+     "type": "card",
+     "x": 275,
+     "y": 1080,
+     "lines": [
+      "Etwas fehlt?",
+      "*Eine Ebene höher!*"
+     ],
+     "size": 46,
+     "radius": 12,
+     "in": "Wenn etwas fehlt"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Keine Zitrone",
+   "x": 885,
+   "y": 820
+  },
+  {
+   "at": "Eine Ebene höher",
+   "x": 690,
+   "y": 720
+  },
+  {
+   "at": "steckt fest",
+   "x": 690,
+   "y": 1120
+  },
+  {
+   "at": "findet Ersatz",
+   "x": 800,
+   "y": 876
+  },
+  {
+   "at": "Schuss Essig",
+   "x": 690,
+   "y": 876
+  },
+  {
+   "at": "Fast wie mit Zitrone",
+   "x": 690,
+   "y": 720
+  },
+  {
+   "at": "Zum Klettern",
+   "x": 650,
+   "y": 555
+  },
+  {
+   "at": "liegt oft schon der Ersatz",
+   "x": 828,
+   "y": 795
+  }
+ ]
+}
