@@ -1,6 +1,6 @@
 // The stage: the same pastel landscape in every video, plus simple paper props.
 import { W, H, GROUND, C, col, makeCanvas, shadow, rrect, fillShape, rng, richText, font, wrap, star5 } from './core.mjs';
-import { drawBottle, drawCashew } from './elements.mjs';
+import { drawBottle, drawCashew, drawSalt } from './elements.mjs';
 
 let BG = null;
 export function landscape() {
@@ -263,9 +263,10 @@ const PROPS = {
     fillShape(ctx, () => rrect(ctx, dx + dw / 2 - 7, top + h * 0.12, 14, h * 0.14, 7), handle, { depth: 0.3 });
   },
   // Salad bowl standing on y (a table top): pastel half-round bowl with rim and green leaves ("leaves": false = empty).
-  bowl(ctx, x, y, w = 240, h = 100, p) {
+  // "soup": a colour fills it with soup instead (flat surface with carrot cubes and leek rings); "steam": true lets it steam.
+  bowl(ctx, x, y, w = 240, h = 100, p, t = 0) {
     const c1 = p.color ? col(p.color) : '#BFD9F2', rimY = y - h;
-    if (p.leaves !== false) {
+    if (p.leaves !== false && !p.soup) {
       const leaves = [[-0.3, 0.1, 0.17, '#9ED69B'], [0.05, 0.22, 0.2, '#7FBF8B'], [0.3, 0.08, 0.16, '#B5DFA6'], [-0.08, 0.05, 0.15, '#B5DFA6'], [0.18, 0.28, 0.12, '#9ED69B']];
       for (const [ox, oy, rr, lc] of leaves) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + ox * w, rimY - oy * h, rr * w, rr * w * 0.72, ox, 0, Math.PI * 2); }, lc, { depth: 0.4 });
       if (p.tomato !== false) fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x - w * 0.12, rimY - h * 0.22, w * 0.06, 0, Math.PI * 2); }, '#F49AAE', { depth: 0.3 });
@@ -273,7 +274,22 @@ const PROPS = {
     fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, rimY, w / 2, h, 0, 0, Math.PI); ctx.closePath(); }, c1);
     fillShape(ctx, () => rrect(ctx, x - w / 2 - 8, rimY - 10, w + 16, 22, 11), c1, { depth: 0.5 });
     fillShape(ctx, () => rrect(ctx, x - w * 0.3, rimY + h * 0.32, w * 0.6, 12, 6), 'rgba(255,255,255,0.45)', { sh: false });
+    if (p.soup) {
+      // soup filled to the brim: a low dome above the rim with carrot cubes and leek rings
+      const sy = rimY - 6, rx = w / 2 - 6, ry = Math.max(12, h * 0.22);
+      fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, sy, rx, ry, 0, Math.PI, Math.PI * 2); ctx.closePath(); }, col(p.soup), { depth: 0.3 });
+      ctx.save(); ctx.beginPath(); ctx.ellipse(x, sy, rx, ry, 0, Math.PI, Math.PI * 2); ctx.closePath(); ctx.clip();
+      ctx.fillStyle = 'rgba(255,255,255,0.28)'; ctx.beginPath(); ctx.ellipse(x - rx * 0.35, sy - ry * 0.55, rx * 0.4, ry * 0.25, 0, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#F2A65A'; for (const [ox, oy] of [[-0.26, 0.35], [0.04, 0.55], [0.3, 0.3]]) { rrect(ctx, x + ox * w - w * 0.028, sy - oy * ry - w * 0.022, w * 0.056, w * 0.044, 3); ctx.fill(); }
+      ctx.strokeStyle = '#7FBF8B'; ctx.lineWidth = Math.max(3, w * 0.016);
+      for (const [ox, oy] of [[-0.1, 0.3], [0.17, 0.5]]) { ctx.beginPath(); ctx.ellipse(x + ox * w, sy - oy * ry, w * 0.034, w * 0.018, 0, 0, Math.PI * 2); ctx.stroke(); }
+      ctx.restore();
+      if (p.steam) steam(ctx, x, sy - ry, w, t);
+    }
   },
+  // Salt shaker standing on y (a table top): pale glass with white salt, silver dome cap with holes. "pour": true turns it
+  // upside down over the point x/y with a little shake and lets grains fall (y is then the cap tip; grains fall below).
+  salt(ctx, x, y, w = 70, h = 120, p = {}, t = 0) { drawSalt(ctx, x, y, w, h, p.pour, t, p.color ? col(p.color) : null); },
   // Baking dish (Auflaufform) standing on y (a table top): pale glass dish with two handles. "layers": colours from the
   // bottom up, shown as wavy stripes through the glass; "slots": how many layers the dish holds (default: number of layers,
   // at least 3), so dishes with fewer layers can cross-fade into fuller ones; "crumbs": true scatters feta cubes on top;

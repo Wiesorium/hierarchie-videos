@@ -268,11 +268,49 @@ export function drawIcon(ctx, e, t) {
     case 'lemon': drawLemon(ctx, x, y, s, c); break;
     case 'bottle': drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
     case 'cashew': drawCashew(ctx, x - s * 0.16, y - s * 0.04, s * 0.95, -0.5, c || '#E6C38C', true); drawCashew(ctx, x + s * 0.2, y + s * 0.12, s * 0.8, 0.9, c || '#E6C38C', true); break;
+    case 'salt': drawSalt(ctx, x, e.pour ? y : y + s * 0.5, s * 0.55, s, !!e.pour, t, c); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt'];
+
+// A paper-cut salt shaker: pale glass body (w × h, standing on `base`) with white salt inside, a silver dome cap with
+// holes and a light stripe. With `pour` it hangs upside down, cap tip at (cx, base), shakes a little and drops grains.
+export function drawSalt(ctx, cx, base, w, h, pour = false, t = 0, c) {
+  const capH = h * 0.26, bodyH = h - capH, r = w * 0.22;
+  const shape = () => {
+    // body (local: bottom at 0, cap tip at -h)
+    fillShape(ctx, () => { ctx.beginPath(); ctx.roundRect(-w / 2, -bodyH, w, bodyH, [r * 0.6, r * 0.6, r, r]); }, c || '#E7F0F7', { depth: 0.6 });
+    ctx.save(); ctx.beginPath(); ctx.roundRect(-w / 2 + 6, -bodyH + 8, w - 12, bodyH - 14, [r * 0.4, r * 0.4, r * 0.8, r * 0.8]); ctx.clip();
+    const fill = pour ? 0.5 : 0.62; // salt level (falls toward the cap when upside down)
+    ctx.fillStyle = '#FFFFFF';
+    if (pour) ctx.fillRect(-w / 2, -bodyH, w, bodyH * fill); else ctx.fillRect(-w / 2, -bodyH * fill - 6, w, bodyH * fill + 6);
+    ctx.fillStyle = 'rgba(184,146,110,0.18)';
+    for (const [ox, oy] of [[-0.2, 0.25], [0.15, 0.4], [0.05, 0.15], [-0.1, 0.5]]) { ctx.beginPath(); ctx.arc(ox * w, -(pour ? 1 - oy * 0.9 : oy) * bodyH, Math.max(1.5, w * 0.025), 0, Math.PI * 2); ctx.fill(); }
+    ctx.restore();
+    ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.6)'; rrect(ctx, -w / 2 + w * 0.14, -bodyH * 0.86, w * 0.12, bodyH * 0.6, w * 0.06); ctx.fill(); ctx.restore();
+    // cap: band plus dome with five holes
+    fillShape(ctx, () => rrect(ctx, -w / 2 - 3, -bodyH - capH * 0.38, w + 6, capH * 0.42, 6), '#C3CAD4', { depth: 0.4 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, -bodyH - capH * 0.36, w / 2, capH * 0.64, 0, Math.PI, Math.PI * 2); ctx.closePath(); }, '#D3D9E1', { depth: 0.4 });
+    ctx.fillStyle = 'rgba(74,53,82,0.45)';
+    for (const [ox, oy] of [[0, 0.78], [-0.22, 0.6], [0.22, 0.6], [-0.1, 0.45], [0.1, 0.45]]) { ctx.beginPath(); ctx.arc(ox * w, -bodyH - capH * 0.36 - oy * capH * 0.64 * 0.85, Math.max(2, w * 0.035), 0, Math.PI * 2); ctx.fill(); }
+  };
+  ctx.save();
+  if (!pour) { ctx.translate(cx, base); shape(); ctx.restore(); return; }
+  // upside down, slightly tilted, shaking: rotate around the cap tip, which sits at (cx, base)
+  const wob = Math.sin(t * 13) * 0.09, ang = Math.PI - 0.32 + wob;
+  ctx.translate(cx, base); ctx.rotate(ang); ctx.translate(0, h); shape(); ctx.restore();
+  // grains falling from the cap tip
+  ctx.save(); const a0 = ctx.globalAlpha;
+  for (let i = 0; i < 9; i++) {
+    const ph = ((t * 1.7 + i / 9) % 1 + 1) % 1, gx = cx + Math.sin(i * 2.3) * w * 0.22 + ph * w * 0.15, gy = base + 12 + ph * h * 1.1;
+    const sz = Math.max(4, w * 0.08) * (1 - ph * 0.3);
+    ctx.globalAlpha = a0 * Math.min(1, (1 - ph) * 1.6);
+    fillShape(ctx, () => rrect(ctx, gx - sz / 2, gy - sz / 2, sz, sz, 1.5), '#FFFFFF', { depth: 0.25 });
+  }
+  ctx.restore();
+}
 
 // A paper-cut cashew: a thick beige crescent with round ends (s = size, rot = rotation), optional light cut layer.
 export function drawCashew(ctx, x, y, s, rot = 0, c, cut = false) {

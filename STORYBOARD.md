@@ -92,7 +92,9 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 
 `kind`: `table`, `desk`, `chair`, `sofa`, `bed`, `bench`, `door`, `tree`, `car`, `backpack`, `ball`, `cup`, `plate`, `sign`, `shelf`,
 `pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf), `fridge` (Kühlschrank; `"open": true` zeigt das helle Innere mit Gläsern,
-Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer), `bottle` (Flasche mit Korken, `text` aufs Etikett),
+Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
+Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
+lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
 `cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
 `"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
 gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
@@ -147,7 +149,8 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
 - `icon`: `{"kind": "bulb", "x", "y", "size": 90}` – `bulb`, `check`, `cross`, `question`, `exclaim`, `heart`, `star`, `moon`,
   `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`, `hedgehog`
   (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn), `planet` (Pastellkugel in `color`,
-  `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz), `lemon` (Zitrone mit Blatt), `bottle` (kleine Flasche), `cashew` (zwei Cashewkerne)
+  `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz), `lemon` (Zitrone mit Blatt), `bottle` (kleine Flasche), `cashew` (zwei Cashewkerne),
+  `salt` (Salzstreuer; `"pour": true` dreht ihn kopfüber und lässt Salz rieseln, y = Deckelspitze, das Salz fällt nach unten)
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
 ## Was die Engine selbst macht
