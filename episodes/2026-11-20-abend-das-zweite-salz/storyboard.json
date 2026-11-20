@@ -1,0 +1,1122 @@
+{
+ "slug": "das-zweite-salz",
+ "title": "Das zweite Salz",
+ "cta": "whatsapp",
+ "hero": "marie",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind mag plötzlich nicht mehr in die Schule, obwohl sich dort fast nichts geändert hat.",
+   "card": [
+    "Sie mag nicht mehr in die Schule.",
+    "Dabei ist fast alles gleich."
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Salz schmeckt man erst, wenn es fehlt, und bei Kindern ist das genauso.",
+   "card": [
+    "Salz schmeckt man erst,",
+    "wenn es fehlt."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Die schmeckt nach nichts“, sagt Marie, und dabei fehlt nur eine Prise.",
+   "card": [
+    "„Die schmeckt nach nichts.“",
+    "Dabei fehlt nur eine Prise."
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Papa kocht Kartoffelsuppe. Marie ist acht. Sie kostet und verzieht das Gesicht: „Die schmeckt nach nichts.“ Dabei ist alles drin: Kartoffeln, Karotten, Lauch. Nur das Salz fehlt. Papa salzt nach.",
+  "block1": "Salz schmeckt man erst, wenn es fehlt. Noch nie hat jemand gesagt: „Mmh, schön salzig.“ Schau dir das als Schrank an. Oben die Suppe, darunter Kartoffeln, Karotten, Lauch. Ganz unten das Salz. Man sieht es nicht, aber es trägt jeden Geschmack darüber.",
+  "rehook1": "Bei Marie fehlt diese Woche noch ein zweites Salz.",
+  "block2": "Ihre Lehrerin ist zwei Wochen weg. „Ich mag nicht mehr in die Schule“, sagt Marie. Papa sucht oben: Ist Mathe zu schwer? Gibt es Streit? Aber oben ist alles wie immer. Was fehlt, liegt ganz unten: das Gefühl, dass sie dort jemand kennt.",
+  "rehook2": "Und auch das kann man nachsalzen.",
+  "block3": "Am nächsten Morgen sagt Papa zur neuen Lehrerin: „Das ist Marie. Sie liest gern vor.“ Am Abend strahlt Marie: „Ich durfte vorlesen!“ Was unten fehlt, schmeckt man oben überall. Und oft reicht eine Prise.",
+  "closing": "Was ist bei euch das Salz, das man erst merkt, wenn es fehlt?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was ist bei euch das Salz,",
+  "das man erst merkt, wenn es fehlt?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 140,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "verzieht das Gesicht",
+       "mood": "open"
+      },
+      {
+       "at": "Nur das Salz fehlt",
+       "mood": "grin"
+      },
+      {
+       "at": "Papa salzt nach",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Papa salzt nach",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "marie",
+     "type": "figure",
+     "role": "girl",
+     "x": 320,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Sie kostet",
+       "mood": "open"
+      },
+      {
+       "at": "verzieht das Gesicht",
+       "mood": "sad"
+      },
+      {
+       "at": "Dabei ist alles drin",
+       "mood": "neutral"
+      },
+      {
+       "at": "Papa salzt nach+0.6",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Die schmeckt nach nichts",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Die schmeckt nach nichts",
+       "end:nach nichts"
+      ]
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 640,
+     "w": 440,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "topf",
+     "type": "prop",
+     "kind": "pot",
+     "x": 785,
+     "y": 1288,
+     "w": 150,
+     "h": 105,
+     "z": 3.6
+    },
+    {
+     "id": "schuessel",
+     "type": "prop",
+     "kind": "bowl",
+     "x": 520,
+     "y": 1288,
+     "w": 170,
+     "h": 70,
+     "soup": "#F6D27A",
+     "z": 3.6
+    },
+    {
+     "id": "tag_marie",
+     "type": "tag",
+     "text": "Marie, 8",
+     "x": 320,
+     "y": 1090,
+     "in": "Marie ist acht",
+     "out": "Die schmeckt nach nichts-0.4"
+    },
+    {
+     "id": "b_nichts",
+     "type": "bubble",
+     "from": "marie",
+     "text": "Die schmeckt nach *nichts*.",
+     "x": 360,
+     "y": 960,
+     "maxW": 380,
+     "size": 42,
+     "in": "Die schmeckt nach nichts-0.3",
+     "out": "Papa salzt nach"
+    },
+    {
+     "id": "t_kart",
+     "type": "tag",
+     "text": "Kartoffeln",
+     "x": 850,
+     "y": 600,
+     "in": "Kartoffeln"
+    },
+    {
+     "id": "c_kart",
+     "type": "icon",
+     "kind": "check",
+     "x": 990,
+     "y": 600,
+     "size": 52,
+     "in": "Kartoffeln+0.25"
+    },
+    {
+     "id": "t_karo",
+     "type": "tag",
+     "text": "Karotten",
+     "x": 850,
+     "y": 690,
+     "in": "Karotten"
+    },
+    {
+     "id": "c_karo",
+     "type": "icon",
+     "kind": "check",
+     "x": 990,
+     "y": 690,
+     "size": 52,
+     "in": "Karotten+0.25"
+    },
+    {
+     "id": "t_lauch",
+     "type": "tag",
+     "text": "Lauch",
+     "x": 850,
+     "y": 780,
+     "in": "Lauch"
+    },
+    {
+     "id": "c_lauch",
+     "type": "icon",
+     "kind": "check",
+     "x": 990,
+     "y": 780,
+     "size": 52,
+     "in": "Lauch+0.25"
+    },
+    {
+     "id": "salz_fehlt",
+     "type": "icon",
+     "kind": "salt",
+     "x": 850,
+     "y": 905,
+     "size": 120,
+     "in": "Nur das Salz",
+     "out": "Papa salzt nach"
+    },
+    {
+     "id": "x_salz",
+     "type": "icon",
+     "kind": "cross",
+     "x": 912,
+     "y": 860,
+     "size": 58,
+     "in": "Salz fehlt",
+     "out": "Papa salzt nach"
+    },
+    {
+     "id": "salz_pour",
+     "type": "icon",
+     "kind": "salt",
+     "pour": true,
+     "x": 520,
+     "y": 1060,
+     "size": 120,
+     "in": "Papa salzt nach"
+    }
+   ]
+  },
+  {
+   "at": "Salz schmeckt man erst",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 140,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "schön salzig",
+       "mood": "grin"
+      },
+      {
+       "at": "Schau dir das als Schrank",
+       "mood": "smile"
+      },
+      {
+       "at": "aber es trägt",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Mmh schön salzig",
+       "end:schön salzig"
+      ]
+     ]
+    },
+    {
+     "id": "marie",
+     "type": "figure",
+     "role": "girl",
+     "x": 320,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Noch nie hat jemand",
+       "mood": "grin"
+      },
+      {
+       "at": "Ganz unten das Salz",
+       "mood": "wow"
+      },
+      {
+       "at": "Man sieht es nicht",
+       "mood": "open"
+      },
+      {
+       "at": "aber es trägt",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Man sieht es nicht",
+       "kind": "think",
+       "dur": 1.5
+      }
+     ]
+    },
+    {
+     "id": "k_satz",
+     "type": "card",
+     "x": 640,
+     "y": 620,
+     "lines": [
+      "Salz schmeckt man erst,",
+      "*wenn es fehlt.*"
+     ],
+     "size": 54,
+     "out": "Schau dir das als Schrank"
+    },
+    {
+     "id": "b_salzig",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Mmh, schön *salzig*!",
+     "x": 300,
+     "y": 830,
+     "maxW": 360,
+     "size": 42,
+     "in": "Noch nie hat jemand",
+     "out": "Schau dir das als Schrank"
+    },
+    {
+     "id": "x_salzig",
+     "type": "icon",
+     "kind": "cross",
+     "x": 495,
+     "y": 790,
+     "size": 70,
+     "in": "schön salzig+0.3",
+     "out": "Schau dir das als Schrank"
+    },
+    {
+     "id": "schrank_suppe",
+     "type": "cabinet",
+     "x": 700,
+     "y": 520,
+     "w": 600,
+     "rowH": 120,
+     "in": "Schau dir das als Schrank",
+     "rows": [
+      [
+       "suppe"
+      ],
+      [
+       "kartoffel",
+       "karotte",
+       "lauch"
+      ],
+      [
+       "salz"
+      ]
+     ],
+     "drawers": {
+      "suppe": {
+       "label": "Suppe",
+       "color": "food",
+       "size": 50,
+       "align": "center",
+       "in": "Oben die Suppe",
+       "states": [
+        {
+         "at": "Oben die Suppe",
+         "state": "glow"
+        },
+        {
+         "at": "darunter Kartoffeln",
+         "state": "normal"
+        },
+        {
+         "at": "Geschmack darüber+0.3",
+         "state": "gold"
+        }
+       ]
+      },
+      "kartoffel": {
+       "label": "Kartoffeln",
+       "color": "idea",
+       "size": 34,
+       "align": "center",
+       "in": "darunter Kartoffeln",
+       "states": [
+        {
+         "at": "jeden Geschmack",
+         "state": "glow"
+        }
+       ]
+      },
+      "karotte": {
+       "label": "Karotten",
+       "color": "#FBD9BE",
+       "size": 34,
+       "align": "center",
+       "in": "Karotten",
+       "states": [
+        {
+         "at": "jeden Geschmack+0.15",
+         "state": "glow"
+        }
+       ]
+      },
+      "lauch": {
+       "label": "Lauch",
+       "color": "fresh",
+       "size": 36,
+       "align": "center",
+       "in": "Lauch",
+       "states": [
+        {
+         "at": "jeden Geschmack+0.3",
+         "state": "glow"
+        }
+       ]
+      },
+      "salz": {
+       "label": "Salz",
+       "color": "ice",
+       "size": 46,
+       "icon": "salt",
+       "in": "Ganz unten das Salz",
+       "states": [
+        {
+         "at": "Ganz unten das Salz",
+         "state": "glow"
+        },
+        {
+         "at": "Man sieht es nicht",
+         "state": "dim"
+        },
+        {
+         "at": "aber es trägt",
+         "state": "gold+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "st_unsichtbar",
+     "type": "stamp",
+     "text": "unsichtbar",
+     "x": 700,
+     "y": 1090,
+     "rot": -0.08,
+     "size": 58,
+     "in": "Man sieht es nicht",
+     "out": "jeden Geschmack"
+    }
+   ]
+  },
+  {
+   "at": "Bei Marie fehlt diese Woche",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 140,
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Ich mag nicht mehr",
+       "mood": "worried"
+      },
+      {
+       "at": "Papa sucht oben",
+       "mood": "neutral"
+      },
+      {
+       "at": "liegt ganz unten",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Papa sucht oben",
+       "kind": "think",
+       "dur": 2.4
+      }
+     ]
+    },
+    {
+     "id": "marie",
+     "type": "figure",
+     "role": "girl",
+     "x": 320,
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Ich mag nicht mehr",
+       "mood": "sad"
+      },
+      {
+       "at": "Papa sucht oben",
+       "mood": "worried"
+      },
+      {
+       "at": "dort jemand kennt",
+       "mood": "sad"
+      }
+     ],
+     "talk": [
+      [
+       "Ich mag nicht mehr",
+       "end:in die Schule"
+      ]
+     ]
+    },
+    {
+     "id": "q_marie",
+     "type": "icon",
+     "kind": "question",
+     "x": 320,
+     "y": 1080,
+     "size": 76,
+     "in": "zweites Salz",
+     "out": "Ich mag nicht mehr-0.4"
+    },
+    {
+     "id": "tag_woche",
+     "type": "tag",
+     "text": "diese Woche",
+     "x": 700,
+     "y": 560,
+     "color": "plum",
+     "in": "diese Woche",
+     "out": "Papa sucht oben"
+    },
+    {
+     "id": "salz_zwei",
+     "type": "icon",
+     "kind": "salt",
+     "x": 700,
+     "y": 760,
+     "size": 170,
+     "in": "zweites Salz",
+     "out": "Ihre Lehrerin"
+    },
+    {
+     "id": "q_salz",
+     "type": "icon",
+     "kind": "question",
+     "x": 785,
+     "y": 680,
+     "size": 62,
+     "in": "zweites Salz+0.3",
+     "out": "Ihre Lehrerin"
+    },
+    {
+     "id": "k_lehrerin",
+     "type": "card",
+     "x": 760,
+     "y": 760,
+     "lines": [
+      "Lehrerin",
+      "*2 Wochen weg*"
+     ],
+     "size": 50,
+     "in": "Ihre Lehrerin",
+     "out": "Papa sucht oben"
+    },
+    {
+     "id": "b_schule",
+     "type": "bubble",
+     "from": "marie",
+     "text": "Ich mag nicht mehr in die *Schule*.",
+     "x": 330,
+     "y": 960,
+     "maxW": 340,
+     "size": 40,
+     "in": "Ich mag nicht mehr-0.2",
+     "out": "Papa sucht oben"
+    },
+    {
+     "id": "schrank_schule",
+     "type": "cabinet",
+     "x": 700,
+     "y": 520,
+     "w": 600,
+     "rowH": 120,
+     "in": "Papa sucht oben",
+     "out": "Am nächsten Morgen",
+     "rows": [
+      [
+       "schule"
+      ],
+      [
+       "mathe",
+       "lesen",
+       "freunde"
+      ],
+      [
+       "kennt"
+      ]
+     ],
+     "drawers": {
+      "schule": {
+       "label": "Schule",
+       "color": "baby",
+       "size": 50,
+       "align": "center",
+       "in": "Papa sucht oben"
+      },
+      "mathe": {
+       "label": "Mathe",
+       "color": "idea",
+       "size": 38,
+       "align": "center",
+       "in": "Papa sucht oben+0.2",
+       "states": [
+        {
+         "at": "Ist Mathe zu schwer",
+         "state": "question"
+        },
+        {
+         "at": "alles wie immer",
+         "state": "check"
+        }
+       ]
+      },
+      "lesen": {
+       "label": "Lesen",
+       "color": "kids",
+       "size": 38,
+       "align": "center",
+       "in": "Papa sucht oben+0.3",
+       "states": [
+        {
+         "at": "alles wie immer+0.15",
+         "state": "check"
+        }
+       ]
+      },
+      "freunde": {
+       "label": "Freundinnen",
+       "color": "fresh",
+       "size": 32,
+       "align": "center",
+       "in": "Papa sucht oben+0.4",
+       "states": [
+        {
+         "at": "Gibt es Streit",
+         "state": "question"
+        },
+        {
+         "at": "alles wie immer+0.3",
+         "state": "check"
+        }
+       ]
+      },
+      "kennt": {
+       "label": "jemand kennt mich",
+       "emptyLabel": "jemand kennt mich",
+       "color": "kids",
+       "size": 42,
+       "align": "center",
+       "in": "liegt ganz unten",
+       "states": [
+        {
+         "at": "liegt ganz unten",
+         "state": "empty"
+        },
+        {
+         "at": "dort jemand kennt",
+         "state": "empty+shake"
+        },
+        {
+         "at": "nachsalzen",
+         "state": "empty+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "lupe",
+     "type": "icon",
+     "kind": "magnifier",
+     "x": 505,
+     "y": 880,
+     "size": 100,
+     "in": "Papa sucht oben+0.4",
+     "out": "alles wie immer",
+     "moves": [
+      {
+       "at": "Gibt es Streit",
+       "x": 895,
+       "y": 880,
+       "dur": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "Und auch das kann man",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 140,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Das ist Marie",
+       "mood": "happy"
+      }
+     ],
+     "moves": [
+      {
+       "at": "Am nächsten Morgen",
+       "x": 300,
+       "dur": 0.9
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Das ist Marie",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Das ist Marie",
+       "end:gern vor"
+      ]
+     ]
+    },
+    {
+     "id": "marie",
+     "type": "figure",
+     "role": "girl",
+     "x": 320,
+     "mood": "open",
+     "moods": [
+      {
+       "at": "nachsalzen",
+       "mood": "smile"
+      },
+      {
+       "at": "Das ist Marie",
+       "mood": "open"
+      },
+      {
+       "at": "gern vor",
+       "mood": "happy"
+      }
+     ],
+     "moves": [
+      {
+       "at": "Am nächsten Morgen",
+       "x": 485,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "salz_nach",
+     "type": "icon",
+     "kind": "salt",
+     "pour": true,
+     "x": 700,
+     "y": 800,
+     "size": 130,
+     "in": "nachsalzen-0.2",
+     "out": "Am nächsten Morgen"
+    },
+    {
+     "id": "tag_morgen",
+     "type": "tag",
+     "text": "am nächsten Morgen",
+     "x": 300,
+     "y": 520,
+     "color": "plum",
+     "in": "Am nächsten Morgen"
+    },
+    {
+     "id": "tafel",
+     "type": "prop",
+     "kind": "blackboard",
+     "x": 750,
+     "y": 660,
+     "w": 400,
+     "h": 220,
+     "text": [
+      "Guten Morgen!"
+     ],
+     "size": 60,
+     "in": "Am nächsten Morgen"
+    },
+    {
+     "id": "lehrerin",
+     "type": "figure",
+     "role": "teacher",
+     "x": 860,
+     "look": "left",
+     "mood": "smile",
+     "in": "Am nächsten Morgen",
+     "moods": [
+      {
+       "at": "gern vor",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "gern vor+0.3",
+       "kind": "wave",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "b_vor",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Das ist Marie. Sie liest gern *vor*.",
+     "x": 330,
+     "y": 880,
+     "maxW": 360,
+     "size": 40,
+     "in": "Das ist Marie"
+    },
+    {
+     "id": "stern",
+     "type": "icon",
+     "kind": "star",
+     "x": 565,
+     "y": 1100,
+     "size": 72,
+     "in": "gern vor+0.2"
+    }
+   ]
+  },
+  {
+   "at": "Am Abend strahlt",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 140,
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Was unten fehlt",
+       "mood": "smile"
+      },
+      {
+       "at": "eine Prise",
+       "mood": "laugh"
+      }
+     ]
+    },
+    {
+     "id": "marie",
+     "type": "figure",
+     "role": "girl",
+     "x": 320,
+     "mood": "laugh",
+     "moods": [
+      {
+       "at": "Was unten fehlt",
+       "mood": "smile"
+      },
+      {
+       "at": "eine Prise",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Ich durfte vorlesen",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Ich durfte vorlesen",
+       "end:durfte vorlesen"
+      ]
+     ],
+     "hop": "Ich durfte vorlesen"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "am Abend",
+     "x": 300,
+     "y": 540,
+     "color": "plum",
+     "out": "Was unten fehlt"
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 440,
+     "y": 540,
+     "size": 64,
+     "out": "Was unten fehlt"
+    },
+    {
+     "id": "b_vorlesen",
+     "type": "bubble",
+     "from": "marie",
+     "text": "Ich durfte *vorlesen*!",
+     "x": 450,
+     "y": 1010,
+     "maxW": 380,
+     "size": 42,
+     "in": "Ich durfte vorlesen-0.2",
+     "out": "Was unten fehlt"
+    },
+    {
+     "id": "stern2",
+     "type": "icon",
+     "kind": "star",
+     "x": 287,
+     "y": 1100,
+     "size": 64,
+     "in": "Ich durfte vorlesen+0.3",
+     "out": "Was unten fehlt"
+    },
+    {
+     "id": "stern3",
+     "type": "icon",
+     "kind": "star",
+     "x": 425,
+     "y": 1125,
+     "size": 72,
+     "in": "Ich durfte vorlesen+0.45",
+     "out": "Was unten fehlt"
+    },
+    {
+     "id": "schrank_abend",
+     "type": "cabinet",
+     "x": 700,
+     "y": 520,
+     "w": 600,
+     "rowH": 120,
+     "in": "Was unten fehlt",
+     "rows": [
+      [
+       "schule"
+      ],
+      [
+       "mathe",
+       "lesen",
+       "freunde"
+      ],
+      [
+       "kennt"
+      ]
+     ],
+     "drawers": {
+      "schule": {
+       "label": "Schule",
+       "color": "baby",
+       "size": 50,
+       "align": "center",
+       "states": [
+        {
+         "at": "oben überall+0.45",
+         "state": "gold"
+        }
+       ]
+      },
+      "mathe": {
+       "label": "Mathe",
+       "color": "idea",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "oben überall",
+         "state": "glow"
+        },
+        {
+         "at": "Und oft reicht",
+         "state": "normal"
+        }
+       ]
+      },
+      "lesen": {
+       "label": "Lesen",
+       "color": "kids",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "oben überall+0.15",
+         "state": "glow"
+        },
+        {
+         "at": "Und oft reicht",
+         "state": "normal"
+        }
+       ]
+      },
+      "freunde": {
+       "label": "Freundinnen",
+       "color": "fresh",
+       "size": 32,
+       "align": "center",
+       "states": [
+        {
+         "at": "oben überall+0.3",
+         "state": "glow"
+        },
+        {
+         "at": "Und oft reicht",
+         "state": "normal"
+        }
+       ]
+      },
+      "kennt": {
+       "label": "jemand kennt mich",
+       "color": "kids",
+       "size": 42,
+       "align": "center",
+       "states": [
+        {
+         "at": "Was unten fehlt",
+         "state": "gold+check"
+        },
+        {
+         "at": "eine Prise",
+         "state": "gold+check+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "salz_prise",
+     "type": "icon",
+     "kind": "salt",
+     "pour": true,
+     "x": 700,
+     "y": 800,
+     "size": 120,
+     "in": "eine Prise-0.3"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 320,
+     "y": 1080,
+     "size": 80,
+     "in": "eine Prise+0.3"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "nach nichts",
+   "x": 360,
+   "y": 960
+  },
+  {
+   "at": "Papa salzt nach",
+   "x": 520,
+   "y": 1150
+  },
+  {
+   "at": "Ganz unten das Salz",
+   "x": 700,
+   "y": 902
+  },
+  {
+   "at": "jeden Geschmack",
+   "x": 700,
+   "y": 766
+  },
+  {
+   "at": "liegt ganz unten",
+   "x": 700,
+   "y": 902
+  },
+  {
+   "at": "nachsalzen",
+   "x": 700,
+   "y": 902
+  },
+  {
+   "at": "gern vor",
+   "x": 565,
+   "y": 1100
+  },
+  {
+   "at": "Ich durfte vorlesen",
+   "x": 450,
+   "y": 1010
+  }
+ ]
+}

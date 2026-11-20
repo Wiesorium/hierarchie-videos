@@ -3,6 +3,33 @@
  "videos": [
   {
    "datum": "2026-11-20",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-20-abend-das-zweite-salz",
+   "slug": "das-zweite-salz",
+   "titel": "Das zweite Salz",
+   "idee": "idee-11",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind mag plötzlich nicht mehr in die Schule, obwohl sich dort fast nichts geändert hat.",
+    "b": "Salz schmeckt man erst, wenn es fehlt, und bei Kindern ist das genauso.",
+    "c": "„Die schmeckt nach nichts“, sagt Marie, und dabei fehlt nur eine Prise."
+   },
+   "dauer": {
+    "a": 86.17,
+    "b": 85.63,
+    "c": 85.87
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/bt0uuBZBIubZiegrAhpw",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Salz schmeckt man erst, wenn es fehlt) als Familienszene mit Marie (acht) und Papa selbst ergänzt: Kartoffelsuppe ohne Salz, dann ein zweites Salz in der Schule (Lehrerin zwei Wochen weg, „jemand kennt mich“ fehlt ganz unten). Zwei Schränke: Suppe → Kartoffeln, Karotten, Lauch → Salz; Schule → Mathe, Lesen, Freundinnen → leerer Platz „jemand kennt mich“, der am Ende gefüllt ist (Goldrahmen, Häkchen). Neue Engine-Teile: Salzstreuer (Icon und Requisite salt, mit pour zum Nachsalzen) und Suppe in der Schüssel (bowl mit soup). Hauptteil der Stimme 79,4 s, Videos 85,6 bis 86,2 s. Captions in Drive: 2026-11-20-das-zweite-salz-captions.",
+   "dateien": [
+    "das-zweite-salz-hook-a.mp4",
+    "das-zweite-salz-hook-b.mp4",
+    "das-zweite-salz-hook-c.mp4"
+   ]
+  },
+  {
+   "datum": "2026-11-20",
    "slot": "morgen",
    "ordner": "episodes/2026-11-20-morgen-kuehlschrank-oder-kochbuch",
    "slug": "kuehlschrank-oder-kochbuch",

@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Papa kocht Kartoffelsuppe. Marie ist acht. Sie kostet und verzieht das Gesicht: „Die schmeckt nach nichts.“ Dabei ist alles drin: Kartoffeln, Karotten, Lauch. Nur das Salz fehlt. Papa salzt nach. [pause] Salz schmeckt man erst, wenn es fehlt. Noch nie hat jemand gesagt: „Mmh, schön salzig.“ Schau dir das als Schrank an. Oben die Suppe, darunter Kartoffeln, Karotten, Lauch. Ganz unten das Salz. Man sieht es nicht, aber es trägt jeden Geschmack darüber. [pause] Bei Marie fehlt diese Woche noch ein zweites Salz. [pause] Ihre Lehrerin ist zwei Wochen weg. „Ich mag nicht mehr in die Schule“, sagt Marie. Papa sucht oben: Ist Mathe zu schwer? Gibt es Streit? Aber oben ist alles wie immer. Was fehlt, liegt ganz unten: das Gefühl, dass sie dort jemand kennt. [pause] Und auch das kann man nachsalzen. [pause] Am nächsten Morgen sagt Papa zur neuen Lehrerin: „Das ist Marie. Sie liest gern vor.“ Am Abend strahlt Marie: „Ich durfte vorlesen!“ Was unten fehlt, schmeckt man oben überall. Und oft reicht eine Prise. [pause] Was ist bei euch das Salz, das man erst merkt, wenn es fehlt? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind mag plötzlich nicht mehr in die Schule, obwohl sich dort fast nichts geändert hat.",
+  "b": "[warmly] Salz schmeckt man erst, wenn es fehlt, und bei Kindern ist das genauso.",
+  "c": "[warmly] „Die schmeckt nach nichts“, sagt Marie, und dabei fehlt nur eine Prise."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
