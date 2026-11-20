@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Sonntagabend. Kathi, achtunddreißig, öffnet den Kühlschrank: Zucchini, Feta, Tomaten. „Dann gibt's Nudeln mit Sauce.“ Markus, vierzig, öffnet das Kochbuch: „Heute machen wir Lasagne!“ [pause] Schau dir das als Knoten an. Kathi baut von unten: erst die Zutaten, dann das Gericht. Markus baut von oben: erst das Gericht, dann die Zutaten. So bauen wir auch unser Bild von der Welt: aus Erlebnissen nach oben oder von einer Idee nach unten. Beides geht. Aber jede Richtung hat ihren typischen Fehler. [pause] Und heute Abend zeigen sich beide. [pause] Markus schreibt die Einkaufsliste: Nudelplatten, Faschiertes, Tomaten. Aber am Sonntag hat kein Geschäft offen. Oben ist alles schön, nur unten fehlt der Boden. Und bei Kathi gibt es fast immer Nudeln mit Sauce. Von unten kommst du nur so weit, wie die Zutaten reichen. [pause] Bis Kathi sagt: „Gib mal das Kochbuch.“ [pause] Sie schlägt die Lasagne auf und schaut in den Kühlschrank. Zucchini statt Nudelplatten. Feta statt Faschiertem. Schicht für Schicht entsteht eine Zucchini-Lasagne. Die Idee kommt von oben, die Zutaten von unten. Gut wird es, wo sich beide treffen. Beim Kochen wie im Kopf. [pause] Baust du eher von unten oder von oben? [pause] [pause] Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM.",
+ "hooks": {
+  "a": "[warmly] Sie kocht aus dem Kühlschrank, er aus dem Kochbuch, und beide machen einen typischen Fehler.",
+  "b": "[warmly] Ob du aus dem Kühlschrank kochst oder aus dem Rezept: Genauso baust du dein Weltbild.",
+  "c": "[warmly] „Heute machen wir Lasagne!“, sagt er, und am Sonntag hat kein Geschäft offen."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

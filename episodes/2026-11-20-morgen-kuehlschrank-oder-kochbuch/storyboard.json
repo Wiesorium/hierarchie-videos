@@ -1,0 +1,1252 @@
+{
+ "slug": "kuehlschrank-oder-kochbuch",
+ "title": "Kühlschrank oder Kochbuch?",
+ "cta": "kurs",
+ "hero": "kathi",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Sie kocht aus dem Kühlschrank, er aus dem Kochbuch, und beide machen einen typischen Fehler.",
+   "card": [
+    "Sie kocht aus dem Kühlschrank,",
+    "*er aus dem Kochbuch*"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Ob du aus dem Kühlschrank kochst oder aus dem Rezept: Genauso baust du dein Weltbild.",
+   "card": [
+    "Kühlschrank oder Rezept?",
+    "*So baust du dein Weltbild.*"
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Heute machen wir Lasagne!“, sagt er, und am Sonntag hat kein Geschäft offen.",
+   "card": [
+    "„Heute machen wir Lasagne!“",
+    "*Und kein Geschäft hat offen.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Sonntagabend. Kathi, achtunddreißig, öffnet den Kühlschrank: Zucchini, Feta, Tomaten. „Dann gibt's Nudeln mit Sauce.“ Markus, vierzig, öffnet das Kochbuch: „Heute machen wir Lasagne!“",
+  "block1": "Schau dir das als Knoten an. Kathi baut von unten: erst die Zutaten, dann das Gericht. Markus baut von oben: erst das Gericht, dann die Zutaten. So bauen wir auch unser Bild von der Welt: aus Erlebnissen nach oben oder von einer Idee nach unten. Beides geht. Aber jede Richtung hat ihren typischen Fehler.",
+  "rehook1": "Und heute Abend zeigen sich beide.",
+  "block2": "Markus schreibt die Einkaufsliste: Nudelplatten, Faschiertes, Tomaten. Aber am Sonntag hat kein Geschäft offen. Oben ist alles schön, nur unten fehlt der Boden. Und bei Kathi gibt es fast immer Nudeln mit Sauce. Von unten kommst du nur so weit, wie die Zutaten reichen.",
+  "rehook2": "Bis Kathi sagt: „Gib mal das Kochbuch.“",
+  "block3": "Sie schlägt die Lasagne auf und schaut in den Kühlschrank. Zucchini statt Nudelplatten. Feta statt Faschiertem. Schicht für Schicht entsteht eine Zucchini-Lasagne. Die Idee kommt von oben, die Zutaten von unten. Gut wird es, wo sich beide treffen. Beim Kochen wie im Kopf.",
+  "closing": "Baust du eher von unten oder von oben?",
+  "cta": "Genau darum geht es in meinem Zwei-Stunden-Kurs zu vertikalem Wissen. Schreib mir eine DM."
+ },
+ "question": [
+  "Baust du eher",
+  "von unten oder von oben?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "kathi",
+     "type": "figure",
+     "role": "woman",
+     "hair": "ponytail",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "look": "right",
+     "x": 170,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "öffnet den Kühlschrank",
+       "mood": "open"
+      },
+      {
+       "at": "Nudeln mit Sauce",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "öffnet den Kühlschrank",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Dann",
+       "end:mit Sauce"
+      ]
+     ]
+    },
+    {
+     "id": "markus",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "look": "left",
+     "x": 830,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "öffnet das Kochbuch",
+       "mood": "open"
+      },
+      {
+       "at": "Heute machen wir",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Heute machen wir",
+       "kind": "raise",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Heute machen wir",
+       "end:wir Lasagne"
+      ]
+     ],
+     "hop": "wir Lasagne"
+    },
+    {
+     "id": "kuehl_zu",
+     "type": "prop",
+     "kind": "fridge",
+     "x": 440,
+     "w": 230,
+     "h": 520,
+     "out": "öffnet den Kühlschrank"
+    },
+    {
+     "id": "kuehl_auf",
+     "type": "prop",
+     "kind": "fridge",
+     "x": 440,
+     "w": 230,
+     "h": 520,
+     "open": true,
+     "doorSide": "right",
+     "items": [],
+     "in": "öffnet den Kühlschrank"
+    },
+    {
+     "id": "t_zuc",
+     "type": "tag",
+     "text": "~Zucchini~",
+     "x": 440,
+     "y": 1075,
+     "size": 34,
+     "in": "Zucchini"
+    },
+    {
+     "id": "t_feta",
+     "type": "tag",
+     "text": "Feta",
+     "x": 440,
+     "y": 1195,
+     "size": 34,
+     "color": "ink",
+     "in": "Feta"
+    },
+    {
+     "id": "t_tom",
+     "type": "tag",
+     "text": "*Tomaten*",
+     "x": 440,
+     "y": 1312,
+     "size": 34,
+     "in": "Tomaten"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "^Sonntagabend^",
+     "x": 520,
+     "y": 570,
+     "in": "Sonntagabend"
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 700,
+     "y": 566,
+     "size": 74,
+     "in": "Sonntagabend+0.2"
+    },
+    {
+     "id": "tag_k38",
+     "type": "tag",
+     "text": "Kathi, 38",
+     "x": 170,
+     "y": 950,
+     "color": "plum",
+     "size": 36,
+     "in": "Kathi",
+     "out": "Nudeln mit Sauce"
+    },
+    {
+     "id": "tag_m40",
+     "type": "tag",
+     "text": "Markus, 40",
+     "x": 830,
+     "y": 950,
+     "color": "plum",
+     "size": 36,
+     "in": "Markus",
+     "out": "Heute machen"
+    },
+    {
+     "id": "b_nudeln",
+     "type": "bubble",
+     "from": "kathi",
+     "text": "Dann gibt's *Nudeln* mit Sauce.",
+     "x": 255,
+     "y": 815,
+     "maxW": 330,
+     "size": 42,
+     "in": "Nudeln mit Sauce-0.5"
+    },
+    {
+     "id": "buch",
+     "type": "prop",
+     "kind": "book",
+     "x": 830,
+     "y": 1252,
+     "w": 190,
+     "h": 130,
+     "text": "Lasagne",
+     "size": 34,
+     "z": 3.6,
+     "enter": "pop",
+     "in": "öffnet das Kochbuch"
+    },
+    {
+     "id": "b_lasagne",
+     "type": "bubble",
+     "from": "markus",
+     "text": "Heute machen wir *Lasagne*!",
+     "x": 810,
+     "y": 815,
+     "maxW": 330,
+     "size": 42,
+     "in": "Heute machen wir"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "kathi",
+     "type": "figure",
+     "role": "woman",
+     "hair": "ponytail",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "look": "right",
+     "x": 254,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Kathi baut von unten",
+       "mood": "happy"
+      },
+      {
+       "at": "Beides geht",
+       "mood": "laugh"
+      },
+      {
+       "at": "typischen Fehler",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Kathi baut von unten",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "markus",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "look": "left",
+     "x": 776,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Markus baut von oben",
+       "mood": "happy"
+      },
+      {
+       "at": "Beides geht",
+       "mood": "laugh"
+      },
+      {
+       "at": "typischen Fehler",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Markus baut von oben",
+       "kind": "point",
+       "dur": 1.6
+      },
+      {
+       "at": "Beides geht",
+       "kind": "cheer",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "id": "k_zuc",
+     "type": "node",
+     "x": 115,
+     "y": 740,
+     "w": 150,
+     "h": 92,
+     "label": "Zucchini",
+     "color": "fresh",
+     "size": 32,
+     "keep": true,
+     "z": 2.5,
+     "in": "erst die Zutaten",
+     "states": [
+      {
+       "at": "aus Erlebnissen",
+       "state": "glow"
+      },
+      {
+       "at": "von einer Idee",
+       "state": "normal"
+      },
+      {
+       "at": "wie die Zutaten reichen",
+       "state": "glow"
+      },
+      {
+       "at": "Bis Kathi sagt",
+       "state": "normal"
+      },
+      {
+       "at": "Zucchini statt+1.1",
+       "state": "check"
+      },
+      {
+       "at": "die Zutaten von unten",
+       "state": "glow+check"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "state": "gold+check"
+      }
+     ],
+     "moves": [
+      {
+       "at": "Zucchini statt",
+       "x": 361,
+       "y": 640,
+       "dur": 0.55
+      },
+      {
+       "at": "Zucchini statt+0.55",
+       "x": 607,
+       "y": 740,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "k_feta",
+     "type": "node",
+     "x": 264,
+     "y": 740,
+     "w": 120,
+     "h": 92,
+     "label": "Feta",
+     "color": "fresh",
+     "size": 32,
+     "keep": true,
+     "z": 2.5,
+     "in": "erst die Zutaten+0.25",
+     "states": [
+      {
+       "at": "aus Erlebnissen",
+       "state": "glow"
+      },
+      {
+       "at": "von einer Idee",
+       "state": "normal"
+      },
+      {
+       "at": "wie die Zutaten reichen",
+       "state": "glow"
+      },
+      {
+       "at": "Bis Kathi sagt",
+       "state": "normal"
+      },
+      {
+       "at": "Feta statt+1.1",
+       "state": "check"
+      },
+      {
+       "at": "die Zutaten von unten+0.2",
+       "state": "glow+check"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "state": "gold+check"
+      }
+     ],
+     "moves": [
+      {
+       "at": "Feta statt",
+       "x": 535,
+       "y": 640,
+       "dur": 0.55
+      },
+      {
+       "at": "Feta statt+0.55",
+       "x": 806,
+       "y": 740,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "k_tom",
+     "type": "node",
+     "x": 403,
+     "y": 740,
+     "w": 130,
+     "h": 92,
+     "label": "Tomaten",
+     "color": "fresh",
+     "size": 32,
+     "keep": true,
+     "z": 2.5,
+     "in": "erst die Zutaten+0.5",
+     "states": [
+      {
+       "at": "aus Erlebnissen",
+       "state": "glow"
+      },
+      {
+       "at": "von einer Idee",
+       "state": "normal"
+      },
+      {
+       "at": "wie die Zutaten reichen",
+       "state": "glow"
+      },
+      {
+       "at": "Bis Kathi sagt",
+       "state": "normal"
+      },
+      {
+       "at": "end:Faschiertem+1.3",
+       "state": "check"
+      },
+      {
+       "at": "die Zutaten von unten+0.4",
+       "state": "glow+check"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "state": "gold+check"
+      }
+     ],
+     "moves": [
+      {
+       "at": "end:Faschiertem+0.2",
+       "x": 690,
+       "y": 650,
+       "dur": 0.55
+      },
+      {
+       "at": "end:Faschiertem+0.75",
+       "x": 975,
+       "y": 740,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "k_top",
+     "type": "node",
+     "x": 254,
+     "y": 540,
+     "w": 380,
+     "h": 96,
+     "label": "Nudeln mit Sauce",
+     "color": "#FBDDBF",
+     "size": 40,
+     "keep": true,
+     "in": "dann das Gericht",
+     "out": "Sie schlägt die Lasagne",
+     "states": [
+      {
+       "at": "nach oben",
+       "state": "glow"
+      },
+      {
+       "at": "Beides geht",
+       "state": "check"
+      },
+      {
+       "at": "typischen Fehler",
+       "state": "question"
+      },
+      {
+       "at": "Und heute Abend",
+       "state": "normal"
+      },
+      {
+       "at": "fast immer",
+       "state": "shake"
+      },
+      {
+       "at": "nur so weit",
+       "state": "heavy+red"
+      },
+      {
+       "at": "Bis Kathi sagt",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "l_k1",
+     "type": "link",
+     "from": "k_zuc",
+     "to": "k_top",
+     "style": "gold",
+     "head": true,
+     "in": "dann das Gericht",
+     "keep": true,
+     "out": "Sie schlägt die Lasagne"
+    },
+    {
+     "id": "l_k2",
+     "type": "link",
+     "from": "k_feta",
+     "to": "k_top",
+     "style": "gold",
+     "head": true,
+     "in": "dann das Gericht+0.15",
+     "keep": true,
+     "out": "Sie schlägt die Lasagne"
+    },
+    {
+     "id": "l_k3",
+     "type": "link",
+     "from": "k_tom",
+     "to": "k_top",
+     "style": "gold",
+     "head": true,
+     "in": "dann das Gericht+0.3",
+     "keep": true,
+     "out": "Sie schlägt die Lasagne"
+    },
+    {
+     "id": "m_top",
+     "type": "node",
+     "x": 776,
+     "y": 540,
+     "w": 320,
+     "h": 96,
+     "label": "Lasagne",
+     "color": "#FBDDBF",
+     "size": 44,
+     "keep": true,
+     "in": "erst das Gericht",
+     "out": "end:entsteht eine",
+     "states": [
+      {
+       "at": "von einer Idee",
+       "state": "glow"
+      },
+      {
+       "at": "Beides geht",
+       "state": "check"
+      },
+      {
+       "at": "typischen Fehler",
+       "state": "question"
+      },
+      {
+       "at": "Und heute Abend",
+       "state": "normal"
+      },
+      {
+       "at": "Oben ist alles schön",
+       "state": "gold"
+      },
+      {
+       "at": "Bis Kathi sagt",
+       "state": "normal"
+      },
+      {
+       "at": "Sie schlägt die Lasagne",
+       "state": "glow"
+      },
+      {
+       "at": "Zucchini statt",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "m_nud",
+     "type": "node",
+     "x": 607,
+     "y": 740,
+     "w": 190,
+     "h": 92,
+     "label": "Nudelplatten",
+     "color": "ice",
+     "size": 32,
+     "keep": true,
+     "in": "dann die Zutaten",
+     "out": "Zucchini statt+1.15",
+     "states": [
+      {
+       "at": "nach unten",
+       "state": "glow"
+      },
+      {
+       "at": "Beides geht",
+       "state": "normal"
+      },
+      {
+       "at": "Nudelplatten",
+       "state": "glow"
+      },
+      {
+       "at": "kein Geschäft offen",
+       "state": "cross"
+      },
+      {
+       "at": "fehlt der Boden",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "m_fas",
+     "type": "node",
+     "x": 806,
+     "y": 740,
+     "w": 180,
+     "h": 92,
+     "label": "Faschiertes",
+     "color": "ice",
+     "size": 32,
+     "keep": true,
+     "in": "dann die Zutaten+0.25",
+     "out": "Feta statt+1.15",
+     "states": [
+      {
+       "at": "nach unten",
+       "state": "glow"
+      },
+      {
+       "at": "Beides geht",
+       "state": "normal"
+      },
+      {
+       "at": "Faschiertes",
+       "state": "glow"
+      },
+      {
+       "at": "kein Geschäft offen+0.15",
+       "state": "cross"
+      },
+      {
+       "at": "fehlt der Boden+0.15",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "m_tom",
+     "type": "node",
+     "x": 975,
+     "y": 740,
+     "w": 130,
+     "h": 92,
+     "label": "Tomaten",
+     "color": "ice",
+     "size": 32,
+     "keep": true,
+     "in": "dann die Zutaten+0.5",
+     "out": "end:Faschiertem+1.35",
+     "states": [
+      {
+       "at": "nach unten",
+       "state": "glow"
+      },
+      {
+       "at": "Beides geht",
+       "state": "normal"
+      },
+      {
+       "at": "Tomaten",
+       "state": "glow"
+      },
+      {
+       "at": "kein Geschäft offen+0.3",
+       "state": "cross"
+      },
+      {
+       "at": "fehlt der Boden+0.3",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "l_m1",
+     "type": "link",
+     "from": "m_top",
+     "to": "m_nud",
+     "style": "gold",
+     "head": true,
+     "in": "dann die Zutaten",
+     "keep": true
+    },
+    {
+     "id": "l_m2",
+     "type": "link",
+     "from": "m_top",
+     "to": "m_fas",
+     "style": "gold",
+     "head": true,
+     "in": "dann die Zutaten+0.25",
+     "keep": true
+    },
+    {
+     "id": "l_m3",
+     "type": "link",
+     "from": "m_top",
+     "to": "m_tom",
+     "style": "gold",
+     "head": true,
+     "in": "dann die Zutaten+0.5",
+     "keep": true
+    },
+    {
+     "id": "tag_unten",
+     "type": "tag",
+     "text": "von *unten*",
+     "x": 254,
+     "y": 868,
+     "size": 38,
+     "in": "Kathi baut von unten"
+    },
+    {
+     "id": "tag_oben",
+     "type": "tag",
+     "text": "von *oben*",
+     "x": 776,
+     "y": 868,
+     "size": 38,
+     "in": "Markus baut von oben"
+    },
+    {
+     "id": "welt",
+     "type": "icon",
+     "kind": "planet",
+     "x": 515,
+     "y": 1130,
+     "size": 140,
+     "ring": true,
+     "in": "Bild von der Welt"
+    },
+    {
+     "id": "birne",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 988,
+     "y": 524,
+     "size": 78,
+     "in": "von einer Idee",
+     "out": "Beides geht"
+    }
+   ]
+  },
+  {
+   "at": "Und heute Abend",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "kathi",
+     "type": "figure",
+     "role": "woman",
+     "hair": "ponytail",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "look": "right",
+     "x": 254,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "fast immer",
+       "mood": "neutral"
+      },
+      {
+       "at": "nur so weit",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "fast immer",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "markus",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "look": "left",
+     "x": 776,
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "kein Geschäft offen",
+       "mood": "sad"
+      },
+      {
+       "at": "fehlt der Boden",
+       "mood": "worried"
+      },
+      {
+       "at": "Und bei Kathi",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "kein Geschäft offen",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "zettel",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 776,
+     "y": 1252,
+     "w": 170,
+     "h": 130,
+     "text": "Einkauf",
+     "size": 32,
+     "z": 3.6,
+     "enter": "pop",
+     "in": "schreibt die Einkaufsliste"
+    },
+    {
+     "id": "schild",
+     "type": "prop",
+     "kind": "sign",
+     "x": 515,
+     "w": 290,
+     "h": 110,
+     "text": "*Geschlossen*",
+     "size": 44,
+     "enter": "pop",
+     "in": "kein Geschäft offen"
+    },
+    {
+     "id": "st_immer",
+     "type": "stamp",
+     "text": "wie immer",
+     "x": 254,
+     "y": 880,
+     "rot": -0.08,
+     "size": 46,
+     "in": "fast immer"
+    }
+   ]
+  },
+  {
+   "at": "Bis Kathi sagt",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "kathi",
+     "type": "figure",
+     "role": "woman",
+     "hair": "ponytail",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "look": "right",
+     "x": 254,
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Gib mal",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Gib mal",
+       "kind": "raise",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Gib mal",
+       "end:das Kochbuch"
+      ]
+     ]
+    },
+    {
+     "id": "markus",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "look": "left",
+     "x": 776,
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Gib mal",
+       "mood": "open"
+      },
+      {
+       "at": "end:das Kochbuch",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "buch2",
+     "type": "prop",
+     "kind": "book",
+     "x": 776,
+     "y": 1252,
+     "w": 190,
+     "h": 130,
+     "text": "Lasagne",
+     "size": 34,
+     "z": 3.6,
+     "enter": "pop",
+     "keep": true,
+     "moves": [
+      {
+       "at": "end:das Kochbuch",
+       "x": 254,
+       "y": 1252,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "b_gib",
+     "type": "bubble",
+     "from": "kathi",
+     "text": "Gib mal das *Kochbuch*.",
+     "x": 290,
+     "y": 905,
+     "maxW": 420,
+     "size": 40,
+     "in": "Gib mal"
+    }
+   ]
+  },
+  {
+   "at": "Sie schlägt die Lasagne",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "kathi",
+     "type": "figure",
+     "role": "woman",
+     "hair": "ponytail",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "look": "right",
+     "x": 254,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Zucchini statt",
+       "mood": "happy"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Zucchini statt",
+       "kind": "point",
+       "dur": 1.8
+      },
+      {
+       "at": "wo sich beide treffen",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "markus",
+     "type": "figure",
+     "role": "man",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "look": "left",
+     "x": 776,
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Zucchini statt",
+       "mood": "wow"
+      },
+      {
+       "at": "end:entsteht eine",
+       "mood": "happy"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "wo sich beide treffen+0.2",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 515,
+     "w": 290,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "type": "prop",
+     "kind": "casserole",
+     "x": 515,
+     "y": 1288,
+     "w": 240,
+     "h": 100,
+     "z": 3.6,
+     "slots": 5,
+     "enter": "pop",
+     "id": "form1",
+     "layers": [
+      "#B5DFA6",
+      "#F2A08F"
+     ],
+     "in": "Schicht für Schicht",
+     "out": "für Schicht+0.16"
+    },
+    {
+     "type": "prop",
+     "kind": "casserole",
+     "x": 515,
+     "y": 1288,
+     "w": 240,
+     "h": 100,
+     "z": 3.6,
+     "slots": 5,
+     "enter": "none",
+     "id": "form2",
+     "layers": [
+      "#B5DFA6",
+      "#F2A08F",
+      "#B5DFA6",
+      "#F2A08F"
+     ],
+     "in": "für Schicht+0.16",
+     "out": "end:entsteht eine"
+    },
+    {
+     "type": "prop",
+     "kind": "casserole",
+     "x": 515,
+     "y": 1288,
+     "w": 240,
+     "h": 100,
+     "z": 3.6,
+     "slots": 5,
+     "enter": "none",
+     "id": "form3",
+     "layers": [
+      "#B5DFA6",
+      "#F2A08F",
+      "#B5DFA6",
+      "#F2A08F",
+      "#FFF8EC"
+     ],
+     "crumbs": true,
+     "steam": true,
+     "in": "end:entsteht eine"
+    },
+    {
+     "id": "z_top",
+     "type": "node",
+     "x": 776,
+     "y": 540,
+     "w": 420,
+     "h": 96,
+     "label": "Zucchini-Lasagne",
+     "color": "#FBDDBF",
+     "size": 40,
+     "z": 2.6,
+     "in": "end:entsteht eine",
+     "states": [
+      {
+       "at": "end:entsteht eine",
+       "state": "gold"
+      },
+      {
+       "at": "Die Idee kommt von oben",
+       "state": "glow"
+      },
+      {
+       "at": "die Zutaten von unten",
+       "state": "gold"
+      },
+      {
+       "at": "wo sich beide treffen",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "l_u1",
+     "type": "link",
+     "from": "k_zuc",
+     "to": "z_top",
+     "style": "gold",
+     "head": true,
+     "bend": -70,
+     "in": "die Zutaten von unten"
+    },
+    {
+     "id": "l_u2",
+     "type": "link",
+     "from": "k_feta",
+     "to": "z_top",
+     "style": "gold",
+     "head": true,
+     "bend": -70,
+     "in": "die Zutaten von unten+0.2"
+    },
+    {
+     "id": "l_u3",
+     "type": "link",
+     "from": "k_tom",
+     "to": "z_top",
+     "style": "gold",
+     "head": true,
+     "bend": 70,
+     "in": "die Zutaten von unten+0.4"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 515,
+     "y": 960,
+     "size": 90,
+     "in": "wo sich beide treffen",
+     "out": "wie im Kopf"
+    },
+    {
+     "id": "welt2",
+     "type": "icon",
+     "kind": "planet",
+     "x": 515,
+     "y": 960,
+     "size": 120,
+     "ring": true,
+     "in": "wie im Kopf"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Heute machen wir",
+   "x": 810,
+   "y": 815
+  },
+  {
+   "at": "dann das Gericht",
+   "x": 254,
+   "y": 540
+  },
+  {
+   "at": "dann die Zutaten",
+   "x": 776,
+   "y": 740
+  },
+  {
+   "at": "kein Geschäft offen",
+   "x": 515,
+   "y": 1223
+  },
+  {
+   "at": "Gib mal",
+   "x": 290,
+   "y": 905
+  },
+  {
+   "at": "Zucchini statt+1.1",
+   "x": 607,
+   "y": 740
+  },
+  {
+   "at": "end:entsteht eine",
+   "x": 776,
+   "y": 540
+  },
+  {
+   "at": "wo sich beide treffen",
+   "x": 515,
+   "y": 960
+  }
+ ]
+}

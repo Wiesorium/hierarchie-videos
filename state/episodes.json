@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-20",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-20-morgen-kuehlschrank-oder-kochbuch",
+   "slug": "kuehlschrank-oder-kochbuch",
+   "titel": "Kühlschrank oder Kochbuch?",
+   "idee": "idee-10",
+   "cta": "kurs",
+   "hooks": {
+    "a": "Sie kocht aus dem Kühlschrank, er aus dem Kochbuch, und beide machen einen typischen Fehler.",
+    "b": "Ob du aus dem Kühlschrank kochst oder aus dem Rezept: Genauso baust du dein Weltbild.",
+    "c": "„Heute machen wir Lasagne!“, sagt er, und am Sonntag hat kein Geschäft offen."
+   },
+   "dauer": {
+    "a": 87.4,
+    "b": 87.0,
+    "c": 86.73
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/QrB9MHIX48AgVQ0GeAEV",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Kühlschrank oder Rezept) als Paarszene mit Kathi (achtunddreißig) und Markus (vierzig) am Sonntagabend selbst ergänzt. Zwei Knotenbäume nebeneinander aus einzelnen Knoten: links von unten (Zucchini, Feta, Tomaten → Nudeln mit Sauce, Goldfäden mit Pfeil nach oben), rechts von oben (Lasagne → Nudelplatten, Faschiertes, Tomaten, Pfeile nach unten). Im Moll-Teil werden Markus' Zutaten zu leeren Plätzen (Schild „Geschlossen“), am Ende wandern Kathis Zutaten im Bogen in diese Plätze, und aus „Lasagne“ wird „Zucchini-Lasagne“. Neues Engine-Teil: Auflaufform (casserole) mit Schichten, Feta und Dampf. Hauptteil der Stimme 79,9 s, Videos 86,7 bis 87,4 s. Captions in Drive: 2026-11-20-kuehlschrank-oder-kochbuch-captions.",
+   "dateien": [
+    "kuehlschrank-oder-kochbuch-hook-a.mp4",
+    "kuehlschrank-oder-kochbuch-hook-b.mp4",
+    "kuehlschrank-oder-kochbuch-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-19",
    "slot": "abend",
    "ordner": "episodes/2026-11-19-abend-ein-curry-drei-ebenen",

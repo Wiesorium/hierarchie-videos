@@ -117,10 +117,11 @@
    "thema": "Von unten oder von oben bauen",
    "quelle": "Ideen-Tabelle Nr. 10",
    "cta": "kurs",
-   "beispiel": "Aus dem Kühlschrank kochen (Zutaten → Gericht) oder ein Rezept nachkochen (Gericht → Einkauf)",
+   "beispiel": "Aus dem Kühlschrank kochen (Zutaten → Gericht) oder ein Rezept nachkochen (Gericht → Einkauf) (im Lauf 20.11.2026 morgens als Paarszene ergänzt: Kathi, achtunddreißig, öffnet am Sonntagabend den Kühlschrank: Zucchini, Feta, Tomaten, „Dann gibt's Nudeln mit Sauce.“; Markus, vierzig, öffnet das Kochbuch: „Heute machen wir Lasagne!“; seine Einkaufsliste scheitert, weil am Sonntag kein Geschäft offen hat, bei ihr gibt es fast immer dasselbe; bis Kathi sagt „Gib mal das Kochbuch.“: Zucchini statt Nudelplatten, Feta statt Faschiertem, eine Zucchini-Lasagne)",
    "einsicht": "Manche bauen ihr Weltbild aus Erfahrungen nach oben, andere starten mit einem großen Rahmen und füllen ihn. Beide haben typische Fehler.",
    "hook": "Kochst du aus dem Kühlschrank oder aus dem Rezept?",
-   "status": "offen"
+   "status": "erledigt",
+   "erledigt": "2026-11-20"
   },
   {
    "id": "idee-11",
