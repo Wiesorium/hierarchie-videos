@@ -24,7 +24,7 @@ GROUND_Y = 1478  # figures and floor props stand here when they have no y (engin
 TYPES = {'figure', 'prop', 'cabinet', 'tree', 'node', 'link', 'arrow', 'card', 'bubble', 'thought', 'stamp', 'tag', 'icon'}
 PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book', 'cup', 'plate', 'clock', 'sofa', 'tree', 'bench', 'door',
               'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars', 'pot',
-              'fridge', 'bowl', 'bottle', 'cushions'}
+              'fridge', 'bowl', 'bottle', 'cushions', 'casserole'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
          'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}

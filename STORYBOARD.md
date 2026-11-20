@@ -94,7 +94,9 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 `pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf), `fridge` (Kühlschrank; `"open": true` zeigt das helle Innere mit Gläsern,
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer), `bottle` (Flasche mit Korken, `text` aufs Etikett),
 `cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
-`"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
+`"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
+gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
+überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
 (y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
 
 ### cabinet – der Wissensschrank

@@ -65,6 +65,20 @@ export function drawProp(ctx, p, t) {
   fn(ctx, x, y, w, h, p, t);
 }
 
+// Three soft white steam threads rising above `top` (pot, casserole).
+function steam(ctx, x, top, w, t = 0) {
+  ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = 9;
+  for (let i = -1; i <= 1; i++) {
+    const ph = ((t * 0.45 + (i + 1) * 0.33) % 1 + 1) % 1;
+    const x0 = x + i * w * 0.24, y0 = top - 18 - ph * 40, len = 110;
+    ctx.strokeStyle = `rgba(255,255,255,${(0.85 * Math.sin(ph * Math.PI)).toFixed(3)})`;
+    ctx.beginPath();
+    for (let k = 0; k <= 12; k++) { const yy = y0 - (k / 12) * len; const xx = x0 + Math.sin(k / 12 * Math.PI * 2 + t * 2 + i) * 12; if (k === 0) ctx.moveTo(xx, yy); else ctx.lineTo(xx, yy); }
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
 function textLines(ctx, lines, cx, cy, px, color, gap = 1.25) {
   const L = Array.isArray(lines) ? lines : [lines]; const total = (L.length - 1) * px * gap;
   L.forEach((ln, i) => richText(ctx, ln, cx, cy - total / 2 + i * px * gap, px, color));
@@ -213,16 +227,7 @@ const PROPS = {
     fillShape(ctx, () => { rrect(ctx, x - w / 2 + 22, top + h * 0.42, w - 44, 14, 7); }, 'rgba(255,255,255,0.45)', { sh: false });
     if (p.text) textLines(ctx, p.text, x, top + h * 0.7, p.size || 30, C.ink);
     if (p.steam === false) return;
-    ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = 9;
-    for (let i = -1; i <= 1; i++) {
-      const ph = ((t * 0.45 + (i + 1) * 0.33) % 1 + 1) % 1;
-      const x0 = x + i * w * 0.24, y0 = top - 18 - ph * 40, len = 110;
-      ctx.strokeStyle = `rgba(255,255,255,${(0.85 * Math.sin(ph * Math.PI)).toFixed(3)})`;
-      ctx.beginPath();
-      for (let k = 0; k <= 12; k++) { const yy = y0 - (k / 12) * len; const xx = x0 + Math.sin(k / 12 * Math.PI * 2 + t * 2 + i) * 12; if (k === 0) ctx.moveTo(xx, yy); else ctx.lineTo(xx, yy); }
-      ctx.stroke();
-    }
-    ctx.restore();
+    steam(ctx, x, top, w, t);
   },
   // Fridge standing on the ground: pale door with freezer split and handles; "open": true shows the lit inside with shelves and
   // a few jars, the door swung to "doorSide" (left by default).
@@ -268,6 +273,39 @@ const PROPS = {
     fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, rimY, w / 2, h, 0, 0, Math.PI); ctx.closePath(); }, c1);
     fillShape(ctx, () => rrect(ctx, x - w / 2 - 8, rimY - 10, w + 16, 22, 11), c1, { depth: 0.5 });
     fillShape(ctx, () => rrect(ctx, x - w * 0.3, rimY + h * 0.32, w * 0.6, 12, 6), 'rgba(255,255,255,0.45)', { sh: false });
+  },
+  // Baking dish (Auflaufform) standing on y (a table top): pale glass dish with two handles. "layers": colours from the
+  // bottom up, shown as wavy stripes through the glass; "slots": how many layers the dish holds (default: number of layers,
+  // at least 3), so dishes with fewer layers can cross-fade into fuller ones; "crumbs": true scatters feta cubes on top;
+  // "steam": true lets steam rise like the pot.
+  casserole(ctx, x, y, w = 260, h = 110, p = {}, t = 0) {
+    const c1 = p.color ? col(p.color) : '#DCEAF7', top = y - h;
+    for (const sx of [-1, 1]) fillShape(ctx, () => rrect(ctx, x + sx * (w / 2 + 4) - 22, top + h * 0.18, 44, 22, 11), c1, { depth: 0.4 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.roundRect(x - w / 2, top, w, h, [14, 14, h * 0.32, h * 0.32]); }, c1);
+    const ix = x - w / 2 + 12, iw = w - 24, iy = top + 12, ih = h - 22;
+    ctx.save(); ctx.beginPath(); ctx.roundRect(ix, iy, iw, ih, [8, 8, h * 0.26, h * 0.26]); ctx.clip();
+    ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.fillRect(ix, iy, iw, ih);
+    const L = p.layers || []; const n = Math.max(p.slots ?? L.length, 3, L.length); const lh = ih / n;
+    const topY = iy + ih - L.length * lh;
+    // top layer first: each lower layer is drawn over the bottom part of the ones above it
+    [...L].map((lc, i) => [lc, i]).reverse().forEach(([lc, i]) => {
+      const ly = iy + ih - (i + 1) * lh;
+      fillShape(ctx, () => {
+        ctx.beginPath(); ctx.moveTo(ix - 2, iy + ih + 2);
+        for (let k = 0; k <= 16; k++) { const xx = ix + (k / 16) * iw; ctx.lineTo(xx, ly + Math.sin(k * 1.3 + i * 2.1) * lh * 0.12); }
+        ctx.lineTo(ix + iw + 2, iy + ih + 2); ctx.closePath();
+      }, col(lc), { depth: 0.2 });
+    });
+    if (p.crumbs && L.length) {
+      const r = rng(5); ctx.fillStyle = '#FFFDF6';
+      for (let k = 0; k < 9; k++) { const cx = ix + iw * (0.08 + 0.84 * r()), cy = topY + lh * (0.15 + 0.45 * r()), s = Math.max(5, w * 0.03);
+        fillShape(ctx, () => rrect(ctx, cx - s / 2, cy - s / 2, s, s, 2), '#FFFDF6', { depth: 0.2 }); }
+    }
+    ctx.restore();
+    // glass shine and rim
+    ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.55)'; rrect(ctx, x - w / 2 + 18, top + h * 0.2, 10, h * 0.5, 5); ctx.fill(); ctx.restore();
+    fillShape(ctx, () => rrect(ctx, x - w / 2 - 6, top - 8, w + 12, 18, 9), c1, { depth: 0.4 });
+    if (p.steam) steam(ctx, x, top - 10, w, t);
   },
   // Bottle standing on y (a table top or shelf): pale glass, cork and a white label with "text".
   bottle(ctx, x, y, w = 90, h = 230, p) { drawBottle(ctx, x, y, w, h, p.color ? col(p.color) : null, p.text, p.size); },
