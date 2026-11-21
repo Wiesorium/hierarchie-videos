@@ -361,6 +361,30 @@ const PROPS = {
   },
   // Bottle standing on y (a table top or shelf): pale glass, cork and a white label with "text".
   bottle(ctx, x, y, w = 90, h = 230, p) { drawBottle(ctx, x, y, w, h, p.color ? col(p.color) : null, p.text, p.size); },
+  // A bathroom sink standing on y (the floor): white basin on a pedestal, its rim at y - h, a silver tap behind it and,
+  // with "mirror": true, a mirror on the wall above (mirror height "mirrorH", default 260).
+  sink(ctx, x, y, w = 300, h = 250, p = {}) {
+    const top = y - h, bh = Math.min(90, h * 0.36), pw = w * 0.3;
+    if (p.mirror) {
+      const mw = w * 0.82, mh = p.mirrorH ?? 260, my = top - 70 - mh;
+      fillShape(ctx, () => rrect(ctx, x - mw / 2 - 14, my - 14, mw + 28, mh + 28, 26), C.paper, { depth: 0.7 });
+      fillShape(ctx, () => rrect(ctx, x - mw / 2, my, mw, mh, 18), '#DCEFF8', { sh: false });
+      ctx.save(); ctx.strokeStyle = 'rgba(255,255,255,0.8)'; ctx.lineWidth = 12; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(x - mw * 0.28, my + mh * 0.22); ctx.lineTo(x - mw * 0.08, my + mh * 0.08); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(x - mw * 0.3, my + mh * 0.42); ctx.lineTo(x + mw * 0.02, my + mh * 0.18); ctx.stroke(); ctx.restore();
+    }
+    // tap: post and spout behind the basin
+    fillShape(ctx, () => rrect(ctx, x - 13, top - 64, 26, 78, 10), '#C3CAD4', { depth: 0.5 });
+    fillShape(ctx, () => rrect(ctx, x - 13, top - 64, 66, 22, 11), '#D3D9E1', { depth: 0.5 });
+    fillShape(ctx, () => rrect(ctx, x - 34, top - 78, 42, 16, 8), '#D3D9E1', { depth: 0.4 });
+    // pedestal and basin
+    fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(x - pw / 2, top + bh - 6); ctx.lineTo(x + pw / 2, top + bh - 6);
+      ctx.lineTo(x + pw * 0.62, y); ctx.lineTo(x - pw * 0.62, y); ctx.closePath(); }, '#F1F5F9', { depth: 0.6 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(x - w / 2, top); ctx.lineTo(x + w / 2, top);
+      ctx.quadraticCurveTo(x + w / 2, top + bh, x, top + bh); ctx.quadraticCurveTo(x - w / 2, top + bh, x - w / 2, top); ctx.closePath(); }, C.paper, { depth: 0.8 });
+    fillShape(ctx, () => rrect(ctx, x - w / 2 - 8, top - 12, w + 16, 22, 11), C.paper, { depth: 0.5 });
+    ctx.save(); ctx.fillStyle = 'rgba(159,211,232,0.35)'; rrect(ctx, x - w / 2 + 14, top - 4, w - 28, 8, 4); ctx.fill(); ctx.restore();
+  },
   // A pile of sofa cushions on the ground (three, two, one); its top is at y - h, so a figure can stand on it with "y".
   cushions(ctx, x, y, w = 420, h = 250, p) {
     const cols = p.colors || ['#F9C6D3', '#C9A3D9', '#BFD9F2', '#FBE3A0', '#B5DFC9', '#F8D5C8'];

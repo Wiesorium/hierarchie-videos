@@ -268,13 +268,14 @@ export function drawIcon(ctx, e, t) {
     case 'lemon': drawLemon(ctx, x, y, s, c); break;
     case 'bottle': if (e.pour) drawBottlePour(ctx, x, y, s * 0.42, s * 0.96, t, c, e.look === 'right'); else drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
     case 'spoon': drawSpoon(ctx, x, y, s, e.rot ?? -0.5, c, e.food); break;
+    case 'toothbrush': drawToothbrush(ctx, x, y, s, e.rot ?? 0, c, e.look === 'left', e.paste !== false, e.brush ? t : null); break;
     case 'cashew': drawCashew(ctx, x - s * 0.16, y - s * 0.04, s * 0.95, -0.5, c || '#E6C38C', true); drawCashew(ctx, x + s * 0.2, y + s * 0.12, s * 0.8, 0.9, c || '#E6C38C', true); break;
     case 'salt': drawSalt(ctx, x, e.pour ? y : y + s * 0.5, s * 0.55, s, !!e.pour, t, c); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush'];
 
 // A paper-cut spoon: its round bowl centred at (x, y), the handle pointing away at angle `rot` (0 = straight down,
 // negative = down to the left). `food`: a colour puts a little bite in the bowl.
@@ -285,6 +286,31 @@ function drawSpoon(ctx, x, y, s, rot, c, food) {
   fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, 0, s * 0.17, s * 0.23, 0, 0, Math.PI * 2); }, c1, { depth: 0.5 });
   if (food) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, -s * 0.02, s * 0.12, s * 0.14, 0, 0, Math.PI * 2); }, col(food), { depth: 0.25 });
   else { ctx.fillStyle = 'rgba(255,255,255,0.6)'; ctx.beginPath(); ctx.ellipse(-s * 0.05, -s * 0.06, s * 0.05, s * 0.1, 0, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+}
+
+// A paper-cut toothbrush: the bristle head centred at (x, y), the handle pointing away to the right (`left` mirrors it),
+// turned by `rot` (positive = handle down). `paste` puts a mint stripe of toothpaste on the bristles. With a time `t`
+// (icon field "brush": true) it scrubs back and forth like brushing teeth.
+function drawToothbrush(ctx, x, y, s, rot, c, left, paste, t) {
+  const c1 = c || '#F49AAE';
+  ctx.save(); ctx.translate(x, y); if (left) ctx.scale(-1, 1); ctx.rotate(rot);
+  if (t != null) ctx.translate(Math.sin(t * 15) * s * 0.07, 0);
+  fillShape(ctx, () => rrect(ctx, s * 0.05, -s * 0.035, s * 0.34, s * 0.07, s * 0.035), c1, { depth: 0.5 });
+  fillShape(ctx, () => rrect(ctx, s * 0.34, -s * 0.06, s * 0.66, s * 0.12, s * 0.06), c1, { depth: 0.5 });
+  fillShape(ctx, () => rrect(ctx, -s * 0.2, -s * 0.06, s * 0.3, s * 0.12, s * 0.06), c1, { depth: 0.5 });
+  ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.55)'; rrect(ctx, s * 0.44, -s * 0.03, s * 0.44, s * 0.025, s * 0.012); ctx.fill(); ctx.restore();
+  // bristles: white tufts with a pale blue stripe
+  fillShape(ctx, () => rrect(ctx, -s * 0.19, -s * 0.2, s * 0.27, s * 0.15, s * 0.03), C.paper, { depth: 0.35 });
+  ctx.save(); ctx.fillStyle = 'rgba(159,211,232,0.75)';
+  for (let i = 0; i < 4; i++) { ctx.fillRect(-s * 0.16 + i * s * 0.065, -s * 0.19, s * 0.025, s * 0.13); }
+  ctx.restore();
+  if (paste) {
+    fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(-s * 0.19, -s * 0.21); ctx.bezierCurveTo(-s * 0.12, -s * 0.3, -s * 0.04, -s * 0.2, s * 0.02, -s * 0.27);
+      ctx.bezierCurveTo(s * 0.07, -s * 0.31, s * 0.11, -s * 0.24, s * 0.08, -s * 0.2); ctx.closePath(); }, '#BFE8DD', { depth: 0.3 });
+    ctx.save(); ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.lineWidth = Math.max(2, s * 0.02); ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(-s * 0.13, -s * 0.24); ctx.quadraticCurveTo(-s * 0.05, -s * 0.27, s * 0.03, -s * 0.25); ctx.stroke(); ctx.restore();
+  }
   ctx.restore();
 }
 

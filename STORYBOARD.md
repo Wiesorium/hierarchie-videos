@@ -95,7 +95,7 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
 Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen; `"potatoes": true` füllt sie mit Kartoffelsalat), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
 lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
-`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
+`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `sink` (Waschbecken auf einer Säule mit Wasserhahn, Rand bei y − h; `"mirror": true` hängt einen Spiegel darüber, Höhe `"mirrorH"`), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
 `"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber, `"potatoes": true` häuft Kartoffelsalat darauf), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
 gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
 überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`,
@@ -159,7 +159,8 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn), `planet` (Pastellkugel in `color`,
   `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz), `lemon` (Zitrone mit Blatt), `bottle` (kleine Flasche), `cashew` (zwei Cashewkerne),
   `salt` (Salzstreuer; `"pour": true` dreht ihn kopfüber und lässt Salz rieseln, y = Deckelspitze, das Salz fällt nach unten),
-  `spoon` (Löffel; x/y = Mitte der Löffelschale, `"rot"` dreht den Stiel: 0 = nach unten, positiv = nach links unten;
+  `toothbrush` (Zahnbürste; x/y = Mitte der Borsten, Stiel nach rechts, `"look": "left"` spiegelt, `"rot"` dreht
+  (positiv = Stiel nach unten), `"paste": false` ohne Zahnpasta, `"brush": true` schrubbt hin und her), `spoon` (Löffel; x/y = Mitte der Löffelschale, `"rot"` dreht den Stiel: 0 = nach unten, positiv = nach links unten;
   `"food"`: Farbe für einen Bissen darauf); `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
   (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
