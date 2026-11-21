@@ -1,0 +1,1282 @@
+{
+ "slug": "eine-schublade-tiefer",
+ "title": "Eine Schublade tiefer",
+ "cta": "whatsapp",
+ "hero": "anton",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind schiebt den Teller weg, sagt „Schmeckt nicht“, und keiner weiß, was fehlt.",
+   "card": [
+    "„Schmeckt nicht.“",
+    "Aber was fehlt?"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "„Schmeckt nicht“ ist keine Antwort, sondern der Anfang vom Abschmecken.",
+   "card": [
+    "„Schmeckt nicht“",
+    "ist keine Antwort."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Schmeckt nicht“, sagt das Kind, „Da fehlt Säure“, sagt die Köchin, und beide meinen denselben Salat.",
+   "card": [
+    "„Schmeckt nicht.“ „Da fehlt Säure.“",
+    "Derselbe Salat."
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Mama ist Köchin. Anton ist sieben. Heute gibt es Kartoffelsalat. Anton kostet und schiebt den Teller weg: „Schmeckt nicht.“ Mama kostet auch: „Da fehlt Säure.“",
+  "block1": "Beide haben recht, nur auf verschiedenen Ebenen. Schau dir das als Schrank an. Ganz oben liegt „schmeckt nicht“. Darunter: salzig, süß, sauer. Ganz unten die Zutaten: Salz, Zucker, Essig. Mama hat keine Zauberzunge. Sie geht nur nach unten und fragt jede Schublade einzeln.",
+  "rehook1": "Anton staunt: „Woher weißt du das?“",
+  "block2": "Mama zeigt es ihm, eine Schublade nach der anderen. „Zu salzig?“ Anton kostet: „Nein.“ „Zu süß?“ „Nein.“ „Sauer genug?“ Anton überlegt: „Zu wenig sauer!“ Ein Schuss Essig, und Anton isst zwei Teller.",
+  "rehook2": "Zwei Tage später schmeckt Anton etwas ab, das man nicht essen kann.",
+  "block3": "Sein Bild gefällt ihm nicht: „Das ist doof.“ Dann fragt er wie Mama: Das Haus? Passt. Der Baum? Passt. Der Himmel? „Zu leer!“ Er malt eine Sonne dazu. „Doof“ und „schmeckt nicht“ sind nicht falsch. Sie sind die oberste Schublade. Die Antwort liegt eine Schublade tiefer.",
+  "closing": "Wann hat dein Kind zuletzt „doof“ gesagt, und was lag darunter?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Wann hat dein Kind zuletzt „doof“ gesagt,",
+  "und was lag darunter?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 140,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Mama kostet auch",
+       "mood": "open"
+      },
+      {
+       "at": "Da fehlt Säure",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Mama kostet auch",
+       "kind": "think",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Da fehlt Säure",
+       "end:fehlt Säure"
+      ]
+     ]
+    },
+    {
+     "id": "anton",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Anton kostet",
+       "mood": "open"
+      },
+      {
+       "at": "schiebt den Teller",
+       "mood": "sad"
+      },
+      {
+       "at": "Mama kostet auch",
+       "mood": "neutral"
+      },
+      {
+       "at": "fehlt Säure",
+       "mood": "wow"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Schmeckt nicht",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Schmeckt nicht",
+       "end:Schmeckt nicht"
+      ]
+     ]
+    },
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 790,
+     "y": 760,
+     "w": 300,
+     "h": 240
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 700,
+     "w": 480,
+     "h": 190,
+     "z": 3.5,
+     "out": "Tage später-0.2"
+    },
+    {
+     "id": "teller",
+     "type": "prop",
+     "kind": "plate",
+     "x": 540,
+     "y": 1288,
+     "w": 170,
+     "potatoes": true,
+     "z": 3.6,
+     "out": "Tage später-0.2",
+     "moves": [
+      {
+       "at": "schiebt den Teller",
+       "x": 650,
+       "dur": 0.5
+      },
+      {
+       "at": "Anton isst",
+       "x": 540,
+       "dur": 0.6
+      }
+     ]
+    },
+    {
+     "id": "schuessel",
+     "type": "prop",
+     "kind": "bowl",
+     "x": 820,
+     "y": 1288,
+     "w": 200,
+     "h": 82,
+     "potatoes": true,
+     "color": "#F9C6D3",
+     "z": 3.6,
+     "out": "Tage später-0.2"
+    },
+    {
+     "id": "tag_koechin",
+     "type": "tag",
+     "text": "Köchin",
+     "x": 140,
+     "y": 945,
+     "in": "Mama ist Köchin",
+     "out": "Mama kostet auch-0.2"
+    },
+    {
+     "id": "tag_anton",
+     "type": "tag",
+     "text": "Anton, 7",
+     "x": 330,
+     "y": 1110,
+     "in": "Anton ist",
+     "out": "Anton kostet"
+    },
+    {
+     "id": "loeffel_a",
+     "type": "icon",
+     "kind": "spoon",
+     "x": 392,
+     "y": 1246,
+     "size": 72,
+     "rot": 0.7,
+     "food": "#F1D88A",
+     "in": "Anton kostet",
+     "out": "Schmeckt nicht"
+    },
+    {
+     "id": "loeffel_m",
+     "type": "icon",
+     "kind": "spoon",
+     "x": 232,
+     "y": 1128,
+     "size": 92,
+     "rot": 0.7,
+     "food": "#F1D88A",
+     "in": "Mama kostet auch",
+     "out": "fehlt Säure+0.4"
+    },
+    {
+     "id": "b_nicht",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Schmeckt *nicht*.",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Schmeckt nicht-0.25"
+    },
+    {
+     "id": "b_saeure",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Da fehlt *Säure*.",
+     "x": 245,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Da fehlt-0.2"
+    }
+   ]
+  },
+  {
+   "at": "Beide haben recht",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 140,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Zauberzunge",
+       "mood": "grin"
+      },
+      {
+       "at": "nach unten",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "keine Zauberzunge",
+       "kind": "shrug",
+       "dur": 1.5
+      }
+     ]
+    },
+    {
+     "id": "anton",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ganz oben liegt",
+       "mood": "open"
+      },
+      {
+       "at": "Zauberzunge",
+       "mood": "laugh"
+      },
+      {
+       "at": "nach unten",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Darunter",
+       "kind": "think",
+       "dur": 1.8
+      }
+     ]
+    },
+    {
+     "id": "k_recht",
+     "type": "card",
+     "x": 700,
+     "y": 700,
+     "lines": [
+      "Beide haben *recht*."
+     ],
+     "size": 60,
+     "out": "Schau dir das als Schrank"
+    },
+    {
+     "id": "schrank",
+     "type": "cabinet",
+     "x": 700,
+     "y": 500,
+     "w": 560,
+     "rowH": 100,
+     "legs": 0,
+     "ground": 910,
+     "wobble": 0,
+     "in": "Schau dir das als Schrank",
+     "rows": [
+      [
+       "oben"
+      ],
+      [
+       "salzig",
+       "suess",
+       "sauer"
+      ],
+      [
+       "salz",
+       "zucker",
+       "essig"
+      ]
+     ],
+     "drawers": {
+      "oben": {
+       "label": "schmeckt nicht",
+       "color": "kids",
+       "size": 46,
+       "align": "center",
+       "in": "Ganz oben liegt",
+       "states": [
+        {
+         "at": "Ganz oben liegt",
+         "state": "glow"
+        },
+        {
+         "at": "Darunter",
+         "state": "normal"
+        },
+        {
+         "at": "nach unten",
+         "state": "glow"
+        },
+        {
+         "at": "fragt jede",
+         "state": "normal"
+        }
+       ]
+      },
+      "salzig": {
+       "label": "salzig",
+       "color": "ice",
+       "size": 38,
+       "align": "center",
+       "in": "salzig",
+       "states": [
+        {
+         "at": "fragt jede",
+         "state": "glow"
+        },
+        {
+         "at": "einzeln+0.5",
+         "state": "normal"
+        }
+       ]
+      },
+      "suess": {
+       "label": "süß",
+       "color": "idea",
+       "size": 40,
+       "align": "center",
+       "in": "süß",
+       "states": [
+        {
+         "at": "fragt jede+0.3",
+         "state": "glow"
+        },
+        {
+         "at": "einzeln+0.5",
+         "state": "normal"
+        }
+       ]
+      },
+      "sauer": {
+       "label": "sauer",
+       "color": "fresh",
+       "size": 38,
+       "align": "center",
+       "in": "sauer",
+       "states": [
+        {
+         "at": "nach unten",
+         "state": "glow"
+        },
+        {
+         "at": "fragt jede",
+         "state": "normal"
+        },
+        {
+         "at": "fragt jede+0.6",
+         "state": "glow"
+        },
+        {
+         "at": "einzeln+0.5",
+         "state": "normal"
+        }
+       ]
+      },
+      "salz": {
+       "label": "Salz",
+       "color": "ice",
+       "size": 38,
+       "align": "center",
+       "in": "Salz"
+      },
+      "zucker": {
+       "label": "Zucker",
+       "color": "idea",
+       "size": 38,
+       "align": "center",
+       "in": "Zucker"
+      },
+      "essig": {
+       "label": "Essig",
+       "color": "fresh",
+       "size": 38,
+       "align": "center",
+       "in": "Essig",
+       "states": [
+        {
+         "at": "nach unten+0.5",
+         "state": "glow"
+        },
+        {
+         "at": "einzeln+0.5",
+         "state": "normal"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pfeil_unten",
+     "type": "arrow",
+     "from": {
+      "x": 380,
+      "y": 585
+     },
+     "to": {
+      "x": 380,
+      "y": 850
+     },
+     "style": "red",
+     "in": "nach unten",
+     "out": "Zu salzig"
+    },
+    {
+     "id": "st_unten",
+     "type": "stamp",
+     "text": "nach unten",
+     "x": 205,
+     "y": 720,
+     "rot": -0.08,
+     "size": 50,
+     "in": "nach unten+0.2"
+    }
+   ]
+  },
+  {
+   "at": "Anton staunt",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 140,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Mama zeigt",
+       "mood": "happy"
+      },
+      {
+       "at": "Zu wenig sauer",
+       "mood": "grin"
+      },
+      {
+       "at": "Ein Schuss Essig",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Zu salzig",
+       "kind": "point",
+       "dur": 1.0
+      },
+      {
+       "at": "Zu süß",
+       "kind": "point",
+       "dur": 0.9
+      },
+      {
+       "at": "Sauer genug",
+       "kind": "point",
+       "dur": 1.0
+      }
+     ],
+     "talk": [
+      [
+       "Zu salzig",
+       "end:Zu salzig"
+      ],
+      [
+       "Zu süß",
+       "end:Zu süß"
+      ],
+      [
+       "Sauer genug",
+       "end:Sauer genug"
+      ]
+     ]
+    },
+    {
+     "id": "anton",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "mood": "wow",
+     "moods": [
+      {
+       "at": "Mama zeigt",
+       "mood": "open"
+      },
+      {
+       "at": "Anton kostet",
+       "mood": "open"
+      },
+      {
+       "at": "Nein",
+       "mood": "neutral"
+      },
+      {
+       "at": "Anton überlegt",
+       "mood": "neutral"
+      },
+      {
+       "at": "Zu wenig sauer",
+       "mood": "grin"
+      },
+      {
+       "at": "Anton isst",
+       "mood": "laugh"
+      },
+      {
+       "at": "end:Teller+0.4",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Anton überlegt",
+       "kind": "think",
+       "dur": 1.6
+      },
+      {
+       "at": "Anton isst",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Woher weißt",
+       "end:du das"
+      ],
+      [
+       "Nein",
+       "end:Nein"
+      ],
+      [
+       "Nein#2",
+       "end:Nein"
+      ],
+      [
+       "Zu wenig sauer",
+       "end:Zu wenig sauer"
+      ]
+     ],
+     "hop": "Anton isst"
+    },
+    {
+     "id": "schrank2",
+     "type": "cabinet",
+     "x": 700,
+     "y": 500,
+     "w": 560,
+     "rowH": 100,
+     "legs": 0,
+     "ground": 910,
+     "wobble": 0,
+     "enter": "none",
+     "in": "Anton staunt-0.1",
+     "rows": [
+      [
+       "oben2"
+      ],
+      [
+       "salzig2",
+       "suess2",
+       "sauer2"
+      ],
+      [
+       "salz2",
+       "zucker2",
+       "essig2"
+      ]
+     ],
+     "drawers": {
+      "oben2": {
+       "label": "schmeckt nicht",
+       "color": "kids",
+       "size": 46,
+       "align": "center",
+       "states": [
+        {
+         "at": "Anton isst",
+         "state": "dim"
+        }
+       ]
+      },
+      "salzig2": {
+       "label": "salzig",
+       "color": "ice",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "Zu salzig",
+         "state": "glow"
+        },
+        {
+         "at": "Nein",
+         "state": "check"
+        }
+       ]
+      },
+      "suess2": {
+       "label": "süß",
+       "color": "idea",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "Zu süß",
+         "state": "glow"
+        },
+        {
+         "at": "Nein#2",
+         "state": "check"
+        }
+       ]
+      },
+      "sauer2": {
+       "label": "sauer",
+       "color": "fresh",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "Sauer genug",
+         "state": "glow"
+        },
+        {
+         "at": "Zu wenig sauer",
+         "state": "red+shake"
+        },
+        {
+         "at": "Zu wenig sauer+0.75",
+         "state": "red"
+        },
+        {
+         "at": "Anton isst",
+         "state": "check"
+        }
+       ]
+      },
+      "salz2": {
+       "label": "Salz",
+       "color": "ice",
+       "size": 38,
+       "align": "center"
+      },
+      "zucker2": {
+       "label": "Zucker",
+       "color": "idea",
+       "size": 38,
+       "align": "center"
+      },
+      "essig2": {
+       "label": "Essig",
+       "color": "fresh",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "Ein Schuss Essig",
+         "state": "glow"
+        },
+        {
+         "at": "Anton isst",
+         "state": "gold+check"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "b_woher",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Woher weißt *du* das?",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Woher weißt-0.2",
+     "out": "Mama zeigt+0.8"
+    },
+    {
+     "id": "b_salzig",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Zu *salzig*?",
+     "x": 245,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Zu salzig-0.15",
+     "out": "Zu süß-0.15"
+    },
+    {
+     "id": "b_suess",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Zu *süß*?",
+     "x": 245,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Zu süß-0.15",
+     "out": "Sauer genug-0.15"
+    },
+    {
+     "id": "b_genug",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Sauer *genug*?",
+     "x": 245,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Sauer genug-0.15",
+     "out": "Ein Schuss Essig"
+    },
+    {
+     "id": "b_nein1",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Nein.",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Nein-0.1",
+     "out": "Zu süß"
+    },
+    {
+     "id": "b_nein2",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Nein.",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Nein#2-0.1",
+     "out": "Sauer genug"
+    },
+    {
+     "id": "b_wenig",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Zu wenig *sauer*!",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Zu wenig sauer-0.15",
+     "out": "Anton isst"
+    },
+    {
+     "id": "loeffel_a2",
+     "type": "icon",
+     "kind": "spoon",
+     "x": 392,
+     "y": 1246,
+     "size": 72,
+     "rot": 0.7,
+     "food": "#F1D88A",
+     "in": "Anton kostet",
+     "out": "Nein+0.2"
+    },
+    {
+     "id": "essigflasche",
+     "type": "icon",
+     "kind": "bottle",
+     "pour": true,
+     "x": 812,
+     "y": 1085,
+     "size": 150,
+     "in": "Ein Schuss Essig-0.1",
+     "out": "Anton isst+0.4"
+    },
+    {
+     "id": "st_schmeckt",
+     "type": "stamp",
+     "text": "Schmeckt!",
+     "x": 620,
+     "y": 1000,
+     "rot": -0.08,
+     "size": 56,
+     "in": "Anton isst+0.2"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 330,
+     "y": 1095,
+     "size": 78,
+     "in": "Anton isst+0.5"
+    }
+   ]
+  },
+  {
+   "at": "Tage später-0.2",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 140,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Das ist doof",
+       "mood": "neutral"
+      },
+      {
+       "at": "fragt er wie Mama",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "anton",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Sein Bild",
+       "mood": "worried"
+      },
+      {
+       "at": "Das ist doof",
+       "mood": "sad"
+      },
+      {
+       "at": "Dann fragt er",
+       "mood": "neutral"
+      },
+      {
+       "at": "Passt",
+       "mood": "smile"
+      },
+      {
+       "at": "Der Himmel",
+       "mood": "open"
+      },
+      {
+       "at": "Zu leer",
+       "mood": "wow"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Dann fragt er",
+       "kind": "think",
+       "dur": 2.4
+      }
+     ],
+     "talk": [
+      [
+       "Das ist doof",
+       "end:Das ist doof"
+      ],
+      [
+       "Zu leer",
+       "end:Zu leer"
+      ]
+     ]
+    },
+    {
+     "id": "tag_tage",
+     "type": "tag",
+     "text": "zwei Tage später",
+     "x": 300,
+     "y": 560,
+     "color": "plum",
+     "out": "Dann fragt er"
+    },
+    {
+     "id": "bild",
+     "type": "prop",
+     "kind": "paper",
+     "x": 700,
+     "y": 770,
+     "w": 520,
+     "h": 390,
+     "in": "Sein Bild",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "bild_baum",
+     "type": "prop",
+     "kind": "tree",
+     "x": 850,
+     "y": 935,
+     "w": 120,
+     "h": 220,
+     "in": "Sein Bild",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "bild_haus",
+     "type": "icon",
+     "kind": "house",
+     "x": 600,
+     "y": 860,
+     "size": 160,
+     "in": "Sein Bild",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "c_haus",
+     "type": "icon",
+     "kind": "check",
+     "x": 680,
+     "y": 780,
+     "size": 56,
+     "in": "Passt",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "c_baum",
+     "type": "icon",
+     "kind": "check",
+     "x": 920,
+     "y": 760,
+     "size": 56,
+     "in": "Passt#2",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "q_himmel",
+     "type": "icon",
+     "kind": "question",
+     "x": 700,
+     "y": 660,
+     "size": 72,
+     "in": "Der Himmel",
+     "out": "eine Sonne"
+    },
+    {
+     "id": "b_doof",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Das ist *doof*.",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Das ist doof-0.2",
+     "out": "Dann fragt er+0.3"
+    },
+    {
+     "id": "b_leer",
+     "type": "bubble",
+     "from": "anton",
+     "text": "Zu *leer*!",
+     "x": 440,
+     "y": 1040,
+     "maxW": 380,
+     "size": 42,
+     "in": "Zu leer-0.15",
+     "out": "eine Sonne+0.9"
+    }
+   ]
+  },
+  {
+   "at": "Er malt eine Sonne",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 140,
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Doof und",
+       "mood": "smile"
+      },
+      {
+       "at": "Die Antwort",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "anton",
+     "type": "figure",
+     "role": "boy",
+     "x": 330,
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "eine Sonne",
+       "mood": "laugh"
+      },
+      {
+       "at": "Doof und",
+       "mood": "smile"
+      },
+      {
+       "at": "Die Antwort",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "eine Sonne+0.2",
+       "kind": "cheer",
+       "dur": 1.3
+      }
+     ],
+     "hop": "eine Sonne+0.2"
+    },
+    {
+     "id": "stift",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 680,
+     "y": 720,
+     "size": 90,
+     "in": "Er malt",
+     "out": "dazu+0.3",
+     "moves": [
+      {
+       "at": "malt eine",
+       "x": 640,
+       "y": 690,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 560,
+     "y": 665,
+     "size": 110,
+     "in": "eine Sonne",
+     "out": "Doof und schmeckt nicht"
+    },
+    {
+     "id": "schrank3",
+     "type": "cabinet",
+     "x": 705,
+     "y": 520,
+     "w": 600,
+     "rowH": 110,
+     "in": "Doof und schmeckt nicht",
+     "rows": [
+      [
+       "doof",
+       "snicht"
+      ],
+      [
+       "himmel",
+       "sauer3"
+      ],
+      [
+       "sonne3",
+       "essig3"
+      ]
+     ],
+     "drawers": {
+      "doof": {
+       "label": "doof",
+       "color": "kids",
+       "size": 44,
+       "align": "center",
+       "states": [
+        {
+         "at": "oberste Schublade",
+         "state": "glow"
+        },
+        {
+         "at": "Die Antwort",
+         "state": "normal"
+        }
+       ]
+      },
+      "snicht": {
+       "label": "schmeckt nicht",
+       "color": "kids",
+       "size": 36,
+       "align": "center",
+       "states": [
+        {
+         "at": "oberste Schublade",
+         "state": "glow"
+        },
+        {
+         "at": "Die Antwort",
+         "state": "normal"
+        }
+       ]
+      },
+      "himmel": {
+       "label": "Himmel zu leer",
+       "color": "baby",
+       "size": 34,
+       "align": "center",
+       "in": "Die Antwort",
+       "states": [
+        {
+         "at": "Schublade tiefer",
+         "state": "gold+glow"
+        }
+       ]
+      },
+      "sauer3": {
+       "label": "zu wenig sauer",
+       "color": "fresh",
+       "size": 34,
+       "align": "center",
+       "in": "Die Antwort+0.2",
+       "states": [
+        {
+         "at": "Schublade tiefer",
+         "state": "gold+glow"
+        }
+       ]
+      },
+      "sonne3": {
+       "label": "Sonne",
+       "color": "idea",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "end:Schublade tiefer",
+         "state": "check"
+        }
+       ],
+       "icon": "sun"
+      },
+      "essig3": {
+       "label": "Essig",
+       "color": "fresh",
+       "size": 38,
+       "align": "center",
+       "states": [
+        {
+         "at": "end:Schublade tiefer+0.2",
+         "state": "check"
+        }
+       ],
+       "icon": "bottle"
+      }
+     }
+    },
+    {
+     "id": "pfeil_tiefer",
+     "type": "arrow",
+     "from": {
+      "x": 368,
+      "y": 610
+     },
+     "to": {
+      "x": 368,
+      "y": 775
+     },
+     "style": "red",
+     "in": "Die Antwort"
+    },
+    {
+     "id": "st_tiefer",
+     "type": "stamp",
+     "text": "eine tiefer",
+     "x": 195,
+     "y": 700,
+     "rot": -0.08,
+     "size": 46,
+     "in": "Schublade tiefer"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Schmeckt nicht",
+   "x": 440,
+   "y": 1040
+  },
+  {
+   "at": "fehlt Säure",
+   "x": 245,
+   "y": 840
+  },
+  {
+   "at": "nach unten",
+   "x": 881,
+   "y": 716
+  },
+  {
+   "at": "Zu wenig sauer",
+   "x": 881,
+   "y": 716
+  },
+  {
+   "at": "Ein Schuss Essig",
+   "x": 812,
+   "y": 1160
+  },
+  {
+   "at": "Zu leer",
+   "x": 700,
+   "y": 660
+  },
+  {
+   "at": "eine Sonne",
+   "x": 560,
+   "y": 665
+  },
+  {
+   "at": "Schublade tiefer",
+   "x": 700,
+   "y": 751
+  }
+ ]
+}

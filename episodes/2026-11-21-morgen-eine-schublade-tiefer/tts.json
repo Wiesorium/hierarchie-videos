@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Mama ist Köchin. Anton ist sieben. Heute gibt es Kartoffelsalat. Anton kostet und schiebt den Teller weg: „Schmeckt nicht.“ Mama kostet auch: „Da fehlt Säure.“ [pause] Beide haben recht, nur auf verschiedenen Ebenen. Schau dir das als Schrank an. Ganz oben liegt „schmeckt nicht“. Darunter: salzig, süß, sauer. Ganz unten die Zutaten: Salz, Zucker, Essig. Mama hat keine Zauberzunge. Sie geht nur nach unten und fragt jede Schublade einzeln. [pause] Anton staunt: „Woher weißt du das?“ [pause] Mama zeigt es ihm, eine Schublade nach der anderen. „Zu salzig?“ Anton kostet: „Nein.“ „Zu süß?“ „Nein.“ „Sauer genug?“ Anton überlegt: „Zu wenig sauer!“ Ein Schuss Essig, und Anton isst zwei Teller. [pause] Zwei Tage später schmeckt Anton etwas ab, das man nicht essen kann. [pause] Sein Bild gefällt ihm nicht: „Das ist doof.“ Dann fragt er wie Mama: Das Haus? Passt. Der Baum? Passt. Der Himmel? „Zu leer!“ Er malt eine Sonne dazu. „Doof“ und „schmeckt nicht“ sind nicht falsch. Sie sind die oberste Schublade. Die Antwort liegt eine Schublade tiefer. [pause] Wann hat dein Kind zuletzt „doof“ gesagt, und was lag darunter? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind schiebt den Teller weg, sagt „Schmeckt nicht“, und keiner weiß, was fehlt.",
+  "b": "[warmly] „Schmeckt nicht“ ist keine Antwort, sondern der Anfang vom Abschmecken.",
+  "c": "[warmly] „Schmeckt nicht“, sagt das Kind, „Da fehlt Säure“, sagt die Köchin, und beide meinen denselben Salat."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

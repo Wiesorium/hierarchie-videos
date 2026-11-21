@@ -2,6 +2,33 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-21",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-21-morgen-eine-schublade-tiefer",
+   "slug": "eine-schublade-tiefer",
+   "titel": "Eine Schublade tiefer",
+   "idee": "idee-12",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind schiebt den Teller weg, sagt „Schmeckt nicht“, und keiner weiß, was fehlt.",
+    "b": "„Schmeckt nicht“ ist keine Antwort, sondern der Anfang vom Abschmecken.",
+    "c": "„Schmeckt nicht“, sagt das Kind, „Da fehlt Säure“, sagt die Köchin, und beide meinen denselben Salat."
+   },
+   "dauer": {
+    "a": 94.1,
+    "b": 93.3,
+    "c": 95.7
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/2O0GjHXpDILm2sN9GrAX",
+   "status": "fertig",
+   "hinweis": "Beispiel aus der Idee (Kind: „schmeckt nicht“, Köchin: „da fehlt Säure“) als Familienszene selbst ergänzt: Mama ist Köchin, Anton (sieben), Kartoffelsalat; Übertragung auf Antons Bild, das „doof“ ist (Haus, Baum, Himmel → „Zu leer!“ → Sonne). Küchen-Hängeschrank über dem Tisch (cabinet mit legs 0 und ground): „schmeckt nicht“ → salzig, süß, sauer → Salz, Zucker, Essig; im hellen Teil bekommen die Schubladen bei Mamas Fragen Häkchen, „sauer“ wackelt rosé, Essigflasche kippt über der Schüssel. Am Ende Schrank mit zwei Spalten (doof / schmeckt nicht → Himmel zu leer / zu wenig sauer → Sonne / Essig) und Pfeil „eine tiefer“. Neue Engine-Teile: Kartoffelsalat (potatoes in bowl und plate), Icon spoon (Löffel mit Bissen), bottle mit pour (Flasche gießt), Requisite paper (Kinderzeichnung mit Buntstift-Himmel und -Wiese). Hauptteil der Stimme 87,0 s (länger als geplant), Videos 93,3 bis 95,7 s (über dem 90-s-Ziel, innerhalb der Prüfgrenze). Captions in Drive: 2026-11-21-eine-schublade-tiefer-captions.",
+   "dateien": [
+    "eine-schublade-tiefer-hook-a.mp4",
+    "eine-schublade-tiefer-hook-b.mp4",
+    "eine-schublade-tiefer-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-20",
    "slot": "abend",
    "ordner": "episodes/2026-11-20-abend-das-zweite-salz",
