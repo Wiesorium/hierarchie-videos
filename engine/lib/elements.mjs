@@ -266,14 +266,41 @@ export function drawIcon(ctx, e, t) {
     case 'planet': drawPlanet(ctx, x, y, s, c || '#9FD3E8', !!e.ring, false); break;
     case 'pluto': drawPlanet(ctx, x, y, s, c || '#E8D3C0', false, true); break;
     case 'lemon': drawLemon(ctx, x, y, s, c); break;
-    case 'bottle': drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
+    case 'bottle': if (e.pour) drawBottlePour(ctx, x, y, s * 0.42, s * 0.96, t, c, e.look === 'right'); else drawBottle(ctx, x, y + s * 0.48, s * 0.42, s * 0.96, c); break;
+    case 'spoon': drawSpoon(ctx, x, y, s, e.rot ?? -0.5, c, e.food); break;
     case 'cashew': drawCashew(ctx, x - s * 0.16, y - s * 0.04, s * 0.95, -0.5, c || '#E6C38C', true); drawCashew(ctx, x + s * 0.2, y + s * 0.12, s * 0.8, 0.9, c || '#E6C38C', true); break;
     case 'salt': drawSalt(ctx, x, e.pour ? y : y + s * 0.5, s * 0.55, s, !!e.pour, t, c); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon'];
+
+// A paper-cut spoon: its round bowl centred at (x, y), the handle pointing away at angle `rot` (0 = straight down,
+// negative = down to the left). `food`: a colour puts a little bite in the bowl.
+function drawSpoon(ctx, x, y, s, rot, c, food) {
+  const c1 = c || '#D3D9E1';
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+  fillShape(ctx, () => rrect(ctx, -s * 0.055, s * 0.14, s * 0.11, s * 0.74, s * 0.055), c1, { depth: 0.5 });
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, 0, s * 0.17, s * 0.23, 0, 0, Math.PI * 2); }, c1, { depth: 0.5 });
+  if (food) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, -s * 0.02, s * 0.12, s * 0.14, 0, 0, Math.PI * 2); }, col(food), { depth: 0.25 });
+  else { ctx.fillStyle = 'rgba(255,255,255,0.6)'; ctx.beginPath(); ctx.ellipse(-s * 0.05, -s * 0.06, s * 0.05, s * 0.1, 0, 0, Math.PI * 2); ctx.fill(); }
+  ctx.restore();
+}
+
+// A bottle tipped over a point to pour (cork off): the open neck sits at (cx, tip), the body rises up and away (to the left by
+// default, `toRight` mirrors it), it rocks a little and drops fall from the tip.
+function drawBottlePour(ctx, cx, tip, w, h, t, c, toRight) {
+  const wob = Math.sin(t * 7) * 0.05, ang = (toRight ? -1 : 1) * (Math.PI - 0.75) + wob;
+  ctx.save(); ctx.translate(cx, tip); ctx.rotate(ang); drawBottle(ctx, 0, h * 0.88, w, h, c, null, null, true); ctx.restore();
+  ctx.save(); const a0 = ctx.globalAlpha;
+  for (let i = 0; i < 5; i++) {
+    const ph = ((t * 1.4 + i / 5) % 1 + 1) % 1, gx = cx + Math.sin(i * 1.7) * w * 0.08, gy = tip + 14 + ph * h * 0.9, r = Math.max(4, w * 0.11) * (1 - ph * 0.25);
+    ctx.globalAlpha = a0 * Math.min(1, (1 - ph) * 1.8);
+    fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(gx, gy - r * 1.7); ctx.quadraticCurveTo(gx + r, gy - r * 0.2, gx, gy + r); ctx.quadraticCurveTo(gx - r, gy - r * 0.2, gx, gy - r * 1.7); }, c ? c : '#E9DCA8', { depth: 0.25 });
+  }
+  ctx.restore();
+}
 
 // A paper-cut salt shaker: pale glass body (w × h, standing on `base`) with white salt inside, a silver dome cap with
 // holes and a light stripe. With `pour` it hangs upside down, cap tip at (cx, base), shakes a little and drops grains.
@@ -343,7 +370,7 @@ function drawLemon(ctx, x, y, s, c) {
 }
 
 // A paper-cut bottle standing on `base`: pale glass body with shoulders, neck, cork, a white label (optional text) and a light stripe.
-export function drawBottle(ctx, cx, base, w, h, c, text, px) {
+export function drawBottle(ctx, cx, base, w, h, c, text, px, open = false) {
   const bodyH = h * 0.6, neckW = w * 0.4, neckTop = base - h * 0.88, r = w * 0.2, sh = base - bodyH;
   fillShape(ctx, () => {
     ctx.beginPath(); ctx.moveTo(cx - neckW / 2, neckTop); ctx.lineTo(cx - neckW / 2, sh - h * 0.07);
@@ -352,7 +379,7 @@ export function drawBottle(ctx, cx, base, w, h, c, text, px) {
     ctx.quadraticCurveTo(cx + w / 2, base, cx + w / 2, base - r); ctx.lineTo(cx + w / 2, sh + h * 0.1);
     ctx.quadraticCurveTo(cx + w / 2, sh - h * 0.02, cx + neckW / 2, sh - h * 0.07); ctx.lineTo(cx + neckW / 2, neckTop); ctx.closePath();
   }, c || '#CFE6C8', { depth: 0.6 });
-  fillShape(ctx, () => rrect(ctx, cx - neckW * 0.62, neckTop - h * 0.11, neckW * 1.24, h * 0.13, Math.max(3, w * 0.06)), C.woodDark, { depth: 0.4 });
+  if (!open) fillShape(ctx, () => rrect(ctx, cx - neckW * 0.62, neckTop - h * 0.11, neckW * 1.24, h * 0.13, Math.max(3, w * 0.06)), C.woodDark, { depth: 0.4 });
   const lh = bodyH * 0.44, ly = base - bodyH * 0.78;
   fillShape(ctx, () => rrect(ctx, cx - w * 0.4, ly, w * 0.8, lh, Math.max(3, w * 0.07)), C.paper, { sh: false });
   ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.5)'; rrect(ctx, cx - w * 0.38, sh + h * 0.06, w * 0.09, bodyH * 0.2, w * 0.04); ctx.fill(); ctx.restore();

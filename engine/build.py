@@ -24,9 +24,9 @@ GROUND_Y = 1478  # figures and floor props stand here when they have no y (engin
 TYPES = {'figure', 'prop', 'cabinet', 'tree', 'node', 'link', 'arrow', 'card', 'bubble', 'thought', 'stamp', 'tag', 'icon'}
 PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book', 'cup', 'plate', 'clock', 'sofa', 'tree', 'bench', 'door',
               'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars', 'pot',
-              'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt'}
+              'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt', 'paper'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
-         'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt'}
+         'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
 MOODS = {'smile', 'happy', 'grin', 'laugh', 'open', 'wow', 'sad', 'worried', 'scared', 'neutral'}
 GESTURES = {'wave', 'point', 'cheer', 'raise', 'shrug', 'think', 'hug'}

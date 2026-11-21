@@ -79,6 +79,22 @@ function steam(ctx, x, top, w, t = 0) {
   ctx.restore();
 }
 
+// Potato salad: a low mound of pale-yellow potato slices with chive bits, sitting on `base` (bowl rim or plate), w wide.
+function potatoSalad(ctx, x, base, w) {
+  const hh = w * 0.24;
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, base, w / 2, hh, 0, Math.PI, 0); ctx.closePath(); }, '#F1D88A', { depth: 0.4 });
+  const slices = [[-0.32, 0.12, -0.4], [0.31, 0.14, 0.45], [-0.15, 0.3, 0.25], [0.12, 0.34, -0.2], [-0.02, 0.62, 0.1], [0.2, 0.06, 0.1], [-0.2, 0.05, -0.1], [0.02, 0.16, 0.6]];
+  for (const [ox, oy, rot] of slices) {
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + ox * w, base - oy * hh, w * 0.12, w * 0.075, rot, 0, Math.PI * 2); }, '#FBEDB8', { depth: 0.25 });
+    ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.45)'; ctx.beginPath(); ctx.ellipse(x + ox * w - w * 0.03, base - oy * hh - w * 0.02, w * 0.05, w * 0.025, rot, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+  }
+  ctx.save(); ctx.fillStyle = '#6FB37E';
+  for (const [ox, oy, rot] of [[-0.26, 0.28, 0.5], [-0.06, 0.42, -0.7], [0.16, 0.22, 0.2], [0.33, 0.3, -0.4], [0.05, 0.68, 0.9], [-0.36, 0.04, -0.2], [0.24, 0.5, 1.2]]) {
+    ctx.save(); ctx.translate(x + ox * w, base - oy * hh); ctx.rotate(rot); rrect(ctx, -w * 0.022, -w * 0.008, w * 0.044, w * 0.016, w * 0.008); ctx.fill(); ctx.restore();
+  }
+  ctx.restore();
+}
+
 function textLines(ctx, lines, cx, cy, px, color, gap = 1.25) {
   const L = Array.isArray(lines) ? lines : [lines]; const total = (L.length - 1) * px * gap;
   L.forEach((ln, i) => richText(ctx, ln, cx, cy - total / 2 + i * px * gap, px, color));
@@ -127,9 +143,10 @@ const PROPS = {
     ctx.save(); ctx.strokeStyle = p.color ? col(p.color) : C.paper; ctx.lineWidth = 10; shadow(ctx, true, 0.4); ctx.beginPath(); ctx.arc(x + w / 2 + 6, y - h / 2, 18, -1.3, 1.3); ctx.stroke(); ctx.restore();
   },
   // Plate on y (a table top). "food": true puts a rice mound and a curry/stew mound on it ("foodColor" for the stew),
-  // "nuts": true scatters three cashews over the stew.
+  // "nuts": true scatters three cashews over the stew. "potatoes": true heaps potato salad on it instead.
   plate(ctx, x, y, w = 160, h, p = {}) {
     fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, y - 10, w / 2, 16, 0, 0, 7); }, C.paper);
+    if (p.potatoes) { potatoSalad(ctx, x, y - 14, w * 0.66); return; }
     if (!p.food) return;
     const base = y - 16;
     fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x - w * 0.15, base, w * 0.22, w * 0.15, 0, Math.PI, 0); ctx.closePath(); }, '#FFF8EC', { depth: 0.4 });
@@ -264,9 +281,11 @@ const PROPS = {
   },
   // Salad bowl standing on y (a table top): pastel half-round bowl with rim and green leaves ("leaves": false = empty).
   // "soup": a colour fills it with soup instead (flat surface with carrot cubes and leek rings); "steam": true lets it steam.
+  // "potatoes": true fills it with potato salad (pale slices with chives).
   bowl(ctx, x, y, w = 240, h = 100, p, t = 0) {
     const c1 = p.color ? col(p.color) : '#BFD9F2', rimY = y - h;
-    if (p.leaves !== false && !p.soup) {
+    if (p.potatoes) potatoSalad(ctx, x, rimY + 4, w * 0.9);
+    else if (p.leaves !== false && !p.soup) {
       const leaves = [[-0.3, 0.1, 0.17, '#9ED69B'], [0.05, 0.22, 0.2, '#7FBF8B'], [0.3, 0.08, 0.16, '#B5DFA6'], [-0.08, 0.05, 0.15, '#B5DFA6'], [0.18, 0.28, 0.12, '#9ED69B']];
       for (const [ox, oy, rr, lc] of leaves) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + ox * w, rimY - oy * h, rr * w, rr * w * 0.72, ox, 0, Math.PI * 2); }, lc, { depth: 0.4 });
       if (p.tomato !== false) fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x - w * 0.12, rimY - h * 0.22, w * 0.06, 0, Math.PI * 2); }, '#F49AAE', { depth: 0.3 });
@@ -322,6 +341,23 @@ const PROPS = {
     ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.55)'; rrect(ctx, x - w / 2 + 18, top + h * 0.2, 10, h * 0.5, 5); ctx.fill(); ctx.restore();
     fillShape(ctx, () => rrect(ctx, x - w / 2 - 6, top - 8, w + 12, 18, 9), c1, { depth: 0.4 });
     if (p.steam) steam(ctx, x, top - 10, w, t);
+  },
+  // A child's drawing with its centre at x/y: white sheet, slightly tilted ("rot", default -0.03), crayon sky on the top
+  // part ("sky": colour, false = none) and crayon grass at the bottom ("grass": colour). Draw on it with icons or props.
+  paper(ctx, x, y, w = 460, h = 340, p = {}) {
+    ctx.save(); ctx.translate(x, y); ctx.rotate(p.rot ?? -0.03);
+    fillShape(ctx, () => rrect(ctx, -w / 2, -h / 2, w, h, 14), C.paper, { depth: 0.9 });
+    const band = (y0, y1, c) => {
+      ctx.save(); rrect(ctx, -w / 2 + 16, -h / 2 + 16, w - 32, h - 32, 8); ctx.clip();
+      ctx.strokeStyle = c; ctx.lineWidth = 11; ctx.lineCap = 'round';
+      for (let yy = y0; yy <= y1; yy += 12) {
+        ctx.beginPath(); for (let xx = -w / 2 + 20; xx <= w / 2 - 20; xx += 22) { const wy = yy + Math.sin(xx * 0.05 + yy * 0.7) * 3; if (xx === -w / 2 + 20) ctx.moveTo(xx, wy); else ctx.lineTo(xx, wy); } ctx.stroke();
+      }
+      ctx.restore();
+    };
+    if (p.sky !== false) band(-h / 2 + 22, -h / 2 + h * 0.4, p.sky ? col(p.sky) : 'rgba(159,211,232,0.5)');
+    band(h / 2 - h * 0.2, h / 2 - 22, p.grass ? col(p.grass) : 'rgba(127,191,139,0.7)');
+    ctx.restore();
   },
   // Bottle standing on y (a table top or shelf): pale glass, cork and a white label with "text".
   bottle(ctx, x, y, w = 90, h = 230, p) { drawBottle(ctx, x, y, w, h, p.color ? col(p.color) : null, p.text, p.size); },

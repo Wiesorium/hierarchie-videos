@@ -93,13 +93,14 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 `kind`: `table`, `desk`, `chair`, `sofa`, `bed`, `bench`, `door`, `tree`, `car`, `backpack`, `ball`, `cup`, `plate`, `sign`, `shelf`,
 `pot` (Kochtopf mit Dampf; `"steam": false` ohne Dampf), `fridge` (Kühlschrank; `"open": true` zeigt das helle Innere mit Gläsern,
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
-Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
+Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen; `"potatoes": true` füllt sie mit Kartoffelsalat), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
 lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
 `cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
-`"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
+`"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber, `"potatoes": true` häuft Kartoffelsalat darauf), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
 gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
-überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`
-(y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
+überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`,
+`paper` (Kinderzeichnung: weißes Blatt, leicht schräg (`"rot"`), oben Buntstift-Himmel (`"sky"`: Farbe oder `false`), unten Wiese
+(`"grass"`); darauf mit Icons wie `house`/`sun` und einer kleinen `tree`-Requisite malen) (y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
 
 ### cabinet – der Wissensschrank
 ```json
@@ -116,6 +117,13 @@ gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere F
 - optional: `title` (über dem Schrank), `sideLabels: ["oben", "unten"]`.
 - Aussehen wie in den freigegebenen Reels: Holzrahmen, cremefarbenes Inneres mit Regalbrettern, Schubladen als Pastell-Karten
   (Beschriftung links, ohne Knauf), leere Fächer bis zu den kurzen Beinen am Boden (`legs`: Beinlänge, Standard 64).
+- Hängeschrank (z. B. in der Küche über einem Tisch): `"legs": 0` und `"ground"` knapp unter der letzten Reihe
+  (Höhe = 50 + Reihen × (rowH + 16), also `ground` ≈ y + Höhe + 12). Darunter bleibt Platz für Tisch, Teller und Figuren.
+- Soll derselbe Schrank in der nächsten Szene mit neuen Zuständen weiterleben, einen zweiten Schrank mit gleicher Lage und
+  eigenen Schubladen-ids anlegen (`"enter": "none"`, `"in"` kurz vor Szenenstart, `"wobble": 0` bei beiden); dieselbe id
+  würde die Schubladen-Anker ab dem neuen Szenenstart neu suchen.
+- Goldfäden zwischen zwei Schubladen-Reihen sind im 16-px-Spalt kaum sichtbar; für „nach unten“ lieber einen `arrow` mit
+  Punkten (`{"x", "y"}`) links neben dem Schrank.
 
 ### Zustände (`states`) für Schubladen und Knoten
 `normal`, `empty` (gestrichelter leerer Platz mit „?“ oder `emptyLabel`), `glow` (pulsiert golden), `gold` (Goldrahmen),
@@ -150,7 +158,10 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   `sun`, `clock`, `magnifier`, `balloon`, `plane`, `house`, `book`, `pencil`, `cloud`, `rain`, `zzz`, `note`, `hedgehog`
   (Igel, steht auf y + 0,3 × size, schaut nach rechts; `"look": "left"` spiegelt ihn), `planet` (Pastellkugel in `color`,
   `"ring": true` für einen Ring), `pluto` (beige Kugel mit hellem Herz), `lemon` (Zitrone mit Blatt), `bottle` (kleine Flasche), `cashew` (zwei Cashewkerne),
-  `salt` (Salzstreuer; `"pour": true` dreht ihn kopfüber und lässt Salz rieseln, y = Deckelspitze, das Salz fällt nach unten)
+  `salt` (Salzstreuer; `"pour": true` dreht ihn kopfüber und lässt Salz rieseln, y = Deckelspitze, das Salz fällt nach unten),
+  `spoon` (Löffel; x/y = Mitte der Löffelschale, `"rot"` dreht den Stiel: 0 = nach unten, positiv = nach links unten;
+  `"food"`: Farbe für einen Bissen darauf); `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
+  (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
 ## Was die Engine selbst macht
