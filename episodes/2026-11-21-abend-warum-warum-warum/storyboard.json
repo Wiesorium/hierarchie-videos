@@ -1,0 +1,1234 @@
+{
+ "slug": "warum-warum-warum",
+ "title": "Warum, warum, warum?",
+ "cta": "whatsapp",
+ "hero": "lina",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind fragt zum dritten Mal „Warum?“, und dir gehen die Antworten aus.",
+   "card": [
+    "Zum dritten Mal „Warum?“",
+    "Dir gehen die Antworten aus."
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "„Warum?“ ist kein Geduldstest: Dein Kind klettert eine Schublade höher.",
+   "card": [
+    "„Warum?“ ist kein Geduldstest.",
+    "Dein Kind klettert."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "„Warum?“ „Warum?“ „Warum?“ Und dann sagt Papa: „Weil das so ist.“",
+   "card": [
+    "„Warum?“ „Warum?“ „Warum?“",
+    "„Weil das so ist.“"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Lina ist vier. Beim Zähneputzen fragt sie: „Warum muss ich Zähne putzen?“ Papa: „Damit sie gesund bleiben.“ „Warum?“ „Damit du gut beißen kannst.“ „Warum?“ Papa seufzt: „Weil das so ist.“",
+  "block1": "Das sagen wir alle, wenn wir müde sind. Aber Lina will Papa nicht ärgern. Sie klettert. Schau dir das als Schrank an. Ganz unten: Zähne putzen. Darüber: gesunde Zähne. Darüber: gut beißen. Jedes Warum fragt nach der Schublade darüber. „Weil das so ist“ lässt die oberste leer.",
+  "rehook1": "Vor einer leeren Schublade fragt ein Kind einfach weiter.",
+  "block2": "„Warum?“ Papa lacht und fragt zurück: „Was glaubst du?“ Lina überlegt: „Damit ich groß und stark werde!“ Oben liegt jetzt, was sie selbst will. Lina putzt, ohne ein Warum.",
+  "rehook2": "Am nächsten Morgen klettert sie allein.",
+  "block3": "Beim Frühstück fragt sie sich: „Warum muss ich essen? Damit ich Kraft hab. Damit ich ganz oben aufs Klettergerüst komme!“ Jedes Warum fragt nach der Schublade darüber. Und die oberste kann dein Kind oft selbst füllen.",
+  "closing": "Was sagt dein Kind, wenn du beim nächsten Warum zurückfragst?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Was sagt dein Kind, wenn du",
+  "beim nächsten Warum zurückfragst?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 160,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Damit sie gesund",
+       "mood": "happy"
+      },
+      {
+       "at": "Damit du gut",
+       "mood": "smile"
+      },
+      {
+       "at": "Papa seufzt",
+       "mood": "worried"
+      },
+      {
+       "at": "so ist",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Papa seufzt",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Damit sie gesund",
+       "end:gesund bleiben"
+      ],
+      [
+       "Damit du gut",
+       "end:beißen kannst"
+      ],
+      [
+       "Weil das so ist",
+       "end:so ist"
+      ]
+     ]
+    },
+    {
+     "id": "lina",
+     "type": "figure",
+     "role": "girl",
+     "x": 400,
+     "look": "left",
+     "scale": 0.9,
+     "hair": "ponytail",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Warum muss ich",
+       "mood": "open"
+      },
+      {
+       "at": "Damit sie gesund",
+       "mood": "smile"
+      },
+      {
+       "at": "Warum#2",
+       "mood": "open"
+      },
+      {
+       "at": "Damit du gut",
+       "mood": "smile"
+      },
+      {
+       "at": "Warum#3",
+       "mood": "wow"
+      },
+      {
+       "at": "Weil das so",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Warum#2",
+       "kind": "raise",
+       "dur": 1.0
+      },
+      {
+       "at": "Warum#3",
+       "kind": "raise",
+       "dur": 1.0
+      }
+     ],
+     "talk": [
+      [
+       "Warum muss ich",
+       "end:Zähne putzen"
+      ],
+      [
+       "Warum#2",
+       "end:Warum"
+      ],
+      [
+       "Warum#3",
+       "end:Warum"
+      ]
+     ]
+    },
+    {
+     "id": "waschbecken",
+     "type": "prop",
+     "kind": "sink",
+     "x": 760,
+     "w": 300,
+     "h": 250,
+     "mirror": true,
+     "out": "Schau dir das als Schrank-0.2"
+    },
+    {
+     "id": "becher",
+     "type": "prop",
+     "kind": "cup",
+     "x": 862,
+     "y": 1216,
+     "w": 54,
+     "h": 64,
+     "color": "#B5DFC9",
+     "out": "Schau dir das als Schrank-0.2"
+    },
+    {
+     "id": "tag_lina",
+     "type": "tag",
+     "text": "Lina, 4",
+     "x": 400,
+     "y": 1130,
+     "in": "Lina ist",
+     "out": "Beim Zähneputzen+0.8"
+    },
+    {
+     "id": "buerste1",
+     "type": "icon",
+     "kind": "toothbrush",
+     "x": 352,
+     "y": 1262,
+     "size": 100,
+     "look": "left",
+     "rot": 0.35,
+     "in": "Beim Zähneputzen",
+     "out": "Das sagen wir alle"
+    },
+    {
+     "id": "q1",
+     "type": "icon",
+     "kind": "question",
+     "x": 760,
+     "y": 820,
+     "size": 70,
+     "in": "Warum muss ich",
+     "out": "Das sagen wir alle"
+    },
+    {
+     "id": "q2",
+     "type": "icon",
+     "kind": "question",
+     "x": 760,
+     "y": 700,
+     "size": 70,
+     "in": "Warum#2",
+     "out": "Das sagen wir alle"
+    },
+    {
+     "id": "q3",
+     "type": "icon",
+     "kind": "question",
+     "x": 760,
+     "y": 580,
+     "size": 70,
+     "in": "Warum#3",
+     "out": "Das sagen wir alle"
+    },
+    {
+     "id": "b_w1",
+     "type": "bubble",
+     "from": "lina",
+     "text": "Warum muss ich *Zähne* putzen?",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Warum muss ich-0.2",
+     "out": "Warum#2-0.2"
+    },
+    {
+     "id": "b_p1",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Damit sie *gesund* bleiben.",
+     "x": 245,
+     "y": 830,
+     "maxW": 320,
+     "size": 42,
+     "in": "Damit sie gesund-0.2",
+     "out": "Damit du gut-0.15"
+    },
+    {
+     "id": "b_w2",
+     "type": "bubble",
+     "from": "lina",
+     "text": "*Warum?*",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Warum#2-0.15",
+     "out": "Warum#3-0.15"
+    },
+    {
+     "id": "b_p2",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Damit du gut *beißen* kannst.",
+     "x": 245,
+     "y": 830,
+     "maxW": 320,
+     "size": 42,
+     "in": "Damit du gut-0.15",
+     "out": "Weil das so-0.2"
+    },
+    {
+     "id": "b_w3",
+     "type": "bubble",
+     "from": "lina",
+     "text": "*Warum?*",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Warum#3-0.15",
+     "out": "Das sagen wir alle"
+    },
+    {
+     "id": "b_p3",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Weil das *so* ist.",
+     "x": 245,
+     "y": 830,
+     "maxW": 320,
+     "size": 42,
+     "in": "Weil das so-0.2",
+     "out": "Aber Lina"
+    }
+   ]
+  },
+  {
+   "at": "Das sagen wir alle",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 150,
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "Aber Lina",
+       "mood": "smile"
+      },
+      {
+       "at": "Sie klettert",
+       "mood": "happy"
+      },
+      {
+       "at": "oberste leer",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "id": "lina",
+     "type": "figure",
+     "role": "girl",
+     "x": 380,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "nicht ärgern",
+       "mood": "happy"
+      },
+      {
+       "at": "Sie klettert",
+       "mood": "laugh"
+      },
+      {
+       "at": "Ganz unten",
+       "mood": "open"
+      },
+      {
+       "at": "Jedes Warum",
+       "mood": "grin"
+      },
+      {
+       "at": "oberste leer",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Sie klettert",
+       "kind": "cheer",
+       "dur": 1.2
+      },
+      {
+       "at": "Jedes Warum",
+       "kind": "raise",
+       "dur": 1.4
+      }
+     ],
+     "hop": "Sie klettert"
+    },
+    {
+     "id": "k_alle",
+     "type": "card",
+     "x": 720,
+     "y": 720,
+     "lines": [
+      "Das sagen wir *alle*."
+     ],
+     "size": 58,
+     "out": "Sie klettert-0.1"
+    },
+    {
+     "id": "k_klettert",
+     "type": "card",
+     "x": 720,
+     "y": 720,
+     "lines": [
+      "Lina *klettert*."
+     ],
+     "size": 62,
+     "in": "Sie klettert",
+     "out": "Schau dir das als Schrank"
+    },
+    {
+     "id": "schrank",
+     "type": "cabinet",
+     "x": 700,
+     "y": 500,
+     "w": 520,
+     "rowH": 96,
+     "wobble": 0,
+     "in": "Schau dir das als Schrank",
+     "rows": [
+      [
+       "oben"
+      ],
+      [
+       "beissen"
+      ],
+      [
+       "gesund"
+      ],
+      [
+       "putzen"
+      ]
+     ],
+     "drawers": {
+      "putzen": {
+       "label": "Zähne putzen",
+       "color": "baby",
+       "size": 40,
+       "align": "center",
+       "in": "Ganz unten",
+       "states": [
+        {
+         "at": "Jedes Warum",
+         "state": "glow"
+        },
+        {
+         "at": "fragt nach",
+         "state": "normal"
+        }
+       ]
+      },
+      "gesund": {
+       "label": "gesunde Zähne",
+       "color": "fresh",
+       "size": 40,
+       "align": "center",
+       "in": "Darüber",
+       "states": [
+        {
+         "at": "fragt nach",
+         "state": "glow"
+        },
+        {
+         "at": "Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "beissen": {
+       "label": "gut beißen",
+       "color": "food",
+       "size": 40,
+       "align": "center",
+       "in": "Darüber#2",
+       "states": [
+        {
+         "at": "Schublade darüber",
+         "state": "glow"
+        },
+        {
+         "at": "end:Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "oben": {
+       "label": "",
+       "color": "kids",
+       "in": "end:gut beißen+0.3",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "end:Schublade darüber",
+         "state": "empty+glow"
+        },
+        {
+         "at": "oberste leer",
+         "state": "empty+shake"
+        },
+        {
+         "at": "oberste leer+0.75",
+         "state": "empty"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pfeil_hoch",
+     "type": "arrow",
+     "from": {
+      "x": 385,
+      "y": 1020
+     },
+     "to": {
+      "x": 385,
+      "y": 600
+     },
+     "style": "red",
+     "in": "Jedes Warum",
+     "out": "Vor einer leeren"
+    },
+    {
+     "id": "st_warum",
+     "type": "stamp",
+     "text": "Warum?",
+     "x": 205,
+     "y": 760,
+     "rot": -0.08,
+     "size": 50,
+     "in": "Jedes Warum+0.2",
+     "out": "Vor einer leeren"
+    },
+    {
+     "id": "st_leer",
+     "type": "stamp",
+     "text": "leer",
+     "x": 205,
+     "y": 600,
+     "rot": 0.06,
+     "size": 50,
+     "in": "oberste leer+0.1",
+     "out": "Papa lacht"
+    }
+   ]
+  },
+  {
+   "at": "Vor einer leeren",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 150,
+     "mood": "neutral"
+    },
+    {
+     "id": "lina",
+     "type": "figure",
+     "role": "girl",
+     "x": 380,
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Warum",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Warum",
+       "kind": "raise",
+       "dur": 1.0
+      }
+     ],
+     "talk": [
+      [
+       "Warum",
+       "end:Warum"
+      ]
+     ]
+    },
+    {
+     "id": "schrank2",
+     "type": "cabinet",
+     "x": 700,
+     "y": 500,
+     "w": 520,
+     "rowH": 96,
+     "wobble": 0,
+     "enter": "none",
+     "in": "Vor einer leeren-0.1",
+     "out": "Am nächsten Morgen-0.2",
+     "rows": [
+      [
+       "oben2"
+      ],
+      [
+       "beissen2"
+      ],
+      [
+       "gesund2"
+      ],
+      [
+       "putzen2"
+      ]
+     ],
+     "drawers": {
+      "putzen2": {
+       "label": "Zähne putzen",
+       "color": "baby",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "Lina putzt",
+         "state": "check"
+        }
+       ]
+      },
+      "gesund2": {
+       "label": "gesunde Zähne",
+       "color": "fresh",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "Lina putzt+0.2",
+         "state": "check"
+        }
+       ]
+      },
+      "beissen2": {
+       "label": "gut beißen",
+       "color": "food",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "Lina putzt+0.4",
+         "state": "check"
+        }
+       ]
+      },
+      "oben2": {
+       "label": "groß und stark",
+       "color": "kids",
+       "size": 44,
+       "align": "center",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "leeren Schublade",
+         "state": "empty+glow"
+        },
+        {
+         "at": "einfach weiter",
+         "state": "empty+shake"
+        },
+        {
+         "at": "einfach weiter+0.75",
+         "state": "empty+glow"
+        },
+        {
+         "at": "groß und stark",
+         "state": "gold+glow"
+        },
+        {
+         "at": "Lina putzt",
+         "state": "gold+check"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "b_w4",
+     "type": "bubble",
+     "from": "lina",
+     "text": "*Warum?*",
+     "x": 470,
+     "y": 1080,
+     "maxW": 400,
+     "size": 42,
+     "in": "Warum-0.15",
+     "out": "Papa lacht+0.3"
+    }
+   ]
+  },
+  {
+   "at": "Papa lacht",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 150,
+     "mood": "laugh",
+     "moods": [
+      {
+       "at": "fragt zurück",
+       "mood": "happy"
+      },
+      {
+       "at": "groß und stark",
+       "mood": "wow"
+      },
+      {
+       "at": "Oben liegt",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "fragt zurück",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Was glaubst",
+       "end:glaubst du"
+      ]
+     ]
+    },
+    {
+     "id": "lina",
+     "type": "figure",
+     "role": "girl",
+     "x": 380,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Was glaubst",
+       "mood": "open"
+      },
+      {
+       "at": "Lina überlegt",
+       "mood": "neutral"
+      },
+      {
+       "at": "groß und stark",
+       "mood": "grin"
+      },
+      {
+       "at": "Lina putzt",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Lina überlegt",
+       "kind": "think",
+       "dur": 1.6
+      },
+      {
+       "at": "groß und stark",
+       "kind": "cheer",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Damit ich groß",
+       "end:stark werde"
+      ]
+     ],
+     "hop": "groß und stark"
+    },
+    {
+     "id": "b_glaubst",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Was glaubst *du*?",
+     "x": 245,
+     "y": 830,
+     "maxW": 320,
+     "size": 42,
+     "in": "Was glaubst-0.2",
+     "out": "Damit ich groß-0.1"
+    },
+    {
+     "id": "b_gross",
+     "type": "bubble",
+     "from": "lina",
+     "text": "Damit ich *groß* und *stark* werde!",
+     "x": 470,
+     "y": 1080,
+     "maxW": 400,
+     "size": 42,
+     "in": "Damit ich groß-0.15",
+     "out": "Lina putzt"
+    },
+    {
+     "id": "faden",
+     "type": "link",
+     "from": {
+      "x": 398,
+      "y": 1150
+     },
+     "to": {
+      "x": 398,
+      "y": 600
+     },
+     "style": "gold",
+     "in": "was sie selbst",
+     "out": "Am nächsten Morgen-0.2"
+    },
+    {
+     "id": "st_selbst",
+     "type": "stamp",
+     "text": "selbst",
+     "x": 205,
+     "y": 600,
+     "rot": -0.07,
+     "size": 50,
+     "in": "was sie selbst+0.2",
+     "out": "Am nächsten Morgen-0.2"
+    },
+    {
+     "id": "buerste2",
+     "type": "icon",
+     "kind": "toothbrush",
+     "x": 332,
+     "y": 1262,
+     "size": 100,
+     "look": "left",
+     "rot": 0.35,
+     "brush": true,
+     "in": "Lina putzt",
+     "out": "Am nächsten Morgen-0.2"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 380,
+     "y": 1110,
+     "size": 70,
+     "in": "ohne ein Warum",
+     "out": "Am nächsten Morgen-0.2"
+    }
+   ]
+  },
+  {
+   "at": "Am nächsten Morgen",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "x": 150,
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Warum muss ich essen",
+       "mood": "open"
+      },
+      {
+       "at": "Kraft hab",
+       "mood": "wow"
+      },
+      {
+       "at": "Klettergerüst",
+       "mood": "laugh"
+      },
+      {
+       "at": "Jedes Warum",
+       "mood": "smile"
+      },
+      {
+       "at": "selbst füllen",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "lina",
+     "type": "figure",
+     "role": "girl",
+     "x": 380,
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Beim Frühstück",
+       "mood": "smile"
+      },
+      {
+       "at": "Warum muss ich essen",
+       "mood": "open"
+      },
+      {
+       "at": "Kraft hab",
+       "mood": "grin"
+      },
+      {
+       "at": "Klettergerüst",
+       "mood": "laugh"
+      },
+      {
+       "at": "Jedes Warum",
+       "mood": "smile"
+      },
+      {
+       "at": "selbst füllen",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "fragt sie sich",
+       "kind": "think",
+       "dur": 1.4
+      },
+      {
+       "at": "Klettergerüst",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Warum muss ich essen",
+       "end:ich essen"
+      ],
+      [
+       "Damit ich Kraft",
+       "end:Klettergerüst komme"
+      ]
+     ],
+     "hop": "Klettergerüst"
+    },
+    {
+     "id": "tag_morgen",
+     "type": "tag",
+     "text": "nächster Morgen",
+     "x": 300,
+     "y": 560,
+     "color": "plum",
+     "out": "Damit ich Kraft"
+    },
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 790,
+     "y": 760,
+     "w": 300,
+     "h": 240,
+     "out": "Jedes Warum-0.2"
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 850,
+     "y": 715,
+     "size": 90,
+     "out": "Jedes Warum-0.2"
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 720,
+     "w": 440,
+     "h": 190,
+     "z": 3.5,
+     "out": "Jedes Warum-0.2"
+    },
+    {
+     "id": "teller",
+     "type": "prop",
+     "kind": "plate",
+     "x": 650,
+     "y": 1288,
+     "w": 150,
+     "z": 3.6,
+     "out": "Jedes Warum-0.2"
+    },
+    {
+     "id": "becher2",
+     "type": "prop",
+     "kind": "cup",
+     "x": 820,
+     "y": 1288,
+     "w": 64,
+     "h": 74,
+     "color": "#F9C6D3",
+     "z": 3.6,
+     "out": "Jedes Warum-0.2"
+    },
+    {
+     "id": "b_essen",
+     "type": "bubble",
+     "from": "lina",
+     "text": "Warum muss ich *essen*?",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Warum muss ich essen-0.2",
+     "out": "Damit ich Kraft-0.1"
+    },
+    {
+     "id": "b_kraft",
+     "type": "bubble",
+     "from": "lina",
+     "text": "Damit ich *Kraft* hab.",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Damit ich Kraft-0.15",
+     "out": "Damit ich ganz-0.1"
+    },
+    {
+     "id": "b_kletter",
+     "type": "bubble",
+     "from": "lina",
+     "text": "Ganz *oben* aufs Klettergerüst!",
+     "x": 470,
+     "y": 1040,
+     "maxW": 400,
+     "size": 42,
+     "in": "Damit ich ganz-0.15",
+     "out": "Jedes Warum"
+    },
+    {
+     "id": "schrank3",
+     "type": "cabinet",
+     "x": 700,
+     "y": 520,
+     "w": 560,
+     "rowH": 110,
+     "wobble": 0,
+     "in": "Jedes Warum",
+     "rows": [
+      [
+       "gross3",
+       "oben3"
+      ],
+      [
+       "gesund3",
+       "kraft"
+      ],
+      [
+       "putzen3",
+       "essen"
+      ]
+     ],
+     "drawers": {
+      "putzen3": {
+       "label": "Zähne putzen",
+       "color": "baby",
+       "size": 36,
+       "align": "center",
+       "states": [
+        {
+         "at": "fragt nach",
+         "state": "glow"
+        },
+        {
+         "at": "Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "essen": {
+       "label": "essen",
+       "color": "food",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "fragt nach",
+         "state": "glow"
+        },
+        {
+         "at": "Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "gesund3": {
+       "label": "gesunde Zähne",
+       "color": "fresh",
+       "size": 36,
+       "align": "center",
+       "states": [
+        {
+         "at": "Schublade darüber",
+         "state": "glow"
+        },
+        {
+         "at": "end:Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "kraft": {
+       "label": "Kraft",
+       "color": "idea",
+       "size": 40,
+       "align": "center",
+       "states": [
+        {
+         "at": "Schublade darüber",
+         "state": "glow"
+        },
+        {
+         "at": "end:Schublade darüber",
+         "state": "normal"
+        }
+       ]
+      },
+      "gross3": {
+       "label": "groß und stark",
+       "color": "kids",
+       "size": 36,
+       "align": "center",
+       "states": [
+        {
+         "at": "end:Schublade darüber",
+         "state": "glow"
+        },
+        {
+         "at": "die oberste",
+         "state": "normal"
+        },
+        {
+         "at": "selbst füllen",
+         "state": "gold+glow"
+        }
+       ]
+      },
+      "oben3": {
+       "label": "ganz nach oben",
+       "color": "kids",
+       "size": 36,
+       "align": "center",
+       "states": [
+        {
+         "at": "end:Schublade darüber",
+         "state": "glow"
+        },
+        {
+         "at": "die oberste",
+         "state": "normal"
+        },
+        {
+         "at": "selbst füllen",
+         "state": "gold+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pfeil_hoch2",
+     "type": "arrow",
+     "from": {
+      "x": 385,
+      "y": 930
+     },
+     "to": {
+      "x": 385,
+      "y": 600
+     },
+     "style": "red",
+     "in": "Jedes Warum+0.2"
+    },
+    {
+     "id": "st_warum2",
+     "type": "stamp",
+     "text": "Warum?",
+     "x": 205,
+     "y": 760,
+     "rot": -0.08,
+     "size": 50,
+     "in": "Jedes Warum+0.3",
+     "out": "Und die oberste"
+    },
+    {
+     "id": "st_selbst2",
+     "type": "stamp",
+     "text": "selbst",
+     "x": 205,
+     "y": 760,
+     "rot": -0.07,
+     "size": 52,
+     "in": "selbst füllen"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Weil das so ist",
+   "x": 245,
+   "y": 830
+  },
+  {
+   "at": "Sie klettert",
+   "x": 720,
+   "y": 720
+  },
+  {
+   "at": "Jedes Warum",
+   "x": 385,
+   "y": 620
+  },
+  {
+   "at": "oberste leer",
+   "x": 700,
+   "y": 598
+  },
+  {
+   "at": "Was glaubst du",
+   "x": 245,
+   "y": 830
+  },
+  {
+   "at": "groß und stark",
+   "x": 700,
+   "y": 598
+  },
+  {
+   "at": "Klettergerüst",
+   "x": 470,
+   "y": 1040
+  },
+  {
+   "at": "selbst füllen",
+   "x": 700,
+   "y": 625
+  }
+ ]
+}

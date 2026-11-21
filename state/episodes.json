@@ -3,6 +3,34 @@
  "videos": [
   {
    "datum": "2026-11-21",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-21-abend-warum-warum-warum",
+   "slug": "warum-warum-warum",
+   "titel": "Warum, warum, warum?",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Jedes Warum geht eine Schublade höher (Neugier, Warum-Fragen kleiner Kinder)",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind fragt zum dritten Mal „Warum?“, und dir gehen die Antworten aus.",
+    "b": "„Warum?“ ist kein Geduldstest: Dein Kind klettert eine Schublade höher.",
+    "c": "„Warum?“ „Warum?“ „Warum?“ Und dann sagt Papa: „Weil das so ist.“"
+   },
+   "dauer": {
+    "a": 85.8,
+    "b": 86.1,
+    "c": 86.8
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/ngVEyh1LshffkTlaNGJT",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Gegenstück zum Morgenvideo „Eine Schublade tiefer“: Warum geht nach oben). Beispiel selbst erfunden: Lina (vier) fragt beim Zähneputzen dreimal „Warum?“ (gesunde Zähne → gut beißen → „Weil das so ist“), Papa fragt zurück „Was glaubst du?“, Lina füllt die oberste Schublade mit „groß und stark“; am nächsten Morgen beim Frühstück klettert sie allein (essen → Kraft → ganz oben aufs Klettergerüst). Bad mit Waschbecken und Spiegel, drei Fragezeichen klettern über dem Spiegel nach oben; Schrank mit leerer oberster Schublade, die sich in Gold füllt; Goldfaden von Lina hinauf; am Ende Schrank mit zwei Spalten. Neue Engine-Teile: Icon toothbrush (mit brush: true schrubbt sie), Requisite sink (Waschbecken, mirror: true mit Spiegel). Hauptteil der Stimme 79,3 s, Videos 85,8 bis 86,8 s. Captions in Drive: 2026-11-21-warum-warum-warum-captions.",
+   "dateien": [
+    "warum-warum-warum-hook-a.mp4",
+    "warum-warum-warum-hook-b.mp4",
+    "warum-warum-warum-hook-c.mp4"
+   ]
+  },
+  {
+   "datum": "2026-11-21",
    "slot": "morgen",
    "ordner": "episodes/2026-11-21-morgen-eine-schublade-tiefer",
    "slug": "eine-schublade-tiefer",

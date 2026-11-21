@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Lina ist vier. Beim Zähneputzen fragt sie: „Warum muss ich Zähne putzen?“ Papa: „Damit sie gesund bleiben.“ „Warum?“ „Damit du gut beißen kannst.“ „Warum?“ Papa seufzt: „Weil das so ist.“ [pause] Das sagen wir alle, wenn wir müde sind. Aber Lina will Papa nicht ärgern. Sie klettert. Schau dir das als Schrank an. Ganz unten: Zähne putzen. Darüber: gesunde Zähne. Darüber: gut beißen. Jedes Warum fragt nach der Schublade darüber. „Weil das so ist“ lässt die oberste leer. [pause] Vor einer leeren Schublade fragt ein Kind einfach weiter. [pause] „Warum?“ Papa lacht und fragt zurück: „Was glaubst du?“ Lina überlegt: „Damit ich groß und stark werde!“ Oben liegt jetzt, was sie selbst will. Lina putzt, ohne ein Warum. [pause] Am nächsten Morgen klettert sie allein. [pause] Beim Frühstück fragt sie sich: „Warum muss ich essen? Damit ich Kraft hab. Damit ich ganz oben aufs Klettergerüst komme!“ Jedes Warum fragt nach der Schublade darüber. Und die oberste kann dein Kind oft selbst füllen. [pause] Was sagt dein Kind, wenn du beim nächsten Warum zurückfragst? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind fragt zum dritten Mal „Warum?“, und dir gehen die Antworten aus.",
+  "b": "[warmly] „Warum?“ ist kein Geduldstest: Dein Kind klettert eine Schublade höher.",
+  "c": "[warmly] „Warum?“ „Warum?“ „Warum?“ Und dann sagt Papa: „Weil das so ist.“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
