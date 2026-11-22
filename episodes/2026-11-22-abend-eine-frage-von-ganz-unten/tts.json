@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Moritz ist neun. Er kommt von der Schule heim und lässt den Rucksack fallen. Mama fragt: „Wie war's?“ „Gut.“ „Was habt ihr gemacht?“ „Nichts.“ Und weg ist er. [pause] Klingt, als wollte er nicht reden. Dabei hat Moritz jede Menge erlebt. Schau dir das als Schrank an. Ganz unten liegt sein Tag: Mathe, die Jause, Fußball in der Pause. Darüber eine Schublade für alles: der Schultag. „Wie war's?“ fragt nach der obersten. Dafür müsste Moritz den ganzen Tag in ein Wort packen. Das ist schwer. Also sagt er: „Gut.“ [pause] Weißt du, wie ich das nenne? Eine Frage von ganz oben. [pause] Beim Abendessen fragt Mama von ganz unten: „Wer hat heute beim Fußball gewonnen?“ „Wir! Und ich hab ein Tor geschossen!“ Und dann erzählt Moritz zehn Minuten lang: vom Tor, von Mathe, von der getauschten Jause. [pause] Und jetzt kommt das Beste. [pause] Am Schluss sagt Moritz von selbst: „Eigentlich war's ein super Tag.“ Die oberste Schublade füllt sich von allein. Kinder erzählen meistens von unten nach oben. Wer unten fragt, bekommt oben die Antwort dazu. [pause] Welche kleine Frage stellst du morgen nach der Schule? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Du fragst „Wie war die Schule?“, und dein Kind sagt nur „Gut.“",
+  "b": "[warmly] Dein Kind erzählt nicht zu wenig, du fragst nur eine Schublade zu hoch.",
+  "c": "[warmly] Ändere eine einzige Frage, und aus „Gut“ werden zehn Minuten Geschichte."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

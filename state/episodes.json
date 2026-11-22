@@ -3,6 +3,29 @@
  "videos": [
   {
    "datum": "2026-11-22",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-22-abend-eine-frage-von-ganz-unten",
+   "slug": "eine-frage-von-ganz-unten",
+   "titel": "Eine Frage von ganz unten",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Kinder erzählen von unten nach oben („Wie war's?“ fragt nach der obersten Schublade; eine Frage von ganz unten öffnet eine einzelne Schublade, von dort klettert die Geschichte nach oben)",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Du fragst „Wie war die Schule?“, und dein Kind sagt nur „Gut.“",
+    "b": "Dein Kind erzählt nicht zu wenig, du fragst nur eine Schublade zu hoch.",
+    "c": "Ändere eine einzige Frage, und aus „Gut“ werden zehn Minuten Geschichte."
+   },
+   "dauer": {
+    "a": 85.5,
+    "b": 85.8,
+    "c": 86.13
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/wWngU5SrVkisoQqLiFGp",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Gespräch nach der Schule, kam noch nicht vor). Beispiel selbst erfunden: Moritz (neun) sagt auf „Wie war's?“ nur „Gut.“ und „Nichts.“; Schrank Mathe · Jause · Fußball → Schultag; beim Abendessen fragt Mama „Wer hat heute beim Fußball gewonnen?“, Moritz erzählt zehn Minuten und sagt am Schluss „Eigentlich war's ein super Tag.“ Rehooks Nr. 36 und Nr. 23 (abgewandelt), Hook c nach Nr. 29. Captions in Drive (2026-11-22-eine-frage-von-ganz-unten-captions)."
+  },
+  {
+   "datum": "2026-11-22",
    "slot": "morgen",
    "ordner": "episodes/2026-11-22-morgen-vier-laute-ein-wort",
    "slug": "vier-laute-ein-wort",

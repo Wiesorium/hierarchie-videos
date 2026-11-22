@@ -1,0 +1,971 @@
+{
+ "slug": "eine-frage-von-ganz-unten",
+ "title": "Eine Frage von ganz unten",
+ "cta": "whatsapp",
+ "hero": "moritz",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Du fragst „Wie war die Schule?“, und dein Kind sagt nur „Gut.“",
+   "card": [
+    "Du fragst: „Wie war die Schule?“",
+    "Dein Kind: „Gut.“"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Dein Kind erzählt nicht zu wenig, du fragst nur eine Schublade zu hoch.",
+   "card": [
+    "Dein Kind erzählt nicht zu wenig.",
+    "Du fragst zu hoch."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "Ändere eine einzige Frage, und aus „Gut“ werden zehn Minuten Geschichte.",
+   "card": [
+    "Eine Frage anders:",
+    "zehn Minuten Geschichte."
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Moritz ist neun. Er kommt von der Schule heim und lässt den Rucksack fallen. Mama fragt: „Wie war's?“ „Gut.“ „Was habt ihr gemacht?“ „Nichts.“ Und weg ist er.",
+  "block1": "Klingt, als wollte er nicht reden. Dabei hat Moritz jede Menge erlebt. Schau dir das als Schrank an. Ganz unten liegt sein Tag: Mathe, die Jause, Fußball in der Pause. Darüber eine Schublade für alles: der Schultag. „Wie war's?“ fragt nach der obersten. Dafür müsste Moritz den ganzen Tag in ein Wort packen. Das ist schwer. Also sagt er: „Gut.“",
+  "rehook1": "Weißt du, wie ich das nenne? Eine Frage von ganz oben.",
+  "block2": "Beim Abendessen fragt Mama von ganz unten: „Wer hat heute beim Fußball gewonnen?“ „Wir! Und ich hab ein Tor geschossen!“ Und dann erzählt Moritz zehn Minuten lang: vom Tor, von Mathe, von der getauschten Jause.",
+  "rehook2": "Und jetzt kommt das Beste.",
+  "block3": "Am Schluss sagt Moritz von selbst: „Eigentlich war's ein super Tag.“ Die oberste Schublade füllt sich von allein. Kinder erzählen meistens von unten nach oben. Wer unten fragt, bekommt oben die Antwort dazu.",
+  "closing": "Welche kleine Frage stellst du morgen nach der Schule?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Welche kleine Frage stellst du",
+  "morgen nach der Schule?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "tuer",
+     "type": "prop",
+     "kind": "door",
+     "x": 900
+    },
+    {
+     "id": "tag_nachm",
+     "type": "tag",
+     "text": "nach der Schule",
+     "x": 540,
+     "y": 560,
+     "color": "plum"
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 230,
+     "look": "right",
+     "mood": "smile",
+     "hairColor": "brown",
+     "moods": [
+      {
+       "at": "Gut",
+       "mood": "open"
+      },
+      {
+       "at": "Nichts",
+       "mood": "worried"
+      },
+      {
+       "at": "Und weg ist er",
+       "mood": "sad"
+      }
+     ],
+     "talk": [
+      [
+       "Mama fragt+0.3",
+       "end:Gut-0.1"
+      ],
+      [
+       "Was habt ihr",
+       "end:gemacht"
+      ]
+     ]
+    },
+    {
+     "id": "moritz",
+     "type": "figure",
+     "role": "boy",
+     "x": 640,
+     "look": "left",
+     "mood": "neutral",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "moods": [
+      {
+       "at": "Nichts",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Nichts",
+       "kind": "shrug",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Gut",
+       "end:Gut"
+      ],
+      [
+       "Nichts",
+       "end:Nichts"
+      ]
+     ],
+     "moves": [
+      {
+       "at": "Und weg ist er",
+       "x": 1280,
+       "dur": 1.1
+      }
+     ]
+    },
+    {
+     "id": "tag_moritz",
+     "type": "tag",
+     "text": "Moritz, 9",
+     "x": 640,
+     "y": 1080,
+     "in": "Moritz ist",
+     "out": "Mama fragt"
+    },
+    {
+     "id": "rucksack",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 760,
+     "w": 130,
+     "h": 160,
+     "color": "#9FD3C7",
+     "enter": "hop",
+     "in": "Rucksack fallen"
+    },
+    {
+     "id": "b_wie",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Wie war's?",
+     "x": 290,
+     "y": 840,
+     "maxW": 320,
+     "size": 46,
+     "in": "Mama fragt+0.3",
+     "out": "Was habt ihr-0.1"
+    },
+    {
+     "id": "b_gut",
+     "type": "bubble",
+     "from": "moritz",
+     "text": "Gut.",
+     "x": 640,
+     "y": 1000,
+     "maxW": 220,
+     "size": 46,
+     "in": "Gut-0.1",
+     "out": "Nichts-0.1"
+    },
+    {
+     "id": "b_was",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Was habt ihr *gemacht*?",
+     "x": 300,
+     "y": 840,
+     "maxW": 360,
+     "size": 44,
+     "in": "Was habt ihr-0.1",
+     "out": "Und weg ist er+0.3"
+    },
+    {
+     "id": "b_nichts",
+     "type": "bubble",
+     "from": "moritz",
+     "text": "*Nichts.*",
+     "x": 650,
+     "y": 1000,
+     "maxW": 240,
+     "size": 48,
+     "in": "Nichts-0.1",
+     "out": "Und weg ist er+0.2"
+    },
+    {
+     "id": "fz_mama",
+     "type": "icon",
+     "kind": "question",
+     "x": 340,
+     "y": 900,
+     "size": 80,
+     "in": "Und weg ist er+0.3"
+    }
+   ]
+  },
+  {
+   "at": "Klingt als wollte",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Dabei hat Moritz",
+       "mood": "smile"
+      },
+      {
+       "at": "Ganz unten",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "k_reden",
+     "type": "card",
+     "x": 640,
+     "y": 640,
+     "lines": [
+      "Er will nicht *reden*?"
+     ],
+     "size": 52,
+     "out": "Schau dir das als Schrank-0.1"
+    },
+    {
+     "id": "x_reden",
+     "type": "icon",
+     "kind": "cross",
+     "x": 935,
+     "y": 590,
+     "size": 68,
+     "in": "Dabei hat Moritz",
+     "out": "Schau dir das als Schrank-0.1"
+    },
+    {
+     "id": "moritz2",
+     "type": "figure",
+     "role": "boy",
+     "x": 360,
+     "look": "left",
+     "mood": "happy",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "enter": "hop",
+     "in": "Dabei hat Moritz",
+     "moods": [
+      {
+       "at": "Ganz unten",
+       "mood": "open"
+      },
+      {
+       "at": "Darüber eine",
+       "mood": "neutral"
+      },
+      {
+       "at": "in ein Wort",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "jede Menge",
+       "kind": "cheer",
+       "dur": 1.2
+      },
+      {
+       "at": "in ein Wort",
+       "kind": "think",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "st_menge",
+     "type": "stamp",
+     "text": "jede Menge",
+     "x": 300,
+     "y": 880,
+     "rot": -0.07,
+     "size": 52,
+     "in": "jede Menge+0.1",
+     "out": "Schau dir das als Schrank-0.1"
+    },
+    {
+     "id": "kopf",
+     "type": "cabinet",
+     "x": 770,
+     "y": 560,
+     "w": 540,
+     "rowH": 120,
+     "wobble": 0,
+     "title": "Moritz",
+     "in": "Schau dir das als Schrank",
+     "keep": true,
+     "rows": [
+      [
+       "tag"
+      ],
+      [
+       "mathe",
+       "jause",
+       "fussball"
+      ]
+     ],
+     "drawers": {
+      "mathe": {
+       "label": "Mathe",
+       "color": "baby",
+       "size": 44,
+       "align": "center",
+       "in": "Mathe",
+       "states": [
+        {
+         "at": "in ein Wort packen+0.00",
+         "state": "glow"
+        },
+        {
+         "at": "Das ist schwer",
+         "state": "normal"
+        },
+        {
+         "at": "von Mathe",
+         "state": "open+glow"
+        },
+        {
+         "at": "getauschten Jause",
+         "state": "open"
+        },
+        {
+         "at": "Und jetzt kommt",
+         "state": "normal"
+        },
+        {
+         "at": "von unten nach oben+0.00",
+         "state": "glow"
+        },
+        {
+         "at": "Wer unten fragt",
+         "state": "normal"
+        }
+       ]
+      },
+      "jause": {
+       "label": "Jause",
+       "color": "food",
+       "size": 44,
+       "align": "center",
+       "in": "die Jause",
+       "states": [
+        {
+         "at": "in ein Wort packen+0.15",
+         "state": "glow"
+        },
+        {
+         "at": "Das ist schwer",
+         "state": "normal"
+        },
+        {
+         "at": "getauschten Jause",
+         "state": "open+glow"
+        },
+        {
+         "at": "Und jetzt kommt",
+         "state": "normal"
+        },
+        {
+         "at": "von unten nach oben+0.15",
+         "state": "glow"
+        },
+        {
+         "at": "Wer unten fragt",
+         "state": "normal"
+        }
+       ]
+      },
+      "fussball": {
+       "label": "Fußball",
+       "color": "fresh",
+       "size": 44,
+       "align": "center",
+       "in": "Fußball in der Pause",
+       "states": [
+        {
+         "at": "in ein Wort packen+0.30",
+         "state": "glow"
+        },
+        {
+         "at": "Das ist schwer",
+         "state": "normal"
+        },
+        {
+         "at": "beim Fußball gewonnen",
+         "state": "open+glow"
+        },
+        {
+         "at": "vom Tor",
+         "state": "open+check"
+        },
+        {
+         "at": "Und jetzt kommt",
+         "state": "check"
+        },
+        {
+         "at": "von unten nach oben+0.30",
+         "state": "glow"
+        },
+        {
+         "at": "Wer unten fragt",
+         "state": "check"
+        }
+       ]
+      },
+      "tag": {
+       "label": "super Tag",
+       "emptyLabel": "Schultag",
+       "color": "idea",
+       "size": 50,
+       "align": "center",
+       "in": "Darüber eine Schublade",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "fragt nach der obersten",
+         "state": "empty+glow"
+        },
+        {
+         "at": "in ein Wort packen",
+         "state": "empty"
+        },
+        {
+         "at": "Das ist schwer",
+         "state": "empty+red+shake"
+        },
+        {
+         "at": "Das ist schwer+0.8",
+         "state": "empty+red"
+        },
+        {
+         "at": "Beim Abendessen",
+         "state": "empty"
+        },
+        {
+         "at": "super Tag",
+         "state": "gold+glow"
+        },
+        {
+         "at": "Kinder erzählen",
+         "state": "gold"
+        },
+        {
+         "at": "die Antwort dazu",
+         "state": "gold+check+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "pf_oben",
+     "type": "arrow",
+     "from": {
+      "x": 330,
+      "y": 640
+     },
+     "to": {
+      "x": 500,
+      "y": 668
+     },
+     "style": "red",
+     "in": "fragt nach der obersten",
+     "out": "Beim Abendessen"
+    },
+    {
+     "id": "st_wie",
+     "type": "stamp",
+     "text": "Wie war's?",
+     "x": 220,
+     "y": 600,
+     "rot": -0.08,
+     "size": 52,
+     "in": "fragt nach der obersten+0.1",
+     "out": "Das ist schwer"
+    }
+   ]
+  },
+  {
+   "at": "Das ist schwer",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Weißt du",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "moritz2",
+     "type": "figure",
+     "role": "boy",
+     "x": 360,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Weißt du",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Also sagt er",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Gut",
+       "end:Gut"
+      ]
+     ]
+    },
+    {
+     "id": "st_schwer",
+     "type": "stamp",
+     "text": "schwer",
+     "x": 230,
+     "y": 600,
+     "rot": 0.07,
+     "size": 56,
+     "in": "Das ist schwer+0.15",
+     "out": "Weißt du"
+    },
+    {
+     "id": "b_gut2",
+     "type": "bubble",
+     "from": "moritz2",
+     "text": "Gut.",
+     "x": 400,
+     "y": 980,
+     "maxW": 220,
+     "size": 46,
+     "in": "Gut-0.1",
+     "out": "Weißt du"
+    },
+    {
+     "id": "k_oben",
+     "type": "card",
+     "x": 250,
+     "y": 800,
+     "lines": [
+      "Eine Frage",
+      "von *ganz oben*."
+     ],
+     "size": 50,
+     "in": "Weißt du wie ich"
+    }
+   ]
+  },
+  {
+   "at": "Beim Abendessen",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 270,
+     "w": 420,
+     "h": 190,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "teller_m",
+     "type": "prop",
+     "kind": "plate",
+     "x": 160,
+     "y": 1290,
+     "w": 130,
+     "food": true,
+     "z": 3.6
+    },
+    {
+     "id": "teller_k",
+     "type": "prop",
+     "kind": "plate",
+     "x": 385,
+     "y": 1290,
+     "w": 120,
+     "food": true,
+     "z": 3.6
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 95,
+     "y": 560,
+     "size": 70,
+     "out": "Und jetzt kommt"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "Abendessen",
+     "x": 270,
+     "y": 560,
+     "color": "plum",
+     "out": "Und jetzt kommt"
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 160,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Wir",
+       "mood": "laugh"
+      },
+      {
+       "at": "Und dann erzählt",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Wer hat heute",
+       "end:gewonnen"
+      ]
+     ]
+    },
+    {
+     "id": "moritz2",
+     "type": "figure",
+     "role": "boy",
+     "x": 390,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Wer hat heute",
+       "mood": "open"
+      },
+      {
+       "at": "Wir",
+       "mood": "laugh"
+      },
+      {
+       "at": "Und dann erzählt",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Wir",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Wir",
+       "end:geschossen"
+      ]
+     ],
+     "hop": "Wir"
+    },
+    {
+     "id": "st_unten",
+     "type": "stamp",
+     "text": "von ganz unten",
+     "x": 810,
+     "y": 960,
+     "rot": -0.06,
+     "size": 50,
+     "in": "von ganz unten",
+     "out": "Und jetzt kommt"
+    },
+    {
+     "id": "b_fussball",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Wer hat heute beim *Fußball* gewonnen?",
+     "x": 250,
+     "y": 700,
+     "maxW": 400,
+     "size": 40,
+     "in": "Wer hat heute-0.2",
+     "out": "Und dann erzählt"
+    },
+    {
+     "id": "b_wir",
+     "type": "bubble",
+     "from": "moritz2",
+     "text": "*Wir!* Und ich hab ein Tor geschossen!",
+     "x": 390,
+     "y": 1000,
+     "maxW": 360,
+     "size": 40,
+     "in": "Wir-0.1",
+     "out": "Und dann erzählt"
+    },
+    {
+     "id": "uhr",
+     "type": "icon",
+     "kind": "clock",
+     "x": 100,
+     "y": 680,
+     "size": 80,
+     "in": "Und dann erzählt",
+     "out": "Und jetzt kommt"
+    },
+    {
+     "id": "tag_minuten",
+     "type": "tag",
+     "text": "zehn Minuten",
+     "x": 290,
+     "y": 680,
+     "color": "rose",
+     "in": "Und dann erzählt+0.4",
+     "out": "Und jetzt kommt"
+    },
+    {
+     "id": "b_unddann",
+     "type": "bubble",
+     "from": "moritz2",
+     "text": "Und dann … und dann …",
+     "x": 330,
+     "y": 920,
+     "maxW": 360,
+     "size": 40,
+     "in": "Und dann erzählt+0.6",
+     "out": "Und jetzt kommt"
+    }
+   ]
+  },
+  {
+   "at": "Und jetzt kommt das Beste",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 270,
+     "w": 420,
+     "h": 190,
+     "z": 3.5
+    },
+    {
+     "id": "teller_m",
+     "type": "prop",
+     "kind": "plate",
+     "x": 160,
+     "y": 1290,
+     "w": 130,
+     "food": true,
+     "z": 3.6
+    },
+    {
+     "id": "teller_k",
+     "type": "prop",
+     "kind": "plate",
+     "x": 385,
+     "y": 1290,
+     "w": 120,
+     "food": true,
+     "z": 3.6
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "x": 160,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "super Tag",
+       "mood": "happy"
+      },
+      {
+       "at": "Kinder erzählen",
+       "mood": "smile"
+      },
+      {
+       "at": "die Antwort dazu",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "die Antwort dazu",
+       "kind": "hug",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "moritz2",
+     "type": "figure",
+     "role": "boy",
+     "x": 390,
+     "look": "left",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Am Schluss",
+       "mood": "smile"
+      },
+      {
+       "at": "super Tag",
+       "mood": "grin"
+      },
+      {
+       "at": "Kinder erzählen",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Eigentlich",
+       "end:super Tag"
+      ]
+     ],
+     "hop": "super Tag"
+    },
+    {
+     "id": "b_super",
+     "type": "bubble",
+     "from": "moritz2",
+     "text": "Eigentlich war's ein *super Tag*.",
+     "x": 330,
+     "y": 940,
+     "maxW": 380,
+     "size": 42,
+     "in": "Eigentlich-0.15",
+     "out": "Kinder erzählen"
+    },
+    {
+     "id": "st_selbst",
+     "type": "stamp",
+     "text": "von selbst",
+     "x": 250,
+     "y": 640,
+     "rot": -0.07,
+     "size": 54,
+     "in": "von selbst",
+     "out": "Kinder erzählen"
+    },
+    {
+     "id": "pf_hoch",
+     "type": "arrow",
+     "from": {
+      "x": 462,
+      "y": 900
+     },
+     "to": {
+      "x": 462,
+      "y": 620
+     },
+     "style": "red",
+     "in": "von unten nach oben"
+    },
+    {
+     "id": "st_unten_oben",
+     "type": "stamp",
+     "text": "von unten nach oben",
+     "x": 245,
+     "y": 760,
+     "rot": -0.05,
+     "size": 44,
+     "in": "von unten nach oben+0.2"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 250,
+     "y": 600,
+     "size": 76,
+     "in": "die Antwort dazu"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Nichts",
+   "x": 650,
+   "y": 1000
+  },
+  {
+   "at": "Dabei hat Moritz",
+   "x": 360,
+   "y": 1200
+  },
+  {
+   "at": "fragt nach der obersten",
+   "x": 770,
+   "y": 670
+  },
+  {
+   "at": "Das ist schwer",
+   "x": 770,
+   "y": 670
+  },
+  {
+   "at": "von ganz oben",
+   "x": 250,
+   "y": 800
+  },
+  {
+   "at": "beim Fußball gewonnen",
+   "x": 945,
+   "y": 806
+  },
+  {
+   "at": "super Tag",
+   "x": 770,
+   "y": 670
+  },
+  {
+   "at": "die Antwort dazu",
+   "x": 770,
+   "y": 670
+  }
+ ]
+}
