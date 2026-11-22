@@ -1,0 +1,1216 @@
+{
+ "slug": "vier-laute-ein-wort",
+ "title": "Vier Laute, ein Wort",
+ "cta": "whatsapp",
+ "hero": "noah",
+ "hooks": {
+  "a": {
+   "label": "Situation",
+   "audio": "Dein Kind liest jeden Laut richtig vor und fragt dann: „Was heißt das?“",
+   "card": [
+    "Jeder Laut richtig.",
+    "„Was heißt das?“"
+   ]
+  },
+  "b": {
+   "label": "Umdeutung",
+   "audio": "Du siehst beim Lesen keine Buchstaben mehr, dein Kind sieht nur Buchstaben.",
+   "card": [
+    "Du siehst keine Buchstaben mehr.",
+    "Dein Kind sieht nur Buchstaben."
+   ]
+  },
+  "c": {
+   "label": "Zitat/Zahl",
+   "audio": "Aus vier Schubladen wird eine: Genau so lernt dein Kind lesen.",
+   "card": [
+    "Aus vier Schubladen wird eine.",
+    "So lernt dein Kind lesen."
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Noah ist sechs. Auf dem Sofa liest er Papa sein erstes Wort vor: „Mmm. Aaa. Mmm. Aaa.“ Jeder Laut stimmt. Dann schaut er hoch: „Papa, was heißt das?“",
+  "block1": "Klingt, als müsste er nur schneller werden, oder? Ist es aber nicht. Schau dir das als Schrank an. Ganz unten: vier Schubladen, eine für jeden Laut. Noah hält alle gleichzeitig offen. Darüber ist noch ein leerer Platz: das Wort.",
+  "rehook1": "Und jetzt wird's spannend: Papa sieht diese Schubladen gar nicht mehr.",
+  "block2": "Papa liest „Mama“ auf einen Blick. Bei ihm ist die Schublade darüber längst voll, die Laute darunter sind unsichtbar. So geht es jedem, der etwas gut kann. Fast hätte Papa gesagt: „Ist doch leicht!“",
+  "rehook2": "Schau, was passiert, wenn er nur eine Sache ändert.",
+  "block3": "Er sagt: „Sing es mal.“ Noah singt: „Mmmaaa … mmmaaa …“ Aus vier Schubladen werden zwei. Dann ruft er: „Mama!“ Aus zwei wird eine. Am nächsten Abend liest Noah „Mama“ auf einen Blick. Lesen lernen heißt nicht schneller buchstabieren. Es heißt: neue Schubladen darüber bauen.",
+  "closing": "Welches Wort liest dein Kind schon auf einen Blick?",
+  "cta": "Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link."
+ },
+ "question": [
+  "Welches Wort liest dein Kind",
+  "schon auf einen Blick?"
+ ],
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "sofa",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 280,
+     "w": 440,
+     "h": 240,
+     "keep": true
+    },
+    {
+     "id": "regal",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 850,
+     "w": 300,
+     "h": 400,
+     "out": "Schau dir das als Schrank-0.2"
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "pose": "sit",
+     "x": 170,
+     "y": 1334,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Mmm",
+       "mood": "happy"
+      },
+      {
+       "at": "Papa was heißt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "pose": "sit",
+     "x": 390,
+     "y": 1334,
+     "look": "right",
+     "hair": "short",
+     "hairColor": "brown",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Mmm",
+       "mood": "open"
+      },
+      {
+       "at": "Jeder Laut",
+       "mood": "happy"
+      },
+      {
+       "at": "schaut er hoch",
+       "mood": "open"
+      },
+      {
+       "at": "Papa was heißt",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Papa was heißt",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Mmm",
+       "end:Aaa#2"
+      ],
+      [
+       "Papa was heißt",
+       "end:heißt das"
+      ]
+     ]
+    },
+    {
+     "id": "buch",
+     "type": "prop",
+     "kind": "book",
+     "x": 470,
+     "y": 1262,
+     "w": 150,
+     "h": 108,
+     "color": "plum",
+     "text": "Mama",
+     "size": 40,
+     "z": 3.5,
+     "keep": true
+    },
+    {
+     "id": "tag_noah",
+     "type": "tag",
+     "text": "Noah, 6",
+     "x": 390,
+     "y": 1020,
+     "in": "Noah ist",
+     "out": "erstes Wort"
+    },
+    {
+     "id": "laut0",
+     "type": "node",
+     "x": 606,
+     "y": 791,
+     "w": 100,
+     "h": 110,
+     "label": "M",
+     "size": 66,
+     "color": "baby",
+     "in": "Mmm",
+     "states": [
+      {
+       "at": "Jeder Laut+0.00",
+       "state": "check"
+      }
+     ],
+     "out": "Ganz unten+0.90"
+    },
+    {
+     "id": "laut1",
+     "type": "node",
+     "x": 722,
+     "y": 791,
+     "w": 100,
+     "h": 110,
+     "label": "a",
+     "size": 66,
+     "color": "kids",
+     "in": "Aaa",
+     "states": [
+      {
+       "at": "Jeder Laut+0.15",
+       "state": "check"
+      }
+     ],
+     "out": "Ganz unten+1.15"
+    },
+    {
+     "id": "laut2",
+     "type": "node",
+     "x": 838,
+     "y": 791,
+     "w": 100,
+     "h": 110,
+     "label": "m",
+     "size": 66,
+     "color": "baby",
+     "in": "Mmm#2",
+     "states": [
+      {
+       "at": "Jeder Laut+0.30",
+       "state": "check"
+      }
+     ],
+     "out": "Ganz unten+1.40"
+    },
+    {
+     "id": "laut3",
+     "type": "node",
+     "x": 954,
+     "y": 791,
+     "w": 100,
+     "h": 110,
+     "label": "a",
+     "size": 66,
+     "color": "kids",
+     "in": "Aaa#2",
+     "states": [
+      {
+       "at": "Jeder Laut+0.45",
+       "state": "check"
+      }
+     ],
+     "out": "Ganz unten+1.65"
+    },
+    {
+     "id": "b_was",
+     "type": "bubble",
+     "from": "noah",
+     "text": "Papa, was *heißt* das?",
+     "x": 700,
+     "y": 1000,
+     "maxW": 380,
+     "size": 42,
+     "in": "Papa was heißt-0.2",
+     "out": "Ist es aber nicht"
+    }
+   ]
+  },
+  {
+   "at": "Klingt als müsste",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "pose": "sit",
+     "x": 170,
+     "y": 1334,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ist es aber nicht",
+       "mood": "grin"
+      },
+      {
+       "at": "Schau dir das",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "pose": "sit",
+     "x": 390,
+     "y": 1334,
+     "look": "right",
+     "hair": "short",
+     "hairColor": "brown",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Ist es aber nicht",
+       "mood": "smile"
+      },
+      {
+       "at": "Ganz unten",
+       "mood": "open"
+      },
+      {
+       "at": "gleichzeitig offen",
+       "mood": "worried"
+      },
+      {
+       "at": "das Wort",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Noah hält",
+       "kind": "think",
+       "dur": 1.8
+      }
+     ]
+    },
+    {
+     "id": "k_schneller",
+     "type": "card",
+     "x": 720,
+     "y": 600,
+     "lines": [
+      "Nur *schneller* werden?"
+     ],
+     "size": 52,
+     "out": "Schau dir das als Schrank-0.1"
+    },
+    {
+     "id": "x_schneller",
+     "type": "icon",
+     "kind": "cross",
+     "x": 1003,
+     "y": 548,
+     "size": 68,
+     "in": "Ist es aber nicht",
+     "out": "Schau dir das als Schrank-0.1"
+    },
+    {
+     "id": "kopf_noah",
+     "type": "cabinet",
+     "x": 780,
+     "y": 560,
+     "w": 480,
+     "rowH": 110,
+     "wobble": 0,
+     "title": "Noah",
+     "in": "Schau dir das als Schrank",
+     "out": "Und jetzt+0.3",
+     "rows": [
+      [
+       "wort"
+      ],
+      [
+       "n0",
+       "n1",
+       "n2",
+       "n3"
+      ]
+     ],
+     "drawers": {
+      "n0": {
+       "label": "M",
+       "color": "baby",
+       "size": 60,
+       "align": "center",
+       "in": "Ganz unten+0.90",
+       "states": [
+        {
+         "at": "gleichzeitig offen+0.00",
+         "state": "open+glow"
+        },
+        {
+         "at": "Darüber ist noch",
+         "state": "open"
+        }
+       ]
+      },
+      "n1": {
+       "label": "a",
+       "color": "kids",
+       "size": 60,
+       "align": "center",
+       "in": "Ganz unten+1.15",
+       "states": [
+        {
+         "at": "gleichzeitig offen+0.12",
+         "state": "open+glow"
+        },
+        {
+         "at": "Darüber ist noch",
+         "state": "open"
+        }
+       ]
+      },
+      "n2": {
+       "label": "m",
+       "color": "baby",
+       "size": 60,
+       "align": "center",
+       "in": "Ganz unten+1.40",
+       "states": [
+        {
+         "at": "gleichzeitig offen+0.24",
+         "state": "open+glow"
+        },
+        {
+         "at": "Darüber ist noch",
+         "state": "open"
+        }
+       ]
+      },
+      "n3": {
+       "label": "a",
+       "color": "kids",
+       "size": 60,
+       "align": "center",
+       "in": "Ganz unten+1.65",
+       "states": [
+        {
+         "at": "gleichzeitig offen+0.36",
+         "state": "open+glow"
+        },
+        {
+         "at": "Darüber ist noch",
+         "state": "open"
+        }
+       ]
+      },
+      "wort": {
+       "label": "",
+       "emptyLabel": "Wort",
+       "color": "idea",
+       "in": "Darüber ist noch",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "leerer Platz",
+         "state": "empty+glow"
+        },
+        {
+         "at": "das Wort",
+         "state": "empty+shake"
+        },
+        {
+         "at": "das Wort+0.75",
+         "state": "empty+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "st_offen",
+     "type": "stamp",
+     "text": "alle offen",
+     "x": 290,
+     "y": 700,
+     "rot": -0.07,
+     "size": 50,
+     "in": "gleichzeitig offen+0.2",
+     "out": "Darüber ist noch-0.1"
+    },
+    {
+     "id": "st_leer",
+     "type": "stamp",
+     "text": "noch leer",
+     "x": 290,
+     "y": 660,
+     "rot": 0.06,
+     "size": 50,
+     "in": "leerer Platz+0.1",
+     "out": "Und jetzt"
+    }
+   ]
+  },
+  {
+   "at": "Und jetzt",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "pose": "sit",
+     "x": 170,
+     "y": 1334,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Papa liest",
+       "mood": "happy"
+      },
+      {
+       "at": "So geht es",
+       "mood": "smile"
+      },
+      {
+       "at": "Fast hätte",
+       "mood": "grin"
+      },
+      {
+       "at": "end:doch leicht",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Papa sieht",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Mama",
+       "end:Mama"
+      ]
+     ]
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "pose": "sit",
+     "x": 390,
+     "y": 1334,
+     "look": "right",
+     "hair": "short",
+     "hairColor": "brown",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Papa liest",
+       "mood": "wow"
+      },
+      {
+       "at": "So geht es",
+       "mood": "smile"
+      },
+      {
+       "at": "Fast hätte",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "id": "kopf_papa",
+     "type": "cabinet",
+     "x": 780,
+     "y": 560,
+     "w": 480,
+     "rowH": 110,
+     "wobble": 0,
+     "title": "Papa",
+     "enter": "none",
+     "in": "Und jetzt",
+     "rows": [
+      [
+       "wort_p"
+      ],
+      [
+       "p0",
+       "p1",
+       "p2",
+       "p3"
+      ]
+     ],
+     "drawers": {
+      "p0": {
+       "label": "M",
+       "color": "baby",
+       "size": 60,
+       "align": "center",
+       "states": [
+        {
+         "at": "gar nicht mehr+0.00",
+         "state": "dim"
+        }
+       ]
+      },
+      "p1": {
+       "label": "a",
+       "color": "kids",
+       "size": 60,
+       "align": "center",
+       "states": [
+        {
+         "at": "gar nicht mehr+0.12",
+         "state": "dim"
+        }
+       ]
+      },
+      "p2": {
+       "label": "m",
+       "color": "baby",
+       "size": 60,
+       "align": "center",
+       "states": [
+        {
+         "at": "gar nicht mehr+0.24",
+         "state": "dim"
+        }
+       ]
+      },
+      "p3": {
+       "label": "a",
+       "color": "kids",
+       "size": 60,
+       "align": "center",
+       "states": [
+        {
+         "at": "gar nicht mehr+0.36",
+         "state": "dim"
+        }
+       ]
+      },
+      "wort_p": {
+       "label": "Mama",
+       "color": "idea",
+       "size": 60,
+       "align": "center",
+       "in": "liest Mama",
+       "states": [
+        {
+         "at": "längst voll",
+         "state": "gold+glow"
+        },
+        {
+         "at": "unsichtbar",
+         "state": "gold"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "b_mama_p",
+     "type": "bubble",
+     "from": "papa",
+     "text": "*Mama.*",
+     "x": 300,
+     "y": 800,
+     "maxW": 300,
+     "size": 46,
+     "in": "liest Mama-0.1",
+     "out": "Bei ihm"
+    },
+    {
+     "id": "st_unsichtbar",
+     "type": "stamp",
+     "text": "unsichtbar",
+     "x": 780,
+     "y": 791,
+     "rot": -0.06,
+     "size": 56,
+     "in": "unsichtbar",
+     "out": "Schau was passiert"
+    },
+    {
+     "id": "k_jedem",
+     "type": "card",
+     "x": 290,
+     "y": 660,
+     "lines": [
+      "So geht es *jedem*,",
+      "der etwas gut kann."
+     ],
+     "size": 40,
+     "in": "So geht es",
+     "out": "Fast hätte"
+    },
+    {
+     "id": "d_leicht",
+     "type": "thought",
+     "from": "papa",
+     "text": "Ist doch *leicht*!",
+     "x": 300,
+     "y": 760,
+     "maxW": 360,
+     "size": 44,
+     "in": "Fast hätte Papa",
+     "out": "Schau was passiert"
+    }
+   ]
+  },
+  {
+   "at": "Schau was passiert",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "pose": "sit",
+     "x": 170,
+     "y": 1334,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Er sagt",
+       "mood": "happy"
+      },
+      {
+       "at": "Noah singt",
+       "mood": "smile"
+      },
+      {
+       "at": "Mama",
+       "mood": "laugh"
+      },
+      {
+       "at": "Aus zwei wird",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Sing es mal",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Sing es mal",
+       "end:Sing es mal"
+      ]
+     ]
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "pose": "sit",
+     "x": 390,
+     "y": 1334,
+     "look": "right",
+     "hair": "short",
+     "hairColor": "brown",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Sing es mal",
+       "mood": "open"
+      },
+      {
+       "at": "Mmmaaa",
+       "mood": "open"
+      },
+      {
+       "at": "Schubladen werden",
+       "mood": "wow"
+      },
+      {
+       "at": "Mama",
+       "mood": "laugh"
+      },
+      {
+       "at": "Aus zwei wird",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Mama",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Mmmaaa",
+       "end:Mmmaaa#2"
+      ],
+      [
+       "Mama",
+       "end:Mama"
+      ]
+     ],
+     "hop": "Mama"
+    },
+    {
+     "id": "kopf_noah2",
+     "type": "cabinet",
+     "x": 780,
+     "y": 560,
+     "w": 480,
+     "rowH": 100,
+     "wobble": 0,
+     "title": "Noah",
+     "in": "Schau was passiert",
+     "keep": true,
+     "rows": [
+      [
+       "wort3"
+      ],
+      [
+       "s0",
+       "s1"
+      ],
+      [
+       "u0",
+       "u1",
+       "u2",
+       "u3"
+      ]
+     ],
+     "drawers": {
+      "u0": {
+       "label": "M",
+       "color": "baby",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "Mmmaaa",
+         "state": "glow"
+        },
+        {
+         "at": "Mmmaaa#2",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.00",
+         "state": "dim"
+        }
+       ]
+      },
+      "u1": {
+       "label": "a",
+       "color": "kids",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "Mmmaaa",
+         "state": "glow"
+        },
+        {
+         "at": "Mmmaaa#2",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.10",
+         "state": "dim"
+        }
+       ]
+      },
+      "u2": {
+       "label": "m",
+       "color": "baby",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "Mmmaaa#2",
+         "state": "glow"
+        },
+        {
+         "at": "Schubladen werden",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.20",
+         "state": "dim"
+        }
+       ]
+      },
+      "u3": {
+       "label": "a",
+       "color": "kids",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "Mmmaaa#2",
+         "state": "glow"
+        },
+        {
+         "at": "Schubladen werden",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.30",
+         "state": "dim"
+        }
+       ]
+      },
+      "s0": {
+       "label": "Ma",
+       "emptyLabel": "",
+       "color": "fresh",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "Mmmaaa+0.2",
+         "state": "glow"
+        },
+        {
+         "at": "Dann ruft",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.45",
+         "state": "dim"
+        }
+       ]
+      },
+      "s1": {
+       "label": "ma",
+       "emptyLabel": "",
+       "color": "fresh",
+       "size": 56,
+       "align": "center",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "Mmmaaa#2+0.2",
+         "state": "glow"
+        },
+        {
+         "at": "Dann ruft",
+         "state": "normal"
+        },
+        {
+         "at": "auf einen Blick+0.55",
+         "state": "dim"
+        }
+       ]
+      },
+      "wort3": {
+       "label": "Mama",
+       "emptyLabel": "Wort",
+       "color": "idea",
+       "size": 60,
+       "align": "center",
+       "states": [
+        {
+         "at": "start",
+         "state": "empty"
+        },
+        {
+         "at": "Mama",
+         "state": "gold+glow"
+        },
+        {
+         "at": "Aus zwei wird+0.4",
+         "state": "gold"
+        },
+        {
+         "at": "darüber bauen",
+         "state": "gold+glow"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "id": "b_sing",
+     "type": "bubble",
+     "from": "papa",
+     "text": "*Sing* es mal.",
+     "x": 300,
+     "y": 800,
+     "maxW": 320,
+     "size": 46,
+     "in": "Sing es mal-0.2",
+     "out": "Noah singt"
+    },
+    {
+     "id": "b_singt",
+     "type": "bubble",
+     "from": "noah",
+     "text": "Mmmaaa … mmmaaa …",
+     "x": 340,
+     "y": 840,
+     "maxW": 400,
+     "size": 44,
+     "in": "Noah singt+0.2",
+     "out": "Dann ruft-0.1"
+    },
+    {
+     "id": "note",
+     "type": "icon",
+     "kind": "note",
+     "x": 120,
+     "y": 700,
+     "size": 80,
+     "in": "Mmmaaa",
+     "out": "Dann ruft"
+    },
+    {
+     "id": "b_mama",
+     "type": "bubble",
+     "from": "noah",
+     "text": "*Mama!*",
+     "x": 340,
+     "y": 840,
+     "maxW": 300,
+     "size": 54,
+     "in": "Mama-0.15",
+     "out": "Am nächsten Abend"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 470,
+     "y": 700,
+     "size": 70,
+     "in": "Aus zwei wird",
+     "out": "Am nächsten Abend"
+    }
+   ]
+  },
+  {
+   "at": "Am nächsten Abend",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "pose": "sit",
+     "x": 170,
+     "y": 1334,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Lesen lernen",
+       "mood": "smile"
+      },
+      {
+       "at": "darüber bauen",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "pose": "sit",
+     "x": 390,
+     "y": 1334,
+     "look": "right",
+     "hair": "short",
+     "hairColor": "brown",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "liest Noah",
+       "mood": "open"
+      },
+      {
+       "at": "Mama",
+       "mood": "laugh"
+      },
+      {
+       "at": "Lesen lernen",
+       "mood": "smile"
+      },
+      {
+       "at": "darüber bauen",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "auf einen Blick",
+       "kind": "cheer",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Mama",
+       "end:Mama"
+      ]
+     ],
+     "hop": "auf einen Blick"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "nächster Abend",
+     "x": 300,
+     "y": 560,
+     "color": "plum",
+     "out": "Lesen lernen"
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 95,
+     "y": 650,
+     "size": 80,
+     "out": "Lesen lernen"
+    },
+    {
+     "id": "b_mama2",
+     "type": "bubble",
+     "from": "noah",
+     "text": "*Mama!*",
+     "x": 340,
+     "y": 860,
+     "maxW": 300,
+     "size": 54,
+     "in": "Mama-0.15",
+     "out": "Lesen lernen"
+    },
+    {
+     "id": "st_blick",
+     "type": "stamp",
+     "text": "auf einen Blick",
+     "x": 300,
+     "y": 700,
+     "rot": -0.06,
+     "size": 46,
+     "in": "auf einen Blick+0.2",
+     "out": "Lesen lernen"
+    },
+    {
+     "id": "st_nicht",
+     "type": "stamp",
+     "text": "nicht schneller",
+     "x": 290,
+     "y": 700,
+     "rot": 0.05,
+     "size": 46,
+     "in": "nicht schneller",
+     "out": "Es heißt"
+    },
+    {
+     "id": "pfeil",
+     "type": "arrow",
+     "from": {
+      "x": 500,
+      "y": 1060
+     },
+     "to": {
+      "x": 500,
+      "y": 640
+     },
+     "style": "red",
+     "in": "neue Schubladen"
+    },
+    {
+     "id": "st_bauen",
+     "type": "stamp",
+     "text": "darüber bauen",
+     "x": 280,
+     "y": 720,
+     "rot": -0.07,
+     "size": 50,
+     "in": "darüber bauen"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Jeder Laut stimmt",
+   "x": 780,
+   "y": 800
+  },
+  {
+   "at": "Ist es aber nicht",
+   "x": 1003,
+   "y": 548
+  },
+  {
+   "at": "gleichzeitig offen",
+   "x": 780,
+   "y": 791
+  },
+  {
+   "at": "längst voll",
+   "x": 780,
+   "y": 665
+  },
+  {
+   "at": "Ist doch leicht",
+   "x": 300,
+   "y": 760
+  },
+  {
+   "at": "Sing es mal",
+   "x": 300,
+   "y": 800
+  },
+  {
+   "at": "Mama#2",
+   "x": 780,
+   "y": 660
+  },
+  {
+   "at": "auf einen Blick#2",
+   "x": 340,
+   "y": 860
+  },
+  {
+   "at": "darüber bauen",
+   "x": 780,
+   "y": 660
+  }
+ ]
+}

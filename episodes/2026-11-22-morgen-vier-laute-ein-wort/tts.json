@@ -1,0 +1,10 @@
+{
+ "main": "[warmly] Noah ist sechs. Auf dem Sofa liest er Papa sein erstes Wort vor: „Mmm. Aaa. Mmm. Aaa.“ Jeder Laut stimmt. Dann schaut er hoch: „Papa, was heißt das?“ [pause] Klingt, als müsste er nur schneller werden, oder? Ist es aber nicht. Schau dir das als Schrank an. Ganz unten: vier Schubladen, eine für jeden Laut. Noah hält alle gleichzeitig offen. Darüber ist noch ein leerer Platz: das Wort. [pause] Und jetzt wird's spannend: Papa sieht diese Schubladen gar nicht mehr. [pause] Papa liest „Mama“ auf einen Blick. Bei ihm ist die Schublade darüber längst voll, die Laute darunter sind unsichtbar. So geht es jedem, der etwas gut kann. Fast hätte Papa gesagt: „Ist doch leicht!“ [pause] Schau, was passiert, wenn er nur eine Sache ändert. [pause] Er sagt: „Sing es mal.“ Noah singt: „Mmmaaa … mmmaaa …“ Aus vier Schubladen werden zwei. Dann ruft er: „Mama!“ Aus zwei wird eine. Am nächsten Abend liest Noah „Mama“ auf einen Blick. Lesen lernen heißt nicht schneller buchstabieren. Es heißt: neue Schubladen darüber bauen. [pause] Welches Wort liest dein Kind schon auf einen Blick? [pause] [pause] Mehr solche Lerngeschichten gibt es in meiner WhatsApp-Gruppe Entdeckerfreunde: Schreib mir „Entdecker“, dann schick ich dir den Link.",
+ "hooks": {
+  "a": "[warmly] Dein Kind liest jeden Laut richtig vor und fragt dann: „Was heißt das?“",
+  "b": "[warmly] Du siehst beim Lesen keine Buchstaben mehr, dein Kind sieht nur Buchstaben.",
+  "c": "[warmly] Aus vier Schubladen wird eine: Genau so lernt dein Kind lesen."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

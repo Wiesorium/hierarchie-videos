@@ -2,6 +2,34 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-22",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-22-morgen-vier-laute-ein-wort",
+   "slug": "vier-laute-ein-wort",
+   "titel": "Vier Laute, ein Wort",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Lesen lernen heißt, eine Schublade darüber bauen (Laute → Silben → Wort; wer gut liest, sieht die unteren Schubladen nicht mehr)",
+   "cta": "whatsapp",
+   "hooks": {
+    "a": "Dein Kind liest jeden Laut richtig vor und fragt dann: „Was heißt das?“",
+    "b": "Du siehst beim Lesen keine Buchstaben mehr, dein Kind sieht nur Buchstaben.",
+    "c": "Aus vier Schubladen wird eine: Genau so lernt dein Kind lesen."
+   },
+   "dauer": {
+    "a": 87.07,
+    "b": 87.17,
+    "c": 87.0
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/ZHi4CuS2qpzOMhGTvgwW",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Lernen/Lesen, kam noch nicht vor). Beispiel selbst erfunden: Noah (sechs) liest Papa auf dem Sofa sein erstes Wort Laut für Laut vor („Mmm. Aaa. Mmm. Aaa.“) und fragt „Papa, was heißt das?“; Papa liest „Mama“ auf einen Blick, sagt statt „Ist doch leicht!“: „Sing es mal.“; Noah singt „Mmmaaa … mmmaaa …“ und ruft „Mama!“, am nächsten Abend liest er es auf einen Blick. Bilder: Sofa mit sitzenden Figuren und Buch, Laut-Kärtchen über einem Bücherregal, Schrank „Noah“ (vier Laut-Schubladen offen, oben leer), Schrank „Papa“ (Laute blass, oben „Mama“ in Gold, Stempel „unsichtbar“), Schrank mit drei Reihen (M a m a → Ma ma → Mama). Rehook-Katalog genutzt: Nr. 12 (abgewandelt), Nr. 13, Nr. 29 (abgewandelt). Keine Engine-Änderung. Hauptteil der Stimme 80,5 s, Videos 87,0 bis 87,2 s. Captions in Drive: 2026-11-22-vier-laute-ein-wort-captions.",
+   "dateien": [
+    "vier-laute-ein-wort-hook-a.mp4",
+    "vier-laute-ein-wort-hook-b.mp4",
+    "vier-laute-ein-wort-hook-c.mp4"
+   ]
+  },
+  {
    "datum": "2026-11-21",
    "slot": "abend",
    "ordner": "episodes/2026-11-21-abend-warum-warum-warum",
