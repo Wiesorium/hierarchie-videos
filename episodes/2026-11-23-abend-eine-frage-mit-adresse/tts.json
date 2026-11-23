@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Gefragt hat Lena. Sie ist neun. Gestern hat sie sich noch nicht getraut. Gestern hätte ihre Frage so geklungen: „Ich versteh das nicht.“ Heute klingt sie so: „Woher kommt die kleine Eins?“ Was dazwischen passiert ist, zeig ich dir am Ende. [pause] Schau dir beide Fragen als Schrank an. Oben steht: Plusrechnen. Darunter drei Schubladen: die Einer. Die Zehner. Die kleine Eins, die man sich merkt. „Ich versteh das nicht“ hängt ganz oben. Es klingt, als wäre alles leer. „Woher kommt die kleine Eins?“ zeigt auf genau eine Schublade. Die anderen sind voll. [pause] Ich nenne das eine Frage mit Adresse. [pause] Eine Frage mit Adresse ist klein. Sie zeigt, was du schon kannst. Und sie sagt der Lehrerin genau, wo sie helfen kann. So eine Frage traut man sich. [pause] Gleiche Lücke. Völlig andere Frage. [pause] Gefunden hat Lena ihre Adresse am Abend vorher, mit Papa: „Kannst du die Einer?“ „Ja.“ „Die Zehner?“ „Ja.“ „Und was fehlt?“ „Die kleine Eins.“ Am Morgen zeigt sie auf. Drei Kinder nicken. Sie hatten dieselbe Lücke, nur ohne Adresse. [pause] Welche große Frage machst du heute klein? [pause] [pause] Folg mir, damit sich mehr Kinder trauen, klein zu fragen.",
+ "hooks": {
+  "b": "[warmly] Eine kleine Frage, und drei Kinder nickten."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

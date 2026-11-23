@@ -1,0 +1,1073 @@
+{
+ "slug": "frag-doch-einfach",
+ "title": "„Frag doch einfach!“",
+ "cta": "follow",
+ "hero": "lena",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.6,
+   "hold": 1.3,
+   "dur": 1.0,
+   "fx": 600,
+   "fy": 1050
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "„Frag doch einfach!“ hilft deinem Kind nicht.",
+   "card": [
+    "Klingt leicht.",
+    "*Ist es nicht.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Weil es seine Frage noch gar nicht kennt. Was stattdessen hilft, siehst du gleich. Lena ist neun. Nach der Schule sagt sie: „Ich versteh Mathe nicht.“ Papa sagt, was wir alle sagen: „Dann frag morgen einfach die Lehrerin!“ Lena schüttelt den Kopf.",
+  "block1": "Schau dir ihre Frage als Schrank an. „Ich versteh Mathe nicht“ hängt ganz oben. Das klingt, als wäre alles leer. Wer sagt so etwas gern vor der ganzen Klasse? Darunter liegen die echten Schubladen: die Einer. Die Zehner. Die kleine Eins, die man sich merkt. Fast alle sind voll.",
+  "rehook1": "Und hier hören die meisten auf. Genau das ist der Fehler.",
+  "block2": "„Frag doch einfach“ schickt dein Kind mit der großen Frage los. Die kleine, die es sich trauen würde, liegt eine Schublade tiefer. Und die sucht man am besten zu zweit.",
+  "rehook2": "So. Jetzt der wichtige Teil.",
+  "block3": "Papa fragt nach unten: „Kannst du die Einer?“ „Ja.“ „Die Zehner?“ „Ja.“ „Und die kleine Eins?“ „Nein. Woher kommt die?“ Da ist sie, die echte Frage. Klein genug für morgen. Am nächsten Tag zeigt Lena auf. Und drei Kinder nicken.",
+  "closing": "Welche kleine Frage sucht ihr heute zusammen?",
+  "cta": "Folg mir, wenn du auch schon „Frag doch einfach“ gesagt hast."
+ },
+ "question": [
+  "Welche kleine Frage",
+  "sucht ihr heute zusammen?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du auch schon",
+   "„Frag doch einfach“ gesagt hast"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 680,
+     "w": 200,
+     "h": 190
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 205,
+     "y": 650,
+     "size": 50
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 560,
+     "w": 640,
+     "h": 180,
+     "z": 3.5
+    },
+    {
+     "id": "lena",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "x": 400,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Nach der Schule",
+       "mood": "sad"
+      },
+      {
+       "at": "schüttelt den Kopf",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "schüttelt den Kopf",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Ich versteh Mathe nicht",
+       "end:Ich versteh Mathe nicht"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 790,
+     "look": "left",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Weil es seine",
+       "mood": "smile"
+      },
+      {
+       "at": "Papa sagt",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.4",
+       "kind": "raise",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Dann frag morgen",
+       "end:die Lehrerin"
+      ]
+     ]
+    },
+    {
+     "id": "b_einfach",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Frag doch *einfach*!",
+     "x": 700,
+     "y": 870,
+     "maxW": 320,
+     "size": 52,
+     "in": "@-2.7",
+     "out": "@0.4"
+    },
+    {
+     "id": "q_c",
+     "type": "icon",
+     "kind": "question",
+     "x": 420,
+     "y": 1040,
+     "size": 70,
+     "in": "@-1.6",
+     "out": "@0.4"
+    },
+    {
+     "id": "tag_lena",
+     "type": "tag",
+     "text": "Lena, neun",
+     "x": 400,
+     "y": 1040,
+     "color": "plum",
+     "in": "Lena ist neun",
+     "out": "Nach der Schule"
+    },
+    {
+     "id": "b_mathe",
+     "type": "bubble",
+     "from": "lena",
+     "text": "Ich versteh *Mathe* nicht.",
+     "x": 360,
+     "y": 980,
+     "maxW": 340,
+     "size": 42,
+     "in": "Ich versteh Mathe-0.1",
+     "out": "Papa sagt"
+    },
+    {
+     "id": "b_morgen",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Dann frag morgen *einfach* die Lehrerin!",
+     "x": 760,
+     "y": 830,
+     "maxW": 340,
+     "size": 40,
+     "in": "Dann frag morgen-0.1"
+    },
+    {
+     "id": "tag_alle",
+     "type": "tag",
+     "text": "sagen wir alle",
+     "x": 760,
+     "y": 690,
+     "color": "plum",
+     "in": "was wir alle",
+     "out": "schüttelt"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir ihre Frage",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "lena_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "x": 260,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "vor der ganzen Klasse",
+       "mood": "scared"
+      },
+      {
+       "at": "Fast alle sind voll",
+       "mood": "open"
+      },
+      {
+       "at": "zu zweit",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "papa_k",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 100,
+     "look": "right",
+     "mood": "smile",
+     "in": "Frag doch einfach",
+     "enter": "slide",
+     "moods": [
+      {
+       "at": "Die kleine die",
+       "mood": "open"
+      },
+      {
+       "at": "zu zweit",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "eine Schublade tiefer",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "q_gross",
+     "type": "node",
+     "x": 640,
+     "y": 520,
+     "w": 460,
+     "h": 90,
+     "label": "Ich versteh *Mathe* nicht.",
+     "size": 40,
+     "color": "paper",
+     "in": "hängt ganz oben",
+     "states": [
+      {
+       "at": "hängt ganz oben",
+       "state": "heavy+red"
+      },
+      {
+       "at": "mit der großen Frage",
+       "state": "heavy+red+shake"
+      }
+     ]
+    },
+    {
+     "id": "l_gross",
+     "type": "link",
+     "from": "q_gross",
+     "to": "n_top",
+     "style": "red",
+     "in": "Darunter liegen"
+    },
+    {
+     "id": "st_leer",
+     "type": "stamp",
+     "text": "alles leer?",
+     "x": 880,
+     "y": 640,
+     "rot": 0.07,
+     "size": 50,
+     "in": "als wäre alles leer",
+     "out": "Darunter liegen"
+    },
+    {
+     "id": "tag_klasse",
+     "type": "tag",
+     "text": "vor allen?",
+     "x": 260,
+     "y": 1080,
+     "color": "rose",
+     "in": "vor der ganzen Klasse",
+     "out": "Darunter liegen"
+    },
+    {
+     "id": "tag_meisten",
+     "type": "tag",
+     "text": "die meisten",
+     "x": 640,
+     "y": 1180,
+     "color": "rose",
+     "in": "die meisten",
+     "out": "Frag doch einfach"
+    },
+    {
+     "id": "st_fehler",
+     "type": "stamp",
+     "text": "Fehler",
+     "x": 880,
+     "y": 1180,
+     "rot": -0.08,
+     "size": 56,
+     "in": "der Fehler",
+     "out": "Frag doch einfach"
+    },
+    {
+     "id": "b_einfach_k",
+     "type": "bubble",
+     "from": "papa_k",
+     "text": "Frag doch *einfach*!",
+     "x": 290,
+     "y": 830,
+     "maxW": 290,
+     "size": 44,
+     "in": "Frag doch einfach-0.1",
+     "out": "Die kleine die"
+    },
+    {
+     "id": "pf_tiefer",
+     "type": "arrow",
+     "from": {
+      "x": 900,
+      "y": 1200
+     },
+     "to": {
+      "x": 900,
+      "y": 1060
+     },
+     "style": "red",
+     "in": "eine Schublade tiefer"
+    },
+    {
+     "id": "tag_tiefer",
+     "type": "tag",
+     "text": "eine tiefer",
+     "x": 900,
+     "y": 1240,
+     "color": "rose",
+     "in": "eine Schublade tiefer"
+    },
+    {
+     "id": "st_zweit",
+     "type": "stamp",
+     "text": "zu zweit",
+     "x": 560,
+     "y": 1250,
+     "rot": -0.07,
+     "size": 54,
+     "in": "zu zweit"
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 640,
+     "y": 720,
+     "w": 380,
+     "h": 120,
+     "label": "Plusrechnen",
+     "size": 56,
+     "color": "idea",
+     "in": "hängt ganz oben",
+     "states": [
+      {
+       "at": "hängt ganz oben",
+       "state": "glow"
+      },
+      {
+       "at": "Darunter liegen",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_low0",
+     "type": "node",
+     "x": 380,
+     "y": 980,
+     "w": 240,
+     "h": 130,
+     "label": "Einer",
+     "size": 46,
+     "color": "food",
+     "in": "die Einer",
+     "states": [
+      {
+       "at": "die Einer",
+       "state": "glow"
+      },
+      {
+       "at": "Fast alle sind voll",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "l_low0",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_low0",
+     "style": "line",
+     "in": "die Einer"
+    },
+    {
+     "id": "n_low1",
+     "type": "node",
+     "x": 640,
+     "y": 980,
+     "w": 240,
+     "h": 130,
+     "label": "Zehner",
+     "size": 46,
+     "color": "ice",
+     "in": "Die Zehner",
+     "states": [
+      {
+       "at": "Die Zehner",
+       "state": "glow"
+      },
+      {
+       "at": "Fast alle sind voll+0.30",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "l_low1",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_low1",
+     "style": "line",
+     "in": "Die Zehner"
+    },
+    {
+     "id": "n_low2",
+     "type": "node",
+     "x": 900,
+     "y": 980,
+     "w": 240,
+     "h": 130,
+     "label": "kleine *Eins*",
+     "size": 46,
+     "color": "kids",
+     "in": "Die kleine Eins",
+     "states": [
+      {
+       "at": "Die kleine Eins",
+       "state": "empty"
+      },
+      {
+       "at": "eine Schublade tiefer",
+       "state": "empty+glow"
+      }
+     ],
+     "emptyLabel": "kleine Eins"
+    },
+    {
+     "id": "l_low2",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_low2",
+     "style": "line",
+     "in": "Die kleine Eins"
+    }
+   ]
+  },
+  {
+   "at": "Jetzt der wichtige",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster_h",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 680,
+     "w": 200,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "mond_h",
+     "type": "icon",
+     "kind": "moon",
+     "x": 205,
+     "y": 650,
+     "size": 50,
+     "enter": "fade"
+    },
+    {
+     "id": "tisch_h",
+     "type": "prop",
+     "kind": "table",
+     "x": 560,
+     "w": 640,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "lena_h",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "x": 400,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Nein",
+       "mood": "worried"
+      },
+      {
+       "at": "Woher kommt die",
+       "mood": "open"
+      },
+      {
+       "at": "Klein genug",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Ja",
+       "end:Ja"
+      ],
+      [
+       "Ja#2",
+       "end:Ja#2"
+      ],
+      [
+       "Nein",
+       "end:Woher kommt die"
+      ]
+     ]
+    },
+    {
+     "id": "papa_h",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 790,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Kannst du die Einer",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Kannst du die Einer",
+       "end:Kannst du die Einer"
+      ],
+      [
+       "Die Zehner",
+       "end:Die Zehner"
+      ],
+      [
+       "Und die kleine Eins",
+       "end:Und die kleine Eins"
+      ]
+     ]
+    },
+    {
+     "id": "tag_wichtig",
+     "type": "tag",
+     "text": "jetzt der wichtige Teil",
+     "x": 560,
+     "y": 940,
+     "color": "rose",
+     "out": "fragt nach unten"
+    },
+    {
+     "id": "pf_unten",
+     "type": "arrow",
+     "from": {
+      "x": 560,
+      "y": 1000
+     },
+     "to": {
+      "x": 560,
+      "y": 1160
+     },
+     "style": "red",
+     "in": "fragt nach unten",
+     "out": "Kannst du"
+    },
+    {
+     "id": "tag_unten",
+     "type": "tag",
+     "text": "nach unten",
+     "x": 560,
+     "y": 940,
+     "color": "rose",
+     "in": "fragt nach unten",
+     "out": "Kannst du"
+    },
+    {
+     "id": "st_morgen",
+     "type": "stamp",
+     "text": "klein genug",
+     "x": 880,
+     "y": 1000,
+     "rot": -0.08,
+     "size": 52,
+     "in": "Klein genug"
+    },
+    {
+     "id": "m0_h",
+     "type": "node",
+     "x": 420,
+     "y": 600,
+     "w": 200,
+     "h": 100,
+     "label": "Einer",
+     "size": 40,
+     "color": "food",
+     "in": "Kannst du die Einer",
+     "states": [
+      {
+       "at": "Kannst du die Einer",
+       "state": "glow"
+      },
+      {
+       "at": "Ja",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "m1_h",
+     "type": "node",
+     "x": 640,
+     "y": 600,
+     "w": 200,
+     "h": 100,
+     "label": "Zehner",
+     "size": 40,
+     "color": "ice",
+     "in": "Die Zehner",
+     "states": [
+      {
+       "at": "Die Zehner",
+       "state": "glow"
+      },
+      {
+       "at": "Ja#2",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "m2_h",
+     "type": "node",
+     "x": 860,
+     "y": 600,
+     "w": 200,
+     "h": 100,
+     "label": "kleine *Eins*",
+     "size": 40,
+     "color": "kids",
+     "in": "Und die kleine Eins",
+     "states": [
+      {
+       "at": "Und die kleine Eins",
+       "state": "empty"
+      },
+      {
+       "at": "Woher kommt die",
+       "state": "empty+glow"
+      }
+     ],
+     "emptyLabel": "kleine Eins"
+    },
+    {
+     "id": "bp0_h",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Kannst du die *Einer*?",
+     "x": 780,
+     "y": 830,
+     "maxW": 330,
+     "size": 42,
+     "in": "Kannst du die Einer-0.1",
+     "out": "Ja+0.4"
+    },
+    {
+     "id": "bp1_h",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Die *Zehner*?",
+     "x": 780,
+     "y": 830,
+     "maxW": 330,
+     "size": 42,
+     "in": "Die Zehner-0.1",
+     "out": "Ja#2+0.4"
+    },
+    {
+     "id": "bp2_h",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Und die *kleine Eins*?",
+     "x": 780,
+     "y": 830,
+     "maxW": 330,
+     "size": 42,
+     "in": "Und die kleine Eins-0.1",
+     "out": "Nein+0.8"
+    },
+    {
+     "id": "bl0_h",
+     "type": "bubble",
+     "from": "lena_h",
+     "text": "Ja.",
+     "x": 360,
+     "y": 960,
+     "maxW": 340,
+     "size": 42,
+     "in": "Ja-0.1",
+     "out": "Die Zehner"
+    },
+    {
+     "id": "bl1_h",
+     "type": "bubble",
+     "from": "lena_h",
+     "text": "Ja.",
+     "x": 360,
+     "y": 960,
+     "maxW": 340,
+     "size": 42,
+     "in": "Ja#2-0.1",
+     "out": "Und die kleine"
+    },
+    {
+     "id": "bl2_h",
+     "type": "bubble",
+     "from": "lena_h",
+     "text": "Nein. Woher *kommt* die?",
+     "x": 360,
+     "y": 960,
+     "maxW": 340,
+     "size": 42,
+     "in": "Nein-0.1",
+     "out": "Da ist sie"
+    },
+    {
+     "id": "q_klein_h",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 560,
+     "h": 96,
+     "label": "Woher kommt die *kleine Eins*?",
+     "size": 40,
+     "color": "paper",
+     "in": "Da ist sie",
+     "states": [
+      {
+       "at": "Da ist sie",
+       "state": "glow"
+      },
+      {
+       "at": "Da ist sie+1.60",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "g_klein_h",
+     "type": "link",
+     "from": "q_klein_h",
+     "to": "m2_h",
+     "style": "gold",
+     "in": "Da ist sie+0.40"
+    }
+   ]
+  },
+  {
+   "at": "Am nächsten Tag",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "tafel_c",
+     "type": "prop",
+     "kind": "blackboard",
+     "x": 540,
+     "y": 720,
+     "w": 560,
+     "h": 380,
+     "text": [
+      "*1*      ",
+      "4 7",
+      "+ 3 5",
+      "8 2"
+     ],
+     "size": 64,
+     "enter": "fade"
+    },
+    {
+     "id": "lehrerin_c",
+     "type": "figure",
+     "role": "teacher",
+     "x": 950,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [],
+     "enter": "fade"
+    },
+    {
+     "id": "lena_c",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "x": 160,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Drei Kinder nicken",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "zeigt Lena auf",
+       "kind": "raise",
+       "dur": 2.2
+      }
+     ],
+     "talk": [],
+     "enter": "fade"
+    },
+    {
+     "id": "kind0_c",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "x": 360,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Drei Kinder nicken",
+       "mood": "happy"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "kind1_c",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "x": 560,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Drei Kinder nicken+0.25",
+       "mood": "happy"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "kind2_c",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "black",
+     "skin": "brown",
+     "shirt": "#BFD9F2",
+     "x": 760,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Drei Kinder nicken+0.50",
+       "mood": "happy"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "pult0_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 160,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult1_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 360,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult2_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 560,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult3_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 760,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "bulb0_c",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 360,
+     "y": 1085,
+     "size": 70,
+     "in": "Drei Kinder nicken"
+    },
+    {
+     "id": "bulb1_c",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 560,
+     "y": 1085,
+     "size": 70,
+     "in": "Drei Kinder nicken+0.25"
+    },
+    {
+     "id": "bulb2_c",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 760,
+     "y": 1085,
+     "size": 70,
+     "in": "Drei Kinder nicken+0.50"
+    },
+    {
+     "id": "tag_tag",
+     "type": "tag",
+     "text": "am nächsten Tag",
+     "x": 330,
+     "y": 900,
+     "color": "plum",
+     "in": "Am nächsten Tag",
+     "out": "zeigt Lena auf"
+    },
+    {
+     "id": "b_frage_c",
+     "type": "bubble",
+     "from": "lena_c",
+     "text": "Woher kommt die *kleine Eins*?",
+     "x": 330,
+     "y": 990,
+     "maxW": 360,
+     "size": 42,
+     "in": "zeigt Lena auf",
+     "out": "Drei Kinder nicken"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Weil es seine",
+   "x": 420,
+   "y": 1040
+  },
+  {
+   "at": "Ich versteh Mathe nicht",
+   "x": 360,
+   "y": 980
+  },
+  {
+   "at": "hängt ganz oben",
+   "x": 640,
+   "y": 520
+  },
+  {
+   "at": "Darunter liegen",
+   "x": 640,
+   "y": 980
+  },
+  {
+   "at": "der Fehler",
+   "x": 880,
+   "y": 1180
+  },
+  {
+   "at": "eine Schublade tiefer",
+   "x": 900,
+   "y": 980
+  },
+  {
+   "at": "Da ist sie",
+   "x": 540,
+   "y": 830
+  },
+  {
+   "at": "Drei Kinder nicken",
+   "x": 560,
+   "y": 1085
+  }
+ ]
+}

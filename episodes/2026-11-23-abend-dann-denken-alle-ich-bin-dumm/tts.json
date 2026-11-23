@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Am nächsten Tag fragt sie doch. Und drei Kinder nicken. Lena ist neun. In Mathe hat sie heute etwas nicht verstanden und nicht gefragt. [pause] Schau in ihren Kopf, als Schrank. Oben steht: Plusrechnen. Darunter drei Schubladen: die Einer. Die Zehner. Und die kleine Eins, die man sich merkt. Zwei sind voll. Nur eine ist leer. Aber Lenas Frage klingt so: „Ich versteh das nicht.“ Das ist eine Frage von ganz oben. Sie klingt, als wäre der ganze Schrank leer. So eine Frage stellt keiner gern. [pause] Und jetzt vergleich das mal damit. [pause] Papa geht mit ihr nach unten: „Kannst du die Einer?“ „Ja.“ „Die Zehner?“ „Ja.“ „Und was fehlt?“ Lena überlegt. „Woher kommt die kleine Eins?“ Das ist ihre echte Frage. Sie ist klein. Und sie zeigt genau auf die leere Schublade. [pause] Weißt du noch, die drei Kinder vom Anfang? Jetzt kommen sie. [pause] Am nächsten Tag zeigt Lena auf: „Woher kommt die kleine Eins?“ Die Lehrerin malt zehn Einer an die Tafel und kreist sie ein: ein Zehner. Drei Kinder nicken. Sie hatten dieselbe leere Schublade. Eine kleine Frage traut man sich. Und sie hilft gleich mehreren. [pause] Welche kleine Frage hat dein Kind heute nicht gestellt? [pause] [pause] Folg mir, wenn dein Kind auch lieber nickt als fragt.",
+ "hooks": {
+  "a": "[warmly] „Dann denken alle, ich bin dumm.“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
