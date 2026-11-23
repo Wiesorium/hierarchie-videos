@@ -2,9 +2,9 @@
 import { W, H, C, font, measure, richText, rrect, fillShape, shadow, clamp, smooth, easeOutBack, lerp } from './core.mjs';
 import { drawIcon } from './elements.mjs';
 
-export function drawHookCard(ctx, lines, t, tEnd) {
+export function drawHookCard(ctx, lines, t, tEnd, maxPx = 68) {
   if (!lines || !lines.length) return; const a = 1 - smooth(tEnd, tEnd + 0.35, t); if (a <= 0) return;
-  let px = 68; const maxW = 920; while (px > 50 && Math.max(...lines.map(l => measure(ctx, l, px))) > maxW - 80) px -= 2;
+  let px = maxPx || 68; const maxW = 920; while (px > 50 && Math.max(...lines.map(l => measure(ctx, l, px))) > maxW - 80) px -= 2;
   const lh = px * 1.22; const w = Math.min(maxW, Math.max(...lines.map(l => measure(ctx, l, px))) + 96); const h = lines.length * lh + 60;
   const float = Math.sin(t * 2.1) * 6, sc = 0.975 + 0.025 * smooth(0, 0.6, t) + 0.008 * Math.sin(t * 1.6), rot = Math.sin(t * 1.1) * 0.008;
   const cx = W / 2, cy = 330 + float;

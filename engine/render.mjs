@@ -92,8 +92,9 @@ function drawElement(ctx, e, tm) {
 function cameraPulse(tm) { let s = 1; for (const h of R.hits) { const d = tm - h.t; if (d >= 0 && d < 0.9) s += 0.045 * (1 - Math.exp(-d / 0.03)) * Math.exp(-d / 0.17); } return s; }
 
 const [sceneCv, sctx] = makeCanvas();
-function drawScene(ctx, tm, withPulse = true) {
+function drawScene(ctx, tm, withPulse = true, cam = null) {
   ctx.save();
+  if (cam) { ctx.translate(cam.cx, cam.cy); ctx.scale(cam.s, cam.s); ctx.translate(-cam.fx, -cam.fy); }
   const s = withPulse ? cameraPulse(tm) : 1; if (s !== 1) { ctx.translate(W / 2, 1000); ctx.scale(s, s); ctx.translate(-W / 2, -1000); }
   ctx.drawImage(landscape(), 0, 0); clouds(ctx, tm + 30);
   for (const e of ELS) drawElement(ctx, e, tm);
@@ -104,15 +105,27 @@ function drawScene(ctx, tm, withPulse = true) {
 const O = R.outro;
 if (!R.focus) { const hd = R.hero ? headOf(R.hero, 0) : null; R.focus = hd ? { x: hd.x, y: hd.y } : { x: W / 2, y: 1100 }; }
 function zoomInZ(tv) { const d = R.zoomIn?.dur ?? 0; if (!d || tv >= d) return ZMAX; const u = clamp(tv / d); return ZMAX * (0.32 * u + 0.68 * easeInOutCubic(u)); }
+// Close-up at the very start (storyboard intro.close): the camera starts close on the hero's face (or intro.close.focus),
+// holds it with a slow push, then pulls back to the full stage. Only in the hook part of a variant.
+function closeCam(tv, tm) {
+  const c = R.close; if (!c) return null; const hold = c.hold ?? 1.3, dur = c.dur ?? 1.0; if (tv >= hold + dur) return null;
+  const f = c.fx != null ? null : (c.focus && BYID[c.focus]?.type === 'figure') ? headOf(c.focus, tm) : (R.hero ? headOf(R.hero, tm) : null);
+  const F = f ? { x: f.x + (c.dx ?? 0), y: f.y + (c.dy ?? 0) } : { x: c.fx ?? W / 2, y: c.fy ?? 1100 };
+  const u = easeInOutCubic(clamp((tv - hold) / dur)); const S0 = (c.scale ?? 1.9) * (1 + 0.035 * Math.min(tv, hold) / hold);
+  const s = lerp(S0, 1, u);
+  let cx = lerp(c.x ?? W / 2, F.x, u), cy = lerp(c.y ?? 1080, F.y, u);
+  cx = clamp(cx, W - s * (W - F.x), s * F.x); cy = clamp(cy, H - s * (H - F.y), s * F.y); // keep the frame covered
+  return { s, cx, cy, fx: F.x, fy: F.y };
+}
 function zoomOutZ(tm) { if (tm < O.zoomStart) return ZMAX; const u = clamp((tm - O.zoomStart) / O.zoomDur); return ZMAX * (1 - easeInOutCubic(u)); }
 
 function frame(ctx, tm, tv, variant) {
   const zIn = variant ? zoomInZ(tv) : ZMAX; const zOut = zoomOutZ(tm); const Z = Math.min(zIn, zOut);
-  if (Z >= ZMAX - 1e-4) drawScene(ctx, tm, true);
+  if (Z >= ZMAX - 1e-4) drawScene(ctx, tm, true, variant ? closeCam(tv, tm) : null);
   else if (Z <= 1e-4) universeIdle(ctx, tm);
   else { drawScene(sctx, tm, false); drawZoom(ctx, Z, tm, sceneCv, R.focus); }
   // overlays
-  if (variant) drawHookCard(ctx, variant.card, tv, variant.cardEnd);
+  if (variant) drawHookCard(ctx, variant.card, tv, variant.cardEnd, variant.cardSize);
   drawSubtitles(ctx, R.subtitles, tm, R.subStart ?? -1e9);
   if (tm >= O.questionIn - 0.3) drawQuestion(ctx, O.questionLines, O.questionTimes, tm, O.questionIn);
   if (tm >= O.ctaIn) drawEndCard(ctx, { ...(ENDCARDS[R.cta] || ENDCARDS.whatsapp), ...(R.endcard || {}) }, tm, O.ctaIn);

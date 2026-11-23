@@ -39,6 +39,20 @@ class StoryError(Exception):
 
 
 # ---------------- audio helpers ----------------
+def speech_span(wav, sr=A.SR):
+    """(start, end) of the audible speech in seconds: first/last 10-ms window louder than -32 dB below the loud parts."""
+    hop = sr // 100
+    n = len(wav) // hop
+    if n == 0:
+        return 0.0, len(wav) / sr
+    rms = np.sqrt(np.mean(wav[: n * hop].reshape(n, hop) ** 2, axis=1))
+    thr = np.percentile(rms, 95) * 10 ** (-32 / 20)
+    on = np.nonzero(rms > thr)[0]
+    if not len(on):
+        return 0.0, len(wav) / sr
+    return on[0] * hop / sr, (on[-1] + 1) * hop / sr
+
+
 def decode(path, sr=A.SR):
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', str(path), '-ac', '1', '-ar', str(sr), '-f', 'f32le', '-'], check=True, capture_output=True).stdout
     return np.frombuffer(raw, dtype=np.float32).astype(np.float64)
@@ -202,7 +216,7 @@ def validate_static(sb):
         raise StoryError('\n'.join(errs))
 
 
-def resolve(ep, sb, words, main_dur, hook_durs):
+def resolve(ep, sb, words, main_dur, hook_durs, hook_spans=None):
     R = Resolver(words, main_dur)
     s = sb['script']
     # closing and CTA in the transcript
@@ -343,11 +357,17 @@ def resolve(ep, sb, words, main_dur, hook_durs):
     main_end = main_dur
     end_f = math.ceil((main_end + 1.4) * FPS)
     variants = {}
+    intro = sb.get('intro') or {}
     for v, d in hook_durs.items():
-        off_f = round((d + HOOK_PAUSE) * FPS)
+        if 'gap' in intro and hook_spans and v in hook_spans:
+            # no silence between hook and main part: main speech starts `gap` s after the hook's last sound
+            off_f = max(round((hook_spans[v][1] + float(intro['gap']) - words[0]['s']) * FPS), round(0.3 * FPS))
+        else:
+            off_f = round((d + HOOK_PAUSE) * FPS)
         off = off_f / FPS
         card_end_main = min(max(first_sentence_end, 1.2), 4.0) + 0.1
-        variants[v] = {'id': v, 'offset': off, 'offF': off_f, 'card': sb['hooks'][v]['card'], 'cardEnd': off + card_end_main, 'hookDur': d}
+        variants[v] = {'id': v, 'offset': off, 'offF': off_f, 'card': sb['hooks'][v]['card'], 'cardEnd': off + card_end_main, 'hookDur': d,
+                       'cardSize': intro.get('cardSize')}
     sub_start = max(vv['cardEnd'] - vv['offset'] for vv in variants.values()) + 0.1
     K = sub_start + 0.35
     k_f = math.ceil(K * FPS)
@@ -365,7 +385,7 @@ def resolve(ep, sb, words, main_dur, hook_durs):
         'outro': {'zoomStart': before_close + 0.05, 'zoomDur': 2.6, 'questionIn': closing_t, 'questionLines': sb['question'], 'questionTimes': qtimes,
                   'ctaIn': cta_t - 0.15, 'end': end_f / FPS},
         'variants': variants, 'tailStart': k_f / FPS, 'subStart': sub_start, 'sceneStarts': starts, 'tailF': k_f, 'endF': end_f, 'mainDur': main_dur,
-        'chords': chords, 'events': [(t, k) for t, k in events if k],
+        'chords': chords, 'events': [(t, k) for t, k in events if k], 'close': intro.get('close'),
     }
     return resolved
 
@@ -432,20 +452,26 @@ def main():
     main_dur = len(main_wav) / A.SR
     hook_wavs = {v: decode(au / f'hook-{v}.mp3') for v in sorted(sb['hooks']) if (variants_arg is None or v in variants_arg)}
     hook_durs = {v: len(w) / A.SR for v, w in hook_wavs.items()}
+    hook_spans = {v: speech_span(w) for v, w in hook_wavs.items()}
+    intro = sb.get('intro') or {}
     try:
-        R = resolve(ep, sb, words, main_dur, hook_durs)
+        R = resolve(ep, sb, words, main_dur, hook_durs, hook_spans)
     except StoryError as e:
         print('FEHLER im Storyboard:\n' + str(e)); sys.exit(2)
     R['envelope'] = envelope(main_wav, R['endF'] + 2)
     work = ep / 'work'; work.mkdir(exist_ok=True)
     out = ep / 'out'; out.mkdir(exist_ok=True)
     qa = ep / 'qa'; qa.mkdir(exist_ok=True)
+    def zoom_dur(V):  # universe zoom at the start: the whole hook, or at most intro.zoom seconds (0 = start in the scene)
+        return min(V['offset'] - 0.1, float(intro['zoom'])) if 'zoom' in intro else V['offset'] - 0.1
     for v, V in R['variants'].items():
-        V2 = dict(R); V2['zoomIn'] = {'dur': V['offset'] - 0.1}
+        V2 = dict(R); V2['zoomIn'] = {'dur': zoom_dur(V)}
         (work / f'resolved-{v}.json').write_text(json.dumps(V2, ensure_ascii=False))
     (work / 'resolved-tail.json').write_text(json.dumps({**R, 'zoomIn': {'dur': 0}}, ensure_ascii=False))
     report = {'mainDur': round(main_dur, 2), 'hits': [round(h['t'], 2) for h in R['hits']], 'scenes': len(sb['scenes']),
-              'closing': R['outro']['questionIn'], 'cta': R['outro']['ctaIn'], 'variants': {v: {'offset': V['offset']} for v, V in R['variants'].items()}}
+              'closing': R['outro']['questionIn'], 'cta': R['outro']['ctaIn'],
+              'variants': {v: {'offset': V['offset'], 'hookSpeech': [round(x, 2) for x in hook_spans[v]],
+                               'gap': round(V['offset'] + words[0]['s'] - hook_spans[v][1], 3)} for v, V in R['variants'].items()}}
     if not 6 <= len(R['hits']) <= 12:
         print(f'WARNUNG: {len(R["hits"])} Treffer (Vorgabe: etwa acht)')
     # contact sheet for the first variant
@@ -471,7 +497,11 @@ def main():
         sections = [(0.0, R['chords'][0][1])] + [(off + t, c) for t, c in R['chords'][1:]]
         ev = [(off + t, k) for t, k in R['events'] if off + t > 0.2]
         ev += [(R['variants'][v]['cardEnd'] - 0.2, 'whoosh')]
-        pad, mel = A.build_music(total, sections, [off + h['t'] for h in R['hits']], ev, (0.05, off - 0.1),
+        zd = zoom_dur(V)
+        hit_ts = [off + h['t'] for h in R['hits']]
+        if intro and intro.get('accent', True):  # sound accent on the first spoken word
+            hit_ts = [hook_spans[v][0]] + hit_ts
+        pad, mel = A.build_music(total, sections, hit_ts, ev, (0.05, 0.05 + zd) if zd > 0 else (0.0, 0.0),
                                  (off + R['outro']['zoomStart'], off + R['outro']['zoomStart'] + R['outro']['zoomDur']), seed=7)
         mixed, lufs = A.mix(voice, pad, mel)
         mixed = mixed[: int(total * A.SR)]

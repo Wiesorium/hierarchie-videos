@@ -23,8 +23,27 @@ Wörter der Stimme und rendert drei Varianten (Hook a, b, c). Ein vollständiges
 | `script` | `lockin`, `block1`, `rehook1`, `block2`, `rehook2`, `block3` (optional), `closing` (die Frage), `cta` |
 | `question` | die Closing-Frage auf zwei Zeilen für die Fragekarte (gleiche Wörter wie `script.closing`) |
 | `endcard` | optional: `title`, `pill`, `lines` (2), `button` – überschreibt die Standard-Endkarte |
+| `intro` | optional: die ersten Sekunden nach Martins Leitlinie vom 22.11.2026 (siehe unten) |
 | `scenes` | Liste der Szenen (siehe unten) |
 | `hits` | 8 Treffer: `{"at": Anker, "x", "y"}` – Zoom-Stoß, Funken und Musik-Schlag genau auf dem Wort |
+
+### `intro` – die ersten 3 Sekunden (Leitlinie 22.11.2026)
+
+```json
+"intro": {"zoom": 0, "gap": 0.12, "cardSize": 86, "close": {"scale": 1.9, "hold": 1.3, "dur": 1.0}}
+```
+
+- `zoom`: höchstens so viele Sekunden Weltall-Zoom am Anfang; `0` = gleich in der Szene (ohne `intro`: Zoom über den ganzen Hook).
+- `gap`: Pause zwischen dem letzten Laut des Hooks und dem ersten Wort des Hauptteils (gemessen, nicht geschätzt); ohne `gap` 0,45 s
+  nach dem Ende der Hook-Datei. `build.py` meldet die echte Lücke im Bericht (`variants.<v>.gap`).
+- `cardSize`: größte Schrift der Text-Karte (Standard 68), für Karten mit höchstens sechs Wörtern.
+- `close`: Nahaufnahme ab Bild 1. Die Kamera steht `scale`-fach nah am Kopf der Hauptfigur (`hero`, oder `focus`: id einer
+  Figur, oder ein fester Punkt `fx`/`fy` für ein Ding), schiebt sich `hold` Sekunden langsam heran und fährt in `dur` Sekunden
+  auf das ganze Bild zurück. `x`/`y`: wo der Punkt auf dem Bildschirm liegt (Standard 540/1080, also unter der Text-Karte).
+- Mit `intro` kommt auf das erste Wort des Hooks ein Sound-Akzent (`"accent": false` schaltet ihn ab).
+- Ein Storyboard kann auch nur einen Hook haben (`hooks: {"a": …}`); dann entsteht genau ein Video. So werden die drei Videos
+  eines Themas gebaut: drei Episode-Ordner, je ein Hook-Typ.
+- Etwas soll sofort passieren: Elemente im Hook mit `"in": "@-1.8"` (Sekunden vor dem Hauptteil) ploppen schon während des Hooks auf.
 
 ## Anker (Zeitpunkte)
 
