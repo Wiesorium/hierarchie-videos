@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Clara ist neun. Jetzt spielt sie mit Ida und Tim. Vor zwei Tagen stand sie noch bei Leonie. Wie es dazu kam, zeig ich dir jetzt. In der Pause ruft Leonie über Tim: „Schaut mal, der Baby-Igel!“ Alle lachen. Clara lacht mit. Und ihr Bauch wird schwer. [pause] Das schwere Gefühl ist kein Fehler. Es ist eine Nachricht von unten. Schau in Claras Schrank: Unten zwei Schubladen. Alle lachen über Tim. Ich hab mitgelacht. Daraus wächst oben eine neue: Ich lache niemanden aus. [pause] Das ist, was ich einen Standard nenne. [pause] Ein Standard ist etwas, das dir wichtig ist. Du lernst ihn nicht aus Regeln, sondern aus Momenten, die sich falsch anfühlen. Und wenn eine Gruppe nicht zu deinem Standard passt, darfst du dir eine andere suchen. [pause] Mal ehrlich: Hast du als Kind auch mal mitgelacht? [pause] Dann kennst du das schwere Gefühl. Und vielleicht auch das hier: Wenn du älter bist, verstehst du, dass nicht alles so gemeint ist. Leonie sagt so etwas vielleicht nur, weil sie selbst dazugehören will. Unter ihrem Satz liegt eine Schublade, die man von außen nicht sieht. Claras Standard bleibt trotzdem. Er wird nur freundlicher. [pause] Bei wem ist der Bauch deines Kindes leicht? [pause] [pause] Folg mir, damit mehr Kinder ihre eigenen Standards finden.",
+ "hooks": {
+  "b": "[warmly] Clara hat sich neue Freunde gesucht."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

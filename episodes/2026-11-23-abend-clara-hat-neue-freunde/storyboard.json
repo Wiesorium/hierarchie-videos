@@ -1,0 +1,798 @@
+{
+ "slug": "clara-hat-neue-freunde",
+ "title": "Clara hat neue Freunde",
+ "cta": "follow",
+ "hero": "clara",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.7,
+   "hold": 1.3,
+   "dur": 1.0,
+   "fx": 500,
+   "fy": 1200
+  }
+ },
+ "hooks": {
+  "b": {
+   "label": "Ergebnis zuerst",
+   "audio": "Clara hat sich neue Freunde gesucht.",
+   "card": [
+    "Nicht aus Streit.",
+    "*Aus einem Standard.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Clara ist neun. Jetzt spielt sie mit Ida und Tim. Vor zwei Tagen stand sie noch bei Leonie. Wie es dazu kam, zeig ich dir jetzt. In der Pause ruft Leonie über Tim: „Schaut mal, der Baby-Igel!“ Alle lachen. Clara lacht mit. Und ihr Bauch wird schwer.",
+  "block1": "Das schwere Gefühl ist kein Fehler. Es ist eine Nachricht von unten. Schau in Claras Schrank: Unten zwei Schubladen. Alle lachen über Tim. Ich hab mitgelacht. Daraus wächst oben eine neue: Ich lache niemanden aus.",
+  "rehook1": "Das ist, was ich einen Standard nenne.",
+  "block2": "Ein Standard ist etwas, das dir wichtig ist. Du lernst ihn nicht aus Regeln, sondern aus Momenten, die sich falsch anfühlen. Und wenn eine Gruppe nicht zu deinem Standard passt, darfst du dir eine andere suchen.",
+  "rehook2": "Mal ehrlich: Hast du als Kind auch mal mitgelacht?",
+  "block3": "Dann kennst du das schwere Gefühl. Und vielleicht auch das hier: Wenn du älter bist, verstehst du, dass nicht alles so gemeint ist. Leonie sagt so etwas vielleicht nur, weil sie selbst dazugehören will. Unter ihrem Satz liegt eine Schublade, die man von außen nicht sieht. Claras Standard bleibt trotzdem. Er wird nur freundlicher.",
+  "closing": "Bei wem ist der Bauch deines Kindes leicht?",
+  "cta": "Folg mir, damit mehr Kinder ihre eigenen Standards finden."
+ },
+ "question": [
+  "Bei wem ist der Bauch",
+  "deines Kindes leicht?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "damit mehr Kinder ihre",
+   "eigenen Standards finden"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "baum",
+     "type": "prop",
+     "kind": "tree",
+     "x": 960,
+     "w": 240,
+     "h": 440
+    },
+    {
+     "id": "bank",
+     "type": "prop",
+     "kind": "bench",
+     "x": 180,
+     "w": 300,
+     "h": 130,
+     "z": 0.5
+    },
+    {
+     "id": "clara",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 330,
+     "look": "right",
+     "mood": "happy"
+    },
+    {
+     "id": "ida",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "black",
+     "skin": "brown",
+     "shirt": "#E9DDF4",
+     "x": 560,
+     "look": "left",
+     "mood": "laugh"
+    },
+    {
+     "id": "tim",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#BFD9F2",
+     "glasses": true,
+     "x": 760,
+     "look": "left",
+     "mood": "happy"
+    },
+    {
+     "id": "igel_t",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 860,
+     "y": 1450,
+     "size": 50,
+     "z": 7
+    },
+    {
+     "id": "ball",
+     "type": "prop",
+     "kind": "ball",
+     "x": 420,
+     "y": 1300,
+     "w": 60,
+     "color": "#F7C948",
+     "z": 5,
+     "in": "@-3.0",
+     "moves": [
+      {
+       "at": "@-2.70",
+       "x": 680,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "@-1.90",
+       "x": 420,
+       "y": 1300,
+       "dur": 0.7
+      },
+      {
+       "at": "@-1.10",
+       "x": 660,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "@-0.30",
+       "x": 440,
+       "y": 1300,
+       "dur": 0.7
+      },
+      {
+       "at": "@+0.50",
+       "x": 680,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "@+1.30",
+       "x": 420,
+       "y": 1300,
+       "dur": 0.7
+      }
+     ]
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 330,
+     "y": 1010,
+     "size": 60,
+     "in": "@-1.8",
+     "out": "Vor zwei Tagen"
+    },
+    {
+     "id": "tag_clara",
+     "type": "tag",
+     "text": "Clara, neun",
+     "x": 330,
+     "y": 1060,
+     "color": "plum",
+     "in": "Clara ist",
+     "out": "Jetzt spielt"
+    },
+    {
+     "id": "tag_jetzt",
+     "type": "tag",
+     "text": "jetzt: Ida und Tim",
+     "x": 560,
+     "y": 880,
+     "color": "plum",
+     "in": "Jetzt spielt",
+     "out": "Vor zwei Tagen"
+    },
+    {
+     "id": "tag_vorher",
+     "type": "tag",
+     "text": "vor zwei Tagen",
+     "x": 560,
+     "y": 880,
+     "color": "rose",
+     "in": "Vor zwei Tagen"
+    }
+   ]
+  },
+  {
+   "at": "In der Pause ruft",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "baum_p",
+     "type": "prop",
+     "kind": "tree",
+     "x": 960,
+     "w": 240,
+     "h": 440,
+     "enter": "fade"
+    },
+    {
+     "id": "clara_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      },
+      {
+       "at": "ihr Bauch wird schwer",
+       "mood": "worried"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "leonie_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F49AAE",
+     "x": 300,
+     "look": "right",
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Schaut mal",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Schaut mal",
+       "end:der Baby-Igel"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "freundin_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#FBE3A0",
+     "x": 440,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tim_p",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#BFD9F2",
+     "glasses": true,
+     "x": 780,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "sad"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "rucksack_p",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 860,
+     "w": 110,
+     "h": 140,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "igel_r_p",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 860,
+     "y": 1390,
+     "size": 56,
+     "z": 7,
+     "enter": "fade"
+    },
+    {
+     "id": "b_igel_p",
+     "type": "bubble",
+     "from": "leonie_p",
+     "text": "Schaut mal, der *Baby-Igel*!",
+     "x": 380,
+     "y": 980,
+     "maxW": 330,
+     "size": 42,
+     "in": "Schaut mal-0.10",
+     "out": "Alle lachen+1.20"
+    },
+    {
+     "id": "ha0_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 300,
+     "y": 1060,
+     "color": "rose",
+     "in": "Alle lachen",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "ha1_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 450,
+     "y": 1100,
+     "color": "rose",
+     "in": "Alle lachen+0.15",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "ha2_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 150,
+     "y": 1080,
+     "color": "rose",
+     "in": "Alle lachen+0.30",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "wolke_c_p",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 150,
+     "y": 1050,
+     "size": 74,
+     "in": "ihr Bauch wird schwer"
+    },
+    {
+     "id": "regen_c_p",
+     "type": "icon",
+     "kind": "rain",
+     "x": 150,
+     "y": 1050,
+     "size": 74,
+     "in": "ihr Bauch wird schwer+0.50"
+    }
+   ]
+  },
+  {
+   "at": "Das schwere Gefühl",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "clara_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 130,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Nachricht von unten",
+       "mood": "open"
+      },
+      {
+       "at": "niemanden aus",
+       "mood": "smile"
+      },
+      {
+       "at": "andere suchen",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "wolke_k",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 150,
+     "y": 1020,
+     "size": 70,
+     "out": "Schau in Claras"
+    },
+    {
+     "id": "regen_k",
+     "type": "icon",
+     "kind": "rain",
+     "x": 150,
+     "y": 1020,
+     "size": 70,
+     "out": "Schau in Claras"
+    },
+    {
+     "id": "st_kein",
+     "type": "stamp",
+     "text": "kein Fehler",
+     "x": 610,
+     "y": 760,
+     "rot": -0.07,
+     "size": 56,
+     "in": "kein Fehler",
+     "out": "Nachricht von unten"
+    },
+    {
+     "id": "k_nachricht",
+     "type": "card",
+     "x": 610,
+     "y": 760,
+     "lines": [
+      "eine Nachricht",
+      "*von unten*"
+     ],
+     "size": 50,
+     "in": "Nachricht von unten",
+     "out": "Schau in Claras"
+    },
+    {
+     "id": "n_lachen",
+     "type": "node",
+     "x": 410,
+     "y": 1150,
+     "w": 330,
+     "h": 110,
+     "label": "Alle lachen über *Tim*",
+     "size": 38,
+     "color": "kids",
+     "in": "Alle lachen über Tim",
+     "states": [
+      {
+       "at": "Alle lachen über Tim",
+       "state": "glow"
+      },
+      {
+       "at": "Alle lachen über Tim+1.00",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_mit",
+     "type": "node",
+     "x": 800,
+     "y": 1150,
+     "w": 310,
+     "h": 110,
+     "label": "Ich hab *mitgelacht*",
+     "size": 38,
+     "color": "food",
+     "in": "Ich hab mitgelacht",
+     "states": [
+      {
+       "at": "Ich hab mitgelacht",
+       "state": "glow"
+      },
+      {
+       "at": "Ich hab mitgelacht+1.00",
+       "state": "heavy"
+      }
+     ]
+    },
+    {
+     "id": "n_std",
+     "type": "node",
+     "x": 610,
+     "y": 830,
+     "w": 460,
+     "h": 120,
+     "label": "Ich lache *niemanden* aus",
+     "emptyLabel": "?",
+     "size": 44,
+     "color": "fresh",
+     "in": "Daraus wächst",
+     "states": [
+      {
+       "at": "Daraus wächst",
+       "state": "empty"
+      },
+      {
+       "at": "niemanden aus",
+       "state": "glow"
+      },
+      {
+       "at": "niemanden aus+1.40",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "l1",
+     "type": "link",
+     "from": "n_lachen",
+     "to": "n_std",
+     "style": "gold",
+     "in": "niemanden aus+0.30"
+    },
+    {
+     "id": "l2",
+     "type": "link",
+     "from": "n_mit",
+     "to": "n_std",
+     "style": "gold",
+     "in": "niemanden aus+0.50"
+    },
+    {
+     "id": "tag_std",
+     "type": "tag",
+     "text": "*Standard*",
+     "x": 610,
+     "y": 690,
+     "color": "rose",
+     "in": "einen Standard nenne"
+    },
+    {
+     "id": "k_wichtig",
+     "type": "card",
+     "x": 610,
+     "y": 560,
+     "lines": [
+      "was dir",
+      "*wichtig* ist"
+     ],
+     "size": 46,
+     "in": "das dir wichtig",
+     "out": "Und wenn eine Gruppe"
+    },
+    {
+     "id": "k_regeln",
+     "type": "card",
+     "x": 360,
+     "y": 1350,
+     "lines": [
+      "nicht aus Regeln:",
+      "*aus Momenten*"
+     ],
+     "size": 40,
+     "in": "nicht aus Regeln",
+     "out": "Und wenn eine Gruppe"
+    },
+    {
+     "id": "k_suchen",
+     "type": "card",
+     "x": 610,
+     "y": 560,
+     "lines": [
+      "passt nicht?",
+      "*Andere suchen.*"
+     ],
+     "size": 46,
+     "in": "Und wenn eine Gruppe"
+    }
+   ]
+  },
+  {
+   "at": "Mal ehrlich",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "clara_l",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 130,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "nicht alles so gemeint",
+       "mood": "open"
+      },
+      {
+       "at": "freundlicher",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "leonie_l",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F49AAE",
+     "x": 990,
+     "look": "left",
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "dazugehören will",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "n_std_l",
+     "type": "node",
+     "x": 360,
+     "y": 640,
+     "w": 420,
+     "h": 110,
+     "label": "Ich lache *niemanden* aus",
+     "size": 40,
+     "color": "fresh",
+     "states": [
+      {
+       "at": "Mal ehrlich",
+       "state": "gold"
+      },
+      {
+       "at": "Standard bleibt",
+       "state": "gold+check"
+      }
+     ],
+     "in": "Mal ehrlich"
+    },
+    {
+     "id": "tag_ehrlich",
+     "type": "tag",
+     "text": "mal ehrlich",
+     "x": 560,
+     "y": 1300,
+     "color": "rose",
+     "out": "Dann kennst du"
+    },
+    {
+     "id": "tag_aelter",
+     "type": "tag",
+     "text": "wenn du älter bist",
+     "x": 560,
+     "y": 1300,
+     "color": "plum",
+     "in": "Wenn du älter",
+     "out": "Unter ihrem Satz"
+    },
+    {
+     "id": "herz_l",
+     "type": "icon",
+     "kind": "heart",
+     "x": 560,
+     "y": 860,
+     "size": 60,
+     "in": "Er wird nur freundlicher"
+    },
+    {
+     "id": "ln_satz",
+     "type": "node",
+     "x": 800,
+     "y": 820,
+     "w": 300,
+     "h": 100,
+     "label": "„Baby-Igel!“",
+     "size": 42,
+     "color": "kids",
+     "in": "Mal ehrlich",
+     "states": [
+      {
+       "at": "Mal ehrlich",
+       "state": "red"
+      }
+     ]
+    },
+    {
+     "id": "ln_unten",
+     "type": "node",
+     "x": 800,
+     "y": 1080,
+     "w": 300,
+     "h": 110,
+     "label": "will *dazugehören*",
+     "emptyLabel": "?",
+     "size": 40,
+     "color": "people",
+     "in": "Mal ehrlich",
+     "states": [
+      {
+       "at": "Mal ehrlich",
+       "state": "empty"
+      },
+      {
+       "at": "dazugehören will",
+       "state": "glow"
+      },
+      {
+       "at": "dazugehören will+1.40",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "ln_l",
+     "type": "link",
+     "from": "ln_satz",
+     "to": "ln_unten",
+     "style": "line",
+     "in": "Mal ehrlich"
+    },
+    {
+     "id": "tag_unsicht",
+     "type": "tag",
+     "text": "von außen unsichtbar",
+     "x": 800,
+     "y": 1210,
+     "color": "plum",
+     "in": "Unter ihrem Satz"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Clara ist neun",
+   "x": 330,
+   "y": 1060
+  },
+  {
+   "at": "Schaut mal",
+   "x": 380,
+   "y": 980
+  },
+  {
+   "at": "kein Fehler",
+   "x": 610,
+   "y": 760
+  },
+  {
+   "at": "niemanden aus",
+   "x": 610,
+   "y": 830
+  },
+  {
+   "at": "einen Standard nenne",
+   "x": 610,
+   "y": 690
+  },
+  {
+   "at": "andere suchen",
+   "x": 610,
+   "y": 560
+  },
+  {
+   "at": "dazugehören will",
+   "x": 800,
+   "y": 1080
+  },
+  {
+   "at": "Er wird nur freundlicher",
+   "x": 360,
+   "y": 640
+  }
+ ]
+}

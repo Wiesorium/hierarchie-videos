@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Auch wenn es oft stimmt. Warum, zeig ich dir an Clara. Sie ist neun. In der Pause ruft Leonie über Tim: „Schaut mal, der Baby-Igel!“ Alle lachen. Clara lacht mit. Zu Hause sagt sie: „Ich will da nicht mehr hin.“ Papa sagt, was viele sagen: „Ach, die Leonie meint’s doch nicht so.“ [pause] Schau in Claras Schrank. Unten liegen zwei Schubladen: Alle lachen über Tim. Ich hab mitgelacht. Darüber wächst gerade etwas Neues: Ich will nicht so sein. Das ist Claras eigener Standard. Er ist noch ganz frisch. [pause] Aber genau da liegt das Problem. [pause] „Die meint’s nicht so“ schaut in Leonies Schrank, nicht in Claras. Der frische Standard bekommt keinen Platz. Und Clara lernt: Mein schweres Gefühl zählt nicht. [pause] Schau, was passiert, wenn Papa nur die Reihenfolge ändert. [pause] Zuerst fragt er nach Clara: „Was war blöd?“ „Dass ich mitgelacht hab. Ich will das nicht tun.“ Die Schublade rastet ein: Ich lache niemanden aus. Am nächsten Tag spielt Clara mit Ida und Tim. Und erst dann sagt Papa: „Vielleicht will Leonie nur dazugehören.“ Jetzt kann Clara das verstehen. Ohne ihren Standard zu verlieren. [pause] Was sagst du zuerst, wenn dein Kind sich unwohl fühlt? [pause] [pause] Folg mir, wenn dein Kind zuerst sich selbst verstehen darf.",
+ "hooks": {
+  "c": "[warmly] „Die meint’s nicht so“ kommt zu früh."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

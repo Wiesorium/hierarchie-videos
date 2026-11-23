@@ -4,6 +4,72 @@
   {
    "datum": "2026-11-23",
    "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-ich-will-nicht-so-sein",
+   "slug": "ich-will-nicht-so-sein",
+   "titel": "Ich will nicht so sein",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Standards: Ein schweres Gefühl nach dem Mitlachen ist eine Nachricht von unten; daraus wächst der eigene Standard (Ich will nicht so sein / Ich lache niemanden aus); passt eine Gruppe nicht, darf man andere suchen; älter versteht man, dass der andere vielleicht nur dazugehören will, und der Standard bleibt",
+   "reihe": "Clara und ihr Standard (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn dein Kind seinen eigenen Kopf haben darf.",
+   "hooks": {
+    "a": "„Ich will nicht so sein.“"
+   },
+   "dauer": {
+    "a": 83.7
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/NJNlJtSIM2xXzURRQZOg",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): Standards, was dem Kind wichtig ist; in einer Gruppe nicht wohl, dann andere suchen; eigene Standards lernen (ich will nicht so sein, ich will das nicht tun); älter verstehen, dass nicht alles so gemeint ist, vielleicht will der andere nur dazugehören. Beispiel selbst gewählt: Clara (neun), Leonie, Tims Igel-Rucksack, Ida, Papa. Captions in Drive (2026-11-23-abend-ich-will-nicht-so-sein-captions). Stimme gesamt für die Reihe etwa 3.930 Credits."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-clara-hat-neue-freunde",
+   "slug": "clara-hat-neue-freunde",
+   "titel": "Clara hat neue Freunde",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Standards: Ein schweres Gefühl nach dem Mitlachen ist eine Nachricht von unten; daraus wächst der eigene Standard (Ich will nicht so sein / Ich lache niemanden aus); passt eine Gruppe nicht, darf man andere suchen; älter versteht man, dass der andere vielleicht nur dazugehören will, und der Standard bleibt",
+   "reihe": "Clara und ihr Standard (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Kinder ihre eigenen Standards finden.",
+   "hooks": {
+    "b": "„Clara hat sich neue Freunde gesucht.“"
+   },
+   "dauer": {
+    "b": 81.83
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/NJNlJtSIM2xXzURRQZOg",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): Standards, was dem Kind wichtig ist; in einer Gruppe nicht wohl, dann andere suchen; eigene Standards lernen (ich will nicht so sein, ich will das nicht tun); älter verstehen, dass nicht alles so gemeint ist, vielleicht will der andere nur dazugehören. Beispiel selbst gewählt: Clara (neun), Leonie, Tims Igel-Rucksack, Ida, Papa. Captions in Drive (2026-11-23-abend-clara-hat-neue-freunde-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-die-meints-nicht-so",
+   "slug": "die-meints-nicht-so",
+   "titel": "„Die meint’s nicht so“",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Standards: Ein schweres Gefühl nach dem Mitlachen ist eine Nachricht von unten; daraus wächst der eigene Standard (Ich will nicht so sein / Ich lache niemanden aus); passt eine Gruppe nicht, darf man andere suchen; älter versteht man, dass der andere vielleicht nur dazugehören will, und der Standard bleibt",
+   "reihe": "Clara und ihr Standard (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn dein Kind zuerst sich selbst verstehen darf.",
+   "hooks": {
+    "c": "„„Die meint’s nicht so“ kommt zu früh.“"
+   },
+   "dauer": {
+    "c": 83.37
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/NJNlJtSIM2xXzURRQZOg",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): Standards, was dem Kind wichtig ist; in einer Gruppe nicht wohl, dann andere suchen; eigene Standards lernen (ich will nicht so sein, ich will das nicht tun); älter verstehen, dass nicht alles so gemeint ist, vielleicht will der andere nur dazugehören. Beispiel selbst gewählt: Clara (neun), Leonie, Tims Igel-Rucksack, Ida, Papa. Captions in Drive (2026-11-23-abend-die-meints-nicht-so-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
    "ordner": "episodes/2026-11-23-abend-ich-hab-nur-kurz-geschrieben",
    "slug": "ich-hab-nur-kurz-geschrieben",
    "titel": "Ich hab nur kurz geschrieben",

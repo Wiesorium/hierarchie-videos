@@ -1,0 +1,986 @@
+{
+ "slug": "ich-will-nicht-so-sein",
+ "title": "Ich will nicht so sein",
+ "cta": "follow",
+ "hero": "clara",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "a": {
+   "label": "Kinderzitat",
+   "audio": "„Ich will nicht so sein.“",
+   "card": [
+    "Clara, neun.",
+    "*Sie hat mitgelacht.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Zwei Tage später spielt Clara mit anderen Kindern. Und weiß, was ihr wichtig ist. Clara ist neun. In der Pause steht sie bei Leonie und ihren Freundinnen. Tim hat einen Rucksack mit einem Igel drauf. Leonie ruft: „Schaut mal, der Baby-Igel!“ Alle lachen. Clara lacht mit.",
+  "block1": "Am Abend ist ihr Bauch schwer. Schau in ihren Kopf, als Schrank. Ganz unten liegen zwei Schubladen: Alle lachen über Tim. Und: Ich hab mitgelacht. Darüber wächst gerade eine neue Schublade. Clara sagt sie zu Papa: „Ich will nicht so sein.“",
+  "rehook1": "Dafür gibt es einen Namen. Wenn du ihn kennst, siehst du es überall.",
+  "block2": "Das ist ein Standard. Etwas, das dir wichtig ist. Er wächst von unten, aus einem blöden Gefühl. Papa fragt: „Was willst du stattdessen?“ „Niemanden auslachen. Ich will das nicht tun.“",
+  "rehook2": "Merk dir Leonie. Sie wird gleich noch wichtig.",
+  "block3": "Am nächsten Tag geht Clara zum Klettergerüst, zu Ida und Tim. Ihr Bauch ist leicht. Wo du dich nicht wohlfühlst, darfst du gehen und andere suchen. Und Leonie? Vielleicht will sie selbst nur dazugehören. Das versteht Clara erst, wenn sie älter ist. Ihr Standard bleibt.",
+  "closing": "Wann hat dein Kind zuletzt gesagt: „So will ich nicht sein“?",
+  "cta": "Folg mir, wenn dein Kind seinen eigenen Kopf haben darf."
+ },
+ "question": [
+  "Wann hat dein Kind zuletzt gesagt:",
+  "„So will ich nicht sein“?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn dein Kind seinen",
+   "eigenen Kopf haben darf"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 680,
+     "w": 220,
+     "h": 200
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 235,
+     "y": 650,
+     "size": 50
+    },
+    {
+     "id": "sofa",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 600,
+     "w": 620,
+     "h": 230
+    },
+    {
+     "id": "clara",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 400,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Zwei Tage später",
+       "mood": "neutral"
+      },
+      {
+       "at": "Und weiß",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.0",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#D9C6F0",
+     "x": 790,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Zwei Tage später",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "b_nicht",
+     "type": "bubble",
+     "from": "clara",
+     "text": "Ich will *nicht so* sein.",
+     "x": 400,
+     "y": 1000,
+     "maxW": 340,
+     "size": 48,
+     "in": "@-2.1",
+     "out": "@0.2"
+    },
+    {
+     "id": "wolke_h",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 560,
+     "y": 1080,
+     "size": 70,
+     "in": "@-1.4",
+     "out": "Zwei Tage später"
+    },
+    {
+     "id": "tag_zwei",
+     "type": "tag",
+     "text": "zwei Tage später",
+     "x": 600,
+     "y": 880,
+     "color": "plum",
+     "in": "Zwei Tage später",
+     "out": "Clara ist"
+    },
+    {
+     "id": "ball_v",
+     "type": "prop",
+     "kind": "ball",
+     "x": 600,
+     "y": 1000,
+     "w": 60,
+     "color": "#F7C948",
+     "in": "mit anderen Kindern",
+     "out": "Clara ist"
+    },
+    {
+     "id": "stern_v",
+     "type": "icon",
+     "kind": "star",
+     "x": 420,
+     "y": 980,
+     "size": 64,
+     "in": "was ihr wichtig ist",
+     "out": "Clara ist"
+    },
+    {
+     "id": "tag_clara",
+     "type": "tag",
+     "text": "Clara, neun",
+     "x": 400,
+     "y": 1060,
+     "color": "plum",
+     "in": "Clara ist",
+     "out": "In der Pause"
+    }
+   ]
+  },
+  {
+   "at": "In der Pause",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "baum_p",
+     "type": "prop",
+     "kind": "tree",
+     "x": 960,
+     "w": 240,
+     "h": 440,
+     "enter": "fade"
+    },
+    {
+     "id": "clara_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      },
+      {
+       "at": "Clara lacht mit+0.6",
+       "mood": "worried"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "leonie_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F49AAE",
+     "x": 300,
+     "look": "right",
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Schaut mal",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Schaut mal",
+       "end:der Baby-Igel"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "freundin_p",
+     "type": "figure",
+     "role": "girl",
+     "hair": "bun",
+     "hairColor": "red",
+     "shirt": "#FBE3A0",
+     "x": 440,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "laugh"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tim_p",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#BFD9F2",
+     "glasses": true,
+     "x": 780,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Alle lachen",
+       "mood": "sad"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "rucksack_p",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 860,
+     "w": 110,
+     "h": 140,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "igel_r_p",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 860,
+     "y": 1390,
+     "size": 56,
+     "z": 7,
+     "enter": "fade"
+    },
+    {
+     "id": "b_igel_p",
+     "type": "bubble",
+     "from": "leonie_p",
+     "text": "Schaut mal, der *Baby-Igel*!",
+     "x": 380,
+     "y": 980,
+     "maxW": 330,
+     "size": 42,
+     "in": "Schaut mal-0.10",
+     "out": "Alle lachen+1.20"
+    },
+    {
+     "id": "ha0_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 300,
+     "y": 1060,
+     "color": "rose",
+     "in": "Alle lachen",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "ha1_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 450,
+     "y": 1100,
+     "color": "rose",
+     "in": "Alle lachen+0.15",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "ha2_p",
+     "type": "tag",
+     "text": "haha",
+     "x": 150,
+     "y": 1080,
+     "color": "rose",
+     "in": "Alle lachen+0.30",
+     "out": "Alle lachen+1.60"
+    },
+    {
+     "id": "wolke_c_p",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 150,
+     "y": 1050,
+     "size": 74,
+     "in": "Clara lacht mit+0.6"
+    },
+    {
+     "id": "regen_c_p",
+     "type": "icon",
+     "kind": "rain",
+     "x": 150,
+     "y": 1050,
+     "size": 74,
+     "in": "Clara lacht mit+1.10"
+    },
+    {
+     "id": "tag_pause",
+     "type": "tag",
+     "text": "in der Pause",
+     "x": 300,
+     "y": 880,
+     "color": "plum",
+     "out": "Schaut mal-0.4"
+    },
+    {
+     "id": "tag_ruck",
+     "type": "tag",
+     "text": "Tims Igel-Rucksack",
+     "x": 820,
+     "y": 1050,
+     "color": "plum",
+     "in": "Tim hat einen",
+     "out": "Schaut mal"
+    }
+   ]
+  },
+  {
+   "at": "Am Abend ist ihr Bauch",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "clara_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 130,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Ich will nicht so sein",
+       "mood": "open"
+      },
+      {
+       "at": "Das ist ein Standard",
+       "mood": "smile"
+      }
+     ],
+     "talk": [
+      [
+       "Ich will nicht so sein",
+       "end:Ich will nicht so sein"
+      ]
+     ]
+    },
+    {
+     "id": "wolke_k",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 150,
+     "y": 1020,
+     "size": 70,
+     "out": "Ich will nicht so sein"
+    },
+    {
+     "id": "regen_k",
+     "type": "icon",
+     "kind": "rain",
+     "x": 150,
+     "y": 1020,
+     "size": 70,
+     "out": "Ich will nicht so sein"
+    },
+    {
+     "id": "tag_bauch",
+     "type": "tag",
+     "text": "Bauch schwer",
+     "x": 150,
+     "y": 900,
+     "color": "rose",
+     "out": "Schau in ihren Kopf"
+    },
+    {
+     "id": "n_lachen",
+     "type": "node",
+     "x": 410,
+     "y": 1150,
+     "w": 330,
+     "h": 110,
+     "label": "Alle lachen über *Tim*",
+     "size": 38,
+     "color": "kids",
+     "in": "Alle lachen über Tim",
+     "states": [
+      {
+       "at": "Alle lachen über Tim",
+       "state": "glow"
+      },
+      {
+       "at": "Alle lachen über Tim+1.00",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_mit",
+     "type": "node",
+     "x": 800,
+     "y": 1150,
+     "w": 310,
+     "h": 110,
+     "label": "Ich hab *mitgelacht*",
+     "size": 38,
+     "color": "food",
+     "in": "Ich hab mitgelacht",
+     "states": [
+      {
+       "at": "Ich hab mitgelacht",
+       "state": "glow"
+      },
+      {
+       "at": "Ich hab mitgelacht+1.00",
+       "state": "heavy"
+      }
+     ]
+    },
+    {
+     "id": "n_std",
+     "type": "node",
+     "x": 610,
+     "y": 830,
+     "w": 460,
+     "h": 120,
+     "label": "Ich will *nicht so* sein",
+     "emptyLabel": "?",
+     "size": 44,
+     "color": "fresh",
+     "in": "Darüber wächst",
+     "states": [
+      {
+       "at": "Darüber wächst",
+       "state": "empty"
+      },
+      {
+       "at": "Ich will nicht so sein",
+       "state": "glow"
+      },
+      {
+       "at": "Ich will nicht so sein+1.40",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "l1",
+     "type": "link",
+     "from": "n_lachen",
+     "to": "n_std",
+     "style": "gold",
+     "in": "Ich will nicht so sein+0.30"
+    },
+    {
+     "id": "l2",
+     "type": "link",
+     "from": "n_mit",
+     "to": "n_std",
+     "style": "gold",
+     "in": "Ich will nicht so sein+0.50"
+    },
+    {
+     "id": "tag_name",
+     "type": "tag",
+     "text": "dafür gibt es einen Namen",
+     "x": 610,
+     "y": 690,
+     "color": "rose",
+     "in": "einen Namen",
+     "out": "Das ist ein Standard"
+    },
+    {
+     "id": "tag_std",
+     "type": "tag",
+     "text": "*Standard*",
+     "x": 610,
+     "y": 690,
+     "color": "rose",
+     "in": "Das ist ein Standard"
+    },
+    {
+     "id": "k_wichtig",
+     "type": "card",
+     "x": 610,
+     "y": 560,
+     "lines": [
+      "was dir",
+      "*wichtig* ist"
+     ],
+     "size": 46,
+     "in": "das dir wichtig"
+    },
+    {
+     "id": "pf_unten",
+     "type": "arrow",
+     "from": {
+      "x": 610,
+      "y": 1270
+     },
+     "to": {
+      "x": 610,
+      "y": 910
+     },
+     "style": "gold",
+     "in": "wächst von unten"
+    }
+   ]
+  },
+  {
+   "at": "Papa fragt",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster_h",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 680,
+     "w": 220,
+     "h": 200,
+     "enter": "fade"
+    },
+    {
+     "id": "mond_h",
+     "type": "icon",
+     "kind": "moon",
+     "x": 235,
+     "y": 650,
+     "size": 50,
+     "enter": "fade"
+    },
+    {
+     "id": "sofa_h",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 600,
+     "w": 620,
+     "h": 230,
+     "enter": "fade"
+    },
+    {
+     "id": "clara_h",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 400,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Niemanden auslachen",
+       "mood": "open"
+      },
+      {
+       "at": "nicht tun",
+       "mood": "smile"
+      }
+     ],
+     "talk": [
+      [
+       "Niemanden auslachen",
+       "end:nicht tun"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "papa_h",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#D9C6F0",
+     "x": 790,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Was willst du",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Was willst du",
+       "end:stattdessen"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "nicht tun",
+       "mood": "happy"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "b_papa",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Was willst du *stattdessen*?",
+     "x": 830,
+     "y": 830,
+     "maxW": 300,
+     "size": 42,
+     "in": "Was willst du-0.1",
+     "out": "Niemanden+0.6"
+    },
+    {
+     "id": "b_clara",
+     "type": "bubble",
+     "from": "clara_h",
+     "text": "Niemanden auslachen. Ich will das *nicht tun*.",
+     "x": 380,
+     "y": 960,
+     "maxW": 340,
+     "size": 40,
+     "in": "Niemanden auslachen-0.1",
+     "out": "Merk dir Leonie"
+    },
+    {
+     "id": "n_std_h",
+     "type": "node",
+     "x": 590,
+     "y": 620,
+     "w": 460,
+     "h": 110,
+     "label": "Ich lache *niemanden* aus",
+     "size": 42,
+     "color": "fresh",
+     "in": "Niemanden auslachen",
+     "states": [
+      {
+       "at": "Niemanden auslachen",
+       "state": "glow"
+      },
+      {
+       "at": "nicht tun+0.4",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "tag_leonie",
+     "type": "tag",
+     "text": "merk dir Leonie",
+     "x": 590,
+     "y": 760,
+     "color": "rose",
+     "in": "Merk dir Leonie"
+    }
+   ]
+  },
+  {
+   "at": "Am nächsten Tag geht",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "baum_s",
+     "type": "prop",
+     "kind": "tree",
+     "x": 960,
+     "w": 240,
+     "h": 440,
+     "enter": "fade"
+    },
+    {
+     "id": "bank_s",
+     "type": "prop",
+     "kind": "bench",
+     "x": 180,
+     "w": 300,
+     "h": 130,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "clara_s",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "x": 330,
+     "look": "right",
+     "mood": "happy",
+     "enter": "fade"
+    },
+    {
+     "id": "ida_s",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "black",
+     "skin": "brown",
+     "shirt": "#E9DDF4",
+     "x": 560,
+     "look": "left",
+     "mood": "laugh",
+     "enter": "fade"
+    },
+    {
+     "id": "tim_s",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#BFD9F2",
+     "glasses": true,
+     "x": 760,
+     "look": "left",
+     "mood": "happy",
+     "enter": "fade"
+    },
+    {
+     "id": "igel_t_s",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 860,
+     "y": 1450,
+     "size": 50,
+     "z": 7,
+     "enter": "fade"
+    },
+    {
+     "id": "ball_s",
+     "type": "prop",
+     "kind": "ball",
+     "x": 420,
+     "y": 1300,
+     "w": 60,
+     "color": "#F7C948",
+     "z": 5,
+     "in": "Ihr Bauch ist leicht",
+     "moves": [
+      {
+       "at": "Ihr Bauch ist leicht+0.30",
+       "x": 680,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "Ihr Bauch ist leicht+1.10",
+       "x": 420,
+       "y": 1300,
+       "dur": 0.7
+      },
+      {
+       "at": "Ihr Bauch ist leicht+1.90",
+       "x": 660,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "Ihr Bauch ist leicht+2.70",
+       "x": 440,
+       "y": 1300,
+       "dur": 0.7
+      },
+      {
+       "at": "Ihr Bauch ist leicht+3.50",
+       "x": 680,
+       "y": 1240,
+       "dur": 0.7
+      },
+      {
+       "at": "Ihr Bauch ist leicht+4.30",
+       "x": 420,
+       "y": 1300,
+       "dur": 0.7
+      }
+     ]
+    },
+    {
+     "id": "tag_tag",
+     "type": "tag",
+     "text": "am nächsten Tag",
+     "x": 560,
+     "y": 880,
+     "color": "plum",
+     "out": "Ihr Bauch"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 330,
+     "y": 1010,
+     "size": 60,
+     "in": "Ihr Bauch ist leicht"
+    },
+    {
+     "id": "k_gehen",
+     "type": "card",
+     "x": 560,
+     "y": 700,
+     "lines": [
+      "Nicht wohl?",
+      "*Andere suchen.*"
+     ],
+     "size": 48,
+     "in": "darfst du gehen",
+     "out": "Und Leonie"
+    },
+    {
+     "id": "leonie_s",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#F49AAE",
+     "x": 960,
+     "look": "left",
+     "mood": "neutral",
+     "in": "Und Leonie",
+     "enter": "slide",
+     "moods": [
+      {
+       "at": "dazugehören",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "th_leonie",
+     "type": "thought",
+     "from": "leonie_s",
+     "text": "Gehöre ich *dazu*?",
+     "x": 880,
+     "y": 940,
+     "in": "nur dazugehören",
+     "out": "Ihr Standard bleibt"
+    },
+    {
+     "id": "tag_spaeter",
+     "type": "tag",
+     "text": "versteht man später",
+     "x": 560,
+     "y": 700,
+     "color": "plum",
+     "in": "wenn sie älter",
+     "out": "Ihr Standard bleibt"
+    },
+    {
+     "id": "n_std_s",
+     "type": "node",
+     "x": 560,
+     "y": 640,
+     "w": 460,
+     "h": 110,
+     "label": "Ich lache *niemanden* aus",
+     "size": 42,
+     "color": "fresh",
+     "in": "Ihr Standard bleibt",
+     "states": [
+      {
+       "at": "Ihr Standard bleibt",
+       "state": "gold+check"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Schaut mal",
+   "x": 380,
+   "y": 980
+  },
+  {
+   "at": "Alle lachen",
+   "x": 300,
+   "y": 1060
+  },
+  {
+   "at": "Alle lachen über Tim",
+   "x": 410,
+   "y": 1150
+  },
+  {
+   "at": "Ich will nicht so sein",
+   "x": 610,
+   "y": 830
+  },
+  {
+   "at": "Das ist ein Standard",
+   "x": 610,
+   "y": 690
+  },
+  {
+   "at": "Ich will das nicht tun",
+   "x": 590,
+   "y": 620
+  },
+  {
+   "at": "Ihr Bauch ist leicht",
+   "x": 330,
+   "y": 1010
+  },
+  {
+   "at": "Ihr Standard bleibt",
+   "x": 560,
+   "y": 640
+  }
+ ]
+}
