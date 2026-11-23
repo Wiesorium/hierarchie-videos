@@ -204,7 +204,18 @@ const PROPS = {
     fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h * 0.62, w, h * 0.42, 40); }, c1);
     fillShape(ctx, () => { rrect(ctx, x - w * 0.3, y - h, w * 0.58, h * 0.48, 50); }, c1);
     fillShape(ctx, () => { rrect(ctx, x - w * 0.24, y - h * 0.92, w * 0.46, h * 0.3, 30); }, '#CFE8F5', { sh: false });
-    for (const wx of [x - w * 0.3, x + w * 0.3]) { fillShape(ctx, () => { ctx.beginPath(); ctx.arc(wx, y - 34, 40, 0, 7); }, C.ink); ctx.fillStyle = '#D8D0DC'; ctx.beginPath(); ctx.arc(wx, y - 34, 16, 0, 7); ctx.fill(); }
+    // wheels shrink with small (toy) cars; at the default width they stay 40 px
+    const wr = Math.min(40, w * 0.077), wy = y - wr * 0.85;
+    for (const wx of [x - w * 0.3, x + w * 0.3]) { fillShape(ctx, () => { ctx.beginPath(); ctx.arc(wx, wy, wr, 0, 7); }, C.ink); ctx.fillStyle = '#D8D0DC'; ctx.beginPath(); ctx.arc(wx, wy, wr * 0.4, 0, 7); ctx.fill(); }
+  },
+  // Toy box standing on y: wooden box with a darker rim and a pale front panel ("text" on it).
+  // Things that should sit inside go behind it (lower "z") and peek out over the rim.
+  box(ctx, x, y, w = 280, h = 180, p) {
+    const c1 = p.color ? col(p.color) : C.wood;
+    fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h, w, h, 20); }, c1);
+    fillShape(ctx, () => { rrect(ctx, x - w / 2 - 8, y - h - 6, w + 16, 26, 12); }, C.woodDark, { depth: 0.5 });
+    fillShape(ctx, () => { rrect(ctx, x - w / 2 + 22, y - h + 40, w - 44, h - 62, 14); }, 'rgba(255,255,255,0.6)', { sh: false });
+    if (p.text) textLines(ctx, p.text, x, y - h / 2 + 10, p.size || 40, C.ink);
   },
   laptop(ctx, x, y, w = 300, h = 200, p) {
     fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h, w, h - 20, 14); }, '#D8D0DC');

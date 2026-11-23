@@ -114,7 +114,9 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
 Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen; `"potatoes": true` füllt sie mit Kartoffelsalat), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
 lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
-`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `sink` (Waschbecken auf einer Säule mit Wasserhahn, Rand bei y − h; `"mirror": true` hängt einen Spiegel darüber, Höhe `"mirrorH"`), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
+`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `box` (Spielzeugkiste aus Holz mit dunklem Rand, Oberkante y − h, `text` auf der
+hellen Vorderseite; was „drin“ liegen soll, bekommt ein kleineres `z` und schaut über den Rand), `car` (Auto; klein als Spielzeugauto,
+z. B. `"w": 150, "h": 70`, die Räder wachsen mit), `sink` (Waschbecken auf einer Säule mit Wasserhahn, Rand bei y − h; `"mirror": true` hängt einen Spiegel darüber, Höhe `"mirrorH"`), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
 `"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber, `"potatoes": true` häuft Kartoffelsalat darauf), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
 gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
 überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`,
