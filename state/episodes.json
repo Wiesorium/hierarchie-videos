@@ -4,6 +4,72 @@
   {
    "datum": "2026-11-23",
    "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-ich-hab-nur-kurz-geschrieben",
+   "slug": "ich-hab-nur-kurz-geschrieben",
+   "titel": "Ich hab nur kurz geschrieben",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Faden verloren beim Mitschreiben: Eine Erklärung ist ein Turm aus Schubladen (Meer, Dampf, Wolke, Regen, Wasserkreislauf); fehlt eine, rutscht alles darüber durch; die Lücke schließt man unten (das Letzte, das ich noch weiß, und was direkt danach kam)",
+   "reihe": "Finn und der Dampf (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn bei euch auch mal der Kochtopf erklärt.",
+   "hooks": {
+    "a": "„Ich hab nur kurz geschrieben!“"
+   },
+   "dauer": {
+    "a": 89.3
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/cXvXqVWOFt3glmnmrEZI",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): kurz etwas aufschreiben, der Lehrer sagt inzwischen etwas, dann kommt man nicht mehr mit; hierarchologisch aufgedröselt, was fehlt und wie man die Lücke schließt. Beispiel selbst gewählt: Finn (zehn), Wasserkreislauf, Mama mit Kochtopf, Freund Ben. Captions in Drive (2026-11-23-ich-hab-nur-kurz-geschrieben-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-ein-loch-im-turm",
+   "slug": "ein-loch-im-turm",
+   "titel": "Ein Loch im Turm",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Faden verloren beim Mitschreiben: Eine Erklärung ist ein Turm aus Schubladen (Meer, Dampf, Wolke, Regen, Wasserkreislauf); fehlt eine, rutscht alles darüber durch; die Lücke schließt man unten (das Letzte, das ich noch weiß, und was direkt danach kam)",
+   "reihe": "Finn und der Dampf (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Kinder ihre Löcher selbst finden.",
+   "hooks": {
+    "b": "Ein Kochtopf hat Finn den Faden zurückgegeben."
+   },
+   "dauer": {
+    "b": 80.87
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/cXvXqVWOFt3glmnmrEZI",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): kurz etwas aufschreiben, der Lehrer sagt inzwischen etwas, dann kommt man nicht mehr mit; hierarchologisch aufgedröselt, was fehlt und wie man die Lücke schließt. Beispiel selbst gewählt: Finn (zehn), Wasserkreislauf, Mama mit Kochtopf, Freund Ben. Captions in Drive (2026-11-23-ein-loch-im-turm-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-faden-verloren",
+   "slug": "faden-verloren",
+   "titel": "Faden verloren",
+   "idee": "Martins Auftrag im Chat",
+   "thema": "Faden verloren beim Mitschreiben: Eine Erklärung ist ein Turm aus Schubladen (Meer, Dampf, Wolke, Regen, Wasserkreislauf); fehlt eine, rutscht alles darüber durch; die Lücke schließt man unten (das Letzte, das ich noch weiß, und was direkt danach kam)",
+   "reihe": "Finn und der Dampf (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du auch schon mal den Faden verloren hast.",
+   "hooks": {
+    "c": "Faden verloren? Dein Fehler kommt erst jetzt."
+   },
+   "dauer": {
+    "c": 83.6
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/cXvXqVWOFt3glmnmrEZI",
+   "status": "fertig",
+   "hinweis": "Martins Auftrag im Chat (23.11.2026 abends): kurz etwas aufschreiben, der Lehrer sagt inzwischen etwas, dann kommt man nicht mehr mit; hierarchologisch aufgedröselt, was fehlt und wie man die Lücke schließt. Beispiel selbst gewählt: Finn (zehn), Wasserkreislauf, Mama mit Kochtopf, Freund Ben. Captions in Drive (2026-11-23-faden-verloren-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
    "ordner": "episodes/2026-11-23-abend-dann-denken-alle-ich-bin-dumm",
    "slug": "dann-denken-alle-ich-bin-dumm",
    "titel": "Dann denken alle, ich bin dumm",

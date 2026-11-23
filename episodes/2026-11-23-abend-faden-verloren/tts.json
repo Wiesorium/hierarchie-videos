@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Den Faden zu verlieren ist normal. Der Fehler ist, einfach weiter zuzuhören. Warum, siehst du gleich. Finn ist zehn. Im Unterricht schreibt er kurz die Überschrift ab. Als er hochschaut, ist die Lehrerin schon bei der Wolke. Finn hört weiter zu. Ganz brav. Und versteht trotzdem nichts mehr. [pause] Schau dir die Stunde als Schrank an. Unten das Meer. Darauf Dampf, Wolke, Regen. Jede Schublade steht auf der darunter. Beim Schreiben hat Finn den Dampf verpasst. Alles, was jetzt kommt, landet auf einem Loch. Wolke. Regen. Es rutscht einfach durch. [pause] Darüber redet kaum jemand. [pause] Die Lücke liegt nicht da, wo die Lehrerin gerade redet. Sie liegt weiter unten, da, wo du kurz weg warst. Weiter zuhören füllt sie nicht. Also macht Finn zuerst ein kleines Fragezeichen ins Heft. Genau an die Stelle nach dem Meer. [pause] Und der nächste Schritt ist der, den du wirklich umsetzt. [pause] In der Pause fragt er seinen Freund Ben. Nicht „Was hab ich verpasst?“, sondern: „Wie kommt das Wasser vom Meer in die Wolke?“ „Es verdunstet. Wie Dampf aus dem Kochtopf.“ Die Schublade rastet ein. Und plötzlich stehen Wolke und Regen wieder fest. [pause] Wo hast du zuletzt den Faden verloren? [pause] [pause] Folg mir, wenn du auch schon mal den Faden verloren hast.",
+ "hooks": {
+  "c": "[warmly] Faden verloren? Dein Fehler kommt erst jetzt."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

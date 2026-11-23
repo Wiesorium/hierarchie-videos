@@ -1,0 +1,1482 @@
+{
+ "slug": "ich-hab-nur-kurz-geschrieben",
+ "title": "Ich hab nur kurz geschrieben",
+ "cta": "follow",
+ "hero": "finn",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "a": {
+   "label": "Kinderzitat",
+   "audio": "„Ich hab nur kurz geschrieben!“",
+   "card": [
+    "Finn, zehn.",
+    "*Danach war alles weg.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Am Abend findet er, was fehlt. In einem Kochtopf. Finn ist zehn. Im Unterricht sagt die Lehrerin: „Schreibt die Überschrift ab.“ Finn schreibt: Der Wasserkreislauf. Als er hochschaut, ist sie schon bei der Wolke. Ab da versteht er nichts mehr.",
+  "block1": "Schau dir die Stunde als Schrank an. Ganz unten liegt, was Finn kennt: das Meer. Darauf baut die Lehrerin Schublade für Schublade. Dampf. Wolke. Regen. Jede steht auf der darunter. Während Finn schreibt, kommt der Dampf. Den hat er verpasst. Jetzt steht die Wolke auf nichts. Und alles danach rutscht durch.",
+  "rehook1": "Und jetzt kommt der Schritt, den fast alle überspringen.",
+  "block2": "Am Abend sagt Finn: „Ich hab heute gar nichts verstanden.“ Mama fragt nicht, was er alles nicht weiß. Sie fragt nach unten: „Was weißt du noch?“ „Das Meer.“ „Und dann?“ „Dann war plötzlich eine Wolke.“ Da ist die Lücke. Zwischen Meer und Wolke.",
+  "rehook2": "Weißt du noch, der Kochtopf vom Anfang? Jetzt kommt er.",
+  "block3": "Mama stellt Wasser auf den Herd. Es wird heiß und steigt als Dampf nach oben. „So macht die Sonne das mit dem Meer.“ Die Schublade Dampf rastet ein. Und auf einmal stehen Wolke und Regen wieder fest. Finn erklärt Mama den ganzen Kreislauf.",
+  "closing": "Welche Schublade hat dein Kind heute verpasst?",
+  "cta": "Folg mir, wenn bei euch auch mal der Kochtopf erklärt."
+ },
+ "question": [
+  "Welche Schublade hat dein Kind",
+  "heute verpasst?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn bei euch auch mal",
+   "der Kochtopf erklärt"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 680,
+     "w": 200,
+     "h": 190
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 205,
+     "y": 650,
+     "size": 50
+    },
+    {
+     "id": "finn",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#E8A08A",
+     "x": 360,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "findet er",
+       "mood": "neutral"
+      },
+      {
+       "at": "In einem Kochtopf",
+       "mood": "wow"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.3",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 800,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "In einem Kochtopf",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 570,
+     "w": 640,
+     "h": 180,
+     "z": 3.5
+    },
+    {
+     "id": "topf0",
+     "type": "prop",
+     "kind": "pot",
+     "x": 580,
+     "y": 1298,
+     "w": 200,
+     "h": 130,
+     "steam": false,
+     "z": 3.6,
+     "out": "In einem Kochtopf"
+    },
+    {
+     "id": "topf1",
+     "type": "prop",
+     "kind": "pot",
+     "x": 580,
+     "y": 1298,
+     "w": 200,
+     "h": 130,
+     "z": 3.6,
+     "in": "In einem Kochtopf",
+     "enter": "none"
+    },
+    {
+     "id": "b_kurz",
+     "type": "bubble",
+     "from": "finn",
+     "text": "Ich hab nur kurz *geschrieben*!",
+     "x": 380,
+     "y": 1000,
+     "maxW": 360,
+     "size": 46,
+     "in": "@-2.2",
+     "out": "@0.3"
+    },
+    {
+     "id": "q_h",
+     "type": "icon",
+     "kind": "question",
+     "x": 560,
+     "y": 1120,
+     "size": 64,
+     "in": "@-1.4",
+     "out": "@0.3"
+    },
+    {
+     "id": "tag_abend",
+     "type": "tag",
+     "text": "am Abend",
+     "x": 580,
+     "y": 900,
+     "color": "plum",
+     "in": "Am Abend",
+     "out": "Finn ist"
+    },
+    {
+     "id": "st_topf",
+     "type": "stamp",
+     "text": "Kochtopf",
+     "x": 760,
+     "y": 1120,
+     "rot": -0.07,
+     "size": 54,
+     "in": "In einem Kochtopf+0.3",
+     "out": "Finn ist"
+    },
+    {
+     "id": "tag_finn",
+     "type": "tag",
+     "text": "Finn, zehn",
+     "x": 360,
+     "y": 1040,
+     "color": "plum",
+     "in": "Finn ist",
+     "out": "Im Unterricht"
+    }
+   ]
+  },
+  {
+   "at": "Im Unterricht",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "tafel_c",
+     "type": "prop",
+     "kind": "blackboard",
+     "x": 480,
+     "y": 690,
+     "w": 480,
+     "h": 320,
+     "text": [
+      "",
+      "",
+      "Wasserkreislauf"
+     ],
+     "size": 44,
+     "enter": "fade"
+    },
+    {
+     "id": "sonne_t_c",
+     "type": "icon",
+     "kind": "sun",
+     "x": 330,
+     "y": 610,
+     "size": 70,
+     "enter": "fade"
+    },
+    {
+     "id": "lehrerin_c",
+     "type": "figure",
+     "role": "teacher",
+     "x": 960,
+     "look": "left",
+     "mood": "smile",
+     "talk": [
+      [
+       "Schreibt die Überschrift",
+       "end:Überschrift ab"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "schon bei der Wolke",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "finn_c",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#E8A08A",
+     "x": 170,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Finn schreibt",
+       "mood": "smile"
+      },
+      {
+       "at": "Als er hochschaut",
+       "mood": "wow"
+      },
+      {
+       "at": "versteht er nichts",
+       "mood": "worried"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "dampf_t_c",
+     "type": "tag",
+     "text": "~Dampf~",
+     "x": 400,
+     "y": 690,
+     "color": "sage",
+     "in": "Finn schreibt+0.4"
+    },
+    {
+     "id": "wolke_t_c",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 520,
+     "y": 610,
+     "size": 80,
+     "in": "schon bei der Wolke"
+    },
+    {
+     "id": "regen_t_c",
+     "type": "icon",
+     "kind": "rain",
+     "x": 640,
+     "y": 650,
+     "size": 74,
+     "in": "versteht er nichts"
+    },
+    {
+     "id": "kind0_c",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "blond",
+     "shirt": "#F6C1D1",
+     "x": 390,
+     "look": "left",
+     "mood": "neutral",
+     "enter": "fade"
+    },
+    {
+     "id": "kind1_c",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "black",
+     "skin": "brown",
+     "shirt": "#9FD3C7",
+     "x": 590,
+     "look": "left",
+     "mood": "neutral",
+     "enter": "fade"
+    },
+    {
+     "id": "kind2_c",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "red",
+     "shirt": "#E9DDF4",
+     "x": 790,
+     "look": "left",
+     "mood": "neutral",
+     "enter": "fade"
+    },
+    {
+     "id": "pult0_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 170,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult1_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 390,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult2_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 590,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "pult3_c",
+     "type": "prop",
+     "kind": "desk",
+     "x": 790,
+     "w": 180,
+     "h": 130,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "heft_c",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 250,
+     "y": 1318,
+     "w": 170,
+     "h": 70,
+     "text": [
+      "Wasserkreislauf"
+     ],
+     "size": 22,
+     "z": 4,
+     "enter": "fade"
+    },
+    {
+     "id": "stift_c",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 300,
+     "y": 1290,
+     "size": 56,
+     "z": 4.5,
+     "in": "Finn schreibt",
+     "moves": [
+      {
+       "at": "Finn schreibt+0.20",
+       "x": 330,
+       "y": 1290,
+       "dur": 0.45
+      },
+      {
+       "at": "Finn schreibt+0.70",
+       "x": 290,
+       "y": 1290,
+       "dur": 0.45
+      },
+      {
+       "at": "Finn schreibt+1.20",
+       "x": 330,
+       "y": 1290,
+       "dur": 0.45
+      },
+      {
+       "at": "Finn schreibt+1.70",
+       "x": 290,
+       "y": 1290,
+       "dur": 0.45
+      },
+      {
+       "at": "Finn schreibt+2.20",
+       "x": 330,
+       "y": 1290,
+       "dur": 0.45
+      },
+      {
+       "at": "Finn schreibt+2.70",
+       "x": 290,
+       "y": 1290,
+       "dur": 0.45
+      }
+     ]
+    },
+    {
+     "id": "b_lehrerin0_c",
+     "type": "bubble",
+     "from": "lehrerin_c",
+     "text": "Schreibt die *Überschrift* ab.",
+     "x": 870,
+     "y": 800,
+     "maxW": 300,
+     "size": 40,
+     "in": "Schreibt die-0.1",
+     "out": "Finn schreibt+0.6"
+    },
+    {
+     "id": "b_lehrerin1_c",
+     "type": "bubble",
+     "from": "lehrerin_c",
+     "text": "… und daraus wird eine *Wolke*.",
+     "x": 870,
+     "y": 800,
+     "maxW": 300,
+     "size": 40,
+     "in": "schon bei der Wolke-0.1",
+     "out": "versteht er nichts+1.0"
+    },
+    {
+     "id": "qc0",
+     "type": "icon",
+     "kind": "question",
+     "x": 120,
+     "y": 1040,
+     "size": 62,
+     "in": "versteht er nichts"
+    },
+    {
+     "id": "qc1",
+     "type": "icon",
+     "kind": "question",
+     "x": 220,
+     "y": 1020,
+     "size": 62,
+     "in": "versteht er nichts+0.20"
+    },
+    {
+     "id": "qc2",
+     "type": "icon",
+     "kind": "question",
+     "x": 320,
+     "y": 1040,
+     "size": 62,
+     "in": "versteht er nichts+0.40"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir die Stunde",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "finn_k",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#E8A08A",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Den hat er verpasst",
+       "mood": "worried"
+      },
+      {
+       "at": "rutscht durch",
+       "mood": "sad"
+      },
+      {
+       "at": "den fast alle",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Den hat er verpasst",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "n_meer",
+     "type": "node",
+     "x": 660,
+     "y": 1240,
+     "w": 280,
+     "h": 110,
+     "label": "Meer",
+     "size": 50,
+     "color": "ice",
+     "in": "das Meer",
+     "states": [
+      {
+       "at": "das Meer",
+       "state": "glow"
+      },
+      {
+       "at": "das Meer+1.00",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "n_dampf",
+     "type": "node",
+     "x": 660,
+     "y": 1060,
+     "w": 280,
+     "h": 110,
+     "label": "Dampf",
+     "emptyLabel": "?",
+     "size": 50,
+     "color": "paper",
+     "in": "Dampf",
+     "states": [
+      {
+       "at": "Dampf",
+       "state": "glow"
+      },
+      {
+       "at": "Den hat er verpasst",
+       "state": "empty+shake"
+      },
+      {
+       "at": "Den hat er verpasst+0.80",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "n_wolke",
+     "type": "node",
+     "x": 660,
+     "y": 880,
+     "w": 280,
+     "h": 110,
+     "label": "Wolke",
+     "size": 50,
+     "color": "baby",
+     "in": "Wolke",
+     "states": [
+      {
+       "at": "Wolke",
+       "state": "glow"
+      },
+      {
+       "at": "Wolke+0.90",
+       "state": "normal"
+      },
+      {
+       "at": "auf nichts",
+       "state": "red+shake"
+      },
+      {
+       "at": "rutscht durch",
+       "state": "dim+red"
+      }
+     ]
+    },
+    {
+     "id": "n_regen",
+     "type": "node",
+     "x": 660,
+     "y": 700,
+     "w": 280,
+     "h": 110,
+     "label": "Regen",
+     "size": 50,
+     "color": "fresh",
+     "in": "Regen",
+     "states": [
+      {
+       "at": "Regen",
+       "state": "glow"
+      },
+      {
+       "at": "Regen+0.90",
+       "state": "normal"
+      },
+      {
+       "at": "rutscht durch",
+       "state": "dim"
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 660,
+     "y": 515,
+     "w": 400,
+     "h": 100,
+     "label": "*Wasserkreislauf*",
+     "size": 46,
+     "color": "idea",
+     "in": "Jede steht",
+     "states": [
+      {
+       "at": "Jede steht",
+       "state": "normal"
+      },
+      {
+       "at": "rutscht durch",
+       "state": "dim"
+      }
+     ]
+    },
+    {
+     "id": "l_dm",
+     "type": "link",
+     "from": "n_meer",
+     "to": "n_dampf",
+     "style": "line",
+     "in": "Dampf"
+    },
+    {
+     "id": "l_wd",
+     "type": "link",
+     "from": "n_dampf",
+     "to": "n_wolke",
+     "style": "line",
+     "in": "Wolke"
+    },
+    {
+     "id": "l_rw",
+     "type": "link",
+     "from": "n_wolke",
+     "to": "n_regen",
+     "style": "line",
+     "in": "Regen"
+    },
+    {
+     "id": "l_tr",
+     "type": "link",
+     "from": "n_regen",
+     "to": "n_top",
+     "style": "dashed",
+     "in": "Jede steht"
+    },
+    {
+     "id": "fall_w",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 930,
+     "y": 880,
+     "size": 76,
+     "in": "rutscht durch-0.10",
+     "moves": [
+      {
+       "at": "rutscht durch+0.20",
+       "x": 930,
+       "y": 1420,
+       "dur": 1.1
+      }
+     ],
+     "out": "rutscht durch+1.60"
+    },
+    {
+     "id": "fall_r",
+     "type": "icon",
+     "kind": "rain",
+     "x": 930,
+     "y": 700,
+     "size": 70,
+     "in": "rutscht durch-0.10",
+     "moves": [
+      {
+       "at": "rutscht durch+0.50",
+       "x": 930,
+       "y": 1420,
+       "dur": 1.2
+      }
+     ],
+     "out": "rutscht durch+2.00"
+    },
+    {
+     "id": "tag_kennt",
+     "type": "tag",
+     "text": "kennt Finn",
+     "x": 920,
+     "y": 1240,
+     "color": "plum",
+     "in": "das Meer+0.3",
+     "out": "Während Finn"
+    },
+    {
+     "id": "stift_k",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 330,
+     "y": 1180,
+     "size": 64,
+     "in": "Während Finn schreibt",
+     "moves": [
+      {
+       "at": "Während Finn schreibt+0.20",
+       "x": 354,
+       "y": 1180,
+       "dur": 0.35
+      },
+      {
+       "at": "Während Finn schreibt+0.60",
+       "x": 330,
+       "y": 1180,
+       "dur": 0.35
+      },
+      {
+       "at": "Während Finn schreibt+1.00",
+       "x": 354,
+       "y": 1180,
+       "dur": 0.35
+      },
+      {
+       "at": "Während Finn schreibt+1.40",
+       "x": 330,
+       "y": 1180,
+       "dur": 0.35
+      }
+     ],
+     "out": "Jetzt steht"
+    },
+    {
+     "id": "tag_verpasst",
+     "type": "tag",
+     "text": "verpasst",
+     "x": 920,
+     "y": 1060,
+     "color": "rose",
+     "in": "Den hat er verpasst",
+     "out": "rutscht durch"
+    },
+    {
+     "id": "st_nichts",
+     "type": "stamp",
+     "text": "auf nichts",
+     "x": 920,
+     "y": 870,
+     "rot": 0.07,
+     "size": 50,
+     "in": "auf nichts",
+     "out": "rutscht durch"
+    },
+    {
+     "id": "st_durch",
+     "type": "stamp",
+     "text": "rutscht durch",
+     "x": 360,
+     "y": 830,
+     "rot": -0.07,
+     "size": 50,
+     "in": "rutscht durch+0.4",
+     "out": "den fast alle"
+    },
+    {
+     "id": "pf_unten",
+     "type": "arrow",
+     "from": {
+      "x": 400,
+      "y": 760
+     },
+     "to": {
+      "x": 400,
+      "y": 1200
+     },
+     "style": "red",
+     "in": "den fast alle"
+    },
+    {
+     "id": "tag_schritt",
+     "type": "tag",
+     "text": "nach unten",
+     "x": 400,
+     "y": 700,
+     "color": "rose",
+     "in": "den fast alle"
+    }
+   ]
+  },
+  {
+   "at": "Am Abend sagt Finn",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster_h",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 680,
+     "w": 200,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "mond_h",
+     "type": "icon",
+     "kind": "moon",
+     "x": 205,
+     "y": 650,
+     "size": 50,
+     "enter": "fade"
+    },
+    {
+     "id": "finn_h",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#E8A08A",
+     "x": 360,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Was weißt du noch",
+       "mood": "neutral"
+      },
+      {
+       "at": "Das Meer",
+       "mood": "open"
+      },
+      {
+       "at": "plötzlich eine Wolke",
+       "mood": "worried"
+      }
+     ],
+     "talk": [
+      [
+       "Ich hab heute",
+       "end:nichts verstanden"
+      ],
+      [
+       "Das Meer",
+       "end:Das Meer"
+      ],
+      [
+       "Dann war plötzlich",
+       "end:eine Wolke"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "mama_h",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Was weißt du noch",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Was weißt du noch",
+       "end:Was weißt du noch"
+      ],
+      [
+       "Und dann",
+       "end:Und dann"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tisch_h",
+     "type": "prop",
+     "kind": "table",
+     "x": 570,
+     "w": 640,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "topf0_h",
+     "type": "prop",
+     "kind": "pot",
+     "x": 580,
+     "y": 1298,
+     "w": 200,
+     "h": 130,
+     "steam": false,
+     "z": 3.6,
+     "enter": "fade"
+    },
+    {
+     "id": "b_finn0_h",
+     "type": "bubble",
+     "from": "finn_h",
+     "text": "Ich hab heute *gar nichts* verstanden.",
+     "x": 330,
+     "y": 960,
+     "maxW": 330,
+     "size": 42,
+     "in": "Ich hab heute-0.1",
+     "out": "Mama fragt nicht"
+    },
+    {
+     "id": "b_finn1_h",
+     "type": "bubble",
+     "from": "finn_h",
+     "text": "Das *Meer*.",
+     "x": 330,
+     "y": 960,
+     "maxW": 330,
+     "size": 42,
+     "in": "Das Meer-0.1",
+     "out": "Und dann-0.1"
+    },
+    {
+     "id": "b_finn2_h",
+     "type": "bubble",
+     "from": "finn_h",
+     "text": "Dann war plötzlich eine *Wolke*.",
+     "x": 330,
+     "y": 960,
+     "maxW": 330,
+     "size": 42,
+     "in": "Dann war plötzlich-0.1",
+     "out": "Da ist die Lücke+0.6"
+    },
+    {
+     "id": "b_mama0_h",
+     "type": "bubble",
+     "from": "mama_h",
+     "text": "Was weißt du *noch*?",
+     "x": 850,
+     "y": 820,
+     "maxW": 280,
+     "size": 42,
+     "in": "Was weißt du noch-0.1",
+     "out": "Das Meer+0.5"
+    },
+    {
+     "id": "b_mama1_h",
+     "type": "bubble",
+     "from": "mama_h",
+     "text": "Und *dann*?",
+     "x": 850,
+     "y": 820,
+     "maxW": 280,
+     "size": 42,
+     "in": "Und dann-0.1",
+     "out": "Dann war plötzlich+0.6"
+    },
+    {
+     "id": "pf_unten_h",
+     "type": "arrow",
+     "from": {
+      "x": 870,
+      "y": 560
+     },
+     "to": {
+      "x": 870,
+      "y": 720
+     },
+     "style": "red",
+     "in": "nach unten",
+     "out": "Was weißt du"
+    },
+    {
+     "id": "tag_unten_h",
+     "type": "tag",
+     "text": "nach unten",
+     "x": 870,
+     "y": 500,
+     "color": "rose",
+     "in": "nach unten",
+     "out": "Was weißt du"
+    },
+    {
+     "id": "tag_luecke",
+     "type": "tag",
+     "text": "hier ist die Lücke",
+     "x": 800,
+     "y": 710,
+     "color": "rose",
+     "in": "Da ist die Lücke"
+    },
+    {
+     "id": "mm_h",
+     "type": "node",
+     "x": 560,
+     "y": 820,
+     "w": 200,
+     "h": 86,
+     "label": "Meer",
+     "size": 38,
+     "color": "ice",
+     "in": "Das Meer",
+     "states": [
+      {
+       "at": "Das Meer",
+       "state": "glow"
+      },
+      {
+       "at": "Das Meer+0.80",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "md_h",
+     "type": "node",
+     "x": 560,
+     "y": 710,
+     "w": 200,
+     "h": 86,
+     "label": "Dampf",
+     "emptyLabel": "?",
+     "size": 38,
+     "color": "paper",
+     "in": "plötzlich eine Wolke",
+     "states": [
+      {
+       "at": "plötzlich eine Wolke",
+       "state": "empty"
+      },
+      {
+       "at": "Da ist die Lücke",
+       "state": "empty+glow"
+      }
+     ]
+    },
+    {
+     "id": "mw_h",
+     "type": "node",
+     "x": 560,
+     "y": 600,
+     "w": 200,
+     "h": 86,
+     "label": "Wolke",
+     "size": 38,
+     "color": "baby",
+     "in": "plötzlich eine Wolke",
+     "states": [
+      {
+       "at": "plötzlich eine Wolke",
+       "state": "red"
+      }
+     ]
+    },
+    {
+     "id": "mr_h",
+     "type": "node",
+     "x": 560,
+     "y": 490,
+     "w": 200,
+     "h": 86,
+     "label": "Regen",
+     "size": 38,
+     "color": "fresh",
+     "in": "plötzlich eine Wolke",
+     "states": [
+      {
+       "at": "plötzlich eine Wolke",
+       "state": "dim"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "Weißt du noch",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "fenster_t",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 680,
+     "w": 200,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "mond_t",
+     "type": "icon",
+     "kind": "moon",
+     "x": 205,
+     "y": 650,
+     "size": 50,
+     "enter": "fade"
+    },
+    {
+     "id": "finn_t",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#E8A08A",
+     "x": 360,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "steigt als Dampf",
+       "mood": "wow"
+      },
+      {
+       "at": "rastet ein",
+       "mood": "happy"
+      },
+      {
+       "at": "Finn erklärt",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Finn erklärt",
+       "kind": "point",
+       "dur": 2.0
+      }
+     ],
+     "talk": [
+      [
+       "Finn erklärt",
+       "end:ganzen Kreislauf"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "mama_t",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Es wird heiß",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "So macht die Sonne",
+       "end:mit dem Meer"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "Finn erklärt",
+       "mood": "happy"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tisch_t",
+     "type": "prop",
+     "kind": "table",
+     "x": 570,
+     "w": 640,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "topf0_t",
+     "type": "prop",
+     "kind": "pot",
+     "x": 580,
+     "y": 1298,
+     "w": 200,
+     "h": 130,
+     "steam": false,
+     "z": 3.6,
+     "out": "Es wird heiß",
+     "enter": "fade"
+    },
+    {
+     "id": "topf1_t",
+     "type": "prop",
+     "kind": "pot",
+     "x": 580,
+     "y": 1298,
+     "w": 200,
+     "h": 130,
+     "z": 3.6,
+     "in": "Es wird heiß",
+     "enter": "none"
+    },
+    {
+     "id": "tag_topf",
+     "type": "tag",
+     "text": "der Kochtopf",
+     "x": 580,
+     "y": 1040,
+     "color": "plum",
+     "in": "der Kochtopf",
+     "out": "Mama stellt"
+    },
+    {
+     "id": "b_sonne",
+     "type": "bubble",
+     "from": "mama_t",
+     "text": "So macht die *Sonne* das mit dem *Meer*.",
+     "x": 850,
+     "y": 840,
+     "maxW": 300,
+     "size": 40,
+     "in": "So macht die Sonne-0.1",
+     "out": "rastet ein+0.8"
+    },
+    {
+     "id": "sonne_k",
+     "type": "icon",
+     "kind": "sun",
+     "x": 900,
+     "y": 600,
+     "size": 70,
+     "in": "So macht die Sonne"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 360,
+     "y": 980,
+     "size": 60,
+     "in": "ganzen Kreislauf"
+    },
+    {
+     "id": "st_ganz",
+     "type": "stamp",
+     "text": "ganzer Kreislauf",
+     "x": 780,
+     "y": 1040,
+     "rot": -0.07,
+     "size": 48,
+     "in": "Finn erklärt+0.4"
+    },
+    {
+     "id": "mm_t",
+     "type": "node",
+     "x": 560,
+     "y": 820,
+     "w": 200,
+     "h": 86,
+     "label": "Meer",
+     "size": 38,
+     "color": "ice",
+     "in": "Weißt du noch",
+     "states": [
+      {
+       "at": "Weißt du noch",
+       "state": "glow"
+      },
+      {
+       "at": "Weißt du noch+0.80",
+       "state": "check"
+      },
+      {
+       "at": "Finn erklärt",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "md_t",
+     "type": "node",
+     "x": 560,
+     "y": 710,
+     "w": 200,
+     "h": 86,
+     "label": "Dampf",
+     "emptyLabel": "?",
+     "size": 38,
+     "color": "paper",
+     "in": "Weißt du noch",
+     "states": [
+      {
+       "at": "Weißt du noch",
+       "state": "empty"
+      },
+      {
+       "at": "Weißt du noch",
+       "state": "empty+glow"
+      },
+      {
+       "at": "Die Schublade Dampf",
+       "state": "glow"
+      },
+      {
+       "at": "Die Schublade Dampf+1.00",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "mw_t",
+     "type": "node",
+     "x": 560,
+     "y": 600,
+     "w": 200,
+     "h": 86,
+     "label": "Wolke",
+     "size": 38,
+     "color": "baby",
+     "in": "Weißt du noch",
+     "states": [
+      {
+       "at": "Weißt du noch",
+       "state": "red"
+      },
+      {
+       "at": "Die Schublade Dampf+0.50",
+       "state": "glow"
+      },
+      {
+       "at": "Die Schublade Dampf+1.40",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "mr_t",
+     "type": "node",
+     "x": 560,
+     "y": 490,
+     "w": 200,
+     "h": 86,
+     "label": "Regen",
+     "size": 38,
+     "color": "fresh",
+     "in": "Weißt du noch",
+     "states": [
+      {
+       "at": "Weißt du noch",
+       "state": "dim"
+      },
+      {
+       "at": "Die Schublade Dampf+0.90",
+       "state": "glow"
+      },
+      {
+       "at": "Die Schublade Dampf+1.80",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "mg0_t",
+     "type": "link",
+     "from": "mm_t",
+     "to": "md_t",
+     "style": "gold",
+     "in": "Die Schublade Dampf+0.30"
+    },
+    {
+     "id": "mg1_t",
+     "type": "link",
+     "from": "md_t",
+     "to": "mw_t",
+     "style": "gold",
+     "in": "Die Schublade Dampf+0.70"
+    },
+    {
+     "id": "mg2_t",
+     "type": "link",
+     "from": "mw_t",
+     "to": "mr_t",
+     "style": "gold",
+     "in": "Die Schublade Dampf+1.10"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "In einem Kochtopf",
+   "x": 580,
+   "y": 1180
+  },
+  {
+   "at": "schon bei der Wolke",
+   "x": 520,
+   "y": 610
+  },
+  {
+   "at": "das Meer",
+   "x": 660,
+   "y": 1240
+  },
+  {
+   "at": "Den hat er verpasst",
+   "x": 660,
+   "y": 1060
+  },
+  {
+   "at": "rutscht durch",
+   "x": 930,
+   "y": 1200
+  },
+  {
+   "at": "Da ist die Lücke",
+   "x": 560,
+   "y": 710
+  },
+  {
+   "at": "steigt als Dampf",
+   "x": 580,
+   "y": 1120
+  },
+  {
+   "at": "Die Schublade Dampf",
+   "x": 560,
+   "y": 710
+  }
+ ]
+}
