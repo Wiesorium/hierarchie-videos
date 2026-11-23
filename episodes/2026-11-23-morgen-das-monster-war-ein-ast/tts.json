@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Gefunden hat ihn Frida. Sie ist fünf. Wie, zeig ich dir gleich. Eine Nacht vorher: Licht aus, draußen Wind. „Papa, da ist ein Monster!“ [pause] Angst wirkt wie ein großes Gefühl. Schau sie dir als Schrank an. Oben steht ein großes Wort: Monster. Gebaut ist es aus zwei kleinen Schubladen darunter: ein Kratzen am Fenster. Ein Schatten mit langen Fingern. Große Angst steht fast immer auf kleinen Dingen. [pause] Weißt du noch, der Ast vom Anfang? Jetzt kommt, wie Frida ihn findet. [pause] Papa fragt nach unten: „Was hast du gehört?“ „Kratz, kratz.“ „Und was hast du gesehen?“ „Lange Finger.“ Zusammen gehen sie zum Fenster. Da ist der Ast. Er kratzt im Wind am Glas, und der Mond wirft seinen Schatten an die Wand. [pause] Und das hat mich selbst überrascht. [pause] Am Morgen malt Frida den Baum und klebt das Bild ans Fenster: „Damit ich weiß, wer da klopft.“ Oben in ihrem Schrank liegt jetzt ein neues Wort: unser Baum. Die Angst ist nicht weggeredet. Sie ist umsortiert. [pause] Welche kleinen Dinge stecken unter der Angst deines Kindes? [pause] [pause] Folg mir, damit mehr Eltern sehen, wie viel unter einem Monster steckt.",
+ "hooks": {
+  "b": "[warmly] Das Monster war ein Ast."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

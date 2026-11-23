@@ -2,6 +2,72 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-23",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-23-morgen-da-kratzt-ein-monster",
+   "slug": "da-kratzt-ein-monster",
+   "titel": "Da kratzt ein Monster",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Angst sitzt oben, beruhigt wird unten (Monster in der Nacht: ein großes Wort oben, zwei echte kleine Dinge darunter; Papa fragt nach unten und sortiert mit Frida um)",
+   "reihe": "Frida und das Monster (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn ihr Monster lieber gemeinsam untersucht.",
+   "hooks": {
+    "a": "„Papa, da kratzt ein Monster!“"
+   },
+   "dauer": {
+    "a": 68.83
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/yaZBtxz9UoHEbvRlGqDE",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Angst/Monster kam noch nicht vor). Beispiel selbst erfunden: Frida (fünf) und Papa. Erstes automatisches Thema nach Martins Leitlinie vom 22.11.2026 (drei eigene Videos, Hook-Typen Kinderzitat/Ergebnis zuerst/Du-Fehler, Folge-CTA, Nahaufnahme statt Weltall-Zoom). Captions in Drive (2026-11-23-da-kratzt-ein-monster-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-23-morgen-das-monster-war-ein-ast",
+   "slug": "das-monster-war-ein-ast",
+   "titel": "Das Monster war ein Ast",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Angst sitzt oben, beruhigt wird unten (Monster in der Nacht: ein großes Wort oben, zwei echte kleine Dinge darunter; Papa fragt nach unten und sortiert mit Frida um)",
+   "reihe": "Frida und das Monster (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Eltern sehen, wie viel unter einem Monster steckt.",
+   "hooks": {
+    "b": "Das Monster war ein Ast."
+   },
+   "dauer": {
+    "b": 75.03
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/yaZBtxz9UoHEbvRlGqDE",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Angst/Monster kam noch nicht vor). Beispiel selbst erfunden: Frida (fünf) und Papa. Erstes automatisches Thema nach Martins Leitlinie vom 22.11.2026 (drei eigene Videos, Hook-Typen Kinderzitat/Ergebnis zuerst/Du-Fehler, Folge-CTA, Nahaufnahme statt Weltall-Zoom). Captions in Drive (2026-11-23-das-monster-war-ein-ast-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-23-morgen-es-gibt-keine-monster",
+   "slug": "es-gibt-keine-monster",
+   "titel": "Es gibt keine Monster",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Angst sitzt oben, beruhigt wird unten (Monster in der Nacht: ein großes Wort oben, zwei echte kleine Dinge darunter; Papa fragt nach unten und sortiert mit Frida um)",
+   "reihe": "Frida und das Monster (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir für ruhigere Nächte. Mit Kindern, die selbst nachschauen.",
+   "hooks": {
+    "c": "„Es gibt keine Monster“ – das hilft nicht."
+   },
+   "dauer": {
+    "c": 81.27
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/yaZBtxz9UoHEbvRlGqDE",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Angst/Monster kam noch nicht vor). Beispiel selbst erfunden: Frida (fünf) und Papa. Erstes automatisches Thema nach Martins Leitlinie vom 22.11.2026 (drei eigene Videos, Hook-Typen Kinderzitat/Ergebnis zuerst/Du-Fehler, Folge-CTA, Nahaufnahme statt Weltall-Zoom). Captions in Drive (2026-11-23-es-gibt-keine-monster-captions)."
+  },
+  {
    "datum": "2026-11-22",
    "slot": "abend",
    "ordner": "episodes/2026-11-22-abend-eine-frage-von-ganz-unten",

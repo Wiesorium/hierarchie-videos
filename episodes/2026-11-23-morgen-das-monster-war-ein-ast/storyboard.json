@@ -1,0 +1,1112 @@
+{
+ "slug": "das-monster-war-ein-ast",
+ "title": "Das Monster war ein Ast",
+ "cta": "follow",
+ "hero": "frida",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.8,
+   "hold": 1.2,
+   "dur": 1.0,
+   "fx": 700,
+   "fy": 690,
+   "y": 1100
+  }
+ },
+ "hooks": {
+  "b": {
+   "label": "Ergebnis zuerst",
+   "audio": "Das Monster war ein Ast.",
+   "card": [
+    "Zwei Fragen.",
+    "*Kein Monster mehr.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Gefunden hat ihn Frida. Sie ist fünf. Wie, zeig ich dir gleich. Eine Nacht vorher: Licht aus, draußen Wind. „Papa, da ist ein Monster!“",
+  "block1": "Angst wirkt wie ein großes Gefühl. Schau sie dir als Schrank an. Oben steht ein großes Wort: Monster. Gebaut ist es aus zwei kleinen Schubladen darunter: ein Kratzen am Fenster. Ein Schatten mit langen Fingern. Große Angst steht fast immer auf kleinen Dingen.",
+  "rehook1": "Weißt du noch, der Ast vom Anfang? Jetzt kommt, wie Frida ihn findet.",
+  "block2": "Papa fragt nach unten: „Was hast du gehört?“ „Kratz, kratz.“ „Und was hast du gesehen?“ „Lange Finger.“ Zusammen gehen sie zum Fenster. Da ist der Ast. Er kratzt im Wind am Glas, und der Mond wirft seinen Schatten an die Wand.",
+  "rehook2": "Und das hat mich selbst überrascht.",
+  "block3": "Am Morgen malt Frida den Baum und klebt das Bild ans Fenster: „Damit ich weiß, wer da klopft.“ Oben in ihrem Schrank liegt jetzt ein neues Wort: unser Baum. Die Angst ist nicht weggeredet. Sie ist umsortiert.",
+  "closing": "Welche kleinen Dinge stecken unter der Angst deines Kindes?",
+  "cta": "Folg mir, damit mehr Eltern sehen, wie viel unter einem Monster steckt."
+ },
+ "question": [
+  "Welche kleinen Dinge stecken",
+  "unter der Angst deines Kindes?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "damit mehr Eltern sehen,",
+   "was unter der Angst steckt"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "tuer",
+     "type": "prop",
+     "kind": "door",
+     "x": 950,
+     "w": 190,
+     "h": 400
+    },
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 650,
+     "y": 700,
+     "w": 300,
+     "h": 270
+    },
+    {
+     "id": "baum",
+     "type": "prop",
+     "kind": "tree",
+     "x": 715,
+     "y": 836,
+     "w": 170,
+     "h": 280
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 568,
+     "y": 618,
+     "size": 62,
+     "in": "Eine Nacht vorher"
+    },
+    {
+     "id": "bett",
+     "type": "prop",
+     "kind": "bed",
+     "x": 400,
+     "w": 520,
+     "h": 210
+    },
+    {
+     "id": "frida",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "pose": "sit",
+     "x": 285,
+     "y": 1373,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Eine Nacht vorher",
+       "mood": "neutral"
+      },
+      {
+       "at": "Licht aus",
+       "mood": "worried"
+      },
+      {
+       "at": "Papa da ist ein Monster",
+       "mood": "scared"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Gefunden hat ihn",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Papa da ist ein Monster",
+       "end:Papa da ist ein Monster"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 950,
+     "look": "left",
+     "in": "end:Papa da ist ein Monster",
+     "mood": "open"
+    },
+    {
+     "id": "st_mon0",
+     "type": "stamp",
+     "text": "Monster?",
+     "x": 715,
+     "y": 520,
+     "rot": -0.08,
+     "size": 56,
+     "in": "@-1.7",
+     "out": "Eine Nacht vorher"
+    },
+    {
+     "id": "x_mon0",
+     "type": "icon",
+     "kind": "cross",
+     "x": 850,
+     "y": 500,
+     "size": 64,
+     "in": "@-0.7",
+     "out": "Eine Nacht vorher"
+    },
+    {
+     "id": "tag_ast0",
+     "type": "tag",
+     "text": "ein Ast",
+     "x": 715,
+     "y": 905,
+     "size": 54,
+     "color": "rose",
+     "in": "@-0.6",
+     "out": "Eine Nacht vorher"
+    },
+    {
+     "id": "tag_frida",
+     "type": "tag",
+     "text": "Frida, fünf",
+     "x": 285,
+     "y": 1000,
+     "color": "plum",
+     "in": "Sie ist fünf",
+     "out": "Eine Nacht vorher"
+    },
+    {
+     "id": "q_wie",
+     "type": "icon",
+     "kind": "question",
+     "x": 440,
+     "y": 1000,
+     "size": 70,
+     "in": "zeig ich dir gleich",
+     "out": "Eine Nacht vorher"
+    },
+    {
+     "id": "tag_vorher",
+     "type": "tag",
+     "text": "eine Nacht vorher",
+     "x": 300,
+     "y": 600,
+     "color": "plum",
+     "in": "Eine Nacht vorher",
+     "out": "Angst wirkt"
+    },
+    {
+     "id": "wolke",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 780,
+     "y": 590,
+     "size": 70,
+     "in": "draußen Wind",
+     "moves": [
+      {
+       "at": "draußen Wind+0.2",
+       "x": 600,
+       "y": 600,
+       "dur": 1.6
+      }
+     ],
+     "out": "Papa da ist"
+    },
+    {
+     "id": "kratz",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 790,
+     "y": 610,
+     "size": 62,
+     "in": "Papa da ist",
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "b_monster",
+     "type": "bubble",
+     "from": "frida",
+     "text": "Papa, da ist ein *Monster*!",
+     "x": 390,
+     "y": 1010,
+     "maxW": 360,
+     "size": 44,
+     "in": "Papa da ist-0.1",
+     "out": "Angst wirkt"
+    }
+   ]
+  },
+  {
+   "at": "Angst wirkt",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "frida_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "x": 130,
+     "look": "right",
+     "mood": "scared",
+     "moods": [
+      {
+       "at": "auf kleinen Dingen",
+       "mood": "open"
+      },
+      {
+       "at": "Papa fragt nach unten",
+       "mood": "open"
+      },
+      {
+       "at": "Lange Finger",
+       "mood": "neutral"
+      }
+     ],
+     "talk": [
+      [
+       "Kratz kratz",
+       "end:Kratz kratz"
+      ],
+      [
+       "Lange Finger",
+       "end:Lange Finger"
+      ]
+     ]
+    },
+    {
+     "id": "st_angst",
+     "type": "stamp",
+     "text": "ANGST",
+     "x": 690,
+     "y": 800,
+     "rot": -0.06,
+     "size": 90,
+     "in": "Angst wirkt",
+     "out": "Oben steht"
+    },
+    {
+     "id": "kratz",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 790,
+     "y": 610,
+     "size": 62,
+     "moves": [
+      {
+       "at": "ein Kratzen am Fenster",
+       "x": 420,
+       "y": 868,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "mond",
+     "type": "icon",
+     "kind": "moon",
+     "x": 568,
+     "y": 618,
+     "size": 62,
+     "out": "Zusammen gehen sie",
+     "moves": [
+      {
+       "at": "Ein Schatten mit",
+       "x": 990,
+       "y": 868,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 690,
+     "y": 640,
+     "w": 300,
+     "h": 120,
+     "label": "*Monster*",
+     "size": 60,
+     "color": "kids",
+     "in": "Oben steht",
+     "states": [
+      {
+       "at": "Oben steht",
+       "state": "heavy+red"
+      },
+      {
+       "at": "Gebaut ist es",
+       "state": "red"
+      },
+      {
+       "at": "Große Angst",
+       "state": "heavy+red"
+      },
+      {
+       "at": "Papa fragt nach unten",
+       "state": "dim"
+      }
+     ],
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "n_kratz",
+     "type": "node",
+     "x": 545,
+     "y": 930,
+     "w": 290,
+     "h": 130,
+     "label": "Kratzen",
+     "sub": "am Fenster",
+     "size": 50,
+     "color": "food",
+     "in": "ein Kratzen am Fenster",
+     "states": [
+      {
+       "at": "ein Kratzen",
+       "state": "glow"
+      },
+      {
+       "at": "Ein Schatten mit",
+       "state": "normal"
+      },
+      {
+       "at": "auf kleinen Dingen",
+       "state": "glow"
+      },
+      {
+       "at": "Weißt du noch",
+       "state": "normal"
+      },
+      {
+       "at": "Was hast du gehört",
+       "state": "glow"
+      },
+      {
+       "at": "Und was hast du gesehen",
+       "state": "normal"
+      }
+     ],
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "n_schatten",
+     "type": "node",
+     "x": 865,
+     "y": 930,
+     "w": 290,
+     "h": 130,
+     "label": "Schatten",
+     "sub": "lange Finger",
+     "size": 50,
+     "color": "ice",
+     "in": "Ein Schatten mit",
+     "states": [
+      {
+       "at": "Ein Schatten mit",
+       "state": "glow"
+      },
+      {
+       "at": "Große Angst",
+       "state": "normal"
+      },
+      {
+       "at": "auf kleinen Dingen",
+       "state": "glow"
+      },
+      {
+       "at": "Weißt du noch",
+       "state": "normal"
+      },
+      {
+       "at": "Und was hast du gesehen",
+       "state": "glow"
+      }
+     ],
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "l1",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_kratz",
+     "style": "line",
+     "in": "Gebaut ist es",
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "l2",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_schatten",
+     "style": "line",
+     "in": "Gebaut ist es",
+     "out": "Zusammen gehen sie"
+    },
+    {
+     "id": "tag_gross",
+     "type": "tag",
+     "text": "großes Wort",
+     "x": 690,
+     "y": 520,
+     "color": "rose",
+     "in": "ein großes Wort",
+     "out": "Gebaut ist es"
+    },
+    {
+     "id": "st_klein",
+     "type": "stamp",
+     "text": "kleine Dinge",
+     "x": 705,
+     "y": 1110,
+     "rot": -0.06,
+     "size": 52,
+     "in": "auf kleinen Dingen",
+     "out": "Weißt du noch"
+    },
+    {
+     "id": "tag_ast",
+     "type": "tag",
+     "text": "der Ast?",
+     "x": 690,
+     "y": 790,
+     "color": "plum",
+     "in": "der Ast vom Anfang",
+     "out": "Papa fragt nach unten"
+    },
+    {
+     "id": "papa_k",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 305,
+     "look": "right",
+     "mood": "smile",
+     "moods": [],
+     "gestures": [
+      {
+       "at": "Was hast du gehört",
+       "kind": "point",
+       "dur": 1.5
+      },
+      {
+       "at": "Und was hast du gesehen",
+       "kind": "point",
+       "dur": 1.5
+      }
+     ],
+     "talk": [
+      [
+       "Was hast du gehört",
+       "end:Was hast du gehört"
+      ],
+      [
+       "Und was hast du gesehen",
+       "end:Und was hast du gesehen"
+      ]
+     ],
+     "in": "Papa fragt nach unten"
+    },
+    {
+     "id": "b_q1_k",
+     "type": "bubble",
+     "from": "papa_k",
+     "text": "Was hast du *gehört*?",
+     "x": 300,
+     "y": 640,
+     "maxW": 330,
+     "size": 42,
+     "in": "Was hast du gehört-0.1",
+     "out": "Kratz kratz+1.0"
+    },
+    {
+     "id": "b_a1_k",
+     "type": "bubble",
+     "from": "frida_k",
+     "text": "Kratz, kratz.",
+     "x": 220,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Kratz kratz-0.1",
+     "out": "Und was hast du gesehen-0.1"
+    },
+    {
+     "id": "b_q2_k",
+     "type": "bubble",
+     "from": "papa_k",
+     "text": "Und was hast du *gesehen*?",
+     "x": 300,
+     "y": 640,
+     "maxW": 330,
+     "size": 42,
+     "in": "Und was hast du gesehen-0.1",
+     "out": "end:Lange Finger+0.8"
+    },
+    {
+     "id": "b_a2_k",
+     "type": "bubble",
+     "from": "frida_k",
+     "text": "Lange *Finger*.",
+     "x": 220,
+     "y": 840,
+     "maxW": 300,
+     "size": 44,
+     "in": "Lange Finger-0.1"
+    },
+    {
+     "id": "pf_unten",
+     "type": "arrow",
+     "from": {
+      "x": 420,
+      "y": 720
+     },
+     "to": {
+      "x": 420,
+      "y": 850
+     },
+     "style": "red",
+     "in": "Papa fragt nach unten",
+     "out": "Was hast du gehört"
+    },
+    {
+     "id": "tag_unten",
+     "type": "tag",
+     "text": "nach unten",
+     "x": 690,
+     "y": 790,
+     "color": "rose",
+     "in": "Papa fragt nach unten",
+     "out": "Zusammen gehen sie"
+    }
+   ]
+  },
+  {
+   "at": "Zusammen gehen sie",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster_f",
+     "type": "prop",
+     "kind": "window",
+     "x": 640,
+     "y": 760,
+     "w": 460,
+     "h": 400,
+     "enter": "fade"
+    },
+    {
+     "id": "baum_f",
+     "type": "prop",
+     "kind": "tree",
+     "x": 735,
+     "y": 950,
+     "w": 250,
+     "h": 400,
+     "enter": "fade",
+     "wobble": 1.6
+    },
+    {
+     "id": "mond_f",
+     "type": "icon",
+     "kind": "moon",
+     "x": 515,
+     "y": 640,
+     "size": 80,
+     "enter": "fade"
+    },
+    {
+     "id": "papa_f",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 120,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Da ist der Ast",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "frida_f",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "x": 300,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Da ist der Ast",
+       "mood": "wow"
+      },
+      {
+       "at": "der Mond wirft+0.6",
+       "mood": "laugh"
+      }
+     ]
+    },
+    {
+     "id": "x_ast_f",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 830,
+     "y": 640,
+     "size": 64,
+     "in": "Da ist der Ast"
+    },
+    {
+     "id": "st_ast_f",
+     "type": "stamp",
+     "text": "ein Ast!",
+     "x": 850,
+     "y": 1060,
+     "rot": -0.08,
+     "size": 60,
+     "in": "Da ist der Ast+0.3"
+    },
+    {
+     "id": "k_schatten_f",
+     "type": "card",
+     "x": 780,
+     "y": 1240,
+     "lines": [
+      "Mond + Ast",
+      "= *Schatten*"
+     ],
+     "size": 50,
+     "in": "der Mond wirft"
+    },
+    {
+     "id": "wow_f",
+     "type": "icon",
+     "kind": "star",
+     "x": 300,
+     "y": 980,
+     "size": 60,
+     "in": "selbst überrascht"
+    }
+   ]
+  },
+  {
+   "at": "Am Morgen malt",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "fenster_m",
+     "type": "prop",
+     "kind": "window",
+     "x": 650,
+     "y": 720,
+     "w": 360,
+     "h": 320,
+     "enter": "fade"
+    },
+    {
+     "id": "baum_m",
+     "type": "prop",
+     "kind": "tree",
+     "x": 725,
+     "y": 875,
+     "w": 200,
+     "h": 320,
+     "enter": "fade"
+    },
+    {
+     "id": "sonne_m",
+     "type": "icon",
+     "kind": "sun",
+     "x": 560,
+     "y": 630,
+     "size": 70,
+     "enter": "fade"
+    },
+    {
+     "id": "tag_morgen",
+     "type": "tag",
+     "text": "am Morgen",
+     "x": 280,
+     "y": 580,
+     "color": "plum"
+    },
+    {
+     "id": "bild",
+     "type": "prop",
+     "kind": "paper",
+     "x": 330,
+     "y": 1150,
+     "w": 300,
+     "h": 230,
+     "rot": -0.05,
+     "z": 4,
+     "in": "malt Frida den Baum",
+     "moves": [
+      {
+       "at": "klebt das Bild",
+       "x": 560,
+       "y": 760,
+       "dur": 1.0
+      }
+     ]
+    },
+    {
+     "id": "bild_baum",
+     "type": "prop",
+     "kind": "tree",
+     "x": 330,
+     "y": 1230,
+     "w": 90,
+     "h": 150,
+     "z": 4.1,
+     "in": "malt Frida den Baum+0.4",
+     "moves": [
+      {
+       "at": "klebt das Bild",
+       "x": 560,
+       "y": 840,
+       "dur": 1.0
+      }
+     ]
+    },
+    {
+     "id": "frida_m",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "x": 170,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Damit ich weiß",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "klebt das Bild",
+       "kind": "raise",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Damit ich weiß",
+       "end:wer da klopft"
+      ]
+     ]
+    },
+    {
+     "id": "stift",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 470,
+     "y": 1080,
+     "size": 66,
+     "in": "malt Frida",
+     "out": "klebt das Bild"
+    },
+    {
+     "id": "b_klopft",
+     "type": "bubble",
+     "from": "frida_m",
+     "text": "Damit ich weiß, wer da *klopft*.",
+     "x": 380,
+     "y": 1000,
+     "maxW": 360,
+     "size": 42,
+     "in": "Damit ich weiß-0.1"
+    }
+   ]
+  },
+  {
+   "at": "Oben in ihrem Schrank",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "frida_r",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F6C1D1",
+     "x": 130,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "unser Baum",
+       "mood": "happy"
+      },
+      {
+       "at": "umsortiert",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "unser Baum",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "papa_r",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#BFD9F2",
+     "x": 305,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "unser Baum",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "n_mon_r",
+     "type": "node",
+     "x": 690,
+     "y": 640,
+     "w": 280,
+     "h": 120,
+     "label": "*Monster*",
+     "size": 58,
+     "color": "kids",
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "ein neues Wort",
+       "x": 895,
+       "y": 640,
+       "dur": 0.8
+      }
+     ],
+     "states": [
+      {
+       "at": "Oben in ihrem Schrank",
+       "state": "heavy+red"
+      },
+      {
+       "at": "ein neues Wort",
+       "state": "dim"
+      },
+      {
+       "at": "nicht weggeredet",
+       "state": "dim+cross"
+      }
+     ],
+     "out": "umsortiert"
+    },
+    {
+     "id": "n_kratz_r",
+     "type": "node",
+     "x": 545,
+     "y": 930,
+     "w": 290,
+     "h": 130,
+     "label": "Kratzen",
+     "sub": "am Fenster",
+     "size": 50,
+     "color": "food",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "unser Baum",
+       "state": "glow"
+      },
+      {
+       "at": "umsortiert",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "n_schatten_r",
+     "type": "node",
+     "x": 865,
+     "y": 930,
+     "w": 290,
+     "h": 130,
+     "label": "Schatten",
+     "sub": "lange Finger",
+     "size": 50,
+     "color": "ice",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "unser Baum",
+       "state": "glow"
+      },
+      {
+       "at": "umsortiert",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "l1_r",
+     "type": "link",
+     "from": "n_mon_r",
+     "to": "n_kratz_r",
+     "style": "line",
+     "out": "ein neues Wort"
+    },
+    {
+     "id": "l2_r",
+     "type": "link",
+     "from": "n_mon_r",
+     "to": "n_schatten_r",
+     "style": "line",
+     "out": "ein neues Wort"
+    },
+    {
+     "id": "n_baum_r",
+     "type": "node",
+     "x": 560,
+     "y": 640,
+     "w": 320,
+     "h": 120,
+     "label": "unser *Baum*",
+     "size": 58,
+     "color": "fresh",
+     "in": "unser Baum",
+     "states": [
+      {
+       "at": "unser Baum",
+       "state": "glow"
+      },
+      {
+       "at": "umsortiert",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "g1_r",
+     "type": "link",
+     "from": "n_baum_r",
+     "to": "n_kratz_r",
+     "style": "gold",
+     "in": "unser Baum+0.3"
+    },
+    {
+     "id": "g2_r",
+     "type": "link",
+     "from": "n_baum_r",
+     "to": "n_schatten_r",
+     "style": "gold",
+     "in": "unser Baum+0.5"
+    },
+    {
+     "id": "st_weg",
+     "type": "stamp",
+     "text": "weggeredet",
+     "x": 895,
+     "y": 790,
+     "rot": 0.06,
+     "size": 46,
+     "in": "nicht weggeredet",
+     "out": "umsortiert"
+    },
+    {
+     "id": "x_weg",
+     "type": "icon",
+     "kind": "cross",
+     "x": 1010,
+     "y": 760,
+     "size": 56,
+     "in": "nicht weggeredet+0.3",
+     "out": "umsortiert"
+    },
+    {
+     "id": "st_um",
+     "type": "stamp",
+     "text": "umsortiert",
+     "x": 700,
+     "y": 1110,
+     "rot": -0.06,
+     "size": 60,
+     "in": "umsortiert"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Gefunden hat ihn Frida",
+   "x": 715,
+   "y": 700
+  },
+  {
+   "at": "Papa da ist ein Monster",
+   "x": 390,
+   "y": 1010
+  },
+  {
+   "at": "Oben steht",
+   "x": 690,
+   "y": 640
+  },
+  {
+   "at": "auf kleinen Dingen",
+   "x": 705,
+   "y": 930
+  },
+  {
+   "at": "Was hast du gehört",
+   "x": 545,
+   "y": 930
+  },
+  {
+   "at": "Da ist der Ast",
+   "x": 760,
+   "y": 700
+  },
+  {
+   "at": "klebt das Bild",
+   "x": 560,
+   "y": 760
+  },
+  {
+   "at": "umsortiert",
+   "x": 560,
+   "y": 640
+  }
+ ]
+}

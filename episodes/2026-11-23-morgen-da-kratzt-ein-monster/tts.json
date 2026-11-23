@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Zwei Fragen später schläft sie wieder. Frida ist fünf. Draußen pfeift der Wind. [pause] Schau in Fridas Kopf, als Schrank. Ganz unten zwei kleine Schubladen: ein Kratzen am Fenster. Ein Schatten mit langen Fingern. Beide sind echt. Nur woher sie kommen, weiß Frida nicht. Also legt ihr Kopf das größte Wort darüber: Monster. [pause] So. Jetzt der wichtige Teil. [pause] Papa streitet nicht mit dem Monster. Er fragt nach unten: „Was hast du gehört?“ „Kratz, kratz.“ „Und was hast du gesehen?“ „Lange Finger.“ Zusammen schauen sie aus dem Fenster. Ein Ast kratzt im Wind am Glas, und der Mond malt ihn an die Wand. [pause] Und jetzt wird’s spannend. [pause] Beide Schubladen hängen jetzt an einer neuen: unser Baum im Wind. Für das Monster ist kein Platz mehr. Frida schläft. In der nächsten Nacht kratzt es wieder. Frida flüstert nur: „Das ist unser Baum.“ [pause] Was hat dein Kind gehört, bevor das Monster kam? [pause] [pause] Folg mir, wenn ihr Monster lieber gemeinsam untersucht.",
+ "hooks": {
+  "a": "[warmly] „Papa, da kratzt ein Monster!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Obwohl es stimmt. Was stattdessen hilft, sind zwei kleine Fragen. Frida ist fünf. Draußen ist Wind. „Papa, da kratzt ein Monster!“ Papa sagt, was wir alle sagen: „Es gibt keine Monster. Schlaf jetzt.“ Kurz darauf ruft sie wieder. [pause] Schau dir Fridas Angst als Schrank an. Oben das große Wort: Monster. Darunter zwei kleine Schubladen: ein Kratzen am Fenster. Ein Schatten mit langen Fingern. „Es gibt keine Monster“ streitet nur mit der obersten Schublade. Die unteren bleiben voll. Also bleibt die Angst. [pause] Es gibt zwei Arten, ein Kind zu trösten. [pause] Von oben: „Es gibt keine Monster.“ Von unten: „Was hast du gehört?“ „Kratz, kratz.“ „Und was hast du gesehen?“ „Lange Finger.“ Zusammen schauen sie aus dem Fenster. Ein Ast kratzt im Wind am Glas, und der Mond malt ihn an die Wand. [pause] Das dauert zwei Minuten und löst den Großteil. [pause] Jetzt hängen beide Schubladen an einer neuen: unser Baum. Papa musste nichts wegreden. In der nächsten Nacht ruft Frida: „Papa, ich hab schon nachgeschaut. Das ist der Baum.“ [pause] Was fragst du, wenn dein Kind heute ein Monster hört? [pause] [pause] Folg mir für ruhigere Nächte. Mit Kindern, die selbst nachschauen.",
+ "hooks": {
+  "c": "[warmly] „Es gibt keine Monster“ – das hilft nicht."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
