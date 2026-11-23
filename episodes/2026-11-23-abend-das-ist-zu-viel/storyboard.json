@@ -1,0 +1,1407 @@
+{
+ "slug": "das-ist-zu-viel",
+ "title": "Das ist zu viel",
+ "cta": "follow",
+ "hero": "max",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "a": {
+   "label": "Kinderzitat",
+   "audio": "„Mama, das ist zu viel!“",
+   "card": [
+    "Max, sechs.",
+    "*Ein Wort: Aufräumen.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Drei Fragen später ist der Boden frei. Max ist sechs. Mama hat gesagt: „Räum bitte dein Zimmer auf.“ Zehn Minuten später sitzt er mitten im Chaos.",
+  "block1": "Schau in seinen Kopf, als Schrank. Ganz oben steht ein großes Wort: Aufräumen. Bei Mama hängen darunter viele kleine Schubladen. Sie hat das tausendmal gemacht. Bei Max hängt darunter nichts. Nur ein Berg aus Autos, Büchern und einem Kuscheligel. Max ist nicht faul. Er findet nur keinen Anfang.",
+  "rehook1": "Ich zeig dir, wie das konkret aussieht.",
+  "block2": "Mama sagt es nicht noch einmal. Sie setzt sich zu ihm und fragt nach unten: „Wo wohnen die Autos?“ „In der Kiste!“ „Und die Bücher?“ „Im Regal.“ „Und der Igel?“ „Auf dem Bett!“ Nach drei Fragen ist der Boden frei.",
+  "rehook2": "Ganz kurz noch das, dann kommt das Beste.",
+  "block3": "Unter dem großen Wort hängen jetzt drei kleine Schubladen: Autos, Bücher, Igel. Am nächsten Samstag sagt Max, bevor Mama etwas sagt: „Ich räum auf. Zuerst die Autos!“",
+  "closing": "Welches Wort ist für dein Kind noch zu groß?",
+  "cta": "Folg mir, wenn bei euch auch Autos auf dem Boden wohnen."
+ },
+ "question": [
+  "Welches Wort ist für dein Kind",
+  "noch zu groß?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn bei euch auch Autos",
+   "auf dem Boden wohnen"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 300,
+     "y": 690,
+     "w": 250,
+     "h": 220
+    },
+    {
+     "id": "bett",
+     "type": "prop",
+     "kind": "bed",
+     "x": 255,
+     "w": 420,
+     "h": 190
+    },
+    {
+     "id": "kiste",
+     "type": "prop",
+     "kind": "box",
+     "x": 620,
+     "w": 230,
+     "h": 150,
+     "color": "#E8B98F",
+     "z": 0.6
+    },
+    {
+     "id": "regal",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 230,
+     "h": 460
+    },
+    {
+     "id": "auto1",
+     "type": "prop",
+     "kind": "car",
+     "x": 330,
+     "y": 1478,
+     "w": 130,
+     "h": 62,
+     "color": "#F49AAE",
+     "z": 0.4
+    },
+    {
+     "id": "auto2",
+     "type": "prop",
+     "kind": "car",
+     "x": 790,
+     "y": 1478,
+     "w": 120,
+     "h": 58,
+     "color": "#F7C948",
+     "z": 0.4
+    },
+    {
+     "id": "buch1",
+     "type": "prop",
+     "kind": "book",
+     "x": 585,
+     "y": 1460,
+     "w": 116,
+     "h": 36,
+     "color": "plum",
+     "z": 0.7
+    },
+    {
+     "id": "buch2",
+     "type": "prop",
+     "kind": "book",
+     "x": 895,
+     "y": 1460,
+     "w": 106,
+     "h": 36,
+     "color": "rose",
+     "z": 0.7
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 190,
+     "y": 1452,
+     "size": 78,
+     "z": 0.8
+    },
+    {
+     "id": "max",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "pose": "sit",
+     "x": 470,
+     "y": 1478,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Fragen später",
+       "mood": "sad"
+      },
+      {
+       "at": "Mama hat gesagt",
+       "mood": "neutral"
+      },
+      {
+       "at": "mitten im Chaos",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "b_zuviel",
+     "type": "bubble",
+     "from": "max",
+     "text": "Mama, das ist *zu viel*!",
+     "x": 430,
+     "y": 1060,
+     "maxW": 360,
+     "size": 46,
+     "in": "@-2.15",
+     "out": "@0.3"
+    },
+    {
+     "id": "x_zuviel",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 660,
+     "y": 1180,
+     "size": 64,
+     "in": "@-1.5",
+     "out": "start"
+    },
+    {
+     "id": "q1",
+     "type": "icon",
+     "kind": "question",
+     "x": 640,
+     "y": 1180,
+     "size": 66,
+     "in": "start",
+     "out": "Max ist"
+    },
+    {
+     "id": "q2",
+     "type": "icon",
+     "kind": "question",
+     "x": 735,
+     "y": 1160,
+     "size": 66,
+     "in": "@0.2",
+     "out": "Max ist"
+    },
+    {
+     "id": "q3",
+     "type": "icon",
+     "kind": "question",
+     "x": 830,
+     "y": 1180,
+     "size": 66,
+     "in": "@0.4",
+     "out": "Max ist"
+    },
+    {
+     "id": "st_frei",
+     "type": "stamp",
+     "text": "Boden frei?",
+     "x": 680,
+     "y": 1010,
+     "rot": -0.07,
+     "size": 54,
+     "in": "Boden frei",
+     "out": "Max ist"
+    },
+    {
+     "id": "tag_max",
+     "type": "tag",
+     "text": "Max, sechs",
+     "x": 470,
+     "y": 1040,
+     "color": "plum",
+     "in": "Max ist",
+     "out": "Mama hat gesagt"
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "x": 960,
+     "look": "left",
+     "mood": "smile",
+     "in": "Mama hat gesagt",
+     "out": "Minuten später",
+     "enter": "slide",
+     "talk": [
+      [
+       "Räum bitte",
+       "end:Zimmer auf"
+      ]
+     ]
+    },
+    {
+     "id": "b_raeum",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Räum bitte dein Zimmer *auf*.",
+     "x": 790,
+     "y": 700,
+     "maxW": 340,
+     "size": 42,
+     "in": "Räum bitte-0.1",
+     "out": "Minuten später"
+    },
+    {
+     "id": "uhr",
+     "type": "icon",
+     "kind": "clock",
+     "x": 600,
+     "y": 680,
+     "size": 80,
+     "in": "Minuten später"
+    },
+    {
+     "id": "tag_spaeter",
+     "type": "tag",
+     "text": "zehn Minuten später",
+     "x": 600,
+     "y": 790,
+     "color": "plum",
+     "in": "Minuten später"
+    }
+   ]
+  },
+  {
+   "at": "Schau in seinen Kopf",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "max_k",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 140,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Bei Max hängt",
+       "mood": "sad"
+      },
+      {
+       "at": "nicht faul",
+       "mood": "open"
+      },
+      {
+       "at": "keinen Anfang",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Bei Max hängt",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 650,
+     "y": 640,
+     "w": 360,
+     "h": 120,
+     "label": "*Aufräumen*",
+     "size": 58,
+     "color": "kids",
+     "in": "großes Wort",
+     "states": [
+      {
+       "at": "großes Wort",
+       "state": "glow"
+      },
+      {
+       "at": "Bei Mama",
+       "state": "normal"
+      },
+      {
+       "at": "Bei Max hängt",
+       "state": "heavy+red"
+      }
+     ]
+    },
+    {
+     "id": "tag_mama",
+     "type": "tag",
+     "text": "bei Mama",
+     "x": 650,
+     "y": 520,
+     "color": "plum",
+     "in": "Bei Mama",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "st_oft",
+     "type": "stamp",
+     "text": "schon oft",
+     "x": 870,
+     "y": 1090,
+     "rot": -0.07,
+     "size": 52,
+     "in": "Sie hat das",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "tag_max_k",
+     "type": "tag",
+     "text": "bei Max",
+     "x": 650,
+     "y": 520,
+     "color": "rose",
+     "in": "Bei Max hängt"
+    },
+    {
+     "id": "n_leer",
+     "type": "node",
+     "x": 650,
+     "y": 890,
+     "w": 300,
+     "h": 110,
+     "label": "",
+     "emptyLabel": "?",
+     "size": 52,
+     "in": "Bei Max hängt",
+     "states": [
+      {
+       "at": "Bei Max hängt",
+       "state": "empty"
+      },
+      {
+       "at": "keinen Anfang",
+       "state": "empty+shake"
+      }
+     ]
+    },
+    {
+     "id": "l_leer",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_leer",
+     "style": "dashed",
+     "in": "Bei Max hängt"
+    },
+    {
+     "id": "st_faul",
+     "type": "stamp",
+     "text": "nicht faul",
+     "x": 330,
+     "y": 830,
+     "rot": 0.07,
+     "size": 52,
+     "in": "nicht faul",
+     "out": "keinen Anfang"
+    },
+    {
+     "id": "th_anfang",
+     "type": "thought",
+     "from": "max_k",
+     "text": "Wo *anfangen*?",
+     "x": 300,
+     "y": 860,
+     "in": "keinen Anfang"
+    },
+    {
+     "id": "tag_konkret",
+     "type": "tag",
+     "text": "ganz konkret",
+     "x": 650,
+     "y": 1340,
+     "color": "rose",
+     "in": "wie das konkret"
+    },
+    {
+     "id": "ms0",
+     "type": "node",
+     "x": 460,
+     "y": 860,
+     "w": 170,
+     "h": 74,
+     "label": "Autos",
+     "size": 36,
+     "color": "food",
+     "in": "Bei Mama hängen+0.00",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl0",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms0",
+     "style": "line",
+     "in": "Bei Mama hängen+0.00",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "ms1",
+     "type": "node",
+     "x": 650,
+     "y": 860,
+     "w": 170,
+     "h": 74,
+     "label": "Bücher",
+     "size": 36,
+     "color": "ice",
+     "in": "Bei Mama hängen+0.12",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl1",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms1",
+     "style": "line",
+     "in": "Bei Mama hängen+0.12",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "ms2",
+     "type": "node",
+     "x": 840,
+     "y": 860,
+     "w": 170,
+     "h": 74,
+     "label": "Igel",
+     "size": 36,
+     "color": "fresh",
+     "in": "Bei Mama hängen+0.24",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl2",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms2",
+     "style": "line",
+     "in": "Bei Mama hängen+0.24",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "ms3",
+     "type": "node",
+     "x": 460,
+     "y": 960,
+     "w": 170,
+     "h": 74,
+     "label": "Bett",
+     "size": 36,
+     "color": "baby",
+     "in": "Bei Mama hängen+0.36",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl3",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms3",
+     "style": "line",
+     "in": "Bei Mama hängen+0.36",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "ms4",
+     "type": "node",
+     "x": 650,
+     "y": 960,
+     "w": 170,
+     "h": 74,
+     "label": "Stifte",
+     "size": 36,
+     "color": "idea",
+     "in": "Bei Mama hängen+0.48",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl4",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms4",
+     "style": "line",
+     "in": "Bei Mama hängen+0.48",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "ms5",
+     "type": "node",
+     "x": 840,
+     "y": 960,
+     "w": 170,
+     "h": 74,
+     "label": "Socken",
+     "size": 36,
+     "color": "people",
+     "in": "Bei Mama hängen+0.60",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "msl5",
+     "type": "link",
+     "from": "n_top",
+     "to": "ms5",
+     "style": "line",
+     "in": "Bei Mama hängen+0.60",
+     "out": "Bei Max hängt"
+    },
+    {
+     "id": "pa1",
+     "type": "prop",
+     "kind": "car",
+     "x": 555,
+     "y": 1225,
+     "w": 130,
+     "h": 62,
+     "color": "#F49AAE",
+     "in": "aus Autos"
+    },
+    {
+     "id": "pa2",
+     "type": "prop",
+     "kind": "car",
+     "x": 710,
+     "y": 1175,
+     "w": 120,
+     "h": 58,
+     "color": "#F7C948",
+     "in": "aus Autos+0.25"
+    },
+    {
+     "id": "pb1",
+     "type": "prop",
+     "kind": "book",
+     "x": 770,
+     "y": 1200,
+     "w": 116,
+     "h": 36,
+     "color": "plum",
+     "in": "Büchern",
+     "z": 0.7
+    },
+    {
+     "id": "pb2",
+     "type": "prop",
+     "kind": "book",
+     "x": 630,
+     "y": 1155,
+     "w": 106,
+     "h": 36,
+     "color": "rose",
+     "in": "Büchern+0.25",
+     "z": 0.7
+    },
+    {
+     "id": "pi",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 500,
+     "y": 1145,
+     "size": 78,
+     "in": "Kuscheligel",
+     "z": 0.8
+    }
+   ]
+  },
+  {
+   "at": "Mama sagt es nicht",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster_f",
+     "type": "prop",
+     "kind": "window",
+     "x": 300,
+     "y": 690,
+     "w": 250,
+     "h": 220,
+     "enter": "fade"
+    },
+    {
+     "id": "bett_f",
+     "type": "prop",
+     "kind": "bed",
+     "x": 255,
+     "w": 420,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "kiste_f",
+     "type": "prop",
+     "kind": "box",
+     "x": 620,
+     "w": 230,
+     "h": 150,
+     "color": "#E8B98F",
+     "z": 0.6,
+     "enter": "fade"
+    },
+    {
+     "id": "regal_f",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 230,
+     "h": 460,
+     "enter": "fade"
+    },
+    {
+     "id": "auto1_f",
+     "type": "prop",
+     "kind": "car",
+     "x": 330,
+     "y": 1478,
+     "w": 130,
+     "h": 62,
+     "color": "#F49AAE",
+     "z": 0.4,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "In der Kiste+0.15",
+       "x": 575,
+       "y": 1352,
+       "dur": 0.8
+      }
+     ]
+    },
+    {
+     "id": "auto2_f",
+     "type": "prop",
+     "kind": "car",
+     "x": 790,
+     "y": 1478,
+     "w": 120,
+     "h": 58,
+     "color": "#F7C948",
+     "z": 0.4,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "In der Kiste+0.50",
+       "x": 665,
+       "y": 1356,
+       "dur": 0.8
+      }
+     ]
+    },
+    {
+     "id": "buch1_f",
+     "type": "prop",
+     "kind": "book",
+     "x": 585,
+     "y": 1460,
+     "w": 116,
+     "h": 36,
+     "color": "plum",
+     "z": 0.7,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Im Regal+0.15",
+       "x": 920,
+       "y": 1000,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "buch2_f",
+     "type": "prop",
+     "kind": "book",
+     "x": 895,
+     "y": 1460,
+     "w": 106,
+     "h": 36,
+     "color": "rose",
+     "z": 0.7,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Im Regal+0.50",
+       "x": 930,
+       "y": 964,
+       "dur": 0.9
+      }
+     ]
+    },
+    {
+     "id": "igel_f",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 190,
+     "y": 1452,
+     "size": 78,
+     "z": 0.8,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Auf dem Bett+0.15",
+       "x": 300,
+       "y": 1335,
+       "dur": 0.8
+      }
+     ]
+    },
+    {
+     "id": "max_f",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "pose": "sit",
+     "x": 440,
+     "y": 1478,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Wo wohnen die Autos",
+       "mood": "open"
+      },
+      {
+       "at": "In der Kiste",
+       "mood": "happy"
+      },
+      {
+       "at": "Boden frei",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "In der Kiste",
+       "kind": "point",
+       "dur": 1.2
+      },
+      {
+       "at": "Auf dem Bett",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "In der Kiste",
+       "end:In der Kiste"
+      ],
+      [
+       "Im Regal",
+       "end:Im Regal"
+      ],
+      [
+       "Auf dem Bett",
+       "end:Auf dem Bett"
+      ]
+     ]
+    },
+    {
+     "id": "mama_f",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pose": "sit",
+     "x": 790,
+     "y": 1478,
+     "look": "left",
+     "mood": "smile",
+     "in": "Sie setzt sich",
+     "enter": "hop",
+     "gestures": [
+      {
+       "at": "Wo wohnen die Autos",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Wo wohnen die Autos",
+       "end:Wo wohnen die Autos"
+      ],
+      [
+       "Und die Bücher",
+       "end:Und die Bücher"
+      ],
+      [
+       "Und der Igel",
+       "end:Und der Igel"
+      ]
+     ]
+    },
+    {
+     "id": "tag_nicht",
+     "type": "tag",
+     "text": "nicht noch einmal",
+     "x": 600,
+     "y": 640,
+     "color": "plum",
+     "out": "fragt nach unten"
+    },
+    {
+     "id": "pf_unten",
+     "type": "arrow",
+     "from": {
+      "x": 600,
+      "y": 600
+     },
+     "to": {
+      "x": 600,
+      "y": 760
+     },
+     "style": "red",
+     "in": "fragt nach unten",
+     "out": "Wo wohnen"
+    },
+    {
+     "id": "tag_unten",
+     "type": "tag",
+     "text": "nach unten",
+     "x": 760,
+     "y": 680,
+     "color": "rose",
+     "in": "fragt nach unten",
+     "out": "Wo wohnen"
+    },
+    {
+     "id": "b_q1",
+     "type": "bubble",
+     "from": "mama_f",
+     "text": "Wo wohnen die *Autos*?",
+     "x": 760,
+     "y": 800,
+     "maxW": 330,
+     "size": 42,
+     "in": "Wo wohnen die Autos-0.1",
+     "out": "Und die Bücher-0.1"
+    },
+    {
+     "id": "b_a1",
+     "type": "bubble",
+     "from": "max_f",
+     "text": "In der *Kiste*!",
+     "x": 330,
+     "y": 980,
+     "maxW": 300,
+     "size": 44,
+     "in": "In der Kiste-0.1",
+     "out": "Im Regal-0.1"
+    },
+    {
+     "id": "b_q2",
+     "type": "bubble",
+     "from": "mama_f",
+     "text": "Und die *Bücher*?",
+     "x": 760,
+     "y": 800,
+     "maxW": 330,
+     "size": 42,
+     "in": "Und die Bücher-0.1",
+     "out": "Und der Igel-0.1"
+    },
+    {
+     "id": "b_a2",
+     "type": "bubble",
+     "from": "max_f",
+     "text": "Im *Regal*.",
+     "x": 330,
+     "y": 980,
+     "maxW": 300,
+     "size": 44,
+     "in": "Im Regal-0.1",
+     "out": "Auf dem Bett-0.1"
+    },
+    {
+     "id": "b_q3",
+     "type": "bubble",
+     "from": "mama_f",
+     "text": "Und der *Igel*?",
+     "x": 760,
+     "y": 800,
+     "maxW": 330,
+     "size": 42,
+     "in": "Und der Igel-0.1",
+     "out": "Boden frei"
+    },
+    {
+     "id": "b_a3",
+     "type": "bubble",
+     "from": "max_f",
+     "text": "Auf dem *Bett*!",
+     "x": 330,
+     "y": 980,
+     "maxW": 300,
+     "size": 44,
+     "in": "Auf dem Bett-0.1",
+     "out": "Boden frei"
+    },
+    {
+     "id": "st_frei_f",
+     "type": "stamp",
+     "text": "Boden frei!",
+     "x": 560,
+     "y": 1060,
+     "rot": -0.07,
+     "size": 62,
+     "in": "Boden frei"
+    }
+   ]
+  },
+  {
+   "at": "Ganz kurz noch",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "max_r",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 130,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Unter dem großen",
+       "mood": "open"
+      },
+      {
+       "at": "Igel",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Autos",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "mama_r",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "x": 315,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Igel",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "tag_beste",
+     "type": "tag",
+     "text": "gleich das Beste",
+     "x": 690,
+     "y": 1180,
+     "color": "rose",
+     "out": "Unter dem großen"
+    },
+    {
+     "id": "n_top_r",
+     "type": "node",
+     "x": 690,
+     "y": 640,
+     "w": 360,
+     "h": 120,
+     "label": "*Aufräumen*",
+     "size": 58,
+     "color": "kids",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "Unter dem großen",
+       "state": "glow"
+      },
+      {
+       "at": "Igel+0.6",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "ln0_r",
+     "type": "node",
+     "x": 490,
+     "y": 930,
+     "w": 190,
+     "h": 130,
+     "label": "Autos",
+     "sub": "in die Kiste",
+     "size": 44,
+     "color": "food",
+     "in": "Autos",
+     "states": [
+      {
+       "at": "Autos",
+       "state": "glow"
+      },
+      {
+       "at": "Igel+0.6",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "lg0_r",
+     "type": "link",
+     "from": "n_top_r",
+     "to": "ln0_r",
+     "style": "gold",
+     "in": "Autos+0.25"
+    },
+    {
+     "id": "ln1_r",
+     "type": "node",
+     "x": 690,
+     "y": 930,
+     "w": 190,
+     "h": 130,
+     "label": "Bücher",
+     "sub": "ins Regal",
+     "size": 44,
+     "color": "ice",
+     "in": "Bücher",
+     "states": [
+      {
+       "at": "Bücher",
+       "state": "glow"
+      },
+      {
+       "at": "Igel+0.6",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "lg1_r",
+     "type": "link",
+     "from": "n_top_r",
+     "to": "ln1_r",
+     "style": "gold",
+     "in": "Bücher+0.25"
+    },
+    {
+     "id": "ln2_r",
+     "type": "node",
+     "x": 890,
+     "y": 930,
+     "w": 190,
+     "h": 130,
+     "label": "Igel",
+     "sub": "aufs Bett",
+     "size": 44,
+     "color": "fresh",
+     "in": "Igel",
+     "states": [
+      {
+       "at": "Igel",
+       "state": "glow"
+      },
+      {
+       "at": "Igel+0.6",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "lg2_r",
+     "type": "link",
+     "from": "n_top_r",
+     "to": "ln2_r",
+     "style": "gold",
+     "in": "Igel+0.25"
+    }
+   ]
+  },
+  {
+   "at": "Am nächsten Samstag",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "fenster_n",
+     "type": "prop",
+     "kind": "window",
+     "x": 300,
+     "y": 690,
+     "w": 250,
+     "h": 220,
+     "enter": "fade"
+    },
+    {
+     "id": "bett_n",
+     "type": "prop",
+     "kind": "bed",
+     "x": 255,
+     "w": 420,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "kiste_n",
+     "type": "prop",
+     "kind": "box",
+     "x": 620,
+     "w": 230,
+     "h": 150,
+     "color": "#E8B98F",
+     "z": 0.6,
+     "enter": "fade"
+    },
+    {
+     "id": "regal_n",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 230,
+     "h": 460,
+     "enter": "fade"
+    },
+    {
+     "id": "auto1_n",
+     "type": "prop",
+     "kind": "car",
+     "x": 330,
+     "y": 1478,
+     "w": 130,
+     "h": 62,
+     "color": "#F49AAE",
+     "z": 0.4,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Zuerst die Autos+0.30",
+       "x": 575,
+       "y": 1352,
+       "dur": 0.8
+      }
+     ]
+    },
+    {
+     "id": "auto2_n",
+     "type": "prop",
+     "kind": "car",
+     "x": 790,
+     "y": 1478,
+     "w": 120,
+     "h": 58,
+     "color": "#F7C948",
+     "z": 0.4,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Zuerst die Autos+0.65",
+       "x": 665,
+       "y": 1356,
+       "dur": 0.8
+      }
+     ]
+    },
+    {
+     "id": "buch1_n",
+     "type": "prop",
+     "kind": "book",
+     "x": 585,
+     "y": 1460,
+     "w": 116,
+     "h": 36,
+     "color": "plum",
+     "z": 0.7,
+     "enter": "fade"
+    },
+    {
+     "id": "buch2_n",
+     "type": "prop",
+     "kind": "book",
+     "x": 895,
+     "y": 1460,
+     "w": 106,
+     "h": 36,
+     "color": "rose",
+     "z": 0.7,
+     "enter": "fade"
+    },
+    {
+     "id": "igel_n",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 190,
+     "y": 1452,
+     "size": 78,
+     "z": 0.8,
+     "enter": "fade"
+    },
+    {
+     "id": "max_n",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 450,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ich räum auf",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Zuerst die Autos",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Ich räum auf",
+       "end:Zuerst die Autos"
+      ]
+     ]
+    },
+    {
+     "id": "mama_n",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "x": 980,
+     "look": "left",
+     "mood": "neutral",
+     "in": "bevor Mama",
+     "enter": "slide",
+     "moods": [
+      {
+       "at": "Ich räum auf",
+       "mood": "wow"
+      },
+      {
+       "at": "Zuerst die Autos+0.5",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "tag_sa",
+     "type": "tag",
+     "text": "nächster Samstag",
+     "x": 300,
+     "y": 560,
+     "color": "plum",
+     "in": "nächsten Samstag"
+    },
+    {
+     "id": "b_selbst",
+     "type": "bubble",
+     "from": "max_n",
+     "text": "Ich räum auf. Zuerst die *Autos*!",
+     "x": 470,
+     "y": 860,
+     "maxW": 380,
+     "size": 44,
+     "in": "Ich räum auf-0.1"
+    },
+    {
+     "id": "herz",
+     "type": "icon",
+     "kind": "heart",
+     "x": 760,
+     "y": 700,
+     "size": 64,
+     "in": "end:Zuerst die Autos"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "großes Wort",
+   "x": 650,
+   "y": 640
+  },
+  {
+   "at": "Bei Max hängt",
+   "x": 650,
+   "y": 890
+  },
+  {
+   "at": "Kuscheligel",
+   "x": 520,
+   "y": 1150
+  },
+  {
+   "at": "In der Kiste",
+   "x": 620,
+   "y": 1320
+  },
+  {
+   "at": "Im Regal",
+   "x": 925,
+   "y": 990
+  },
+  {
+   "at": "Auf dem Bett",
+   "x": 300,
+   "y": 1330
+  },
+  {
+   "at": "Bücher Igel",
+   "x": 690,
+   "y": 930
+  },
+  {
+   "at": "Zuerst die Autos",
+   "x": 470,
+   "y": 860
+  }
+ ]
+}

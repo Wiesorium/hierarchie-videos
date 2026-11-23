@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Max hat es selbst gemacht. Er ist sechs. Das ergibt gleich Sinn, wenn du siehst, was vorher war. Samstag, zehn Uhr. Mama sagt: „Räum bitte dein Zimmer auf.“ Zehn Minuten später sitzt Max mitten im Chaos: „Mama, das ist zu viel!“ [pause] Aufräumen klingt wie eine Aufgabe. Für Max ist es erst mal nur ein Wort. Schau es dir als Schrank an. Oben steht ein großes Wort: Aufräumen. Bei Mama hängen darunter viele kleine Schubladen. Bei Max hängt darunter nichts. [pause] Das ist, was ich ein leeres Wort nenne. [pause] Ein leeres Wort wird nicht voller, wenn man es öfter sagt. „Räum auf!“ „Räum auf!“ Es bleibt leer. Man füllt es von unten, mit kleinen Fragen. [pause] Weißt du noch, die drei Fragen vom Anfang? Hier sind sie. [pause] „Wo wohnen die Autos?“ „In der Kiste!“ „Und die Bücher?“ „Im Regal.“ „Und der Igel?“ „Auf dem Bett!“ Jede Antwort ist eine kleine Schublade. Zusammen hängen sie unter dem großen Wort. Jetzt ist Aufräumen nicht mehr leer. Und Max weiß, wo er anfängt. [pause] Welches leere Wort sagst du am häufigsten? [pause] [pause] Folg mir, damit mehr Eltern sehen, was unter einem großen Wort fehlt.",
+ "hooks": {
+  "b": "[warmly] Drei Fragen, und das Zimmer war aufgeräumt."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

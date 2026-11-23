@@ -3,6 +3,72 @@
  "videos": [
   {
    "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-das-ist-zu-viel",
+   "slug": "das-ist-zu-viel",
+   "titel": "Das ist zu viel",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Aufräumen ist ein Wort ganz oben, Kinder brauchen die Schubladen darunter (Max, sechs, sitzt nach „Räum bitte dein Zimmer auf“ mitten im Chaos; bei Mama hängen unter „Aufräumen“ viele kleine Schubladen, bei Max nur ein Berg; Mama fragt nach unten: „Wo wohnen die Autos?“ „Und die Bücher?“ „Und der Igel?“)",
+   "reihe": "Max und das große Wort (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn bei euch auch Autos auf dem Boden wohnen.",
+   "hooks": {
+    "a": "„Mama, das ist zu viel!“"
+   },
+   "dauer": {
+    "a": 69.87
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/MjLeaFrspkZKf0cTi5fZ",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Aufräumen/Gewohnheiten kam noch nicht vor). Beispiel selbst erfunden: Max (sechs) und Mama. Neu in der Engine: Requisite box (Spielzeugkiste), kleine Autos mit passenden Rädern. Captions in Drive (2026-11-23-das-ist-zu-viel-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-wo-wohnen-die-autos",
+   "slug": "wo-wohnen-die-autos",
+   "titel": "Wo wohnen die Autos?",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Aufräumen ist ein Wort ganz oben, Kinder brauchen die Schubladen darunter (Max, sechs, sitzt nach „Räum bitte dein Zimmer auf“ mitten im Chaos; bei Mama hängen unter „Aufräumen“ viele kleine Schubladen, bei Max nur ein Berg; Mama fragt nach unten: „Wo wohnen die Autos?“ „Und die Bücher?“ „Und der Igel?“)",
+   "reihe": "Max und das große Wort (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Eltern sehen, was unter einem großen Wort fehlt.",
+   "hooks": {
+    "b": "Drei Fragen, und das Zimmer war aufgeräumt."
+   },
+   "dauer": {
+    "b": 78.07
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/MjLeaFrspkZKf0cTi5fZ",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Aufräumen/Gewohnheiten kam noch nicht vor). Beispiel selbst erfunden: Max (sechs) und Mama. Neu in der Engine: Requisite box (Spielzeugkiste), kleine Autos mit passenden Rädern. Captions in Drive (2026-11-23-wo-wohnen-die-autos-captions)."
+  },
+  {
+   "datum": "2026-11-23",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-23-abend-raeum-auf-ist-zu-gross",
+   "slug": "raeum-auf-ist-zu-gross",
+   "titel": "„Räum auf!“ ist zu groß",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Aufräumen ist ein Wort ganz oben, Kinder brauchen die Schubladen darunter (Max, sechs, sitzt nach „Räum bitte dein Zimmer auf“ mitten im Chaos; bei Mama hängen unter „Aufräumen“ viele kleine Schubladen, bei Max nur ein Berg; Mama fragt nach unten: „Wo wohnen die Autos?“ „Und die Bücher?“ „Und der Igel?“)",
+   "reihe": "Max und das große Wort (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du es auch schon dreimal gesagt hast.",
+   "hooks": {
+    "c": "„Räum auf!“ ist für Kinder zu groß."
+   },
+   "dauer": {
+    "c": 69.07
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/MjLeaFrspkZKf0cTi5fZ",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Aufräumen/Gewohnheiten kam noch nicht vor). Beispiel selbst erfunden: Max (sechs) und Mama. Neu in der Engine: Requisite box (Spielzeugkiste), kleine Autos mit passenden Rädern. Captions in Drive (2026-11-23-raeum-auf-ist-zu-gross-captions)."
+  },
+  {
+   "datum": "2026-11-23",
    "slot": "morgen",
    "ordner": "episodes/2026-11-23-morgen-da-kratzt-ein-monster",
    "slug": "da-kratzt-ein-monster",

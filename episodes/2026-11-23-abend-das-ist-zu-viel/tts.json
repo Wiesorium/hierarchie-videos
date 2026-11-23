@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Drei Fragen später ist der Boden frei. Max ist sechs. Mama hat gesagt: „Räum bitte dein Zimmer auf.“ Zehn Minuten später sitzt er mitten im Chaos. [pause] Schau in seinen Kopf, als Schrank. Ganz oben steht ein großes Wort: Aufräumen. Bei Mama hängen darunter viele kleine Schubladen. Sie hat das tausendmal gemacht. Bei Max hängt darunter nichts. Nur ein Berg aus Autos, Büchern und einem Kuscheligel. Max ist nicht faul. Er findet nur keinen Anfang. [pause] Ich zeig dir, wie das konkret aussieht. [pause] Mama sagt es nicht noch einmal. Sie setzt sich zu ihm und fragt nach unten: „Wo wohnen die Autos?“ „In der Kiste!“ „Und die Bücher?“ „Im Regal.“ „Und der Igel?“ „Auf dem Bett!“ Nach drei Fragen ist der Boden frei. [pause] Ganz kurz noch das, dann kommt das Beste. [pause] Unter dem großen Wort hängen jetzt drei kleine Schubladen: Autos, Bücher, Igel. Am nächsten Samstag sagt Max, bevor Mama etwas sagt: „Ich räum auf. Zuerst die Autos!“ [pause] Welches Wort ist für dein Kind noch zu groß? [pause] [pause] Folg mir, wenn bei euch auch Autos auf dem Boden wohnen.",
+ "hooks": {
+  "a": "[warmly] „Mama, das ist zu viel!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

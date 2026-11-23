@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das liegt nicht am Wollen. Woran dann, siehst du gleich. Max ist sechs. Mama sagt, was wir alle sagen: „Räum bitte dein Zimmer auf.“ Zehn Minuten später sitzt Max mitten im Chaos und spielt. [pause] Schau dir das Wort als Schrank an. Oben steht: Aufräumen. Bei dir hängen darunter viele kleine Schubladen. Du hast es tausendmal gemacht, du siehst sie gar nicht mehr. Bei Max hängt darunter nichts. Nur ein Berg. [pause] Und genau hier machen es die meisten falsch. [pause] Wir sagen das große Wort noch einmal. Lauter. Und dann ein drittes Mal. Aber lauter wird das Wort nicht voller. [pause] Schau, was passiert, wenn Mama nur eine Sache ändert. [pause] Sie fragt nach unten: „Wo wohnen die Autos?“ „In der Kiste!“ „Und die Bücher?“ „Im Regal.“ „Und der Igel?“ „Auf dem Bett!“ Drei Fragen, drei kleine Schubladen. Und der Boden ist frei. Du musst nicht lauter werden. Nur tiefer fragen. [pause] Welche kleine Frage stellst du heute statt „Räum auf“? [pause] [pause] Folg mir, wenn du es auch schon dreimal gesagt hast.",
+ "hooks": {
+  "c": "[warmly] „Räum auf!“ ist für Kinder zu groß."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
