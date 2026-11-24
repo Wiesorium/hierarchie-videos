@@ -2,6 +2,72 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-24",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-24-morgen-du-sagst-immer-gleich",
+   "slug": "du-sagst-immer-gleich",
+   "titel": "Du sagst immer gleich",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Gleich“ ist für kleine Kinder ein Wort ohne Boden: Bei Erwachsenen hängt darunter eine Schublade mit Minuten, ein Fünfjähriger kann noch keine Uhr lesen, also fragt er nach (das Fragen ist seine einzige Uhr); Kinder messen Zeit nicht in Minuten, sondern in Dingen (Noah, fünf, will nach dem Abendessen mit Papa eine Höhle bauen; „Gleich.“ „Jetzt?“ „Du sagst immer gleich!“; dann: „Wenn die drei Teller sauber sind, bauen wir die Höhle.“ Noah zählt mit und fragt kein einziges Mal)",
+   "reihe": "Noah und das Gleich (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn bei euch auch alles „gleich“ passiert.",
+   "hooks": {
+    "a": "„Du sagst immer gleich!“"
+   },
+   "dauer": {
+    "a": 75.53
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/4HjqQGQdMvadwARK7ZS7",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Zeit/Warten/„gleich“ kam noch nicht vor). Beispiel selbst erfunden: Noah (fünf) und Papa in der Küche. Keine Engine-Änderung nötig. Captions in Drive (2026-11-24-du-sagst-immer-gleich-captions). Stimme gesamt für die Reihe etwa 3.560 Credits."
+  },
+  {
+   "datum": "2026-11-24",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-24-morgen-ein-wort-ohne-boden",
+   "slug": "ein-wort-ohne-boden",
+   "titel": "Ein Wort ohne Boden",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Gleich“ ist für kleine Kinder ein Wort ohne Boden: Bei Erwachsenen hängt darunter eine Schublade mit Minuten, ein Fünfjähriger kann noch keine Uhr lesen, also fragt er nach (das Fragen ist seine einzige Uhr); Kinder messen Zeit nicht in Minuten, sondern in Dingen (Noah, fünf, will nach dem Abendessen mit Papa eine Höhle bauen; „Gleich.“ „Jetzt?“ „Du sagst immer gleich!“; dann: „Wenn die drei Teller sauber sind, bauen wir die Höhle.“ Noah zählt mit und fragt kein einziges Mal)",
+   "reihe": "Noah und das Gleich (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Kinder sehen können, wie lang gleich ist.",
+   "hooks": {
+    "b": "Noah wartet. Und fragt kein einziges Mal."
+   },
+   "dauer": {
+    "b": 80.83
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/4HjqQGQdMvadwARK7ZS7",
+   "status": "fertig",
+   "hinweis": "Video 2 der Reihe; Label „Wort ohne Boden“ (Rehook Nr. 35). Captions in Drive (2026-11-24-ein-wort-ohne-boden-captions)."
+  },
+  {
+   "datum": "2026-11-24",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-24-morgen-gleich-heisst-nie",
+   "slug": "gleich-heisst-nie",
+   "titel": "„Gleich“ heißt nie",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Gleich“ ist für kleine Kinder ein Wort ohne Boden: Bei Erwachsenen hängt darunter eine Schublade mit Minuten, ein Fünfjähriger kann noch keine Uhr lesen, also fragt er nach (das Fragen ist seine einzige Uhr); Kinder messen Zeit nicht in Minuten, sondern in Dingen (Noah, fünf, will nach dem Abendessen mit Papa eine Höhle bauen; „Gleich.“ „Jetzt?“ „Du sagst immer gleich!“; dann: „Wenn die drei Teller sauber sind, bauen wir die Höhle.“ Noah zählt mit und fragt kein einziges Mal)",
+   "reihe": "Noah und das Gleich (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du heute auch schon „gleich“ gesagt hast.",
+   "hooks": {
+    "c": "Du sagst „gleich“. Dein Kind hört: nie."
+   },
+   "dauer": {
+    "c": 79.1
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/4HjqQGQdMvadwARK7ZS7",
+   "status": "fertig",
+   "hinweis": "Video 3 der Reihe; Du-Fehler: genauer erklären („in zehn Minuten“) hilft nicht, das Gleich an ein sichtbares Ding hängen schon (wie „noch zweimal schlafen“ bei Tagen). Captions in Drive (2026-11-24-gleich-heisst-nie-captions)."
+  },
+  {
    "datum": "2026-11-23",
    "slot": "abend",
    "ordner": "episodes/2026-11-23-abend-ich-will-nicht-so-sein",

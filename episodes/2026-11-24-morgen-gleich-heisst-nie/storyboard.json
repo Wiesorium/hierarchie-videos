@@ -1,0 +1,1174 @@
+{
+ "slug": "gleich-heisst-nie",
+ "title": "„Gleich“ heißt nie",
+ "cta": "follow",
+ "hero": "noah",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "Du sagst „gleich“. Dein Kind hört: nie.",
+   "card": [
+    "Nicht ungeduldig.",
+    "*Ihm fehlt eine Schublade.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Darum fragt es alle zwei Minuten nach. Was stattdessen hilft, siehst du gleich. Noah ist fünf. Nach dem Abendessen fragt er: „Papa, bauen wir eine Höhle?“ Papa wäscht gerade ab und sagt, was wir alle sagen: „Gleich.“",
+  "block1": "Schau dir das Wort als Schrank an. Oben liegt: gleich. Bei dir hängt darunter eine Schublade: zehn Minuten. Du siehst sie gar nicht mehr. Bei Noah hängt darunter nichts. Er kann noch keine Uhr lesen.",
+  "rehook1": "Und genau hier machen es die meisten falsch.",
+  "block2": "Wir erklären es genauer: „In zehn Minuten!“ Aber für Noah sind Minuten nur ein neues Wort. Auch darunter hängt nichts. Also fragt er weiter: „Jetzt?“ Das ist kein Quengeln. Das Fragen ist seine einzige Uhr.",
+  "rehook2": "So. Jetzt der wichtige Teil.",
+  "block3": "Häng dein Gleich an ein Ding, das dein Kind sehen kann. Papa sagt: „Wenn die drei Teller sauber sind, bauen wir die Höhle.“ Noah zählt mit: „Noch zwei!“ „Noch einer!“ Und fragt kein einziges Mal. Für Tage machst du das längst: „Noch zweimal schlafen.“ Für Minuten geht es genauso.",
+  "closing": "Woran hängst du heute dein nächstes „gleich“?",
+  "cta": "Folg mir, wenn du heute auch schon „gleich“ gesagt hast."
+ },
+ "question": [
+  "Woran hängst du heute",
+  "dein nächstes „gleich“?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du heute auch schon",
+   "„gleich“ gesagt hast"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 215,
+     "y": 700,
+     "w": 230,
+     "h": 200,
+     "enter": "fade"
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 905,
+     "y": 560,
+     "w": 120,
+     "enter": "fade"
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 325,
+     "w": 400,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "spuele",
+     "type": "prop",
+     "kind": "sink",
+     "x": 965,
+     "w": 190,
+     "h": 250,
+     "enter": "fade"
+    },
+    {
+     "id": "teller0",
+     "type": "prop",
+     "kind": "plate",
+     "x": 215,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5
+    },
+    {
+     "id": "teller1",
+     "type": "prop",
+     "kind": "plate",
+     "x": 325,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5
+    },
+    {
+     "id": "teller2",
+     "type": "prop",
+     "kind": "plate",
+     "x": 435,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5
+    },
+    {
+     "id": "noah",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#F7C948",
+     "pants": "#5B6E9C",
+     "x": 620,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "siehst du",
+       "mood": "neutral"
+      },
+      {
+       "at": "bauen wir",
+       "mood": "happy"
+      },
+      {
+       "at": "Gleich#2",
+       "mood": "open"
+      }
+     ],
+     "talk": [
+      [
+       "Papa bauen",
+       "end:eine Höhle"
+      ]
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#9FD3C7",
+     "pants": "#6B5B7B",
+     "x": 830,
+     "look": "left",
+     "mood": "smile",
+     "talk": [
+      [
+       "Gleich#2",
+       "end:Gleich#2"
+      ]
+     ]
+    },
+    {
+     "id": "b_hook_gl",
+     "type": "bubble",
+     "from": "papa",
+     "text": "*Gleich!*",
+     "x": 720,
+     "y": 950,
+     "maxW": 240,
+     "size": 48,
+     "in": "@-2.4",
+     "out": "start"
+    },
+    {
+     "id": "t_nie",
+     "type": "thought",
+     "from": "noah",
+     "text": "*nie* …",
+     "x": 470,
+     "y": 1000,
+     "size": 48,
+     "in": "@-1.0",
+     "out": "@0.6"
+    },
+    {
+     "id": "b_j1",
+     "type": "bubble",
+     "from": "noah",
+     "text": "Jetzt?",
+     "x": 420,
+     "y": 900,
+     "maxW": 220,
+     "size": 46,
+     "in": "fragt es",
+     "out": "Minuten nach"
+    },
+    {
+     "id": "b_j2",
+     "type": "bubble",
+     "from": "noah",
+     "text": "Jetzt?",
+     "x": 600,
+     "y": 860,
+     "maxW": 220,
+     "size": 46,
+     "in": "Minuten nach",
+     "out": "Minuten nach+0.6"
+    },
+    {
+     "id": "b_j3",
+     "type": "bubble",
+     "from": "noah",
+     "text": "*Jetzt?*",
+     "x": 400,
+     "y": 780,
+     "maxW": 220,
+     "size": 50,
+     "in": "Minuten nach+0.6",
+     "out": "siehst du"
+    },
+    {
+     "id": "st_gleich",
+     "type": "stamp",
+     "text": "gleich!",
+     "x": 600,
+     "y": 860,
+     "rot": -0.07,
+     "size": 56,
+     "in": "siehst du",
+     "out": "Noah ist"
+    },
+    {
+     "id": "tag_noah",
+     "type": "tag",
+     "text": "Noah, fünf",
+     "x": 620,
+     "y": 960,
+     "color": "plum",
+     "in": "Noah ist",
+     "out": "bauen wir"
+    },
+    {
+     "id": "b_hoehle",
+     "type": "bubble",
+     "from": "noah",
+     "text": "Papa, bauen wir eine *Höhle*?",
+     "x": 450,
+     "y": 900,
+     "maxW": 380,
+     "size": 44,
+     "in": "bauen wir-0.3",
+     "out": "was wir alle"
+    },
+    {
+     "id": "tag_alle",
+     "type": "tag",
+     "text": "was wir alle sagen",
+     "x": 540,
+     "y": 520,
+     "color": "plum",
+     "in": "was wir alle"
+    },
+    {
+     "id": "b_gleich1",
+     "type": "bubble",
+     "from": "papa",
+     "text": "*Gleich.*",
+     "x": 760,
+     "y": 760,
+     "maxW": 260,
+     "size": 48,
+     "in": "Gleich#2-0.1"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das Wort",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "noah_k",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#F7C948",
+     "pants": "#5B6E9C",
+     "x": 150,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Bei Noah hängt",
+       "mood": "sad"
+      },
+      {
+       "at": "keine Uhr",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Bei Noah hängt",
+       "kind": "shrug",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "n_gleich_k",
+     "type": "node",
+     "x": 640,
+     "y": 640,
+     "w": 340,
+     "h": 120,
+     "label": "*gleich*",
+     "size": 60,
+     "color": "idea",
+     "in": "Schau dir das Wort",
+     "states": [
+      {
+       "at": "Schau dir das Wort",
+       "state": "glow"
+      },
+      {
+       "at": "Bei dir hängt",
+       "state": "normal"
+      },
+      {
+       "at": "Bei Noah hängt",
+       "state": "heavy+red"
+      }
+     ]
+    },
+    {
+     "id": "tag_mid_k",
+     "type": "tag",
+     "text": "bei dir",
+     "x": 640,
+     "y": 515,
+     "color": "plum",
+     "in": "Bei dir hängt",
+     "out": "Bei Noah hängt"
+    },
+    {
+     "id": "n_min_k",
+     "type": "node",
+     "x": 640,
+     "y": 900,
+     "w": 320,
+     "h": 110,
+     "label": "zehn Minuten",
+     "size": 46,
+     "color": "people",
+     "icon": "clock",
+     "in": "Bei dir hängt+0.3",
+     "out": "Bei Noah hängt"
+    },
+    {
+     "id": "l_min_k",
+     "type": "link",
+     "from": "n_gleich_k",
+     "to": "n_min_k",
+     "style": "line",
+     "in": "Bei dir hängt+0.3",
+     "out": "Bei Noah hängt"
+    },
+    {
+     "id": "tag_noah_k",
+     "type": "tag",
+     "text": "bei Noah",
+     "x": 640,
+     "y": 515,
+     "color": "rose",
+     "in": "Bei Noah hängt"
+    },
+    {
+     "id": "n_leer_k",
+     "type": "node",
+     "x": 640,
+     "y": 900,
+     "w": 320,
+     "h": 110,
+     "label": "",
+     "size": 50,
+     "color": "idea",
+     "emptyLabel": "?",
+     "in": "Bei Noah hängt",
+     "states": [
+      {
+       "at": "Bei Noah hängt",
+       "state": "empty"
+      },
+      {
+       "at": "Uhr lesen",
+       "state": "empty+shake"
+      }
+     ]
+    },
+    {
+     "id": "l_leer_k",
+     "type": "link",
+     "from": "n_gleich_k",
+     "to": "n_leer_k",
+     "style": "dashed",
+     "in": "Bei Noah hängt"
+    },
+    {
+     "id": "uhr_k_k",
+     "type": "icon",
+     "kind": "clock",
+     "x": 860,
+     "y": 1140,
+     "size": 96,
+     "in": "keine Uhr"
+    },
+    {
+     "id": "uhr_q_k",
+     "type": "icon",
+     "kind": "question",
+     "x": 935,
+     "y": 1075,
+     "size": 58,
+     "in": "keine Uhr+0.3"
+    },
+    {
+     "id": "st_wort_k",
+     "type": "stamp",
+     "text": "längst gelernt",
+     "x": 640,
+     "y": 1180,
+     "rot": -0.06,
+     "size": 54,
+     "in": "gar nicht mehr",
+     "out": "Bei Noah hängt"
+    },
+    {
+     "id": "st_hier",
+     "type": "stamp",
+     "text": "genau hier",
+     "x": 330,
+     "y": 760,
+     "rot": 0.07,
+     "size": 56,
+     "in": "genau hier"
+    },
+    {
+     "id": "x_hier",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 520,
+     "y": 720,
+     "size": 70,
+     "in": "genau hier+0.3"
+    }
+   ]
+  },
+  {
+   "at": "Wir erklären es",
+   "chord": "F#m",
+   "elements": [
+    {
+     "id": "noah_e",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#F7C948",
+     "pants": "#5B6E9C",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "neues Wort",
+       "mood": "worried"
+      },
+      {
+       "at": "fragt er weiter",
+       "mood": "open"
+      },
+      {
+       "at": "kein Quengeln",
+       "mood": "neutral"
+      }
+     ],
+     "talk": [
+      [
+       "Jetzt",
+       "end:Jetzt"
+      ]
+     ]
+    },
+    {
+     "id": "papa_e",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#9FD3C7",
+     "pants": "#6B5B7B",
+     "x": 930,
+     "look": "left",
+     "mood": "smile",
+     "talk": [
+      [
+       "genauer+0.4",
+       "end:Minuten"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "Jetzt",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "id": "b_zehn",
+     "type": "bubble",
+     "from": "papa_e",
+     "text": "In *zehn Minuten*!",
+     "x": 800,
+     "y": 820,
+     "maxW": 320,
+     "size": 46,
+     "in": "erklären",
+     "out": "Aber für Noah"
+    },
+    {
+     "id": "n_gleich_e",
+     "type": "node",
+     "x": 560,
+     "y": 560,
+     "w": 300,
+     "h": 110,
+     "label": "*gleich*",
+     "size": 54,
+     "color": "idea",
+     "enter": "fade"
+    },
+    {
+     "id": "n_min_e",
+     "type": "node",
+     "x": 560,
+     "y": 770,
+     "w": 300,
+     "h": 104,
+     "label": "zehn Minuten",
+     "size": 44,
+     "color": "people",
+     "icon": "clock",
+     "in": "Aber für Noah",
+     "states": [
+      {
+       "at": "neues Wort",
+       "state": "question"
+      }
+     ]
+    },
+    {
+     "id": "l_min_e",
+     "type": "link",
+     "from": "n_gleich_e",
+     "to": "n_min_e",
+     "style": "line",
+     "in": "Aber für Noah"
+    },
+    {
+     "id": "n_leer_e",
+     "type": "node",
+     "x": 560,
+     "y": 980,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 50,
+     "color": "idea",
+     "emptyLabel": "?",
+     "in": "Auch darunter",
+     "states": [
+      {
+       "at": "Auch darunter",
+       "state": "empty"
+      },
+      {
+       "at": "Auch darunter+0.6",
+       "state": "empty+shake"
+      }
+     ]
+    },
+    {
+     "id": "l_leer_e",
+     "type": "link",
+     "from": "n_min_e",
+     "to": "n_leer_e",
+     "style": "dashed",
+     "in": "Auch darunter"
+    },
+    {
+     "id": "st_neu",
+     "type": "stamp",
+     "text": "neues Wort",
+     "x": 850,
+     "y": 860,
+     "rot": -0.07,
+     "size": 52,
+     "in": "neues Wort"
+    },
+    {
+     "id": "b_jetzt_e",
+     "type": "bubble",
+     "from": "noah_e",
+     "text": "Jetzt?",
+     "x": 300,
+     "y": 880,
+     "maxW": 220,
+     "size": 46,
+     "in": "Jetzt-0.1"
+    },
+    {
+     "id": "st_queng",
+     "type": "stamp",
+     "text": "kein Quengeln",
+     "x": 560,
+     "y": 1200,
+     "rot": 0.06,
+     "size": 52,
+     "in": "kein Quengeln",
+     "out": "einzige Uhr"
+    },
+    {
+     "id": "k_uhr_e",
+     "type": "card",
+     "lines": [
+      "Fragen ist",
+      "*seine Uhr*"
+     ],
+     "x": 560,
+     "y": 1200,
+     "size": 52,
+     "in": "einzige Uhr"
+    },
+    {
+     "id": "tag_wichtig",
+     "type": "tag",
+     "text": "der wichtige Teil",
+     "x": 850,
+     "y": 620,
+     "color": "rose",
+     "in": "wichtige Teil"
+    }
+   ]
+  },
+  {
+   "at": "Häng dein Gleich",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "uhr_t",
+     "type": "prop",
+     "kind": "clock",
+     "x": 905,
+     "y": 560,
+     "w": 120,
+     "enter": "fade"
+    },
+    {
+     "id": "tisch_t",
+     "type": "prop",
+     "kind": "table",
+     "x": 325,
+     "w": 400,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "spuele_t",
+     "type": "prop",
+     "kind": "sink",
+     "x": 965,
+     "w": 190,
+     "h": 250,
+     "enter": "fade"
+    },
+    {
+     "id": "teller0_t",
+     "type": "prop",
+     "kind": "plate",
+     "x": 215,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5,
+     "moves": [
+      {
+       "at": "Noch",
+       "x": 965,
+       "y": 1205,
+       "dur": 0.9
+      }
+     ],
+     "out": "Noch+1.0"
+    },
+    {
+     "id": "teller1_t",
+     "type": "prop",
+     "kind": "plate",
+     "x": 325,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5,
+     "moves": [
+      {
+       "at": "Noch einer",
+       "x": 965,
+       "y": 1205,
+       "dur": 0.9
+      }
+     ],
+     "out": "Noch einer+1.0"
+    },
+    {
+     "id": "teller2_t",
+     "type": "prop",
+     "kind": "plate",
+     "x": 435,
+     "y": 1288,
+     "w": 112,
+     "food": true,
+     "foodColor": "#E9A23B",
+     "enter": "fade",
+     "z": 0.5,
+     "moves": [
+      {
+       "at": "kein einziges",
+       "x": 965,
+       "y": 1205,
+       "dur": 0.9
+      }
+     ],
+     "out": "kein einziges+1.0"
+    },
+    {
+     "id": "noah_t",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#F7C948",
+     "pants": "#5B6E9C",
+     "x": 620,
+     "look": "left",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Wenn die+1.5",
+       "mood": "happy"
+      },
+      {
+       "at": "Noch",
+       "mood": "grin"
+      },
+      {
+       "at": "kein einziges",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Noch",
+       "kind": "point",
+       "dur": 1.1
+      },
+      {
+       "at": "Noch einer",
+       "kind": "point",
+       "dur": 1.1
+      }
+     ],
+     "talk": [
+      [
+       "Noch",
+       "end:Noch einer"
+      ]
+     ]
+    },
+    {
+     "id": "papa_t",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#9FD3C7",
+     "pants": "#6B5B7B",
+     "x": 830,
+     "look": "left",
+     "mood": "smile",
+     "talk": [
+      [
+       "Wenn die",
+       "end:die Höhle"
+      ]
+     ]
+    },
+    {
+     "id": "n_gleich_t",
+     "type": "node",
+     "x": 330,
+     "y": 560,
+     "w": 280,
+     "h": 104,
+     "label": "*gleich*",
+     "size": 52,
+     "color": "idea",
+     "in": "Häng dein Gleich",
+     "states": [
+      {
+       "at": "Häng dein Gleich",
+       "state": "glow"
+      },
+      {
+       "at": "kein einziges",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "n_teller_t",
+     "type": "node",
+     "x": 330,
+     "y": 770,
+     "w": 290,
+     "h": 104,
+     "label": "drei Teller",
+     "size": 46,
+     "color": "food",
+     "in": "Teller sauber",
+     "states": [
+      {
+       "at": "Teller sauber",
+       "state": "glow"
+      },
+      {
+       "at": "kein einziges",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "l_gold_t",
+     "type": "link",
+     "from": "n_gleich_t",
+     "to": "n_teller_t",
+     "style": "gold",
+     "in": "Teller sauber+0.3"
+    },
+    {
+     "id": "b_wenn_t",
+     "type": "bubble",
+     "from": "papa_t",
+     "text": "Wenn die drei *Teller* sauber sind …",
+     "x": 760,
+     "y": 770,
+     "maxW": 380,
+     "size": 40,
+     "in": "Wenn die-0.1",
+     "out": "Noch-0.3"
+    },
+    {
+     "id": "b_noch2_t",
+     "type": "bubble",
+     "from": "noah_t",
+     "text": "Noch *zwei*!",
+     "x": 640,
+     "y": 870,
+     "maxW": 260,
+     "size": 48,
+     "in": "Noch-0.1",
+     "out": "Noch einer-0.1"
+    },
+    {
+     "id": "b_noch1_t",
+     "type": "bubble",
+     "from": "noah_t",
+     "text": "Noch *einer*!",
+     "x": 640,
+     "y": 870,
+     "maxW": 260,
+     "size": 48,
+     "in": "Noch einer-0.1",
+     "out": "kein einziges"
+    },
+    {
+     "id": "st_kein_t",
+     "type": "stamp",
+     "text": "kein einziges Mal",
+     "x": 330,
+     "y": 1010,
+     "rot": 0.06,
+     "size": 50,
+     "in": "kein einziges"
+    },
+    {
+     "id": "k_ding",
+     "type": "card",
+     "lines": [
+      "an ein *Ding*,",
+      "das es sieht"
+     ],
+     "x": 650,
+     "y": 730,
+     "size": 46,
+     "in": "an ein Ding",
+     "out": "Wenn die"
+    }
+   ]
+  },
+  {
+   "at": "Für Tage",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "kissen_h",
+     "type": "prop",
+     "kind": "cushions",
+     "x": 330,
+     "w": 400,
+     "h": 230,
+     "enter": "pop"
+    },
+    {
+     "id": "noah_h",
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#F7C948",
+     "pants": "#5B6E9C",
+     "x": 330,
+     "look": "right",
+     "mood": "happy",
+     "y": 1478,
+     "moves": [
+      {
+       "at": "Für Tage+0.4",
+       "x": 330,
+       "y": 1250,
+       "dur": 0.7
+      }
+     ],
+     "gestures": [
+      {
+       "at": "genauso",
+       "kind": "cheer",
+       "dur": 1.5
+      }
+     ]
+    },
+    {
+     "id": "papa_h",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "dark",
+     "shirt": "#9FD3C7",
+     "pants": "#6B5B7B",
+     "x": 640,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "genauso",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "genauso",
+       "kind": "wave",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "id": "tag_tage",
+     "type": "tag",
+     "text": "für Tage",
+     "x": 300,
+     "y": 500,
+     "color": "plum",
+     "in": "Für Tage"
+    },
+    {
+     "id": "n_morgen_h",
+     "type": "node",
+     "x": 300,
+     "y": 600,
+     "w": 240,
+     "h": 96,
+     "label": "*morgen*",
+     "size": 46,
+     "color": "idea",
+     "in": "Für Tage",
+     "states": [
+      {
+       "at": "schlafen",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "n_schlaf_h",
+     "type": "node",
+     "x": 300,
+     "y": 800,
+     "w": 330,
+     "h": 100,
+     "label": "zweimal schlafen",
+     "size": 42,
+     "color": "baby",
+     "in": "schlafen",
+     "states": [
+      {
+       "at": "schlafen",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "mond_h",
+     "type": "icon",
+     "kind": "moon",
+     "x": 520,
+     "y": 720,
+     "size": 60,
+     "in": "schlafen+0.2"
+    },
+    {
+     "id": "l_schlaf_h",
+     "type": "link",
+     "from": "n_morgen_h",
+     "to": "n_schlaf_h",
+     "style": "gold",
+     "in": "schlafen+0.3"
+    },
+    {
+     "id": "tag_min",
+     "type": "tag",
+     "text": "für Minuten",
+     "x": 800,
+     "y": 500,
+     "color": "rose",
+     "in": "Für Minuten"
+    },
+    {
+     "id": "n_gleich_h",
+     "type": "node",
+     "x": 800,
+     "y": 600,
+     "w": 240,
+     "h": 96,
+     "label": "*gleich*",
+     "size": 46,
+     "color": "idea",
+     "in": "Für Minuten",
+     "states": [
+      {
+       "at": "genauso",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "n_teller_h",
+     "type": "node",
+     "x": 800,
+     "y": 800,
+     "w": 250,
+     "h": 96,
+     "label": "drei Teller",
+     "size": 40,
+     "color": "food",
+     "in": "Für Minuten+0.3",
+     "states": [
+      {
+       "at": "genauso",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "l_gold_h",
+     "type": "link",
+     "from": "n_gleich_h",
+     "to": "n_teller_h",
+     "style": "gold",
+     "in": "genauso"
+    },
+    {
+     "id": "herz_h",
+     "type": "icon",
+     "kind": "heart",
+     "x": 500,
+     "y": 1000,
+     "size": 64,
+     "in": "genauso+0.3"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Bei Noah hängt",
+   "x": 640,
+   "y": 900
+  },
+  {
+   "at": "keine Uhr",
+   "x": 860,
+   "y": 1140
+  },
+  {
+   "at": "genau hier",
+   "x": 330,
+   "y": 760
+  },
+  {
+   "at": "Auch darunter",
+   "x": 560,
+   "y": 980
+  },
+  {
+   "at": "einzige Uhr",
+   "x": 560,
+   "y": 1200
+  },
+  {
+   "at": "Teller sauber",
+   "x": 330,
+   "y": 770
+  },
+  {
+   "at": "Noch einer",
+   "x": 640,
+   "y": 870
+  },
+  {
+   "at": "genauso",
+   "x": 800,
+   "y": 600
+  }
+ ]
+}

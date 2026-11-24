@@ -1,0 +1,1174 @@
+{
+ "words": [
+  {
+   "text": "[warmly]",
+   "start": 0.0,
+   "end": 0.067,
+   "type": "word"
+  },
+  {
+   "text": "Darum",
+   "start": 0.08,
+   "end": 0.48,
+   "type": "word"
+  },
+  {
+   "text": "fragt",
+   "start": 0.6,
+   "end": 0.76,
+   "type": "word"
+  },
+  {
+   "text": "es",
+   "start": 0.8,
+   "end": 0.96,
+   "type": "word"
+  },
+  {
+   "text": "alle",
+   "start": 1.04,
+   "end": 1.2,
+   "type": "word"
+  },
+  {
+   "text": "zwei",
+   "start": 1.36,
+   "end": 1.52,
+   "type": "word"
+  },
+  {
+   "text": "Minuten",
+   "start": 1.6,
+   "end": 1.92,
+   "type": "word"
+  },
+  {
+   "text": "nach.",
+   "start": 2.0,
+   "end": 2.52,
+   "type": "word"
+  },
+  {
+   "text": "Was",
+   "start": 2.72,
+   "end": 2.8,
+   "type": "word"
+  },
+  {
+   "text": "stattdessen",
+   "start": 2.88,
+   "end": 3.36,
+   "type": "word"
+  },
+  {
+   "text": "hilft,",
+   "start": 3.44,
+   "end": 3.92,
+   "type": "word"
+  },
+  {
+   "text": "siehst",
+   "start": 4.0,
+   "end": 4.16,
+   "type": "word"
+  },
+  {
+   "text": "du",
+   "start": 4.2,
+   "end": 4.24,
+   "type": "word"
+  },
+  {
+   "text": "gleich.",
+   "start": 4.32,
+   "end": 5.0,
+   "type": "word"
+  },
+  {
+   "text": "Noah",
+   "start": 5.36,
+   "end": 5.76,
+   "type": "word"
+  },
+  {
+   "text": "ist",
+   "start": 5.88,
+   "end": 6.0,
+   "type": "word"
+  },
+  {
+   "text": "fünf.",
+   "start": 6.08,
+   "end": 6.68,
+   "type": "word"
+  },
+  {
+   "text": "Nach",
+   "start": 6.88,
+   "end": 6.96,
+   "type": "word"
+  },
+  {
+   "text": "dem",
+   "start": 7.04,
+   "end": 7.12,
+   "type": "word"
+  },
+  {
+   "text": "Abendessen",
+   "start": 7.2,
+   "end": 7.68,
+   "type": "word"
+  },
+  {
+   "text": "fragt",
+   "start": 7.8,
+   "end": 8.0,
+   "type": "word"
+  },
+  {
+   "text": "er:",
+   "start": 8.08,
+   "end": 8.24,
+   "type": "word"
+  },
+  {
+   "text": "„Papa,",
+   "start": 8.64,
+   "end": 9.28,
+   "type": "word"
+  },
+  {
+   "text": "bauen",
+   "start": 9.32,
+   "end": 9.52,
+   "type": "word"
+  },
+  {
+   "text": "wir",
+   "start": 9.547,
+   "end": 9.6,
+   "type": "word"
+  },
+  {
+   "text": "eine",
+   "start": 9.64,
+   "end": 9.84,
+   "type": "word"
+  },
+  {
+   "text": "Höhle?“",
+   "start": 9.92,
+   "end": 10.613,
+   "type": "word"
+  },
+  {
+   "text": "Papa",
+   "start": 10.8,
+   "end": 11.04,
+   "type": "word"
+  },
+  {
+   "text": "wäscht",
+   "start": 11.08,
+   "end": 11.28,
+   "type": "word"
+  },
+  {
+   "text": "gerade",
+   "start": 11.36,
+   "end": 11.6,
+   "type": "word"
+  },
+  {
+   "text": "ab",
+   "start": 11.68,
+   "end": 11.84,
+   "type": "word"
+  },
+  {
+   "text": "und",
+   "start": 11.92,
+   "end": 12.0,
+   "type": "word"
+  },
+  {
+   "text": "sagt,",
+   "start": 12.08,
+   "end": 12.48,
+   "type": "word"
+  },
+  {
+   "text": "was",
+   "start": 12.56,
+   "end": 12.64,
+   "type": "word"
+  },
+  {
+   "text": "wir",
+   "start": 12.68,
+   "end": 12.8,
+   "type": "word"
+  },
+  {
+   "text": "alle",
+   "start": 12.88,
+   "end": 13.04,
+   "type": "word"
+  },
+  {
+   "text": "sagen:",
+   "start": 13.08,
+   "end": 13.44,
+   "type": "word"
+  },
+  {
+   "text": "„Gleich.“",
+   "start": 13.84,
+   "end": 14.347,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 14.373,
+   "end": 14.64,
+   "type": "word"
+  },
+  {
+   "text": "Schau",
+   "start": 15.68,
+   "end": 15.84,
+   "type": "word"
+  },
+  {
+   "text": "dir",
+   "start": 15.92,
+   "end": 16.0,
+   "type": "word"
+  },
+  {
+   "text": "das",
+   "start": 16.08,
+   "end": 16.16,
+   "type": "word"
+  },
+  {
+   "text": "Wort",
+   "start": 16.24,
+   "end": 16.4,
+   "type": "word"
+  },
+  {
+   "text": "als",
+   "start": 16.48,
+   "end": 16.64,
+   "type": "word"
+  },
+  {
+   "text": "Schrank",
+   "start": 16.72,
+   "end": 17.04,
+   "type": "word"
+  },
+  {
+   "text": "an.",
+   "start": 17.12,
+   "end": 17.68,
+   "type": "word"
+  },
+  {
+   "text": "Oben",
+   "start": 17.76,
+   "end": 18.0,
+   "type": "word"
+  },
+  {
+   "text": "liegt:",
+   "start": 18.08,
+   "end": 18.4,
+   "type": "word"
+  },
+  {
+   "text": "gleich.",
+   "start": 18.64,
+   "end": 19.32,
+   "type": "word"
+  },
+  {
+   "text": "Bei",
+   "start": 19.52,
+   "end": 19.6,
+   "type": "word"
+  },
+  {
+   "text": "dir",
+   "start": 19.68,
+   "end": 19.92,
+   "type": "word"
+  },
+  {
+   "text": "hängt",
+   "start": 20.0,
+   "end": 20.16,
+   "type": "word"
+  },
+  {
+   "text": "darunter",
+   "start": 20.24,
+   "end": 20.56,
+   "type": "word"
+  },
+  {
+   "text": "eine",
+   "start": 20.613,
+   "end": 20.72,
+   "type": "word"
+  },
+  {
+   "text": "Schublade:",
+   "start": 20.8,
+   "end": 21.6,
+   "type": "word"
+  },
+  {
+   "text": "zehn",
+   "start": 21.64,
+   "end": 21.8,
+   "type": "word"
+  },
+  {
+   "text": "Minuten.",
+   "start": 21.84,
+   "end": 22.52,
+   "type": "word"
+  },
+  {
+   "text": "Du",
+   "start": 22.72,
+   "end": 22.8,
+   "type": "word"
+  },
+  {
+   "text": "siehst",
+   "start": 22.88,
+   "end": 23.04,
+   "type": "word"
+  },
+  {
+   "text": "sie",
+   "start": 23.12,
+   "end": 23.2,
+   "type": "word"
+  },
+  {
+   "text": "gar",
+   "start": 23.28,
+   "end": 23.36,
+   "type": "word"
+  },
+  {
+   "text": "nicht",
+   "start": 23.413,
+   "end": 23.52,
+   "type": "word"
+  },
+  {
+   "text": "mehr.",
+   "start": 23.6,
+   "end": 24.04,
+   "type": "word"
+  },
+  {
+   "text": "Bei",
+   "start": 24.32,
+   "end": 24.4,
+   "type": "word"
+  },
+  {
+   "text": "Noah",
+   "start": 24.48,
+   "end": 24.8,
+   "type": "word"
+  },
+  {
+   "text": "hängt",
+   "start": 24.88,
+   "end": 25.04,
+   "type": "word"
+  },
+  {
+   "text": "darunter",
+   "start": 25.12,
+   "end": 25.44,
+   "type": "word"
+  },
+  {
+   "text": "nichts.",
+   "start": 25.48,
+   "end": 26.04,
+   "type": "word"
+  },
+  {
+   "text": "Er",
+   "start": 26.16,
+   "end": 26.32,
+   "type": "word"
+  },
+  {
+   "text": "kann",
+   "start": 26.373,
+   "end": 26.48,
+   "type": "word"
+  },
+  {
+   "text": "noch",
+   "start": 26.56,
+   "end": 26.64,
+   "type": "word"
+  },
+  {
+   "text": "keine",
+   "start": 26.68,
+   "end": 26.8,
+   "type": "word"
+  },
+  {
+   "text": "Uhr",
+   "start": 26.88,
+   "end": 27.04,
+   "type": "word"
+  },
+  {
+   "text": "lesen.",
+   "start": 27.2,
+   "end": 27.44,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 27.6,
+   "end": 28.08,
+   "type": "word"
+  },
+  {
+   "text": "Und",
+   "start": 28.16,
+   "end": 28.24,
+   "type": "word"
+  },
+  {
+   "text": "genau",
+   "start": 28.32,
+   "end": 28.64,
+   "type": "word"
+  },
+  {
+   "text": "hier",
+   "start": 28.8,
+   "end": 29.04,
+   "type": "word"
+  },
+  {
+   "text": "machen",
+   "start": 29.12,
+   "end": 29.36,
+   "type": "word"
+  },
+  {
+   "text": "es",
+   "start": 29.44,
+   "end": 29.52,
+   "type": "word"
+  },
+  {
+   "text": "die",
+   "start": 29.6,
+   "end": 29.68,
+   "type": "word"
+  },
+  {
+   "text": "meisten",
+   "start": 29.72,
+   "end": 30.08,
+   "type": "word"
+  },
+  {
+   "text": "falsch.",
+   "start": 30.16,
+   "end": 30.587,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 30.613,
+   "end": 31.36,
+   "type": "word"
+  },
+  {
+   "text": "Wir",
+   "start": 31.44,
+   "end": 31.52,
+   "type": "word"
+  },
+  {
+   "text": "erklären",
+   "start": 31.6,
+   "end": 31.92,
+   "type": "word"
+  },
+  {
+   "text": "es",
+   "start": 32.0,
+   "end": 32.08,
+   "type": "word"
+  },
+  {
+   "text": "genauer:",
+   "start": 32.16,
+   "end": 32.72,
+   "type": "word"
+  },
+  {
+   "text": "„In",
+   "start": 32.88,
+   "end": 33.04,
+   "type": "word"
+  },
+  {
+   "text": "zehn",
+   "start": 33.2,
+   "end": 33.36,
+   "type": "word"
+  },
+  {
+   "text": "Minuten!“",
+   "start": 33.44,
+   "end": 34.2,
+   "type": "word"
+  },
+  {
+   "text": "Aber",
+   "start": 34.4,
+   "end": 34.56,
+   "type": "word"
+  },
+  {
+   "text": "für",
+   "start": 34.64,
+   "end": 34.8,
+   "type": "word"
+  },
+  {
+   "text": "Noah",
+   "start": 34.88,
+   "end": 35.2,
+   "type": "word"
+  },
+  {
+   "text": "sind",
+   "start": 35.24,
+   "end": 35.44,
+   "type": "word"
+  },
+  {
+   "text": "Minuten",
+   "start": 35.56,
+   "end": 35.92,
+   "type": "word"
+  },
+  {
+   "text": "nur",
+   "start": 35.96,
+   "end": 36.08,
+   "type": "word"
+  },
+  {
+   "text": "ein",
+   "start": 36.12,
+   "end": 36.16,
+   "type": "word"
+  },
+  {
+   "text": "neues",
+   "start": 36.24,
+   "end": 36.48,
+   "type": "word"
+  },
+  {
+   "text": "Wort.",
+   "start": 36.56,
+   "end": 37.08,
+   "type": "word"
+  },
+  {
+   "text": "Auch",
+   "start": 37.28,
+   "end": 37.36,
+   "type": "word"
+  },
+  {
+   "text": "darunter",
+   "start": 37.44,
+   "end": 37.84,
+   "type": "word"
+  },
+  {
+   "text": "hängt",
+   "start": 37.893,
+   "end": 38.08,
+   "type": "word"
+  },
+  {
+   "text": "nichts.",
+   "start": 38.12,
+   "end": 38.48,
+   "type": "word"
+  },
+  {
+   "text": "Also",
+   "start": 38.8,
+   "end": 39.04,
+   "type": "word"
+  },
+  {
+   "text": "fragt",
+   "start": 39.12,
+   "end": 39.32,
+   "type": "word"
+  },
+  {
+   "text": "er",
+   "start": 39.36,
+   "end": 39.44,
+   "type": "word"
+  },
+  {
+   "text": "weiter:",
+   "start": 39.48,
+   "end": 39.84,
+   "type": "word"
+  },
+  {
+   "text": "„Jetzt?“",
+   "start": 40.16,
+   "end": 40.64,
+   "type": "word"
+  },
+  {
+   "text": "Das",
+   "start": 41.12,
+   "end": 41.2,
+   "type": "word"
+  },
+  {
+   "text": "ist",
+   "start": 41.28,
+   "end": 41.44,
+   "type": "word"
+  },
+  {
+   "text": "kein",
+   "start": 41.48,
+   "end": 41.6,
+   "type": "word"
+  },
+  {
+   "text": "Quengeln.",
+   "start": 41.76,
+   "end": 42.4,
+   "type": "word"
+  },
+  {
+   "text": "Das",
+   "start": 42.56,
+   "end": 42.72,
+   "type": "word"
+  },
+  {
+   "text": "Fragen",
+   "start": 42.8,
+   "end": 43.2,
+   "type": "word"
+  },
+  {
+   "text": "ist",
+   "start": 43.28,
+   "end": 43.44,
+   "type": "word"
+  },
+  {
+   "text": "seine",
+   "start": 43.48,
+   "end": 43.68,
+   "type": "word"
+  },
+  {
+   "text": "einzige",
+   "start": 43.76,
+   "end": 44.24,
+   "type": "word"
+  },
+  {
+   "text": "Uhr.",
+   "start": 44.32,
+   "end": 44.587,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 44.613,
+   "end": 45.28,
+   "type": "word"
+  },
+  {
+   "text": "So.",
+   "start": 45.44,
+   "end": 45.92,
+   "type": "word"
+  },
+  {
+   "text": "Jetzt",
+   "start": 46.16,
+   "end": 46.4,
+   "type": "word"
+  },
+  {
+   "text": "der",
+   "start": 46.56,
+   "end": 46.72,
+   "type": "word"
+  },
+  {
+   "text": "wichtige",
+   "start": 46.76,
+   "end": 47.12,
+   "type": "word"
+  },
+  {
+   "text": "Teil.",
+   "start": 47.2,
+   "end": 47.52,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 48.4,
+   "end": 48.448,
+   "type": "word"
+  },
+  {
+   "text": "Häng",
+   "start": 48.464,
+   "end": 48.56,
+   "type": "word"
+  },
+  {
+   "text": "dein",
+   "start": 48.64,
+   "end": 48.8,
+   "type": "word"
+  },
+  {
+   "text": "Gleich",
+   "start": 48.88,
+   "end": 49.28,
+   "type": "word"
+  },
+  {
+   "text": "an",
+   "start": 49.36,
+   "end": 49.44,
+   "type": "word"
+  },
+  {
+   "text": "ein",
+   "start": 49.52,
+   "end": 49.6,
+   "type": "word"
+  },
+  {
+   "text": "Ding,",
+   "start": 49.68,
+   "end": 49.92,
+   "type": "word"
+  },
+  {
+   "text": "das",
+   "start": 50.0,
+   "end": 50.08,
+   "type": "word"
+  },
+  {
+   "text": "dein",
+   "start": 50.12,
+   "end": 50.24,
+   "type": "word"
+  },
+  {
+   "text": "Kind",
+   "start": 50.32,
+   "end": 50.56,
+   "type": "word"
+  },
+  {
+   "text": "sehen",
+   "start": 50.64,
+   "end": 50.88,
+   "type": "word"
+  },
+  {
+   "text": "kann.",
+   "start": 50.96,
+   "end": 51.4,
+   "type": "word"
+  },
+  {
+   "text": "Papa",
+   "start": 51.6,
+   "end": 51.92,
+   "type": "word"
+  },
+  {
+   "text": "sagt:",
+   "start": 51.96,
+   "end": 52.32,
+   "type": "word"
+  },
+  {
+   "text": "„Wenn",
+   "start": 52.72,
+   "end": 52.8,
+   "type": "word"
+  },
+  {
+   "text": "die",
+   "start": 52.88,
+   "end": 52.96,
+   "type": "word"
+  },
+  {
+   "text": "drei",
+   "start": 53.0,
+   "end": 53.2,
+   "type": "word"
+  },
+  {
+   "text": "Teller",
+   "start": 53.28,
+   "end": 53.52,
+   "type": "word"
+  },
+  {
+   "text": "sauber",
+   "start": 53.6,
+   "end": 53.84,
+   "type": "word"
+  },
+  {
+   "text": "sind,",
+   "start": 53.92,
+   "end": 54.24,
+   "type": "word"
+  },
+  {
+   "text": "bauen",
+   "start": 54.32,
+   "end": 54.48,
+   "type": "word"
+  },
+  {
+   "text": "wir",
+   "start": 54.507,
+   "end": 54.56,
+   "type": "word"
+  },
+  {
+   "text": "die",
+   "start": 54.6,
+   "end": 54.64,
+   "type": "word"
+  },
+  {
+   "text": "Höhle.“",
+   "start": 54.72,
+   "end": 55.12,
+   "type": "word"
+  },
+  {
+   "text": "Noah",
+   "start": 55.52,
+   "end": 55.76,
+   "type": "word"
+  },
+  {
+   "text": "zählt",
+   "start": 55.84,
+   "end": 56.08,
+   "type": "word"
+  },
+  {
+   "text": "mit:",
+   "start": 56.2,
+   "end": 56.48,
+   "type": "word"
+  },
+  {
+   "text": "„Noch",
+   "start": 56.64,
+   "end": 56.8,
+   "type": "word"
+  },
+  {
+   "text": "zwei!“",
+   "start": 56.88,
+   "end": 57.44,
+   "type": "word"
+  },
+  {
+   "text": "„Noch",
+   "start": 57.6,
+   "end": 57.76,
+   "type": "word"
+  },
+  {
+   "text": "einer!“",
+   "start": 57.84,
+   "end": 58.44,
+   "type": "word"
+  },
+  {
+   "text": "Und",
+   "start": 58.64,
+   "end": 58.72,
+   "type": "word"
+  },
+  {
+   "text": "fragt",
+   "start": 58.8,
+   "end": 59.12,
+   "type": "word"
+  },
+  {
+   "text": "kein",
+   "start": 59.2,
+   "end": 59.44,
+   "type": "word"
+  },
+  {
+   "text": "einziges",
+   "start": 59.6,
+   "end": 60.08,
+   "type": "word"
+  },
+  {
+   "text": "Mal.",
+   "start": 60.16,
+   "end": 60.64,
+   "type": "word"
+  },
+  {
+   "text": "Für",
+   "start": 60.88,
+   "end": 61.04,
+   "type": "word"
+  },
+  {
+   "text": "Tage",
+   "start": 61.12,
+   "end": 61.44,
+   "type": "word"
+  },
+  {
+   "text": "machst",
+   "start": 61.52,
+   "end": 61.64,
+   "type": "word"
+  },
+  {
+   "text": "du",
+   "start": 61.68,
+   "end": 61.76,
+   "type": "word"
+  },
+  {
+   "text": "das",
+   "start": 61.84,
+   "end": 61.92,
+   "type": "word"
+  },
+  {
+   "text": "längst:",
+   "start": 61.96,
+   "end": 62.64,
+   "type": "word"
+  },
+  {
+   "text": "„Noch",
+   "start": 62.667,
+   "end": 62.8,
+   "type": "word"
+  },
+  {
+   "text": "zweimal",
+   "start": 62.88,
+   "end": 63.36,
+   "type": "word"
+  },
+  {
+   "text": "schlafen.“",
+   "start": 63.44,
+   "end": 63.92,
+   "type": "word"
+  },
+  {
+   "text": "Für",
+   "start": 64.24,
+   "end": 64.32,
+   "type": "word"
+  },
+  {
+   "text": "Minuten",
+   "start": 64.44,
+   "end": 64.8,
+   "type": "word"
+  },
+  {
+   "text": "geht",
+   "start": 64.96,
+   "end": 65.08,
+   "type": "word"
+  },
+  {
+   "text": "es",
+   "start": 65.12,
+   "end": 65.2,
+   "type": "word"
+  },
+  {
+   "text": "genauso.",
+   "start": 65.28,
+   "end": 65.76,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 66.64,
+   "end": 66.688,
+   "type": "word"
+  },
+  {
+   "text": "Woran",
+   "start": 66.704,
+   "end": 66.96,
+   "type": "word"
+  },
+  {
+   "text": "hängst",
+   "start": 67.04,
+   "end": 67.28,
+   "type": "word"
+  },
+  {
+   "text": "du",
+   "start": 67.36,
+   "end": 67.44,
+   "type": "word"
+  },
+  {
+   "text": "heute",
+   "start": 67.52,
+   "end": 67.76,
+   "type": "word"
+  },
+  {
+   "text": "dein",
+   "start": 67.84,
+   "end": 68.0,
+   "type": "word"
+  },
+  {
+   "text": "nächstes",
+   "start": 68.08,
+   "end": 68.56,
+   "type": "word"
+  },
+  {
+   "text": "„gleich“?",
+   "start": 68.72,
+   "end": 69.28,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 69.3,
+   "end": 69.36,
+   "type": "word"
+  },
+  {
+   "text": "[pause]",
+   "start": 69.76,
+   "end": 70.96,
+   "type": "word"
+  },
+  {
+   "text": "Folg",
+   "start": 71.2,
+   "end": 71.44,
+   "type": "word"
+  },
+  {
+   "text": "mir,",
+   "start": 71.52,
+   "end": 71.84,
+   "type": "word"
+  },
+  {
+   "text": "wenn",
+   "start": 71.867,
+   "end": 71.92,
+   "type": "word"
+  },
+  {
+   "text": "du",
+   "start": 72.0,
+   "end": 72.08,
+   "type": "word"
+  },
+  {
+   "text": "heute",
+   "start": 72.12,
+   "end": 72.4,
+   "type": "word"
+  },
+  {
+   "text": "auch",
+   "start": 72.44,
+   "end": 72.56,
+   "type": "word"
+  },
+  {
+   "text": "schon",
+   "start": 72.64,
+   "end": 72.8,
+   "type": "word"
+  },
+  {
+   "text": "„gleich“",
+   "start": 72.96,
+   "end": 73.44,
+   "type": "word"
+  },
+  {
+   "text": "gesagt",
+   "start": 73.56,
+   "end": 73.84,
+   "type": "word"
+  },
+  {
+   "text": "hast.",
+   "start": 73.92,
+   "end": 74.4,
+   "type": "word"
+  }
+ ]
+}

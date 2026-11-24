@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Er ist fünf. Gestern hat er noch jede Minute gefragt. Was dazwischen passiert ist, zeig ich dir am Ende. Gestern nach dem Abendessen fragt er: „Papa, bauen wir eine Höhle?“ Papa wäscht gerade ab: „Gleich.“ Eine Minute später: „Jetzt?“ „Gleich!“ „Jetzt?“ [pause] Schau dir das Wort als Schrank an. Oben liegt: gleich. Bei Papa hängt darunter eine Schublade: zehn Minuten. Bei Noah hängt darunter nichts. Er kann noch keine Uhr lesen. Minuten sind für ihn nur ein Wort. [pause] Ich nenne das ein Wort ohne Boden. [pause] Auf einem Wort ohne Boden kann man nicht stehen. Man fällt durch. Also fragt Noah nach. Immer wieder. Das ist kein Quengeln. Das Fragen ist seine einzige Uhr. [pause] Weißt du noch, was ich dir am Anfang versprochen hab? Hier ist es. [pause] Heute hängt Papa das Wort an ein Ding: „Wenn die drei Teller sauber sind, bauen wir die Höhle.“ Teller kann Noah sehen. Und zählen. „Noch zwei!“ „Noch einer!“ Jetzt hat gleich einen Boden. Eine Uhr aus Tellern. Und Noah wartet, ohne zu fragen. [pause] Welches „gleich“ von dir hat noch keinen Boden? [pause] [pause] Folg mir, damit mehr Kinder sehen können, wie lang gleich ist.",
+ "hooks": {
+  "b": "[warmly] Noah wartet. Und fragt kein einziges Mal."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
