@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Ich weiß, es klingt fair. Bleib bis zum Schluss, da kommt die Frage, die beide glücklich macht. Greta ist acht, Luis ist fünf. Im Garten ziehen beide am selben Ball. „Meiner!“ „Nein, meiner!“ Und Mama sagt, was wir alle sagen: „Wechselt euch ab!“ [pause] Schau dir den Streit als Schrank an. Ganz unten liegt ein Ding: der Ball. Abwechseln teilt dieses Ding gerecht auf. Aber es bleibt ganz unten. Und unten kann immer nur einer den Ball haben. [pause] Hier hören die meisten auf. Genau das ist der Fehler. [pause] Luis bekommt den Ball zuerst. Er kickt ihn einmal. Dann schaut er zu Greta: „Spielst du mit?“ Ein ganzer Ball für ihn allein, und er ist trotzdem traurig. Luis wollte gar nicht den Ball. Er wollte seine Schwester. [pause] Ich zeig dir, wie das konkret aussieht. [pause] Frag eine Schublade höher: „Wofür brauchst du den Ball?“ Greta: „Ich will Elfmeter üben.“ Luis: „Ich will mit Greta spielen.“ Wer Elfmeter übt, braucht einen im Tor. Zwei Rucksäcke, Luis dazwischen. Greta schießt, Luis hält. Unten gibt es nur einen Ball. Oben ist Platz für zwei. [pause] Wofür streiten deine Kinder wirklich? [pause] [pause] Folg mir, wenn du auch schon hundertmal „Wechselt euch ab“ gesagt hast.",
+ "hooks": {
+  "c": "[warmly] „Wechselt euch ab!“ macht beide unglücklich."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

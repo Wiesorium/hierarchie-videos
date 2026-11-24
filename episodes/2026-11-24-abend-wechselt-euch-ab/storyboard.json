@@ -1,0 +1,1333 @@
+{
+ "slug": "wechselt-euch-ab",
+ "title": "„Wechselt euch ab!“",
+ "cta": "follow",
+ "hero": "luis",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.7,
+   "hold": 1.3,
+   "dur": 1.0,
+   "fx": 680,
+   "fy": 1150
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "„Wechselt euch ab!“ macht beide unglücklich.",
+   "card": [
+    "Gerecht.",
+    "*Aber eine Schublade zu tief.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Ich weiß, es klingt fair. Bleib bis zum Schluss, da kommt die Frage, die beide glücklich macht. Greta ist acht, Luis ist fünf. Im Garten ziehen beide am selben Ball. „Meiner!“ „Nein, meiner!“ Und Mama sagt, was wir alle sagen: „Wechselt euch ab!“",
+  "block1": "Schau dir den Streit als Schrank an. Ganz unten liegt ein Ding: der Ball. Abwechseln teilt dieses Ding gerecht auf. Aber es bleibt ganz unten. Und unten kann immer nur einer den Ball haben.",
+  "rehook1": "Hier hören die meisten auf. Genau das ist der Fehler.",
+  "block2": "Luis bekommt den Ball zuerst. Er kickt ihn einmal. Dann schaut er zu Greta: „Spielst du mit?“ Ein ganzer Ball für ihn allein, und er ist trotzdem traurig. Luis wollte gar nicht den Ball. Er wollte seine Schwester.",
+  "rehook2": "Ich zeig dir, wie das konkret aussieht.",
+  "block3": "Frag eine Schublade höher: „Wofür brauchst du den Ball?“ Greta: „Ich will Elfmeter üben.“ Luis: „Ich will mit Greta spielen.“ Wer Elfmeter übt, braucht einen im Tor. Zwei Rucksäcke, Luis dazwischen. Greta schießt, Luis hält. Unten gibt es nur einen Ball. Oben ist Platz für zwei.",
+  "closing": "Wofür streiten deine Kinder wirklich?",
+  "cta": "Folg mir, wenn du auch schon hundertmal „Wechselt euch ab“ gesagt hast."
+ },
+ "question": [
+  "Wofür streiten deine",
+  "Kinder wirklich?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du auch schon hundertmal",
+   "„Wechselt euch ab“ gesagt hast"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "baum",
+     "type": "prop",
+     "kind": "tree",
+     "x": 110,
+     "w": 240,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "id": "rs1",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 830,
+     "w": 100,
+     "h": 130,
+     "color": "#F7C948",
+     "enter": "fade"
+    },
+    {
+     "id": "rs2",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 1040,
+     "w": 100,
+     "h": 130,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "ball",
+     "type": "prop",
+     "kind": "ball",
+     "x": 445,
+     "y": 1380,
+     "w": 96,
+     "z": 3.5,
+     "moves": [
+      {
+       "at": "ziehen beide",
+       "x": 482,
+       "dur": 0.3
+      },
+      {
+       "at": "Meiner",
+       "x": 410,
+       "dur": 0.3
+      },
+      {
+       "at": "Nein meiner",
+       "x": 482,
+       "dur": 0.3
+      },
+      {
+       "at": "end:Nein meiner",
+       "x": 445,
+       "dur": 0.3
+      }
+     ]
+    },
+    {
+     "id": "greta",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 330,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Bleib bis",
+       "mood": "neutral"
+      },
+      {
+       "at": "ziehen beide",
+       "mood": "worried"
+      },
+      {
+       "at": "Nein meiner",
+       "mood": "open"
+      },
+      {
+       "at": "Wechselt euch",
+       "mood": "sad"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "ziehen beide",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Nein meiner",
+       "end:Nein meiner"
+      ]
+     ]
+    },
+    {
+     "id": "luis",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 560,
+     "look": "left",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Bleib bis",
+       "mood": "neutral"
+      },
+      {
+       "at": "ziehen beide",
+       "mood": "worried"
+      },
+      {
+       "at": "Meiner",
+       "mood": "open"
+      },
+      {
+       "at": "Wechselt euch",
+       "mood": "sad"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Meiner",
+       "kind": "point",
+       "dur": 1.0
+      }
+     ],
+     "talk": [
+      [
+       "Meiner",
+       "end:Meiner"
+      ]
+     ]
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#C9B6E4",
+     "pants": "#6B5B7B",
+     "x": 790,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "neutral"
+      },
+      {
+       "at": "sagt was wir",
+       "mood": "smile"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.75",
+       "kind": "raise",
+       "dur": 1.4
+      },
+      {
+       "at": "Wechselt euch",
+       "kind": "raise",
+       "dur": 1.2
+      }
+     ],
+     "talk": [
+      [
+       "Wechselt euch",
+       "end:euch ab"
+      ]
+     ]
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Wechselt euch *ab*!",
+     "x": 640,
+     "y": 880,
+     "maxW": 340,
+     "size": 48,
+     "in": "@-2.7",
+     "out": "@0.3"
+    },
+    {
+     "id": "q_hook",
+     "type": "icon",
+     "kind": "question",
+     "x": 445,
+     "y": 1150,
+     "size": 56,
+     "in": "@-1.2",
+     "out": "start"
+    },
+    {
+     "id": "st_fair",
+     "type": "stamp",
+     "text": "klingt fair",
+     "x": 560,
+     "y": 1030,
+     "rot": -0.07,
+     "size": 52,
+     "in": "klingt fair",
+     "out": "Greta ist"
+    },
+    {
+     "id": "stern_s",
+     "type": "icon",
+     "kind": "star",
+     "x": 540,
+     "y": 540,
+     "size": 62,
+     "in": "die Frage",
+     "out": "Greta ist"
+    },
+    {
+     "id": "tag_frage",
+     "type": "tag",
+     "text": "eine Frage für beide",
+     "x": 540,
+     "y": 640,
+     "color": "plum",
+     "in": "die Frage",
+     "out": "Greta ist"
+    },
+    {
+     "id": "tag_greta",
+     "type": "tag",
+     "text": "Greta, acht",
+     "x": 320,
+     "y": 1080,
+     "color": "rose",
+     "in": "Greta ist",
+     "out": "Im Garten"
+    },
+    {
+     "id": "tag_luis",
+     "type": "tag",
+     "text": "Luis, fünf",
+     "x": 600,
+     "y": 1080,
+     "color": "plum",
+     "in": "Luis ist",
+     "out": "Im Garten"
+    },
+    {
+     "id": "b_mein1",
+     "type": "bubble",
+     "from": "luis",
+     "text": "*Meiner!*",
+     "x": 650,
+     "y": 980,
+     "maxW": 240,
+     "size": 50,
+     "in": "Meiner-0.1",
+     "out": "Und Mama"
+    },
+    {
+     "id": "b_mein2",
+     "type": "bubble",
+     "from": "greta",
+     "text": "Nein, *meiner*!",
+     "x": 290,
+     "y": 930,
+     "maxW": 300,
+     "size": 48,
+     "in": "Nein meiner-0.1",
+     "out": "Und Mama"
+    },
+    {
+     "id": "b_ab",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Wechselt euch *ab*!",
+     "x": 700,
+     "y": 800,
+     "maxW": 360,
+     "size": 48,
+     "in": "Wechselt euch-0.1"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir den Streit",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "greta_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 130,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "gerecht auf",
+       "mood": "neutral"
+      },
+      {
+       "at": "nur einer den Ball",
+       "mood": "sad"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Ganz unten",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "luis_k",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 950,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "gerecht auf",
+       "mood": "neutral"
+      },
+      {
+       "at": "nur einer den Ball",
+       "mood": "sad"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Ganz unten",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "ballfly_k",
+     "type": "prop",
+     "kind": "ball",
+     "x": 445,
+     "y": 1380,
+     "w": 96,
+     "z": 2.5,
+     "moves": [
+      {
+       "at": "Schau dir den Streit+0.2",
+       "x": 540,
+       "y": 1200,
+       "dur": 0.8
+      }
+     ],
+     "out": "Ganz unten liegt+0.35"
+    },
+    {
+     "id": "n_ball_k",
+     "type": "node",
+     "x": 540,
+     "y": 1150,
+     "w": 300,
+     "h": 110,
+     "label": "der *Ball*",
+     "size": 50,
+     "color": "kids",
+     "in": "Ganz unten liegt+0.2",
+     "states": [
+      {
+       "at": "ein Ding",
+       "state": "glow"
+      },
+      {
+       "at": "gerecht auf",
+       "state": "normal"
+      },
+      {
+       "at": "bleibt ganz unten",
+       "state": "heavy"
+      },
+      {
+       "at": "nur einer den Ball",
+       "state": "heavy+red+shake"
+      }
+     ]
+    },
+    {
+     "id": "tag_erst_k",
+     "type": "tag",
+     "text": "erst Luis",
+     "x": 360,
+     "y": 1010,
+     "color": "plum",
+     "in": "Abwechseln teilt",
+     "out": "Hier hören"
+    },
+    {
+     "id": "tag_dann_k",
+     "type": "tag",
+     "text": "dann Greta",
+     "x": 720,
+     "y": 1010,
+     "color": "rose",
+     "in": "Abwechseln teilt+0.6",
+     "out": "Hier hören"
+    },
+    {
+     "id": "uhr_k",
+     "type": "icon",
+     "kind": "clock",
+     "x": 540,
+     "y": 935,
+     "size": 70,
+     "in": "gerecht auf",
+     "out": "Hier hören"
+    },
+    {
+     "id": "st_unten_k",
+     "type": "stamp",
+     "text": "bleibt unten",
+     "x": 540,
+     "y": 1300,
+     "rot": 0.06,
+     "size": 50,
+     "in": "bleibt ganz unten",
+     "out": "nur einer den Ball"
+    },
+    {
+     "id": "st_einer_k",
+     "type": "stamp",
+     "text": "nur einer",
+     "x": 540,
+     "y": 1300,
+     "rot": -0.06,
+     "size": 54,
+     "in": "nur einer den Ball"
+    },
+    {
+     "id": "n_wofuer_k",
+     "type": "node",
+     "x": 540,
+     "y": 720,
+     "w": 320,
+     "h": 110,
+     "label": "",
+     "size": 46,
+     "color": "idea",
+     "emptyLabel": "?",
+     "in": "Hier hören",
+     "states": [
+      {
+       "at": "Hier hören",
+       "state": "empty"
+      },
+      {
+       "at": "der Fehler",
+       "state": "empty+glow"
+      }
+     ]
+    },
+    {
+     "id": "l_wofuer_k",
+     "type": "link",
+     "from": "n_ball_k",
+     "to": "n_wofuer_k",
+     "style": "dashed",
+     "in": "Hier hören"
+    },
+    {
+     "id": "tag_fehlt_k",
+     "type": "tag",
+     "text": "der Schritt nach oben",
+     "x": 540,
+     "y": 575,
+     "color": "plum",
+     "in": "der Fehler"
+    }
+   ]
+  },
+  {
+   "at": "Luis bekommt den Ball",
+   "chord": "F#m",
+   "elements": [
+    {
+     "id": "baum_f",
+     "type": "prop",
+     "kind": "tree",
+     "x": 110,
+     "w": 240,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "id": "rs1_f",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 830,
+     "w": 100,
+     "h": 130,
+     "color": "#F7C948",
+     "enter": "fade"
+    },
+    {
+     "id": "rs2_f",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 1040,
+     "w": 100,
+     "h": 130,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "ball_f",
+     "type": "prop",
+     "kind": "ball",
+     "x": 500,
+     "y": 1478,
+     "w": 96,
+     "z": 3.5,
+     "moves": [
+      {
+       "at": "kickt ihn",
+       "x": 660,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "greta_f",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 870,
+     "look": "left",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Spielst du",
+       "mood": "neutral"
+      },
+      {
+       "at": "seine Schwester",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "id": "luis_f",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 400,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "kickt ihn",
+       "mood": "happy"
+      },
+      {
+       "at": "Dann schaut",
+       "mood": "neutral"
+      },
+      {
+       "at": "trotzdem traurig",
+       "mood": "sad"
+      },
+      {
+       "at": "seine Schwester",
+       "mood": "smile"
+      }
+     ],
+     "moves": [
+      {
+       "at": "kickt ihn",
+       "x": 450,
+       "dur": 0.4
+      }
+     ],
+     "talk": [
+      [
+       "Spielst du",
+       "end:du mit"
+      ]
+     ]
+    },
+    {
+     "id": "tag_zuerst_f",
+     "type": "tag",
+     "text": "Luis zuerst",
+     "x": 540,
+     "y": 520,
+     "color": "plum",
+     "in": "Luis bekommt",
+     "out": "Dann schaut"
+    },
+    {
+     "id": "uhr_f",
+     "type": "icon",
+     "kind": "clock",
+     "x": 870,
+     "y": 1060,
+     "size": 64,
+     "in": "Luis bekommt",
+     "out": "Dann schaut"
+    },
+    {
+     "id": "b_mit_f",
+     "type": "bubble",
+     "from": "luis_f",
+     "text": "Spielst du *mit*?",
+     "x": 560,
+     "y": 960,
+     "maxW": 300,
+     "size": 46,
+     "in": "Spielst du-0.1",
+     "out": "Luis wollte"
+    },
+    {
+     "id": "st_traurig_f",
+     "type": "stamp",
+     "text": "trotzdem traurig",
+     "x": 480,
+     "y": 800,
+     "rot": -0.07,
+     "size": 50,
+     "in": "trotzdem traurig",
+     "out": "Luis wollte"
+    },
+    {
+     "id": "k_schw_f",
+     "type": "card",
+     "lines": [
+      "nicht den Ball,",
+      "*seine Schwester*"
+     ],
+     "x": 540,
+     "y": 830,
+     "size": 50,
+     "in": "gar nicht den Ball",
+     "out": "Ich zeig dir"
+    },
+    {
+     "id": "n_spiel_f",
+     "type": "node",
+     "x": 540,
+     "y": 620,
+     "w": 340,
+     "h": 100,
+     "label": "mit *Greta* spielen",
+     "size": 42,
+     "color": "baby",
+     "in": "seine Schwester",
+     "states": [
+      {
+       "at": "seine Schwester",
+       "state": "glow"
+      }
+     ]
+    },
+    {
+     "id": "tag_konkret_f",
+     "type": "tag",
+     "text": "konkret",
+     "x": 540,
+     "y": 1000,
+     "color": "plum",
+     "in": "wie das konkret"
+    }
+   ]
+  },
+  {
+   "at": "Frag eine Schublade",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "baum_m",
+     "type": "prop",
+     "kind": "tree",
+     "x": 110,
+     "w": 240,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "id": "rs1_m",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 830,
+     "w": 100,
+     "h": 130,
+     "color": "#F7C948",
+     "enter": "fade"
+    },
+    {
+     "id": "rs2_m",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 1040,
+     "w": 100,
+     "h": 130,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "ball_m",
+     "type": "prop",
+     "kind": "ball",
+     "x": 470,
+     "y": 1478,
+     "w": 96,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "greta_m",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 360,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Greta Ich will",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Greta Ich will",
+       "kind": "raise",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Ich will Elfmeter",
+       "end:Elfmeter üben"
+      ]
+     ]
+    },
+    {
+     "id": "luis_m",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 600,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Luis Ich will",
+       "mood": "smile"
+      }
+     ],
+     "talk": [
+      [
+       "Ich will mit",
+       "end:Greta spielen"
+      ]
+     ]
+    },
+    {
+     "id": "mama_m",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#C9B6E4",
+     "pants": "#6B5B7B",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Frag eine",
+       "kind": "think",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Wofür brauchst",
+       "end:den Ball"
+      ]
+     ]
+    },
+    {
+     "id": "b_wofuer_m",
+     "type": "bubble",
+     "from": "mama_m",
+     "text": "Wofür brauchst du den *Ball*?",
+     "x": 380,
+     "y": 820,
+     "maxW": 360,
+     "size": 42,
+     "in": "Wofür brauchst-0.1",
+     "out": "Greta Ich will"
+    },
+    {
+     "id": "tag_hoeher_m",
+     "type": "tag",
+     "text": "eine Schublade höher",
+     "x": 540,
+     "y": 500,
+     "color": "plum",
+     "in": "Frag eine"
+    },
+    {
+     "id": "b_elf_m",
+     "type": "bubble",
+     "from": "greta_m",
+     "text": "Ich will *Elfmeter* üben!",
+     "x": 310,
+     "y": 960,
+     "maxW": 340,
+     "size": 42,
+     "in": "Ich will Elfmeter-0.1",
+     "out": "Luis Ich will"
+    },
+    {
+     "id": "n_elf_m",
+     "type": "node",
+     "x": 290,
+     "y": 640,
+     "w": 320,
+     "h": 100,
+     "label": "*Elfmeter* üben",
+     "size": 42,
+     "color": "fresh",
+     "in": "end:Elfmeter üben",
+     "states": [
+      {
+       "at": "end:Elfmeter üben",
+       "state": "glow"
+      }
+     ]
+    },
+    {
+     "id": "b_spiel_m",
+     "type": "bubble",
+     "from": "luis_m",
+     "text": "Ich will mit *Greta* spielen.",
+     "x": 700,
+     "y": 970,
+     "maxW": 340,
+     "size": 42,
+     "in": "Ich will mit-0.1",
+     "out": "Wer Elfmeter"
+    },
+    {
+     "id": "n_spiel_m",
+     "type": "node",
+     "x": 790,
+     "y": 640,
+     "w": 340,
+     "h": 100,
+     "label": "mit *Greta* spielen",
+     "size": 42,
+     "color": "baby",
+     "in": "end:Greta spielen",
+     "states": [
+      {
+       "at": "end:Greta spielen",
+       "state": "glow"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "Wer Elfmeter übt",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "baum_t",
+     "type": "prop",
+     "kind": "tree",
+     "x": 110,
+     "w": 240,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "id": "rs1_t",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 830,
+     "w": 100,
+     "h": 130,
+     "color": "#F7C948",
+     "enter": "fade"
+    },
+    {
+     "id": "rs2_t",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 1040,
+     "w": 100,
+     "h": 130,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "ball_t",
+     "type": "prop",
+     "kind": "ball",
+     "x": 470,
+     "y": 1478,
+     "w": 96,
+     "z": 3.5,
+     "moves": [
+      {
+       "at": "Greta schießt",
+       "x": 930,
+       "y": 1385,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "greta_t",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 360,
+     "look": "right",
+     "mood": "happy",
+     "gestures": [
+      {
+       "at": "Greta schießt",
+       "kind": "point",
+       "dur": 1.0
+      },
+      {
+       "at": "Luis hält",
+       "kind": "cheer",
+       "dur": 1.5
+      }
+     ],
+     "moods": [
+      {
+       "at": "Luis hält",
+       "mood": "laugh"
+      }
+     ]
+    },
+    {
+     "id": "luis_t",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 935,
+     "look": "left",
+     "mood": "happy",
+     "gestures": [
+      {
+       "at": "Luis hält",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "moods": [
+      {
+       "at": "Luis hält",
+       "mood": "laugh"
+      }
+     ]
+    },
+    {
+     "id": "n_elf_t",
+     "type": "node",
+     "x": 290,
+     "y": 600,
+     "w": 320,
+     "h": 100,
+     "label": "*Elfmeter* üben",
+     "size": 42,
+     "color": "fresh",
+     "enter": "fade"
+    },
+    {
+     "id": "n_spiel_t",
+     "type": "node",
+     "x": 790,
+     "y": 600,
+     "w": 340,
+     "h": 100,
+     "label": "mit *Greta* spielen",
+     "size": 42,
+     "color": "baby",
+     "enter": "fade"
+    },
+    {
+     "id": "n_tor_t",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 320,
+     "h": 104,
+     "label": "Luis im *Tor*",
+     "size": 44,
+     "color": "idea",
+     "in": "einen im Tor",
+     "states": [
+      {
+       "at": "einen im Tor",
+       "state": "glow"
+      },
+      {
+       "at": "Luis hält",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "l_t1_t",
+     "type": "link",
+     "from": "n_elf_t",
+     "to": "n_tor_t",
+     "style": "gold",
+     "in": "einen im Tor+0.3"
+    },
+    {
+     "id": "l_t2_t",
+     "type": "link",
+     "from": "n_spiel_t",
+     "to": "n_tor_t",
+     "style": "gold",
+     "in": "einen im Tor+0.6"
+    },
+    {
+     "id": "tag_tor_t",
+     "type": "tag",
+     "text": "Tor",
+     "x": 935,
+     "y": 1060,
+     "color": "rose",
+     "in": "Rucksäcke Luis"
+    }
+   ]
+  },
+  {
+   "at": "Unten gibt es nur",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "baum_t",
+     "type": "prop",
+     "kind": "tree",
+     "x": 110,
+     "w": 240,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "id": "rs1_t",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 830,
+     "w": 100,
+     "h": 130,
+     "color": "#F7C948",
+     "enter": "fade"
+    },
+    {
+     "id": "rs2_t",
+     "type": "prop",
+     "kind": "backpack",
+     "x": 1040,
+     "w": 100,
+     "h": 130,
+     "color": "#9FD3C7",
+     "enter": "fade"
+    },
+    {
+     "id": "greta_t",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F4A7B9",
+     "pants": "#6B5B7B",
+     "x": 360,
+     "look": "right",
+     "mood": "laugh"
+    },
+    {
+     "id": "luis_t",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "blond",
+     "shirt": "#8EC5E8",
+     "pants": "#5B6E9C",
+     "x": 935,
+     "look": "left",
+     "mood": "laugh",
+     "gestures": [
+      {
+       "at": "Platz für",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "ball_t",
+     "type": "prop",
+     "kind": "ball",
+     "x": 930,
+     "y": 1385,
+     "w": 96,
+     "z": 3.5
+    },
+    {
+     "id": "n_elf_t",
+     "type": "node",
+     "x": 290,
+     "y": 600,
+     "w": 320,
+     "h": 100,
+     "label": "*Elfmeter* üben",
+     "size": 42,
+     "color": "fresh"
+    },
+    {
+     "id": "n_spiel_t",
+     "type": "node",
+     "x": 790,
+     "y": 600,
+     "w": 340,
+     "h": 100,
+     "label": "mit *Greta* spielen",
+     "size": 42,
+     "color": "baby"
+    },
+    {
+     "id": "n_tor_t",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 320,
+     "h": 104,
+     "label": "Luis im *Tor*",
+     "size": 44,
+     "color": "idea"
+    },
+    {
+     "id": "l_t1_t",
+     "type": "link",
+     "from": "n_elf_t",
+     "to": "n_tor_t",
+     "style": "gold"
+    },
+    {
+     "id": "l_t2_t",
+     "type": "link",
+     "from": "n_spiel_t",
+     "to": "n_tor_t",
+     "style": "gold"
+    },
+    {
+     "id": "tag_tor_t",
+     "type": "tag",
+     "text": "Tor",
+     "x": 935,
+     "y": 1060,
+     "color": "rose",
+     "in": "start"
+    },
+    {
+     "id": "k_platz_t",
+     "type": "card",
+     "lines": [
+      "Unten: *ein Ball*.",
+      "Oben: *Platz für zwei*."
+     ],
+     "x": 540,
+     "y": 1040,
+     "size": 48,
+     "in": "Unten gibt es"
+    },
+    {
+     "id": "herz_t",
+     "type": "icon",
+     "kind": "heart",
+     "x": 640,
+     "y": 1250,
+     "size": 60,
+     "in": "Platz für"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "klingt fair",
+   "x": 560,
+   "y": 1030
+  },
+  {
+   "at": "ein Ding",
+   "x": 540,
+   "y": 1150
+  },
+  {
+   "at": "nur einer den Ball",
+   "x": 540,
+   "y": 1300
+  },
+  {
+   "at": "der Fehler",
+   "x": 540,
+   "y": 720
+  },
+  {
+   "at": "trotzdem traurig",
+   "x": 600,
+   "y": 800
+  },
+  {
+   "at": "seine Schwester",
+   "x": 540,
+   "y": 620
+  },
+  {
+   "at": "einen im Tor",
+   "x": 540,
+   "y": 830
+  },
+  {
+   "at": "Platz für",
+   "x": 540,
+   "y": 1040
+  }
+ ]
+}

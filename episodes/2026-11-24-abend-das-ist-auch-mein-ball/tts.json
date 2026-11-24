@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Fünf Minuten später lachen beide. Wegen zwei Rucksäcken. Luis ist fünf, seine Schwester Greta ist acht. Im Garten ziehen beide am selben Ball. „Meiner!“ „Nein, meiner!“ [pause] Schau dir den Streit als Schrank an. Ganz unten liegt ein Ding: der Ball. Davon gibt es nur einen. Darum kann unten immer nur einer gewinnen. Aber ein Ding ist nie der ganze Wunsch. Eine Schublade höher liegt, wofür man es will. [pause] Und jetzt wird's spannend. [pause] Mama fragt nicht: „Wer war zuerst?“ Sie fragt: „Wofür brauchst du den Ball?“ Greta sagt: „Ich will Elfmeter üben. Am Samstag ist mein Spiel.“ Luis schaut auf den Boden: „Ich will mit Greta spielen.“ Luis will gar nicht den Ball. Er will seine Schwester. [pause] Erinnerst du dich an die Rucksäcke? Jetzt kommen sie. [pause] Wer Elfmeter üben will, braucht einen, der im Tor steht. Zwei Rucksäcke sind das Tor. Luis stellt sich dazwischen. Greta schießt. Luis hält. Manchmal. Beide lachen. Unten gibt es nur einen Ball. Eine Schublade höher ist Platz für zwei. [pause] Wofür wollen deine Kinder das, worum sie streiten? [pause] [pause] Folg mir, wenn bei euch auch jeden Tag jemand „Meiner!“ ruft.",
+ "hooks": {
+  "a": "[warmly] „Das ist auch mein Ball!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

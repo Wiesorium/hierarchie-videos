@@ -3,6 +3,72 @@
  "videos": [
   {
    "datum": "2026-11-24",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-24-abend-das-ist-auch-mein-ball",
+   "slug": "das-ist-auch-mein-ball",
+   "titel": "Das ist auch mein Ball",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Streit passiert unten, beim Ding; die Lösung liegt eine Schublade höher: Unten gibt es nur einen Ball, dort kann immer nur einer gewinnen, auch „Abwechseln“ teilt nur das Ding auf; eine Schublade höher steht, wofür man es will, und dort ist Platz für beide (Greta, acht, und ihr Bruder Luis, fünf, ziehen im Garten am selben Ball: „Meiner!“ „Nein, meiner!“; Mama fragt „Wofür brauchst du den Ball?“; Greta will Elfmeter üben, Luis will mit Greta spielen; zwei Rucksäcke werden ein Tor, Luis hält, beide lachen)",
+   "reihe": "Greta, Luis und der Ball (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn bei euch auch jeden Tag jemand „Meiner!“ ruft.",
+   "hooks": {
+    "a": "„Das ist auch mein Ball!“"
+   },
+   "dauer": {
+    "a": 77.67
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/X2ZbsKcDDHpbTxKWp2Ch",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Geschwisterstreit kam noch nicht vor). Beispiel selbst erfunden: Greta (acht), Luis (fünf) und Mama im Garten. Keine Engine-Änderung nötig. Captions in Drive (2026-11-24-das-ist-auch-mein-ball-captions). Stimme gesamt für die Reihe etwa 3.630 Credits."
+  },
+  {
+   "datum": "2026-11-24",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-24-abend-greta-schiesst-luis-haelt",
+   "slug": "greta-schiesst-luis-haelt",
+   "titel": "Greta schießt, Luis hält",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Streit passiert unten, beim Ding; die Lösung liegt eine Schublade höher: Unten gibt es nur einen Ball, dort kann immer nur einer gewinnen, auch „Abwechseln“ teilt nur das Ding auf; eine Schublade höher steht, wofür man es will, und dort ist Platz für beide (Greta, acht, und ihr Bruder Luis, fünf, ziehen im Garten am selben Ball: „Meiner!“ „Nein, meiner!“; Mama fragt „Wofür brauchst du den Ball?“; Greta will Elfmeter üben, Luis will mit Greta spielen; zwei Rucksäcke werden ein Tor, Luis hält, beide lachen)",
+   "reihe": "Greta, Luis und der Ball (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Eltern sehen, was hinter einem Streit steckt.",
+   "hooks": {
+    "b": "Greta schießt. Luis hält. Beide lachen."
+   },
+   "dauer": {
+    "b": 73.2
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/X2ZbsKcDDHpbTxKWp2Ch",
+   "status": "fertig",
+   "hinweis": "Video 2 der Reihe; Label „die Wofür-Frage“ (Rehook Nr. 35). Captions in Drive (2026-11-24-greta-schiesst-luis-haelt-captions)."
+  },
+  {
+   "datum": "2026-11-24",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-24-abend-wechselt-euch-ab",
+   "slug": "wechselt-euch-ab",
+   "titel": "„Wechselt euch ab!“",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Streit passiert unten, beim Ding; die Lösung liegt eine Schublade höher: Unten gibt es nur einen Ball, dort kann immer nur einer gewinnen, auch „Abwechseln“ teilt nur das Ding auf; eine Schublade höher steht, wofür man es will, und dort ist Platz für beide (Greta, acht, und ihr Bruder Luis, fünf, ziehen im Garten am selben Ball: „Meiner!“ „Nein, meiner!“; Mama fragt „Wofür brauchst du den Ball?“; Greta will Elfmeter üben, Luis will mit Greta spielen; zwei Rucksäcke werden ein Tor, Luis hält, beide lachen)",
+   "reihe": "Greta, Luis und der Ball (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du auch schon hundertmal „Wechselt euch ab“ gesagt hast.",
+   "hooks": {
+    "c": "„Wechselt euch ab!“ macht beide unglücklich."
+   },
+   "dauer": {
+    "c": 82.27
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/X2ZbsKcDDHpbTxKWp2Ch",
+   "status": "fertig",
+   "hinweis": "Video 3 der Reihe; Elternsicht: Abwechseln ist gerecht, bleibt aber eine Schublade zu tief. Captions in Drive (2026-11-24-wechselt-euch-ab-captions)."
+  },
+  {
+   "datum": "2026-11-24",
    "slot": "morgen",
    "ordner": "episodes/2026-11-24-morgen-du-sagst-immer-gleich",
    "slug": "du-sagst-immer-gleich",

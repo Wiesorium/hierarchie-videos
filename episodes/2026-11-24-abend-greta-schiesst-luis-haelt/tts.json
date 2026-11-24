@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Gestern hat genau dieser Ball noch Tränen gebracht. Wie daraus ein Tor wurde, zeig ich dir am Ende. Greta ist acht, ihr Bruder Luis ist fünf. Gestern im Garten: „Meiner!“ „Nein, meiner!“ Beide ziehen. Keiner lässt los. [pause] Schau dir den Streit als Schrank an. Ganz unten liegt ein Ding: der Ball. Davon gibt es nur einen. Unten kann immer nur einer gewinnen. Darüber liegt eine Schublade, die keiner sieht: Wofür will ich ihn? [pause] Ich nenne das die Wofür-Frage. [pause] Mama stellt sie. Greta sagt: „Ich will Elfmeter üben. Am Samstag ist mein Spiel.“ Luis sagt leise: „Ich will mit Greta spielen.“ Plötzlich liegen da zwei Wünsche nebeneinander. Und sie stoßen sich nicht. [pause] Und jetzt vergleich das mal mit gestern. [pause] Wer Elfmeter üben will, braucht einen, der im Tor steht. Zwei Rucksäcke sind das Tor. Luis steht dazwischen. Greta schießt, Luis hält. Derselbe Ball wie gestern. Nur eine Schublade höher. Unten gibt es nur einen Ball. Oben ist Platz für zwei. [pause] Welche Wofür-Frage stellst du beim nächsten Streit? [pause] [pause] Folg mir, damit mehr Eltern sehen, was hinter einem Streit steckt.",
+ "hooks": {
+  "b": "[warmly] Greta schießt. Luis hält. Beide lachen."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
