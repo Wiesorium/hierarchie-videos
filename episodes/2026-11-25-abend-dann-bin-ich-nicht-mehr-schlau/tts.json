@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das sagt Hanna. Sie ist neun. Was ihr hilft, zeig ich dir am Ende. Gestern hat Hanna ein Rätsel in zwei Minuten gelöst, und Papa hat gesagt: „Du bist so schlau!“ Heute kommt ein schweres Rätsel. Drei Sterne. Hanna klappt das Heft zu. [pause] Schau dir das Lob als Schrank an. „Schlau“ ist ein Wort von ganz oben. Papas Lob landet genau dort. Darunter hängt nichts, was Hanna selbst tun kann. Schlau ist man, oder man ist es nicht. [pause] Aber genau da liegt das Problem. [pause] Jedes schwere Rätsel rüttelt an dieser obersten Schublade. Ein Fehler, und sie könnte herunterfallen. Also lässt Hanna die schweren lieber liegen. Nicht, weil sie faul ist. Sie beschützt ihr Lob. [pause] Weißt du noch, was ich am Anfang gesagt hab? Jetzt kommt, was ihr hilft. [pause] Papa lobt eine Schublade tiefer. Nicht, wer Hanna ist, sondern was sie tut: „Du hast drei Wege probiert.“ „Du hast den Fehler selbst gefunden.“ Das kann Hanna morgen wieder tun, auch wenn ein Rätsel nicht aufgeht. Eine Woche später schlägt sie selbst die drei Sterne auf. Und oben wächst ein neuer Satz: „Ich bleib dran.“ [pause] Was hat dein Kind heute probiert? [pause] [pause] Folg mir, wenn du dein Kind gern lobst.",
+ "hooks": {
+  "a": "[warmly] „Dann bin ich nicht mehr schlau.“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

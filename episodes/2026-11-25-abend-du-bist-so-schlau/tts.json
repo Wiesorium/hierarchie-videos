@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Ich weiß, es ist das schönste Lob. Bleib bis zum Schluss, da kommt eins, das besser trägt. Hanna ist neun. Sie löst ein Rätsel in zwei Minuten, und Papa sagt, was wir alle sagen: „Du bist so schlau!“ Am nächsten Tag kommen drei Sterne. Hanna klappt das Heft zu: „Wenn ich das nicht schaff, bin ich nicht mehr schlau.“ [pause] Papa macht Mut: „Du schaffst das. Du bist doch schlau!“ Noch mehr Lob, damit sie sich traut. [pause] Klingt logisch, oder? Ist es aber nicht. [pause] Schau dir das Lob als Schrank an. „Schlau“ ist ein Wort von ganz oben. Darunter hängt nichts, was Hanna selbst tun kann. Jedes schwere Rätsel rüttelt an dieser Schublade. Und jedes „Du bist doch schlau“ rüttelt mit. [pause] So. Jetzt der wichtige Teil. [pause] Lob eine Schublade tiefer. Nicht, wer dein Kind ist, sondern was es tut. „Du hast drei Wege probiert.“ „Du hast den Fehler selbst gefunden.“ Das kann Hanna morgen wieder tun, auch wenn ein Rätsel nicht aufgeht. Eine Woche später schlägt sie selbst die drei Sterne auf. Oben wächst ein neuer Satz: „Ich bleib dran.“ [pause] Was lobst du morgen: wer dein Kind ist oder was es tut? [pause] [pause] Folg mir, wenn du auch schon „Du bist so schlau“ gesagt hast.",
+ "hooks": {
+  "c": "[warmly] „Du bist so schlau!“ kann Kinder vorsichtig machen."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

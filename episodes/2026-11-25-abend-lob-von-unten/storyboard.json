@@ -1,0 +1,1409 @@
+{
+ "slug": "lob-von-unten",
+ "title": "Lob von unten",
+ "cta": "follow",
+ "hero": "hanna",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.8,
+   "hold": 1.3,
+   "dur": 1.0,
+   "fx": 580,
+   "fy": 1250
+  }
+ },
+ "hooks": {
+  "b": {
+   "label": "Ergebnis zuerst",
+   "audio": "Hanna nimmt jetzt das schwerste Rätsel.",
+   "card": [
+    "Letzte Woche:",
+    "*„Mach ich nicht.“*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Drei Sterne, die schwerste Seite im Heft. Letzte Woche hat Hanna genau diese Seite zugeklappt. Dazwischen liegt nur ein anderes Lob. Hanna ist neun. Damals löst sie ein leichtes Rätsel, und Papa sagt: „Du bist so schlau!“ Dann kommen die drei Sterne. Und Hanna sagt: „Wenn ich das nicht schaff, bin ich nicht mehr schlau.“",
+  "block1": "Schau dir das Lob als Schrank an. „Schlau“ liegt ganz oben. Darunter hängt nichts, was Hanna selbst tun kann. Darum wackelt die Schublade bei jedem schweren Rätsel. Und wer um seine Schublade Angst hat, lässt das Schwere lieber liegen.",
+  "rehook1": "Schau, was passiert, wenn Papa nur eine Sache ändert.",
+  "block2": "Er lobt eine Schublade tiefer. Nicht, wer Hanna ist, sondern was sie tut. „Du hast drei Wege probiert.“ „Du hast den Fehler selbst gefunden.“ Das kann Hanna morgen wieder tun. Auch wenn ein Rätsel nicht aufgeht.",
+  "rehook2": "Das ist, was ich Lob von unten nenne.",
+  "block3": "Lob von unten wackelt nicht. Jeder Versuch legt eine Schublade dazu. Und aus vielen Schubladen wächst oben ein neuer Satz: „Ich bleib dran.“ Darum schlägt Hanna heute selbst die drei Sterne auf. Der erste Weg geht nicht. Der zweite auch nicht. Beim dritten klappt es.",
+  "closing": "Welches Lob von unten sagst du heute?",
+  "cta": "Folg mir, damit mehr Kinder die schweren Rätsel aufschlagen."
+ },
+ "question": [
+  "Welches Lob von unten",
+  "sagst du heute?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "damit mehr Kinder die",
+   "schweren Rätsel aufschlagen"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 180,
+     "y": 680,
+     "w": 210,
+     "h": 190
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 215,
+     "y": 650,
+     "size": 54
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 580,
+     "w": 120
+    },
+    {
+     "id": "tisch",
+     "type": "prop",
+     "kind": "table",
+     "x": 580,
+     "w": 660,
+     "h": 180,
+     "z": 3.5
+    },
+    {
+     "id": "heft0",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "1, 1, 2, 3, 5, *?*"
+     ],
+     "size": 34,
+     "z": 4
+    },
+    {
+     "id": "heft0_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 520,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "@-2.00"
+    },
+    {
+     "id": "heft0_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "@-1.82"
+    },
+    {
+     "id": "heft0_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 640,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "@-1.64"
+    },
+    {
+     "id": "hanna",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 380,
+     "look": "right",
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "schwerste Seite",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-1.6",
+       "kind": "point",
+       "dur": 1.4
+      },
+      {
+       "at": "schwerste Seite",
+       "kind": "think",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "papa",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "@-1.0",
+       "kind": "cheer",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "id": "stift",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 700,
+     "y": 1250,
+     "size": 70,
+     "z": 4.2,
+     "in": "@-1.8"
+    },
+    {
+     "id": "tag_schwer",
+     "type": "tag",
+     "text": "die schwerste Seite",
+     "x": 580,
+     "y": 1110,
+     "color": "rose",
+     "in": "schwerste Seite"
+    }
+   ]
+  },
+  {
+   "at": "Letzte Woche hat",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster_v",
+     "type": "prop",
+     "kind": "window",
+     "x": 180,
+     "y": 680,
+     "w": 210,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "sonne_v",
+     "type": "icon",
+     "kind": "sun",
+     "x": 215,
+     "y": 650,
+     "size": 54,
+     "enter": "fade"
+    },
+    {
+     "id": "uhr_v",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 580,
+     "w": 120,
+     "enter": "fade"
+    },
+    {
+     "id": "tisch_v",
+     "type": "prop",
+     "kind": "table",
+     "x": 580,
+     "w": 660,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "zu_v",
+     "type": "prop",
+     "kind": "book",
+     "x": 580,
+     "y": 1300,
+     "w": 230,
+     "h": 104,
+     "color": "#C9B6E4",
+     "text": [
+      "Rätsel"
+     ],
+     "size": 40,
+     "z": 4,
+     "enter": "fade",
+     "out": "leichtes Rätsel"
+    },
+    {
+     "id": "heft_easy_v",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "2, 4, 6, *?*"
+     ],
+     "size": 34,
+     "z": 4,
+     "in": "leichtes Rätsel",
+     "out": "Dann kommen"
+    },
+    {
+     "id": "heft_easy_v_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "leichtes Rätsel",
+     "out": "Dann kommen"
+    },
+    {
+     "id": "heft_hard_v",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "1, 1, 2, 3, 5, *?*"
+     ],
+     "size": 34,
+     "z": 4,
+     "in": "Dann kommen",
+     "out": "end:nicht mehr schlau"
+    },
+    {
+     "id": "heft_hard_v_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 520,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "Sterne-0.30",
+     "out": "end:nicht mehr schlau"
+    },
+    {
+     "id": "heft_hard_v_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "Sterne-0.12",
+     "out": "end:nicht mehr schlau"
+    },
+    {
+     "id": "heft_hard_v_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 640,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "Sterne+0.06",
+     "out": "end:nicht mehr schlau"
+    },
+    {
+     "id": "zu2_v",
+     "type": "prop",
+     "kind": "book",
+     "x": 580,
+     "y": 1300,
+     "w": 230,
+     "h": 104,
+     "color": "#C9B6E4",
+     "text": [
+      "Rätsel"
+     ],
+     "size": 40,
+     "z": 4,
+     "in": "end:nicht mehr schlau"
+    },
+    {
+     "id": "hanna_v",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 380,
+     "look": "right",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Hanna ist",
+       "mood": "neutral"
+      },
+      {
+       "at": "leichtes Rätsel",
+       "mood": "happy"
+      },
+      {
+       "at": "Du bist so schlau",
+       "mood": "grin"
+      },
+      {
+       "at": "Dann kommen",
+       "mood": "worried"
+      },
+      {
+       "at": "Und Hanna sagt",
+       "mood": "sad"
+      }
+     ],
+     "talk": [
+      [
+       "Wenn ich das",
+       "end:nicht mehr schlau"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "papa_v",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 800,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "leichtes Rätsel",
+       "mood": "smile"
+      },
+      {
+       "at": "Du bist so schlau",
+       "mood": "happy"
+      },
+      {
+       "at": "Dann kommen",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Du bist so schlau",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Du bist so schlau",
+       "end:Du bist so schlau"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tag_woche_v",
+     "type": "tag",
+     "text": "letzte Woche",
+     "x": 580,
+     "y": 560,
+     "color": "plum",
+     "in": "Letzte Woche hat"
+    },
+    {
+     "id": "st_zu_v",
+     "type": "stamp",
+     "text": "zu!",
+     "x": 720,
+     "y": 1150,
+     "rot": -0.08,
+     "size": 52,
+     "in": "zugeklappt",
+     "out": "Hanna ist"
+    },
+    {
+     "id": "q_lob_v",
+     "type": "tag",
+     "text": "ein anderes Lob?",
+     "x": 580,
+     "y": 860,
+     "color": "rose",
+     "in": "anderes Lob",
+     "out": "Hanna ist"
+    },
+    {
+     "id": "tag_hanna_v",
+     "type": "tag",
+     "text": "Hanna, neun",
+     "x": 380,
+     "y": 1085,
+     "color": "plum",
+     "in": "Hanna ist",
+     "out": "leichtes Rätsel"
+    },
+    {
+     "id": "b_schlau_v",
+     "type": "bubble",
+     "from": "papa_v",
+     "text": "Du bist so *schlau*!",
+     "x": 760,
+     "y": 860,
+     "maxW": 330,
+     "size": 46,
+     "in": "Du bist so schlau-0.1",
+     "out": "Dann kommen"
+    },
+    {
+     "id": "b_angst_v",
+     "type": "bubble",
+     "from": "hanna_v",
+     "text": "Wenn ich das nicht schaff, bin ich nicht mehr *schlau*.",
+     "x": 470,
+     "y": 920,
+     "maxW": 460,
+     "size": 40,
+     "in": "Wenn ich das-0.1"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das Lob",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "hanna_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Darunter hängt",
+       "mood": "worried"
+      },
+      {
+       "at": "Angst hat",
+       "mood": "scared"
+      },
+      {
+       "at": "Schau was passiert",
+       "mood": "open"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tag_oben_k",
+     "type": "tag",
+     "text": "ganz oben",
+     "x": 540,
+     "y": 510,
+     "color": "plum",
+     "in": "ganz oben"
+    },
+    {
+     "id": "heft_k",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 820,
+     "y": 1280,
+     "w": 280,
+     "h": 120,
+     "text": [
+      "1, 1, 2, 3, 5, *?*"
+     ],
+     "size": 34,
+     "in": "schweren Rätsel"
+    },
+    {
+     "id": "heft_k_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 760,
+     "y": 1190,
+     "w": 50,
+     "in": "schweren Rätsel+0.1"
+    },
+    {
+     "id": "heft_k_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 820,
+     "y": 1190,
+     "w": 50,
+     "in": "schweren Rätsel+0.25"
+    },
+    {
+     "id": "heft_k_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 880,
+     "y": 1190,
+     "w": 50,
+     "in": "schweren Rätsel+0.4"
+    },
+    {
+     "id": "st_liegen_k",
+     "type": "stamp",
+     "text": "lieber nicht",
+     "x": 820,
+     "y": 1280,
+     "rot": -0.08,
+     "size": 48,
+     "in": "lieber liegen"
+    },
+    {
+     "id": "pf_tiefer_k",
+     "type": "arrow",
+     "from": {
+      "x": 300,
+      "y": 640
+     },
+     "to": {
+      "x": 300,
+      "y": 900
+     },
+     "style": "red",
+     "in": "eine Sache"
+    },
+    {
+     "id": "tag_sache_k",
+     "type": "tag",
+     "text": "nur eine Sache",
+     "x": 300,
+     "y": 1000,
+     "color": "rose",
+     "in": "eine Sache"
+    },
+    {
+     "id": "n_schlau_k",
+     "type": "node",
+     "x": 540,
+     "y": 640,
+     "w": 340,
+     "h": 124,
+     "label": "*schlau*",
+     "size": 64,
+     "color": "kids",
+     "in": "ganz oben",
+     "states": [
+      {
+       "at": "ganz oben",
+       "state": "glow"
+      },
+      {
+       "at": "Darunter hängt",
+       "state": "normal"
+      },
+      {
+       "at": "wackelt",
+       "state": "shake"
+      },
+      {
+       "at": "schweren Rätsel",
+       "state": "shake+red"
+      },
+      {
+       "at": "Angst hat",
+       "state": "heavy+red"
+      },
+      {
+       "at": "Schau was passiert",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_tun_k",
+     "type": "node",
+     "x": 540,
+     "y": 920,
+     "w": 380,
+     "h": 110,
+     "label": "",
+     "size": 40,
+     "color": "fresh",
+     "emptyLabel": "selbst tun?",
+     "in": "Darunter hängt",
+     "states": [
+      {
+       "at": "Darunter hängt",
+       "state": "empty+question"
+      },
+      {
+       "at": "eine Sache",
+       "state": "empty+glow"
+      }
+     ]
+    },
+    {
+     "id": "l_tun_k",
+     "type": "link",
+     "from": "n_schlau_k",
+     "to": "n_tun_k",
+     "style": "dashed",
+     "in": "Darunter hängt"
+    }
+   ]
+  },
+  {
+   "at": "Er lobt eine",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "tisch_h",
+     "type": "prop",
+     "kind": "table",
+     "x": 580,
+     "w": 660,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "heft_h",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "1, 1, 2, 3, 5, *?*"
+     ],
+     "size": 34,
+     "z": 4,
+     "enter": "fade"
+    },
+    {
+     "id": "heft_h_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 520,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "enter": "fade"
+    },
+    {
+     "id": "heft_h_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "enter": "fade"
+    },
+    {
+     "id": "heft_h_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 640,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "enter": "fade"
+    },
+    {
+     "id": "hanna_h",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 380,
+     "look": "right",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Wege probiert",
+       "mood": "open"
+      },
+      {
+       "at": "selbst gefunden",
+       "mood": "happy"
+      },
+      {
+       "at": "morgen wieder",
+       "mood": "grin"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "papa_h",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Du hast",
+       "kind": "point",
+       "dur": 1.3
+      },
+      {
+       "at": "Du hast#2",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Du hast",
+       "end:Wege probiert"
+      ],
+      [
+       "Du hast#2",
+       "end:selbst gefunden"
+      ]
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tag_tiefer_h",
+     "type": "tag",
+     "text": "eine Schublade tiefer",
+     "x": 560,
+     "y": 520,
+     "color": "plum",
+     "in": "Schublade tiefer"
+    },
+    {
+     "id": "pf_tiefer_h",
+     "type": "arrow",
+     "from": {
+      "x": 560,
+      "y": 565
+     },
+     "to": {
+      "x": 560,
+      "y": 650
+     },
+     "style": "red",
+     "in": "Schublade tiefer",
+     "out": "Nicht wer Hanna"
+    },
+    {
+     "id": "k_wer_h",
+     "type": "card",
+     "lines": [
+      "Nicht, wer sie *ist*.",
+      "Sondern, was sie *tut*."
+     ],
+     "x": 560,
+     "y": 760,
+     "size": 48,
+     "in": "Nicht wer Hanna",
+     "out": "Du hast"
+    },
+    {
+     "id": "b_wege_h",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Du hast *drei Wege* probiert.",
+     "x": 740,
+     "y": 880,
+     "maxW": 380,
+     "size": 42,
+     "in": "Du hast-0.1",
+     "out": "Du hast#2-0.15"
+    },
+    {
+     "id": "n_wege_h",
+     "type": "node",
+     "x": 320,
+     "y": 680,
+     "w": 340,
+     "h": 104,
+     "label": "drei *Wege* probiert",
+     "size": 40,
+     "color": "fresh",
+     "in": "end:Wege probiert",
+     "states": [
+      {
+       "at": "end:Wege probiert",
+       "state": "glow"
+      },
+      {
+       "at": "Du hast#2",
+       "state": "normal"
+      },
+      {
+       "at": "morgen wieder",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "b_fehler_h",
+     "type": "bubble",
+     "from": "papa_h",
+     "text": "Du hast den *Fehler* selbst gefunden.",
+     "x": 720,
+     "y": 880,
+     "maxW": 400,
+     "size": 42,
+     "in": "Du hast#2-0.1",
+     "out": "morgen wieder"
+    },
+    {
+     "id": "n_fehler_h",
+     "type": "node",
+     "x": 780,
+     "y": 680,
+     "w": 360,
+     "h": 104,
+     "label": "*Fehler* gefunden",
+     "size": 40,
+     "color": "baby",
+     "in": "selbst gefunden",
+     "states": [
+      {
+       "at": "selbst gefunden",
+       "state": "glow"
+      },
+      {
+       "at": "morgen wieder",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "tag_morgen_h",
+     "type": "tag",
+     "text": "morgen wieder",
+     "x": 560,
+     "y": 860,
+     "color": "rose",
+     "in": "morgen wieder",
+     "out": "Lob von unten"
+    },
+    {
+     "id": "tag_ohne_h",
+     "type": "tag",
+     "text": "auch ohne Lösung",
+     "x": 560,
+     "y": 950,
+     "color": "plum",
+     "in": "nicht aufgeht",
+     "out": "Lob von unten"
+    },
+    {
+     "id": "st_unten_h",
+     "type": "stamp",
+     "text": "Lob von unten",
+     "x": 560,
+     "y": 1060,
+     "rot": -0.07,
+     "size": 62,
+     "in": "Lob von unten"
+    }
+   ]
+  },
+  {
+   "at": "Lob von unten wackelt",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "hanna_u",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 150,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Ich bleib dran",
+       "mood": "grin"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Ich bleib dran",
+       "kind": "cheer",
+       "dur": 1.6
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tag_wackelt_u",
+     "type": "tag",
+     "text": "wackelt nicht",
+     "x": 540,
+     "y": 1150,
+     "color": "plum",
+     "in": "wackelt nicht",
+     "out": "neuer Satz"
+    },
+    {
+     "id": "n1_u",
+     "type": "node",
+     "x": 230,
+     "y": 960,
+     "w": 300,
+     "h": 104,
+     "label": "drei *Wege*",
+     "size": 40,
+     "color": "fresh",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "start",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "n2_u",
+     "type": "node",
+     "x": 540,
+     "y": 960,
+     "w": 300,
+     "h": 104,
+     "label": "*Fehler* gefunden",
+     "size": 38,
+     "color": "baby",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "start",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "n3_u",
+     "type": "node",
+     "x": 850,
+     "y": 960,
+     "w": 300,
+     "h": 104,
+     "label": "noch ein *Versuch*",
+     "size": 38,
+     "color": "food",
+     "in": "Jeder Versuch",
+     "states": [
+      {
+       "at": "Jeder Versuch",
+       "state": "glow"
+      },
+      {
+       "at": "neuer Satz",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "n_dran_u",
+     "type": "node",
+     "x": 540,
+     "y": 620,
+     "w": 420,
+     "h": 124,
+     "label": "Ich bleib *dran*.",
+     "size": 56,
+     "color": "idea",
+     "in": "neuer Satz",
+     "states": [
+      {
+       "at": "neuer Satz",
+       "state": "glow"
+      },
+      {
+       "at": "end:Ich bleib dran",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "g1_u",
+     "type": "link",
+     "from": "n1_u",
+     "to": "n_dran_u",
+     "style": "gold",
+     "in": "neuer Satz+0.1"
+    },
+    {
+     "id": "g2_u",
+     "type": "link",
+     "from": "n2_u",
+     "to": "n_dran_u",
+     "style": "gold",
+     "in": "neuer Satz+0.35"
+    },
+    {
+     "id": "g3_u",
+     "type": "link",
+     "from": "n3_u",
+     "to": "n_dran_u",
+     "style": "gold",
+     "in": "neuer Satz+0.6"
+    },
+    {
+     "id": "tag_oben_u",
+     "type": "tag",
+     "text": "oben",
+     "x": 540,
+     "y": 500,
+     "color": "plum",
+     "in": "wächst oben"
+    }
+   ]
+  },
+  {
+   "at": "Darum schlägt Hanna",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "tisch_e",
+     "type": "prop",
+     "kind": "table",
+     "x": 580,
+     "w": 660,
+     "h": 180,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "id": "zu_e",
+     "type": "prop",
+     "kind": "book",
+     "x": 580,
+     "y": 1300,
+     "w": 230,
+     "h": 104,
+     "color": "#C9B6E4",
+     "text": [
+      "Rätsel"
+     ],
+     "size": 40,
+     "z": 4,
+     "enter": "fade",
+     "out": "schlägt Hanna heute"
+    },
+    {
+     "id": "heft_e",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "1, 1, 2, 3, 5, *?*"
+     ],
+     "size": 34,
+     "z": 4,
+     "in": "schlägt Hanna heute",
+     "out": "klappt es"
+    },
+    {
+     "id": "heft_e_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 520,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "schlägt Hanna heute+0.20",
+     "out": "klappt es"
+    },
+    {
+     "id": "heft_e_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "schlägt Hanna heute+0.38",
+     "out": "klappt es"
+    },
+    {
+     "id": "heft_e_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 640,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "schlägt Hanna heute+0.56",
+     "out": "klappt es"
+    },
+    {
+     "id": "heft_ok_e",
+     "type": "prop",
+     "kind": "notebook",
+     "x": 580,
+     "y": 1300,
+     "w": 250,
+     "h": 110,
+     "text": [
+      "1, 1, 2, 3, 5, *8*"
+     ],
+     "size": 34,
+     "z": 4,
+     "in": "klappt es"
+    },
+    {
+     "id": "heft_ok_e_st0",
+     "type": "prop",
+     "kind": "stars",
+     "x": 520,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "klappt es",
+     "enter": "none"
+    },
+    {
+     "id": "heft_ok_e_st1",
+     "type": "prop",
+     "kind": "stars",
+     "x": 580,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "klappt es",
+     "enter": "none"
+    },
+    {
+     "id": "heft_ok_e_st2",
+     "type": "prop",
+     "kind": "stars",
+     "x": 640,
+     "y": 1212,
+     "w": 50,
+     "z": 4.1,
+     "in": "klappt es",
+     "enter": "none"
+    },
+    {
+     "id": "hanna_e",
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "blond",
+     "shirt": "#9FD3C7",
+     "pants": "#5B6E9C",
+     "x": 380,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "erste Weg",
+       "mood": "worried"
+      },
+      {
+       "at": "zweite auch",
+       "mood": "open"
+      },
+      {
+       "at": "klappt es",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "schlägt Hanna heute",
+       "kind": "point",
+       "dur": 1.3
+      },
+      {
+       "at": "zweite auch",
+       "kind": "think",
+       "dur": 1.4
+      },
+      {
+       "at": "klappt es",
+       "kind": "cheer",
+       "dur": 1.8
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "papa_e",
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 800,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "klappt es",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "klappt es+0.2",
+       "kind": "cheer",
+       "dur": 1.6
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "tag_heute_e",
+     "type": "tag",
+     "text": "heute",
+     "x": 580,
+     "y": 1000,
+     "color": "rose",
+     "in": "Darum schlägt",
+     "out": "erste Weg"
+    },
+    {
+     "id": "x1_e",
+     "type": "icon",
+     "kind": "cross",
+     "x": 470,
+     "y": 930,
+     "size": 62,
+     "in": "erste Weg"
+    },
+    {
+     "id": "x2_e",
+     "type": "icon",
+     "kind": "cross",
+     "x": 580,
+     "y": 930,
+     "size": 62,
+     "in": "zweite auch"
+    },
+    {
+     "id": "ok_e",
+     "type": "icon",
+     "kind": "check",
+     "x": 690,
+     "y": 930,
+     "size": 66,
+     "in": "klappt es"
+    },
+    {
+     "id": "n_dran_e",
+     "type": "node",
+     "x": 560,
+     "y": 620,
+     "w": 400,
+     "h": 120,
+     "label": "Ich bleib *dran*.",
+     "size": 54,
+     "color": "idea",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "start",
+       "state": "gold"
+      },
+      {
+       "at": "klappt es",
+       "state": "gold+check"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "schwerste Seite",
+   "x": 580,
+   "y": 1250
+  },
+  {
+   "at": "Du bist so schlau",
+   "x": 760,
+   "y": 860
+  },
+  {
+   "at": "ganz oben",
+   "x": 540,
+   "y": 640
+  },
+  {
+   "at": "Darunter hängt",
+   "x": 540,
+   "y": 920
+  },
+  {
+   "at": "end:Wege probiert",
+   "x": 320,
+   "y": 680
+  },
+  {
+   "at": "Lob von unten",
+   "x": 560,
+   "y": 1060
+  },
+  {
+   "at": "Ich bleib dran",
+   "x": 540,
+   "y": 620
+  },
+  {
+   "at": "klappt es",
+   "x": 690,
+   "y": 930
+  }
+ ]
+}

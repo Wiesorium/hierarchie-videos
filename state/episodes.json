@@ -2,6 +2,72 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-25",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-25-abend-dann-bin-ich-nicht-mehr-schlau",
+   "slug": "dann-bin-ich-nicht-mehr-schlau",
+   "titel": "Dann bin ich nicht mehr schlau",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Lob landet in einer Schublade: „Du bist so schlau!“ landet ganz oben, bei einem Wort, unter dem nichts hängt, was das Kind selbst tun kann; jede schwere Aufgabe rüttelt daran, also lässt das Kind das Schwere liegen; Lob eine Schublade tiefer („Du hast drei Wege probiert.“) landet bei etwas, das es morgen wieder tun kann, und oben wächst „Ich bleib dran.“ (Hanna, neun, löst ein leichtes Rätsel, Papa: „Du bist so schlau!“; beim Rätsel mit drei Sternen klappt sie das Heft zu: „Wenn ich das nicht schaff, bin ich nicht mehr schlau.“; Papa lobt danach, was sie tut; eine Woche später schlägt sie die drei Sterne selbst auf)",
+   "reihe": "Hanna und das Lob (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du dein Kind gern lobst.",
+   "hooks": {
+    "a": "„Dann bin ich nicht mehr schlau.“"
+   },
+   "dauer": {
+    "a": 80.67
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/IDyylT8TSPU7P6uQE4OF",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Lob kam noch nicht vor). Beispiel selbst erfunden: Hanna (neun) und Papa am Küchentisch mit dem Rätselheft. Keine Engine-Änderung nötig. Captions in Drive (2026-11-25-dann-bin-ich-nicht-mehr-schlau-captions). Stimme gesamt für die Reihe etwa 3.850 Credits."
+  },
+  {
+   "datum": "2026-11-25",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-25-abend-lob-von-unten",
+   "slug": "lob-von-unten",
+   "titel": "Lob von unten",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Lob landet in einer Schublade: „Du bist so schlau!“ landet ganz oben, bei einem Wort, unter dem nichts hängt, was das Kind selbst tun kann; jede schwere Aufgabe rüttelt daran, also lässt das Kind das Schwere liegen; Lob eine Schublade tiefer („Du hast drei Wege probiert.“) landet bei etwas, das es morgen wieder tun kann, und oben wächst „Ich bleib dran.“ (Hanna, neun, löst ein leichtes Rätsel, Papa: „Du bist so schlau!“; beim Rätsel mit drei Sternen klappt sie das Heft zu: „Wenn ich das nicht schaff, bin ich nicht mehr schlau.“; Papa lobt danach, was sie tut; eine Woche später schlägt sie die drei Sterne selbst auf)",
+   "reihe": "Hanna und das Lob (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit mehr Kinder die schweren Rätsel aufschlagen.",
+   "hooks": {
+    "b": "Hanna nimmt jetzt das schwerste Rätsel."
+   },
+   "dauer": {
+    "b": 83.47
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/IDyylT8TSPU7P6uQE4OF",
+   "status": "fertig",
+   "hinweis": "Video 2 der Reihe; Label „Lob von unten“ (Rehook Nr. 35). Captions in Drive (2026-11-25-lob-von-unten-captions)."
+  },
+  {
+   "datum": "2026-11-25",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-25-abend-du-bist-so-schlau",
+   "slug": "du-bist-so-schlau",
+   "titel": "„Du bist so schlau!“",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Lob landet in einer Schublade: „Du bist so schlau!“ landet ganz oben, bei einem Wort, unter dem nichts hängt, was das Kind selbst tun kann; jede schwere Aufgabe rüttelt daran, also lässt das Kind das Schwere liegen; Lob eine Schublade tiefer („Du hast drei Wege probiert.“) landet bei etwas, das es morgen wieder tun kann, und oben wächst „Ich bleib dran.“ (Hanna, neun, löst ein leichtes Rätsel, Papa: „Du bist so schlau!“; beim Rätsel mit drei Sternen klappt sie das Heft zu: „Wenn ich das nicht schaff, bin ich nicht mehr schlau.“; Papa lobt danach, was sie tut; eine Woche später schlägt sie die drei Sterne selbst auf)",
+   "reihe": "Hanna und das Lob (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du auch schon „Du bist so schlau“ gesagt hast.",
+   "hooks": {
+    "c": "„Du bist so schlau!“ kann Kinder vorsichtig machen."
+   },
+   "dauer": {
+    "c": 77.5
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/IDyylT8TSPU7P6uQE4OF",
+   "status": "fertig",
+   "hinweis": "Video 3 der Reihe; aus Sicht der Eltern („was wir alle sagen“). Captions in Drive (2026-11-25-du-bist-so-schlau-captions)."
+  },
+  {
    "datum": "2026-11-24",
    "slot": "abend",
    "ordner": "episodes/2026-11-24-abend-das-ist-auch-mein-ball",
