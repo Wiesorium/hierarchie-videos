@@ -2,6 +2,72 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-26",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Entschuldigen: „Entschuldigung“ ist ein Wort von ganz oben; darunter hängen bei Kindern noch keine Schubladen (Was ist passiert? Wie geht es dem anderen? Was könnte helfen?), darum heißt es nur „Jetzt ist der Ärger vorbei“, und lauter verlangt wird nur das Wort lauter; drei Fragen eine Schublade tiefer füllen die Schubladen, und das Wort bekommt seinen Inhalt: „Ich mach’s wieder gut.“ (Moritz, sieben, kickt seinen Ball in den Bauklotz-Turm seiner Schwester Pia, vier; Mama: „Sag Entschuldigung!“, Moritz murmelt „Tschuldigung.“, Pia weint weiter; Mama fragt nach unten, Moritz holt die Klötze, zusammen bauen sie den Turm wieder auf; am nächsten Tag baut er ihn nach einem Stoß von selbst wieder auf)",
+   "reihe": "Moritz, Pia und der Turm (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/HlJ09qrxzYgro3EZJyXS",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-26-morgen-ich-hab-doch-entschuldigung-gesagt",
+   "slug": "ich-hab-doch-entschuldigung-gesagt",
+   "titel": "Ich hab doch Entschuldigung gesagt",
+   "hook_typ": "Kinderzitat",
+   "cta_text": "Folg mir, wenn bei euch auch manchmal Türme fallen.",
+   "hooks": {
+    "a": "„Ich hab doch Entschuldigung gesagt!“"
+   },
+   "dauer": {
+    "a": 79.8
+   },
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Entschuldigen kam noch nicht vor). Beispiel selbst erfunden: Moritz (sieben), Pia (vier) und Mama im Wohnzimmer mit dem Bauklotz-Turm P, I, A. Neu in der Engine: Requisite block (Bauklotz, kippt beim Fallen). Captions in Drive (2026-11-26-ich-hab-doch-entschuldigung-gesagt-captions). Stimme gesamt für die Reihe etwa 3.640 Credits."
+  },
+  {
+   "datum": "2026-11-26",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Entschuldigen: „Entschuldigung“ ist ein Wort von ganz oben; darunter hängen bei Kindern noch keine Schubladen (Was ist passiert? Wie geht es dem anderen? Was könnte helfen?), darum heißt es nur „Jetzt ist der Ärger vorbei“, und lauter verlangt wird nur das Wort lauter; drei Fragen eine Schublade tiefer füllen die Schubladen, und das Wort bekommt seinen Inhalt: „Ich mach’s wieder gut.“ (Moritz, sieben, kickt seinen Ball in den Bauklotz-Turm seiner Schwester Pia, vier; Mama: „Sag Entschuldigung!“, Moritz murmelt „Tschuldigung.“, Pia weint weiter; Mama fragt nach unten, Moritz holt die Klötze, zusammen bauen sie den Turm wieder auf; am nächsten Tag baut er ihn nach einem Stoß von selbst wieder auf)",
+   "reihe": "Moritz, Pia und der Turm (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/HlJ09qrxzYgro3EZJyXS",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-26-morgen-zwei-arten-von-entschuldigung",
+   "slug": "zwei-arten-von-entschuldigung",
+   "titel": "Zwei Arten von Entschuldigung",
+   "hook_typ": "Ergebnis zuerst",
+   "cta_text": "Folg mir, damit mehr Türme wieder aufgebaut werden.",
+   "hooks": {
+    "b": "Moritz baut Pias Turm selbst wieder auf."
+   },
+   "dauer": {
+    "b": 78.63
+   },
+   "hinweis": "Video 2 der Reihe; Label „Zwei Arten von Entschuldigung“ (Rehook Nr. 40). Captions in Drive (2026-11-26-zwei-arten-von-entschuldigung-captions)."
+  },
+  {
+   "datum": "2026-11-26",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Entschuldigen: „Entschuldigung“ ist ein Wort von ganz oben; darunter hängen bei Kindern noch keine Schubladen (Was ist passiert? Wie geht es dem anderen? Was könnte helfen?), darum heißt es nur „Jetzt ist der Ärger vorbei“, und lauter verlangt wird nur das Wort lauter; drei Fragen eine Schublade tiefer füllen die Schubladen, und das Wort bekommt seinen Inhalt: „Ich mach’s wieder gut.“ (Moritz, sieben, kickt seinen Ball in den Bauklotz-Turm seiner Schwester Pia, vier; Mama: „Sag Entschuldigung!“, Moritz murmelt „Tschuldigung.“, Pia weint weiter; Mama fragt nach unten, Moritz holt die Klötze, zusammen bauen sie den Turm wieder auf; am nächsten Tag baut er ihn nach einem Stoß von selbst wieder auf)",
+   "reihe": "Moritz, Pia und der Turm (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/HlJ09qrxzYgro3EZJyXS",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-26-morgen-sag-entschuldigung",
+   "slug": "sag-entschuldigung",
+   "titel": "„Sag Entschuldigung!“",
+   "hook_typ": "Du-Fehler",
+   "cta_text": "Folg mir, wenn du auch schon „Sag Entschuldigung!“ gesagt hast.",
+   "hooks": {
+    "c": "„Sag Entschuldigung!“ lehrt oft nur das Wort."
+   },
+   "dauer": {
+    "c": 76.9
+   },
+   "hinweis": "Video 3 der Reihe; Du-Fehler ohne Urteil („Ich weiß, das sagen wir alle.“), im Hook „oft“. Captions in Drive (2026-11-26-sag-entschuldigung-captions)."
+  },
+  {
    "datum": "2026-11-25",
    "slot": "abend",
    "ordner": "episodes/2026-11-25-abend-dann-bin-ich-nicht-mehr-schlau",

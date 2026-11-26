@@ -1,0 +1,1633 @@
+{
+ "slug": "ich-hab-doch-entschuldigung-gesagt",
+ "title": "Ich hab doch Entschuldigung gesagt",
+ "cta": "follow",
+ "hero": "moritz",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "a": {
+   "label": "Kinderzitat",
+   "audio": "„Ich hab doch Entschuldigung gesagt!“",
+   "card": [
+    "Pia weint trotzdem.",
+    "*Warum?*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Das ruft Moritz. Er ist sieben. Und seine Schwester weint trotzdem. Was ihr wirklich hilft, zeig ich dir am Ende. Pia ist vier. Sie hat einen hohen Turm gebaut. Moritz kickt seinen Ball, und der Turm fällt um. Mama sagt: „Sag Entschuldigung!“ Moritz murmelt: „Tschuldigung.“",
+  "block1": "Schau dir das als Knoten an. „Entschuldigung“ ist ein Wort von ganz oben. Moritz kennt das Wort. Aber darunter ist noch nichts. Für ihn heißt es nur: Jetzt ist der Ärger vorbei.",
+  "rehook1": "Aber genau da liegt das Problem.",
+  "block2": "Pia hört das Wort. Aber ihr Turm liegt immer noch am Boden. Für sie ist gar nichts vorbei. Darum weint sie weiter. Und Moritz versteht die Welt nicht mehr.",
+  "rehook2": "Weißt du noch, was ich am Anfang gesagt hab? Jetzt kommt, was ihr hilft.",
+  "block3": "Mama fragt eine Schublade tiefer. „Was ist passiert?“ „Mein Ball hat den Turm umgeworfen.“ „Wie geht’s Pia?“ „Sie ist traurig. Sie hat so lang gebaut.“ „Was könnte ihr helfen?“ Moritz holt die Klötze. Zusammen bauen sie den Turm wieder auf, noch höher als vorher. Jetzt hängt etwas unter dem Wort: „Ich mach’s wieder gut.“",
+  "closing": "Was hat dein Kind zuletzt wiedergutgemacht?",
+  "cta": "Folg mir, wenn bei euch auch manchmal Türme fallen."
+ },
+ "question": [
+  "Was hat dein Kind",
+  "zuletzt wiedergutgemacht?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn bei euch auch",
+   "manchmal Türme fallen"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 690,
+     "w": 210,
+     "h": 190
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 205,
+     "y": 660,
+     "size": 54
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 590,
+     "w": 120
+    },
+    {
+     "id": "sofa",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 860,
+     "w": 420,
+     "h": 200
+    },
+    {
+     "id": "fb0",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1478,
+     "w": 84,
+     "color": "people",
+     "rot": 0.08,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "fb1",
+     "type": "prop",
+     "kind": "block",
+     "x": 320,
+     "y": 1478,
+     "w": 84,
+     "color": "fresh",
+     "rot": -0.35,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "fb2",
+     "type": "prop",
+     "kind": "block",
+     "x": 525,
+     "y": 1478,
+     "w": 84,
+     "color": "idea",
+     "text": "A",
+     "rot": 0.5,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "fb3",
+     "type": "prop",
+     "kind": "block",
+     "x": 635,
+     "y": 1478,
+     "w": 84,
+     "color": "baby",
+     "text": "I",
+     "rot": 1.25,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "fb4",
+     "type": "prop",
+     "kind": "block",
+     "x": 235,
+     "y": 1478,
+     "w": 84,
+     "color": "kids",
+     "text": "P",
+     "rot": -0.9,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "ball_hook",
+     "type": "prop",
+     "kind": "ball",
+     "w": 70,
+     "color": "#F4B98A",
+     "x": 690,
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "moritz",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "x": 760,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "@-1.6",
+       "mood": "open"
+      },
+      {
+       "at": "Er ist sieben",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-1.7",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ],
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "pia",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#B5DFC9",
+     "pants": "#C9A3D9",
+     "scale": 0.8,
+     "x": 150,
+     "look": "right",
+     "mood": "sad",
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 940,
+     "look": "left",
+     "mood": "worried",
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "moritz",
+     "text": "Ich hab doch *Entschuldigung* gesagt!",
+     "x": 720,
+     "y": 1010,
+     "maxW": 380,
+     "size": 44,
+     "in": "@-2.0",
+     "out": "@0.3"
+    },
+    {
+     "id": "tag_moritz",
+     "type": "tag",
+     "text": "Moritz, sieben",
+     "x": 760,
+     "y": 1090,
+     "color": "plum",
+     "in": "Er ist sieben",
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "tag_pia",
+     "type": "tag",
+     "text": "seine Schwester",
+     "x": 190,
+     "y": 1150,
+     "color": "rose",
+     "in": "seine Schwester",
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "bulb_ende",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 540,
+     "y": 820,
+     "size": 80,
+     "in": "wirklich hilft",
+     "out": "Pia ist vier"
+    },
+    {
+     "id": "tag_ende",
+     "type": "tag",
+     "text": "am Ende",
+     "x": 540,
+     "y": 920,
+     "color": "rose",
+     "in": "am Ende",
+     "out": "Pia ist vier"
+    }
+   ]
+  },
+  {
+   "at": "Pia ist vier",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "fenster",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 690,
+     "w": 210,
+     "h": 190
+    },
+    {
+     "id": "sonne",
+     "type": "icon",
+     "kind": "sun",
+     "x": 205,
+     "y": 660,
+     "size": 54
+    },
+    {
+     "id": "uhr",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 590,
+     "w": 120
+    },
+    {
+     "id": "sofa",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 860,
+     "w": 420,
+     "h": 200
+    },
+    {
+     "id": "tag_pia_s",
+     "type": "tag",
+     "text": "Pia, vier",
+     "x": 190,
+     "y": 1150,
+     "color": "plum",
+     "in": "Pia ist vier",
+     "out": "kickt"
+    },
+    {
+     "id": "tw_s0",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1478,
+     "w": 84,
+     "color": "people",
+     "moves": [
+      {
+       "at": "Turm fällt um+0.15",
+       "x": 420,
+       "y": 1478,
+       "rot": 0.08,
+       "dur": 0.3
+      }
+     ],
+     "in": "hohen Turm+0.00",
+     "enter": "pop"
+    },
+    {
+     "id": "tw_s1",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1394,
+     "w": 84,
+     "color": "fresh",
+     "moves": [
+      {
+       "at": "Turm fällt um+0.12",
+       "x": 320,
+       "y": 1478,
+       "rot": -0.35,
+       "dur": 0.5
+      }
+     ],
+     "in": "hohen Turm+0.12",
+     "enter": "pop"
+    },
+    {
+     "id": "tw_s2",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1310,
+     "w": 84,
+     "color": "idea",
+     "text": "A",
+     "moves": [
+      {
+       "at": "Turm fällt um+0.10",
+       "x": 525,
+       "y": 1478,
+       "rot": 0.5,
+       "dur": 0.6
+      }
+     ],
+     "in": "hohen Turm+0.24",
+     "enter": "pop"
+    },
+    {
+     "id": "tw_s3",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1226,
+     "w": 84,
+     "color": "baby",
+     "text": "I",
+     "moves": [
+      {
+       "at": "Turm fällt um+0.05",
+       "x": 635,
+       "y": 1478,
+       "rot": 1.25,
+       "dur": 0.7
+      }
+     ],
+     "in": "hohen Turm+0.36",
+     "enter": "pop"
+    },
+    {
+     "id": "tw_s4",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1142,
+     "w": 84,
+     "color": "kids",
+     "text": "P",
+     "moves": [
+      {
+       "at": "Turm fällt um+0.00",
+       "x": 235,
+       "y": 1478,
+       "rot": -0.9,
+       "dur": 0.75
+      }
+     ],
+     "in": "hohen Turm+0.48",
+     "enter": "pop"
+    },
+    {
+     "id": "ball_s",
+     "type": "prop",
+     "kind": "ball",
+     "w": 70,
+     "color": "#F4B98A",
+     "x": 660,
+     "moves": [
+      {
+       "at": "kickt seinen Ball",
+       "x": 472,
+       "dur": 0.3
+      },
+      {
+       "at": "Turm fällt um",
+       "x": 690,
+       "dur": 0.6
+      }
+     ]
+    },
+    {
+     "id": "pia",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#B5DFC9",
+     "pants": "#C9A3D9",
+     "scale": 0.8,
+     "x": 150,
+     "look": "right",
+     "mood": "happy",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "hohen Turm",
+       "mood": "grin"
+      },
+      {
+       "at": "Turm fällt um",
+       "mood": "scared"
+      },
+      {
+       "at": "Turm fällt um+0.8",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "moritz",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "x": 760,
+     "look": "left",
+     "mood": "grin",
+     "enter": "fade",
+     "hop": "kickt seinen Ball",
+     "moods": [
+      {
+       "at": "Turm fällt um",
+       "mood": "wow"
+      },
+      {
+       "at": "Sag Entschuldigung",
+       "mood": "worried"
+      },
+      {
+       "at": "Tschuldigung",
+       "mood": "neutral"
+      }
+     ],
+     "talk": [
+      [
+       "Tschuldigung",
+       "end:Tschuldigung"
+      ]
+     ]
+    },
+    {
+     "id": "mama",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 940,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Turm fällt um",
+       "mood": "worried"
+      },
+      {
+       "at": "Sag Entschuldigung",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Sag Entschuldigung",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Sag Entschuldigung",
+       "end:Sag Entschuldigung"
+      ]
+     ]
+    },
+    {
+     "id": "st_bumm_s",
+     "type": "stamp",
+     "text": "bumm!",
+     "x": 460,
+     "y": 1010,
+     "rot": -0.1,
+     "size": 58,
+     "in": "Turm fällt um+0.15",
+     "out": "Sag Entschuldigung"
+    },
+    {
+     "id": "b_sag_s",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Sag *Entschuldigung*!",
+     "x": 760,
+     "y": 880,
+     "maxW": 380,
+     "size": 46,
+     "in": "Sag Entschuldigung-0.1",
+     "out": "Tschuldigung"
+    },
+    {
+     "id": "b_tsch_s",
+     "type": "bubble",
+     "from": "moritz",
+     "text": "Tschuldigung.",
+     "x": 640,
+     "y": 1000,
+     "maxW": 320,
+     "size": 36,
+     "in": "Tschuldigung-0.05"
+    },
+    {
+     "id": "tag_hoch_s",
+     "type": "tag",
+     "text": "ein hoher Turm",
+     "x": 420,
+     "y": 1010,
+     "color": "plum",
+     "in": "hohen Turm",
+     "out": "kickt"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "moritz_k",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "x": 140,
+     "look": "right",
+     "mood": "neutral",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Jetzt ist der Ärger",
+       "mood": "smile"
+      },
+      {
+       "at": "Problem",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "pia_k",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#B5DFC9",
+     "pants": "#C9A3D9",
+     "scale": 0.8,
+     "x": 950,
+     "look": "left",
+     "mood": "sad",
+     "enter": "fade"
+    },
+    {
+     "id": "tag_oben_k",
+     "type": "tag",
+     "text": "ganz oben",
+     "x": 540,
+     "y": 500,
+     "color": "plum",
+     "in": "ganz oben"
+    },
+    {
+     "id": "n_ent_k",
+     "type": "node",
+     "x": 540,
+     "y": 600,
+     "w": 460,
+     "h": 124,
+     "label": "*Entschuldigung*",
+     "size": 58,
+     "color": "kids",
+     "in": "ganz oben",
+     "states": [
+      {
+       "at": "ganz oben",
+       "state": "glow"
+      },
+      {
+       "at": "kennt das Wort",
+       "state": "gold"
+      },
+      {
+       "at": "darunter",
+       "state": "normal"
+      },
+      {
+       "at": "Problem",
+       "state": "shake+red"
+      }
+     ]
+    },
+    {
+     "id": "g_kennt_k",
+     "type": "link",
+     "from": {
+      "x": 190,
+      "y": 1150
+     },
+     "to": "n_ent_k",
+     "style": "gold",
+     "in": "kennt das Wort",
+     "out": "darunter"
+    },
+    {
+     "id": "n_e0_k",
+     "type": "node",
+     "x": 200,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Problem",
+       "state": "empty+shake"
+      }
+     ],
+     "in": "darunter+0.00"
+    },
+    {
+     "id": "l_e0_k",
+     "type": "link",
+     "from": "n_ent_k",
+     "to": "n_e0_k",
+     "style": "dashed",
+     "in": "darunter+0.00"
+    },
+    {
+     "id": "n_e1_k",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Problem",
+       "state": "empty+shake"
+      }
+     ],
+     "in": "darunter+0.15"
+    },
+    {
+     "id": "l_e1_k",
+     "type": "link",
+     "from": "n_ent_k",
+     "to": "n_e1_k",
+     "style": "dashed",
+     "in": "darunter+0.15"
+    },
+    {
+     "id": "n_e2_k",
+     "type": "node",
+     "x": 880,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Problem",
+       "state": "empty+shake"
+      }
+     ],
+     "in": "darunter+0.30"
+    },
+    {
+     "id": "l_e2_k",
+     "type": "link",
+     "from": "n_ent_k",
+     "to": "n_e2_k",
+     "style": "dashed",
+     "in": "darunter+0.30"
+    },
+    {
+     "id": "tag_nichts_k",
+     "type": "tag",
+     "text": "darunter: nichts",
+     "x": 540,
+     "y": 990,
+     "color": "rose",
+     "in": "noch nichts"
+    },
+    {
+     "id": "k_vorbei_k",
+     "type": "card",
+     "lines": [
+      "Jetzt ist der Ärger",
+      "*vorbei*."
+     ],
+     "x": 560,
+     "y": 1180,
+     "size": 46,
+     "in": "Jetzt ist der Ärger",
+     "out": "Problem"
+    },
+    {
+     "id": "x_problem_k",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 800,
+     "y": 560,
+     "size": 64,
+     "in": "Problem"
+    }
+   ]
+  },
+  {
+   "at": "Pia hört das Wort",
+   "chord": "F#m",
+   "elements": [
+    {
+     "id": "fenster_r",
+     "type": "prop",
+     "kind": "window",
+     "x": 170,
+     "y": 690,
+     "w": 210,
+     "h": 190,
+     "enter": "fade"
+    },
+    {
+     "id": "sonne_r",
+     "type": "icon",
+     "kind": "sun",
+     "x": 205,
+     "y": 660,
+     "size": 54,
+     "enter": "fade"
+    },
+    {
+     "id": "uhr_r",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 590,
+     "w": 120,
+     "enter": "fade"
+    },
+    {
+     "id": "sofa_r",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 860,
+     "w": 420,
+     "h": 200,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_r0",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1478,
+     "w": 84,
+     "color": "people",
+     "rot": 0.08,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_r1",
+     "type": "prop",
+     "kind": "block",
+     "x": 320,
+     "y": 1478,
+     "w": 84,
+     "color": "fresh",
+     "rot": -0.35,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_r2",
+     "type": "prop",
+     "kind": "block",
+     "x": 525,
+     "y": 1478,
+     "w": 84,
+     "color": "idea",
+     "text": "A",
+     "rot": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_r3",
+     "type": "prop",
+     "kind": "block",
+     "x": 635,
+     "y": 1478,
+     "w": 84,
+     "color": "baby",
+     "text": "I",
+     "rot": 1.25,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_r4",
+     "type": "prop",
+     "kind": "block",
+     "x": 235,
+     "y": 1478,
+     "w": 84,
+     "color": "kids",
+     "text": "P",
+     "rot": -0.9,
+     "enter": "fade"
+    },
+    {
+     "id": "pia_r",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#B5DFC9",
+     "pants": "#C9A3D9",
+     "scale": 0.8,
+     "x": 150,
+     "look": "right",
+     "mood": "sad",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Jetzt kommt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "moritz_r",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "x": 760,
+     "look": "left",
+     "mood": "open",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "versteht die Welt",
+       "mood": "worried"
+      },
+      {
+       "at": "Jetzt kommt",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "versteht die Welt",
+       "kind": "shrug",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "ball_r",
+     "type": "prop",
+     "kind": "ball",
+     "w": 70,
+     "color": "#F4B98A",
+     "x": 690,
+     "enter": "fade"
+    },
+    {
+     "id": "tag_wort_r",
+     "type": "tag",
+     "text": "Tschuldigung",
+     "x": 700,
+     "y": 1010,
+     "color": "plum",
+     "in": "hört das Wort",
+     "moves": [
+      {
+       "at": "hört das Wort+0.2",
+       "x": 330,
+       "y": 1080,
+       "dur": 0.9
+      },
+      {
+       "at": "am Boden",
+       "x": 300,
+       "y": 1440,
+       "dur": 0.5
+      }
+     ]
+    },
+    {
+     "id": "k_fuer_r",
+     "type": "card",
+     "lines": [
+      "Für Moritz: vorbei.",
+      "Für Pia: *gar nichts*."
+     ],
+     "x": 540,
+     "y": 700,
+     "size": 48,
+     "in": "Für sie ist",
+     "out": "Weißt du noch"
+    },
+    {
+     "id": "rain_r",
+     "type": "icon",
+     "kind": "rain",
+     "x": 160,
+     "y": 1060,
+     "size": 90,
+     "in": "weint sie weiter",
+     "out": "Jetzt kommt"
+    },
+    {
+     "id": "q_mor_r",
+     "type": "icon",
+     "kind": "question",
+     "x": 760,
+     "y": 1020,
+     "size": 70,
+     "in": "versteht die Welt",
+     "out": "Weißt du noch"
+    },
+    {
+     "id": "bulb_r",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 540,
+     "y": 720,
+     "size": 90,
+     "in": "Weißt du noch"
+    },
+    {
+     "id": "tag_hilft_r",
+     "type": "tag",
+     "text": "was ihr hilft",
+     "x": 540,
+     "y": 830,
+     "color": "rose",
+     "in": "Jetzt kommt"
+    },
+    {
+     "id": "star_r",
+     "type": "icon",
+     "kind": "star",
+     "x": 480,
+     "y": 1300,
+     "size": 60,
+     "in": "Jetzt kommt"
+    }
+   ]
+  },
+  {
+   "at": "Mama fragt eine",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "uhr_h",
+     "type": "prop",
+     "kind": "clock",
+     "x": 910,
+     "y": 590,
+     "w": 120,
+     "enter": "fade"
+    },
+    {
+     "id": "sofa_h",
+     "type": "prop",
+     "kind": "sofa",
+     "x": 860,
+     "w": 420,
+     "h": 200,
+     "enter": "fade"
+    },
+    {
+     "id": "fb_h0",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1478,
+     "w": 84,
+     "color": "people",
+     "rot": 0.08,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "holt die Klötze",
+       "x": 420,
+       "y": 1478,
+       "rot": 0.0,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "fb_h1",
+     "type": "prop",
+     "kind": "block",
+     "x": 320,
+     "y": 1478,
+     "w": 84,
+     "color": "fresh",
+     "rot": -0.35,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "holt die Klötze+0.5",
+       "x": 420,
+       "y": 1394,
+       "rot": 0.0,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "fb_h2",
+     "type": "prop",
+     "kind": "block",
+     "x": 525,
+     "y": 1478,
+     "w": 84,
+     "color": "idea",
+     "text": "A",
+     "rot": 0.5,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Zusammen bauen",
+       "x": 420,
+       "y": 1310,
+       "rot": 0.0,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "fb_h3",
+     "type": "prop",
+     "kind": "block",
+     "x": 635,
+     "y": 1478,
+     "w": 84,
+     "color": "baby",
+     "text": "I",
+     "rot": 1.25,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Zusammen bauen+0.6",
+       "x": 420,
+       "y": 1226,
+       "rot": 0.0,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "fb_h4",
+     "type": "prop",
+     "kind": "block",
+     "x": 235,
+     "y": 1478,
+     "w": 84,
+     "color": "kids",
+     "text": "P",
+     "rot": -0.9,
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Turm wieder auf",
+       "x": 420,
+       "y": 1142,
+       "rot": 0.0,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "b_extra_h",
+     "type": "prop",
+     "kind": "block",
+     "x": 420,
+     "y": 1058,
+     "w": 84,
+     "color": "sage",
+     "enter": "hop",
+     "in": "noch höher"
+    },
+    {
+     "id": "star_top_h",
+     "type": "icon",
+     "kind": "star",
+     "x": 420,
+     "y": 934,
+     "size": 60,
+     "in": "end:noch höher"
+    },
+    {
+     "id": "ball_h",
+     "type": "prop",
+     "kind": "ball",
+     "w": 70,
+     "color": "#F4B98A",
+     "x": 690,
+     "enter": "fade"
+    },
+    {
+     "id": "pia_h",
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#B5DFC9",
+     "pants": "#C9A3D9",
+     "scale": 0.8,
+     "x": 150,
+     "look": "right",
+     "mood": "sad",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Zusammen bauen",
+       "mood": "smile"
+      },
+      {
+       "at": "noch höher",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "noch höher",
+       "kind": "cheer",
+       "dur": 1.6
+      }
+     ]
+    },
+    {
+     "id": "moritz_h",
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "x": 640,
+     "look": "left",
+     "mood": "neutral",
+     "enter": "fade",
+     "talk": [
+      [
+       "Mein Ball hat",
+       "end:Turm umgeworfen"
+      ],
+      [
+       "Sie ist traurig",
+       "end:lang gebaut"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "holt die Klötze",
+       "mood": "smile"
+      },
+      {
+       "at": "noch höher",
+       "mood": "happy"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "holt die Klötze",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "id": "mama_h",
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "dark",
+     "shirt": "#F7D9A0",
+     "pants": "#6B5B7B",
+     "x": 940,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "talk": [
+      [
+       "Was ist passiert",
+       "end:Was ist passiert"
+      ],
+      [
+       "Wie geht’s Pia",
+       "end:Wie geht’s Pia"
+      ],
+      [
+       "Was könnte ihr helfen",
+       "end:ihr helfen"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Was ist passiert",
+       "kind": "point",
+       "dur": 1.1
+      },
+      {
+       "at": "Wie geht’s Pia",
+       "kind": "point",
+       "dur": 1.1
+      },
+      {
+       "at": "Was könnte ihr helfen",
+       "kind": "point",
+       "dur": 1.1
+      }
+     ],
+     "moods": [
+      {
+       "at": "noch höher",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "n_ent_h",
+     "type": "node",
+     "x": 540,
+     "y": 600,
+     "w": 460,
+     "h": 124,
+     "label": "*Entschuldigung*",
+     "size": 58,
+     "color": "kids",
+     "enter": "fade",
+     "out": "mach’s wieder gut",
+     "states": [
+      {
+       "at": "start",
+       "state": "normal"
+      },
+      {
+       "at": "Jetzt hängt etwas",
+       "state": "glow"
+      }
+     ]
+    },
+    {
+     "id": "pf_tief_h",
+     "type": "arrow",
+     "from": {
+      "x": 540,
+      "y": 690
+     },
+     "to": {
+      "x": 540,
+      "y": 790
+     },
+     "style": "red",
+     "in": "Schublade tiefer",
+     "out": "Was ist passiert"
+    },
+    {
+     "id": "n_q0_h",
+     "type": "node",
+     "x": 200,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Was ist passiert",
+       "state": "empty+glow"
+      }
+     ],
+     "emptyLabel": "Was ist passiert?",
+     "in": "Was ist passiert",
+     "out": "Mein Ball hat",
+     "enter": "pop"
+    },
+    {
+     "id": "n_f0_h",
+     "type": "node",
+     "x": 200,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "*Turm* umgeworfen",
+     "size": 40,
+     "color": "fresh",
+     "in": "Mein Ball hat",
+     "states": [
+      {
+       "at": "Mein Ball hat",
+       "state": "glow"
+      },
+      {
+       "at": "Mein Ball hat+1.2",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "l_q0_h",
+     "type": "link",
+     "from": "n_ent_h",
+     "to": "n_q0_h",
+     "style": "dashed",
+     "in": "Was ist passiert",
+     "out": "Jetzt hängt etwas"
+    },
+    {
+     "id": "g0_h",
+     "type": "link",
+     "from": "n_f0_h",
+     "to": "n_gold_h",
+     "style": "gold",
+     "in": "Jetzt hängt etwas+0.20"
+    },
+    {
+     "id": "n_q1_h",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Wie geht’s Pia",
+       "state": "empty+glow"
+      }
+     ],
+     "emptyLabel": "Wie geht’s Pia?",
+     "in": "Wie geht’s Pia",
+     "out": "Sie ist traurig",
+     "enter": "pop"
+    },
+    {
+     "id": "n_f1_h",
+     "type": "node",
+     "x": 540,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "Pia ist *traurig*",
+     "size": 40,
+     "color": "baby",
+     "in": "Sie ist traurig",
+     "states": [
+      {
+       "at": "Sie ist traurig",
+       "state": "glow"
+      },
+      {
+       "at": "Sie ist traurig+1.2",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "l_q1_h",
+     "type": "link",
+     "from": "n_ent_h",
+     "to": "n_q1_h",
+     "style": "dashed",
+     "in": "Wie geht’s Pia",
+     "out": "Jetzt hängt etwas"
+    },
+    {
+     "id": "g1_h",
+     "type": "link",
+     "from": "n_f1_h",
+     "to": "n_gold_h",
+     "style": "gold",
+     "in": "Jetzt hängt etwas+0.45"
+    },
+    {
+     "id": "n_q2_h",
+     "type": "node",
+     "x": 880,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "",
+     "size": 40,
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "Was könnte ihr helfen",
+       "state": "empty+glow"
+      }
+     ],
+     "emptyLabel": "Was hilft ihr?",
+     "in": "Was könnte ihr helfen",
+     "out": "holt die Klötze",
+     "enter": "pop"
+    },
+    {
+     "id": "n_f2_h",
+     "type": "node",
+     "x": 880,
+     "y": 830,
+     "w": 300,
+     "h": 104,
+     "label": "*wieder* aufbauen",
+     "size": 40,
+     "color": "idea",
+     "in": "holt die Klötze",
+     "states": [
+      {
+       "at": "holt die Klötze",
+       "state": "glow"
+      },
+      {
+       "at": "holt die Klötze+1.2",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "l_q2_h",
+     "type": "link",
+     "from": "n_ent_h",
+     "to": "n_q2_h",
+     "style": "dashed",
+     "in": "Was könnte ihr helfen",
+     "out": "Jetzt hängt etwas"
+    },
+    {
+     "id": "g2_h",
+     "type": "link",
+     "from": "n_f2_h",
+     "to": "n_gold_h",
+     "style": "gold",
+     "in": "Jetzt hängt etwas+0.70"
+    },
+    {
+     "id": "fly_h",
+     "type": "prop",
+     "kind": "block",
+     "x": 635,
+     "y": 1478,
+     "w": 60,
+     "color": "idea",
+     "text": "A",
+     "rot": 1.25,
+     "z": 7.5,
+     "in": "holt die Klötze-0.3",
+     "out": "holt die Klötze+0.9",
+     "moves": [
+      {
+       "at": "holt die Klötze-0.25",
+       "x": 880,
+       "y": 860,
+       "rot": 0.0,
+       "dur": 0.6
+      }
+     ]
+    },
+    {
+     "id": "n_gold_h",
+     "type": "node",
+     "x": 540,
+     "y": 600,
+     "w": 520,
+     "h": 150,
+     "label": "*Entschuldigung*",
+     "sub": "Ich mach’s *wieder gut*.",
+     "size": 54,
+     "color": "idea",
+     "in": "mach’s wieder gut",
+     "states": [
+      {
+       "at": "mach’s wieder gut",
+       "state": "glow"
+      },
+      {
+       "at": "end:mach’s wieder gut",
+       "state": "gold+check"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Turm fällt um",
+   "x": 420,
+   "y": 1300
+  },
+  {
+   "at": "Sag Entschuldigung",
+   "x": 760,
+   "y": 880
+  },
+  {
+   "at": "ganz oben",
+   "x": 540,
+   "y": 620
+  },
+  {
+   "at": "noch nichts",
+   "x": 540,
+   "y": 850
+  },
+  {
+   "at": "Problem",
+   "x": 540,
+   "y": 620
+  },
+  {
+   "at": "weint sie weiter",
+   "x": 160,
+   "y": 1060
+  },
+  {
+   "at": "noch höher",
+   "x": 420,
+   "y": 1000
+  },
+  {
+   "at": "mach’s wieder gut",
+   "x": 540,
+   "y": 620
+  }
+ ]
+}

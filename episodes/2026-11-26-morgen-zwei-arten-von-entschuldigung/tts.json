@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Ohne dass ihn jemand bittet. Gestern hat er nur „Tschuldigung“ gemurmelt. Dazwischen liegen drei kleine Fragen. Moritz ist sieben, Pia ist vier. Gestern kickt Moritz seinen Ball, und Pias Turm fällt um. Mama sagt: „Sag Entschuldigung!“ Moritz murmelt: „Tschuldigung.“ Und Pia weint weiter. [pause] Schau dir das als Knoten an. „Entschuldigung“ liegt ganz oben. Moritz kennt das Wort, aber darunter ist es leer. Darum ist es für ihn nur ein Knopf: drücken, und der Ärger ist vorbei. [pause] Schau, was passiert, wenn Mama nur eine Sache ändert. [pause] Sie fragt nicht nach dem Wort. Sie fragt nach unten. „Was ist passiert?“ „Wie geht’s Pia?“ „Was könnte ihr helfen?“ Jede Frage füllt eine Schublade. Und auf einmal holt Moritz die Klötze. [pause] Es gibt zwei Arten von Entschuldigung. [pause] Die eine beendet den Ärger. Die andere macht etwas wieder gut. Die zweite braucht die Schubladen darunter. Heute stößt Moritz aus Versehen an den Turm. Diesmal holt er sofort die Klötze: „Tut mir leid. Ich bau ihn wieder auf.“ [pause] Welche Frage stellst du nach dem nächsten Streit? [pause] [pause] Folg mir, damit mehr Türme wieder aufgebaut werden.",
+ "hooks": {
+  "b": "[warmly] Moritz baut Pias Turm selbst wieder auf."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

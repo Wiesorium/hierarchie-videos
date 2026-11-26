@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Ich weiß, das sagen wir alle. Bleib bis zum Schluss, da kommen drei Fragen, die mehr bringen. Moritz ist sieben. Er kickt seinen Ball, und Pias Turm fällt um. Pia ist vier und weint. Mama sagt: „Sag Entschuldigung!“ Moritz murmelt: „Tschuldigung.“ [pause] Schau dir das als Knoten an. „Entschuldigung“ ist ein Wort von ganz oben. Darunter ist bei Moritz noch leer. Wenn wir nur das Wort verlangen, lernt er genau das: ein Wort, das den Ärger beendet. [pause] Also lauter? Klingt logisch, oder? Ist es aber nicht. [pause] Mama sagt: „Nochmal, und richtig!“ Jetzt ruft Moritz: „Entschuldigung!“ Das Wort wird lauter. Aber darunter bleibt es leer. Und Pia weint weiter. [pause] So. Jetzt der wichtige Teil. [pause] Frag eine Schublade tiefer. „Was ist passiert?“ „Wie geht’s Pia?“ Und Frage drei, die am meisten verändert: „Was könnte ihr helfen?“ Moritz überlegt. Dann holt er die Klötze. Zusammen bauen sie den Turm wieder auf. Jetzt hängt etwas unter dem Wort: „Ich mach’s wieder gut.“ [pause] Welche der drei Fragen probierst du als Erstes? [pause] [pause] Folg mir, wenn du auch schon „Sag Entschuldigung!“ gesagt hast.",
+ "hooks": {
+  "c": "[warmly] „Sag Entschuldigung!“ lehrt oft nur das Wort."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

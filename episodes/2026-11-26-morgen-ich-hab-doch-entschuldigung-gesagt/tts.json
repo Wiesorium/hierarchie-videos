@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das ruft Moritz. Er ist sieben. Und seine Schwester weint trotzdem. Was ihr wirklich hilft, zeig ich dir am Ende. Pia ist vier. Sie hat einen hohen Turm gebaut. Moritz kickt seinen Ball, und der Turm fällt um. Mama sagt: „Sag Entschuldigung!“ Moritz murmelt: „Tschuldigung.“ [pause] Schau dir das als Knoten an. „Entschuldigung“ ist ein Wort von ganz oben. Moritz kennt das Wort. Aber darunter ist noch nichts. Für ihn heißt es nur: Jetzt ist der Ärger vorbei. [pause] Aber genau da liegt das Problem. [pause] Pia hört das Wort. Aber ihr Turm liegt immer noch am Boden. Für sie ist gar nichts vorbei. Darum weint sie weiter. Und Moritz versteht die Welt nicht mehr. [pause] Weißt du noch, was ich am Anfang gesagt hab? Jetzt kommt, was ihr hilft. [pause] Mama fragt eine Schublade tiefer. „Was ist passiert?“ „Mein Ball hat den Turm umgeworfen.“ „Wie geht’s Pia?“ „Sie ist traurig. Sie hat so lang gebaut.“ „Was könnte ihr helfen?“ Moritz holt die Klötze. Zusammen bauen sie den Turm wieder auf, noch höher als vorher. Jetzt hängt etwas unter dem Wort: „Ich mach’s wieder gut.“ [pause] Was hat dein Kind zuletzt wiedergutgemacht? [pause] [pause] Folg mir, wenn bei euch auch manchmal Türme fallen.",
+ "hooks": {
+  "a": "[warmly] „Ich hab doch Entschuldigung gesagt!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
