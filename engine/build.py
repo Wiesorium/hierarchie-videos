@@ -24,7 +24,7 @@ GROUND_Y = 1478  # figures and floor props stand here when they have no y (engin
 TYPES = {'figure', 'prop', 'cabinet', 'tree', 'node', 'link', 'arrow', 'card', 'bubble', 'thought', 'stamp', 'tag', 'icon'}
 PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book', 'cup', 'plate', 'clock', 'sofa', 'tree', 'bench', 'door',
               'window', 'bed', 'car', 'laptop', 'ball', 'backpack', 'shelf', 'sign', 'tv', 'stars', 'pot',
-              'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt', 'paper', 'sink', 'box'}
+              'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt', 'paper', 'sink', 'box', 'block'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
          'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
@@ -275,7 +275,10 @@ def resolve(ep, sb, words, main_dur, hook_durs, hook_spans=None):
                 tgt.setdefault('_gestures', []).append({'t': T(g['at'], S0, S0, where + '.gestures'), 'kind': g['kind'], 'dur': g.get('dur', 1.4)})
             for mv in src.get('moves', []):
                 bx, by = tgt.get('x', 0), tgt.get('y', GROUND_Y if tgt['type'] in ('figure', 'prop') else 0)
-                tgt.setdefault('_moves', []).append({'t': T(mv['at'], S0, S0, where + '.moves'), 'dx': mv.get('x', bx) - bx, 'dy': mv.get('y', by) - by, 'dur': mv.get('dur', 0.8)})
+                mm = {'t': T(mv['at'], S0, S0, where + '.moves'), 'dx': mv.get('x', bx) - bx, 'dy': mv.get('y', by) - by, 'dur': mv.get('dur', 0.8)}
+                if mv.get('rot') is not None:  # props that turn while they move (block)
+                    mm['rot'] = float(mv['rot'])
+                tgt.setdefault('_moves', []).append(mm)
             for tk in src.get('talk', []):
                 a = T(tk[0] if isinstance(tk, list) else tk['from'], S0, S0, where + '.talk')
                 b = T(tk[1] if isinstance(tk, list) else tk['to'], a, a + 2, where + '.talk')

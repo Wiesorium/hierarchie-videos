@@ -1,5 +1,5 @@
 // The stage: the same pastel landscape in every video, plus simple paper props.
-import { W, H, GROUND, C, col, makeCanvas, shadow, rrect, fillShape, rng, richText, font, wrap, star5 } from './core.mjs';
+import { W, H, GROUND, C, col, makeCanvas, shadow, rrect, fillShape, rng, richText, font, wrap, star5, clamp, lerp, easeInOutCubic } from './core.mjs';
 import { drawBottle, drawCashew, drawSalt } from './elements.mjs';
 
 let BG = null;
@@ -395,6 +395,18 @@ const PROPS = {
       ctx.quadraticCurveTo(x + w / 2, top + bh, x, top + bh); ctx.quadraticCurveTo(x - w / 2, top + bh, x - w / 2, top); ctx.closePath(); }, C.paper, { depth: 0.8 });
     fillShape(ctx, () => rrect(ctx, x - w / 2 - 8, top - 12, w + 16, 22, 11), C.paper, { depth: 0.5 });
     ctx.save(); ctx.fillStyle = 'rgba(159,211,232,0.35)'; rrect(ctx, x - w / 2 + 14, top - 4, w - 28, 8, 4); ctx.fill(); ctx.restore();
+  },
+  // A wooden toy block standing on y (stack them: y - k * h), w × h (default 80 × w), pastel "color", a letter or short
+  // "text" on its pale face. "rot" tilts it around its centre; a move with "rot" turns it while it moves (a tower tumbles).
+  block(ctx, x, y, w = 80, h, p = {}, t = 0) {
+    h = h ?? w; let r = p.rot ?? 0;
+    for (const m of p._moves || []) { if (t < m.t) break; if (m.rot != null) r = lerp(r, m.rot, easeInOutCubic(clamp((t - m.t) / (m.dur || 0.8)))); }
+    const c1 = p.color ? col(p.color) : '#F9C6D3';
+    ctx.save(); ctx.translate(x, y - h / 2); ctx.rotate(r);
+    fillShape(ctx, () => rrect(ctx, -w / 2, -h / 2, w, h, Math.min(w, h) * 0.16), c1, { depth: 0.6 });
+    fillShape(ctx, () => rrect(ctx, -w / 2 + w * 0.13, -h / 2 + h * 0.13, w * 0.74, h * 0.74, Math.min(w, h) * 0.1), 'rgba(255,255,255,0.55)', { sh: false });
+    if (p.text) textLines(ctx, p.text, 0, h * 0.12, p.size || Math.round(Math.min(w, h) * 0.56), p.textColor ? col(p.textColor) : C.ink);
+    ctx.restore();
   },
   // A pile of sofa cushions on the ground (three, two, one); its top is at y - h, so a figure can stand on it with "y".
   cushions(ctx, x, y, w = 420, h = 250, p) {

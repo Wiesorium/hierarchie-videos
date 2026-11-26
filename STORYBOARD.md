@@ -114,7 +114,9 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
 Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen; `"potatoes": true` füllt sie mit Kartoffelsalat), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
 lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
-`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `box` (Spielzeugkiste aus Holz mit dunklem Rand, Oberkante y − h, `text` auf der
+`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `block` (Bauklotz aus Holz, Pastell-`color`, `w` × `h` (Standard 80 × w),
+Buchstabe oder kurzes `text` auf der hellen Seite; Turm: y = 1478 − k × h; `"rot"` kippt ihn um die Mitte, ein `moves`-Schritt mit `"rot"`
+dreht ihn beim Bewegen, so fällt ein Turm um), `box` (Spielzeugkiste aus Holz mit dunklem Rand, Oberkante y − h, `text` auf der
 hellen Vorderseite; was „drin“ liegen soll, bekommt ein kleineres `z` und schaut über den Rand), `car` (Auto; klein als Spielzeugauto,
 z. B. `"w": 150, "h": 70`, die Räder wachsen mit), `sink` (Waschbecken auf einer Säule mit Wasserhahn, Rand bei y − h; `"mirror": true` hängt einen Spiegel darüber, Höhe `"mirrorH"`), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
 `"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber, `"potatoes": true` häuft Kartoffelsalat darauf), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
