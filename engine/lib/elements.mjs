@@ -271,11 +271,107 @@ export function drawIcon(ctx, e, t) {
     case 'toothbrush': drawToothbrush(ctx, x, y, s, e.rot ?? 0, c, e.look === 'left', e.paste !== false, e.brush ? t : null); break;
     case 'cashew': drawCashew(ctx, x - s * 0.16, y - s * 0.04, s * 0.95, -0.5, c || '#E6C38C', true); drawCashew(ctx, x + s * 0.2, y + s * 0.12, s * 0.8, 0.9, c || '#E6C38C', true); break;
     case 'salt': drawSalt(ctx, x, e.pour ? y : y + s * 0.5, s * 0.55, s, !!e.pour, t, c); break;
+    case 'penguin': drawPenguin(ctx, x, y, s, c, e.look === 'left', t, e); break;
+    case 'bird': drawBird(ctx, x, y, s, c, e.look === 'left', t, e); break;
+    case 'bat': drawBat(ctx, x, y, s, c, t, e); break;
+    case 'feather': drawFeather(ctx, x, y, s, c, e.rot ?? -0.5); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
-export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush'];
+export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
+  'penguin', 'bird', 'bat', 'feather'];
+
+const BEAK = '#F4A259';
+
+// A paper-cut penguin, `s` tall, centred at (x, y) (feet at y + 0.5 s), facing right unless flipped.
+// "walk": true waddles, "flap": true flaps the flipper, "swim": true lies flat in the water and bobs.
+function drawPenguin(ctx, x, y, s, c, flip, t = 0, e = {}) {
+  const dark = c || '#55486B';
+  ctx.save(); ctx.translate(x, y); if (flip) ctx.scale(-1, 1);
+  if (e.swim) { ctx.translate(0, Math.sin(t * 3) * s * 0.025); ctx.rotate(1.25); ctx.translate(0, -s * 0.1); }
+  else if (e.walk) { ctx.translate(0, s * 0.5); ctx.rotate(Math.sin(t * 7) * 0.08); ctx.translate(0, -s * 0.5); }
+  if (!e.swim) for (const fx of [-0.11, 0.12]) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(fx * s, s * 0.47, s * 0.11, s * 0.04, 0, 0, 7); }, BEAK, { depth: 0.3 });
+  // back flipper behind the body
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(s * 0.2, s * 0.04, s * 0.06, s * 0.2, -0.35, 0, 7); }, dark, { depth: 0.3 });
+  // body with the white belly and face
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, s * 0.03, s * 0.29, s * 0.44, 0, 0, 7); }, dark, { depth: 0.7 });
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(s * 0.07, s * 0.07, s * 0.2, s * 0.35, 0.05, 0, 7); }, '#FFFDF8', { sh: false });
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(s * 0.1, -s * 0.24, s * 0.12, s * 0.1, 0, 0, 7); }, '#FFFDF8', { sh: false });
+  // beak, eye, cheek
+  fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(s * 0.2, -s * 0.27); ctx.lineTo(s * 0.37, -s * 0.22); ctx.lineTo(s * 0.2, -s * 0.18); ctx.closePath(); }, BEAK, { depth: 0.3 });
+  ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(s * 0.12, -s * 0.27, s * 0.026, 0, 7); ctx.fill();
+  ctx.fillStyle = C.cheek; ctx.globalAlpha *= 0.65; ctx.beginPath(); ctx.ellipse(s * 0.15, -s * 0.17, s * 0.04, s * 0.025, 0, 0, 7); ctx.fill(); ctx.globalAlpha /= 0.65;
+  // front flipper
+  const fa = 0.25 + (e.flap ? Math.sin(t * 13) * 0.45 + 0.35 : 0);
+  ctx.save(); ctx.translate(-s * 0.2, -s * 0.08); ctx.rotate(fa);
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, s * 0.17, s * 0.065, s * 0.2, 0, 0, 7); }, dark, { depth: 0.4 });
+  ctx.restore();
+  ctx.restore();
+}
+
+// A round paper songbird, `s` wide, centred at (x, y), facing right unless flipped; `color` paints the body
+// (dark for a blackbird, grey for a pigeon, brown for a sparrow). "fly": true flaps its wing and hides the legs.
+function drawBird(ctx, x, y, s, c, flip, t = 0, e = {}) {
+  const body = c || '#9C86B8';
+  ctx.save(); ctx.translate(x, y); if (flip) ctx.scale(-1, 1);
+  if (e.fly) ctx.translate(0, Math.sin(t * 6) * s * 0.04);
+  if (!e.fly) { ctx.strokeStyle = '#D9934A'; ctx.lineWidth = Math.max(2, s * 0.035); ctx.lineCap = 'round';
+    for (const lx of [-0.02, 0.1]) { ctx.beginPath(); ctx.moveTo(lx * s, s * 0.22); ctx.lineTo(lx * s, s * 0.36); ctx.lineTo(lx * s + s * 0.05, s * 0.37); ctx.stroke(); } }
+  fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(-s * 0.26, -s * 0.04); ctx.lineTo(-s * 0.6, -s * 0.2); ctx.lineTo(-s * 0.56, s * 0.06); ctx.closePath(); }, body, { depth: 0.4 });
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, 0, s * 0.34, s * 0.26, -0.1, 0, 7); ctx.moveTo(s * 0.46, -s * 0.2); ctx.arc(s * 0.27, -s * 0.2, s * 0.19, 0, 7); }, body, { depth: 0.6 });
+  ctx.fillStyle = 'rgba(255,255,255,0.32)'; ctx.beginPath(); ctx.ellipse(s * 0.08, s * 0.09, s * 0.2, s * 0.12, -0.1, 0, 7); ctx.fill();
+  fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(s * 0.43, -s * 0.25); ctx.lineTo(s * 0.6, -s * 0.19); ctx.lineTo(s * 0.43, -s * 0.13); ctx.closePath(); }, e.beak ? col(e.beak) : BEAK, { depth: 0.3 });
+  ctx.fillStyle = C.paper; ctx.beginPath(); ctx.arc(s * 0.32, -s * 0.24, s * 0.05, 0, 7); ctx.fill();
+  ctx.fillStyle = C.ink; ctx.beginPath(); ctx.arc(s * 0.335, -s * 0.24, s * 0.028, 0, 7); ctx.fill();
+  const wa = e.fly ? Math.sin(t * 14) * 0.7 - 0.2 : -0.15;
+  ctx.save(); ctx.translate(-s * 0.02, -s * 0.04); ctx.rotate(wa);
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(-s * 0.1, 0, s * 0.22, s * 0.12, 0, 0, 7); }, 'rgba(58,40,64,0.22)', { sh: false });
+  ctx.restore();
+  ctx.restore();
+}
+
+// A paper-cut bat, `s` wide with wings spread, centred at (x, y); the wings flap. "hang": true hangs it upside down
+// with folded wings (y is then the point where its feet hold on, the body hangs below).
+function drawBat(ctx, x, y, s, c, t = 0, e = {}) {
+  const fur = c || '#7B6A93', wing = '#A796BE';
+  ctx.save(); ctx.translate(x, y);
+  if (e.hang) {
+    ctx.translate(0, s * 0.34); ctx.rotate(Math.PI + Math.sin(t * 1.6) * 0.05);
+    ctx.strokeStyle = fur; ctx.lineWidth = Math.max(3, s * 0.03); ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(-s * 0.04, s * 0.16); ctx.lineTo(-s * 0.05, s * 0.34); ctx.moveTo(s * 0.04, s * 0.16); ctx.lineTo(s * 0.05, s * 0.34); ctx.stroke();
+    for (const side of [-1, 1]) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(side * s * 0.1, s * 0.02, s * 0.08, s * 0.2, side * -0.12, 0, 7); }, wing, { depth: 0.4 });
+  } else {
+    ctx.translate(0, Math.sin(t * 5) * s * 0.03);
+    const f = Math.sin(t * 10) * s * 0.12;
+    for (const side of [-1, 1]) fillShape(ctx, () => {
+      ctx.beginPath(); ctx.moveTo(side * s * 0.06, -s * 0.1);
+      ctx.quadraticCurveTo(side * s * 0.28, -s * 0.24 - f * 0.5, side * s * 0.5, -s * 0.16 - f);
+      const tips = [[0.42, 0.02], [0.3, 0.0], [0.18, 0.06]];
+      let px = side * s * 0.5, py = -s * 0.16 - f;
+      for (const [tx, ty] of tips) { const nx = side * s * tx, ny = s * ty - f * (tx / 0.5); ctx.quadraticCurveTo((px + nx) / 2, (py + ny) / 2 - s * 0.07, nx, ny); px = nx; py = ny; }
+      ctx.quadraticCurveTo(side * s * 0.1, s * 0.0, side * s * 0.06, s * 0.08); ctx.closePath();
+    }, wing, { depth: 0.5 });
+  }
+  // ears, head and body
+  fillShape(ctx, () => { ctx.beginPath(); for (const side of [-1, 1]) { ctx.moveTo(side * s * 0.03, -s * 0.24); ctx.lineTo(side * s * 0.09, -s * 0.36); ctx.lineTo(side * s * 0.11, -s * 0.21); ctx.closePath(); } }, fur, { depth: 0.3 });
+  fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, s * 0.02, s * 0.1, s * 0.16, 0, 0, 7); ctx.moveTo(s * 0.11, -s * 0.19); ctx.arc(0, -s * 0.19, s * 0.11, 0, 7); }, fur, { depth: 0.6 });
+  ctx.fillStyle = C.paper; for (const side of [-1, 1]) { ctx.beginPath(); ctx.arc(side * s * 0.04, -s * 0.2, s * 0.026, 0, 7); ctx.fill(); }
+  ctx.fillStyle = C.ink; for (const side of [-1, 1]) { ctx.beginPath(); ctx.arc(side * s * 0.04, -s * 0.2, s * 0.014, 0, 7); ctx.fill(); }
+  ctx.fillStyle = C.cheek; ctx.globalAlpha *= 0.6; for (const side of [-1, 1]) { ctx.beginPath(); ctx.ellipse(side * s * 0.075, -s * 0.15, s * 0.022, s * 0.014, 0, 0, 7); ctx.fill(); } ctx.globalAlpha /= 0.6;
+  ctx.restore();
+}
+
+// A paper feather, `s` long, centred at (x, y), tilted by `rot` (radians), with a white quill and a few notches.
+function drawFeather(ctx, x, y, s, c, rot) {
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+  fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(0, -s * 0.5); ctx.bezierCurveTo(s * 0.22, -s * 0.3, s * 0.2, s * 0.12, 0, s * 0.36); ctx.bezierCurveTo(-s * 0.2, s * 0.12, -s * 0.22, -s * 0.3, 0, -s * 0.5); }, c ? c : '#9FC9E8', { depth: 0.5 });
+  ctx.strokeStyle = 'rgba(255,255,255,0.85)'; ctx.lineCap = 'round'; ctx.lineWidth = Math.max(2, s * 0.035);
+  ctx.beginPath(); ctx.moveTo(0, s * 0.5); ctx.lineTo(0, -s * 0.44); ctx.stroke();
+  ctx.lineWidth = Math.max(1.5, s * 0.02);
+  for (const [yy, side] of [[-0.12, 1], [0.08, -1], [0.16, 1]]) { ctx.beginPath(); ctx.moveTo(0, s * yy); ctx.lineTo(side * s * 0.15, s * (yy - 0.08)); ctx.stroke(); }
+  ctx.restore();
+}
 
 // A paper-cut spoon: its round bowl centred at (x, y), the handle pointing away at angle `rot` (0 = straight down,
 // negative = down to the left). `food`: a colour puts a little bite in the bowl.

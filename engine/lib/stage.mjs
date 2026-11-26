@@ -408,6 +408,22 @@ const PROPS = {
     if (p.text) textLines(ctx, p.text, 0, h * 0.12, p.size || Math.round(Math.min(w, h) * 0.56), p.textColor ? col(p.textColor) : C.ink);
     ctx.restore();
   },
+  // A zoo pool: a flat oval of water centred at (x, y) (default just below the ground line), w wide and h high, with
+  // pale rocks along its back edge ("rocks": false leaves them out) and slow white ripples.
+  pool(ctx, x, y, w = 520, h = 120, p = {}, t = 0) {
+    if (y === GROUND) y = GROUND + h * 0.18;
+    if (p.rocks !== false) for (const [ox, oy, rx, ry] of [[-0.42, -0.36, 0.11, 0.42], [-0.22, -0.48, 0.14, 0.5], [0.04, -0.5, 0.12, 0.42], [0.27, -0.46, 0.15, 0.55], [0.45, -0.3, 0.09, 0.36]])
+      fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x + ox * w, y + oy * h, rx * w, ry * h, 0, Math.PI, 0); ctx.closePath(); }, '#D8CFE2', { depth: 0.6 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, y, w / 2, h / 2, 0, 0, Math.PI * 2); }, '#F4EFE6', { depth: 0.7 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(x, y + h * 0.04, w / 2 - 16, h / 2 - 12, 0, 0, Math.PI * 2); }, C.water1, { sh: false });
+    ctx.save(); ctx.beginPath(); ctx.ellipse(x, y + h * 0.04, w / 2 - 16, h / 2 - 12, 0, 0, Math.PI * 2); ctx.clip();
+    ctx.fillStyle = C.water2; ctx.beginPath(); ctx.ellipse(x, y + h * 0.3, w * 0.42, h * 0.32, 0, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.7)'; ctx.lineWidth = 5; ctx.lineCap = 'round';
+    for (const [ox, oy, lw, ph] of [[-0.25, -0.08, 0.14, 0], [0.12, 0.12, 0.18, 1.7], [0.3, -0.12, 0.1, 3.1]]) {
+      const dx = Math.sin(t * 0.9 + ph) * w * 0.02; ctx.beginPath(); ctx.moveTo(x + ox * w + dx, y + oy * h); ctx.lineTo(x + (ox + lw) * w + dx, y + oy * h); ctx.stroke();
+    }
+    ctx.restore();
+  },
   // A pile of sofa cushions on the ground (three, two, one); its top is at y - h, so a figure can stand on it with "y".
   cushions(ctx, x, y, w = 420, h = 250, p) {
     const cols = p.colors || ['#F9C6D3', '#C9A3D9', '#BFD9F2', '#FBE3A0', '#B5DFC9', '#F8D5C8'];

@@ -114,7 +114,7 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 Tür an `"doorSide"` `left`/`right`), `bowl` (Salatschüssel; `"leaves": false` = leer; `"soup": "#F6D27A"` füllt sie mit Suppe samt
 Karottenwürfeln und Lauchringen, `"steam": true` lässt sie dampfen; `"potatoes": true` füllt sie mit Kartoffelsalat), `salt` (Salzstreuer; `"pour": true` hängt ihn kopfüber, schüttelt ihn und
 lässt Salz rieseln, y ist dann die Spitze des Deckels), `bottle` (Flasche mit Korken, `text` aufs Etikett),
-`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `block` (Bauklotz aus Holz, Pastell-`color`, `w` × `h` (Standard 80 × w),
+`cushions` (Polsterberg aus sechs Kissen, Oberkante y − h), `pool` (Tiergarten-Becken: flaches Wasser-Oval, w breit, h hoch, mit hellen Felsen am hinteren Rand, `"rocks": false` ohne; ohne y knapp unter der Grundlinie; ein Pinguin steht mit y ≈ 1300 auf den Felsen), `block` (Bauklotz aus Holz, Pastell-`color`, `w` × `h` (Standard 80 × w),
 Buchstabe oder kurzes `text` auf der hellen Seite; Turm: y = 1478 − k × h; `"rot"` kippt ihn um die Mitte, ein `moves`-Schritt mit `"rot"`
 dreht ihn beim Bewegen, so fällt ein Turm um), `box` (Spielzeugkiste aus Holz mit dunklem Rand, Oberkante y − h, `text` auf der
 hellen Vorderseite; was „drin“ liegen soll, bekommt ein kleineres `z` und schaut über den Rand), `car` (Auto; klein als Spielzeugauto,
@@ -184,7 +184,12 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   `salt` (Salzstreuer; `"pour": true` dreht ihn kopfüber und lässt Salz rieseln, y = Deckelspitze, das Salz fällt nach unten),
   `toothbrush` (Zahnbürste; x/y = Mitte der Borsten, Stiel nach rechts, `"look": "left"` spiegelt, `"rot"` dreht
   (positiv = Stiel nach unten), `"paste": false` ohne Zahnpasta, `"brush": true` schrubbt hin und her), `spoon` (Löffel; x/y = Mitte der Löffelschale, `"rot"` dreht den Stiel: 0 = nach unten, positiv = nach links unten;
-  `"food"`: Farbe für einen Bissen darauf); `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
+  `"food"`: Farbe für einen Bissen darauf), `penguin` (Pinguin, size = Höhe, y = Mitte, Füße bei y + 0,5 × size, schaut nach rechts, `"look": "left"` spiegelt;
+  `"walk": true` watschelt, `"flap": true` schlägt mit der Flosse, `"swim": true` liegt im Wasser und schaukelt, z. B. mit y knapp unter der Grundlinie über einem `pool`;
+  neben Figuren `"z": 3`), `bird` (runder Singvogel, size = Breite, `color` = Gefieder: Amsel `#4E4352`, Taube `#B7B3C8`, Spatz `#B48A66`;
+  `"fly": true` flattert ohne Beine, `"beak"` färbt den Schnabel), `bat` (Fledermaus, size = Spannweite, flattert; `"hang": true` hängt kopfüber mit
+  angelegten Flügeln, y = Punkt, an dem sie sich festhält, z. B. unter einem `tree`), `feather` (Feder, size = Länge, `"rot"` neigt sie, Standard −0,5);
+  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin` und `feather`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
   (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
