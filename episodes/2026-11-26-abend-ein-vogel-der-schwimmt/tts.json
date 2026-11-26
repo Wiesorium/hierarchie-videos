@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Sie ist fünf. Vor einer Stunde hat sie im Tiergarten noch gerufen: „Ein Pinguin ist doch kein Vogel!“ Jetzt sagt sie: „Ein Vogel, der schwimmt.“ Dazwischen liegt eine einzige Frage. [pause] Schau dir das als Knoten an. Oben hängt das Wort „Vogel“. Darunter hat Lotta Amsel, Taube und Spatz. Die fliegen alle. Also trägt bei ihr eine Schublade das ganze Wort: „fliegt“. Der Pinguin fliegt nicht. Also fällt er durch. [pause] Das ist, was ich die tragende Schublade nenne. [pause] Jedes Wort hängt an einer. Kinder nehmen oft die, die man am leichtesten sieht. Fliegen sieht man sofort. Federn muss man suchen. Papa sagt deshalb nicht: „Doch, ist er.“ Er fragt nach unten: „Was haben Amsel, Taube und Spatz am Körper?“ [pause] Und jetzt wird’s spannend. [pause] Lotta schaut genau hin. „Federn!“ „Und der Pinguin?“ „Auch Federn!“ Jetzt trägt „Federn“ das Wort. „Fliegt“ rutscht zur Seite: Viele Vögel fliegen, aber nicht alle. Und bei der Fledermaus sagt Lotta ganz allein: „Die hat ja Fell. Kein Vogel.“ [pause] Was fragst du, wenn dein Kind etwas falsch einsortiert? [pause] [pause] Folg mir, damit mehr Kinder selbst umsortieren.",
+ "hooks": {
+  "b": "[warmly] Lotta sortiert den Pinguin selbst um."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

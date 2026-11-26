@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Ich weiß, das sagen wir alle. Was stattdessen hilft, zeig ich dir am Ende. Lotta ist fünf. Im Tiergarten zeigt Papa auf einen Pinguin: „Schau, ein Vogel!“ Lotta sagt: „Der kann ja gar nicht fliegen.“ Und Papa sagt: „Doch, das ist ein Vogel.“ [pause] Schau dir das als Knoten an. Papa korrigiert das Wort ganz oben. Aber Lotta hat „Vogel“ von unten gebaut: aus Amsel, Taube und Spatz. Die fliegen alle. Also hängt das Wort bei ihr an der Schublade „fliegt“. Und die bleibt, wie sie war. [pause] Warte, es wird noch schlimmer. [pause] Gleich daneben hängt eine Fledermaus. Lotta ruft: „Da, ein Vogel!“ Die fliegt ja. Papa korrigiert wieder: „Nein, das ist kein Vogel.“ Für Lotta passt jetzt gar nichts mehr. Der Pinguin fliegt nicht und ist ein Vogel. Die Fledermaus fliegt und ist keiner. [pause] Ich zeig dir, wie das konkret aussieht. [pause] Frag eine Schublade tiefer. „Was haben Amsel, Taube und Spatz am Körper?“ „Federn.“ „Und der Pinguin?“ „Auch Federn!“ „Und die Fledermaus?“ „Fell.“ Jetzt sortiert Lotta selbst um. „Vogel“ hängt an „Federn“. Und „fliegt“ rutscht zur Seite: Viele Vögel fliegen, aber nicht alle. [pause] Welches Wort korrigierst du nächstes Mal mit einer Frage? [pause] [pause] Folg mir, wenn du lieber fragst als korrigierst.",
+ "hooks": {
+  "c": "[warmly] „Doch, das ist ein Vogel!“ reicht nicht."
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

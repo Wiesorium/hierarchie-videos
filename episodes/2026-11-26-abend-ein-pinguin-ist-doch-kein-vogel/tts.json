@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das sagt Lotta. Sie ist fünf. Und sie hat einen guten Grund. Wie Papa das löst, zeig ich dir am Ende. Lotta und Papa sind im Tiergarten. Ein Pinguin watschelt über die Felsen. Papa sagt: „Schau, ein Vogel!“ Lotta sagt: „Der kann ja gar nicht fliegen.“ [pause] Schau dir das als Knoten an. „Vogel“ ist ein Wort von oben. Lotta hat es von unten gebaut: aus Amsel, Taube und Spatz. Die fliegen alle. Also hängt das Wort bei ihr an einer Schublade: „fliegt“. Der Pinguin fliegt nicht. Also fällt er durch. [pause] Klingt logisch, oder? Ist es aber nicht. [pause] Papa sagt: „Doch, der ist ein Vogel.“ Lotta nickt. Gleich daneben hängt eine Fledermaus. Lotta ruft: „Da, noch ein Vogel!“ Die fliegt ja. Das Wort hat Papa korrigiert. Die Schublade darunter nicht. [pause] Weißt du noch, was ich am Anfang gesagt hab? Jetzt kommt, wie Papa das löst. [pause] Papa fragt eine Schublade tiefer. „Was hat die Amsel am Körper?“ „Federn.“ „Und der Pinguin?“ Lotta schaut genau hin. „Auch Federn!“ „Und die Fledermaus?“ „Fell!“ Jetzt hängt „Vogel“ an einer neuen Schublade: „Federn“. Und Lotta lacht: „Dann ist der Pinguin ein Vogel, der schwimmt!“ [pause] Woran erkennt dein Kind einen Vogel? [pause] [pause] Folg mir, wenn dein Kind auch für alles einen Grund hat.",
+ "hooks": {
+  "a": "[warmly] „Ein Pinguin ist doch kein Vogel!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}

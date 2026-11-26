@@ -1,0 +1,1351 @@
+{
+ "slug": "doch-das-ist-ein-vogel",
+ "title": "„Doch, das ist ein Vogel!“",
+ "cta": "follow",
+ "hero": "papa",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "„Doch, das ist ein Vogel!“ reicht nicht.",
+   "card": [
+    "Wort richtig.",
+    "*Schublade falsch.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Ich weiß, das sagen wir alle. Was stattdessen hilft, zeig ich dir am Ende. Lotta ist fünf. Im Tiergarten zeigt Papa auf einen Pinguin: „Schau, ein Vogel!“ Lotta sagt: „Der kann ja gar nicht fliegen.“ Und Papa sagt: „Doch, das ist ein Vogel.“",
+  "block1": "Schau dir das als Knoten an. Papa korrigiert das Wort ganz oben. Aber Lotta hat „Vogel“ von unten gebaut: aus Amsel, Taube und Spatz. Die fliegen alle. Also hängt das Wort bei ihr an der Schublade „fliegt“. Und die bleibt, wie sie war.",
+  "rehook1": "Warte, es wird noch schlimmer.",
+  "block2": "Gleich daneben hängt eine Fledermaus. Lotta ruft: „Da, ein Vogel!“ Die fliegt ja. Papa korrigiert wieder: „Nein, das ist kein Vogel.“ Für Lotta passt jetzt gar nichts mehr. Der Pinguin fliegt nicht und ist ein Vogel. Die Fledermaus fliegt und ist keiner.",
+  "rehook2": "Ich zeig dir, wie das konkret aussieht.",
+  "block3": "Frag eine Schublade tiefer. „Was haben Amsel, Taube und Spatz am Körper?“ „Federn.“ „Und der Pinguin?“ „Auch Federn!“ „Und die Fledermaus?“ „Fell.“ Jetzt sortiert Lotta selbst um. „Vogel“ hängt an „Federn“. Und „fliegt“ rutscht zur Seite: Viele Vögel fliegen, aber nicht alle.",
+  "closing": "Welches Wort korrigierst du nächstes Mal mit einer Frage?",
+  "cta": "Folg mir, wenn du lieber fragst als korrigierst."
+ },
+ "question": [
+  "Welches Wort korrigierst du",
+  "nächstes Mal mit einer Frage?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du lieber fragst",
+   "als korrigierst"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "Bm",
+   "elements": [
+    {
+     "id": "pool",
+     "type": "prop",
+     "kind": "pool",
+     "x": 760,
+     "w": 470,
+     "h": 130
+    },
+    {
+     "id": "ping",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 650,
+     "y": 1300,
+     "size": 170,
+     "z": 3,
+     "walk": true
+    },
+    {
+     "id": "swim",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 880,
+     "y": 1488,
+     "size": 110,
+     "swim": true,
+     "z": 0.5
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "papa",
+     "x": 170,
+     "look": "right",
+     "mood": "open",
+     "gestures": [
+      {
+       "at": "@-1.9",
+       "kind": "point",
+       "dur": 1.6
+      }
+     ],
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "dark",
+     "shirt": "#F9C6D3",
+     "pants": "#86A6D8",
+     "scale": 0.85,
+     "id": "lotta",
+     "x": 370,
+     "look": "right",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Doch, das ist ein *Vogel*!",
+     "x": 360,
+     "y": 860,
+     "maxW": 340,
+     "size": 46,
+     "in": "@-2.0",
+     "out": "@0.3"
+    },
+    {
+     "id": "tag_alle",
+     "type": "tag",
+     "text": "sagen wir alle",
+     "x": 560,
+     "y": 800,
+     "color": "plum",
+     "in": "sagen wir alle"
+    },
+    {
+     "id": "bulb_ende",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 560,
+     "y": 940,
+     "size": 80,
+     "in": "stattdessen hilft"
+    },
+    {
+     "id": "tag_ende",
+     "type": "tag",
+     "text": "am Ende",
+     "x": 560,
+     "y": 1040,
+     "color": "rose",
+     "in": "am Ende"
+    }
+   ]
+  },
+  {
+   "at": "Lotta ist",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "pool",
+     "type": "prop",
+     "kind": "pool",
+     "x": 760,
+     "w": 470,
+     "h": 130
+    },
+    {
+     "id": "ping",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 650,
+     "y": 1300,
+     "size": 170,
+     "z": 3,
+     "walk": true,
+     "moves": [
+      {
+       "at": "zeigt Papa",
+       "x": 790,
+       "y": 1300,
+       "dur": 2.2
+      }
+     ]
+    },
+    {
+     "id": "swim",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 880,
+     "y": 1488,
+     "size": 110,
+     "swim": true,
+     "z": 0.5
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "papa",
+     "x": 170,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Schau ein Vogel",
+       "kind": "point",
+       "dur": 1.4
+      },
+      {
+       "at": "Doch das ist",
+       "kind": "raise",
+       "dur": 1.4
+      }
+     ],
+     "talk": [
+      [
+       "Schau ein Vogel",
+       "end:Schau ein Vogel"
+      ],
+      [
+       "Doch das ist",
+       "end:ist ein Vogel"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "Der kann ja",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "dark",
+     "shirt": "#F9C6D3",
+     "pants": "#86A6D8",
+     "scale": 0.85,
+     "id": "lotta",
+     "x": 370,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Der kann ja",
+       "mood": "neutral"
+      },
+      {
+       "at": "Doch das ist",
+       "mood": "worried"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Der kann ja",
+       "kind": "shrug",
+       "dur": 1.5
+      }
+     ],
+     "talk": [
+      [
+       "Der kann ja",
+       "end:nicht fliegen"
+      ]
+     ]
+    },
+    {
+     "id": "tag_lotta",
+     "type": "tag",
+     "text": "Lotta, fünf",
+     "x": 400,
+     "y": 1130,
+     "color": "plum",
+     "in": "Lotta ist",
+     "out": "Im Tiergarten"
+    },
+    {
+     "id": "tag_zoo",
+     "type": "tag",
+     "text": "im Tiergarten",
+     "x": 540,
+     "y": 760,
+     "color": "plum",
+     "in": "Im Tiergarten",
+     "out": "Schau ein Vogel"
+    },
+    {
+     "id": "b_schau",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Schau, ein *Vogel*!",
+     "x": 330,
+     "y": 880,
+     "maxW": 320,
+     "size": 46,
+     "in": "Schau ein Vogel-0.1",
+     "out": "Der kann ja"
+    },
+    {
+     "id": "b_kann",
+     "type": "bubble",
+     "from": "lotta",
+     "text": "Der kann ja gar nicht *fliegen*.",
+     "x": 600,
+     "y": 1010,
+     "maxW": 360,
+     "size": 44,
+     "in": "Der kann ja-0.1",
+     "out": "Und Papa sagt"
+    },
+    {
+     "id": "b_doch",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Doch, das ist ein *Vogel*.",
+     "x": 360,
+     "y": 870,
+     "maxW": 340,
+     "size": 44,
+     "in": "Doch das ist-0.1"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "Em",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "dark",
+     "shirt": "#F9C6D3",
+     "pants": "#86A6D8",
+     "scale": 0.85,
+     "id": "lotta_k",
+     "x": 120,
+     "look": "right",
+     "mood": "neutral",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "noch schlimmer",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "papa_k",
+     "x": 950,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "gestures": [
+      {
+       "at": "korrigiert das Wort",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "id": "n_vogel_k",
+     "type": "node",
+     "x": 540,
+     "y": 540,
+     "w": 360,
+     "h": 118,
+     "label": "*Vogel*",
+     "size": 60,
+     "color": "idea",
+     "states": [
+      {
+       "at": "Wort ganz oben",
+       "state": "glow"
+      },
+      {
+       "at": "Wort ganz oben+0.9",
+       "state": "check"
+      },
+      {
+       "at": "von unten",
+       "state": "normal"
+      }
+     ],
+     "in": "Wort ganz oben",
+     "enter": "pop"
+    },
+    {
+     "id": "n_amsel_k",
+     "type": "node",
+     "x": 195,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Amsel",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#4E4352",
+     "in": "Amsel"
+    },
+    {
+     "id": "n_taube_k",
+     "type": "node",
+     "x": 420,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Taube",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#B7B3C8",
+     "in": "Taube"
+    },
+    {
+     "id": "n_spatz_k",
+     "type": "node",
+     "x": 645,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Spatz",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#B48A66",
+     "in": "Spatz"
+    },
+    {
+     "id": "n_fliegt_k",
+     "type": "node",
+     "x": 540,
+     "y": 730,
+     "w": 240,
+     "h": 100,
+     "label": "fliegt",
+     "size": 46,
+     "color": "baby",
+     "states": [
+      {
+       "at": "Schublade fliegt",
+       "state": "glow"
+      },
+      {
+       "at": "bleibt wie sie war",
+       "state": "heavy"
+      },
+      {
+       "at": "noch schlimmer",
+       "state": "shake+red"
+      }
+     ],
+     "in": "Schublade fliegt"
+    },
+    {
+     "id": "l_vf_k",
+     "type": "link",
+     "from": "n_vogel_k",
+     "to": "n_fliegt_k",
+     "style": "gold",
+     "in": "Schublade fliegt"
+    },
+    {
+     "id": "l_fa_k",
+     "type": "link",
+     "from": "n_fliegt_k",
+     "to": "n_amsel_k",
+     "style": "line",
+     "in": "Schublade fliegt+0.15"
+    },
+    {
+     "id": "l_ft_k",
+     "type": "link",
+     "from": "n_fliegt_k",
+     "to": "n_taube_k",
+     "style": "line",
+     "in": "Schublade fliegt+0.30"
+    },
+    {
+     "id": "l_fs_k",
+     "type": "link",
+     "from": "n_fliegt_k",
+     "to": "n_spatz_k",
+     "style": "line",
+     "in": "Schublade fliegt+0.45"
+    },
+    {
+     "id": "n_slot_k",
+     "type": "node",
+     "x": 870,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "",
+     "color": "paper",
+     "emptyLabel": "Pinguin?",
+     "size": 34,
+     "states": [
+      {
+       "at": "start",
+       "state": "empty+cross"
+      }
+     ],
+     "in": "bleibt wie sie war"
+    },
+    {
+     "id": "fb0_k",
+     "type": "icon",
+     "kind": "bird",
+     "x": 195,
+     "y": 815,
+     "size": 62,
+     "color": "#4E4352",
+     "fly": true,
+     "in": "fliegen alle",
+     "out": "Schublade fliegt"
+    },
+    {
+     "id": "fb1_k",
+     "type": "icon",
+     "kind": "bird",
+     "x": 420,
+     "y": 795,
+     "size": 62,
+     "color": "#B7B3C8",
+     "fly": true,
+     "in": "fliegen alle+0.12",
+     "out": "Schublade fliegt"
+    },
+    {
+     "id": "fb2_k",
+     "type": "icon",
+     "kind": "bird",
+     "x": 645,
+     "y": 815,
+     "size": 62,
+     "color": "#B48A66",
+     "fly": true,
+     "in": "fliegen alle+0.24",
+     "out": "Schublade fliegt"
+    },
+    {
+     "id": "tag_unten",
+     "type": "tag",
+     "text": "von unten gebaut",
+     "x": 420,
+     "y": 1060,
+     "color": "plum",
+     "in": "von unten",
+     "out": "Schublade fliegt"
+    },
+    {
+     "id": "tag_bleibt",
+     "type": "tag",
+     "text": "bleibt",
+     "x": 820,
+     "y": 740,
+     "color": "rose",
+     "in": "bleibt wie sie war"
+    },
+    {
+     "id": "pg_k",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 700,
+     "y": 1300,
+     "size": 120,
+     "look": "left",
+     "z": 3,
+     "in": "bleibt wie sie war"
+    },
+    {
+     "id": "x_schlimm",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 300,
+     "y": 720,
+     "size": 62,
+     "in": "noch schlimmer"
+    }
+   ]
+  },
+  {
+   "at": "Gleich daneben",
+   "chord": "F#m",
+   "elements": [
+    {
+     "id": "baum_r",
+     "type": "prop",
+     "kind": "tree",
+     "x": 900,
+     "w": 280,
+     "h": 560,
+     "enter": "fade"
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "papa_r",
+     "x": 170,
+     "look": "right",
+     "mood": "smile",
+     "enter": "fade",
+     "talk": [
+      [
+       "Nein das ist",
+       "end:kein Vogel"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Nein das ist",
+       "kind": "raise",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "dark",
+     "shirt": "#F9C6D3",
+     "pants": "#86A6D8",
+     "scale": 0.85,
+     "id": "lotta_r",
+     "x": 370,
+     "look": "right",
+     "mood": "smile",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Da ein Vogel",
+       "mood": "grin"
+      },
+      {
+       "at": "Nein das ist",
+       "mood": "worried"
+      },
+      {
+       "at": "passt jetzt",
+       "mood": "sad"
+      },
+      {
+       "at": "Ich zeig dir",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Da ein Vogel",
+       "kind": "point",
+       "dur": 1.5
+      },
+      {
+       "at": "passt jetzt",
+       "kind": "shrug",
+       "dur": 1.8
+      }
+     ],
+     "talk": [
+      [
+       "Da ein Vogel",
+       "end:Da ein Vogel"
+      ]
+     ]
+    },
+    {
+     "id": "bat_h",
+     "type": "icon",
+     "kind": "bat",
+     "x": 800,
+     "y": 1236,
+     "size": 160,
+     "hang": true,
+     "in": "eine Fledermaus",
+     "out": "Die fliegt ja"
+    },
+    {
+     "id": "tag_bat",
+     "type": "tag",
+     "text": "Fledermaus",
+     "x": 800,
+     "y": 1400,
+     "color": "plum",
+     "in": "eine Fledermaus",
+     "out": "Die fliegt ja"
+    },
+    {
+     "id": "b_da",
+     "type": "bubble",
+     "from": "lotta_r",
+     "text": "Da, ein *Vogel*!",
+     "x": 560,
+     "y": 1000,
+     "maxW": 300,
+     "size": 46,
+     "in": "Da ein Vogel-0.1",
+     "out": "Papa korrigiert"
+    },
+    {
+     "id": "bat_fly",
+     "type": "icon",
+     "kind": "bat",
+     "x": 800,
+     "y": 1236,
+     "size": 160,
+     "in": "Die fliegt ja",
+     "enter": "none",
+     "moves": [
+      {
+       "at": "Die fliegt ja",
+       "x": 870,
+       "y": 800,
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "b_nein",
+     "type": "bubble",
+     "from": "papa_r",
+     "text": "Nein, das ist *kein* Vogel.",
+     "x": 340,
+     "y": 870,
+     "maxW": 340,
+     "size": 44,
+     "in": "Nein das ist-0.1",
+     "out": "Für Lotta"
+    },
+    {
+     "id": "q1",
+     "type": "icon",
+     "kind": "question",
+     "x": 330,
+     "y": 1110,
+     "size": 60,
+     "in": "passt jetzt",
+     "out": "Ich zeig dir"
+    },
+    {
+     "id": "q2",
+     "type": "icon",
+     "kind": "question",
+     "x": 440,
+     "y": 1070,
+     "size": 50,
+     "in": "passt jetzt+0.3",
+     "out": "Ich zeig dir"
+    },
+    {
+     "id": "k_wirr",
+     "type": "card",
+     "lines": [
+      "Pinguin: fliegt nicht – *Vogel*.",
+      "Fledermaus: fliegt – *kein* Vogel."
+     ],
+     "x": 470,
+     "y": 640,
+     "size": 40,
+     "in": "Der Pinguin fliegt nicht",
+     "out": "Ich zeig dir"
+    },
+    {
+     "id": "bulb_r",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 470,
+     "y": 680,
+     "size": 90,
+     "in": "Ich zeig dir"
+    },
+    {
+     "id": "tag_konkret",
+     "type": "tag",
+     "text": "so geht’s",
+     "x": 470,
+     "y": 790,
+     "color": "rose",
+     "in": "konkret"
+    }
+   ]
+  },
+  {
+   "at": "Frag eine Schublade",
+   "chord": "A",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "long",
+     "hairColor": "dark",
+     "shirt": "#F9C6D3",
+     "pants": "#86A6D8",
+     "scale": 0.85,
+     "id": "lotta_h",
+     "x": 120,
+     "look": "right",
+     "mood": "neutral",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Federn",
+       "mood": "open"
+      },
+      {
+       "at": "Auch Federn",
+       "mood": "grin"
+      },
+      {
+       "at": "selbst um",
+       "mood": "laugh"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "selbst um",
+       "kind": "cheer",
+       "dur": 1.6
+      }
+     ],
+     "talk": [
+      [
+       "Federn",
+       "end:Federn"
+      ],
+      [
+       "Auch Federn",
+       "end:Auch Federn"
+      ],
+      [
+       "Fell",
+       "end:Fell"
+      ]
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "glasses": true,
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "papa_h",
+     "x": 950,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "gestures": [
+      {
+       "at": "Was haben Amsel",
+       "kind": "point",
+       "dur": 1.2
+      },
+      {
+       "at": "Und der Pinguin",
+       "kind": "point",
+       "dur": 1.0
+      },
+      {
+       "at": "Und die Fledermaus",
+       "kind": "point",
+       "dur": 1.0
+      }
+     ],
+     "talk": [
+      [
+       "Was haben Amsel",
+       "end:am Körper"
+      ],
+      [
+       "Und der Pinguin",
+       "end:Und der Pinguin"
+      ],
+      [
+       "Und die Fledermaus",
+       "end:Und die Fledermaus"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "selbst um",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "id": "pf_tief",
+     "type": "arrow",
+     "from": {
+      "x": 70,
+      "y": 520
+     },
+     "to": {
+      "x": 70,
+      "y": 930
+     },
+     "style": "red",
+     "in": "Schublade tiefer",
+     "out": "Federn"
+    },
+    {
+     "id": "n_vogel_h",
+     "type": "node",
+     "x": 540,
+     "y": 540,
+     "w": 360,
+     "h": 118,
+     "label": "*Vogel*",
+     "size": 60,
+     "color": "idea",
+     "states": [
+      {
+       "at": "start",
+       "state": "normal"
+      },
+      {
+       "at": "hängt an Federn",
+       "state": "glow"
+      },
+      {
+       "at": "Viele Vögel",
+       "state": "gold+check"
+      }
+     ],
+     "enter": "fade"
+    },
+    {
+     "id": "n_amsel_h",
+     "type": "node",
+     "x": 195,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Amsel",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#4E4352",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "Was haben Amsel",
+       "state": "glow"
+      },
+      {
+       "at": "Federn+0.9",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_taube_h",
+     "type": "node",
+     "x": 420,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Taube",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#B7B3C8",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "Was haben Amsel",
+       "state": "glow"
+      },
+      {
+       "at": "Federn+0.9",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_spatz_h",
+     "type": "node",
+     "x": 645,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Spatz",
+     "size": 36,
+     "color": "fresh",
+     "icon": "bird",
+     "iconColor": "#B48A66",
+     "enter": "fade",
+     "states": [
+      {
+       "at": "Was haben Amsel",
+       "state": "glow"
+      },
+      {
+       "at": "Federn+0.9",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_fliegt_h",
+     "type": "node",
+     "x": 540,
+     "y": 730,
+     "w": 240,
+     "h": 100,
+     "label": "fliegt",
+     "size": 46,
+     "color": "baby",
+     "states": [
+      {
+       "at": "start",
+       "state": "normal"
+      },
+      {
+       "at": "rutscht zur Seite",
+       "state": "dim"
+      }
+     ],
+     "enter": "fade",
+     "moves": [
+      {
+       "at": "Jetzt sortiert",
+       "x": 870,
+       "y": 730,
+       "dur": 0.6
+      }
+     ]
+    },
+    {
+     "id": "l_vf_h",
+     "type": "link",
+     "from": "n_vogel_h",
+     "to": "n_fliegt_h",
+     "style": "gold",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "l_fa_h",
+     "type": "link",
+     "from": "n_fliegt_h",
+     "to": "n_amsel_h",
+     "style": "line",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "l_ft_h",
+     "type": "link",
+     "from": "n_fliegt_h",
+     "to": "n_taube_h",
+     "style": "line",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "l_fs_h",
+     "type": "link",
+     "from": "n_fliegt_h",
+     "to": "n_spatz_h",
+     "style": "line",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "n_slot_h",
+     "type": "node",
+     "x": 870,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "",
+     "color": "paper",
+     "emptyLabel": "Pinguin?",
+     "size": 34,
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      }
+     ],
+     "enter": "fade",
+     "out": "Auch Federn+0.55"
+    },
+    {
+     "id": "fe0_h",
+     "type": "icon",
+     "kind": "feather",
+     "x": 285,
+     "y": 866,
+     "size": 58,
+     "color": "#9FC9E8",
+     "rot": -0.5,
+     "in": "Federn"
+    },
+    {
+     "id": "fe1_h",
+     "type": "icon",
+     "kind": "feather",
+     "x": 510,
+     "y": 866,
+     "size": 58,
+     "color": "#9FC9E8",
+     "rot": -0.5,
+     "in": "Federn+0.15"
+    },
+    {
+     "id": "fe2_h",
+     "type": "icon",
+     "kind": "feather",
+     "x": 735,
+     "y": 866,
+     "size": 58,
+     "color": "#9FC9E8",
+     "rot": -0.5,
+     "in": "Federn+0.30"
+    },
+    {
+     "id": "pg_h",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 720,
+     "y": 1330,
+     "size": 150,
+     "z": 3,
+     "look": "left",
+     "in": "Und der Pinguin",
+     "out": "Auch Federn+0.7",
+     "moves": [
+      {
+       "at": "Auch Federn+0.1",
+       "x": 870,
+       "y": 915,
+       "dur": 0.55
+      }
+     ]
+    },
+    {
+     "id": "fe_pg_h",
+     "type": "icon",
+     "kind": "feather",
+     "x": 960,
+     "y": 866,
+     "size": 58,
+     "color": "#9FC9E8",
+     "rot": -0.5,
+     "in": "Auch Federn+0.6"
+    },
+    {
+     "id": "n_ping_h",
+     "type": "node",
+     "x": 870,
+     "y": 910,
+     "w": 210,
+     "h": 96,
+     "label": "Pinguin",
+     "size": 34,
+     "color": "fresh",
+     "icon": "penguin",
+     "in": "Auch Federn+0.55",
+     "states": [
+      {
+       "at": "Auch Federn+0.55",
+       "state": "glow"
+      },
+      {
+       "at": "Auch Federn+1.6",
+       "state": "check"
+      }
+     ]
+    },
+    {
+     "id": "n_federn_h",
+     "type": "node",
+     "x": 540,
+     "y": 730,
+     "w": 240,
+     "h": 100,
+     "label": "*Federn*",
+     "size": 44,
+     "color": "idea",
+     "icon": "feather",
+     "iconColor": "#9FC9E8",
+     "in": "hängt an Federn",
+     "states": [
+      {
+       "at": "hängt an Federn",
+       "state": "glow"
+      },
+      {
+       "at": "hängt an Federn+1.4",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "g_vf_h",
+     "type": "link",
+     "from": "n_vogel_h",
+     "to": "n_federn_h",
+     "style": "gold",
+     "in": "hängt an Federn+0.3"
+    },
+    {
+     "id": "g_famsel_h",
+     "type": "link",
+     "from": "n_federn_h",
+     "to": "n_amsel_h",
+     "style": "gold",
+     "in": "hängt an Federn+0.50"
+    },
+    {
+     "id": "g_ftaube_h",
+     "type": "link",
+     "from": "n_federn_h",
+     "to": "n_taube_h",
+     "style": "gold",
+     "in": "hängt an Federn+0.65"
+    },
+    {
+     "id": "g_fspatz_h",
+     "type": "link",
+     "from": "n_federn_h",
+     "to": "n_spatz_h",
+     "style": "gold",
+     "in": "hängt an Federn+0.80"
+    },
+    {
+     "id": "g_fping_h",
+     "type": "link",
+     "from": "n_federn_h",
+     "to": "n_ping_h",
+     "style": "gold",
+     "in": "hängt an Federn+0.95"
+    },
+    {
+     "id": "tag_viele_h",
+     "type": "tag",
+     "text": "viele, nicht alle",
+     "x": 870,
+     "y": 640,
+     "color": "plum",
+     "size": 34,
+     "in": "Viele Vögel fliegen"
+    },
+    {
+     "id": "bat_f_h",
+     "type": "icon",
+     "kind": "bat",
+     "x": 600,
+     "y": 1170,
+     "size": 150,
+     "in": "Und die Fledermaus",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "tag_fell_h",
+     "type": "tag",
+     "text": "Fell",
+     "x": 600,
+     "y": 1285,
+     "color": "rose",
+     "in": "Fell",
+     "out": "Jetzt sortiert"
+    },
+    {
+     "id": "x_fell_h",
+     "type": "icon",
+     "kind": "cross",
+     "x": 690,
+     "y": 1110,
+     "size": 58,
+     "in": "Fell+0.3",
+     "out": "Jetzt sortiert"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "gar nicht fliegen",
+   "x": 600,
+   "y": 1010
+  },
+  {
+   "at": "Wort ganz oben",
+   "x": 540,
+   "y": 540
+  },
+  {
+   "at": "bleibt wie sie war",
+   "x": 540,
+   "y": 730
+  },
+  {
+   "at": "noch schlimmer",
+   "x": 540,
+   "y": 730
+  },
+  {
+   "at": "kein Vogel",
+   "x": 340,
+   "y": 870
+  },
+  {
+   "at": "Auch Federn",
+   "x": 870,
+   "y": 910
+  },
+  {
+   "at": "hängt an Federn",
+   "x": 540,
+   "y": 730
+  },
+  {
+   "at": "nicht alle",
+   "x": 870,
+   "y": 600
+  }
+ ]
+}

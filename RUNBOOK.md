@@ -52,6 +52,9 @@ Dann `python3 engine/build.py <EP> tts` – schreibt `tts.json` mit den genauen 
 
 ## 4. Stimme erzeugen (ElevenLabs-Connector `mcp__ElevenLabs__*`)
 
+Fehlen dort `creative_create_flow`, `creative_generate_speech` oder `creative_transcribe_audio` (so am 26.11.2026 abends), die gleichnamigen
+Werkzeuge des eingeschränkten Connectors (`mcp__ElevenLabs-…__*`, nur Sprache) nehmen; Ablauf und Parameter sind gleich.
+
 Genau ein Take pro Text (`generations_count: 1`), nie einen Aufruf wiederholen (jeder kostet Credits).
 
 1. `creative_create_flow` mit Namen „<Titel> – Hauptteil + 3 Hooks“.
