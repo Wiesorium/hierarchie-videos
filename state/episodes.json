@@ -2,6 +2,72 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-27",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Wenn zwei Regeln sich streiten, liegt die Lösung eine Schublade tiefer: Kinder halten sich oft wörtlich an eine Regel von ganz oben („nicht lügen“) und sagen, was sie unten gerade spüren („Der kratzt.“, „Der ist hässlich.“); das ist nicht frech, sondern regeltreu; kommt „lieb sein“ dazu, ziehen beide in zwei Richtungen, und „Sag einfach, er gefällt dir“ schaltet die erste Regel kurz aus; eine Frage eine Schublade tiefer („Was stimmt denn noch an dem Schal?“) findet Sätze, die an beiden Regeln hängen: wahr und lieb (Oskar, sechs, bekommt von Oma Inge einen Schal, drei Abende lang gestrickt: „Oma, der Schal ist hässlich.“ Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar: „Aber das ist doch gelogen!“ Mama fragt nach unten: „Er ist warm.“ „Oma hat ihn selbst gemacht.“ Oskar: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt; „Nur am Hals kratzt er.“ Oma lacht: „Dann strick ich dir einen weichen.“)",
+   "reihe": "Oskar und der Schal (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/AxGymUsXI4pS7Wpdir6H",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-27-morgen-der-schal-ist-haesslich",
+   "slug": "der-schal-ist-haesslich",
+   "titel": "Der Schal ist hässlich",
+   "hook_typ": "Kinderzitat",
+   "cta_text": "Folg mir, wenn dein Kind auch so herrlich ehrlich ist.",
+   "hooks": {
+    "a": "„Oma, der Schal ist hässlich.“"
+   },
+   "dauer": {
+    "a": 90.13
+   },
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (zwei Regeln, die sich streiten, kamen noch nicht vor). Beispiel selbst erfunden: Oskar (sechs), Mama und Oma Inge, der gestrickte Schal (passend zu den ersten kalten Tagen und der Geschenkezeit). Neu in der Engine: Icons scarf, gift, yarn und das Figurenfeld scarf. Stimme über den vollen ElevenLabs-Connector. Captions in Drive (2026-11-27-der-schal-ist-haesslich-captions). Stimme gesamt für die Reihe etwa 3.980 Credits."
+  },
+  {
+   "datum": "2026-11-27",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Wenn zwei Regeln sich streiten, liegt die Lösung eine Schublade tiefer: Kinder halten sich oft wörtlich an eine Regel von ganz oben („nicht lügen“) und sagen, was sie unten gerade spüren („Der kratzt.“, „Der ist hässlich.“); das ist nicht frech, sondern regeltreu; kommt „lieb sein“ dazu, ziehen beide in zwei Richtungen, und „Sag einfach, er gefällt dir“ schaltet die erste Regel kurz aus; eine Frage eine Schublade tiefer („Was stimmt denn noch an dem Schal?“) findet Sätze, die an beiden Regeln hängen: wahr und lieb (Oskar, sechs, bekommt von Oma Inge einen Schal, drei Abende lang gestrickt: „Oma, der Schal ist hässlich.“ Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar: „Aber das ist doch gelogen!“ Mama fragt nach unten: „Er ist warm.“ „Oma hat ihn selbst gemacht.“ Oskar: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt; „Nur am Hals kratzt er.“ Oma lacht: „Dann strick ich dir einen weichen.“)",
+   "reihe": "Oskar und der Schal (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/AxGymUsXI4pS7Wpdir6H",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-27-morgen-wahr-und-lieb",
+   "slug": "wahr-und-lieb",
+   "titel": "Wahr und lieb",
+   "hook_typ": "Ergebnis zuerst",
+   "cta_text": "Folg mir, damit mehr Kinder ehrlich bleiben dürfen.",
+   "hooks": {
+    "b": "Oskar sagt die Wahrheit. Und Oma strahlt."
+   },
+   "dauer": {
+    "b": 87.47
+   },
+   "hinweis": "Video 2 der Reihe; Label „Wahr-und-lieb-Schublade“ (Rehook Nr. 36). Captions in Drive (2026-11-27-wahr-und-lieb-captions)."
+  },
+  {
+   "datum": "2026-11-27",
+   "slot": "morgen",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Wenn zwei Regeln sich streiten, liegt die Lösung eine Schublade tiefer: Kinder halten sich oft wörtlich an eine Regel von ganz oben („nicht lügen“) und sagen, was sie unten gerade spüren („Der kratzt.“, „Der ist hässlich.“); das ist nicht frech, sondern regeltreu; kommt „lieb sein“ dazu, ziehen beide in zwei Richtungen, und „Sag einfach, er gefällt dir“ schaltet die erste Regel kurz aus; eine Frage eine Schublade tiefer („Was stimmt denn noch an dem Schal?“) findet Sätze, die an beiden Regeln hängen: wahr und lieb (Oskar, sechs, bekommt von Oma Inge einen Schal, drei Abende lang gestrickt: „Oma, der Schal ist hässlich.“ Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar: „Aber das ist doch gelogen!“ Mama fragt nach unten: „Er ist warm.“ „Oma hat ihn selbst gemacht.“ Oskar: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt; „Nur am Hals kratzt er.“ Oma lacht: „Dann strick ich dir einen weichen.“)",
+   "reihe": "Oskar und der Schal (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "cta": "follow",
+   "flow_url": "https://elevenlabs.io/app/flows/AxGymUsXI4pS7Wpdir6H",
+   "status": "fertig",
+   "ordner": "episodes/2026-11-27-morgen-sag-einfach-er-gefaellt-dir",
+   "slug": "sag-einfach-er-gefaellt-dir",
+   "titel": "„Sag einfach, er gefällt dir“",
+   "hook_typ": "Du-Fehler",
+   "cta_text": "Folg mir, wenn du auch schon so etwas geflüstert hast.",
+   "hooks": {
+    "c": "„Sag einfach, er gefällt dir“ verwirrt Kinder."
+   },
+   "dauer": {
+    "c": 92.0
+   },
+   "hinweis": "Video 3 der Reihe; Du-Fehler ohne Urteil („Ich weiß, das sagen wir alle.“, „Er lernt vielleicht“). Captions in Drive (2026-11-27-sag-einfach-er-gefaellt-dir-captions)."
+  },
+  {
    "datum": "2026-11-26",
    "slot": "abend",
    "idee": "eigenes Thema (keine Idee offen)",

@@ -1,0 +1,1123 @@
+{
+ "slug": "der-schal-ist-haesslich",
+ "title": "Der Schal ist hässlich",
+ "cta": "follow",
+ "hero": "oskar",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "a": {
+   "label": "Kinderzitat",
+   "audio": "„Oma, der Schal ist hässlich.“",
+   "card": [
+    "Er hat nur",
+    "*nicht gelogen.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Das sagt Oskar. Er ist sechs. Oma Inge hat ihm den Schal gestrickt, drei Abende lang. Mama wird rot. Und Oskar versteht nicht, warum. Er hat doch nur die Wahrheit gesagt. Was Mama dann fragt, zeig ich dir am Ende.",
+  "block1": "Schau dir das als Knoten an. Oskar ist nicht frech. Er hält sich an eine Regel. Ganz oben steht bei ihm: „Nicht lügen.“ Die hat er von Mama. Darunter liegt, was er am Schal spürt: Er kratzt. Mehr sieht er gerade nicht. Also sagt er es.",
+  "rehook1": "Und jetzt wird’s spannend.",
+  "block2": "Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar schaut sie an: „Aber das ist doch gelogen!“ Jetzt hängen oben zwei Regeln: „Nicht lügen“ und „lieb sein“. Und die ziehen in zwei Richtungen.",
+  "rehook2": "So. Jetzt der wichtige Teil.",
+  "block3": "Mama fragt eine Schublade tiefer: „Was stimmt denn noch an dem Schal?“ Oskar überlegt. „Er ist warm.“ „Und?“ „Oma hat ihn selbst gemacht.“ Das ist wahr. Und es ist lieb. Oskar sagt: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt. Dann sagt er noch: „Nur am Hals kratzt er.“ Und Oma lacht: „Dann strick ich dir einen weichen.“",
+  "closing": "Was sagt dein Kind, wenn ihm ein Geschenk nicht gefällt?",
+  "cta": "Folg mir, wenn dein Kind auch so herrlich ehrlich ist."
+ },
+ "question": [
+  "Was sagt dein Kind, wenn ihm",
+  "ein Geschenk nicht gefällt?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn dein Kind auch",
+   "so herrlich ehrlich ist"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 420,
+     "y": 760,
+     "w": 300,
+     "h": 240
+    },
+    {
+     "id": "cl1",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 372,
+     "y": 735,
+     "size": 96,
+     "z": 0.5
+    },
+    {
+     "id": "cl2",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 480,
+     "y": 800,
+     "size": 70,
+     "z": 0.5
+    },
+    {
+     "id": "door",
+     "type": "prop",
+     "kind": "door",
+     "x": 962,
+     "w": 200,
+     "h": 440
+    },
+    {
+     "id": "gift",
+     "type": "icon",
+     "kind": "gift",
+     "x": 665,
+     "y": 1420,
+     "size": 130,
+     "open": true,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 170,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "@-1.6",
+       "mood": "wow"
+      },
+      {
+       "at": "Mama wird rot",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#FBE3A0",
+     "pants": "#86A6D8",
+     "scale": 0.95,
+     "scarf": {
+      "color": "#B9906A",
+      "stripe": "#E8C77A"
+     },
+     "id": "oskar",
+     "x": 500,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Er ist sechs",
+       "mood": "grin"
+      },
+      {
+       "at": "versteht nicht",
+       "mood": "neutral"
+      },
+      {
+       "at": "die Wahrheit",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.0",
+       "kind": "point",
+       "dur": 1.6
+      },
+      {
+       "at": "versteht nicht",
+       "kind": "shrug",
+       "dur": 1.5
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "oma",
+     "shirt": "#D9C6F0",
+     "pants": "#7B6A93",
+     "id": "oma",
+     "x": 820,
+     "look": "left",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "@-1.4",
+       "mood": "wow"
+      },
+      {
+       "at": "Das sagt Oskar",
+       "mood": "neutral"
+      }
+     ]
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "oskar",
+     "text": "Oma, der Schal ist *hässlich*.",
+     "x": 470,
+     "y": 1040,
+     "maxW": 360,
+     "size": 44,
+     "in": "@-2.35",
+     "out": "@0.3"
+    },
+    {
+     "id": "t_oskar",
+     "type": "tag",
+     "text": "Oskar, sechs",
+     "x": 500,
+     "y": 1110,
+     "color": "plum",
+     "in": "Er ist sechs",
+     "out": "Mama wird rot"
+    },
+    {
+     "id": "yarn0",
+     "type": "icon",
+     "kind": "yarn",
+     "x": 905,
+     "y": 930,
+     "size": 100,
+     "in": "Schal gestrickt",
+     "out": "Mama wird rot"
+    },
+    {
+     "id": "m1",
+     "type": "icon",
+     "kind": "moon",
+     "x": 660,
+     "y": 800,
+     "size": 64,
+     "in": "drei Abende",
+     "out": "Mama wird rot",
+     "color": "#FDE7A6"
+    },
+    {
+     "id": "m2",
+     "type": "icon",
+     "kind": "moon",
+     "x": 760,
+     "y": 770,
+     "size": 64,
+     "in": "drei Abende+0.2",
+     "out": "Mama wird rot"
+    },
+    {
+     "id": "m3",
+     "type": "icon",
+     "kind": "moon",
+     "x": 860,
+     "y": 800,
+     "size": 64,
+     "in": "drei Abende+0.4",
+     "out": "Mama wird rot"
+    },
+    {
+     "id": "t_abende",
+     "type": "tag",
+     "text": "drei Abende",
+     "x": 720,
+     "y": 880,
+     "color": "rose",
+     "in": "drei Abende",
+     "out": "Mama wird rot"
+    },
+    {
+     "id": "x_mama",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 170,
+     "y": 930,
+     "size": 64,
+     "in": "Mama wird rot",
+     "out": "Was Mama"
+    },
+    {
+     "id": "q_oskar",
+     "type": "icon",
+     "kind": "question",
+     "x": 560,
+     "y": 1080,
+     "size": 62,
+     "in": "versteht nicht",
+     "out": "die Wahrheit"
+    },
+    {
+     "id": "t_wahr",
+     "type": "tag",
+     "text": "die Wahrheit",
+     "x": 500,
+     "y": 1080,
+     "color": "rose",
+     "in": "die Wahrheit",
+     "out": "Was Mama"
+    },
+    {
+     "id": "bulb0",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 680,
+     "y": 760,
+     "size": 86,
+     "in": "Was Mama dann"
+    },
+    {
+     "id": "t_ende",
+     "type": "tag",
+     "text": "am Ende",
+     "x": 680,
+     "y": 860,
+     "color": "rose",
+     "in": "am Ende"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#FBE3A0",
+     "pants": "#86A6D8",
+     "scale": 0.95,
+     "scarf": {
+      "color": "#B9906A",
+      "stripe": "#E8C77A"
+     },
+     "id": "oskar_k",
+     "x": 120,
+     "look": "right",
+     "mood": "neutral",
+     "enter": "fade",
+     "out": "Oskar sagt Oma hast du",
+     "moods": [
+      {
+       "at": "nicht frech",
+       "mood": "smile"
+      },
+      {
+       "at": "Er kratzt",
+       "mood": "worried"
+      },
+      {
+       "at": "Also sagt er",
+       "mood": "neutral"
+      },
+      {
+       "at": "Aber das ist",
+       "mood": "wow"
+      },
+      {
+       "at": "zwei Richtungen",
+       "mood": "worried"
+      },
+      {
+       "at": "Er ist warm",
+       "mood": "smile"
+      },
+      {
+       "at": "selbst gemacht",
+       "mood": "grin"
+      },
+      {
+       "at": "es ist lieb",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Aber das ist",
+       "end:doch gelogen"
+      ],
+      [
+       "Er ist warm",
+       "end:Er ist warm"
+      ],
+      [
+       "Oma hat ihn",
+       "end:selbst gemacht"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Aber das ist",
+       "kind": "raise",
+       "dur": 1.3
+      },
+      {
+       "at": "Oskar überlegt",
+       "kind": "think",
+       "dur": 1.4
+      },
+      {
+       "at": "es ist lieb",
+       "kind": "cheer",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "mama_k",
+     "x": 960,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "out": "Oskar sagt Oma hast du",
+     "moods": [
+      {
+       "at": "doch gelogen",
+       "mood": "wow"
+      },
+      {
+       "at": "zwei Richtungen",
+       "mood": "worried"
+      },
+      {
+       "at": "Schublade tiefer",
+       "mood": "smile"
+      },
+      {
+       "at": "es ist lieb",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Sag einfach",
+       "end:gefällt dir"
+      ],
+      [
+       "Was stimmt",
+       "end:an dem Schal"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "von Mama",
+       "kind": "wave",
+       "dur": 1.2
+      },
+      {
+       "at": "Was stimmt",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "id": "t_frech",
+     "type": "tag",
+     "text": "nicht frech",
+     "x": 540,
+     "y": 1180,
+     "color": "plum",
+     "in": "nicht frech",
+     "out": "Ganz oben"
+    },
+    {
+     "id": "n_luegen",
+     "type": "node",
+     "x": 290,
+     "y": 560,
+     "label": "nicht *lügen*",
+     "color": "idea",
+     "w": 340,
+     "h": 112,
+     "size": 50,
+     "in": "Nicht lügen",
+     "out": "Oskar sagt Oma hast du",
+     "states": [
+      {
+       "at": "Nicht lügen",
+       "state": "glow"
+      },
+      {
+       "at": "von Mama+0.8",
+       "state": "normal"
+      },
+      {
+       "at": "zwei Richtungen",
+       "state": "shake+red"
+      },
+      {
+       "at": "zwei Richtungen+0.75",
+       "state": "red"
+      },
+      {
+       "at": "Schublade tiefer",
+       "state": "normal"
+      },
+      {
+       "at": "Das ist wahr",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "l_mama",
+     "type": "link",
+     "from": {
+      "x": 905,
+      "y": 1000
+     },
+     "to": "n_luegen",
+     "style": "gold",
+     "in": "von Mama",
+     "out": "Darunter"
+    },
+    {
+     "id": "n_kratzt",
+     "type": "node",
+     "x": 190,
+     "y": 905,
+     "label": "kratzt",
+     "color": "fresh",
+     "icon": "scarf",
+     "iconColor": "#B9906A",
+     "size": 40,
+     "in": "Er kratzt",
+     "out": "Oskar sagt Oma hast du",
+     "states": [
+      {
+       "at": "Er kratzt",
+       "state": "glow"
+      },
+      {
+       "at": "Mehr sieht",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "l_lk",
+     "type": "link",
+     "from": "n_luegen",
+     "to": "n_kratzt",
+     "style": "line",
+     "in": "Er kratzt+0.2",
+     "out": "zwei Richtungen"
+    },
+    {
+     "id": "n_warm0",
+     "type": "node",
+     "x": 540,
+     "y": 905,
+     "w": 300,
+     "h": 100,
+     "label": "",
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      }
+     ],
+     "in": "Mehr sieht",
+     "out": "Er ist warm"
+    },
+    {
+     "id": "n_selbst0",
+     "type": "node",
+     "x": 890,
+     "y": 905,
+     "w": 300,
+     "h": 100,
+     "label": "",
+     "color": "paper",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      }
+     ],
+     "in": "Mehr sieht+0.2",
+     "out": "Oma hat ihn"
+    },
+    {
+     "id": "b_o0",
+     "type": "bubble",
+     "from": "oskar_k",
+     "text": "Der ist *hässlich*.",
+     "x": 360,
+     "y": 1090,
+     "maxW": 360,
+     "size": 44,
+     "in": "Also sagt er",
+     "out": "Und jetzt"
+    },
+    {
+     "id": "x_spann",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 540,
+     "y": 735,
+     "size": 70,
+     "in": "Und jetzt",
+     "out": "Mama flüstert"
+    }
+   ]
+  },
+  {
+   "at": "Mama flüstert",
+   "chord": "F#m",
+   "elements": [
+    {
+     "id": "b_m1",
+     "type": "bubble",
+     "from": "mama_k",
+     "text": "Sag einfach, er *gefällt* dir.",
+     "x": 680,
+     "y": 1040,
+     "maxW": 360,
+     "size": 40,
+     "in": "Sag einfach-0.1",
+     "out": "Oskar schaut"
+    },
+    {
+     "id": "n_gef",
+     "type": "node",
+     "x": 790,
+     "y": 735,
+     "label": "„gefällt mir“",
+     "color": "paper",
+     "w": 300,
+     "h": 92,
+     "size": 40,
+     "in": "Sag einfach+0.5",
+     "out": "Schublade tiefer",
+     "states": [
+      {
+       "at": "doch gelogen",
+       "state": "cross"
+      }
+     ]
+    },
+    {
+     "id": "b_o1",
+     "type": "bubble",
+     "from": "oskar_k",
+     "text": "Aber das ist doch *gelogen*!",
+     "x": 380,
+     "y": 1090,
+     "maxW": 380,
+     "size": 42,
+     "in": "Aber das ist-0.1",
+     "out": "Jetzt hängen"
+    },
+    {
+     "id": "n_lieb",
+     "type": "node",
+     "x": 790,
+     "y": 560,
+     "label": "lieb *sein*",
+     "color": "kids",
+     "w": 340,
+     "h": 112,
+     "size": 50,
+     "icon": "heart",
+     "in": "lieb sein",
+     "out": "Oskar sagt Oma hast du",
+     "states": [
+      {
+       "at": "lieb sein",
+       "state": "glow"
+      },
+      {
+       "at": "zwei Richtungen",
+       "state": "shake+red"
+      },
+      {
+       "at": "zwei Richtungen+0.75",
+       "state": "red"
+      },
+      {
+       "at": "Schublade tiefer",
+       "state": "normal"
+      },
+      {
+       "at": "es ist lieb",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "l_lg",
+     "type": "link",
+     "from": "n_lieb",
+     "to": "n_gef",
+     "style": "dashed",
+     "in": "lieb sein+0.3",
+     "out": "zwei Richtungen"
+    },
+    {
+     "id": "l_r1",
+     "type": "link",
+     "from": "n_luegen",
+     "to": "n_kratzt",
+     "style": "red",
+     "in": "zwei Richtungen",
+     "out": "Schublade tiefer"
+    },
+    {
+     "id": "l_r2",
+     "type": "link",
+     "from": "n_lieb",
+     "to": "n_gef",
+     "style": "red",
+     "in": "zwei Richtungen+0.2",
+     "out": "Schublade tiefer"
+    },
+    {
+     "id": "t_teil",
+     "type": "tag",
+     "text": "der wichtige Teil",
+     "x": 540,
+     "y": 1180,
+     "color": "rose",
+     "in": "der wichtige Teil"
+    }
+   ]
+  },
+  {
+   "at": "Mama fragt eine",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "pf",
+     "type": "arrow",
+     "from": {
+      "x": 62,
+      "y": 520
+     },
+     "to": {
+      "x": 62,
+      "y": 900
+     },
+     "style": "red",
+     "in": "Schublade tiefer",
+     "out": "Oskar überlegt"
+    },
+    {
+     "id": "b_m2",
+     "type": "bubble",
+     "from": "mama_k",
+     "text": "Was *stimmt* denn noch?",
+     "x": 680,
+     "y": 1040,
+     "maxW": 340,
+     "size": 42,
+     "in": "Was stimmt-0.1",
+     "out": "Oskar überlegt+0.5"
+    },
+    {
+     "id": "n_warm",
+     "type": "node",
+     "x": 540,
+     "y": 905,
+     "label": "warm",
+     "color": "fresh",
+     "icon": "sun",
+     "size": 40,
+     "in": "Er ist warm",
+     "out": "Oskar sagt Oma hast du",
+     "states": [
+      {
+       "at": "Er ist warm",
+       "state": "glow"
+      },
+      {
+       "at": "Das ist wahr",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "b_o2",
+     "type": "bubble",
+     "from": "oskar_k",
+     "text": "Er ist *warm*.",
+     "x": 360,
+     "y": 1090,
+     "maxW": 300,
+     "size": 44,
+     "in": "Er ist warm-0.1",
+     "out": "Oma hat ihn-0.15"
+    },
+    {
+     "id": "n_selbst",
+     "type": "node",
+     "x": 890,
+     "y": 905,
+     "label": "selbst gemacht",
+     "color": "fresh",
+     "icon": "yarn",
+     "iconColor": "#B9906A",
+     "size": 34,
+     "in": "selbst gemacht",
+     "out": "Oskar sagt Oma hast du",
+     "states": [
+      {
+       "at": "selbst gemacht",
+       "state": "glow"
+      },
+      {
+       "at": "Das ist wahr",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "b_o3",
+     "type": "bubble",
+     "from": "oskar_k",
+     "text": "Oma hat ihn *selbst* gemacht.",
+     "x": 400,
+     "y": 1090,
+     "maxW": 400,
+     "size": 40,
+     "in": "Oma hat ihn-0.1",
+     "out": "Das ist wahr+0.6"
+    },
+    {
+     "id": "g1",
+     "type": "link",
+     "from": "n_luegen",
+     "to": "n_warm",
+     "style": "gold",
+     "in": "Das ist wahr"
+    },
+    {
+     "id": "g2",
+     "type": "link",
+     "from": "n_luegen",
+     "to": "n_selbst",
+     "style": "gold",
+     "in": "Das ist wahr+0.2"
+    },
+    {
+     "id": "g3",
+     "type": "link",
+     "from": "n_lieb",
+     "to": "n_warm",
+     "style": "gold",
+     "in": "es ist lieb"
+    },
+    {
+     "id": "g4",
+     "type": "link",
+     "from": "n_lieb",
+     "to": "n_selbst",
+     "style": "gold",
+     "in": "es ist lieb+0.2"
+    },
+    {
+     "id": "t_wl",
+     "type": "tag",
+     "text": "wahr *und* lieb",
+     "x": 540,
+     "y": 1180,
+     "color": "rose",
+     "in": "es ist lieb+0.3"
+    }
+   ]
+  },
+  {
+   "at": "Oskar sagt Oma hast du",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "r_win",
+     "type": "prop",
+     "kind": "window",
+     "x": 420,
+     "y": 760,
+     "w": 300,
+     "h": 240,
+     "enter": "fade"
+    },
+    {
+     "id": "r_cl1",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 372,
+     "y": 735,
+     "size": 96,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_cl2",
+     "type": "icon",
+     "kind": "cloud",
+     "x": 480,
+     "y": 800,
+     "size": 70,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_door",
+     "type": "prop",
+     "kind": "door",
+     "x": 962,
+     "w": 200,
+     "h": 440,
+     "enter": "fade"
+    },
+    {
+     "id": "r_gift",
+     "type": "icon",
+     "kind": "gift",
+     "x": 665,
+     "y": 1420,
+     "size": 130,
+     "open": true,
+     "z": 3.5,
+     "enter": "fade"
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "ponytail",
+     "hairColor": "dark",
+     "shirt": "#C9EBC7",
+     "pants": "#5B6E9C",
+     "id": "r_mama",
+     "x": 170,
+     "look": "right",
+     "mood": "smile",
+     "enter": "fade",
+     "moods": [
+      {
+       "at": "Oma strahlt",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "short",
+     "hairColor": "red",
+     "shirt": "#FBE3A0",
+     "pants": "#86A6D8",
+     "scale": 0.95,
+     "scarf": {
+      "color": "#B9906A",
+      "stripe": "#E8C77A"
+     },
+     "id": "r_oskar",
+     "x": 500,
+     "look": "right",
+     "mood": "grin",
+     "enter": "fade",
+     "talk": [
+      [
+       "Oma hast du",
+       "end:so warm"
+      ],
+      [
+       "Nur am Hals",
+       "end:kratzt er"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Oma hast du",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ],
+     "moods": [
+      {
+       "at": "Oma lacht",
+       "mood": "laugh"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "oma",
+     "shirt": "#D9C6F0",
+     "pants": "#7B6A93",
+     "id": "r_oma",
+     "x": 820,
+     "look": "left",
+     "mood": "open",
+     "enter": "fade",
+     "hop": "Oma strahlt",
+     "moods": [
+      {
+       "at": "Oma strahlt",
+       "mood": "happy"
+      },
+      {
+       "at": "Oma lacht",
+       "mood": "laugh"
+      }
+     ],
+     "talk": [
+      [
+       "Dann strick ich",
+       "end:einen weichen"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Dann strick ich",
+       "kind": "raise",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "id": "r_h1",
+     "type": "icon",
+     "kind": "heart",
+     "x": 975,
+     "y": 700,
+     "size": 60,
+     "in": "Oma strahlt"
+    },
+    {
+     "id": "r_h2",
+     "type": "icon",
+     "kind": "heart",
+     "x": 1015,
+     "y": 785,
+     "size": 46,
+     "in": "Oma strahlt+0.2"
+    },
+    {
+     "id": "r_b_oma",
+     "type": "bubble",
+     "from": "r_oma",
+     "text": "Dann strick ich dir einen *weichen*.",
+     "x": 700,
+     "y": 880,
+     "maxW": 400,
+     "size": 42,
+     "in": "Dann strick ich-0.1"
+    },
+    {
+     "id": "r_yarn",
+     "type": "icon",
+     "kind": "yarn",
+     "x": 960,
+     "y": 1250,
+     "size": 110,
+     "in": "Dann strick ich+0.3",
+     "z": 3.6
+    },
+    {
+     "id": "b_o4",
+     "type": "bubble",
+     "from": "r_oskar",
+     "text": "Oma, hast du den ganz allein *gestrickt*? Der ist so *warm*!",
+     "x": 470,
+     "y": 1000,
+     "maxW": 440,
+     "size": 40,
+     "in": "Oma hast du-0.1",
+     "out": "Oma strahlt+0.5"
+    },
+    {
+     "id": "b_o5",
+     "type": "bubble",
+     "from": "r_oskar",
+     "text": "Nur am Hals *kratzt* er.",
+     "x": 470,
+     "y": 1040,
+     "maxW": 360,
+     "size": 42,
+     "in": "Nur am Hals-0.1",
+     "out": "Und Oma lacht"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Mama wird rot",
+   "x": 170,
+   "y": 930
+  },
+  {
+   "at": "Nicht lügen",
+   "x": 290,
+   "y": 560
+  },
+  {
+   "at": "Er kratzt",
+   "x": 190,
+   "y": 905
+  },
+  {
+   "at": "doch gelogen",
+   "x": 790,
+   "y": 735
+  },
+  {
+   "at": "zwei Richtungen",
+   "x": 540,
+   "y": 560
+  },
+  {
+   "at": "Er ist warm",
+   "x": 540,
+   "y": 905
+  },
+  {
+   "at": "selbst gemacht",
+   "x": 890,
+   "y": 905
+  },
+  {
+   "at": "Oma strahlt",
+   "x": 820,
+   "y": 930
+  }
+ ]
+}

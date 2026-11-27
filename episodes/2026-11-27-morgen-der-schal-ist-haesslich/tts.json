@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das sagt Oskar. Er ist sechs. Oma Inge hat ihm den Schal gestrickt, drei Abende lang. Mama wird rot. Und Oskar versteht nicht, warum. Er hat doch nur die Wahrheit gesagt. Was Mama dann fragt, zeig ich dir am Ende. [pause] Schau dir das als Knoten an. Oskar ist nicht frech. Er hält sich an eine Regel. Ganz oben steht bei ihm: „Nicht lügen.“ Die hat er von Mama. Darunter liegt, was er am Schal spürt: Er kratzt. Mehr sieht er gerade nicht. Also sagt er es. [pause] Und jetzt wird’s spannend. [pause] Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar schaut sie an: „Aber das ist doch gelogen!“ Jetzt hängen oben zwei Regeln: „Nicht lügen“ und „lieb sein“. Und die ziehen in zwei Richtungen. [pause] So. Jetzt der wichtige Teil. [pause] Mama fragt eine Schublade tiefer: „Was stimmt denn noch an dem Schal?“ Oskar überlegt. „Er ist warm.“ „Und?“ „Oma hat ihn selbst gemacht.“ Das ist wahr. Und es ist lieb. Oskar sagt: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt. Dann sagt er noch: „Nur am Hals kratzt er.“ Und Oma lacht: „Dann strick ich dir einen weichen.“ [pause] Was sagt dein Kind, wenn ihm ein Geschenk nicht gefällt? [pause] [pause] Folg mir, wenn dein Kind auch so herrlich ehrlich ist.",
+ "hooks": {
+  "a": "[warmly] „Oma, der Schal ist hässlich.“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
