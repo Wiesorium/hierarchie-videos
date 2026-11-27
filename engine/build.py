@@ -27,7 +27,7 @@ PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book
               'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt', 'paper', 'sink', 'box', 'block', 'pool'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
          'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
-         'penguin', 'bird', 'bat', 'feather'}
+         'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
 MOODS = {'smile', 'happy', 'grin', 'laugh', 'open', 'wow', 'sad', 'worried', 'scared', 'neutral'}
 GESTURES = {'wave', 'point', 'cheer', 'raise', 'shrug', 'think', 'hug'}
@@ -284,6 +284,10 @@ def resolve(ep, sb, words, main_dur, hook_durs, hook_spans=None):
                 a = T(tk[0] if isinstance(tk, list) else tk['from'], S0, S0, where + '.talk')
                 b = T(tk[1] if isinstance(tk, list) else tk['to'], a, a + 2, where + '.talk')
                 tgt.setdefault('_talk', []).append([a, b])
+            if src['type'] == 'figure' and isinstance(src.get('scarf'), dict):  # worn scarf that pops on at its anchor
+                tgt['scarf'] = src['scarf']
+                if src['scarf'].get('in') is not None:
+                    tgt['_scarfT'] = T(src['scarf']['in'], S0, S0, where + '.scarf')
             if src.get('hop'):
                 tgt['_hopT'] = T(src['hop'], S0, S0, where + '.hop')
             if src['type'] == 'node' and src.get('states'):

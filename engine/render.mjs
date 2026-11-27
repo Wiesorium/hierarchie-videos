@@ -70,7 +70,8 @@ function drawElement(ctx, e, tm) {
   switch (e.type) {
     case 'figure': {
       const look = e.look === 'left' ? -1 : e.look === 'right' ? 1 : typeof e.look === 'number' ? e.look : 0;
-      drawFigure(ctx, e, { t: tm, mood: moodAt(e, tm), gesture: gestureAt(e, tm), talk: talking(e, tm) ? envAt(tm) : 0, lookX: look, hopT: hop(tm, e._hopT ?? -99, 0.5) });
+      drawFigure(ctx, e, { t: tm, mood: moodAt(e, tm), gesture: gestureAt(e, tm), talk: talking(e, tm) ? envAt(tm) : 0, lookX: look, hopT: hop(tm, e._hopT ?? -99, 0.5),
+        scarfK: e._scarfT == null ? 1 : clamp((tm - e._scarfT) / 0.35) });
       break; }
     case 'prop': drawProp(ctx, e, tm); break;
     case 'cabinet': drawCabinet(ctx, e, tm); break;

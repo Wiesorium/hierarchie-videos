@@ -275,12 +275,92 @@ export function drawIcon(ctx, e, t) {
     case 'bird': drawBird(ctx, x, y, s, c, e.look === 'left', t, e); break;
     case 'bat': drawBat(ctx, x, y, s, c, t, e); break;
     case 'feather': drawFeather(ctx, x, y, s, c, e.rot ?? -0.5); break;
+    case 'scarf': drawScarf(ctx, x, y, s, c, e.stripe ? col(e.stripe) : null, e.rot ?? -0.4, t, e); break;
+    case 'gift': drawGift(ctx, x, y, s, c, e.ribbon ? col(e.ribbon) : null, !!e.open, t); break;
+    case 'yarn': drawYarn(ctx, x, y, s, c, e.needles !== false); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
 export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
-  'penguin', 'bird', 'bat', 'feather'];
+  'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn'];
+
+const SCARF = '#B9906A', SCARF_STRIPE = '#E8C77A';
+
+// One knitted band, `len` long and `bw` wide, from (0,0) along +x with a gentle wave; stripes across, little knit
+// "v" marks and a fringe at the far end (and at the start when `fringe0`).
+export function scarfBand(ctx, len, bw, base, stripe, wave = 0.03, fringe0 = true) {
+  const yOf = u => Math.sin(u * Math.PI * 2) * len * wave;
+  const path = () => { ctx.beginPath(); const n = 16;
+    for (let i = 0; i <= n; i++) { const u = i / n; const px = u * len, py = yOf(u) - bw / 2; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+    for (let i = n; i >= 0; i--) { const u = i / n; ctx.lineTo(u * len, yOf(u) + bw / 2); } ctx.closePath(); };
+  // fringe first, so the band covers its roots
+  ctx.save(); ctx.strokeStyle = base; ctx.lineWidth = Math.max(2, bw * 0.09); ctx.lineCap = 'round';
+  for (const [u0, dir] of fringe0 ? [[0, -1], [1, 1]] : [[1, 1]]) { const y0 = yOf(u0);
+    for (let k = 0; k < 5; k++) { const yy = y0 - bw * 0.38 + k * bw * 0.19; ctx.beginPath(); ctx.moveTo(u0 * len, yy); ctx.lineTo(u0 * len + dir * bw * 0.42, yy + (k - 2) * bw * 0.04); ctx.stroke(); } }
+  ctx.restore();
+  fillShape(ctx, path, base, { depth: 0.5 });
+  ctx.save(); path(); ctx.clip();
+  ctx.fillStyle = stripe; const n = Math.max(3, Math.round(len / (bw * 1.3)));
+  for (let i = 1; i < n; i += 2) { const px = (i / n) * len; ctx.fillRect(px, -len, len / n * 0.55, len * 2); }
+  ctx.strokeStyle = 'rgba(255,255,255,0.28)'; ctx.lineWidth = Math.max(1.2, bw * 0.05);
+  for (let r = -1; r <= 1; r += 2) for (let px = bw * 0.3; px < len - bw * 0.2; px += bw * 0.34) { const py = yOf(px / len) + r * bw * 0.2;
+    ctx.beginPath(); ctx.moveTo(px - bw * 0.08, py - bw * 0.07); ctx.lineTo(px, py + bw * 0.05); ctx.lineTo(px + bw * 0.08, py - bw * 0.07); ctx.stroke(); }
+  ctx.restore();
+}
+
+// A knitted scarf, `s` long, centred at (x, y), tilted by `rot`. "hang": true hangs it folded over an invisible
+// hook at (x, y) (held up in the middle), both ends swinging a little below.
+function drawScarf(ctx, x, y, s, c, stripe, rot, t = 0, e = {}) {
+  const base = c || SCARF, st = stripe || SCARF_STRIPE, bw = s * 0.2;
+  ctx.save(); ctx.translate(x, y);
+  if (e.hang) {
+    const sw = Math.sin(t * 2.1) * 0.04;
+    for (const [side, l] of [[-1, s * 0.5], [1, s * 0.44]]) { ctx.save(); ctx.translate(side * bw * 0.52, 0); ctx.rotate(Math.PI / 2 + sw * side); scarfBand(ctx, l, bw, base, st, 0.015, false); ctx.restore(); }
+    fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(0, 0, bw * 1.05, bw * 0.42, 0, Math.PI, 0); ctx.closePath(); }, base, { depth: 0.4 });
+  } else { ctx.rotate(rot); ctx.translate(-s / 2, 0); scarfBand(ctx, s, bw, base, st); }
+  ctx.restore();
+}
+
+// A wrapped present, `s` wide, centred at (x, y), with a ribbon cross and a bow; "open": true takes the lid off
+// (it lies tilted to the right) and shows the dark inside.
+function drawGift(ctx, x, y, s, c, ribbon, open, t = 0) {
+  const box = c || '#BFD9F2', rb = ribbon || '#F49AAE';
+  const bt = y - s * 0.25, bh = s * 0.7, rw = s * 0.14;
+  fillShape(ctx, () => rrect(ctx, x - s / 2, bt, s, bh, s * 0.06), box, { depth: 0.7 });
+  if (open) { ctx.save(); ctx.fillStyle = 'rgba(74,53,82,0.28)'; rrect(ctx, x - s * 0.45, bt + s * 0.02, s * 0.9, s * 0.12, s * 0.04); ctx.fill(); ctx.restore(); }
+  ctx.fillStyle = rb; ctx.fillRect(x - rw / 2, bt, rw, bh);
+  if (!open) ctx.fillRect(x - s / 2, bt + bh * 0.42, s, rw * 0.8);
+  const lid = () => {
+    fillShape(ctx, () => rrect(ctx, -s * 0.54, -s * 0.18, s * 1.08, s * 0.18, s * 0.05), box, { depth: 0.6 });
+    ctx.fillStyle = rb; ctx.fillRect(-rw / 2, -s * 0.18, rw, s * 0.18);
+    for (const side of [-1, 1]) fillShape(ctx, () => { ctx.beginPath(); ctx.ellipse(side * s * 0.13, -s * 0.27, s * 0.14, s * 0.09, side * -0.45, 0, 7); }, rb, { depth: 0.4 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.arc(0, -s * 0.2, s * 0.055, 0, 7); }, rb, { depth: 0.3 });
+  };
+  ctx.save();
+  if (open) { ctx.translate(x + s * 0.72, bt + bh * 0.62); ctx.rotate(0.35); } else ctx.translate(x, bt + 1);
+  lid(); ctx.restore();
+}
+
+// A ball of wool, `s` wide, centred at (x, y), with two knitting needles stuck in it and a loose thread.
+function drawYarn(ctx, x, y, s, c, needles) {
+  const wool = c || SCARF, r = s * 0.36;
+  if (needles) for (const a of [-0.55, -0.2]) {
+    ctx.save(); ctx.translate(x, y); ctx.rotate(a);
+    fillShape(ctx, () => rrect(ctx, -s * 0.03, -s * 0.62, s * 0.06, s * 0.9, s * 0.03), '#D3D9E1', { depth: 0.3 });
+    fillShape(ctx, () => { ctx.beginPath(); ctx.arc(0, -s * 0.62, s * 0.06, 0, 7); }, C.rose, { depth: 0.3 });
+    ctx.restore();
+  }
+  ctx.save(); ctx.strokeStyle = wool; ctx.lineWidth = Math.max(2, s * 0.035); ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(x + r * 0.7, y + r * 0.7); ctx.quadraticCurveTo(x + r * 1.5, y + r * 1.2, x + r * 1.9, y + r * 0.8); ctx.stroke(); ctx.restore();
+  fillShape(ctx, () => { ctx.beginPath(); ctx.arc(x, y, r, 0, 7); }, wool, { depth: 0.6 });
+  ctx.save(); ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.clip();
+  ctx.strokeStyle = 'rgba(255,255,255,0.4)'; ctx.lineWidth = Math.max(1.5, s * 0.03);
+  for (let i = -2; i <= 2; i++) { ctx.beginPath(); ctx.ellipse(x + i * r * 0.28, y, r * 0.3, r * 1.1, 0.5, 0, 7); ctx.stroke(); }
+  ctx.strokeStyle = 'rgba(74,53,82,0.16)';
+  for (let i = -1; i <= 1; i++) { ctx.beginPath(); ctx.ellipse(x, y + i * r * 0.35, r * 1.1, r * 0.25, -0.35, 0, 7); ctx.stroke(); }
+  ctx.restore();
+}
 
 const BEAK = '#F4A259';
 

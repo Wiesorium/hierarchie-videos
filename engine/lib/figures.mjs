@@ -3,6 +3,7 @@
 // a soft torso with sleeves, skin-coloured forearms that end round, and two narrow legs without shoes.
 // Everything is drawn in "unit" coordinates of an adult (feet at y = 0) and scaled; kids are 2/3 of an adult.
 import { C, GROUND, col, fillShape, rrect, clamp, hash } from './core.mjs';
+import { scarfBand } from './elements.mjs';
 
 const HAIR = { brown: '#7A5236', dark: '#4E3B33', blond: '#E0B865', red: '#C9744A', grey: '#CBC6D3', black: '#3A2E35', ginger: '#C8843F' };
 const SKIN = { light: '#F6D3B8', medium: '#F2C4A4', tan: '#DDA67E', brown: '#B57C55', dark: '#86573A' };
@@ -91,6 +92,8 @@ export function drawFigure(ctx, f, st) {
   fillShape(ctx, () => torsoPath(ctx, top, G.bodyH + 8, G.bodyW), shirt, { depth: 1 });
   // arms (the "think" arm goes in front of the face)
   for (const sd of [-1, 1]) if (arms.front !== sd) drawArm(ctx, sd, arms[sd < 0 ? 'l' : 'r'], top, shirt, skin);
+  // a knitted scarf around the neck (figure field "scarf"), it pops on at st.scarfK 0 → 1
+  if (f.scarf && (st.scarfK ?? 1) > 0) drawWornScarf(ctx, f.scarf, top, side, st.scarfK ?? 1, t);
   // head
   ctx.save(); ctx.translate(0, headY); ctx.rotate(tilt);
   drawHairBack(ctx, R, hair, hairColor, side);
@@ -100,6 +103,21 @@ export function drawFigure(ctx, f, st) {
   ctx.restore();
   if (arms.front) drawArm(ctx, arms.front, arms[arms.front < 0 ? 'l' : 'r'], top, shirt, skin);
   ctx.restore();
+}
+
+// ---------- worn scarf: a band around the neck under the chin and one end hanging down the front ----------
+function drawWornScarf(ctx, sc, top, side, k, t) {
+  const o = typeof sc === 'object' ? sc : { color: sc };
+  const base = col(o.color, '#B9906A'), stripe = col(o.stripe, '#E8C77A');
+  ctx.save(); ctx.globalAlpha *= clamp(k * 1.6); const sk = 0.7 + 0.3 * k;
+  ctx.translate(0, top + 6); ctx.scale(sk, sk);
+  // the hanging end, a little off-centre on the side the figure looks to
+  ctx.save(); ctx.translate(side * 34, 6); ctx.rotate(Math.PI / 2 - side * 0.12 + Math.sin(t * 1.8) * 0.03); scarfBand(ctx, 128, 46, base, stripe, 0.02, false); ctx.restore();
+  // the loop around the neck
+  fillShape(ctx, () => rrect(ctx, -G.bodyW * 0.4, -20, G.bodyW * 0.8, 44, 22), base, { depth: 0.5 });
+  ctx.save(); rrect(ctx, -G.bodyW * 0.4, -20, G.bodyW * 0.8, 44, 22); ctx.clip(); ctx.fillStyle = stripe;
+  for (let i = -3; i <= 3; i += 2) ctx.fillRect(i * 22 - 7, -30, 14, 70);
+  ctx.restore(); ctx.restore();
 }
 
 // ---------- arms: sleeve (upper arm, shirt colour) and a skin forearm with a round end ----------

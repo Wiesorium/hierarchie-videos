@@ -98,6 +98,8 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 - `role`: `mama`, `papa`, `woman`, `man`, `oma`, `opa`, `teacher`, `girl`, `boy`, `teen`, `toddler`
 - optional: `shirt`, `pants`, `hair` (`bun`, `ponytail`, `short`, `spiky`, `long`, `bald`), `hairColor` (`brown`, `dark`, `blond`, `red`, `grey`, `black`), `glasses`, `scale`, `pose: "sit"`
 - optional außerdem: `skin` (`light`, `medium`, `tan`, `brown`, `dark`).
+- `scarf`: gestrickter Schal um den Hals (Schlaufe unter dem Kinn, ein Ende hängt vorn auf der Blickseite), z. B.
+  `"scarf": {"color": "#B9906A", "stripe": "#E8C77A", "in": "zieht ihn an"}`; ohne `in` von Anfang an, mit `in` ploppt er auf dem Anker an.
 - Aussehen wie in den freigegebenen Reels (Bild im Brand-Style-Doc): Haar als Papierkappe mit geradem Schnitt, Dutt bzw.
   Pferdeschwanz auf der Rückseite, Punktaugen, eine rosa Wange auf der Blickseite, Ärmel und hautfarbene Unterarme,
   schmale Beine ohne Schuhe. `look` dreht Gesicht und Wange; `think` legt die Hand ans Kinn.
@@ -189,7 +191,10 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   neben Figuren `"z": 3`), `bird` (runder Singvogel, size = Breite, `color` = Gefieder: Amsel `#4E4352`, Taube `#B7B3C8`, Spatz `#B48A66`;
   `"fly": true` flattert ohne Beine, `"beak"` färbt den Schnabel), `bat` (Fledermaus, size = Spannweite, flattert; `"hang": true` hängt kopfüber mit
   angelegten Flügeln, y = Punkt, an dem sie sich festhält, z. B. unter einem `tree`), `feather` (Feder, size = Länge, `"rot"` neigt sie, Standard −0,5);
-  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin` und `feather`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
+  `scarf` (Strickschal mit Streifen und Fransen, size = Länge, `color`, `"stripe"`, `"rot"` neigt ihn, Standard −0,4; `"hang": true` hängt ihn
+  in der Mitte gefaltet an x/y, beide Enden schwingen), `gift` (Geschenk mit Schleife, size = Breite, y = Mitte, Boden bei y + 0,45 × size,
+  `color`, `"ribbon"`; `"open": true` legt den Deckel schräg daneben), `yarn` (Wollknäuel mit zwei Stricknadeln, `"needles": false` ohne);
+  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin`, `feather`, `scarf` und `yarn`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
   (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
