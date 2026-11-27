@@ -27,7 +27,7 @@ PROP_KINDS = {'table', 'chair', 'desk', 'blackboard', 'notebook', 'phone', 'book
               'fridge', 'bowl', 'bottle', 'cushions', 'casserole', 'salt', 'paper', 'sink', 'box', 'block', 'pool'}
 ICONS = {'bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book',
          'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
-         'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn'}
+         'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn', 'pyjama'}
 ROLES = {'mama', 'papa', 'woman', 'man', 'oma', 'opa', 'teacher', 'girl', 'boy', 'teen', 'toddler'}
 MOODS = {'smile', 'happy', 'grin', 'laugh', 'open', 'wow', 'sad', 'worried', 'scared', 'neutral'}
 GESTURES = {'wave', 'point', 'cheer', 'raise', 'shrug', 'think', 'hug'}

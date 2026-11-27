@@ -3,7 +3,7 @@
 // a soft torso with sleeves, skin-coloured forearms that end round, and two narrow legs without shoes.
 // Everything is drawn in "unit" coordinates of an adult (feet at y = 0) and scaled; kids are 2/3 of an adult.
 import { C, GROUND, col, fillShape, rrect, clamp, hash } from './core.mjs';
-import { scarfBand } from './elements.mjs';
+import { scarfBand, pyjamaPrint, pyjamaButtons } from './elements.mjs';
 
 const HAIR = { brown: '#7A5236', dark: '#4E3B33', blond: '#E0B865', red: '#C9744A', grey: '#CBC6D3', black: '#3A2E35', ginger: '#C8843F' };
 const SKIN = { light: '#F6D3B8', medium: '#F2C4A4', tan: '#DDA67E', brown: '#B57C55', dark: '#86573A' };
@@ -90,6 +90,8 @@ export function drawFigure(ctx, f, st) {
   }
   // torso
   fillShape(ctx, () => torsoPath(ctx, top, G.bodyH + 8, G.bodyW), shirt, { depth: 1 });
+  // pyjama print on the shirt (figure field "pyjama": true or {dots, buttons, closed})
+  if (f.pyjama) drawPyjamaTop(ctx, f.pyjama, top);
   // arms (the "think" arm goes in front of the face)
   for (const sd of [-1, 1]) if (arms.front !== sd) drawArm(ctx, sd, arms[sd < 0 ? 'l' : 'r'], top, shirt, skin);
   // a knitted scarf around the neck (figure field "scarf"), it pops on at st.scarfK 0 → 1
@@ -103,6 +105,13 @@ export function drawFigure(ctx, f, st) {
   ctx.restore();
   if (arms.front) drawArm(ctx, arms.front, arms[arms.front < 0 ? 'l' : 'r'], top, shirt, skin);
   ctx.restore();
+}
+
+// ---------- pyjama: a print of little stars on the shirt and buttons down the front ----------
+function drawPyjamaTop(ctx, pj, top) {
+  const o = typeof pj === 'object' ? pj : {};
+  if (o.dots !== false) { ctx.save(); torsoPath(ctx, top, G.bodyH + 8, G.bodyW); ctx.clip(); pyjamaPrint(ctx, -G.bodyW / 2, top + 12, G.bodyW / 2, top + G.bodyH + 8, 36, col(o.dots, '#FFF6D6')); ctx.restore(); }
+  const n = o.buttons ?? 3; pyjamaButtons(ctx, top + 52, top + G.bodyH - 28, n, o.closed ?? n, 10);
 }
 
 // ---------- worn scarf: a band around the neck under the chin and one end hanging down the front ----------

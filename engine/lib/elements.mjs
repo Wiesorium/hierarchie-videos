@@ -278,12 +278,68 @@ export function drawIcon(ctx, e, t) {
     case 'scarf': drawScarf(ctx, x, y, s, c, e.stripe ? col(e.stripe) : null, e.rot ?? -0.4, t, e); break;
     case 'gift': drawGift(ctx, x, y, s, c, e.ribbon ? col(e.ribbon) : null, !!e.open, t); break;
     case 'yarn': drawYarn(ctx, x, y, s, c, e.needles !== false); break;
+    case 'pyjama': drawPyjama(ctx, x, y, s, c, e, t); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
 export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
-  'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn'];
+  'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn', 'pyjama'];
+
+const PYJAMA = '#BFD9F2', PYJAMA_DOTS = '#FFF6D6';
+
+// Little stars and dots of a pyjama print inside the current clip, on a grid of `step` px.
+export function pyjamaPrint(ctx, x0, y0, x1, y1, step, dots) {
+  ctx.save(); ctx.fillStyle = dots; ctx.globalAlpha *= 0.85;
+  let row = 0;
+  for (let y = y0; y < y1; y += step, row++) for (let x = x0 + (row % 2) * step / 2; x < x1; x += step) {
+    if ((Math.round(x / step) + row) % 3 === 0) { star5(ctx, x, y, step * 0.17, step * 0.075); ctx.fill(); }
+    else { ctx.beginPath(); ctx.arc(x, y, step * 0.07, 0, 7); ctx.fill(); }
+  }
+  ctx.restore();
+}
+
+// Buttons down a placket at x = 0 from y0 to y1; the lowest `closed` are done up, the others are open rings.
+export function pyjamaButtons(ctx, y0, y1, n, closed, r, base) {
+  ctx.save(); ctx.strokeStyle = 'rgba(74,53,82,0.22)'; ctx.lineWidth = Math.max(2, r * 0.35); ctx.lineCap = 'round';
+  ctx.beginPath(); ctx.moveTo(0, y0 - r * 1.6); ctx.lineTo(0, y1 + r * 1.6); ctx.stroke(); ctx.restore();
+  for (let i = 0; i < n; i++) {
+    const y = n === 1 ? (y0 + y1) / 2 : y0 + (y1 - y0) * i / (n - 1); const isClosed = n - i <= closed;
+    if (isClosed) {
+      fillShape(ctx, () => { ctx.beginPath(); ctx.arc(0, y, r, 0, 7); }, C.paper, { depth: 0.25 });
+      ctx.save(); ctx.fillStyle = 'rgba(74,53,82,0.35)'; for (const d of [-1, 1]) { ctx.beginPath(); ctx.arc(d * r * 0.32, y, r * 0.16, 0, 7); ctx.fill(); } ctx.restore();
+    } else {
+      ctx.save(); ctx.strokeStyle = 'rgba(74,53,82,0.45)'; ctx.lineWidth = Math.max(2, r * 0.28); ctx.setLineDash([r * 0.5, r * 0.4]);
+      ctx.beginPath(); ctx.arc(r * 1.1, y, r * 0.9, 0, 7); ctx.stroke(); ctx.restore();
+    }
+  }
+}
+
+// A pyjama top lying flat, `s` wide (sleeves included), centred at (x, y): pastel `color`, a print of little stars
+// ("dots" colour, false = plain), a V collar and `buttons` buttons (default 4), of which the lowest `closed`
+// are done up (default all; the others show as open rings). "wiggle": true lets it wobble a little.
+function drawPyjama(ctx, x, y, s, c, e = {}, t = 0) {
+  const base = c || PYJAMA, dots = e.dots === false ? null : col(e.dots, PYJAMA_DOTS);
+  const bw = s * 0.6, top = -s * 0.3, bot = s * 0.4;
+  ctx.save(); ctx.translate(x, y); if (e.wiggle) ctx.rotate(Math.sin(t * 3) * 0.05);
+  const shape = () => {
+    ctx.beginPath(); rrect(ctx, -bw / 2, top, bw, bot - top, s * 0.07);
+    for (const sd of [-1, 1]) { ctx.save(); ctx.translate(sd * s * 0.35, -s * 0.15); ctx.rotate(-sd * 0.8); ctx.rect(-s * 0.085, -s * 0.2, s * 0.17, s * 0.34); ctx.restore(); }
+  };
+  // sleeves first (behind), then the body, so the shoulder seams read as paper layers
+  for (const sd of [-1, 1]) { ctx.save(); ctx.translate(sd * s * 0.35, -s * 0.15); ctx.rotate(-sd * 0.8); fillShape(ctx, () => rrect(ctx, -s * 0.085, -s * 0.2, s * 0.17, s * 0.36, s * 0.05), base, { depth: 0.45 }); ctx.restore(); }
+  fillShape(ctx, () => rrect(ctx, -bw / 2, top, bw, bot - top, s * 0.07), base, { depth: 0.6 });
+  if (dots) { ctx.save(); shape(); ctx.clip(); pyjamaPrint(ctx, -s * 0.6, top - s * 0.1, s * 0.6, bot, s * 0.12, dots); ctx.restore(); }
+  // cuffs and hem a shade lighter
+  ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.45)'; ctx.fillRect(-bw / 2, bot - s * 0.06, bw, s * 0.06);
+  for (const sd of [-1, 1]) { ctx.save(); ctx.translate(sd * s * 0.35, -s * 0.15); ctx.rotate(-sd * 0.8); ctx.fillRect(-s * 0.085, s * 0.1, s * 0.17, s * 0.05); ctx.restore(); }
+  ctx.restore();
+  // V collar
+  fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(-s * 0.12, top); ctx.lineTo(0, top + s * 0.14); ctx.lineTo(s * 0.12, top); ctx.closePath(); }, '#FFFDF8', { depth: 0.2 });
+  const n = e.buttons ?? 4; const closed = e.closed ?? n;
+  pyjamaButtons(ctx, top + s * 0.2, bot - s * 0.12, n, closed, s * 0.032, base);
+  ctx.restore();
+}
 
 const SCARF = '#B9906A', SCARF_STRIPE = '#E8C77A';
 

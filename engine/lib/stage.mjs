@@ -188,9 +188,11 @@ const PROPS = {
     fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h, w, h, 16); }, C.wood);
     ctx.fillStyle = C.ochre; ctx.beginPath(); ctx.arc(x + w / 2 - 34, y - h / 2, 11, 0, 7); ctx.fill();
   },
-  window(ctx, x, y, w = 280, h = 240) {
+  // "night": true paints a dusky evening pane (moon and stars go on top as icons); "pane" sets any colour.
+  window(ctx, x, y, w = 280, h = 240, p = {}) {
     fillShape(ctx, () => { rrect(ctx, x - w / 2 - 14, y - h / 2 - 14, w + 28, h + 28, 18); }, C.paper);
-    fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h / 2, w, h, 10); }, '#CFE8F5', { sh: false });
+    const pane = p.pane ? col(p.pane) : (p.night ? '#8E9CCB' : '#CFE8F5');
+    fillShape(ctx, () => { rrect(ctx, x - w / 2, y - h / 2, w, h, 10); }, pane, { sh: false });
     ctx.fillStyle = C.paper; ctx.fillRect(x - 6, y - h / 2, 12, h); ctx.fillRect(x - w / 2, y - 6, w, 12);
   },
   bed(ctx, x, y, w = 520, h = 210) {

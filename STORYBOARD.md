@@ -98,6 +98,8 @@ Das Zeichen ≈ wird von Hand gezeichnet. Andere Sonderzeichen (♪, Emojis) gib
 - `role`: `mama`, `papa`, `woman`, `man`, `oma`, `opa`, `teacher`, `girl`, `boy`, `teen`, `toddler`
 - optional: `shirt`, `pants`, `hair` (`bun`, `ponytail`, `short`, `spiky`, `long`, `bald`), `hairColor` (`brown`, `dark`, `blond`, `red`, `grey`, `black`), `glasses`, `scale`, `pose: "sit"`
 - optional außerdem: `skin` (`light`, `medium`, `tan`, `brown`, `dark`).
+- `pyjama`: Schlafanzug-Muster auf dem Shirt (kleine Sterne und Punkte, Knopfleiste), `true` oder
+  `{"dots": "#FFF6D6", "buttons": 3, "closed": 3}` (`closed` = wie viele Knöpfe von unten zu sind); Farbe über `shirt`/`pants`.
 - `scarf`: gestrickter Schal um den Hals (Schlaufe unter dem Kinn, ein Ende hängt vorn auf der Blickseite), z. B.
   `"scarf": {"color": "#B9906A", "stripe": "#E8C77A", "in": "zieht ihn an"}`; ohne `in` von Anfang an, mit `in` ploppt er auf dem Anker an.
 - Aussehen wie in den freigegebenen Reels (Bild im Brand-Style-Doc): Haar als Papierkappe mit geradem Schnitt, Dutt bzw.
@@ -123,7 +125,7 @@ hellen Vorderseite; was „drin“ liegen soll, bekommt ein kleineres `z` und sc
 z. B. `"w": 150, "h": 70`, die Räder wachsen mit), `sink` (Waschbecken auf einer Säule mit Wasserhahn, Rand bei y − h; `"mirror": true` hängt einen Spiegel darüber, Höhe `"mirrorH"`), `plate` (Teller; `"food": true` legt Reis und ein Curry darauf,
 `"foodColor"` färbt das Curry, `"nuts": true` streut drei Cashews darüber, `"potatoes": true` häuft Kartoffelsalat darauf), `casserole` (Auflaufform aus hellem Glas; `"layers"`: Farben von unten nach oben als
 gewellte Schichten, `"slots"`: wie viele Schichten hineinpassen, damit mehrere Formen mit wachsender Füllung ineinander
-überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window`, `tv`, `laptop`, `stars`,
+überblenden, `"crumbs": true` streut Fetawürfel obenauf, `"steam": true` lässt es dampfen) (y = Boden, Standard 1478; Topf/Tasse/Teller auf einem Tisch: y = Tischplatte) sowie `blackboard`, `notebook`, `phone`, `book`, `clock`, `window` (`"night": true` = Abendhimmel, `"pane"` = eigene Scheibenfarbe), `tv`, `laptop`, `stars`,
 `paper` (Kinderzeichnung: weißes Blatt, leicht schräg (`"rot"`), oben Buntstift-Himmel (`"sky"`: Farbe oder `false`), unten Wiese
 (`"grass"`); darauf mit Icons wie `house`/`sun` und einer kleinen `tree`-Requisite malen) (y = Mitte). `text` (Zeile oder Liste), `size`, `color`, `screen` (Bildschirmfarbe).
 
@@ -193,8 +195,10 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   angelegten Flügeln, y = Punkt, an dem sie sich festhält, z. B. unter einem `tree`), `feather` (Feder, size = Länge, `"rot"` neigt sie, Standard −0,5);
   `scarf` (Strickschal mit Streifen und Fransen, size = Länge, `color`, `"stripe"`, `"rot"` neigt ihn, Standard −0,4; `"hang": true` hängt ihn
   in der Mitte gefaltet an x/y, beide Enden schwingen), `gift` (Geschenk mit Schleife, size = Breite, y = Mitte, Boden bei y + 0,45 × size,
-  `color`, `"ribbon"`; `"open": true` legt den Deckel schräg daneben), `yarn` (Wollknäuel mit zwei Stricknadeln, `"needles": false` ohne);
-  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin`, `feather`, `scarf` und `yarn`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
+  `color`, `"ribbon"`; `"open": true` legt den Deckel schräg daneben), `yarn` (Wollknäuel mit zwei Stricknadeln, `"needles": false` ohne), `pyjama` (Schlafanzug-Oberteil flach ausgebreitet, size = Breite
+  mit Ärmeln, `color`, `"dots"` (Farbe der Sternchen, `false` = ohne), `"buttons"` (Standard 4), `"closed"` (wie viele Knöpfe von unten zu sind,
+  die anderen sind offene Ringe), `"wiggle": true` wackelt);
+  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin`, `feather`, `scarf`, `yarn` und `pyjama`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
   (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 
