@@ -3,6 +3,72 @@
  "videos": [
   {
    "datum": "2026-11-27",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-27-abend-ich-bin-schon-gross",
+   "slug": "ich-bin-schon-gross",
+   "titel": "Ich bin schon groß!",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Groß“ ist keine Schublade, sondern ein Wort ganz oben: darunter hängen viele kleine Fähigkeiten (Zähne putzen, Knöpfe zumachen, lange aufbleiben), und jede wächst für sich; darum ist ein Kind groß und klein zugleich, nur in verschiedenen Schubladen; wer oben streitet („Du bist doch schon groß!“, „Groß oder klein?“), bekommt die Antwort, die gerade passt, oder ein Kind, das sich ganz klein fühlt; die Frage „Wofür bist du schon groß?“ sortiert eine Schublade tiefer (Finn, fünf, will länger aufbleiben: „Ich bin schon groß!“; den Pyjama mit Knöpfen kann er nicht allein anziehen: „Dafür bin ich noch zu klein.“ Papa fragt: „Wofür bist du schon groß?“ „Zähne putzen! Ganz allein!“ „Und wofür noch nicht?“ „Knöpfe.“ Die machen sie zusammen, den untersten schafft Finn allein. „Und fürs Aufbleiben?“ Finn gähnt: „Dafür bin ich heute noch klein.“)",
+   "reihe": "Finn, groß und klein (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn dein Kind auch gleichzeitig groß und klein ist.",
+   "hooks": {
+    "a": "„Papa, ich bin schon groß!“"
+   },
+   "dauer": {
+    "a": 98.57
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/sE4NXvTQEeEMUHUm6RGs",
+   "status": "fertig",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt („groß“ als Wort über vielen einzelnen Fähigkeiten kam noch nicht vor). Beispiel selbst erfunden: Finn (fünf) und Papa am Abend im Kinderzimmer, der Pyjama mit Knöpfen. Neu in der Engine: Icon pyjama, Figurenfeld pyjama, Nachtfenster. Stimme über den vollen ElevenLabs-Connector. Captions in Drive (2026-11-27-ich-bin-schon-gross-captions). Stimme gesamt für die Reihe etwa 3.930 Credits. Dauer 98,6 s (Stimme langsamer als sonst; unter der Grenze von 100 s, aber über den 90 s aus STYLE.md)."
+  },
+  {
+   "datum": "2026-11-27",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-27-abend-ohne-streit-ins-bett",
+   "slug": "ohne-streit-ins-bett",
+   "titel": "Ohne Streit ins Bett",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Groß“ ist keine Schublade, sondern ein Wort ganz oben: darunter hängen viele kleine Fähigkeiten (Zähne putzen, Knöpfe zumachen, lange aufbleiben), und jede wächst für sich; darum ist ein Kind groß und klein zugleich, nur in verschiedenen Schubladen; wer oben streitet („Du bist doch schon groß!“, „Groß oder klein?“), bekommt die Antwort, die gerade passt, oder ein Kind, das sich ganz klein fühlt; die Frage „Wofür bist du schon groß?“ sortiert eine Schublade tiefer (Finn, fünf, will länger aufbleiben: „Ich bin schon groß!“; den Pyjama mit Knöpfen kann er nicht allein anziehen: „Dafür bin ich noch zu klein.“ Papa fragt: „Wofür bist du schon groß?“ „Zähne putzen! Ganz allein!“ „Und wofür noch nicht?“ „Knöpfe.“ Die machen sie zusammen, den untersten schafft Finn allein. „Und fürs Aufbleiben?“ Finn gähnt: „Dafür bin ich heute noch klein.“)",
+   "reihe": "Finn, groß und klein (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, damit Kinder Schublade für Schublade groß werden dürfen.",
+   "hooks": {
+    "b": "Finn geht ohne Streit ins Bett."
+   },
+   "dauer": {
+    "b": 83.23
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/sE4NXvTQEeEMUHUm6RGs",
+   "status": "fertig",
+   "hinweis": "Video 2 der Reihe; Label „Wofür-Frage“ (Rehook Nr. 35). Captions in Drive (2026-11-27-ohne-streit-ins-bett-captions)."
+  },
+  {
+   "datum": "2026-11-27",
+   "slot": "abend",
+   "ordner": "episodes/2026-11-27-abend-du-bist-doch-schon-gross",
+   "slug": "du-bist-doch-schon-gross",
+   "titel": "„Du bist doch schon groß!“",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "„Groß“ ist keine Schublade, sondern ein Wort ganz oben: darunter hängen viele kleine Fähigkeiten (Zähne putzen, Knöpfe zumachen, lange aufbleiben), und jede wächst für sich; darum ist ein Kind groß und klein zugleich, nur in verschiedenen Schubladen; wer oben streitet („Du bist doch schon groß!“, „Groß oder klein?“), bekommt die Antwort, die gerade passt, oder ein Kind, das sich ganz klein fühlt; die Frage „Wofür bist du schon groß?“ sortiert eine Schublade tiefer (Finn, fünf, will länger aufbleiben: „Ich bin schon groß!“; den Pyjama mit Knöpfen kann er nicht allein anziehen: „Dafür bin ich noch zu klein.“ Papa fragt: „Wofür bist du schon groß?“ „Zähne putzen! Ganz allein!“ „Und wofür noch nicht?“ „Knöpfe.“ Die machen sie zusammen, den untersten schafft Finn allein. „Und fürs Aufbleiben?“ Finn gähnt: „Dafür bin ich heute noch klein.“)",
+   "reihe": "Finn, groß und klein (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du auch schon „Du bist doch groß!“ gesagt hast.",
+   "hooks": {
+    "c": "„Du bist doch schon groß!“ hilft selten."
+   },
+   "dauer": {
+    "c": 83.4
+   },
+   "flow_url": "https://elevenlabs.io/app/flows/sE4NXvTQEeEMUHUm6RGs",
+   "status": "fertig",
+   "hinweis": "Video 3 der Reihe; Du-Fehler ohne Urteil („Ich weiß, das sag ich auch.“, „Finn hört vielleicht“). Captions in Drive (2026-11-27-du-bist-doch-schon-gross-captions)."
+  },
+  {
+   "datum": "2026-11-27",
    "slot": "morgen",
    "idee": "eigenes Thema (keine Idee offen)",
    "thema": "Wenn zwei Regeln sich streiten, liegt die Lösung eine Schublade tiefer: Kinder halten sich oft wörtlich an eine Regel von ganz oben („nicht lügen“) und sagen, was sie unten gerade spüren („Der kratzt.“, „Der ist hässlich.“); das ist nicht frech, sondern regeltreu; kommt „lieb sein“ dazu, ziehen beide in zwei Richtungen, und „Sag einfach, er gefällt dir“ schaltet die erste Regel kurz aus; eine Frage eine Schublade tiefer („Was stimmt denn noch an dem Schal?“) findet Sätze, die an beiden Regeln hängen: wahr und lieb (Oskar, sechs, bekommt von Oma Inge einen Schal, drei Abende lang gestrickt: „Oma, der Schal ist hässlich.“ Mama flüstert: „Sag einfach, er gefällt dir.“ Oskar: „Aber das ist doch gelogen!“ Mama fragt nach unten: „Er ist warm.“ „Oma hat ihn selbst gemacht.“ Oskar: „Oma, hast du den ganz allein gestrickt? Der ist so warm!“ Oma strahlt; „Nur am Hals kratzt er.“ Oma lacht: „Dann strick ich dir einen weichen.“)",

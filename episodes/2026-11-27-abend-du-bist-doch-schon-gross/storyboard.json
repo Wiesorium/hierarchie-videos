@@ -1,0 +1,1116 @@
+{
+ "slug": "du-bist-doch-schon-gross",
+ "title": "„Du bist doch schon groß!“",
+ "cta": "follow",
+ "hero": "finn",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "focus": "papa",
+   "scale": 1.9,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "„Du bist doch schon groß!“ hilft selten.",
+   "card": [
+    "Groß – aber",
+    "*wofür?*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Ich weiß, das sag ich auch. Was besser hilft, zeig ich dir am Ende. Finn ist fünf. Er soll den Pyjama allein anziehen. „Das kann ich nicht.“ Papa sagt: „Du bist doch schon groß!“ Und Finn ruft: „Nein! Ich bin klein!“ Dabei wollte er eben noch länger aufbleiben. Weil er groß ist.",
+  "block1": "Schau dir das als Knoten an. „Groß“ steht ganz oben. Darunter hängen viele kleine Schubladen: Zähne putzen. Knöpfe zumachen. Lange aufbleiben. Und jede wächst für sich. Bei Finn sind manche schon voll. Andere noch leer.",
+  "rehook1": "Aber genau da liegt das Problem.",
+  "block2": "„Du bist doch groß“ redet nur mit der obersten Schublade. Finn hört vielleicht: Wer groß ist, kann alles. Aber die Knöpfe kann er nicht. Also ist er wohl ganz klein. Und der Streit bleibt oben hängen.",
+  "rehook2": "So. Jetzt der wichtige Teil.",
+  "block3": "Frag eine Schublade tiefer: „Wofür bist du schon groß?“ Finn schnieft. „Zähne putzen.“ „Und wofür noch nicht?“ „Knöpfe.“ „Dann machen wir die zusammen.“ Den untersten Knopf schafft Finn allein. Und Papa sagt: „Bei dem Knopf bist du jetzt groß.“ Finn grinst.",
+  "closing": "Was sagst du nächstes Mal statt „Du bist doch groß“?",
+  "cta": "Folg mir, wenn du auch schon „Du bist doch groß!“ gesagt hast."
+ },
+ "question": [
+  "Was sagst du nächstes Mal",
+  "statt „Du bist doch groß“?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du auch schon",
+   "„Du bist doch groß!“ gesagt hast"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 300,
+     "y": 700,
+     "w": 300,
+     "h": 240,
+     "night": true
+    },
+    {
+     "id": "moon",
+     "type": "icon",
+     "kind": "moon",
+     "x": 235,
+     "y": 668,
+     "size": 86,
+     "z": 0.5
+    },
+    {
+     "id": "st1",
+     "type": "icon",
+     "kind": "star",
+     "x": 372,
+     "y": 640,
+     "size": 30,
+     "z": 0.5
+    },
+    {
+     "id": "st2",
+     "type": "icon",
+     "kind": "star",
+     "x": 400,
+     "y": 742,
+     "size": 22,
+     "z": 0.5
+    },
+    {
+     "id": "st3",
+     "type": "icon",
+     "kind": "star",
+     "x": 212,
+     "y": 768,
+     "size": 20,
+     "z": 0.5
+    },
+    {
+     "id": "clock",
+     "type": "prop",
+     "kind": "clock",
+     "x": 650,
+     "y": 610,
+     "w": 112
+    },
+    {
+     "id": "bed",
+     "type": "prop",
+     "kind": "bed",
+     "x": 820,
+     "w": 420,
+     "h": 200
+    },
+    {
+     "id": "pj",
+     "type": "icon",
+     "kind": "pyjama",
+     "x": 890,
+     "y": 1318,
+     "size": 160,
+     "color": "#D9C6F0",
+     "closed": 0,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "pants": "#5B6E9C",
+     "glasses": true,
+     "id": "papa",
+     "x": 190,
+     "look": "right",
+     "mood": "open",
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "smile"
+      },
+      {
+       "at": "Ich bin klein",
+       "mood": "worried"
+      }
+     ],
+     "talk": [
+      [
+       "@-2.9",
+       "@-1.5"
+      ],
+      [
+       "Du bist doch",
+       "end:schon groß"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "@-2.2",
+       "kind": "point",
+       "dur": 1.6
+      },
+      {
+       "at": "Er soll",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#9FD3C7",
+     "pants": "#86A6D8",
+     "id": "finn",
+     "x": 470,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "neutral"
+      },
+      {
+       "at": "Das kann ich",
+       "mood": "worried"
+      },
+      {
+       "at": "Ich bin klein",
+       "mood": "sad"
+      },
+      {
+       "at": "Weil er",
+       "mood": "neutral"
+      }
+     ],
+     "talk": [
+      [
+       "Das kann ich",
+       "end:kann ich nicht"
+      ],
+      [
+       "Nein Ich",
+       "end:bin klein"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Ich bin klein",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Du bist doch schon *groß*!",
+     "x": 360,
+     "y": 900,
+     "maxW": 380,
+     "size": 44,
+     "in": "@-3.3",
+     "out": "@0.3"
+    },
+    {
+     "id": "bulb0",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 680,
+     "y": 780,
+     "size": 86,
+     "in": "Was besser",
+     "out": "Finn ist"
+    },
+    {
+     "id": "t_ende",
+     "type": "tag",
+     "text": "am Ende",
+     "x": 680,
+     "y": 880,
+     "color": "rose",
+     "in": "am Ende",
+     "out": "Finn ist"
+    },
+    {
+     "id": "t_finn",
+     "type": "tag",
+     "text": "Finn, fünf",
+     "x": 470,
+     "y": 1100,
+     "color": "plum",
+     "in": "Finn ist",
+     "out": "Er soll"
+    },
+    {
+     "id": "pj_big",
+     "type": "icon",
+     "kind": "pyjama",
+     "x": 830,
+     "y": 930,
+     "size": 250,
+     "color": "#D9C6F0",
+     "closed": 0,
+     "wiggle": true,
+     "in": "Er soll",
+     "out": "Dabei wollte"
+    },
+    {
+     "id": "b_f1",
+     "type": "bubble",
+     "from": "finn",
+     "text": "Das kann ich *nicht*.",
+     "x": 470,
+     "y": 1010,
+     "maxW": 340,
+     "size": 44,
+     "in": "Das kann ich-0.1",
+     "out": "Papa sagt"
+    },
+    {
+     "id": "b_p1",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Du bist doch schon *groß*!",
+     "x": 360,
+     "y": 900,
+     "maxW": 380,
+     "size": 44,
+     "in": "Du bist doch-0.1",
+     "out": "Und Finn ruft"
+    },
+    {
+     "id": "b_f2",
+     "type": "bubble",
+     "from": "finn",
+     "text": "Nein! Ich bin *klein*!",
+     "x": 470,
+     "y": 1010,
+     "maxW": 340,
+     "size": 46,
+     "in": "Nein Ich-0.1",
+     "out": "Dabei wollte"
+    },
+    {
+     "id": "t_eben",
+     "type": "tag",
+     "text": "eben noch: *groß*",
+     "x": 650,
+     "y": 740,
+     "color": "plum",
+     "in": "Dabei wollte"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "pants": "#5B6E9C",
+     "glasses": true,
+     "id": "papa",
+     "x": 125,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Groß steht",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#9FD3C7",
+     "pants": "#86A6D8",
+     "id": "finn",
+     "x": 960,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "schon voll",
+       "mood": "smile"
+      },
+      {
+       "at": "noch leer",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "id": "n_gross",
+     "type": "node",
+     "x": 540,
+     "y": 560,
+     "w": 320,
+     "h": 120,
+     "label": "*groß*",
+     "size": 62,
+     "color": "idea",
+     "icon": "star",
+     "iconColor": "#F7C948",
+     "in": "Groß steht",
+     "out": "Und Papa sagt",
+     "states": [
+      {
+       "at": "Groß steht",
+       "state": "glow"
+      },
+      {
+       "at": "Darunter",
+       "state": "normal"
+      },
+      {
+       "at": "obersten Schublade",
+       "state": "glow"
+      },
+      {
+       "at": "Finn hört",
+       "state": "normal"
+      },
+      {
+       "at": "ganz klein",
+       "state": "cross"
+      },
+      {
+       "at": "oben hängen",
+       "state": "shake+red+cross"
+      },
+      {
+       "at": "oben hängen+0.75",
+       "state": "red+cross"
+      },
+      {
+       "at": "Frag eine",
+       "state": "normal"
+      },
+      {
+       "at": "jetzt groß",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "n_zaehne",
+     "type": "node",
+     "y": 860,
+     "w": 300,
+     "h": 104,
+     "size": 36,
+     "x": 190,
+     "label": "Zähne putzen",
+     "emptyLabel": "Zähne putzen",
+     "icon": "toothbrush",
+     "color": "fresh",
+     "in": "Zähne putzen",
+     "out": "Und Papa sagt",
+     "states": [
+      {
+       "at": "schon voll",
+       "state": "gold"
+      },
+      {
+       "at": "Aber genau",
+       "state": "normal"
+      },
+      {
+       "at": "Zähne putzen#2",
+       "state": "gold+check"
+      }
+     ]
+    },
+    {
+     "id": "n_knoepfe",
+     "type": "node",
+     "y": 860,
+     "w": 300,
+     "h": 104,
+     "size": 36,
+     "x": 540,
+     "label": "Knöpfe zu",
+     "emptyLabel": "Knöpfe zu",
+     "icon": "pyjama",
+     "iconColor": "#D9C6F0",
+     "color": "fresh",
+     "in": "Knöpfe zumachen",
+     "out": "Und Papa sagt",
+     "states": [
+      {
+       "at": "noch leer",
+       "state": "empty"
+      },
+      {
+       "at": "die Knöpfe kann",
+       "state": "empty+shake"
+      },
+      {
+       "at": "die Knöpfe kann+0.7",
+       "state": "empty"
+      },
+      {
+       "at": "Knöpfe Dann",
+       "state": "glow"
+      },
+      {
+       "at": "Den untersten",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "n_auf",
+     "type": "node",
+     "y": 860,
+     "w": 300,
+     "h": 104,
+     "size": 36,
+     "x": 890,
+     "label": "aufbleiben",
+     "emptyLabel": "aufbleiben",
+     "icon": "moon",
+     "color": "fresh",
+     "in": "Lange aufbleiben",
+     "out": "Und Papa sagt",
+     "states": [
+      {
+       "at": "noch leer",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "l1",
+     "type": "link",
+     "from": "n_gross",
+     "to": "n_zaehne",
+     "style": "line",
+     "in": "Zähne putzen+0.2",
+     "out": "Du bist doch groß redet"
+    },
+    {
+     "id": "l2",
+     "type": "link",
+     "from": "n_gross",
+     "to": "n_knoepfe",
+     "style": "line",
+     "in": "Knöpfe zumachen+0.2",
+     "out": "Du bist doch groß redet"
+    },
+    {
+     "id": "l3",
+     "type": "link",
+     "from": "n_gross",
+     "to": "n_auf",
+     "style": "line",
+     "in": "Lange aufbleiben+0.2",
+     "out": "Du bist doch groß redet"
+    },
+    {
+     "id": "t_waechst",
+     "type": "tag",
+     "text": "jede wächst für sich",
+     "x": 540,
+     "y": 1180,
+     "color": "plum",
+     "in": "wächst für sich",
+     "out": "Bei Finn"
+    },
+    {
+     "id": "x_prob",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 540,
+     "y": 730,
+     "size": 70,
+     "in": "Aber genau",
+     "out": "Du bist doch groß redet"
+    }
+   ]
+  },
+  {
+   "at": "Du bist doch groß redet",
+   "chord": "Bm",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "pants": "#5B6E9C",
+     "glasses": true,
+     "id": "papa",
+     "x": 125,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "ganz klein",
+       "mood": "worried"
+      }
+     ],
+     "talk": [
+      [
+       "Du bist doch",
+       "end:doch groß"
+      ]
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#9FD3C7",
+     "pants": "#86A6D8",
+     "id": "finn",
+     "x": 960,
+     "look": "left",
+     "mood": "worried",
+     "moods": [
+      {
+       "at": "ganz klein",
+       "mood": "sad"
+      },
+      {
+       "at": "So Jetzt",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "ganz klein",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "id": "b_p2",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Du bist doch *groß*!",
+     "x": 440,
+     "y": 1060,
+     "maxW": 360,
+     "size": 44,
+     "out": "Finn hört"
+    },
+    {
+     "id": "r_p",
+     "type": "link",
+     "from": {
+      "x": 300,
+      "y": 1000
+     },
+     "to": "n_gross",
+     "style": "red",
+     "in": "obersten Schublade",
+     "out": "Aber die Knöpfe"
+    },
+    {
+     "id": "th_f",
+     "type": "thought",
+     "from": "finn",
+     "text": "Wer groß ist, kann *alles*.",
+     "x": 720,
+     "y": 1060,
+     "size": 40,
+     "maxW": 380,
+     "in": "Wer groß",
+     "out": "Also ist er"
+    },
+    {
+     "id": "r_k",
+     "type": "link",
+     "from": "n_knoepfe",
+     "to": "n_gross",
+     "style": "red",
+     "in": "ganz klein",
+     "out": "So Jetzt"
+    },
+    {
+     "id": "t_klein",
+     "type": "tag",
+     "text": "ganz *klein*",
+     "x": 540,
+     "y": 1180,
+     "color": "plum",
+     "in": "ganz klein",
+     "out": "So Jetzt"
+    },
+    {
+     "id": "s_streit",
+     "type": "stamp",
+     "text": "Streit",
+     "x": 850,
+     "y": 520,
+     "size": 54,
+     "in": "oben hängen",
+     "out": "So Jetzt"
+    },
+    {
+     "id": "t_teil",
+     "type": "tag",
+     "text": "der wichtige Teil",
+     "x": 540,
+     "y": 1180,
+     "color": "rose",
+     "in": "der wichtige Teil"
+    }
+   ]
+  },
+  {
+   "at": "Frag eine Schublade",
+   "chord": "A",
+   "elements": [
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "pants": "#5B6E9C",
+     "glasses": true,
+     "id": "papa",
+     "x": 125,
+     "look": "right",
+     "mood": "smile",
+     "talk": [
+      [
+       "Wofür bist du",
+       "end:schon groß"
+      ],
+      [
+       "Und wofür",
+       "end:noch nicht"
+      ],
+      [
+       "Dann machen",
+       "end:die zusammen"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Wofür bist du",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "moods": [
+      {
+       "at": "Den untersten",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#9FD3C7",
+     "pants": "#86A6D8",
+     "id": "finn",
+     "x": 960,
+     "look": "left",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Zähne putzen",
+       "mood": "neutral"
+      },
+      {
+       "at": "Dann machen",
+       "mood": "smile"
+      },
+      {
+       "at": "Den untersten",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Zähne putzen",
+       "end:Zähne putzen"
+      ],
+      [
+       "Knöpfe Dann",
+       "end:Knöpfe Dann"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Den untersten",
+       "kind": "raise",
+       "dur": 1.3
+      }
+     ]
+    },
+    {
+     "id": "pf",
+     "type": "arrow",
+     "from": {
+      "x": 960,
+      "y": 530
+     },
+     "to": {
+      "x": 960,
+      "y": 790
+     },
+     "style": "red",
+     "in": "Schublade tiefer",
+     "out": "Finn schnieft"
+    },
+    {
+     "id": "b_p3",
+     "type": "bubble",
+     "from": "papa",
+     "text": "*Wofür* bist du schon groß?",
+     "x": 440,
+     "y": 1060,
+     "maxW": 380,
+     "size": 42,
+     "in": "Wofür bist du-0.1",
+     "out": "Finn schnieft"
+    },
+    {
+     "id": "b_f3",
+     "type": "bubble",
+     "from": "finn",
+     "text": "Zähne putzen.",
+     "x": 740,
+     "y": 1070,
+     "maxW": 300,
+     "size": 44,
+     "in": "Zähne putzen-0.1",
+     "out": "Und wofür-0.25"
+    },
+    {
+     "id": "g1",
+     "type": "link",
+     "from": "n_gross",
+     "to": "n_zaehne",
+     "style": "gold",
+     "in": "Zähne putzen",
+     "out": "Und Papa sagt"
+    },
+    {
+     "id": "tg_z",
+     "type": "tag",
+     "text": "groß",
+     "x": 190,
+     "y": 950,
+     "color": "rose",
+     "in": "Zähne putzen+0.3",
+     "out": "Und Papa sagt"
+    },
+    {
+     "id": "b_p4",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Und wofür noch *nicht*?",
+     "x": 440,
+     "y": 1060,
+     "maxW": 360,
+     "size": 42,
+     "in": "Und wofür-0.1",
+     "out": "Knöpfe Dann"
+    },
+    {
+     "id": "b_f4",
+     "type": "bubble",
+     "from": "finn",
+     "text": "*Knöpfe.*",
+     "x": 800,
+     "y": 1070,
+     "maxW": 240,
+     "size": 46,
+     "in": "Knöpfe Dann-0.1",
+     "out": "Dann machen"
+    },
+    {
+     "id": "b_p5",
+     "type": "bubble",
+     "from": "papa",
+     "text": "Dann machen wir die *zusammen*.",
+     "x": 440,
+     "y": 1060,
+     "maxW": 380,
+     "size": 42,
+     "in": "Dann machen-0.1",
+     "out": "Den untersten"
+    },
+    {
+     "id": "g2",
+     "type": "link",
+     "from": "n_gross",
+     "to": "n_knoepfe",
+     "style": "gold",
+     "in": "Den untersten",
+     "out": "Und Papa sagt"
+    },
+    {
+     "id": "pj0",
+     "type": "icon",
+     "kind": "pyjama",
+     "x": 540,
+     "y": 1190,
+     "size": 230,
+     "color": "#D9C6F0",
+     "closed": 0,
+     "in": "Dann machen",
+     "out": "Den untersten"
+    },
+    {
+     "id": "pj1",
+     "type": "icon",
+     "kind": "pyjama",
+     "x": 540,
+     "y": 1190,
+     "size": 230,
+     "color": "#D9C6F0",
+     "closed": 1,
+     "enter": "none",
+     "in": "Den untersten",
+     "out": "Und Papa sagt"
+    },
+    {
+     "id": "st_btn",
+     "type": "icon",
+     "kind": "star",
+     "x": 612,
+     "y": 1292,
+     "size": 50,
+     "in": "Den untersten+0.25",
+     "out": "Und Papa sagt"
+    }
+   ]
+  },
+  {
+   "at": "Und Papa sagt",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "r_win",
+     "type": "prop",
+     "kind": "window",
+     "x": 300,
+     "y": 700,
+     "w": 300,
+     "h": 240,
+     "night": true,
+     "enter": "fade"
+    },
+    {
+     "id": "r_moon",
+     "type": "icon",
+     "kind": "moon",
+     "x": 235,
+     "y": 668,
+     "size": 86,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_st1",
+     "type": "icon",
+     "kind": "star",
+     "x": 372,
+     "y": 640,
+     "size": 30,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_st2",
+     "type": "icon",
+     "kind": "star",
+     "x": 400,
+     "y": 742,
+     "size": 22,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_st3",
+     "type": "icon",
+     "kind": "star",
+     "x": 212,
+     "y": 768,
+     "size": 20,
+     "z": 0.5,
+     "enter": "fade"
+    },
+    {
+     "id": "r_clock",
+     "type": "prop",
+     "kind": "clock",
+     "x": 650,
+     "y": 610,
+     "w": 112,
+     "enter": "fade"
+    },
+    {
+     "id": "r_bed",
+     "type": "prop",
+     "kind": "bed",
+     "x": 820,
+     "w": 420,
+     "h": 200,
+     "enter": "fade"
+    },
+    {
+     "type": "figure",
+     "role": "papa",
+     "hair": "short",
+     "hairColor": "brown",
+     "shirt": "#FBE3A0",
+     "pants": "#5B6E9C",
+     "glasses": true,
+     "id": "r_papa",
+     "x": 230,
+     "look": "right",
+     "mood": "smile",
+     "enter": "fade",
+     "talk": [
+      [
+       "Bei dem Knopf",
+       "end:jetzt groß"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Bei dem Knopf",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "boy",
+     "hair": "spiky",
+     "hairColor": "brown",
+     "shirt": "#D9C6F0",
+     "pants": "#C7B3E6",
+     "pyjama": {
+      "dots": "#FFF6D6",
+      "buttons": 3
+     },
+     "id": "r_finn",
+     "x": 500,
+     "look": "left",
+     "mood": "smile",
+     "enter": "fade",
+     "hop": "Finn grinst",
+     "moods": [
+      {
+       "at": "Finn grinst",
+       "mood": "grin"
+      }
+     ]
+    },
+    {
+     "id": "b_p6",
+     "type": "bubble",
+     "from": "r_papa",
+     "text": "Bei *dem* Knopf bist du jetzt *groß*.",
+     "x": 420,
+     "y": 900,
+     "maxW": 420,
+     "size": 42,
+     "in": "Bei dem Knopf-0.1"
+    },
+    {
+     "id": "r_star",
+     "type": "icon",
+     "kind": "star",
+     "x": 580,
+     "y": 1330,
+     "size": 54,
+     "in": "jetzt groß"
+    },
+    {
+     "id": "r_h",
+     "type": "icon",
+     "kind": "heart",
+     "x": 640,
+     "y": 1100,
+     "size": 60,
+     "in": "Finn grinst"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Ich bin klein",
+   "x": 470,
+   "y": 1010
+  },
+  {
+   "at": "Groß steht",
+   "x": 540,
+   "y": 560
+  },
+  {
+   "at": "schon voll",
+   "x": 190,
+   "y": 860
+  },
+  {
+   "at": "noch leer",
+   "x": 715,
+   "y": 860
+  },
+  {
+   "at": "ganz klein",
+   "x": 540,
+   "y": 560
+  },
+  {
+   "at": "Zähne putzen#2",
+   "x": 190,
+   "y": 860
+  },
+  {
+   "at": "Den untersten",
+   "x": 540,
+   "y": 1190
+  },
+  {
+   "at": "jetzt groß",
+   "x": 500,
+   "y": 1250
+  }
+ ]
+}
