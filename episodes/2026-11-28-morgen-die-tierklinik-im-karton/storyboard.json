@@ -1,0 +1,1477 @@
+{
+ "slug": "die-tierklinik-im-karton",
+ "title": "Die Tierklinik im Karton",
+ "cta": "follow",
+ "hero": "nora",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "fx": 760,
+   "fy": 1330,
+   "scale": 1.8,
+   "hold": 1.3,
+   "dur": 1.0
+  }
+ },
+ "hooks": {
+  "b": {
+   "label": "Ergebnis zuerst",
+   "audio": "Aus einem Karton wird eine Tierklinik.",
+   "card": [
+    "Eine Stunde vorher:",
+    "*„Langweilig!“*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Nora ist sechs. Zwei Stunden lang verarztet sie ihre Kuscheltiere. Der Igel bekommt ein Pflaster, die Stifte schreiben Rezepte. Eine Stunde vorher lag sie noch auf dem Boden: „Mir ist so langweilig!“ Das ergibt gleich Sinn, wenn du den Rest siehst.",
+  "block1": "Schau dir das als Knoten an. Unten liegen die Dinge: Bausteine, Stifte, Kuscheltiere, ein leerer Karton. Die waren die ganze Zeit da. Neu ist nur eine Schublade oben: Tierklinik. Eine Idee, die die Dinge verbindet. Der Karton wird die Klinik, die Kuscheltiere werden Patienten.",
+  "rehook1": "Schau, was passiert, wenn ich nur eine Sache ändere.",
+  "block2": "Nimm die Idee oben weg. Dann ist ein Karton nur ein Karton, und der Igel liegt halt rum. Das ist Langeweile: Unten ist alles da, oben ist es leer. Darum hat „Spiel doch mit den Bausteinen!“ nicht geholfen. Noch ein Ding füllt oben nichts.",
+  "rehook2": "Und jetzt wird’s spannend.",
+  "block3": "Wie kam die Idee nach oben? Mama hat nichts mehr vorgeschlagen. Nur: „Langweilig ist okay.“ Nora lag auf dem Boden, neben ihr der Igel, umgekippt. „Der Igel ist krank!“ Aus einem kleinen Ding unten wächst die Idee oben. Dafür braucht es den leeren Platz.",
+  "closing": "Wie lange darf sich dein Kind bei euch langweilen?",
+  "cta": "Folg mir, wenn Langeweile bei euch auch mal sein darf."
+ },
+ "question": [
+  "Wie lange darf sich dein Kind",
+  "bei euch langweilen?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn Langeweile bei euch",
+   "auch mal sein darf"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "carton",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "out": "Eine Stunde vorher",
+     "text": "Tierklinik",
+     "heart": true,
+     "z": 2.5
+    },
+    {
+     "id": "carton_e",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "in": "Eine Stunde vorher",
+     "enter": "none",
+     "z": 2.4
+    },
+    {
+     "id": "igel_p",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 862,
+     "y": 1452,
+     "size": 84,
+     "out": "Eine Stunde vorher",
+     "z": 2.5
+    },
+    {
+     "id": "pl0",
+     "type": "icon",
+     "kind": "plaster",
+     "x": 842,
+     "y": 1432,
+     "size": 50,
+     "in": "Pflaster",
+     "out": "Eine Stunde vorher",
+     "rot": -0.3,
+     "z": 2.7
+    },
+    {
+     "id": "igel_d",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 826,
+     "y": 1452,
+     "size": 96,
+     "in": "Eine Stunde vorher",
+     "rot": 3.05,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "happy",
+     "moods": [
+      {
+       "at": "Eine Stunde vorher",
+       "mood": "worried"
+      },
+      {
+       "at": "Das ergibt",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "y": 1478,
+     "pose": "sit",
+     "look": "left",
+     "mood": "grin",
+     "moods": [
+      {
+       "at": "Eine Stunde vorher",
+       "mood": "sad"
+      },
+      {
+       "at": "Das ergibt",
+       "mood": "neutral"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "@-2.2",
+       "kind": "cheer",
+       "dur": 1.6
+      },
+      {
+       "at": "verarztet",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Mir ist so",
+       "end:langweilig"
+      ]
+     ]
+    },
+    {
+     "id": "t_nora",
+     "type": "tag",
+     "text": "Nora, sechs",
+     "x": 920,
+     "y": 1180,
+     "color": "plum",
+     "in": "Nora ist",
+     "out": "Zwei Stunden"
+    },
+    {
+     "id": "clk0",
+     "type": "icon",
+     "kind": "clock",
+     "x": 820,
+     "y": 640,
+     "size": 90,
+     "in": "Zwei Stunden",
+     "out": "Eine Stunde vorher"
+    },
+    {
+     "id": "t_zwei",
+     "type": "tag",
+     "text": "zwei Stunden",
+     "x": 820,
+     "y": 740,
+     "color": "rose",
+     "in": "Zwei Stunden",
+     "out": "Eine Stunde vorher"
+    },
+    {
+     "id": "rez0",
+     "type": "card",
+     "lines": [
+      "Rezept:",
+      "*kuscheln*"
+     ],
+     "x": 440,
+     "y": 1190,
+     "size": 30,
+     "in": "Rezepte",
+     "out": "Eine Stunde vorher"
+    },
+    {
+     "id": "t_vorher",
+     "type": "tag",
+     "text": "eine Stunde vorher",
+     "x": 540,
+     "y": 880,
+     "color": "plum",
+     "in": "Eine Stunde vorher",
+     "out": "Das ergibt"
+    },
+    {
+     "id": "b_n1",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Mir ist so *langweilig*!",
+     "x": 760,
+     "y": 1040,
+     "maxW": 360,
+     "size": 44,
+     "in": "Mir ist so-0.1",
+     "out": "Das ergibt"
+    },
+    {
+     "id": "bulb0",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 540,
+     "y": 900,
+     "size": 80,
+     "in": "Das ergibt"
+    },
+    {
+     "id": "t_rest",
+     "type": "tag",
+     "text": "gleich ergibt es Sinn",
+     "x": 540,
+     "y": 1010,
+     "color": "rose",
+     "in": "Das ergibt"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "carton_e",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.4
+    },
+    {
+     "id": "igel_d",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 826,
+     "y": 1452,
+     "size": 96,
+     "rot": 3.05,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Unten liegen",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "moods": [
+      {
+       "at": "Tierklinik",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "y": 1478,
+     "pose": "sit",
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Tierklinik",
+       "mood": "grin"
+      }
+     ]
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food",
+     "in": "Bausteine",
+     "states": [
+      {
+       "at": "ganze Zeit",
+       "state": "check"
+      },
+      {
+       "at": "Neu ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food",
+     "in": "Stifte",
+     "states": [
+      {
+       "at": "ganze Zeit",
+       "state": "check"
+      },
+      {
+       "at": "Neu ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food",
+     "in": "leerer Karton",
+     "states": [
+      {
+       "at": "ganze Zeit",
+       "state": "check"
+      },
+      {
+       "at": "Neu ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food",
+     "in": "Kuscheltiere",
+     "states": [
+      {
+       "at": "ganze Zeit",
+       "state": "check"
+      },
+      {
+       "at": "Neu ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "fl_n_bau",
+     "type": "link",
+     "from": "n_bau",
+     "to": {
+      "x": 300,
+      "y": 1318
+     },
+     "style": "line",
+     "in": "Bausteine+0.2"
+    },
+    {
+     "id": "fl_n_stift",
+     "type": "link",
+     "from": "n_stift",
+     "to": {
+      "x": 455,
+      "y": 1390
+     },
+     "style": "line",
+     "in": "Stifte+0.2"
+    },
+    {
+     "id": "fl_n_karton",
+     "type": "link",
+     "from": "n_karton",
+     "to": {
+      "x": 620,
+      "y": 1296
+     },
+     "style": "line",
+     "in": "leerer Karton+0.2"
+    },
+    {
+     "id": "fl_n_kuschel",
+     "type": "link",
+     "from": "n_kuschel",
+     "to": {
+      "x": 812,
+      "y": 1356
+     },
+     "style": "line",
+     "in": "Kuscheltiere+0.2"
+    },
+    {
+     "id": "t_da",
+     "type": "tag",
+     "text": "die ganze Zeit da",
+     "x": 540,
+     "y": 1000,
+     "color": "plum",
+     "in": "ganze Zeit",
+     "out": "Neu ist"
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "in": "Neu ist",
+     "out": "Tierklinik+0.4",
+     "states": [
+      {
+       "at": "Neu ist",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "n_klinik",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "*Tierklinik*",
+     "size": 50,
+     "color": "idea",
+     "icon": "heart",
+     "iconColor": "#F27C9B",
+     "in": "Tierklinik",
+     "out": "Nimm die Idee",
+     "states": [
+      {
+       "at": "Tierklinik",
+       "state": "glow"
+      },
+      {
+       "at": "Eine Idee",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "t_neu",
+     "type": "tag",
+     "text": "neu",
+     "x": 790,
+     "y": 520,
+     "color": "rose",
+     "in": "Tierklinik",
+     "out": "Eine Idee"
+    },
+    {
+     "id": "g_n_bau",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_bau",
+     "style": "gold",
+     "in": "Dinge verbindet",
+     "out": "Nimm die Idee"
+    },
+    {
+     "id": "g_n_stift",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_stift",
+     "style": "gold",
+     "in": "Dinge verbindet",
+     "out": "Nimm die Idee"
+    },
+    {
+     "id": "g_n_karton",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_karton",
+     "style": "gold",
+     "in": "Dinge verbindet",
+     "out": "Nimm die Idee"
+    },
+    {
+     "id": "g_n_kuschel",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_kuschel",
+     "style": "gold",
+     "in": "Dinge verbindet",
+     "out": "Nimm die Idee"
+    },
+    {
+     "id": "n_karton_s",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "*Klinik*",
+     "sub": "Karton",
+     "size": 38,
+     "color": "food",
+     "enter": "none",
+     "in": "Der Karton wird",
+     "out": "Nimm die Idee",
+     "states": [
+      {
+       "at": "Der Karton wird",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "carton_k",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "in": "Der Karton wird",
+     "out": "Nimm die Idee",
+     "text": "Tierklinik",
+     "heart": true,
+     "enter": "none",
+     "z": 2.6
+    },
+    {
+     "id": "n_kuschel_s",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "*Patienten*",
+     "sub": "Kuscheltiere",
+     "size": 38,
+     "color": "food",
+     "enter": "none",
+     "in": "Patienten",
+     "out": "Nimm die Idee",
+     "states": [
+      {
+       "at": "Patienten",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "mag",
+     "type": "icon",
+     "kind": "magnifier",
+     "x": 540,
+     "y": 1010,
+     "size": 80,
+     "in": "nur eine Sache"
+    },
+    {
+     "id": "t_eine",
+     "type": "tag",
+     "text": "nur eine Sache",
+     "x": 540,
+     "y": 1110,
+     "color": "plum",
+     "in": "nur eine Sache"
+    }
+   ]
+  },
+  {
+   "at": "Nimm die Idee",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "carton_e",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.4
+    },
+    {
+     "id": "igel_d",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 826,
+     "y": 1452,
+     "size": 96,
+     "rot": 3.05,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "talk": [
+      [
+       "Spiel doch",
+       "end:Bausteinen"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "nicht geholfen",
+       "mood": "worried"
+      },
+      {
+       "at": "Und jetzt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "y": 1478,
+     "pose": "sit",
+     "look": "left",
+     "mood": "sad",
+     "moods": [
+      {
+       "at": "Und jetzt",
+       "mood": "open"
+      }
+     ]
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "nur ein Karton",
+       "state": "dim"
+      },
+      {
+       "at": "Unten ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "nur ein Karton",
+       "state": "dim"
+      },
+      {
+       "at": "Unten ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "nur ein Karton",
+       "state": "dim"
+      },
+      {
+       "at": "Unten ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "nur ein Karton",
+       "state": "dim"
+      },
+      {
+       "at": "Unten ist",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "in": "Idee oben weg+0.2",
+     "enter": "none",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "oben nichts",
+       "state": "empty+shake"
+      },
+      {
+       "at": "oben nichts+0.7",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "n_klinik_w",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "*Tierklinik*",
+     "size": 50,
+     "color": "idea",
+     "icon": "heart",
+     "iconColor": "#F27C9B",
+     "out": "Idee oben weg+0.2",
+     "enter": "none",
+     "states": [
+      {
+       "at": "start",
+       "state": "shake"
+      }
+     ]
+    },
+    {
+     "id": "t_kart",
+     "type": "tag",
+     "text": "nur ein Karton",
+     "x": 620,
+     "y": 1210,
+     "color": "rose",
+     "in": "nur ein Karton",
+     "out": "Das ist Langeweile"
+    },
+    {
+     "id": "t_rum",
+     "type": "tag",
+     "text": "liegt halt rum",
+     "x": 840,
+     "y": 1290,
+     "color": "rose",
+     "in": "halt rum",
+     "out": "Das ist Langeweile"
+    },
+    {
+     "id": "c_lw",
+     "type": "card",
+     "lines": [
+      "unten: *alles da*",
+      "oben: *leer*"
+     ],
+     "x": 540,
+     "y": 1060,
+     "size": 50,
+     "in": "Das ist Langeweile",
+     "out": "Darum hat"
+    },
+    {
+     "id": "b_m1",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Spiel doch mit den *Bausteinen*!",
+     "x": 420,
+     "y": 1010,
+     "maxW": 380,
+     "size": 40,
+     "in": "Spiel doch-0.1",
+     "out": "Noch ein Ding"
+    },
+    {
+     "id": "x_b",
+     "type": "icon",
+     "kind": "cross",
+     "x": 300,
+     "y": 790,
+     "size": 56,
+     "in": "nicht geholfen",
+     "out": "Und jetzt"
+    },
+    {
+     "id": "x1",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 540,
+     "y": 1010,
+     "size": 70,
+     "in": "Und jetzt"
+    }
+   ]
+  },
+  {
+   "at": "Wie kam die Idee",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "carton_e",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.4
+    },
+    {
+     "id": "igel_d",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 826,
+     "y": 1452,
+     "size": 96,
+     "rot": 3.05,
+     "z": 3.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "talk": [
+      [
+       "Langweilig ist",
+       "end:okay"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "wächst",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "y": 1478,
+     "pose": "sit",
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "krank",
+       "mood": "wow"
+      },
+      {
+       "at": "wächst",
+       "mood": "grin"
+      }
+     ],
+     "talk": [
+      [
+       "Der Igel ist",
+       "end:krank"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Der Igel ist",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "kleinen Ding",
+       "state": "glow"
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      }
+     ],
+     "out": "Idee oben+0.4"
+    },
+    {
+     "id": "n_klinik2",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "*Tierklinik*",
+     "size": 50,
+     "color": "idea",
+     "icon": "heart",
+     "iconColor": "#F27C9B",
+     "in": "Idee oben",
+     "states": [
+      {
+       "at": "Idee oben",
+       "state": "glow"
+      }
+     ]
+    },
+    {
+     "id": "q_up",
+     "type": "icon",
+     "kind": "question",
+     "x": 760,
+     "y": 560,
+     "size": 60,
+     "in": "Wie kam",
+     "out": "Mama hat"
+    },
+    {
+     "id": "b_m2",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Langweilig ist *okay*.",
+     "x": 420,
+     "y": 1010,
+     "maxW": 360,
+     "size": 40,
+     "in": "Langweilig ist-0.1",
+     "out": "Nora lag"
+    },
+    {
+     "id": "b_n2",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Der Igel ist *krank*!",
+     "x": 780,
+     "y": 1060,
+     "maxW": 360,
+     "size": 44,
+     "in": "Der Igel ist-0.1",
+     "out": "Aus einem"
+    },
+    {
+     "id": "pl1",
+     "type": "icon",
+     "kind": "plaster",
+     "x": 822,
+     "y": 1466,
+     "size": 50,
+     "in": "krank+0.2",
+     "rot": -0.3,
+     "z": 3.6
+    },
+    {
+     "id": "g_up",
+     "type": "link",
+     "from": "n_kuschel",
+     "to": "n_klinik2",
+     "style": "gold",
+     "in": "wächst"
+    },
+    {
+     "id": "t_klein",
+     "type": "tag",
+     "text": "ein kleines Ding",
+     "x": 895,
+     "y": 1000,
+     "color": "rose",
+     "in": "kleinen Ding",
+     "out": "Dafür"
+    },
+    {
+     "id": "c_end",
+     "type": "card",
+     "lines": [
+      "Dafür braucht es",
+      "den *leeren* Platz."
+     ],
+     "x": 540,
+     "y": 1040,
+     "size": 50,
+     "in": "Dafür braucht"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Pflaster",
+   "x": 870,
+   "y": 1400
+  },
+  {
+   "at": "langweilig",
+   "x": 760,
+   "y": 1040
+  },
+  {
+   "at": "ganze Zeit",
+   "x": 540,
+   "y": 860
+  },
+  {
+   "at": "Tierklinik",
+   "x": 540,
+   "y": 585
+  },
+  {
+   "at": "Patienten",
+   "x": 895,
+   "y": 860
+  },
+  {
+   "at": "Idee oben weg",
+   "x": 540,
+   "y": 585
+  },
+  {
+   "at": "krank",
+   "x": 862,
+   "y": 1420
+  },
+  {
+   "at": "wächst",
+   "x": 540,
+   "y": 585
+  }
+ ]
+}

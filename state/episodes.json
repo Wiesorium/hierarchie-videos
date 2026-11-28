@@ -2,6 +2,66 @@
  "hinweis": "Ein Eintrag pro fertigem Video der täglichen Aufgabe, neuestes zuerst.",
  "videos": [
   {
+   "datum": "2026-11-28",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-28-morgen-mir-ist-so-langweilig",
+   "slug": "mir-ist-so-langweilig",
+   "titel": "Mir ist so langweilig!",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Langeweile im vollen Kinderzimmer: Unten liegen die Dinge (Bausteine, Stifte, Kuscheltiere, ein leerer Karton), darüber ist ein Platz leer, eine Idee, die die Dinge verbindet; Langeweile heißt: unten ist alles da, oben ist es leer; jeder Vorschlag („Spiel doch mit deinen Bausteinen!“) ist nur noch ein Ding von unten, darum sagt das Kind Nö, nicht aus Trotz; die Idee wächst, wenn die Langeweile sein darf, oft aus einem kleinen Ding unten (Nora, sechs, Regentag: „Mama, mir ist so langweilig!“ „Nö.“ „Nö.“ „Langweilig.“ Mama: „Langweilig ist okay. Mal sehen, was dir einfällt.“ Der Igel liegt umgekippt: „Der Igel ist krank!“ Aus dem Karton wird eine Tierklinik, die Stifte schreiben Rezepte, zwei Stunden lang)",
+   "reihe": "Nora und die Langeweile (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Kinderzitat",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn dein Kind auch im vollen Zimmer Langeweile hat.",
+   "hooks": {
+    "a": "„Mama, mir ist so langweilig!“"
+   },
+   "dauer": null,
+   "flow_url": "https://elevenlabs.io/app/flows/znyBmPIQ8ckbodfYXskz",
+   "status": "wartet auf Stimme",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Langeweile kam noch nicht vor). Am 28.11.2026 morgens waren die ElevenLabs-Credits aufgebraucht (0 übrig, Quota 143.883, Reset 1.12.2026 18:16; für die drei Videos braucht es etwa 4.000 Credits). Skript, Storyboard, tts.json und captions.json sind fertig, das Storyboard ist mit Platzhalter-Stimme geprüft und gerendert. Nächster Lauf: alle drei Ordner zusammen bei RUNBOOK Schritt 4 fortsetzen (Flow schon angelegt), danach check (Anker an die echte Stimme anpassen), render, add_caption.py, Lieferung. Neu in der Engine: Icons carton, blocks, plaster, rot für hedgehog/penguin."
+  },
+  {
+   "datum": "2026-11-28",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-28-morgen-die-tierklinik-im-karton",
+   "slug": "die-tierklinik-im-karton",
+   "titel": "Die Tierklinik im Karton",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Langeweile im vollen Kinderzimmer: Unten liegen die Dinge (Bausteine, Stifte, Kuscheltiere, ein leerer Karton), darüber ist ein Platz leer, eine Idee, die die Dinge verbindet; Langeweile heißt: unten ist alles da, oben ist es leer; jeder Vorschlag („Spiel doch mit deinen Bausteinen!“) ist nur noch ein Ding von unten, darum sagt das Kind Nö, nicht aus Trotz; die Idee wächst, wenn die Langeweile sein darf, oft aus einem kleinen Ding unten (Nora, sechs, Regentag: „Mama, mir ist so langweilig!“ „Nö.“ „Nö.“ „Langweilig.“ Mama: „Langweilig ist okay. Mal sehen, was dir einfällt.“ Der Igel liegt umgekippt: „Der Igel ist krank!“ Aus dem Karton wird eine Tierklinik, die Stifte schreiben Rezepte, zwei Stunden lang)",
+   "reihe": "Nora und die Langeweile (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Ergebnis zuerst",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn Langeweile bei euch auch mal sein darf.",
+   "hooks": {
+    "b": "Aus einem Karton wird eine Tierklinik."
+   },
+   "dauer": null,
+   "flow_url": "https://elevenlabs.io/app/flows/znyBmPIQ8ckbodfYXskz",
+   "status": "wartet auf Stimme",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Langeweile kam noch nicht vor). Am 28.11.2026 morgens waren die ElevenLabs-Credits aufgebraucht (0 übrig, Quota 143.883, Reset 1.12.2026 18:16; für die drei Videos braucht es etwa 4.000 Credits). Skript, Storyboard, tts.json und captions.json sind fertig, das Storyboard ist mit Platzhalter-Stimme geprüft und gerendert. Nächster Lauf: alle drei Ordner zusammen bei RUNBOOK Schritt 4 fortsetzen (Flow schon angelegt), danach check (Anker an die echte Stimme anpassen), render, add_caption.py, Lieferung. Neu in der Engine: Icons carton, blocks, plaster, rot für hedgehog/penguin."
+  },
+  {
+   "datum": "2026-11-28",
+   "slot": "morgen",
+   "ordner": "episodes/2026-11-28-morgen-spiel-doch-was",
+   "slug": "spiel-doch-was",
+   "titel": "„Spiel doch was!“",
+   "idee": "eigenes Thema (keine Idee offen)",
+   "thema": "Langeweile im vollen Kinderzimmer: Unten liegen die Dinge (Bausteine, Stifte, Kuscheltiere, ein leerer Karton), darüber ist ein Platz leer, eine Idee, die die Dinge verbindet; Langeweile heißt: unten ist alles da, oben ist es leer; jeder Vorschlag („Spiel doch mit deinen Bausteinen!“) ist nur noch ein Ding von unten, darum sagt das Kind Nö, nicht aus Trotz; die Idee wächst, wenn die Langeweile sein darf, oft aus einem kleinen Ding unten (Nora, sechs, Regentag: „Mama, mir ist so langweilig!“ „Nö.“ „Nö.“ „Langweilig.“ Mama: „Langweilig ist okay. Mal sehen, was dir einfällt.“ Der Igel liegt umgekippt: „Der Igel ist krank!“ Aus dem Karton wird eine Tierklinik, die Stifte schreiben Rezepte, zwei Stunden lang)",
+   "reihe": "Nora und die Langeweile (drei eigene Videos nach der Leitlinie vom 22.11.2026)",
+   "hook_typ": "Du-Fehler",
+   "cta": "follow",
+   "cta_text": "Folg mir, wenn du auch schon „Spiel doch was!“ gesagt hast.",
+   "hooks": {
+    "c": "„Spiel doch was!“ hilft selten."
+   },
+   "dauer": null,
+   "flow_url": "https://elevenlabs.io/app/flows/znyBmPIQ8ckbodfYXskz",
+   "status": "wartet auf Stimme",
+   "hinweis": "Ideenliste leer, Thema selbst gewählt (Langeweile kam noch nicht vor). Am 28.11.2026 morgens waren die ElevenLabs-Credits aufgebraucht (0 übrig, Quota 143.883, Reset 1.12.2026 18:16; für die drei Videos braucht es etwa 4.000 Credits). Skript, Storyboard, tts.json und captions.json sind fertig, das Storyboard ist mit Platzhalter-Stimme geprüft und gerendert. Nächster Lauf: alle drei Ordner zusammen bei RUNBOOK Schritt 4 fortsetzen (Flow schon angelegt), danach check (Anker an die echte Stimme anpassen), render, add_caption.py, Lieferung. Neu in der Engine: Icons carton, blocks, plaster, rot für hedgehog/penguin."
+  },
+  {
    "datum": "2026-11-27",
    "slot": "abend",
    "ordner": "episodes/2026-11-27-abend-ich-bin-schon-gross",

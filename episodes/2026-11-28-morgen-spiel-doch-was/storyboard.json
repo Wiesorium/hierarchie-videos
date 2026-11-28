@@ -1,0 +1,1536 @@
+{
+ "slug": "spiel-doch-was",
+ "title": "„Spiel doch was!“",
+ "cta": "follow",
+ "hero": "nora",
+ "intro": {
+  "zoom": 0,
+  "gap": 0.12,
+  "cardSize": 86,
+  "close": {
+   "focus": "mama",
+   "scale": 1.8,
+   "hold": 1.3,
+   "dur": 1.0,
+   "x": 400,
+   "y": 1150
+  }
+ },
+ "hooks": {
+  "c": {
+   "label": "Du-Fehler",
+   "audio": "„Spiel doch was!“ hilft selten.",
+   "card": [
+    "Kein Ding fehlt.",
+    "*Die Idee fehlt.*"
+   ]
+  }
+ },
+ "script": {
+  "lockin": "Ich weiß, das sag ich auch. Nora ist sechs, draußen regnet es. „Mir ist langweilig!“ Mama sagt: „Spiel doch mit deinen Bausteinen!“ „Nö.“ „Mal doch was!“ „Nö.“ „Und die Kuscheltiere?“ „Langweilig.“ Klingt nach Trotz, oder? Ist es aber nicht.",
+  "block1": "Schau dir das als Knoten an. Unten liegen die Dinge: Bausteine, Stifte, Kuscheltiere, ein leerer Karton. Darüber ist ein Platz leer. Dort gehört eine Idee hin, die die Dinge verbindet. Langeweile heißt: Unten ist alles da. Oben ist es leer.",
+  "rehook1": "Genau hier machen es die meisten falsch.",
+  "block2": "Jeder Vorschlag ist noch ein Ding von unten. Aber noch ein Ding füllt oben nichts. Darum sagt Nora Nö. Und die Idee oben findet sie am besten selbst. Dafür braucht sie etwas, das sich erst mal blöd anfühlt: ein bisschen leere Zeit.",
+  "rehook2": "Ich zeig dir, wie das konkret aussieht.",
+  "block3": "Mama hört auf vorzuschlagen. Sie sagt nur: „Langweilig ist okay. Mal sehen, was dir einfällt.“ Dann liegt Nora auf dem Boden, neben ihr der Igel, umgekippt. „Der Igel ist krank!“ Oben rastet eine Idee ein: Tierklinik. Der Karton wird die Klinik. Zwei Stunden lang, mit denselben Sachen.",
+  "closing": "Was sagst du, wenn dein Kind das nächste Mal „langweilig“ ruft?",
+  "cta": "Folg mir, wenn du auch schon „Spiel doch was!“ gesagt hast."
+ },
+ "question": [
+  "Was sagst du, wenn dein Kind",
+  "das nächste Mal „langweilig“ ruft?"
+ ],
+ "endcard": {
+  "title": "Folg mir",
+  "pill": "hierarchologie",
+  "lines": [
+   "wenn du auch schon",
+   "„Spiel doch was!“ gesagt hast"
+  ],
+  "button": "Folgen"
+ },
+ "scenes": [
+  {
+   "at": "start",
+   "chord": "D",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE",
+     "in": "@-0.8",
+     "enter": "fade"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5,
+     "in": "@-0.8",
+     "enter": "fade"
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "carton",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 858,
+     "y": 1450,
+     "size": 96,
+     "z": 2.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "moods": [
+      {
+       "at": "Ich weiß",
+       "mood": "grin"
+      },
+      {
+       "at": "Langweilig#2",
+       "mood": "worried"
+      },
+      {
+       "at": "Ist es aber",
+       "mood": "open"
+      }
+     ],
+     "talk": [
+      [
+       "@-2.3",
+       "@-0.9"
+      ],
+      [
+       "Spiel doch",
+       "end:Bausteinen"
+      ],
+      [
+       "Mal doch",
+       "end:doch was"
+      ],
+      [
+       "Und die",
+       "end:Kuscheltiere"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "@-2.3",
+       "kind": "point",
+       "dur": 1.6
+      },
+      {
+       "at": "Ich weiß",
+       "kind": "shrug",
+       "dur": 1.2
+      },
+      {
+       "at": "Spiel doch",
+       "kind": "point",
+       "dur": 1.2
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "look": "left",
+     "mood": "sad",
+     "gestures": [
+      {
+       "at": "Mir ist",
+       "kind": "shrug",
+       "dur": 1.4
+      },
+      {
+       "at": "Langweilig#2",
+       "kind": "shrug",
+       "dur": 1.3
+      }
+     ],
+     "talk": [
+      [
+       "Mir ist",
+       "end:langweilig"
+      ],
+      [
+       "Nö",
+       "end:Nö"
+      ],
+      [
+       "Nö#2",
+       "end:Nö"
+      ],
+      [
+       "Langweilig#2",
+       "end:Langweilig"
+      ]
+     ]
+    },
+    {
+     "id": "b_hook",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Spiel doch *was*!",
+     "x": 290,
+     "y": 920,
+     "maxW": 360,
+     "size": 48,
+     "in": "@-2.35",
+     "out": "@0.3"
+    },
+    {
+     "id": "t_ich",
+     "type": "tag",
+     "text": "ich auch",
+     "x": 330,
+     "y": 1000,
+     "color": "rose",
+     "in": "Ich weiß",
+     "out": "Nora ist"
+    },
+    {
+     "id": "t_nora",
+     "type": "tag",
+     "text": "Nora, sechs",
+     "x": 940,
+     "y": 1100,
+     "color": "plum",
+     "in": "Nora ist",
+     "out": "Mir ist"
+    },
+    {
+     "id": "b_n0",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Mir ist *langweilig*!",
+     "x": 800,
+     "y": 1000,
+     "maxW": 340,
+     "size": 44,
+     "in": "Mir ist-0.1",
+     "out": "Mama sagt"
+    },
+    {
+     "id": "b_m1",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Spiel doch mit deinen *Bausteinen*!",
+     "x": 420,
+     "y": 930,
+     "maxW": 400,
+     "size": 40,
+     "in": "Spiel doch-0.1",
+     "out": "Mal doch"
+    },
+    {
+     "id": "b_n1",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Nö.",
+     "x": 860,
+     "y": 1010,
+     "maxW": 200,
+     "size": 46,
+     "in": "Nö-0.05",
+     "out": "Mal doch"
+    },
+    {
+     "id": "b_m2",
+     "type": "bubble",
+     "from": "mama",
+     "text": "*Mal* doch was!",
+     "x": 400,
+     "y": 930,
+     "maxW": 360,
+     "size": 40,
+     "in": "Mal doch-0.1",
+     "out": "Und die"
+    },
+    {
+     "id": "b_n2",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Nö.",
+     "x": 860,
+     "y": 1010,
+     "maxW": 200,
+     "size": 46,
+     "in": "Nö#2-0.05",
+     "out": "Und die"
+    },
+    {
+     "id": "b_m3",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Und die *Kuscheltiere*?",
+     "x": 400,
+     "y": 930,
+     "maxW": 360,
+     "size": 40,
+     "in": "Und die-0.1",
+     "out": "Klingt nach"
+    },
+    {
+     "id": "b_n3",
+     "type": "bubble",
+     "from": "nora",
+     "text": "*Langweilig.*",
+     "x": 840,
+     "y": 1010,
+     "maxW": 300,
+     "size": 46,
+     "in": "Langweilig#2-0.05",
+     "out": "Klingt nach"
+    },
+    {
+     "id": "s_trotz",
+     "type": "stamp",
+     "text": "Trotz?",
+     "x": 560,
+     "y": 900,
+     "rot": -0.09,
+     "size": 60,
+     "in": "Trotz"
+    },
+    {
+     "id": "x_t",
+     "type": "icon",
+     "kind": "cross",
+     "x": 660,
+     "y": 860,
+     "size": 56,
+     "in": "Ist es aber"
+    }
+   ]
+  },
+  {
+   "at": "Schau dir das als Knoten",
+   "chord": "G",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "carton",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 858,
+     "y": 1450,
+     "size": 96,
+     "z": 2.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "gestures": [
+      {
+       "at": "Unten liegen",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "moods": [
+      {
+       "at": "Genau hier",
+       "mood": "worried"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "look": "left",
+     "mood": "neutral",
+     "moods": [
+      {
+       "at": "Platz leer",
+       "mood": "open"
+      },
+      {
+       "at": "Oben ist es leer",
+       "mood": "sad"
+      }
+     ]
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food",
+     "in": "Bausteine"
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food",
+     "in": "Stifte"
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food",
+     "in": "leerer Karton"
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food",
+     "in": "Kuscheltiere"
+    },
+    {
+     "id": "fl_n_bau",
+     "type": "link",
+     "from": "n_bau",
+     "to": {
+      "x": 300,
+      "y": 1318
+     },
+     "style": "line",
+     "in": "Bausteine+0.2"
+    },
+    {
+     "id": "fl_n_stift",
+     "type": "link",
+     "from": "n_stift",
+     "to": {
+      "x": 455,
+      "y": 1390
+     },
+     "style": "line",
+     "in": "Stifte+0.2"
+    },
+    {
+     "id": "fl_n_karton",
+     "type": "link",
+     "from": "n_karton",
+     "to": {
+      "x": 620,
+      "y": 1296
+     },
+     "style": "line",
+     "in": "leerer Karton+0.2"
+    },
+    {
+     "id": "fl_n_kuschel",
+     "type": "link",
+     "from": "n_kuschel",
+     "to": {
+      "x": 812,
+      "y": 1356
+     },
+     "style": "line",
+     "in": "Kuscheltiere+0.2"
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "in": "Darüber ist",
+     "states": [
+      {
+       "at": "Darüber ist",
+       "state": "empty"
+      },
+      {
+       "at": "Platz leer",
+       "state": "empty+shake"
+      },
+      {
+       "at": "Platz leer+0.7",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "bulb1",
+     "type": "icon",
+     "kind": "bulb",
+     "x": 800,
+     "y": 540,
+     "size": 76,
+     "in": "eine Idee"
+    },
+    {
+     "id": "d_n_bau",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_bau",
+     "style": "dashed",
+     "in": "Dinge verbindet"
+    },
+    {
+     "id": "d_n_stift",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_stift",
+     "style": "dashed",
+     "in": "Dinge verbindet"
+    },
+    {
+     "id": "d_n_karton",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_karton",
+     "style": "dashed",
+     "in": "Dinge verbindet"
+    },
+    {
+     "id": "d_n_kuschel",
+     "type": "link",
+     "from": "n_top",
+     "to": "n_kuschel",
+     "style": "dashed",
+     "in": "Dinge verbindet"
+    },
+    {
+     "id": "c_lw",
+     "type": "card",
+     "lines": [
+      "unten: *alles da*",
+      "oben: *leer*"
+     ],
+     "x": 540,
+     "y": 1060,
+     "size": 50,
+     "in": "Langeweile heißt",
+     "out": "Genau hier"
+    },
+    {
+     "id": "x1",
+     "type": "icon",
+     "kind": "exclaim",
+     "x": 540,
+     "y": 1010,
+     "size": 70,
+     "in": "Genau hier"
+    }
+   ]
+  },
+  {
+   "at": "Jeder Vorschlag ist",
+   "chord": "Em",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "carton",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "id": "igel",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 858,
+     "y": 1450,
+     "size": 96,
+     "z": 2.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "neutral",
+     "gestures": [
+      {
+       "at": "Jeder Vorschlag",
+       "kind": "point",
+       "dur": 1.3
+      }
+     ],
+     "moods": [
+      {
+       "at": "leere Zeit",
+       "mood": "smile"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora",
+     "x": 960,
+     "look": "left",
+     "mood": "sad",
+     "talk": [
+      [
+       "Nö",
+       "end:Nö"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "Idee oben",
+       "mood": "neutral"
+      },
+      {
+       "at": "leere Zeit",
+       "mood": "open"
+      }
+     ],
+     "gestures": [
+      {
+       "at": "Idee oben",
+       "kind": "think",
+       "dur": 1.8
+      }
+     ]
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "Ding von unten",
+       "state": "glow"
+      },
+      {
+       "at": "Aber noch",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "Ding von unten",
+       "state": "glow"
+      },
+      {
+       "at": "Aber noch",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "Ding von unten",
+       "state": "glow"
+      },
+      {
+       "at": "Aber noch",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food",
+     "states": [
+      {
+       "at": "Ding von unten",
+       "state": "glow"
+      },
+      {
+       "at": "Aber noch",
+       "state": "normal"
+      }
+     ]
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      },
+      {
+       "at": "oben nichts",
+       "state": "empty+shake"
+      },
+      {
+       "at": "oben nichts+0.7",
+       "state": "empty"
+      },
+      {
+       "at": "Idee oben",
+       "state": "empty+shake"
+      },
+      {
+       "at": "Idee oben+0.7",
+       "state": "empty"
+      }
+     ]
+    },
+    {
+     "id": "r_n_bau",
+     "type": "arrow",
+     "from": {
+      "x": 255,
+      "y": 1120
+     },
+     "to": {
+      "x": 175,
+      "y": 915
+     },
+     "style": "red",
+     "in": "Ding von unten",
+     "out": "Darum sagt"
+    },
+    {
+     "id": "r_n_stift",
+     "type": "arrow",
+     "from": {
+      "x": 255,
+      "y": 1120
+     },
+     "to": {
+      "x": 415,
+      "y": 915
+     },
+     "style": "red",
+     "in": "Ding von unten",
+     "out": "Darum sagt"
+    },
+    {
+     "id": "r_n_karton",
+     "type": "arrow",
+     "from": {
+      "x": 255,
+      "y": 1120
+     },
+     "to": {
+      "x": 655,
+      "y": 915
+     },
+     "style": "red",
+     "in": "Ding von unten",
+     "out": "Darum sagt"
+    },
+    {
+     "id": "t_noch",
+     "type": "tag",
+     "text": "noch ein Ding",
+     "x": 540,
+     "y": 1000,
+     "color": "rose",
+     "in": "Ding von unten",
+     "out": "Aber noch"
+    },
+    {
+     "id": "r_up",
+     "type": "arrow",
+     "from": {
+      "x": 540,
+      "y": 800
+     },
+     "to": {
+      "x": 540,
+      "y": 655
+     },
+     "style": "red",
+     "in": "füllt oben",
+     "out": "Darum sagt"
+    },
+    {
+     "id": "x_up",
+     "type": "icon",
+     "kind": "cross",
+     "x": 610,
+     "y": 720,
+     "size": 56,
+     "in": "oben nichts",
+     "out": "Darum sagt"
+    },
+    {
+     "id": "b_n4",
+     "type": "bubble",
+     "from": "nora",
+     "text": "Nö.",
+     "x": 860,
+     "y": 1010,
+     "maxW": 200,
+     "size": 46,
+     "in": "Nö-0.05",
+     "out": "Und die Idee"
+    },
+    {
+     "id": "g_self",
+     "type": "link",
+     "from": {
+      "x": 930,
+      "y": 1150
+     },
+     "to": "n_top",
+     "style": "gold",
+     "in": "selbst",
+     "out": "Ich zeig"
+    },
+    {
+     "id": "t_selbst",
+     "type": "tag",
+     "text": "selbst finden",
+     "x": 800,
+     "y": 700,
+     "color": "plum",
+     "in": "selbst",
+     "out": "Ich zeig"
+    },
+    {
+     "id": "clk",
+     "type": "icon",
+     "kind": "clock",
+     "x": 540,
+     "y": 1040,
+     "size": 90,
+     "in": "leere Zeit"
+    },
+    {
+     "id": "t_zeit",
+     "type": "tag",
+     "text": "ein bisschen leere Zeit",
+     "x": 540,
+     "y": 1150,
+     "color": "rose",
+     "in": "leere Zeit",
+     "out": "Ich zeig"
+    },
+    {
+     "id": "mag",
+     "type": "icon",
+     "kind": "magnifier",
+     "x": 540,
+     "y": 1040,
+     "size": 80,
+     "in": "Ich zeig",
+     "enter": "pop"
+    }
+   ]
+  },
+  {
+   "at": "Mama hört auf",
+   "chord": "A",
+   "elements": [
+    {
+     "id": "win",
+     "type": "prop",
+     "kind": "window",
+     "x": 200,
+     "y": 600,
+     "w": 240,
+     "h": 200,
+     "pane": "#D6E2EE"
+    },
+    {
+     "id": "rain",
+     "type": "icon",
+     "kind": "rain",
+     "x": 200,
+     "y": 590,
+     "size": 110,
+     "z": 0.5
+    },
+    {
+     "id": "shelf",
+     "type": "prop",
+     "kind": "shelf",
+     "x": 925,
+     "w": 240,
+     "h": 340
+    },
+    {
+     "id": "blocks",
+     "type": "icon",
+     "kind": "blocks",
+     "x": 300,
+     "y": 1404,
+     "size": 160,
+     "letters": [
+      "A",
+      "B",
+      "C"
+     ],
+     "z": 2.5
+    },
+    {
+     "id": "pen1",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 430,
+     "y": 1430,
+     "size": 92,
+     "z": 2.5
+    },
+    {
+     "id": "pen2",
+     "type": "icon",
+     "kind": "pencil",
+     "x": 478,
+     "y": 1440,
+     "size": 92,
+     "color": "#F49AAE",
+     "z": 2.5
+    },
+    {
+     "id": "carton",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "z": 2.5
+    },
+    {
+     "id": "pingu",
+     "type": "icon",
+     "kind": "penguin",
+     "x": 772,
+     "y": 1420,
+     "size": 116,
+     "z": 2.5
+    },
+    {
+     "type": "figure",
+     "role": "mama",
+     "hair": "bun",
+     "hairColor": "brown",
+     "shirt": "#BFD9F2",
+     "pants": "#5B6E9C",
+     "id": "mama",
+     "x": 150,
+     "look": "right",
+     "mood": "smile",
+     "talk": [
+      [
+       "Langweilig ist",
+       "end:dir einfällt"
+      ]
+     ],
+     "moods": [
+      {
+       "at": "Tierklinik",
+       "mood": "happy"
+      }
+     ]
+    },
+    {
+     "type": "figure",
+     "role": "girl",
+     "hair": "ponytail",
+     "hairColor": "red",
+     "shirt": "#F7C4D4",
+     "pants": "#86A6D8",
+     "id": "nora_s",
+     "x": 980,
+     "y": 1478,
+     "pose": "sit",
+     "look": "left",
+     "mood": "neutral",
+     "enter": "none",
+     "moods": [
+      {
+       "at": "krank",
+       "mood": "wow"
+      },
+      {
+       "at": "Tierklinik",
+       "mood": "grin"
+      },
+      {
+       "at": "Zwei Stunden",
+       "mood": "happy"
+      }
+     ],
+     "talk": [
+      [
+       "Der Igel ist",
+       "end:krank"
+      ]
+     ],
+     "gestures": [
+      {
+       "at": "Der Igel ist",
+       "kind": "point",
+       "dur": 1.4
+      }
+     ]
+    },
+    {
+     "id": "igel_d",
+     "type": "icon",
+     "kind": "hedgehog",
+     "x": 826,
+     "y": 1452,
+     "size": 96,
+     "rot": 3.05,
+     "z": 3.5
+    },
+    {
+     "id": "n_bau",
+     "type": "node",
+     "x": 175,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Bausteine",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_stift",
+     "type": "node",
+     "x": 415,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Stifte",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_karton",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Karton",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_kuschel",
+     "type": "node",
+     "x": 895,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "Kuscheltiere",
+     "size": 34,
+     "color": "food"
+    },
+    {
+     "id": "n_top",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "Idee",
+     "emptyLabel": "Idee?",
+     "size": 52,
+     "color": "idea",
+     "states": [
+      {
+       "at": "start",
+       "state": "empty"
+      }
+     ],
+     "out": "Tierklinik+0.4"
+    },
+    {
+     "id": "n_klinik",
+     "type": "node",
+     "x": 540,
+     "y": 585,
+     "w": 340,
+     "h": 120,
+     "label": "*Tierklinik*",
+     "size": 50,
+     "color": "idea",
+     "icon": "heart",
+     "iconColor": "#F27C9B",
+     "in": "Tierklinik",
+     "states": [
+      {
+       "at": "Tierklinik",
+       "state": "glow"
+      },
+      {
+       "at": "Der Karton",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "t_stop",
+     "type": "tag",
+     "text": "keine Vorschläge mehr",
+     "x": 540,
+     "y": 1000,
+     "color": "plum",
+     "in": "hört auf",
+     "out": "Sie sagt nur"
+    },
+    {
+     "id": "b_m4",
+     "type": "bubble",
+     "from": "mama",
+     "text": "Langweilig ist *okay*. Mal sehen, was dir einfällt.",
+     "x": 440,
+     "y": 1010,
+     "maxW": 420,
+     "size": 40,
+     "in": "Langweilig ist-0.1",
+     "out": "Dann liegt"
+    },
+    {
+     "id": "b_n5",
+     "type": "bubble",
+     "from": "nora_s",
+     "text": "Der Igel ist *krank*!",
+     "x": 780,
+     "y": 1060,
+     "maxW": 360,
+     "size": 44,
+     "in": "Der Igel ist-0.1",
+     "out": "Der Karton"
+    },
+    {
+     "id": "pl1",
+     "type": "icon",
+     "kind": "plaster",
+     "x": 822,
+     "y": 1466,
+     "size": 50,
+     "in": "krank+0.2",
+     "rot": -0.3,
+     "z": 3.6
+    },
+    {
+     "id": "g_n_bau",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_bau",
+     "style": "gold",
+     "in": "Tierklinik+0.3"
+    },
+    {
+     "id": "g_n_stift",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_stift",
+     "style": "gold",
+     "in": "Tierklinik+0.3"
+    },
+    {
+     "id": "g_n_karton",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_karton",
+     "style": "gold",
+     "in": "Tierklinik+0.3"
+    },
+    {
+     "id": "g_n_kuschel",
+     "type": "link",
+     "from": "n_klinik",
+     "to": "n_kuschel",
+     "style": "gold",
+     "in": "Tierklinik+0.3"
+    },
+    {
+     "id": "n_karton_s",
+     "type": "node",
+     "x": 655,
+     "y": 860,
+     "w": 225,
+     "h": 100,
+     "label": "*Klinik*",
+     "sub": "Karton",
+     "size": 38,
+     "color": "food",
+     "enter": "none",
+     "in": "Der Karton wird",
+     "states": [
+      {
+       "at": "Der Karton wird",
+       "state": "gold"
+      }
+     ]
+    },
+    {
+     "id": "carton_k",
+     "type": "icon",
+     "kind": "carton",
+     "x": 620,
+     "y": 1407,
+     "size": 230,
+     "in": "Der Karton wird",
+     "text": "Tierklinik",
+     "heart": true,
+     "enter": "none",
+     "z": 2.6
+    },
+    {
+     "id": "c_end",
+     "type": "card",
+     "lines": [
+      "zwei Stunden,",
+      "mit *denselben* Sachen"
+     ],
+     "x": 540,
+     "y": 1040,
+     "size": 50,
+     "in": "Zwei Stunden"
+    }
+   ]
+  }
+ ],
+ "hits": [
+  {
+   "at": "Bausteinen",
+   "x": 300,
+   "y": 1400
+  },
+  {
+   "at": "Langweilig#2",
+   "x": 860,
+   "y": 1010
+  },
+  {
+   "at": "Trotz",
+   "x": 560,
+   "y": 900
+  },
+  {
+   "at": "Platz leer",
+   "x": 540,
+   "y": 585
+  },
+  {
+   "at": "oben nichts",
+   "x": 540,
+   "y": 585
+  },
+  {
+   "at": "krank",
+   "x": 862,
+   "y": 1420
+  },
+  {
+   "at": "Tierklinik",
+   "x": 540,
+   "y": 585
+  },
+  {
+   "at": "die Klinik",
+   "x": 620,
+   "y": 1360
+  }
+ ]
+}

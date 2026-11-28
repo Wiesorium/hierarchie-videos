@@ -1,0 +1,8 @@
+{
+ "main": "[warmly] Das ruft Nora. Sie ist sechs. Draußen regnet es, ihr Zimmer ist voll mit Spielsachen. Mama sagt: „Spiel doch mit deinen Bausteinen!“ „Nö.“ „Dann mal doch was!“ „Nö.“ „Und deine Kuscheltiere?“ „Langweilig.“ Ein volles Zimmer, und nichts zu tun. Merk dir das. Das wird gleich wichtig. [pause] Schau dir das als Knoten an. Unten liegen die Dinge: Bausteine, Stifte, Kuscheltiere, ein leerer Karton. Aber darüber ist ein Platz leer. Dort gehört eine Idee hin, die die Dinge verbindet. Ohne Idee ist jedes Ding nur ein Ding. [pause] Aber genau da liegt das Problem. [pause] Mamas Vorschläge kommen alle von unten: noch ein Ding. Aber das füllt den leeren Platz oben nicht. Darum sagt Nora Nö. Also hört Mama auf und sagt: „Langweilig ist okay. Mal sehen, was dir einfällt.“ [pause] Und dann ist Folgendes passiert: [pause] Nora liegt auf dem Boden, neben ihr der Igel, umgekippt. „Der Igel ist krank!“ Oben rastet eine Idee ein: Tierklinik. Und plötzlich hat jedes Ding einen Platz. Der Karton wird die Klinik, die Stifte schreiben Rezepte, die Kuscheltiere sind Patienten. Zwei Stunden lang. Das Zimmer war nie zu leer. Oben war es leer. [pause] Was hat dein Kind zuletzt aus Langeweile erfunden? [pause] [pause] Folg mir, wenn dein Kind auch im vollen Zimmer Langeweile hat.",
+ "hooks": {
+  "a": "[warmly] „Mama, mir ist so langweilig!“"
+ },
+ "voice_id": "xJgIGF3FqMGNm9nOnrvZ",
+ "model_id": "eleven_v4"
+}
