@@ -198,7 +198,12 @@ Kombinieren mit `+`: `"gold+check"`. Ein Zustand gilt bis zum nächsten; `shake`
   `color`, `"ribbon"`; `"open": true` legt den Deckel schräg daneben), `yarn` (Wollknäuel mit zwei Stricknadeln, `"needles": false` ohne), `pyjama` (Schlafanzug-Oberteil flach ausgebreitet, size = Breite
   mit Ärmeln, `color`, `"dots"` (Farbe der Sternchen, `false` = ohne), `"buttons"` (Standard 4), `"closed"` (wie viele Knöpfe von unten zu sind,
   die anderen sind offene Ringe), `"wiggle": true` wackelt);
-  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin`, `feather`, `scarf`, `yarn` und `pyjama`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
+  `carton` (leerer Pappkarton, size = Breite, x/y = Mitte des Kartons, Boden bei y + 0,31 × size, zwei Klappen offen zur Seite;
+  `"closed": true` = zu mit Klebeband, `text` vorn drauf, `"heart": true` setzt ein rosa Herz darüber (Tierklinik), `"wiggle": true`
+  lässt die Klappen wippen), `blocks` (drei Holz-Bauklötze, zwei unten, einer oben, size = Breite, Boden bei y + 0,46 × size,
+  `"letters": ["A", "B", "C"]`, `"colors"`), `plaster` (Pflaster, size = Länge, `"rot"` neigt es, Standard −0,5, `"cross": true` = zwei als X);
+  `hedgehog` und `penguin` drehen sich mit `"rot"` um x/y (z. B. `3.05` = umgekippt auf dem Rücken, ein Plüschtier, das daliegt);
+  als Schubladen- oder Knoten-`icon` gehen auch `bird` (mit `iconColor`), `penguin`, `feather`, `scarf`, `yarn`, `pyjama`, `carton`, `blocks` und `plaster`; `bottle` mit `"pour": true` kippt die Flasche ohne Korken über den Punkt x/y
   (offener Hals, Körper links oben, `"look": "right"` spiegelt) und lässt Tropfen fallen
 - Schubladen und Knoten mit `icon` können dazu `iconColor` haben (z. B. `"icon": "planet", "iconColor": "#E8A08A"`).
 

@@ -237,6 +237,8 @@ export function drawStamp(ctx, e, t) {
 export function drawIcon(ctx, e, t) {
   const k = e.kind, x = e.x, y = e.y, s = e.size ?? 90; const c = e.color ? col(e.color) : null;
   ctx.save();
+  // plush animals can lie on their side: "rot" turns hedgehog and penguin around their centre point
+  if ((k === 'hedgehog' || k === 'penguin') && e.rot) { ctx.translate(x, y); ctx.rotate(e.rot); ctx.translate(-x, -y); }
   switch (k) {
     case 'bulb': {
       const glow = ctx.createRadialGradient(x, y, s * 0.2, x, y, s * 0.9); glow.addColorStop(0, 'rgba(247,201,72,0.55)'); glow.addColorStop(1, 'rgba(247,201,72,0)');
@@ -279,12 +281,77 @@ export function drawIcon(ctx, e, t) {
     case 'gift': drawGift(ctx, x, y, s, c, e.ribbon ? col(e.ribbon) : null, !!e.open, t); break;
     case 'yarn': drawYarn(ctx, x, y, s, c, e.needles !== false); break;
     case 'pyjama': drawPyjama(ctx, x, y, s, c, e, t); break;
+    case 'carton': drawCarton(ctx, x, y, s, c, e, t); break;
+    case 'blocks': drawBlocks(ctx, x, y, s, e); break;
+    case 'plaster': drawPlaster(ctx, x, y, s, c, e.rot ?? -0.5, !!e.cross); break;
     default: throw new Error(`Unbekanntes Icon: ${k}`);
   }
   ctx.restore();
 }
 export const ICON_KINDS = ['bulb', 'check', 'cross', 'question', 'exclaim', 'heart', 'star', 'moon', 'sun', 'clock', 'magnifier', 'balloon', 'plane', 'house', 'book', 'pencil', 'cloud', 'rain', 'zzz', 'note', 'hedgehog', 'planet', 'pluto', 'lemon', 'bottle', 'cashew', 'salt', 'spoon', 'toothbrush',
-  'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn', 'pyjama'];
+  'penguin', 'bird', 'bat', 'feather', 'scarf', 'gift', 'yarn', 'pyjama', 'carton', 'blocks', 'plaster'];
+
+const CARTON = '#DDB383', CARTON_DARK = '#C49A68';
+
+// An empty cardboard box, `s` wide, body centred at (x, y) (bottom at y + 0.31 s), two flaps open to the sides.
+// "closed": true folds the flaps down (a strip of tape on top); "text" writes on the front, "heart": true puts a
+// rose heart above it (a toy clinic); "wiggle": true lets the flaps flap a little.
+function drawCarton(ctx, x, y, s, c, e = {}, t = 0) {
+  const body = c || CARTON, dark = CARTON_DARK;
+  const top = y - s * 0.31, h = s * 0.62;
+  if (!e.closed) {
+    const wig = e.wiggle ? Math.sin(t * 5) * 0.06 : 0;
+    for (const side of [-1, 1]) {
+      ctx.save(); ctx.translate(x + side * s * 0.47, top + 2); ctx.rotate(side * (0.62 + wig * side));
+      fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(-side * s * 0.02, 0); ctx.lineTo(-side * s * 0.03, -s * 0.24); ctx.lineTo(-side * s * 0.4, -s * 0.22); ctx.lineTo(-side * s * 0.44, 0); ctx.closePath(); }, dark, { depth: 0.4 });
+      ctx.restore();
+    }
+    // the dark inside shows as a thin strip above the front edge
+    fillShape(ctx, () => rrect(ctx, x - s * 0.47, top - s * 0.05, s * 0.94, s * 0.08, s * 0.02), '#9C7550', { sh: false });
+  }
+  fillShape(ctx, () => rrect(ctx, x - s / 2, top, s, h, s * 0.035), body, { depth: 0.7 });
+  ctx.save(); ctx.globalAlpha *= 0.35; ctx.strokeStyle = dark; ctx.lineWidth = Math.max(1.5, s * 0.012);
+  ctx.beginPath(); ctx.moveTo(x - s * 0.5, top + h * 0.16); ctx.lineTo(x + s * 0.5, top + h * 0.16); ctx.stroke(); ctx.restore();
+  if (e.closed) fillShape(ctx, () => rrect(ctx, x - s * 0.08, top - 2, s * 0.16, h * 0.42, 4), '#EED7B4', { sh: false });
+  let ty = top + h * 0.58;
+  if (e.heart) {
+    const hy = e.text ? top + h * 0.36 : top + h * 0.55, hs = s * (e.text ? 0.2 : 0.32), r = hs * 0.26;
+    fillShape(ctx, () => { ctx.beginPath(); ctx.moveTo(x, hy + hs * 0.38); ctx.bezierCurveTo(x - hs * 0.6, hy - hs * 0.05, x - r, hy - hs * 0.5, x, hy - hs * 0.18); ctx.bezierCurveTo(x + r, hy - hs * 0.5, x + hs * 0.6, hy - hs * 0.05, x, hy + hs * 0.38); }, C.rose, { depth: 0.4 });
+    ty = top + h * 0.74;
+  }
+  if (e.text) {
+    let px = e.textSize ?? Math.round(s * 0.15); while (px > 12 && measure(ctx, e.text, px) > s * 0.86) px -= 2;
+    richText(ctx, e.text, x, ty, px, C.ink);
+  }
+}
+
+// Three wooden toy blocks, `s` wide, centred at (x, y): two side by side, one on top (bottom at y + 0.46 s).
+// "letters": up to three letters for the light faces (bottom left, bottom right, top).
+function drawBlocks(ctx, x, y, s, e = {}) {
+  const b = s * 0.46, cols = e.colors || ['#F49AAE', '#9FD3E8', '#F7C948'], L = e.letters || [];
+  const spots = [[x - b * 0.54, y + b * 0.5], [x + b * 0.54, y + b * 0.5], [x + b * 0.06, y - b * 0.5]];
+  spots.forEach(([cx, cy], i) => {
+    ctx.save(); ctx.translate(cx, cy); ctx.rotate(i === 2 ? -0.08 : 0);
+    fillShape(ctx, () => rrect(ctx, -b / 2, -b / 2, b, b, b * 0.12), col(cols[i % cols.length]), { depth: 0.5 });
+    fillShape(ctx, () => rrect(ctx, -b * 0.33, -b * 0.33, b * 0.66, b * 0.66, b * 0.1), 'rgba(255,255,255,0.55)', { sh: false });
+    if (L[i]) richText(ctx, L[i], 0, b * 0.04, Math.round(b * 0.5), C.ink);
+    ctx.restore();
+  });
+}
+
+// A sticking plaster, `s` long, centred at (x, y) and turned by `rot`; "cross": true lays two of them as an X.
+function drawPlaster(ctx, x, y, s, c, rot, cross) {
+  const one = (a) => {
+    ctx.save(); ctx.translate(x, y); ctx.rotate(a);
+    const h = s * 0.3;
+    fillShape(ctx, () => rrect(ctx, -s / 2, -h / 2, s, h, h / 2), c || '#F0C9A2', { depth: 0.4 });
+    fillShape(ctx, () => rrect(ctx, -s * 0.16, -h * 0.36, s * 0.32, h * 0.72, h * 0.14), '#FBEBDD', { sh: false });
+    ctx.fillStyle = 'rgba(160,110,80,0.35)';
+    for (const px of [-0.36, -0.27, 0.27, 0.36]) for (const py of [-0.15, 0.15]) { ctx.beginPath(); ctx.arc(px * s, py * h, Math.max(1, s * 0.012), 0, 7); ctx.fill(); }
+    ctx.restore();
+  };
+  one(rot); if (cross) one(rot + 1.35);
+}
 
 const PYJAMA = '#BFD9F2', PYJAMA_DOTS = '#FFF6D6';
 
